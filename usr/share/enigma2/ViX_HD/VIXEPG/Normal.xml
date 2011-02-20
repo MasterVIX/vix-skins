@@ -1,0 +1,31 @@
+<screen name="VIXEPG" position="0,-8" size="1280,720" title="Programme Guide" backgroundColor="black" flags="wfNoBorder" zPosition="1">
+  <ePixmap pixmap="ViX_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="-1" />
+  <ePixmap pixmap="ViX_HD/icons/ico_EPG_title.png" position="50,52" size="45,36" alphatest="blend" transparent="1" />
+  <eLabel text="Programme Guide" position="105,57" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
+  <widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
+    <convert type="ClockToText">Date</convert>
+  </widget>
+  <widget name="lab1" position="0,114" size="1280,529" font="Regular;24" halign="center" valign="center" transparent="0" zPosition="5" />
+  <widget name="date" position="40,115" size="180,25" font="Bold; 22" halign="left" foregroundColor="une5b243" backgroundColor="black" transparent="1" zPosition="1" />
+  <widget name="timeline_text" position="20,115" size="1200,25" backgroundColor="black" transparent="0" />
+  <widget name="list" position="40,140" size="1200,480" transparent="0" backgroundColor="black" scrollbarMode="showNever" />
+  <widget name="timeline0" position="40,140" zPosition="2" size="2,480" pixmap="ViX_HD/timeline.png" />
+  <widget name="timeline1" position="40,140" zPosition="2" size="2,480" pixmap="ViX_HD/timeline.png" />
+  <widget name="timeline2" position="40,140" zPosition="2" size="2,480" pixmap="ViX_HD/timeline.png" />
+  <widget name="timeline3" position="40,140" zPosition="2" size="2,480" pixmap="ViX_HD/timeline.png" />
+  <widget name="timeline4" position="40,140" zPosition="2" size="2,480" pixmap="ViX_HD/timeline.png" />
+  <widget name="timeline5" position="40,140" zPosition="2" size="2,480" pixmap="ViX_HD/timeline.png" />
+  <widget name="timeline_now" position="40,140" zPosition="3" size="19,480" pixmap="ViX_HD/timeline-now.png" alphatest="on" />
+  <ePixmap pixmap="ViX_HD/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="ViX_HD/buttons/green.png" position="380,655" size="25,25" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="ViX_HD/buttons/yellow.png" position="670,655" size="25,25" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="ViX_HD/buttons/blue.png" position="960,655" size="25,25" alphatest="blend" transparent="1" />
+  <widget name="key_red" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+  <widget name="key_green" position="420,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+  <widget name="key_yellow" position="710,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+  <widget name="key_blue" position="1000,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+  <ePixmap pixmap="ViX_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
+</screen>
