@@ -157,8 +157,9 @@
 		<widget source="session.CurrentService" render="Label" position="44,8" size="520,30" font="Boldit; 30" valign="top" halign="left" noWrap="1" foregroundColor="un7255d" backgroundColor="infobar-bkgrnd" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="568,14" size="40,20" font="Bold; 17" backgroundColor="infobar-bkgrnd" foregroundColor="foreground" transparent="1" halign="center">
-			<convert type="SmartInfo">ExpertInfo_OrbPos</convert>
+		<widget source="session.CurrentService" render="Label" text="DVB-S" position="545,14" size="60,20" font="Bold; 17" backgroundColor="infobar-bkgrnd" foregroundColor="foreground" transparent="1" halign="center">
+			<convert type="ServiceOrbitalPosition">
+		</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Picon" position="44,90" size="100,60" transparent="0" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
