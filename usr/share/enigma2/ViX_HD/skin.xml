@@ -2303,16 +2303,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			</convert>
 		</widget>
 		<widget source="menu" render="Listbox" position="40,400" size="458,190" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (5,2), size = (448,300), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER|RT_WRAP, text = 2), # index 2 is the Description,
-					],
-				"fonts": [gFont("Regular",22)],
-				"itemHeight": 300
-				}
-			</convert>
+		    <convert type="TemplatedMultiContent">
+				      {"template": [
+						      MultiContentEntryText(pos = (0,0),size = (450,140),flags = RT_HALIGN_LEFT|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
+					      ],
+				      "fonts": [gFont("Regular",20)],
+				      "itemHeight": 140
+				      }
+		    </convert>
 		</widget>
-		<widget source="status" render="Label" position="10,600" size="503,25" font="Regular;20" halign="center" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
 		<widget source="key_red" render="Label" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
 	</screen>
@@ -2372,15 +2371,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="TemplatedMultiContent">
 			{"templates":
 				{"default": (51,[
-						MultiContentEntryText(pos = (5,1), size = (395,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (5,25), size = (395,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-						MultiContentEntryPixmapAlphaTest(pos = (400,0), size = (48,48), png = 5), # index 5 is the status pixmap
-						MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (458,2), png = 6), # index 6 is the div pixmap
+						MultiContentEntryText(pos = (5,1), size = (445,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+						MultiContentEntryText(pos = (5,25), size = (445,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+						MultiContentEntryPixmapAlphaTest(pos = (450,0), size = (48,48), png = 5), # index 5 is the status pixmap
+						MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (503,2), png = 6), # index 6 is the div pixmap
 					]),
 				"category": (40,[
-						MultiContentEntryText(pos = (5,0), size = (448,22), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (5,22), size = (448,16), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
-						MultiContentEntryPixmapAlphaTest(pos = (0,38), size = (458,2), png = 3), # index 3 is the div pixmap
+						MultiContentEntryText(pos = (5,0), size = (498,22), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+						MultiContentEntryText(pos = (5,22), size = (498,16), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
+						MultiContentEntryPixmapAlphaTest(pos = (0,38), size = (503,2), png = 3), # index 3 is the div pixmap
 					])
 				},
 				"fonts": [gFont("Regular",22),gFont("Regular",20),gFont("Regular",16)],
