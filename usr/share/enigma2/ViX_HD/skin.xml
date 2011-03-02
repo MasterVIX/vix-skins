@@ -3608,21 +3608,22 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			self["list"].instance.setItemHeight(25)
 		</applet>
 	</screen>
-	<screen name="VIXCronManager" position="center,center" size="740,340" title="Cron Manager">
-		<widget source="list" render="Listbox" position="0,0" size="740,300" scrollbarMode="showOnDemand">
+	<screen name="VIXCronManager" position="center,center" size="740,440" title="Cron Manager">
+		<widget source="list" render="Listbox" position="0,0" size="740,400" scrollbarMode="showOnDemand">
 			<convert type="StringList" />
 		</widget>
-		<ePixmap pixmap="ViX_HD/buttons/red.png" position="140,314" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="380,315" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="175,316" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="window-bg" />
-		<widget name="key_yellow" position="415,316" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="window-bg" />
+		<ePixmap pixmap="ViX_HD/buttons/red.png" position="200,414" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="410,415" size="24,24" alphatest="blend" transparent="1" />
+		<widget name="key_red" position="235,416" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="window-bg" />
+		<widget name="key_yellow" position="445,416" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="window-bg" />
 	</screen>
 	<screen name="VIXSetupCronConf" position="center,center" size="740,340" title="Cron Manager">
 		<widget name="config" position="0,0" size="740,300" scrollbarMode="showOnDemand" />
-		<ePixmap pixmap="ViX_HD/buttons/red.png" position="140,314" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="380,315" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="175,316" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="window-bg" />
-		<widget name="key_yellow" position="415,316" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="window-bg" />
+		<ePixmap pixmap="ViX_HD/buttons/red.png" position="200,314" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="410,314" size="24,24" alphatest="blend" transparent="1" />
+		<widget name="key_red" position="235,317" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="window-bg" />
+		<widget name="key_yellow" position="445,317" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="window-bg" />
+		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="450,380" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 	</screen>
 	<screen name="VIXOpenvpn" position="32,0" size="541,720" title="OpenVPN Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
