@@ -63,20 +63,6 @@
 			<pixmap filename="Magic/window/unten_rechts.png" pos="bpBottomRight"/>
 		</borderset>
 	</windowstyle>	
-	<windowstyle id="1" type="skinned">
-		<color color="#000000" name="Background"/>
-		<color color="#ffffff" name="LabelForeground"/>
-		<color color="#000000" name="ListboxBackground"/>
-		<color color="#ffffff" name="ListboxForeground"/>
-		<color color="#000000" name="ListboxSelectedBackground"/>
-		<color color="#ffffff" name="ListboxSelectedForeground"/>
-		<color color="#000000" name="ListboxMarkedBackground"/>
-		<color color="#ffffff" name="ListboxMarkedForeground"/>
-		<color color="#000000" name="ListboxMarkedAndSelectedBackground"/>
-		<color color="#ffffff" name="ListboxMarkedAndSelectedForeground"/>
-		<color color="#ffffff" name="WindowTitleForeground"/>
-		<color color="#000000" name="WindowTitleBackground"/>
-	</windowstyle>
 	<screen flags="wfNoBorder" name="Volume" position="238,50" size="244,28" title="Volume" zPosition="1">
 		<ePixmap alphatest="off" pixmap="Magic/infobar/volumeslider.png" position="0,0" size="244,28" zPosition="0"/>
 		<widget name="Volume" pixmap="Magic/infobar/volumeslider_bar.png" position="61,16" size="167,7" transparent="1" zPosition="1"/>
@@ -602,7 +588,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%1H:%M</convert>
 		</widget>
 		<widget font="Enigma;17" position="3,377" render="Label" size="555,62" source="ServiceEvent">
-			<convert type="EventName">ExtendedDescription</convert>
+			<convert type="EventName">FullDescription</convert>
 		</widget>
                 <widget font="Enigma;17" noWrap="1" position="370,353" render="Label" size="80,20" source="ServiceEvent">
                         <convert type="ServiceOrbitalPosition"></convert>
@@ -626,7 +612,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget backgroundColor="#266926" font="Enigma;18" halign="center" name="key_green" position="140,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
 		<widget backgroundColor="#8C5900" font="Enigma;18" halign="center" name="key_yellow" position="280,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
 		<widget backgroundColor="#254177" font="Enigma;18" halign="center" name="key_blue" position="420,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
-		<widget name="list" position="0,40" scrollbarMode="showOnDemand" size="560,376" zPosition="2"/>
+		<widget name="list" position="0,40" scrollbarMode="showOnDemand" size="560,285" zPosition="2"/>
         </screen>
 	<screen name="ServiceInfo" position="80,85" size="560,440" title="Serviceinfo">
 		<ePixmap alphatest="on" name="bg_red" pixmap="Magic/buttons/key-red.png" position="0,0" size="140,40" transparent="1" zPosition="1"/>
@@ -718,7 +704,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget font="Regular;18" foregroundColor="#cccccc" position="0,384" render="Label" size="620,76" source="Event" zPosition="1">
-			<convert type="EventName">ExtendedDescription</convert>
+			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
 	<screen name="EPGSelection" position="80,85" size="560,440" title="EPG Selection">
@@ -733,7 +719,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="list" position="5,38" scrollbarMode="showOnDemand" size="550,350"/>
 		<eLabel backgroundColor="darkgrey" position="0,389" size="560,2" zPosition="5"/>
 		<widget source="Event" render="Label" position="5,392" size="550,48" font="Enigma;18" foregroundColor="white">
-			<convert type="EventName">ExtendedDescription</convert>
+			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
 	<screen name="EventView" position="80,85" size="560,440" title="Eventview">
