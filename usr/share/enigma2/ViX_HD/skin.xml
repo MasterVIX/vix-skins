@@ -186,34 +186,39 @@
 		<widget source="session.FrontendStatus" render="Label" position="875,129" size="80,22" font="Bold; 18" foregroundColor="black" backgroundColor="infobar_sunken" transparent="1" noWrap="1">
 		<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<ePixmap pixmap="ViX_HD/icons/icon_rec_off.png" position="610,12" size="31,20" zPosition="0" alphatest="blend" />
-		<widget source="session.RecordState" render="Pixmap" pixmap="ViX_HD/icons/icon_rec.png" position="610,12" size="31,20" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX_HD/icons/icon_update_off.png" position="609,12" size="20,20" zPosition="0" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_update.png" position="609,12" size="20,20" zPosition="10" alphatest="blend">
+		<convert type="ServiceInfo">ImageUpdateAvailable</convert>
+		<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap pixmap="ViX_HD/icons/icon_rec_off.png" position="634,12" size="31,20" zPosition="0" alphatest="blend" />
+		<widget source="session.RecordState" render="Pixmap" pixmap="ViX_HD/icons/icon_rec.png" position="634,12" size="31,20" zPosition="1" alphatest="blend">
 		<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="ViX_HD/icons/ico_hd_off.png" position="647,11" size="29,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/ico_hd_on.png" position="647,11" size="29,20" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="ViX_HD/icons/ico_hd_off.png" position="667,11" size="29,20" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/ico_hd_on.png" position="667,11" size="29,20" zPosition="2" alphatest="blend">
 		<convert type="ServiceInfo">VideoWidth</convert>
 		<convert type="ValueRange">721,1980</convert>
 		<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="ViX_HD/icons/icon_dolby_off.png" position="686,14" zPosition="0" size="25,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_dolby.png" position="686,14" size="25,15" zPosition="1" alphatest="on">
+		<ePixmap pixmap="ViX_HD/icons/icon_format_off.png" position="700,14" zPosition="0" size="28,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_format.png" position="700,14" size="28,15" zPosition="1" alphatest="blend">
+		<convert type="ServiceInfo">IsWidescreen</convert>
+		<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap pixmap="ViX_HD/icons/icon_dolby_off.png" position="734,14" zPosition="0" size="25,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_dolby.png" position="734,14" size="25,15" zPosition="1" alphatest="on">
 		<convert type="ServiceInfo">IsMultichannel</convert>
 		<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="ViX_HD/icons/icon_crypt_off.png" position="720,14" zPosition="0" size="11,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_crypt.png" position="720,14" size="11,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX_HD/icons/icon_crypt_off.png" position="764,14" zPosition="0" size="11,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_crypt.png" position="764,14" size="11,15" zPosition="1" alphatest="blend">
 		<convert type="ServiceInfo">IsCrypted</convert>
 		<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="ViX_HD/icons/icon_txt_off.png" position="740,14" zPosition="0" size="18,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_txt.png" position="740,14" size="18,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX_HD/icons/icon_txt_off.png" position="780,14" zPosition="0" size="18,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_txt.png" position="780,14" size="18,15" zPosition="1" alphatest="blend">
 		<convert type="ServiceInfo">HasTelext</convert>
-		<convert type="ConditionalShowHide" />
-		</widget>
-		<ePixmap pixmap="ViX_HD/icons/icon_format_off.png" position="770,14" zPosition="0" size="28,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_format.png" position="770,14" size="28,15" zPosition="1" alphatest="blend">
-		<convert type="ServiceInfo">IsWidescreen</convert>
 		<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="176,95" size="70,24" font="Regular;22" foregroundColor="black" backgroundColor="infobar_sunken" transparent="1" noWrap="1">
