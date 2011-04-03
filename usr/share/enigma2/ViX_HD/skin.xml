@@ -536,6 +536,16 @@
 		<widget source="Tuner3" render="Label" position="30,458" size="458,28" font="Regular; 20" transparent="0" zPosition="1" />
 		<widget source="HDDHeader" render="Label" position="30,514" size="458,36" font="Regular; 20" transparent="0" zPosition="1" />
 		<widget source="hddA" render="Label" position="30,550" size="458,72" font="Regular; 18" transparent="0" zPosition="1" />
+		<ePixmap pixmap="ViX_HD/buttons/key_info.png" position="40,647" size="35,25" alphatest="blend" transparent="1" />
+	</screen>
+	<screen name="AboutReleaseNotes" position="32,0" size="541,720" title="Release Notes" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
+			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
+		</widget>
+		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
+		<eLabel text="Release Notes" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget name="list" font="Regular;15" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,133" size="503,490" />
 	</screen>
 	<screen name="AdapterSetup" position="32,0" size="541,720" title="Network Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
@@ -3557,6 +3567,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="lab3" position="40,455" size="170,20" font="Regular; 22" halign="right" zPosition="2" backgroundColor="window-bg" transparent="0" />
 		<widget name="list2" position="250,455" size="240,162" selectionDisabled="1" transparent="0" scrollbarMode="showOnDemand" />
 		<ePixmap pixmap="ViX_HD/buttons/key_menu.png" position="10,605" size="35,25" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/key_info.png" position="50,605" size="35,25" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="280,643" size="24,24" alphatest="blend" transparent="1" />
