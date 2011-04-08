@@ -8584,8 +8584,8 @@
       <convert type="ServiceOrbitalPosition">
       </convert>
     </widget>
-    <ePixmap pixmap="Magic-HD-Common/infobar/mac-software-update-icon1.png" position="60,35" size="20,20" zPosition="0" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_update.png" position="60,35" size="20,20" zPosition="10" alphatest="blend">
+    <ePixmap pixmap="Magic-HD-Common/icons/icon_update_off.png" position="60,35" size="20,20" zPosition="0" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_update.png" position="60,35" size="20,20" zPosition="10" alphatest="blend">
         <convert type="ServiceInfo">ImageUpdateAvailable</convert>
         <convert type="ConditionalShowHide" />
     </widget>
@@ -8605,8 +8605,8 @@
     <widget name="timeline3" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline4" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline5" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
-    <widget name="timeline_now" position="0,90" zPosition="2" size="19,480" pixmap="Magic-HD-Common/window/timeline-now.png" alphatest="on" />
-    <widget source="Event" render="Label" position="85,528" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="background" shadowColor="#000000" halign="right" transparent="1">
+    <widget name="timeline_now" position="0,90" zPosition="2" size="19,435" pixmap="Magic-HD-Common/window/timeline-now.png" alphatest="on" />
+    <widget source="Event" render="Label" position="70,528" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="background" shadowColor="#000000" halign="right" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
     </widget>
@@ -8617,7 +8617,7 @@
     <widget source="Event" render="Label" position="272,528" size="970,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="background" transparent="1" halign="left">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="Label" position="85,560" zPosition="1" size="1150,73" font="Regular;20" foregroundColor="foreground" backgroundColor="background" shadowColor="#000000" transparent="1">
+    <widget source="Event" render="Label" position="70,560" zPosition="1" size="1150,73" font="Regular;20" foregroundColor="foreground" backgroundColor="background" shadowColor="#000000" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="115,643" size="26,26" />
