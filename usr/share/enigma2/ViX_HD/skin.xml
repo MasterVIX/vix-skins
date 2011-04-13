@@ -157,9 +157,8 @@
 		<widget source="session.CurrentService" render="Label" position="44,8" size="520,30" font="Boldit; 30" valign="top" halign="left" noWrap="1" foregroundColor="un7255d" backgroundColor="infobar-bkgrnd" transparent="1">
 		<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" text="DVB-S" position="545,14" size="60,20" font="Bold; 17" backgroundColor="infobar-bkgrnd" foregroundColor="foreground" transparent="1" halign="center">
-		<convert type="ServiceOrbitalPosition">
-		</convert>
+		<widget source="session.CurrentService" render="Label" position="545,14" size="60,20" font="Bold; 17" backgroundColor="infobar-bkgrnd" foregroundColor="foreground" transparent="1" halign="center">
+		<convert type="ServiceOrbitalPosition" />
 		</widget>
 		<widget source="session.CurrentService" render="Picon" position="44,90" size="100,60" transparent="0" alphatest="blend">
 		<convert type="ServiceName">Reference</convert>
@@ -804,8 +803,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget source="global.CurrentTime" render="Label" position="898,61" zPosition="1" size="35,18" font="Regular; 17" valign="top" backgroundColor="infobar-bkgrnd" foregroundColor="black" transparent="1" noWrap="1">
 		<convert type="ClockToText">Format::%S</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="568,59" size="40,20" font="Bold; 17" backgroundColor="infobar-bkgrnd" foregroundColor="foreground" transparent="1" halign="center">
-		<convert type="pliExpertInfo">FrequencyInfo</convert>
+ 		<widget source="session.CurrentService" render="Label" position="568,59" size="40,20" font="Bold; 17" backgroundColor="infobar-bkgrnd" foregroundColor="foreground" transparent="1" halign="center"> 
+		<convert type="ServiceOrbitalPosition" />
 		</widget>
 		<widget source="Service" render="Label" position="44,50" size="540,30" font="Boldit; 30" valign="top" halign="left" noWrap="1" foregroundColor="un7255d" backgroundColor="infobar-bkgrnd" transparent="1" zPosition="10" >
 		<convert type="ServiceName">Name</convert>
@@ -814,38 +813,39 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget source="Service" render="Picon" position="44,90" size="100,60" transparent="1" zPosition="2" alphatest="blend">
 		<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/ico_hd_off.png" position="610,56" size="29,20" zPosition="1" alphatest="blend">
-		<convert type="ServiceInfo">VideoWidth</convert>
-		<convert type="ValueRange">0,720</convert>
+		<ePixmap pixmap="ViX_HD/icons/icon_update_off.png" position="609,56" size="20,20" zPosition="0" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_update.png" position="609,56" size="20,20" zPosition="10" alphatest="blend">
+		<convert type="ServiceInfo">ImageUpdateAvailable</convert>
 		<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/ico_hd_on.png" position="610,56" size="29,20" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="ViX_HD/icons/icon_rec_off.png" position="634,56" size="31,20" zPosition="0" alphatest="blend" />
+		<widget source="session.RecordState" render="Pixmap" pixmap="ViX_HD/icons/icon_rec.png" position="634,56" size="31,20" zPosition="1" alphatest="blend">
+		<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<ePixmap pixmap="ViX_HD/icons/ico_hd_off.png" position="667,55" size="29,20" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/ico_hd_on.png" position="667,55" size="29,20" zPosition="2" alphatest="blend">
 		<convert type="ServiceInfo">VideoWidth</convert>
 		<convert type="ValueRange">721,1980</convert>
 		<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="ViX_HD/icons/icon_rec_off.png" position="647,56" size="31,20" zPosition="0" alphatest="blend" />
-		<widget source="session.RecordState" render="Pixmap" pixmap="ViX_HD/icons/icon_rec.png" position="647,56" size="31,20" zPosition="1" alphatest="blend">
-		<convert type="ConditionalShowHide">Blink</convert>
+		<ePixmap pixmap="ViX_HD/icons/icon_format_off.png" position="700,58" zPosition="0" size="28,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_format.png" position="700,58" size="28,15" zPosition="1" alphatest="blend">
+		<convert type="ServiceInfo">IsWidescreen</convert>
+		<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="ViX_HD/icons/icon_dolby_off.png" position="686,58" zPosition="0" size="25,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_dolby.png" position="686,58" size="25,15" zPosition="1" alphatest="on">
+		<ePixmap pixmap="ViX_HD/icons/icon_dolby_off.png" position="734,58" zPosition="0" size="25,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_dolby.png" position="734,58" size="25,15" zPosition="1" alphatest="on">
 		<convert type="ServiceInfo">IsMultichannel</convert>
 		<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="ViX_HD/icons/icon_crypt_off.png" position="720,58" zPosition="0" size="11,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_crypt.png" position="720,58" size="11,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX_HD/icons/icon_crypt_off.png" position="764,58" zPosition="0" size="11,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_crypt.png" position="764,58" size="11,15" zPosition="1" alphatest="blend">
 		<convert type="ServiceInfo">IsCrypted</convert>
 		<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="ViX_HD/icons/icon_txt_off.png" position="740,58" zPosition="0" size="18,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_txt.png" position="740,58" size="18,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX_HD/icons/icon_txt_off.png" position="780,58" zPosition="0" size="18,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_txt.png" position="780,58" size="18,15" zPosition="1" alphatest="blend">
 		<convert type="ServiceInfo">HasTelext</convert>
-		<convert type="ConditionalShowHide" />
-		</widget>
-		<ePixmap pixmap="ViX_HD/icons/icon_format_off.png" position="770,58" zPosition="0" size="28,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_format.png" position="770,58" size="28,15" zPosition="1" alphatest="blend">
-		<convert type="ServiceInfo">IsWidescreen</convert>
 		<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap pixmap="ViX_HD/Statusbar_white.png" position="824,90" size="100,10" transparent="1" alphatest="on" />
