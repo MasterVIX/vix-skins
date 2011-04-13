@@ -805,14 +805,14 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<convert type="ClockToText">Format::%S</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="568,59" size="40,20" font="Bold; 17" backgroundColor="infobar-bkgrnd" foregroundColor="foreground" transparent="1" halign="center">
-		<convert type="SmartInfo">ExpertInfo_OrbPos</convert>
+		<convert type="pliExpertInfo">FrequencyInfo</convert>
 		</widget>
 		<widget source="Service" render="Label" position="44,50" size="540,30" font="Boldit; 30" valign="top" halign="left" noWrap="1" foregroundColor="un7255d" backgroundColor="infobar-bkgrnd" transparent="1" zPosition="10" >
 		<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget name="list" position="176,95" size="600,50" selectionPixmap="ViX_HD/buttons/FocusBar_H25x600.png" foregroundColor="black" backgroundColor="infobar_sunken" ListboxSelectedForeground="black" transparent="1" />
 		<widget source="Service" render="Picon" position="44,90" size="100,60" transparent="1" zPosition="2" alphatest="blend">
-		<convert type="ChannelSelectionExtraInfo">Reference</convert>
+		<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/ico_hd_off.png" position="610,56" size="29,20" zPosition="1" alphatest="blend">
 		<convert type="ServiceInfo">VideoWidth</convert>
