@@ -244,7 +244,7 @@
 		<convert type="ClockToText">InMinutes</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="400,43" size="390,36" font="Regular;17" backgroundColor="infobar-bkgrnd" foregroundColor="foreground" transparent="1" halign="right">
-		<convert type="SmartInfo">ExpertInfo</convert>
+		<convert type="pliExpertInfo">FrequencyInfo</convert>
 		</widget>
 		<widget name="ecmInfo" font="Regular;17" position="155,43" size="320,36" halign="left" zPosition="1" backgroundColor="infobar-bkgrnd" foregroundColor="foreground" transparent="1" noWrap="1" />
 		<widget name="irdeto" text="I" font="Regular;17" position="57,43" size="12,17" halign="center" foregroundColor="menu_title" backgroundColor="unaeaeae" zPosition="1" transparent="1" valign="center" noWrap="1" />
@@ -795,36 +795,6 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 	<screen name="UnhandledKey" flags="wfNoBorder" position="1110,50" size="98,88" title="UnhandledKey" zPosition="100" backgroundColor="transparent">
 		<widget name="UnhandledKeyPixmap" pixmap="ViX_HD/unhandled-key.png" position="0,0" size="98,88" alphatest="off" />
 	</screen>
-	<screen name="VIXSingleEPG" position="0,0" size="1280,720" title="Program Guide" backgroundColor="black" flags="wfNoBorder">
-		<ePixmap pixmap="ViX_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="-1" />
-		<ePixmap pixmap="ViX_HD/icons/ico_EPG_title.png" position="50,52" size="45,36" alphatest="blend" transparent="1" />
-		<widget source="Title" render="Label" position="105,57" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
-		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
-		<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
-		<convert type="ClockToText">Date</convert>
-		</widget>
-		<!--	<eLabel position="695,425" size="533,203" zPosition="0" backgroundColor="menu_title" />
-			<eLabel position="697,427" size="529,199" zPosition="1" backgroundColor="black" /> -->
-		<eLabel position="48,120" size="634,506" zPosition="0" backgroundColor="menu_title" />
-		<eLabel position="695,120" size="533,300" zPosition="2" backgroundColor="menu_title" />
-		<widget source="session.VideoPicture" render="Pig" position="697,122" size="529,296" zPosition="3" backgroundColor="unff000000" />
-		<widget name="currCh" position="695,430" size="533,25" zPosition="2" backgroundColor="black" font="Bold; 22" noWrap="1" transparent="0" valign="top" foregroundColor="unffb300" />
-		<widget name="epg_list" position="50,122" size="630,502" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD/buttons/FocusBar_H25x630.png" foregroundColor="window-fg" backgroundColor="black" transparent="0" />
-		<widget source="Event" render="Label" position="695,465" size="533,160" font="Regular; 20" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
-		<convert type="EventName">FullDescription</convert>
-		</widget>
-		<ePixmap pixmap="ViX_HD/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/green.png" position="380,655" size="25,25" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="670,655" size="25,25" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/blue.png" position="960,655" size="25,25" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<widget name="key_green" position="420,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<widget name="key_yellow" position="710,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<widget name="key_blue" position="1000,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<ePixmap pixmap="ViX_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
-	</screen>
 	<screen name="QuickEPG" flags="wfNoBorder" position="150,476" size="980,200" title="InfoBar" backgroundColor="transparent">
 		<ePixmap position="0,0" zPosition="-1" size="980,200" pixmap="ViX_HD/info-bg-small.png" />
 		<ePixmap pixmap="ViX_HD/icons/clock.png" position="820,55" zPosition="1" size="20,20" alphatest="blend" />
@@ -837,9 +807,11 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget source="session.CurrentService" render="Label" position="568,59" size="40,20" font="Bold; 17" backgroundColor="infobar-bkgrnd" foregroundColor="foreground" transparent="1" halign="center">
 		<convert type="SmartInfo">ExpertInfo_OrbPos</convert>
 		</widget>
-		<widget name="currCh" position="44,50" size="540,30" font="Boldit; 30" valign="top" halign="left" noWrap="1" foregroundColor="un7255d" backgroundColor="infobar-bkgrnd" transparent="1" zPosition="10" />
-		<widget name="epg_list" position="176,95" size="600,50" selectionPixmap="ViX_HD/buttons/FocusBar_H25x600.png" foregroundColor="black" backgroundColor="infobar_sunken" ListboxSelectedForeground="black" transparent="1" />
-		<widget source="ServiceEvent" render="Picon" position="44,90" size="100,60" transparent="1" zPosition="2" alphatest="blend">
+		<widget source="Service" render="Label" position="44,50" size="540,30" font="Boldit; 30" valign="top" halign="left" noWrap="1" foregroundColor="un7255d" backgroundColor="infobar-bkgrnd" transparent="1" zPosition="10" >
+		<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget name="list" position="176,95" size="600,50" selectionPixmap="ViX_HD/buttons/FocusBar_H25x600.png" foregroundColor="black" backgroundColor="infobar_sunken" ListboxSelectedForeground="black" transparent="1" />
+		<widget source="Service" render="Picon" position="44,90" size="100,60" transparent="1" zPosition="2" alphatest="blend">
 		<convert type="ChannelSelectionExtraInfo">Reference</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/ico_hd_off.png" position="610,56" size="29,20" zPosition="1" alphatest="blend">
