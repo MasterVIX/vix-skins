@@ -927,7 +927,10 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<eLabel position="48,120" size="634,506" zPosition="0" backgroundColor="menu_title" />
 		<eLabel position="695,120" size="533,300" zPosition="2" backgroundColor="menu_title" />
 		<widget source="session.VideoPicture" render="Pig" position="697,122" size="529,296" zPosition="3" backgroundColor="unff000000" />
-		<widget source="Service" render="Label" position="695,430" size="533,25" zPosition="2" backgroundColor="black" font="Bold; 22" noWrap="1" transparent="0" valign="top" foregroundColor="unffb300">
+		<widget source="Service" render="Picon" position="1165,427" size="58,35" transparent="1" zPosition="5" backgroundColor="menu_title" alphatest="on">
+		<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget source="Service" render="Label" position="695,430" size="400,25" zPosition="2" backgroundColor="black" font="Bold; 22" noWrap="1" transparent="0" valign="top" foregroundColor="unffb300">
 		<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget name="list" position="50,122" size="630,502" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD/buttons/FocusBar_H25x630.png" foregroundColor="window-fg" backgroundColor="black" transparent="0" />
