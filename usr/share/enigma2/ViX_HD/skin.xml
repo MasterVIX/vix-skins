@@ -1048,6 +1048,20 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<ePixmap pixmap="ViX_HD/buttons/blue.png" position="700,213" size="25,25" alphatest="blend" />
 		<widget name="key_blue" position="740,217" zPosition="1" size="130,20" font="Regular;20" foregroundColor="foreground" backgroundColor="infobar_collab_back" transparent="1" valign="top" />
 	</screen>
+	<screen name="EventViewSimple" position="center,426" size="980,250" title="Programme Info" backgroundColor="transparent" flags="wfNoBorder">
+		<ePixmap position="0,0" zPosition="-1" size="980,250" pixmap="ViX_HD/event-info-bg.png" />
+		<widget name="channel" position="50,8" size="400,30" font="Boldit; 30" valign="center" halign="left" noWrap="1" foregroundColor="un7255d" backgroundColor="infobar-bkgrnd" transparent="1" />
+		<ePixmap pixmap="ViX_HD/icons/clock.png" position="820,12" zPosition="1" size="20,20" alphatest="blend" />
+		<widget source="global.CurrentTime" render="Label" position="838,14" zPosition="1" size="59,20" font="Regular; 21" foregroundColor="black" halign="right" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="898,17" zPosition="1" size="35,18" font="Regular; 17" valign="top" backgroundColor="infobar-bkgrnd" foregroundColor="black" transparent="1" noWrap="1">
+			<convert type="ClockToText">Format::%S</convert>
+		</widget>
+		<widget name="datetime" position="510,16" size="150,22" font="Regular;22" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="left" foregroundColor="black" />
+		<widget name="duration" position="660,16" size="150,22" font="Regular;22" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="left" foregroundColor="black" />
+		<widget name="epg_description" position="54,50" size="870,150" font="Regular; 22" backgroundColor="infobar_sunken" transparent="1" foregroundColor="black" />
+	</screen>
 	<screen name="VIXEPGSetup" position="32,0" size="541,720" title="Program Guide Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
