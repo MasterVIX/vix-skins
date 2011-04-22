@@ -112,14 +112,14 @@
 		<color name="WindowTitleForeground" color="foreground" />
 		<color name="WindowTitleBackground" color="un13919191" />
 		<borderset name="bsWindow">
-		<pixmap pos="bpTopLeft" filename="ViX_HD/b_tl.png" />
-		<pixmap pos="bpTop" filename="ViX_HD/b_t.png" />
-		<pixmap pos="bpTopRight" filename="ViX_HD/b_tr.png" />
-		<pixmap pos="bpLeft" filename="ViX_HD/b_l.png" />
-		<pixmap pos="bpRight" filename="ViX_HD/b_r.png" />
-		<pixmap pos="bpBottomLeft" filename="ViX_HD/b_bl.png" />
-		<pixmap pos="bpBottom" filename="ViX_HD/b_b.png" />
-		<pixmap pos="bpBottomRight" filename="ViX_HD/b_br.png" />
+			<pixmap pos="bpTopLeft" filename="ViX_HD/b_tl.png" />
+			<pixmap pos="bpTop" filename="ViX_HD/b_t.png" />
+			<pixmap pos="bpTopRight" filename="ViX_HD/b_tr.png" />
+			<pixmap pos="bpLeft" filename="ViX_HD/b_l.png" />
+			<pixmap pos="bpRight" filename="ViX_HD/b_r.png" />
+			<pixmap pos="bpBottomLeft" filename="ViX_HD/b_bl.png" />
+			<pixmap pos="bpBottom" filename="ViX_HD/b_b.png" />
+			<pixmap pos="bpBottomRight" filename="ViX_HD/b_br.png" />
 		</borderset>
 	</windowstyle>
 	<windowstyle type="skinned" id="1">
@@ -312,75 +312,73 @@
 		<ePixmap pixmap="ViX_HD/buttons/blue.png" position="630,160" size="25,25" alphatest="blend" />
 		<widget name="key_blue" position="670,164" zPosition="1" size="130,20" font="Regular; 20" foregroundColor="foreground" backgroundColor="infobar_collab_back" transparent="1" />
 	</screen>
-	<screen name="MoviePlayer" flags="wfNoBorder" position="center,516" size="850,160" title="InfoBar" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-1" size="850,160" pixmap="ViX_HD/Bg_Media_info.png" />
-		<ePixmap pixmap="ViX_HD/icons/clock.png" position="690,13" zPosition="1" size="20,20" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Label" position="708,14" zPosition="1" size="59,20" font="Regular; 21" foregroundColor="foreground" halign="right" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top">
+	<screen name="MoviePlayer" flags="wfNoBorder" position="center,486" size="750,190" title="InfoBar" backgroundColor="transparent">
+		<ePixmap position="0,0" zPosition="-1" size="750,190" pixmap="ViX_HD/Bg_Media_info.png" />
+		<ePixmap pixmap="ViX_HD/icons/clock.png" position="580,13" zPosition="1" size="20,20" alphatest="blend" />
+		<widget source="global.CurrentTime" render="Label" position="598,14" zPosition="1" size="59,20" font="Regular; 21" foregroundColor="foreground" halign="right" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="768,18" zPosition="1" size="35,18" font="Regular; 17" valign="top" backgroundColor="infobar-bkgrnd" foregroundColor="foreground" transparent="1" noWrap="1">
+		<widget source="global.CurrentTime" render="Label" position="658,18" zPosition="1" size="35,18" font="Regular; 17" valign="top" backgroundColor="infobar-bkgrnd" foregroundColor="foreground" transparent="1" noWrap="1">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
-		<ePixmap pixmap="ViX_HD/icons/icon_update_off.png" position="479,16" size="20,20" zPosition="0" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_update.png" position="479,16" size="20,20" zPosition="10" alphatest="blend">
+		<ePixmap pixmap="ViX_HD/icons/icon_update_off.png" position="504,46" size="20,20" zPosition="0" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_update.png" position="504,46" size="20,20" zPosition="10" alphatest="blend">
 			<convert type="ServiceInfo">ImageUpdateAvailable</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="ViX_HD/icons/icon_rec_off.png" position="504,16" size="31,20" zPosition="0" alphatest="blend" />
-		<widget source="session.RecordState" render="Pixmap" pixmap="ViX_HD/icons/icon_rec.png" position="504,16" size="31,20" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX_HD/icons/icon_rec_off.png" position="529,46" size="31,20" zPosition="0" alphatest="blend" />
+		<widget source="session.RecordState" render="Pixmap" pixmap="ViX_HD/icons/icon_rec.png" position="529,46" size="31,20" zPosition="1" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="ViX_HD/icons/ico_hd_off.png" position="537,15" size="29,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/ico_hd_on.png" position="537,15" size="29,20" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="ViX_HD/icons/ico_hd_off.png" position="562,45" size="29,20" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/ico_hd_on.png" position="562,45" size="29,20" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="ViX_HD/icons/icon_format_off.png" position="570,18" zPosition="0" size="28,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_format.png" position="570,18" size="28,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX_HD/icons/icon_format_off.png" position="595,48" zPosition="0" size="28,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_format.png" position="595,48" size="28,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="ViX_HD/icons/icon_dolby_off.png" position="604,18" zPosition="0" size="25,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_dolby.png" position="604,18" size="25,15" zPosition="1" alphatest="on">
+		<ePixmap pixmap="ViX_HD/icons/icon_dolby_off.png" position="629,48" zPosition="0" size="25,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_dolby.png" position="629,48" size="25,15" zPosition="1" alphatest="on">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="ViX_HD/icons/icon_crypt_off.png" position="634,18" zPosition="0" size="11,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_crypt.png" position="634,18" size="11,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX_HD/icons/icon_crypt_off.png" position="659,48" zPosition="0" size="11,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_crypt.png" position="659,48" size="11,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="ViX_HD/icons/icon_txt_off.png" position="650,18" zPosition="0" size="18,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_txt.png" position="650,18" size="18,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX_HD/icons/icon_txt_off.png" position="675,48" zPosition="0" size="18,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_txt.png" position="675,48" size="18,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="55,13" size="430,30" font="Boldit; 30" foregroundColor="un240256" backgroundColor="infobar-bkgrnd" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="45,43" size="450,30" font="Boldit; 30" foregroundColor="un240256" backgroundColor="infobar-bkgrnd" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="620,50" size="95,24" font="Regular; 18" halign="right" backgroundColor="infobar_sunken" transparent="1" foregroundColor="un2c2c2c">
+		<widget source="session.CurrentService" render="Label" position="560,80" size="95,24" font="Regular; 18" halign="right" backgroundColor="infobar_sunken" transparent="1" foregroundColor="un2c2c2c">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="150,90" size="100,24" font="Italic;18" halign="left" valign="center" foregroundColor="un3d0e82" backgroundColor="infobar_sunken" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="90,120" size="100,24" font="Italic;18" halign="left" valign="center" foregroundColor="un3d0e82" backgroundColor="infobar_sunken" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<ePixmap position="150,70" size="563,18" pixmap="ViX_HD/icons/Mediaplayerbar_gray.png" alphatest="blend" />
-		<ePixmap position="145,70" size="5,18" pixmap="ViX_HD/icons/Mediaplayerbar_purple.png" alphatest="blend" />
-		<widget source="session.CurrentService" render="PositionGauge" position="149,63" size="563,25" zPosition="2" pointer="ViX_HD/icons/Mediaplayerbar_purple.png:563,0" transparent="1">
+		<ePixmap position="90,100" size="563,18" pixmap="ViX_HD/icons/Mediaplayerbar_gray.png" alphatest="blend" />
+		<ePixmap position="85,100" size="5,18" pixmap="ViX_HD/icons/Mediaplayerbar_purple.png" alphatest="blend" />
+		<widget source="session.CurrentService" render="PositionGauge" position="89,93" size="563,25" zPosition="2" pointer="ViX_HD/icons/Mediaplayerbar_purple.png:563,0" transparent="1">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="620,90" size="95,20" font="Regular; 18" halign="right" valign="center" foregroundColor="foreground" backgroundColor="infobar_sunken" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="560,120" size="95,20" font="Regular; 18" halign="right" valign="center" foregroundColor="foreground" backgroundColor="infobar_sunken" transparent="1">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
-		<ePixmap pixmap="ViX_HD/buttons/red.png" position="60,120" size="25,25" alphatest="blend" />
-		<widget name="key_red" position="100,124" zPosition="1" size="130,20" font="Regular; 20" foregroundColor="foreground" backgroundColor="infobar_collab_back" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/green.png" position="250,120" size="25,25" alphatest="blend" />
-		<widget name="key_green" position="290,124" zPosition="1" size="130,20" font="Regular; 20" foregroundColor="foreground" backgroundColor="infobar_collab_back" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="440,120" size="25,25" alphatest="blend" />
-		<widget name="key_yellow" position="480,124" zPosition="1" size="130,20" font="Regular; 20" foregroundColor="foreground" backgroundColor="infobar_collab_back" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/blue.png" position="630,120" size="25,25" alphatest="blend" />
-		<widget name="key_blue" position="670,124" zPosition="1" size="130,20" font="Regular; 20" foregroundColor="foreground" backgroundColor="infobar_collab_back" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/green.png" position="90,150" size="25,25" alphatest="blend" />
+		<widget name="key_green" position="130,154" zPosition="1" size="130,20" font="Regular; 20" foregroundColor="foreground" backgroundColor="infobar_collab_back" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="290,150" size="25,25" alphatest="blend" />
+		<widget name="key_yellow" position="330,154" zPosition="1" size="130,20" font="Regular; 20" foregroundColor="foreground" backgroundColor="infobar_collab_back" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/blue.png" position="490,150" size="25,25" alphatest="blend" />
+		<widget name="key_blue" position="520,154" zPosition="1" size="130,20" font="Regular; 20" foregroundColor="foreground" backgroundColor="infobar_collab_back" transparent="1" />
 	</screen>
 	<screen name="MediaPlayer" position="213,48" size="858,660" title="MediaPlayer" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap position="0,0" zPosition="-1" size="858,450" pixmap="ViX_HD/Bg_MediaPlayer_Info.png" />
@@ -402,7 +400,7 @@
 		<widget name="genretext" position="574,515" size="74,22" font="Regular; 20" valign="top" foregroundColor="black" backgroundColor="infobar_sunken" transparent="1" />
 		<widget name="genre" position="649,515" size="150,22" font="Regular; 20" valign="top" foregroundColor="black" backgroundColor="infobar_sunken" transparent="1" />
 		<widget name="coverArt" pixmap="ViX_HD/no_coverArt.png" position="50,514" size="102,102" transparent="1" alphatest="blend" />
-		<!--		<widget name="PositionGauge" position="120,493" size="500,10" pointer="ViX_HD/position_pointer.png:660,0" seek_pointer="ViX_HD/position_pointer.png:660,0" transparent="1" />-->
+		<!--<widget name="PositionGauge" position="120,493" size="500,10" pointer="ViX_HD/position_pointer.png:660,0" seek_pointer="ViX_HD/position_pointer.png:660,0" transparent="1" />-->
 		<ePixmap pixmap="ViX_HD/icons/Mediaplayerbar_gray.png" zPosition="2" position="192,575" size="563,18" alphatest="blend" />
 		<widget name="PositionGauge" zPosition="3" position="192,573" size="563,18" pointer="ViX_HD/icons/Mediaplayerbar_purple.png:563,0" seek_pointer="ViX_HD/icons/Mediaplayerbar_purple.png:563,0" transparent="1" />
 		<widget source="session.CurrentService" render="Label" position="175,594" size="120,18" foregroundColor="un3d0e82" font="Italic;18" halign="right" valign="center" backgroundColor="infobar_sunken" transparent="1">
@@ -563,7 +561,7 @@
 	<screen name="AboutReleaseNotes" position="32,0" size="541,720" title="Release Notes" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
-				<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
+			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
 		<eLabel text="Release Notes" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
@@ -639,26 +637,26 @@
 		</widget>
 		<widget source="streams" render="Listbox" position="10,258" size="503,200" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{"templates":
-						{"default": (25, [ 
-							MultiContentEntryText(pos = (0, 1),	 size = (35, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 1), # key,
-							MultiContentEntryText(pos = (40, 1),	size = (30, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 2), # number,
-							MultiContentEntryText(pos = (80, 1), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 3), # description,
-							MultiContentEntryText(pos = (220, 1), size = (180, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 4), # language,
-							MultiContentEntryText(pos = (408, 5), size = (65, 25),	font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
-						], True, "showNever"),
-						"notselected": (25, [ 
-							MultiContentEntryText(pos = (0, 1),	 size = (35, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 1), # key,
-							MultiContentEntryText(pos = (40, 1),	size = (30, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 2), # number,
-							MultiContentEntryText(pos = (80, 1), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 3), # description,
-							MultiContentEntryText(pos = (220, 1), size = (180, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 4), # language,
-							MultiContentEntryText(pos = (408, 5), size = (65, 25),	font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
-						], False, "showNever")
-						},
-					"fonts": [gFont("Regular", 20), gFont("Regular", 16)],
-					"itemHeight": 25
-					}
-				</convert>
+				{"templates":
+				{"default": (25, [ 
+				MultiContentEntryText(pos = (0, 1),	 size = (35, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 1), # key,
+				MultiContentEntryText(pos = (40, 1),	size = (30, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 2), # number,
+				MultiContentEntryText(pos = (80, 1), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 3), # description,
+				MultiContentEntryText(pos = (220, 1), size = (180, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 4), # language,
+				MultiContentEntryText(pos = (408, 5), size = (65, 25),	font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+				], True, "showNever"),
+				"notselected": (25, [ 
+				MultiContentEntryText(pos = (0, 1),	 size = (35, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 1), # key,
+				MultiContentEntryText(pos = (40, 1),	size = (30, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 2), # number,
+				MultiContentEntryText(pos = (80, 1), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 3), # description,
+				MultiContentEntryText(pos = (220, 1), size = (180, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 4), # language,
+				MultiContentEntryText(pos = (408, 5), size = (65, 25),	font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+				], False, "showNever")
+				},
+				"fonts": [gFont("Regular", 20), gFont("Regular", 16)],
+				"itemHeight": 25
+				}
+			</convert>
 		</widget>
 	</screen>
 	<screen name="BouquetSelector" position="32,0" size="541,720" title="Choose Bouquet" flags="wfNoBorder" backgroundColor="transparent">
@@ -683,15 +681,15 @@
 		<ePixmap pixmap="ViX_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="-1" />
 		<ePixmap pixmap="ViX_HD/icons/ico_Chlist_title.png" position="50,52" size="38,34" alphatest="blend" transparent="1" />
 		<widget source="Title" render="Label" position="105,57" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
-		<!--		<widget name="etitle" position="95,43" size="450,32" font="Boldit;32" halign="left" foregroundColor="#5d5d5d" backgroundColor="#27d8dee2" transparent="1" />-->
+		<!--<widget name="etitle" position="95,43" size="450,32" font="Boldit;32" halign="left" foregroundColor="#5d5d5d" backgroundColor="#27d8dee2" transparent="1" />-->
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<!--	<eLabel position="695,425" size="533,203" zPosition="0" backgroundColor="menu_title" />
-		<eLabel position="697,427" size="529,199" zPosition="1" backgroundColor="black" /> -->
+		<!--<eLabel position="695,425" size="533,203" zPosition="0" backgroundColor="menu_title" />-->
+		<!--<eLabel position="697,427" size="529,199" zPosition="1" backgroundColor="black" />-->
 		<eLabel position="48,120" size="634,508" zPosition="0" backgroundColor="menu_title" />
 		<eLabel position="695,120" size="533,300" zPosition="2" backgroundColor="menu_title" foregroundColor="window-bg" />
 		<widget source="session.VideoPicture" render="Pig" position="697,122" size="529,296" zPosition="3" backgroundColor="unff000000" />
@@ -701,8 +699,7 @@
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="1005,430" zPosition="2" size="60,25" font="Bold; 22" backgroundColor="black" transparent="0" halign="right" noWrap="1" valign="top" foregroundColor="unffb300">
 			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">
-		</convert>
+			<convert type="ClockToText"></convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="1070,430" zPosition="2" size="73,25" font="Bold; 22" backgroundColor="black" transparent="0" noWrap="1" valign="top" foregroundColor="unffb300">
 			<convert type="EventTime">EndTime</convert>
@@ -965,8 +962,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<!--	<eLabel position="695,425" size="533,203" zPosition="0" backgroundColor="menu_title" />
-		<eLabel position="697,427" size="529,199" zPosition="1" backgroundColor="black" /> -->
+		<!--<eLabel position="695,425" size="533,203" zPosition="0" backgroundColor="menu_title" /> -->
+		<!--<eLabel position="697,427" size="529,199" zPosition="1" backgroundColor="black" /> -->
 		<eLabel position="48,120" size="634,506" zPosition="0" backgroundColor="menu_title" />
 		<eLabel position="695,120" size="533,300" zPosition="2" backgroundColor="menu_title" />
 		<widget source="session.VideoPicture" render="Pig" position="697,122" size="529,296" zPosition="3" backgroundColor="unff000000" />
@@ -1001,8 +998,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<eLabel position="48,163" size="634,479" zPosition="0" backgroundColor="menu_title" />
-		<!--	<eLabel position="695,425" size="533,217" zPosition="0" backgroundColor="menu_title" />
-			<eLabel position="697,427" size="529,213" zPosition="1" backgroundColor="black" /> -->
+		<!--<eLabel position="695,425" size="533,217" zPosition="0" backgroundColor="menu_title" />-->
+		<!--<eLabel position="697,427" size="529,213" zPosition="1" backgroundColor="black" /> -->
 		<eLabel position="695,120" size="533,300" zPosition="2" backgroundColor="menu_title" foregroundColor="window-bg" />
 		<widget source="session.VideoPicture" render="Pig" position="697,122" size="529,296" zPosition="3" backgroundColor="unff000000" />
 		<widget source="Service" render="Label" position="695,430" size="533,25" zPosition="2" font="Bold; 22" backgroundColor="black" transparent="0" foregroundColor="unffb300" noWrap="1" valign="top">
@@ -1029,19 +1026,19 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="key_blue" position="1000,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
 		<ePixmap pixmap="ViX_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
-	<screen name="EventView" position="center,432" size="990,250" title="Programme Info" backgroundColor="transparent" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-1" size="990,250" pixmap="ViX_HD/event-info-bg.png" />
+	<screen name="EventView" position="center,426" size="980,250" title="Programme Info" backgroundColor="transparent" flags="wfNoBorder">
+		<ePixmap position="0,0" zPosition="-1" size="980,250" pixmap="ViX_HD/event-info-bg.png" />
 		<widget name="channel" position="50,8" size="400,30" font="Boldit; 30" valign="center" halign="left" noWrap="1" foregroundColor="un7255d" backgroundColor="infobar-bkgrnd" transparent="1" />
-		<ePixmap pixmap="ViX_HD/icons/clock.png" position="830,12" zPosition="1" size="20,20" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Label" position="848,14" zPosition="1" size="59,20" font="Regular; 21" foregroundColor="black" halign="right" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top">
+		<ePixmap pixmap="ViX_HD/icons/clock.png" position="820,12" zPosition="1" size="20,20" alphatest="blend" />
+		<widget source="global.CurrentTime" render="Label" position="838,14" zPosition="1" size="59,20" font="Regular; 21" foregroundColor="black" halign="right" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="908,17" zPosition="1" size="35,18" font="Regular; 17" valign="top" backgroundColor="infobar-bkgrnd" foregroundColor="black" transparent="1" noWrap="1">
+		<widget source="global.CurrentTime" render="Label" position="898,17" zPosition="1" size="35,18" font="Regular; 17" valign="top" backgroundColor="infobar-bkgrnd" foregroundColor="black" transparent="1" noWrap="1">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
-		<widget name="datetime" position="520,16" size="150,22" font="Regular;22" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="left" foregroundColor="black" />
-		<widget name="duration" position="670,16" size="150,22" font="Regular;22" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="left" foregroundColor="black" />
-		<widget name="epg_description" position="54,50" size="880,150" font="Regular; 22" backgroundColor="infobar_sunken" transparent="1" foregroundColor="black" />
+		<widget name="datetime" position="510,16" size="150,22" font="Regular;22" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="left" foregroundColor="black" />
+		<widget name="duration" position="660,16" size="150,22" font="Regular;22" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="left" foregroundColor="black" />
+		<widget name="epg_description" position="54,50" size="870,150" font="Regular; 22" backgroundColor="infobar_sunken" transparent="1" foregroundColor="black" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="100,213" size="25,25" alphatest="blend" zPosition="3" />
 		<widget name="key_red" position="140,217" zPosition="1" size="130,20" font="Regular;20" foregroundColor="foreground" backgroundColor="infobar_collab_back" transparent="1" valign="top" />
 		<ePixmap pixmap="ViX_HD/buttons/green.png" position="300,213" size="25,25" alphatest="blend" />
@@ -1146,14 +1143,14 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<eLabel text="Language Selection" position="10,80" size="361,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="languages" render="Listbox" position="10,133" size="503,495" selectionPixmap="ViX_HD/buttons/FocusBar_H45x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryText(pos = (100,11), size = (360,20), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
-							MultiContentEntryPixmap(pos = (30,6), size = (45,30), png = 2), # index 2 is the pixmap
-						],
-					"fonts": [gFont("Regular",20)],
-					"itemHeight": 45
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryText(pos = (100,11), size = (360,20), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
+				MultiContentEntryPixmap(pos = (30,6), size = (45,30), png = 2), # index 2 is the pixmap
+				],
+				"fonts": [gFont("Regular",20)],
+				"itemHeight": 45
+				}
+			</convert>
 		</widget>
 	</screen>
 	<screen name="LocationBox" position="32,0" size="541,720" title="Language Selection" flags="wfNoBorder" backgroundColor="transparent">
@@ -1184,11 +1181,11 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<eLabel text="Main Menu" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="menu" render="Listbox" position="10,133" size="503,495" selectionPixmap="ViX_HD/buttons/FocusBar_H45x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{"template": [	MultiContentEntryText(pos = (20,8), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
-					"fonts": [gFont("Regular",30)],
-					"itemHeight": 45
-					}
-				</convert>
+				{"template": [	MultiContentEntryText(pos = (20,8), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
+				"fonts": [gFont("Regular",30)],
+				"itemHeight": 45
+				}
+			</convert>
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="ViX_HD/menu/ico_menu_DVD.png" position="427,30" size="88,88" alphatest="blend">
 			<convert type="MenuEntryCompare">dvd_player</convert>
@@ -1240,11 +1237,11 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_Info.png" position="427,30" size="88,88" alphatest="blend" transparent="1" />
 		<widget source="menu" render="Listbox" position="10,133" size="503,495" selectionPixmap="ViX_HD/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
-					"fonts": [gFont("Regular",28)],
-					"itemHeight": 38
-					}
-				</convert>
+				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
+				"fonts": [gFont("Regular",28)],
+				"itemHeight": 38
+				}
+			</convert>
 		</widget>
 	</screen>
 	<screen name="menu_shutdown" position="32,0" size="541,720" title="Shutdown" flags="wfNoBorder" backgroundColor="transparent">
@@ -1256,11 +1253,11 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_Standby.png" position="427,30" size="88,88" alphatest="blend" transparent="1" />
 		<widget source="menu" render="Listbox" position="10,133" size="503,495" selectionPixmap="ViX_HD/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
-					"fonts": [gFont("Regular",28)],
-					"itemHeight": 38
-					}
-				</convert>
+				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
+				"fonts": [gFont("Regular",28)],
+				"itemHeight": 38
+				}
+			</convert>
 		</widget>
 	</screen>
 	<screen name="menu_system" position="32,0" size="541,720" title="System" flags="wfNoBorder" backgroundColor="transparent">
@@ -1272,11 +1269,11 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget source="title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="menu" render="Listbox" position="10,133" size="503,495" selectionPixmap="ViX_HD/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
-					"fonts": [gFont("Regular",28)],
-					"itemHeight": 38
-					}
-				</convert>
+				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
+				"fonts": [gFont("Regular",28)],
+				"itemHeight": 38
+				}
+			</convert>
 		</widget>
 	</screen>
 	<screen name="Menu" position="32,0" size="541,720" title="Main Menu" flags="wfNoBorder" backgroundColor="transparent">
@@ -1288,11 +1285,11 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget source="title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="menu" render="Listbox" position="10,133" size="503,495" selectionPixmap="ViX_HD/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
-					"fonts": [gFont("Regular",28)],
-					"itemHeight": 38
-					}
-				</convert>
+				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
+				"fonts": [gFont("Regular",28)],
+				"itemHeight": 38
+				}
+			</convert>
 		</widget>
 	</screen>
 	<screen name="MessageBox" position="center,center" size="600,10" title="Message">
@@ -1376,9 +1373,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>
 		</widget>
-		<!--	<widget source="Service" render="Label" position="20,510" size="310,20" font="Regular; 19" zPosition="1" halign="left" transparent="1" backgroundColor="window-bg" foregroundColor="window-fg">
-				<convert type="ServiceTime">StartTime</convert>
-				<convert type="ClockToText">Date</convert>
+		<!--<widget source="Service" render="Label" position="20,510" size="310,20" font="Regular; 19" zPosition="1" halign="left" transparent="1" backgroundColor="window-bg" foregroundColor="window-fg">
+		<convert type="ServiceTime">StartTime</convert>
+		<convert type="ClockToText">Date</convert>
 		</widget> -->
 		<widget name="freeDiskSpace" position="695,608" size="533,20" font="Regular; 18" backgroundColor="window-sel-fg" valign="center" halign="right" transparent="1" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
@@ -1420,17 +1417,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="list" position="10,133" size="503,250" itemHeight="30" zPosition="3" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="ViX_HD/buttons/FocusBar_H30x503.png" />
 		<widget source="list" render="Listbox" selectionPixmap="ViX_HD/buttons/FocusBar_H70x503.png" position="10,133" size="503,250" zPosition="10" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-			<!--	iface,name, description, interfacepng, defaultpng, activepng, divpng	-->
-					{"template": [
-							MultiContentEntryText(pos = (85, 8), size = (440, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is the interfacename
-							MultiContentEntryText(pos = (85, 43), size = (440, 25), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text = 2), # index 2 is the description
-							MultiContentEntryPixmapAlphaTest(pos = (2, 8), size = (54, 54), png = 3), # index 3 is the interface pixmap
-							MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # index 4 is the default pixmap
-						],
-					"fonts": [gFont("Regular", 28),gFont("Regular", 20)],
-					"itemHeight": 70
-					}
-				</convert>
+				<!--iface,name, description, interfacepng, defaultpng, activepng, divpng-->
+				{"template": [
+				MultiContentEntryText(pos = (85, 8), size = (440, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is the interfacename
+				MultiContentEntryText(pos = (85, 43), size = (440, 25), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text = 2), # index 2 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (2, 8), size = (54, 54), png = 3), # index 3 is the interface pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # index 4 is the default pixmap
+				],
+				"fonts": [gFont("Regular", 28),gFont("Regular", 20)],
+				"itemHeight": 70
+				}
+			</convert>
 		</widget>
 		<ePixmap pixmap="skin_default/div-h.png" position="10,585" zPosition="1" size="503,2" />
 		<widget name="introduction" position="10,596" size="503,30" zPosition="10" font="Regular;21" backgroundColor="window-bg" halign="center" transparent="0" />
@@ -1487,18 +1484,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text="Network Browser" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="list" render="Listbox" position="10,133" size="503,450" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD/buttons/FocusBar_H50x503.png">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
-							MultiContentEntryText(pos = (50, 4), size = (420, 26), font=2, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the Hostname
-							MultiContentEntryText(pos = (140, 5), size = (320, 25), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the sharename
-							MultiContentEntryText(pos = (140, 26), size = (320, 17), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the sharedescription
-							MultiContentEntryPixmapAlphaTest(pos = (45, 0), size = (48, 48), png = 5), # index 5 is the nfs/cifs icon
-							MultiContentEntryPixmapAlphaTest(pos = (90, 0), size = (48, 48), png = 6), # index 6 is the isMounted icon
-						],
-					"fonts": [gFont("Regular", 20),gFont("Regular", 14),gFont("Regular", 24)],
-					"itemHeight": 50
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
+				MultiContentEntryText(pos = (50, 4), size = (420, 26), font=2, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the Hostname
+				MultiContentEntryText(pos = (140, 5), size = (320, 25), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the sharename
+				MultiContentEntryText(pos = (140, 26), size = (320, 17), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the sharedescription
+				MultiContentEntryPixmapAlphaTest(pos = (45, 0), size = (48, 48), png = 5), # index 5 is the nfs/cifs icon
+				MultiContentEntryPixmapAlphaTest(pos = (90, 0), size = (48, 48), png = 6), # index 6 is the isMounted icon
+				],
+				"fonts": [gFont("Regular", 20),gFont("Regular", 14),gFont("Regular", 24)],
+				"itemHeight": 50
+				}
+			</convert>
 		</widget>
 		<ePixmap pixmap="skin_default/div-h.png" position="10,585" zPosition="1" size="503,2" />
 		<widget source="infotext" render="Label" position="10,596" size="503,30" zPosition="1" font="Regular;21" halign="center" valign="center" backgroundColor="window-bg" transparent="0" />
@@ -1535,15 +1532,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text="Auto Mount Manager" position="10,80" size="385,38" font="Regular; 37" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="config" render="Listbox" position="10,133" size="503,450" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD/buttons/FocusBar_H50x503.png">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryText(pos = (0, 3), size = (480, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
-							MultiContentEntryText(pos = (10, 29), size = (480, 17), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
-							MultiContentEntryPixmapAlphaTest(pos = (500, 1), size = (48, 48), png = 3), # index 4 is the pixmap
-						],
-					"fonts": [gFont("Regular", 20),gFont("Regular", 14)],
-					"itemHeight": 50
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryText(pos = (0, 3), size = (480, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
+				MultiContentEntryText(pos = (10, 29), size = (480, 17), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
+				MultiContentEntryPixmapAlphaTest(pos = (500, 1), size = (48, 48), png = 3), # index 4 is the pixmap
+				],
+				"fonts": [gFont("Regular", 20),gFont("Regular", 14)],
+				"itemHeight": 50
+				}
+			</convert>
 		</widget>
 		<ePixmap pixmap="skin_default/div-h.png" position="10,585" zPosition="1" size="503,2" />
 		<widget source="introduction" render="Label" position="10,596" size="503,30" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="window-bg" transparent="0" />
@@ -1563,18 +1560,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="skin_default/div-h.png" position="10,173" zPosition="2" size="503,2" />
 		<widget source="config" render="Listbox" position="10,183" size="503,400" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD/buttons/FocusBar_H50x503.png">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-						MultiContentEntryPixmapAlphaTest(pos = (5, 1), size = (48, 48), png = 0), # index 0 is the isMounted pixmap
-						MultiContentEntryText(pos = (55, 3), size = (200, 25), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the sharename
-						MultiContentEntryText(pos = (250, 5), size = (150, 17), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the IPdescription
-						MultiContentEntryText(pos = (55, 29), size = (350, 17), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the DIRdescription
-						MultiContentEntryPixmapAlphaTest(pos = (420, 9), size = (48, 48), png = 4), # index 4 is the activepng pixmap
-						MultiContentEntryPixmapAlphaTest(pos = (450, 1), size = (48, 48), png = 5), # index 4 is the mounttype pixmap
-						],
-					"fonts": [gFont("Regular", 20),gFont("Regular", 14)],
-					"itemHeight": 50
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryPixmapAlphaTest(pos = (5, 1), size = (48, 48), png = 0), # index 0 is the isMounted pixmap
+				MultiContentEntryText(pos = (55, 3), size = (200, 25), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the sharename
+				MultiContentEntryText(pos = (250, 5), size = (150, 17), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the IPdescription
+				MultiContentEntryText(pos = (55, 29), size = (350, 17), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the DIRdescription
+				MultiContentEntryPixmapAlphaTest(pos = (420, 9), size = (48, 48), png = 4), # index 4 is the activepng pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (450, 1), size = (48, 48), png = 5), # index 4 is the mounttype pixmap
+				],
+				"fonts": [gFont("Regular", 20),gFont("Regular", 14)],
+				"itemHeight": 50
+				}
+			</convert>
 		</widget>
 		<ePixmap pixmap="skin_default/div-h.png" position="10,585" zPosition="1" size="503,2" />
 		<widget source="introduction" render="Label" position="10,596" size="503,30" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="window-bg" transparent="0" />
@@ -1607,14 +1604,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text="Enter Manager" position="10,80" size="385,38" font="Regular; 37" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="config" render="Listbox" position="10,133" size="503,450" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD/buttons/FocusBar_H50x503.png">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryText(pos = (80, 5), size = (400, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-							MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (48, 48), png = 3), # index 4 is the status pixmap
-						],
-					"fonts": [gFont("Regular", 40)],
-					"itemHeight": 50
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryText(pos = (80, 5), size = (400, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (48, 48), png = 3), # index 4 is the status pixmap
+				],
+				"fonts": [gFont("Regular", 40)],
+				"itemHeight": 50
+				}
+			</convert>
 		</widget>
 		<ePixmap pixmap="skin_default/div-h.png" position="10,585" zPosition="1" size="503,2" />
 		<widget source="introduction" render="Label" position="10,596" size="503,30" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="window-bg" transparent="0" />
@@ -1641,14 +1638,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_Setup.png" position="427,30" size="88,88" alphatest="blend" transparent="1" />
 		<widget source="nimlist" render="Listbox" selectionPixmap="ViX_HD/buttons/FocusBar_H70x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,133" size="503,495" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryText(pos = (10,5), size = (480,25), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
-							MultiContentEntryText(pos = (50,25), size = (380,45), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
-						],
-					"fonts": [gFont("Regular",20), gFont("Regular",17)],
-					"itemHeight": 70
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryText(pos = (10,5), size = (480,25), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
+				MultiContentEntryText(pos = (50,25), size = (380,45), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
+				],
+				"fonts": [gFont("Regular",20), gFont("Regular",17)],
+				"itemHeight": 70
+				}
+			</convert>
 		</widget>
 	</screen>
 	<screen name="NimSetup" position="32,0" size="541,720" title="Reception Settings" flags="wfNoBorder" backgroundColor="transparent">
@@ -2136,14 +2133,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="text" position="150,140" size="730,250" font="Regular;23" transparent="1" foregroundColor="window-fg" backgroundColor="window-bg" />
 		<widget source="languages" render="Listbox" position="150,400" size="440,210" selectionPixmap="ViX_HD/buttons/FocusBar_H42x440.png" transparent="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryText(pos = (80,11), size = (200,20), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
-							MultiContentEntryPixmap(pos = (10,6), size = (45,30), png = 2), # index 2 is the pixmap
-						],
-					"fonts": [gFont("Regular",20)],
-					"itemHeight": 42
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryText(pos = (80,11), size = (200,20), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
+				MultiContentEntryPixmap(pos = (10,6), size = (45,30), png = 2), # index 2 is the pixmap
+				],
+				"fonts": [gFont("Regular",20)],
+				"itemHeight": 42
+				}
+			</convert>
 		</widget>
 		<widget name="rc" pixmap="skin_default/rc.png" position="950,140" zPosition="10" size="154,500" transparent="1" alphatest="blend" />
 		<widget name="arrowdown" pixmap="ViX_HD/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
@@ -2327,23 +2324,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text="Software Manager" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="menu" render="Listbox" position="10,133" size="503,200" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryText(pos = (5,2), size = (448,24), flags = RT_HALIGN_CENTER, text = 1), # index 0 is the MenuText,
-						],
-					"fonts": [gFont("Regular",22)],
-					"itemHeight": 25
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryText(pos = (5,2), size = (448,24), flags = RT_HALIGN_CENTER, text = 1), # index 0 is the MenuText,
+				],
+				"fonts": [gFont("Regular",22)],
+				"itemHeight": 25
+				}
+			</convert>
 		</widget>
 		<widget source="menu" render="Listbox" position="40,400" size="458,190" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryText(pos = (0,0),size = (450,140),flags = RT_HALIGN_LEFT|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
-						],
-					"fonts": [gFont("Regular",20)],
-					"itemHeight": 140
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryText(pos = (0,0),size = (450,140),flags = RT_HALIGN_LEFT|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
+				],
+				"fonts": [gFont("Regular",20)],
+				"itemHeight": 140
+				}
+			</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
 		<widget source="key_red" render="Label" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
@@ -2375,13 +2372,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text="Software Manager" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="list" render="Listbox" position="10,133" size="503,350" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryText(pos = (5,0), size = (540, 25), font=0, flags = RT_HALIGN_LEFT | RT_HALIGN_CENTER, text = 0), # index 0 is the name
-						],
-					"fonts": [gFont("Regular", 24),gFont("Regular", 22)],
-					"itemHeight": 25
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryText(pos = (5,0), size = (540, 25), font=0, flags = RT_HALIGN_LEFT | RT_HALIGN_CENTER, text = 0), # index 0 is the name
+				],
+				"fonts": [gFont("Regular", 24),gFont("Regular", 22)],
+				"itemHeight": 25
+				}
+			</convert>
 		</widget>
 		<widget source="introduction" render="Label" position="10,600" size="503,25" font="Regular;20" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
@@ -2402,23 +2399,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text="Plugin Manager" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="list" render="Listbox" selectionPixmap="ViX_HD/buttons/FocusBar_H52x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,133" size="503,450" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{"templates":
-						{"default": (51,[
-								MultiContentEntryText(pos = (5,1), size = (445,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-								MultiContentEntryText(pos = (5,25), size = (445,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-								MultiContentEntryPixmapAlphaTest(pos = (450,0), size = (48,48), png = 5), # index 5 is the status pixmap
-								MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (503,2), png = 6), # index 6 is the div pixmap
-							]),
-						"category": (40,[
-								MultiContentEntryText(pos = (5,0), size = (498,22), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-								MultiContentEntryText(pos = (5,22), size = (498,16), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
-								MultiContentEntryPixmapAlphaTest(pos = (0,38), size = (503,2), png = 3), # index 3 is the div pixmap
-							])
-						},
-						"fonts": [gFont("Regular",22),gFont("Regular",20),gFont("Regular",16)],
-						"itemHeight": 52
-					}
-				</convert>
+				{"templates":
+				{"default": (51,[
+				MultiContentEntryText(pos = (5,1), size = (445,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (5,25), size = (445,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (450,0), size = (48,48), png = 5), # index 5 is the status pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (503,2), png = 6), # index 6 is the div pixmap
+				]),
+				"category": (40,[
+				MultiContentEntryText(pos = (5,0), size = (498,22), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (5,22), size = (498,16), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (0,38), size = (503,2), png = 3), # index 3 is the div pixmap
+				])
+				},
+				"fonts": [gFont("Regular",22),gFont("Regular",20),gFont("Regular",16)],
+				"itemHeight": 52
+				}
+			</convert>
 		</widget>
 		<widget source="status" render="Label" position="10,600" size="503,25" font="Regular;20" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
@@ -2439,16 +2436,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text="Plugin Manager Info" position="10,80" size="368,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="list" render="Listbox" transparent="0" position="10,133" size="503,450" scrollbarMode="showOnDemand" selectionDisabled="1">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryText(pos = (50,0), size = (403,26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-							MultiContentEntryText(pos = (50,27), size = (403,23), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
-							MultiContentEntryPixmapAlphaTest(pos = (0,1), size = (48,48), png = 2), # index 2 is the status pixmap
-							MultiContentEntryPixmapAlphaTest(pos = (0,48), size = (458,2), png = 3), # index 3 is the div pixmap
-						],
-					"fonts": [gFont("Regular",24),gFont("Regular",22)],
-					"itemHeight": 50
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryText(pos = (50,0), size = (403,26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (50,27), size = (403,23), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
+				MultiContentEntryPixmapAlphaTest(pos = (0,1), size = (48,48), png = 2), # index 2 is the status pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (0,48), size = (458,2), png = 3), # index 3 is the div pixmap
+				],
+				"fonts": [gFont("Regular",24),gFont("Regular",22)],
+				"itemHeight": 50
+				}
+			</convert>
 		</widget>
 		<widget source="status" render="Label" position="10,600" size="503,25" font="Regular;20" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
@@ -2465,16 +2462,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text="Plugin Manager Help" position="10,80" size="381,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="list" render="Listbox" transparent="0" position="10,132" size="503,450" scrollbarMode="showOnDemand" selectionDisabled="1">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryText(pos = (5,0), size = (448,26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-							MultiContentEntryText(pos = (5,27), size = (448,23), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
-							MultiContentEntryPixmapAlphaTest(pos = (0,1), size = (48,48), png = 2), # index 2 is the status pixmap
-							MultiContentEntryPixmapAlphaTest(pos = (0,48), size = (458,2), png = 3), # index 3 is the div pixmap
-						],
-					"fonts": [gFont("Regular",24),gFont("Regular",22)],
-					"itemHeight": 50
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryText(pos = (5,0), size = (448,26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (5,27), size = (448,23), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
+				MultiContentEntryPixmapAlphaTest(pos = (0,1), size = (48,48), png = 2), # index 2 is the status pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (0,48), size = (458,2), png = 3), # index 3 is the div pixmap
+				],
+				"fonts": [gFont("Regular",24),gFont("Regular",22)],
+				"itemHeight": 50
+				}
+			</convert>
 		</widget>
 		<widget source="status" render="Label" position="10,600" size="503,25" font="Regular;20" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
@@ -2543,16 +2540,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text="Packet Manager" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="list" render="Listbox" selectionPixmap="ViX_HD/buttons/FocusBar_H52x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,133" size="503,490" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryText(pos = (5,1), size = (458,28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-							MultiContentEntryText(pos = (5,26), size = (458,20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-							MultiContentEntryPixmapAlphaTest(pos = (458,2), size = (48,48), png = 4), # index 4 is the status pixmap
-							MultiContentEntryPixmapAlphaTest(pos = (5,50), size = (458,2), png = 5), # index 4 is the div pixmap
-						],
-					"fonts": [gFont("Regular",22),gFont("Regular",14)],
-					"itemHeight": 52
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryText(pos = (5,1), size = (458,28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (5,26), size = (458,20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (458,2), size = (48,48), png = 4), # index 4 is the status pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (5,50), size = (458,2), png = 5), # index 4 is the div pixmap
+				],
+				"fonts": [gFont("Regular",22),gFont("Regular",14)],
+				"itemHeight": 52
+				}
+			</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
@@ -2659,19 +2656,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel position="52,125" size="390,500" zPosition="2" backgroundColor="black" foregroundColor="window-bg" />
 		<widget source="cutlist" render="Listbox" position="52,125" zPosition="3" size="390,500" scrollbarMode="showOnDemand" backgroundColor="window-bg" transparent="1">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-						MultiContentEntryText(size=(220,20),text = 1),
-						MultiContentEntryText(pos=(220,2),size=(100,20), text = 2, flags = RT_HALIGN_RIGHT)
-					],
-					"fonts": [gFont("Regular",20)],
-					"itemHeight": 25
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryText(size=(220,20),text = 1),
+				MultiContentEntryText(pos=(220,2),size=(100,20), text = 2, flags = RT_HALIGN_RIGHT)
+				],
+				"fonts": [gFont("Regular",20)],
+				"itemHeight": 25
+				}
+			</convert>
 		</widget>
 		<eLabel position="466,123" size="764,430" zPosition="2" backgroundColor="menu_title" foregroundColor="window-bg" />
 		<widget name="Video" position="468,125" zPosition="3" size="760,426" backgroundColor="unff000000" />
-		<!--	<eLabel position="464,568" size="768,59" zPosition="1" backgroundColor="menu_title" foregroundColor="window-bg" />
-			<eLabel position="466,570" size="764,55" zPosition="2" backgroundColor="black" foregroundColor="window-bg" /> -->
+		<!--<eLabel position="464,568" size="768,59" zPosition="1" backgroundColor="menu_title" foregroundColor="window-bg" /> -->
+		<!--<eLabel position="466,570" size="764,55" zPosition="2" backgroundColor="black" foregroundColor="window-bg" /> -->
 		<widget source="session.CurrentService" render="Label" position="466,570" size="764,30" zPosition="3" font="Regular;24" backgroundColor="window-bg" halign="center" valign="center" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -2721,19 +2718,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel position="52,125" size="390,500" zPosition="2" backgroundColor="black" foregroundColor="window-bg" />
 		<widget source="cutlist" render="Listbox" position="52,125" zPosition="3" size="390,500" scrollbarMode="showOnDemand" backgroundColor="window-bg" transparent="1">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-						MultiContentEntryText(size=(220,20),text = 1),
-						MultiContentEntryText(pos=(220,2),size=(100,20), text = 2, flags = RT_HALIGN_RIGHT)
-					],
-					"fonts": [gFont("Regular",20)],
-					"itemHeight": 25
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryText(size=(220,20),text = 1),
+				MultiContentEntryText(pos=(220,2),size=(100,20), text = 2, flags = RT_HALIGN_RIGHT)
+				],
+				"fonts": [gFont("Regular",20)],
+				"itemHeight": 25
+				}
+			</convert>
 		</widget>
 		<eLabel position="466,123" size="764,430" zPosition="2" backgroundColor="menu_title" foregroundColor="window-bg" />
 		<widget name="Video" position="468,125" zPosition="3" size="760,426" backgroundColor="unff000000" />
-		<!--	<eLabel position="464,568" size="768,59" zPosition="1" backgroundColor="menu_title" foregroundColor="window-bg" />
-			<eLabel position="466,570" size="764,55" zPosition="2" backgroundColor="black" foregroundColor="window-bg" /> -->
+		<!--<eLabel position="464,568" size="768,59" zPosition="1" backgroundColor="menu_title" foregroundColor="window-bg" /> -->
+		<!--<eLabel position="466,570" size="764,55" zPosition="2" backgroundColor="black" foregroundColor="window-bg" /> -->
 		<widget source="session.CurrentService" render="Label" position="466,570" size="764,30" zPosition="3" font="Regular;24" backgroundColor="window-bg" halign="center" valign="center" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -2757,17 +2754,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="error_label" render="Label" position="10,48" size="540,296" zPosition="3" font="Regular;20" transparent="1" />
 		<widget source="titles" render="Listbox" scrollbarMode="showOnDemand" position="10,86" size="546,296" zPosition="3" transparent="1">
 			<convert type="TemplatedMultiContent">
-						{"template": [
-								MultiContentEntryText(pos = (0, 0), size = (360, 20), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 Title,
-								MultiContentEntryText(pos = (0, 20), size = (360, 17), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 description,
-								MultiContentEntryText(pos = (366, 6), size = (152, 20), font = 1, flags = RT_HALIGN_RIGHT, text = 3), # index 3 channel,
-								MultiContentEntryText(pos = (366, 20), size = (102, 17), font = 1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 begin time,
-								MultiContentEntryText(pos = (470, 20), size = (48, 20), font = 1, flags = RT_HALIGN_RIGHT, text = 5), # index 5 duration,
-							],
-						"fonts": [gFont("Regular", 20), gFont("Regular", 14)],
-						"itemHeight": 37
-						}
-				</convert>
+				{"template": [
+				MultiContentEntryText(pos = (0, 0), size = (360, 20), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 Title,
+				MultiContentEntryText(pos = (0, 20), size = (360, 17), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 description,
+				MultiContentEntryText(pos = (366, 6), size = (152, 20), font = 1, flags = RT_HALIGN_RIGHT, text = 3), # index 3 channel,
+				MultiContentEntryText(pos = (366, 20), size = (102, 17), font = 1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 begin time,
+				MultiContentEntryText(pos = (470, 20), size = (48, 20), font = 1, flags = RT_HALIGN_RIGHT, text = 5), # index 5 duration,
+				],
+				"fonts": [gFont("Regular", 20), gFont("Regular", 14)],
+				"itemHeight": 37
+				}
+			</convert>
 		</widget>
 		<ePixmap pixmap="skin_default/div-h.png" position="0,390" zPosition="10" size="560,2" />
 		<ePixmap pixmap="skin_default/buttons/key_menu.png" position="10,394" size="35,25" alphatest="on" />
@@ -2881,12 +2878,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_red" render="Label" position="0,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="un9f1313" transparent="1" />
 		<widget source="menu" render="Listbox" position="5,50" size="550,310" scrollbarMode="showOnDemand" selectionDisabled="1">
 			<convert type="TemplatedMultiContent">
-					{
-						"template": [	MultiContentEntryText(pos = (5,5), size = (250,30), flags = RT_HALIGN_LEFT, text = 0), MultiContentEntryText(pos = (260,5), size = (290,30), flags = RT_HALIGN_LEFT, text = 1)],
-						"fonts": [gFont("Regular",20)],
-						"itemHeight": 30
-					}
-				</convert>
+				{
+				"template": [	MultiContentEntryText(pos = (5,5), size = (250,30), flags = RT_HALIGN_LEFT, text = 0), MultiContentEntryText(pos = (260,5), size = (290,30), flags = RT_HALIGN_LEFT, text = 1)],
+				"fonts": [gFont("Regular",20)],
+				"itemHeight": 30
+				}
+			</convert>
 		</widget>
 	</screen>
 	<screen name="CIselectMainMenu" position="100,80" size="520,538" title="CI assignment" flags="wfNoBorder" backgroundColor="transparent">
@@ -3044,49 +3041,49 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="DiseqcTester" position="90,100" size="520,400" title="DiSEqC Tester">
 		<!--ePixmap pixmap="ViX_HD/icons/dish_scan.png" position="5,25" zPosition="0" size="119,110" transparent="1" alphatest="on" />
-			<widget source="Frontend" render="Label" position="190,10" zPosition="2" size="260,20" font="Regular;19" halign="center" valign="center" transparent="1">
-					<convert type="FrontendInfo">SNRdB</convert>
-			</widget>
-			<eLabel name="snr" text="SNR:" position="120,35" size="60,22" font="Regular;21" halign="right" transparent="1" />
-			<widget source="Frontend" render="Progress" position="190,35" size="260,20" pixmap="ViX_HD/bar_snr.png" borderWidth="2" borderColor="#cccccc">
-					<convert type="FrontendInfo">SNR</convert>
-			</widget>
-			<widget source="Frontend" render="Label" position="460,35" size="60,22" font="Regular;21">
-					<convert type="FrontendInfo">SNR</convert>
-			</widget>
-			<eLabel name="agc" text="AGC:" position="120,60" size="60,22" font="Regular;21" halign="right" transparent="1" />
-			<widget source="Frontend" render="Progress" position="190,60" size="260,20" pixmap="ViX_HD/bar_snr.png" borderWidth="2" borderColor="#cccccc">
-					<convert type="FrontendInfo">AGC</convert>
-			</widget>
-			<widget source="Frontend" render="Label" position="460,60" size="60,22" font="Regular;21">
-					<convert type="FrontendInfo">AGC</convert>
-			</widget>
-			<eLabel name="ber" text="BER:" position="120,85" size="60,22" font="Regular;21" halign="right" transparent="1" />
-			<widget source="Frontend" render="Progress" position="190,85" size="260,20" pixmap="ViX_HD/bar_ber.png" borderWidth="2" borderColor="#cccccc">
-					<convert type="FrontendInfo">BER</convert>
-			</widget>
-			<widget source="Frontend" render="Label" position="460,85" size="60,22" font="Regular;21">
-					<convert type="FrontendInfo">BER</convert>
-			</widget>
-			<eLabel name="lock" text="Lock:" position="120,115" size="60,22" font="Regular;21" halign="right" />
-			<widget source="Frontend" render="Pixmap" pixmap="ViX_HD/icons/lock_on.png" position="190,110" zPosition="1" size="38,31" alphatest="on">
-					<convert type="FrontendInfo">LOCK</convert>
-					<convert type="ConditionalShowHide" />
-			</widget>
-			<widget source="Frontend" render="Pixmap" pixmap="skin_default/icons/lock_off.png" position="190,110" zPosition="1" size="38,31" alphatest="on">
-					<convert type="FrontendInfo">LOCK</convert>
-					<convert type="ConditionalShowHide">Invert</convert>
-			</widget-->
+		<widget source="Frontend" render="Label" position="190,10" zPosition="2" size="260,20" font="Regular;19" halign="center" valign="center" transparent="1">
+			<convert type="FrontendInfo">SNRdB</convert>
+		</widget>
+		<eLabel name="snr" text="SNR:" position="120,35" size="60,22" font="Regular;21" halign="right" transparent="1" />
+		<widget source="Frontend" render="Progress" position="190,35" size="260,20" pixmap="ViX_HD/bar_snr.png" borderWidth="2" borderColor="#cccccc">
+			<convert type="FrontendInfo">SNR</convert>
+		</widget>
+		<widget source="Frontend" render="Label" position="460,35" size="60,22" font="Regular;21">
+			<convert type="FrontendInfo">SNR</convert>
+		</widget>
+		<eLabel name="agc" text="AGC:" position="120,60" size="60,22" font="Regular;21" halign="right" transparent="1" />
+		<widget source="Frontend" render="Progress" position="190,60" size="260,20" pixmap="ViX_HD/bar_snr.png" borderWidth="2" borderColor="#cccccc">
+			<convert type="FrontendInfo">AGC</convert>
+		</widget>
+		<widget source="Frontend" render="Label" position="460,60" size="60,22" font="Regular;21">
+			<convert type="FrontendInfo">AGC</convert>
+		</widget>
+		<eLabel name="ber" text="BER:" position="120,85" size="60,22" font="Regular;21" halign="right" transparent="1" />
+		<widget source="Frontend" render="Progress" position="190,85" size="260,20" pixmap="ViX_HD/bar_ber.png" borderWidth="2" borderColor="#cccccc">
+			<convert type="FrontendInfo">BER</convert>
+		</widget>
+		<widget source="Frontend" render="Label" position="460,85" size="60,22" font="Regular;21">
+			<convert type="FrontendInfo">BER</convert>
+		</widget>
+		<eLabel name="lock" text="Lock:" position="120,115" size="60,22" font="Regular;21" halign="right" />
+		<widget source="Frontend" render="Pixmap" pixmap="ViX_HD/icons/lock_on.png" position="190,110" zPosition="1" size="38,31" alphatest="on">
+			<convert type="FrontendInfo">LOCK</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="Frontend" render="Pixmap" pixmap="skin_default/icons/lock_off.png" position="190,110" zPosition="1" size="38,31" alphatest="on">
+			<convert type="FrontendInfo">LOCK</convert>
+			<convert type="ConditionalShowHide">Invert</convert>
+		</widget-->
 		<widget source="progress_list" render="Listbox" position="0,0" size="510,150" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryText(pos = (10,0), size = (330,25), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the index name,
-							MultiContentEntryText(pos = (330,0), size = (150,25), flags = RT_HALIGN_RIGHT, text = 2) # index 2 is the status,
-						],
-					"fonts": [gFont("Regular",20)],
-					"itemHeight": 25
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryText(pos = (10,0), size = (330,25), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the index name,
+				MultiContentEntryText(pos = (330,0), size = (150,25), flags = RT_HALIGN_RIGHT, text = 2) # index 2 is the status,
+				],
+				"fonts": [gFont("Regular",20)],
+				"itemHeight": 25
+				}
+			</convert>
 		</widget>
 		<eLabel name="overall_progress" text="Overall progress:" position="20,162" size="480,22" font="Regular;21" halign="center" transparent="1" />
 		<widget source="overall_progress" render="Progress" position="20,192" size="480,20" borderWidth="2" backgroundColor="un254f7497" />
@@ -3105,14 +3102,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<screen name="DiseqcTesterNimSelection" position="center,center" size="400,330" title="Choose Tuner">
 		<widget source="nimlist" render="Listbox" position="0,0" size="380,300" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryText(pos = (10,5), size = (360,30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
-							MultiContentEntryText(pos = (50,30), size = (320,30), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
-						],
-					"fonts": [gFont("Regular",20), gFont("Regular",15)],
-					"itemHeight": 70
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryText(pos = (10,5), size = (360,30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
+				MultiContentEntryText(pos = (50,30), size = (320,30), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
+				],
+				"fonts": [gFont("Regular",20), gFont("Regular",15)],
+				"itemHeight": 70
+				}
+			</convert>
 		</widget>
 	</screen>
 	<screen name="FPUpgrade" position="150,200" size="450,200" title="FP upgrade required">
@@ -3311,24 +3308,24 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" zPosition="2" position="60,60" size="600,50" scrollbarMode="showNever" transparent="1" />
 		<widget source="feedlist" render="Listbox" position="49,110" size="628,385" zPosition="1" scrollbarMode="showOnDemand" transparent="1" backgroundPixmap="~/list_bg.png" selectionPixmap="~/list_sel.png">
 			<convert type="TemplatedMultiContent">
-					{"templates":
-						{"default": (77,[
-								MultiContentEntryPixmapAlphaTest(pos = (0,0), size = (100,75), png = 4), # index 4 is the thumbnail
-								MultiContentEntryText(pos = (100,1), size = (500,22), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 1 is the Title
-								MultiContentEntryText(pos = (100,24), size = (300,18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 5), # index 5 is the Published Date
-								MultiContentEntryText(pos = (100,43), size = (300,18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 6), # index 6 is the Views Count
-								MultiContentEntryText(pos = (400,24), size = (200,18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 7), # index 7 is the duration
-								MultiContentEntryText(pos = (400,43), size = (200,18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 8), # index 8 is the ratingcount
-							]),
-						"state": (77,[
-								MultiContentEntryText(pos = (10,1), size = (560,28), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
-								MultiContentEntryText(pos = (10,22), size = (560,46), font=3, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 2 is the description
-							])
-						},
-						"fonts": [gFont("Regular",22),gFont("Regular",18),gFont("Regular",26),gFont("Regular",20)],
-						"itemHeight": 77
-					}
-				</convert>
+				{"templates":
+				{"default": (77,[
+				MultiContentEntryPixmapAlphaTest(pos = (0,0), size = (100,75), png = 4), # index 4 is the thumbnail
+				MultiContentEntryText(pos = (100,1), size = (500,22), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 1 is the Title
+				MultiContentEntryText(pos = (100,24), size = (300,18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 5), # index 5 is the Published Date
+				MultiContentEntryText(pos = (100,43), size = (300,18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 6), # index 6 is the Views Count
+				MultiContentEntryText(pos = (400,24), size = (200,18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 7), # index 7 is the duration
+				MultiContentEntryText(pos = (400,43), size = (200,18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 8), # index 8 is the ratingcount
+				]),
+				"state": (77,[
+				MultiContentEntryText(pos = (10,1), size = (560,28), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (10,22), size = (560,46), font=3, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 2 is the description
+				])
+				},
+				"fonts": [gFont("Regular",22),gFont("Regular",18),gFont("Regular",26),gFont("Regular",20)],
+				"itemHeight": 77
+				}
+			</convert>
 		</widget>
 		<ePixmap pixmap="skin_default/buttons/key_info.png" position="50,500" zPosition="4" size="35,25" alphatest="on" transparent="1" />
 		<ePixmap pixmap="skin_default/buttons/key_menu.png" position="50,520" zPosition="4" size="35,25" alphatest="on" transparent="1" />
@@ -3342,7 +3339,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="ButtonBlue" pixmap="skin_default/buttons/button_blue.png" position="610,510" zPosition="10" size="15,16" transparent="1" alphatest="on" />
 		<widget name="VKeyIcon" pixmap="skin_default/vkey_icon.png" position="620,495" zPosition="10" size="60,48" transparent="1" alphatest="on" />
 		<widget name="thumbnail" position="0,0" size="100,75" alphatest="on" /> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
-			<widget name="HelpWindow" position="340,325" zPosition="1" size="1,1" transparent="1" alphatest="on" /></screen>
+		<widget name="HelpWindow" position="340,325" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+	</screen>
 	<screen name="MyTubeVideoInfoScreen" flags="wfBorder" position="center,center" size="720,576" title="MyTubePlayerMainScreen...">
 		<ePixmap position="0,0" zPosition="-1" size="720,576" pixmap="~/mytubemain_bg.png" alphatest="on" transparent="1" backgroundColor="transparent" />
 		<widget name="title" position="60,50" size="600,50" zPosition="5" valign="center" halign="left" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
@@ -3350,21 +3348,21 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="stars" pixmap="~/starsbar_filled.png" position="560,220" zPosition="6" size="100,20" transparent="1" />
 		<widget source="infolist" render="Listbox" position="50,110" size="620,110" zPosition="6" scrollbarMode="showNever" foregroundColor="white" backgroundColor="un1c3c5c" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
-					{"templates":
-						{"default": (110,[
-								MultiContentEntryPixmapAlphaTest(pos = (0,4), size = (130,98), png = 0), # index 0 is the thumbnail
-								MultiContentEntryPixmapAlphaTest(pos = (130,4), size = (130,98), png = 1), # index 0 is the thumbnail
-								MultiContentEntryPixmapAlphaTest(pos = (260,4), size = (130,98), png = 2), # index 0 is the thumbnail
-								MultiContentEntryPixmapAlphaTest(pos = (390,4), size = (130,98), png = 3), # index 0 is the thumbnail
-							]),
-						"state": (110,[
-								MultiContentEntryText(pos = (10,40), size = (550,38), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
-							])
-						},
-						"fonts": [gFont("Regular",20),gFont("Regular",14),gFont("Regular",28)],
-						"itemHeight": 110
-					}
-				</convert>
+				{"templates":
+				{"default": (110,[
+				MultiContentEntryPixmapAlphaTest(pos = (0,4), size = (130,98), png = 0), # index 0 is the thumbnail
+				MultiContentEntryPixmapAlphaTest(pos = (130,4), size = (130,98), png = 1), # index 0 is the thumbnail
+				MultiContentEntryPixmapAlphaTest(pos = (260,4), size = (130,98), png = 2), # index 0 is the thumbnail
+				MultiContentEntryPixmapAlphaTest(pos = (390,4), size = (130,98), png = 3), # index 0 is the thumbnail
+				]),
+				"state": (110,[
+				MultiContentEntryText(pos = (10,40), size = (550,38), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
+				])
+				},
+				"fonts": [gFont("Regular",20),gFont("Regular",14),gFont("Regular",28)],
+				"itemHeight": 110
+				}
+			</convert>
 		</widget>
 		<widget name="author" position="60,220" size="300,20" zPosition="10" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="un1c3c5c" halign="left" valign="top" />
 		<widget name="duration" position="370,220" size="200,20" zPosition="10" font="Regular;21" transparent="1" foregroundColor="white" backgroundColor="un1c3c5c" halign="left" valign="top" />
@@ -3410,27 +3408,27 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap position="0,0" zPosition="-1" size="610,160" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MyTube/suggestions_bg.png" alphatest="on" transparent="1" backgroundColor="transparent" />
 		<widget source="suggestionslist" render="Listbox" position="10,5" zPosition="7" size="580,150" scrollbarMode="showOnDemand" transparent="1" foregroundColor="window-fg" backgroundColor="un1c3c5c">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryText(pos = (0,1), size = (340,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-							MultiContentEntryText(pos = (350,1), size = (180,24), font=1, flags = RT_HALIGN_RIGHT, text = 1), # index 1 are the rtesults
-						],
-					"fonts": [gFont("Regular",22),gFont("Regular",18)],
-					"itemHeight": 25
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryText(pos = (0,1), size = (340,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (350,1), size = (180,24), font=1, flags = RT_HALIGN_RIGHT, text = 1), # index 1 are the rtesults
+				],
+				"fonts": [gFont("Regular",22),gFont("Regular",18)],
+				"itemHeight": 25
+				}
+			</convert>
 		</widget>
 	</screen>
 	<screen name="MyTubeHistoryScreen" position="340,163" zPosition="6" size="610,160" flags="wfBorder">
 		<ePixmap position="0,0" zPosition="-1" size="610,160" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MyTube/suggestions_bg.png" alphatest="on" transparent="1" backgroundColor="transparent" />
 		<widget source="historylist" render="Listbox" position="10,5" zPosition="7" size="580,150" scrollbarMode="showOnDemand" transparent="1" foregroundColor="window-fg" backgroundColor="un1c3c5c">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryText(pos = (0,1), size = (340,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						],
-					"fonts": [gFont("Regular",22),gFont("Regular",18)],
-					"itemHeight": 25
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryText(pos = (0,1), size = (340,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				],
+				"fonts": [gFont("Regular",22),gFont("Regular",18)],
+				"itemHeight": 25
+				}
+			</convert>
 		</widget>
 	</screen>
 	<screen name="FancontrolConfiguration" position="32,0" size="541,720" title="Standbymode Fancontrol settings" flags="wfNoBorder" backgroundColor="transparent">
@@ -3491,11 +3489,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="list" render="Listbox" position="10,133" size="503,495" selectionPixmap="ViX_HD/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
-					"fonts": [gFont("Regular",28)],
-					"itemHeight": 38
-					}
-				</convert>
+				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
+				"fonts": [gFont("Regular",28)],
+				"itemHeight": 38
+				}
+			</convert>
 		</widget>
 	</screen>
 	<screen name="VIXNetwork" position="32,0" size="541,720" title="Network" flags="wfNoBorder" backgroundColor="transparent">
@@ -3507,11 +3505,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="list" render="Listbox" position="10,133" size="503,495" selectionPixmap="ViX_HD/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
-					"fonts": [gFont("Regular",28)],
-					"itemHeight": 38
-					}
-				</convert>
+				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
+				"fonts": [gFont("Regular",28)],
+				"itemHeight": 38
+				}
+			</convert>
 		</widget>
 	</screen>
 	<screen name="VIXPowerManager" position="32,0" size="541,720" title="Power Manager" flags="wfNoBorder" backgroundColor="transparent">
@@ -3595,13 +3593,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_yellow" position="315,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
 		<widget name="key_blue" position="315,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
 		<applet type="onLayoutFinish">
-				self["list"].instance.setItemHeight(25)
-			</applet>
+			self["list"].instance.setItemHeight(25)
+		</applet>
 	</screen>
 	<screen name="VIXSoftcamLog" position="32,0" size="541,720" title="Softcam Manager Log" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
-				<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
+			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
 		<eLabel text="Softcam Manager Log" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
@@ -3665,8 +3663,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_yellow" position="315,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
 		<widget name="key_blue" position="315,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
 		<applet type="onLayoutFinish">
-				self["list"].instance.setItemHeight(25)
-			</applet>
+			self["list"].instance.setItemHeight(25)
+		</applet>
 	</screen>
 	<screen name="VIXCronManager" position="center,center" size="740,440" title="Cron Manager">
 		<widget source="list" render="Listbox" position="0,0" size="740,400" scrollbarMode="showOnDemand">
@@ -3996,8 +3994,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_red" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
 		<widget name="key_green" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
 		<applet type="onLayoutFinish">
-				self["list"].instance.setItemHeight(25)
-			</applet>
+			self["list"].instance.setItemHeight(25)
+		</applet>
 	</screen>
 	<screen name="VIXDevicesPanel" position="32,0" size="541,720" title="Device Manager" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
@@ -4009,12 +4007,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="list" render="Listbox" position="10,133" size="503,490" selectionPixmap="ViX_HD/buttons/FocusBar_H85x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (90, 0), size = (368, 30), font=0, text = 0),
-					MultiContentEntryText(pos = (110, 30), size = (348, 50), font=1, flags = RT_VALIGN_TOP, text = 1),
-					MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
-					],
-					"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
-					"itemHeight": 85
+				MultiContentEntryText(pos = (90, 0), size = (368, 30), font=0, text = 0),
+				MultiContentEntryText(pos = (110, 30), size = (348, 50), font=1, flags = RT_VALIGN_TOP, text = 1),
+				MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
+				],
+				"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
+				"itemHeight": 85
 				}
 			</convert>
 		</widget>
@@ -4045,15 +4043,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="list" render="Listbox" position="10,133" size="503,490" selectionPixmap="ViX_HD/buttons/FocusBar_H85x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-					MultiContentEntryText(pos = (90, 0), size = (368, 30), font=0, text = 0),
-					MultiContentEntryText(pos = (110, 30), size = (348, 50), font=1, flags = RT_VALIGN_TOP, text = 1),
-					MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
-					],
-					"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
-					"itemHeight": 85
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryText(pos = (90, 0), size = (368, 30), font=0, text = 0),
+				MultiContentEntryText(pos = (110, 30), size = (348, 50), font=1, flags = RT_VALIGN_TOP, text = 1),
+				MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
+				],
+				"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
+				"itemHeight": 85
+				}
+			</convert>
 		</widget>
 		<widget name="lab1" zPosition="2" position="10,140" size="503,60" font="Regular;24" halign="center" transparent="0" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
@@ -4072,8 +4070,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_red" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
 		<widget name="key_green" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
 		<applet type="onLayoutFinish">
-		self["list"].instance.setItemHeight(25)
-			</applet>
+			self["list"].instance.setItemHeight(25)
+		</applet>
 	</screen>
 	<screen name="IMDB" position="32,0" size="541,720" title="IMDb Details" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
@@ -4532,14 +4530,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text="CrossEPG" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="list" render="Listbox" selectionPixmap="ViX_HD/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,133" size="503,475" scrollbarMode="showOnDemand" enableWrapAround="1">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-						MultiContentEntryPixmapAlphaTest(pos = (12, 4), size = (32, 32), png = 0),
-						MultiContentEntryText(pos = (58, 5), size = (440, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
-						],
-						"fonts": [gFont("Regular", 22)],
-						"itemHeight": 38
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryPixmapAlphaTest(pos = (12, 4), size = (32, 32), png = 0),
+				MultiContentEntryText(pos = (58, 5), size = (440, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+				],
+				"fonts": [gFont("Regular", 22)],
+				"itemHeight": 38
+				}
+			</convert>
 		</widget>
 	</screen>
 	<screen name="CrossEPG_Setup" position="32,0" size="541,720" title="CrossEPG Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -4607,14 +4605,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text="CrossEPG - Providers" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="list" render="Listbox" selectionPixmap="ViX_HD/buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,133" size="503,475" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-					MultiContentEntryText(pos = (12, 1), size = (440, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
-					MultiContentEntryPixmapAlphaTest(pos = (438, 0), size = (40, 40), png = 1),
-					],
-					"fonts": [gFont("Regular", 18)],
-					"itemHeight": 30
-					}
-				</convert>
+				{"template": [
+				MultiContentEntryText(pos = (12, 1), size = (440, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+				MultiContentEntryPixmapAlphaTest(pos = (438, 0), size = (40, 40), png = 1),
+				],
+				"fonts": [gFont("Regular", 18)],
+				"itemHeight": 30
+				}
+			</convert>
 		</widget>
 		<ePixmap name="red" pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
 		<ePixmap name="green" pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
