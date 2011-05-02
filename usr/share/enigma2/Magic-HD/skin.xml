@@ -7736,24 +7736,6 @@
     </widget>
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXNetwork" position="0,0" size="1280,720" title="Network">
-    <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
-    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
-    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
-    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="970,35"  size="250,50" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Full</convert>
-    </widget>
-    <widget source="session.VideoPicture" backgroundColor="transparent" position="85,110" render="Pig" size="417,243" zPosition="1" />
-    <widget source="list" render="Listbox" position="590,110" size="600,500" selectionPixmap="Magic-HD-Common/buttons/sel.png" scrollbarMode="showOnDemand">
-      <convert type="TemplatedMultiContent">
-			{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
-			"fonts": [gFont("Regular",24)],
-			"itemHeight": 38
-			}
-		</convert>
-    </widget>
-    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
-  </screen>
    <screen flags="wfNoBorder" name="VIXPowerManager" position="0,0" size="1280,720" title="Power Manager">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
