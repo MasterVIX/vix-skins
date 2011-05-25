@@ -3652,13 +3652,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</applet>
 	</screen>
 	<screen name="VIXCronManager" position="center,center" size="740,440" title="Cron Manager">
-		<widget source="list" render="Listbox" position="0,0" size="740,400" scrollbarMode="showOnDemand">
+		<widget name="lab1" position="70,0" size="100,30" font="Regular;20" valign="center" transparent="0" />
+		<widget name="labactive" position="170,0" size="250,30" font="Regular;20" valign="center" transparent="0" />
+		<widget name="lab2" position="360,0" size="150,26" font="Regular;20" valign="center" transparent="0" />
+		<widget name="labstop" position="500,0" size="100,26" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
+		<widget name="labrun" position="500,0" size="100,26" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
+		<widget source="list" render="Listbox" position="0,40" size="740,340" scrollbarMode="showOnDemand">
 			<convert type="StringList" />
 		</widget>
-		<ePixmap pixmap="ViX_HD/buttons/red.png" position="200,414" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="410,415" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="235,416" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="window-bg" />
-		<widget name="key_yellow" position="445,416" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="window-bg" />
+		<eLabel text="H: = Hourly / D: = Daily / W: = Weekly / M: = Monthly" position="0,390" size="740,25" font="Regular; 20" halign="center" transparent="1" valign="center" backgroundColor="window-bg" />
+		<ePixmap pixmap="ViX_HD/buttons/red.png" position="0,414" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/green.png" position="210,414" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="420,414" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/blue.png" position="630,414" size="24,24" alphatest="blend" transparent="1" />
+		<widget name="key_red" position="25,417" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="window-bg" />
+		<widget name="key_green" position="235,417" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="window-bg" />
+		<widget name="key_yellow" position="445,417" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="window-bg" />
+		<widget name="key_blue" position="655,417" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="window-bg" />
 	</screen>
 	<screen name="VIXSetupCronConf" position="center,center" size="740,340" title="Cron Manager">
 		<widget name="config" position="0,0" size="740,300" scrollbarMode="showOnDemand" />
