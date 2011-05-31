@@ -1621,6 +1621,42 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_red" render="Label" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
 		<widget source="key_yellow" render="Label" position="315,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
 	</screen>
+	<screen name="LogManager" position="32,0" size="541,720" title="Log Manager" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" zPosition="-1" alphatest="on" transparent="1" />
+		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
+		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
+			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
+		</widget>
+		<widget name="list" position="10,133" size="503,435" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="280,643" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/blue.png" position="280,670" size="24,24" alphatest="blend" transparent="1" />
+		<widget name="key_red" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
+		<widget name="key_green" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
+		<widget name="key_yellow" position="315,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
+		<widget name="key_blue" position="315,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(25)
+		</applet>
+	</screen>
+	<screen name="LogManagerMenu" position="32,0" size="541,720" title="Log Manager Setup" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" zPosition="-1" alphatest="on" transparent="1" />
+		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
+		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
+			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
+		</widget>
+		<widget name="config" position="10,133" size="503,435" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="HelpWindow" pixmap="ViX_HD/buttons/key_text.png" position="80,530" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/key_text.png" position="150,642" zPosition="4" size="35,25" alphatest="on" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
+		<widget name="key_red" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
+		<widget name="key_green" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
+		<applet type="onLayoutFinish">
+			self["config"].instance.setItemHeight(25)
+		</applet>
+	</screen>"""
 	<screen name="NetworkSetup" position="32,0" size="541,720" title="Network Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" zPosition="-1" position="0,0" size="540,720" alphatest="on" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
@@ -1875,11 +1911,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_Setup.png" position="427,30" size="88,88" alphatest="blend" transparent="1" />
 		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="config" position="10,133" size="503,495" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand" />
-		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="100,450" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="60,510" zPosition="1" size="541,720" transparent="1" alphatest="on" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
 		<widget source="key_red" render="Label" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
 		<widget source="key_green" render="Label" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
+		<widget source="VKeyIcon" render="Pixmap" pixmap="skin_default/buttons/key_text.png" position="150,642" zPosition="10" size="35,25" transparent="1" alphatest="on" >
+			<convert type="ConditionalShowHide" />
+		</widget>
 	</screen>
 	<screen name="SimpleChannelSelection" position="32,0" size="541,720" title=" " flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
@@ -3636,9 +3675,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<screen name="VIXImageManager" position="32,0" size="541,720" title="Image Manager" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" zPosition="-1" alphatest="on" transparent="1" />
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
+		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
+			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
+		</widget>
 		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
-		<widget name="lab1" position="10,133" size="503,25" font="Regular; 20" zPosition="2" transparent="0" halign="center" />
-		<widget name="list" position="10,165" size="503,450" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="lab1" position="10,133" size="503,50" font="Regular;20" zPosition="2" transparent="0" halign="center" />
+		<widget name="list" position="10,190" size="503,435" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="backupstatus" position="12,608" size="503,20" font="Regular;20" zPosition="5" valign="top" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="280,643" size="24,24" alphatest="blend" transparent="1" />
@@ -3651,6 +3694,24 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			self["list"].instance.setItemHeight(25)
 		</applet>
 	</screen>
+	<screen name="ImageManagerMenu" position="32,0" size="541,720" title="Image Manager" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" zPosition="-1" alphatest="on" transparent="1" />
+		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
+		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
+			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
+		</widget>
+		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget name="config" position="10,133" size="503,435" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="HelpWindow" pixmap="ViX_HD/buttons/key_text.png" position="60,530" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/key_text.png" position="150,642" zPosition="4" size="35,25" alphatest="on" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
+		<widget name="key_red" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
+		<widget name="key_green" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
+		<applet type="onLayoutFinish">
+			self["config"].instance.setItemHeight(25)
+		</applet>
+	</screen>"""
 	<screen name="VIXCronManager" position="center,center" size="740,440" title="Cron Manager">
 		<widget name="lab1" position="70,0" size="100,30" font="Regular;20" valign="center" transparent="0" />
 		<widget name="labdisabled" position="170,0" size="100,26" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
