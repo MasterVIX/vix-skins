@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-EHD-ViX Vs 1.43 by VU+NL, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin:  Magic-EHD-ViX Vs 1.44 by VU+NL, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -7826,14 +7826,15 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682"  size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_info.png" position="1150,682" size="35,25" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682"  size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="lab1" position="590,90" size="170,20" font="Regular; 22" halign="right" zPosition="2" transparent="0" valign="center" />
+    <widget name="lab1" position="590,90" size="170,20" font="Regular; 22" halign="lef" zPosition="2" transparent="0" valign="center" />
     <widget name="list" position="775,271" size="240,150" selectionPixmap="Magic-HD-Common/buttons/sel.png" transparent="0" scrollbarMode="showOnDemand" />
-    <widget name="lab2" position="590,271" size="170,20" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
-    <eLabel text="1:" position="775,455" size="25,25" font="Regular;20" transparent="0" zPosition="3" />
+    <widget name="lab2" position="590,271" size="170,20" font="Regular; 22" halign="left" zPosition="2" transparent="0" />
+<!--    <eLabel text="1:" position="775,455" size="25,25" font="Regular;20" transparent="0" zPosition="3" />
     <eLabel text="2:" position="775,482" size="25,25" font="Regular;20" transparent="0" zPosition="3" />
     <eLabel text="3:" position="775,509" size="25,25" font="Regular;20" transparent="0" zPosition="3" />
     <eLabel text="4:" position="775,536" size="25,25" font="Regular;20" transparent="0" zPosition="3" />
@@ -7841,7 +7842,8 @@
     <eLabel text="6:" position="775,590" size="25,25" font="Regular;20" transparent="0" zPosition="3" />
     <widget name="activecam" position="775,90" size="480,125" font="Regular; 20" halign="left" zPosition="2" transparent="0" />
     <widget name="lab3" position="590,455" size="170,20" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
-    <widget name="list2" position="800,455" size="240,162" selectionDisabled="1" transparent="0" selectionPixmap="Magic-HD-Common/buttons/sel.png" scrollbarMode="showOnDemand" />
+    <widget name="list2" position="800,455" size="240,162" selectionDisabled="1" transparent="0" selectionPixmap="Magic-HD-Common/buttons/sel.png" scrollbarMode="showOnDemand" />-->
+		<widget name="activecam" position="775,90" size="240,150" font="Regular; 20" halign="left" zPosition="2" transparent="0" noWrap="1" />
     <applet type="onLayoutFinish">
 		self["list"].instance.setItemHeight(25)
 			</applet>
@@ -7868,10 +7870,6 @@
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="15,90" size="477,270" backgroundColor="transparent" zPosition="1" />
     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682"  size="35,25" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-<!--<widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />-->
     <widget name="connect" position="770,220" size="64,64" zPosition="2" pixmaps="ViX_HD/busy/busy1.png,ViX_HD/busy/busy2.png,ViX_HD/busy/busy3.png,ViX_HD/busy/busy4.png,ViX_HD/busy/busy5.png,ViX_HD/busy/busy6.png,ViX_HD/busy/busy7.png,ViX_HD/busy/busy8.png,ViX_HD/busy/busy9.png,ViX_HD/busy/busy9.png,ViX_HD/busy/busy10.png,ViX_HD/busy/busy11.png,ViX_HD/busy/busy12.png,ViX_HD/busy/busy13.png,ViX_HD/busy/busy14.png,ViX_HD/busy/busy15.png,ViX_HD/busy/busy17.png,ViX_HD/busy/busy18.png,ViX_HD/busy/busy19.png,ViX_HD/busy/busy20.png,ViX_HD/busy/busy21.png,ViX_HD/busy/busy22.png,ViX_HD/busy/busy23.png,ViX_HD/busy/busy24.png" transparent="1" alphatest="blend" />
     <widget name="lab1" position="560,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,650" size="300,25" alphatest="on" />
@@ -8543,5 +8541,16 @@
     <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,650" size="300,25" alphatest="on" /> 
   </screen>
+  <screen flags="wfNoBorder" name="LogManagerFb" position="0,0" size="1280,720" title="LogManager FileBrowser">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="15,90" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,650" size="300,25" alphatest="on" />
+  </screen> 
   <!-- ## End of Magic-EHD-ViX ## -->
 </skin>  
