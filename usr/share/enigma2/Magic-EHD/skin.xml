@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-EHD-ViX Vs 1.45 by VU+NL, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin:  Magic-EHD-ViX Vs 1.46 by VU+NL, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -4582,8 +4582,8 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="15,90" render="Pig" size="477,270" zPosition="1" />
-    <widget name="list" position="520,82" selectionPixmap="Magic-HD-Common/buttons/sel.png" size="755,290" transparent="1" />
-    <widget name="info" position="520,400" size="755,260" font="Regular;22" transparent="1" />
+    <widget name="list" position="520,82" selectionPixmap="Magic-HD-Common/buttons/sel.png" size="755,583" transparent="1" />
+    <widget name="info" position="15,400" size="477,240" font="Regular;22" transparent="1" />
     <eLabel text="Exit = Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
     <eLabel text="OK = Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,650" size="300,25" alphatest="on" />
@@ -4758,7 +4758,8 @@
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="15,90" size="477,270" backgroundColor="transparent" zPosition="1" />
 
-    <widget source="output" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
+    <widget source="output" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" >
+				<convert type="TemplatedMultiContent">
 				{"templates": 
 					"HD": (55,[
 							MultiContentEntryText(pos = (0, 1), size = (80, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
