@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-HD-ViX Vs 1.46 by VU+NL, based on Magic-HD Vs 1.91.54  -->
+  <!--  Skin:  Magic-HD-ViX Vs 1.47 by VU+NL, based on Magic-HD Vs 1.91.54  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -1375,10 +1375,46 @@
     <widget source="global.CurrentTime" render="Label" position="970,35" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
       <convert type="ClockToText">Full</convert>
     </widget>
-    <widget name="text" position="85,400" size="430,210" zPosition="2" font="Regular;24" />
+    <widget name="text" position="85,400" size="417,170" zPosition="2" font="Regular;24" />
     <widget source="session.VideoPicture" render="Pig" position="85,110" size="417,243" backgroundColor="transparent" zPosition="8" />
     <widget name="list" position="575,100" size="645,500" font="Regular;24" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
+		<applet type="onLayoutFinish">
+# this should be factored out into some helper code, but currently demonstrates applets.
+from enigma import eSize, ePoint
+
+orgwidth = self.instance.size().width()
+orgpos = self.instance.position()
+textsize = self["text"].getSize()
+
+# y size still must be fixed in font stuff...
+textsize = (textsize[0] + 20, textsize[1] + 20)
+count = len(self.list)
+if count &gt; 10:
+	count = 10
+offset = 25 * count
+wsizex = textsize[0] + 10
+wsizey = textsize[1] + offset
+
+if (650 &gt; wsizex):
+	wsizex = 650
+wsize = (wsizex, wsizey)
+
+# resize
+self.instance.resize(eSize(*wsize))
+
+# resize label
+self["text"].instance.resize(eSize(*textsize))
+
+# move list
+listsize = (wsizex - 20, 25 * count)
+self["list"].instance.move(ePoint(10, textsize[1]))
+self["list"].instance.resize(eSize(*listsize))
+
+# center window
+newwidth = wsize[0]
+self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3)))
+		</applet>
   </screen>
   <screen name="SubtitleDisplay" position="0,0" size="1280,720" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder" />
   <screen name="Scart" position="0,0" size="1280,720" backgroundColor="transparent" />
@@ -8064,10 +8100,7 @@
     <ePixmap pixmap="skin_default/buttons/key_info.png" position="65,646" size="35,25" alphatest="on"  />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;24" position="590,110" size="600,400" transparent="1" />
     <widget name="statusbar" position="590,590" size="600,25" font="Regular;22" />
-    <widget name="status" position="590,520" size="503,60" font="Regular;24" />
-    <widget font="Regular;18" halign="left" position="980,590" render="Label" size="55,20" source="global.CurrentTime" transparent="0" valign="center" zPosition="3">
-      <convert type="ClockToText">Default</convert>
-    </widget>
+    <widget name="status" position="590,520" size="600,60" font="Regular;24" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen flags="wfNoBorder" name="VIXIPKInstaller" position="0,0" size="1280,720" title="IPK Installer">
