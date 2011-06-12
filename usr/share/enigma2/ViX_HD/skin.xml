@@ -1927,13 +1927,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
-	<screen name="SimpleChannelSelection" position="32,0" size="541,720" title=" " flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SlimChannelSelection" position="32,0" size="541,720" title=" " flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_tv.png" position="427,30" size="88,88" alphatest="blend" transparent="1" />
-		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<eLabel text="Select Channel" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="list" position="10,133" size="503,390" itemHeight="30" selectionPixmap="ViX_HD/buttons/FocusBar_H30x503.png" foregroundColorEvent="darkgrey" foregroundColorEventSelected="menu_title" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" />
 		<widget source="ServiceEvent" render="Label" position="10,530" zPosition="2" size="60,25" font="Bold; 22" backgroundColor="black" halign="right" noWrap="1" valign="top" foregroundColor="unffb300" transparent="1">
 			<convert type="EventTime">StartTime</convert>
@@ -1947,6 +1947,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="ServiceEvent" render="Label" position="15,555" size="498,65" font="Regular; 19" backgroundColor="black" foregroundColor="window-fg" valign="top" zPosition="2" transparent="1">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
+		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="280,643" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/blue.png" position="280,670" size="24,24" alphatest="blend" transparent="1" />
+		<widget name="key_red" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
+		<widget name="key_green" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
+		<widget name="key_yellow" position="315,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
+		<widget name="key_blue" position="315,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
+	</screen>
+	<screen name="SimpleChannelSelection" position="32,0" size="541,720" title=" " flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
+			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
+		</widget>
+		<ePixmap pixmap="ViX_HD/menu/ico_menu_tv.png" position="427,30" size="88,88" alphatest="blend" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;32" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget name="list" position="10,133" size="503,495" itemHeight="30" selectionPixmap="ViX_HD/buttons/FocusBar_H30x503.png" foregroundColorEvent="darkgrey" foregroundColorEventSelected="menu_title" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="280,643" size="24,24" alphatest="blend" transparent="1" />
