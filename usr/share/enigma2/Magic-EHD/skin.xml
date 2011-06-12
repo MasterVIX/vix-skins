@@ -606,7 +606,7 @@
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>    
-    <widget source="Event" render="Label" position="15,442" size="477,216" transparent="1" font="Regular; 24">
+    <widget source="Event" render="Label" position="15,442" size="477,220" transparent="1" font="Regular; 24">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
@@ -8229,8 +8229,8 @@
     <widget source="session.VideoPicture" render="Pig" position="15,90" size="477,270" backgroundColor="transparent" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-    <widget source="key_red" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-    <widget source="key_green" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_red" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
     <widget name="lab1" position="15,450" size="477,70" font="Regular; 20" zPosition="2" transparent="0" halign="center" /> 
     <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
         <applet type="onLayoutFinish">
