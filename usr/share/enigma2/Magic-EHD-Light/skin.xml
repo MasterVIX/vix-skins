@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-EHD-Light ViX(Extreme-HD) Vs 1.18 by VU+NL @www.world-of-satellite.com, based on Magic-EHD-ViX Vs 1.54 but now in "Light version" (not supporting as many screens)  -->
+  <!--  Skin:  Magic-EHD-Light ViX(Extreme-HD) Vs 1.19 by VU+NL @www.world-of-satellite.com, based on Magic-EHD-ViX Vs 1.56 but now in "Light version" (not supporting as many screens)  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -495,10 +495,6 @@
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
-    <widget source="ServiceEvent" render="Label" position="380,415" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
-      <convert type="ServiceOrbitalPosition">
-      </convert>
-    </widget>
     <widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
       <convert type="ClockToText">Full</convert>
     </widget>
@@ -513,20 +509,28 @@
     <widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="list" position="520,87" size="740,570" itemHeight="30" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Crs;24" serviceNameFont="Regular;24" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
-    <widget source="ServiceEvent" render="Label" position="15,370" size="460,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" valign="center">
+    <widget name="list" position="520,82" size="755,575" itemHeight="30" serviceNumberFont="Regular;24" serviceInfoFont="Crs;24" serviceNameFont="Regular;24" serviceItemHeight="30" colorServiceDescription="yellow" transparent="1" foregroundColorServiceNotAvail="#656565" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget source="ServiceEvent" render="Label" position="15,370" size="490,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="15,415" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="right">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="ServiceEvent" render="Label" position="305,415" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19">
+    <widget source="ServiceEvent" render="Label" position="270,415" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="ServiceEvent" render="Progress" pixmap="Magic-HD-Common/window/progress.png" position="95,420" size="190,12" transparent="1" borderWidth="1" borderColor="grey">
+    <widget source="ServiceEvent" render="Progress" pixmap="Magic-HD-Common/window/progress.png" position="80,420" size="190,12" transparent="1" borderWidth="1" borderColor="grey">
       <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="335,415" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget> 
+    <widget source="ServiceEvent" render="Label" position="400,415" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
+      <convert type="ServiceOrbitalPosition">
+      </convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="15,445" size="490,220" transparent="1" font="Regular; 22">
       <convert type="EventName">ExtendedDescription</convert>
@@ -558,7 +562,7 @@
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
-  </screen>   
+  </screen>  
   <screen name="EPGSelection" title="EPG Selection" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
