@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-<!--  Skin: Magic by MiLo Vs 1.15, based on Merlin Magic 2.0 Picons -->
-	<!--  ##### Head #####  -->
+  <!--  Skin:  Magic-ViX Vs 1.02 by VU+NL @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
+  <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
+  <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
+  <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
+  <!--  ## Head ## -->
 	<output id="0">
 		<resolution bpp="32" xres="720" yres="576"/>
 	</output>
@@ -602,6 +605,45 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 		<eLabel backgroundColor="darkgrey" position="0,350" size="620,2" zPosition="5"/>
 		<eLabel backgroundColor="darkgrey" position="0,374" size="620,2" zPosition="5"/>
+	</screen>
+	<screen flags="wfNoBorder" name="SlimChannelSelection" position="80,85" size="560,440" title="Channel Selection" backgroundColor="transparent" >
+    <eLabel position="0,0" size="560,440" backgroundColor="transpBlack" zPosition="-50" />
+		<ePixmap alphatest="on" name="red" pixmap="Magic/buttons/key-red.png" position="0,0" size="140,40" transparent="1"/>
+		<ePixmap alphatest="on" name="green" pixmap="Magic/buttons/key-green.png" position="140,0" size="140,40" transparent="1"/>
+		<ePixmap alphatest="on" name="yellow" pixmap="Magic/buttons/key-yellow.png" position="280,0" size="140,40" transparent="1"/>
+		<ePixmap alphatest="on" name="blue" pixmap="Magic/buttons/key-blue.png" position="422,0" size="140,40" transparent="1"/>
+		<widget backgroundColor="#7C1C1C" font="Enigma;18" halign="center" name="key_red" position="0,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
+		<widget backgroundColor="#266926" font="Enigma;18" halign="center" name="key_green" position="140,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
+		<widget backgroundColor="#8C5900" font="Enigma;18" halign="center" name="key_yellow" position="280,0" size="140,41" transparent="1" valign="center" zPosition="2"/>
+		<widget backgroundColor="#254177" font="Enigma;18" halign="center" name="key_blue" position="420,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
+		<widget foregroundColorServiceNotAvail="#5a5a5a" name="list" position="0,39" scrollbarMode="showOnDemand"
+			serviceInfoFont="Enigma;18" serviceNameFont="Enigma;22" serviceNumberFont="Enigma;22"
+			foregroundColorEventSelected="#5a5a00"
+			size="558,310"/>
+		<widget font="Enigma;17" halign="left" position="10,353" render="Label" size="50,20" source="ServiceEvent">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText"/>
+		</widget>
+		<widget borderColor="#888888" borderWidth="1" pixmap="Magic/window/chan_p_bar.png" position="60,358" render="Progress" size="100,10" source="ServiceEvent" zPosition="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget font="Enigma;17" noWrap="1" position="240,353" render="Label" size="80,20" source="ServiceEvent">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
+		</widget>
+		<widget font="Enigma;17" noWrap="1" position="170,353" render="Label" size="70,20" source="ServiceEvent">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format:%1H:%M</convert>
+		</widget>
+		<widget font="Enigma;17" position="3,377" render="Label" size="555,62" source="ServiceEvent">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+    <widget font="Enigma;17" noWrap="1" position="370,353" render="Label" size="80,20" source="ServiceEvent">
+      <convert type="ServiceOrbitalPosition"></convert>
+    </widget>
+		<widget font="Enigma;18" halign="right" position="495,353" render="Label" size="55,20" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+			<convert type="ClockToText">Default</convert>
+		</widget>
 	</screen>
 	<screen name="ChannelSelectionRadio" position="80,85" size="560,440" title="Channel Selection">
 		<ePixmap alphatest="on" name="red" pixmap="Magic/buttons/key-red.png" position="0,0" size="140,40" transparent="1"/>
