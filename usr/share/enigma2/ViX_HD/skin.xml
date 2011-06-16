@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-HD Vs 1.02 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-HD Vs 1.03 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -973,6 +973,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget source="Event" render="Label" position="695,465" size="533,160" font="Regular; 20" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
+		<ePixmap pixmap="ViX_HD/buttons/key_menu.png" position="50,655" size="35,25" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD/buttons/green.png" position="380,655" size="25,25" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="670,655" size="25,25" alphatest="blend" transparent="1" />
@@ -1020,6 +1021,116 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="key_blue" position="1000,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
 		<ePixmap pixmap="ViX_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
+	<screen name="GraphicalEPG" position="0,0" size="1280,720" title="Programme Guide" backgroundColor="black" flags="wfNoBorder" zPosition="1">
+		<ePixmap pixmap="ViX_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX_HD/icons/ico_EPG_title.png" position="50,52" size="45,36" alphatest="blend" transparent="1" />
+		<widget source="Title" render="Label" position="105,57" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget name="lab1" position="0,114" size="1280,529" font="Regular;24" halign="center" valign="center" zPosition="5" />
+		<widget name="date" position="40,115" size="180,25" font="Bold; 22" halign="left" foregroundColor="une5b243" backgroundColor="black" transparent="1" zPosition="1" />
+		<widget name="timeline_text" position="20,115" size="1200,25" backgroundColor="black" transparent="0" />
+		<widget name="list" position="40,140" size="1200,480" transparent="0" backgroundColor="black" scrollbarMode="showNever" />
+		<widget name="timeline0" position="40,140" zPosition="2" size="2,480" pixmap="skin_default/timeline.png" />
+		<widget name="timeline1" position="40,140" zPosition="2" size="2,480" pixmap="skin_default/timeline.png" />
+		<widget name="timeline2" position="40,140" zPosition="2" size="2,480" pixmap="skin_default/timeline.png" />
+		<widget name="timeline3" position="40,140" zPosition="2" size="2,480" pixmap="skin_default/timeline.png" />
+		<widget name="timeline4" position="40,140" zPosition="2" size="2,480" pixmap="skin_default/timeline.png" />
+		<widget name="timeline5" position="40,140" zPosition="2" size="2,480" pixmap="skin_default/timeline.png" />
+		<widget name="timeline_now" position="40,140" zPosition="3" size="19,480" pixmap="ViX_HD/timeline-now.png" alphatest="on" />
+		<ePixmap pixmap="ViX_HD/buttons/key_menu.png" position="50,655" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
+		<ePixmap pixmap="ViX_HD/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
+		<ePixmap pixmap="ViX_HD/buttons/green.png" position="380,655" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
+		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="670,655" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
+		<ePixmap pixmap="ViX_HD/buttons/blue.png" position="960,655" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
+		<widget name="key_red" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<widget name="key_green" position="420,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<widget name="key_yellow" position="710,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<widget name="key_blue" position="1000,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<ePixmap pixmap="ViX_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="0" />
+	</screen>
+	<screen name="GraphicalEPGPIG" position="0,0" size="1280,720" title="Programme Guide" backgroundColor="black" flags="wfNoBorder">
+		<ePixmap pixmap="ViX_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="0" />
+		<ePixmap pixmap="ViX_HD/icons/ico_EPG_title.png" position="50,52" size="45,36" alphatest="blend" transparent="2" />
+		<widget source="Title" render="Label" position="105,57" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2" zPosition="2">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg" zPosition="2">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget name="lab1" position="0,343" size="1280,300" font="Regular;24" halign="center" valign="center" zPosition="5" />
+		<eLabel position="858,120" size="382,215" zPosition="2" backgroundColor="darkgrey" foregroundColor="window-bg" />
+		<widget source="session.VideoPicture" render="Pig" position="860,122" size="378,211" zPosition="3" backgroundColor="unff000000" />
+		<widget source="Event" render="Label" position="5,120" size="100, 30" font="Regular;26" foregroundColor="une5b243" backgroundColor="black" halign="right">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText" />
+		</widget>
+		<widget source="Event" render="Label" position="113,120" size="100, 30" font="Regular;26" foregroundColor="une5b243" backgroundColor="black" halign="left">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format:- %H:%M</convert>
+		</widget>
+		<widget source="Event" render="Label" position="233,120" size="577,30" font="Regular;26" foregroundColor="une5b243" backgroundColor="black" halign="left">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="Event" render="Label" position="40,160" zPosition="1" size="780,170" font="Regular;20" foregroundColor="white" backgroundColor="black" valign="top">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<widget name="date" position="40,345" size="180,25" font="Bold;22" halign="left" foregroundColor="une5b243" backgroundColor="black" transparent="1" zPosition="2" />
+		<widget name="timeline_text" position="20,345" size="1220,25" backgroundColor="black" zPosition="1" />
+		<widget name="list" position="40,370" size="1200,270" backgroundColor="black" scrollbarMode="showNever" zPosition="1" />
+		<widget name="timeline0" position="430,370" zPosition="2" size="2,270" pixmap="skin_default/timeline.png" />
+		<widget name="timeline1" position="30,370" zPosition="2" size="2,270" pixmap="skin_default/timeline.png" />
+		<widget name="timeline2" position="40,370" zPosition="2" size="2,270" pixmap="skin_default/timeline.png" />
+		<widget name="timeline3" position="40,370" zPosition="2" size="2,270" pixmap="skin_default/timeline.png" />
+		<widget name="timeline4" position="40,370" zPosition="2" size="2,270" pixmap="skin_default/timeline.png" />
+		<widget name="timeline5" position="40,370" zPosition="2" size="2,270" pixmap="skin_default/timeline.png" />
+		<widget name="timeline_now" position="40,370" zPosition="3" size="19,270" pixmap="skin_default/timeline-now.png" alphatest="on" />
+		<ePixmap pixmap="ViX_HD/buttons/key_menu.png" position="50,655" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
+		<ePixmap pixmap="ViX_HD/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
+		<ePixmap pixmap="ViX_HD/buttons/green.png" position="380,655" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
+		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="670,655" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
+		<ePixmap pixmap="ViX_HD/buttons/blue.png" position="960,655" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
+		<widget name="key_red" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<widget name="key_green" position="420,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<widget name="key_yellow" position="710,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<widget name="key_blue" position="1000,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<ePixmap pixmap="ViX_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="0" />
+	</screen>
+	<screen name="EPGSelectionSetup" position="32,0" size="541,720" title="Program Guide Setup" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
+			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
+		</widget>
+		<ePixmap pixmap="ViX_HD/menu/ico_menu_Timer.png" position="427,30" size="88,88" alphatest="blend" />
+		<widget source="Title" render="Label" position="10,80" size="370,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget name="config" position="10,133" size="503,495" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" zPosition="2" />
+		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
+		<widget name="key_red" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
+		<widget name="key_green" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
+	</screen>
+	<screen name="GraphEPGHelp" position="0,0" size="1280,720" title="Help" backgroundColor="black" flags="wfNoBorder" zPosition="1">
+		<ePixmap pixmap="ViX_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX_HD/icons/ico_EPG_title.png" position="50,52" size="45,36" alphatest="blend" transparent="1" />
+		<eLabel text="Help" position="105,57" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget name="Picture" position="320,114" size="639,530" zPosition="3" backgroundColor="black" />
+		<ePixmap pixmap="ViX_HD/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/green.png" position="380,655" size="25,25" alphatest="blend" transparent="1" />
+		<widget name="key_red" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<widget name="key_green" position="420,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<ePixmap pixmap="ViX_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
+	</screen>
 	<screen name="EventView" position="center,426" size="980,250" title="Programme Info" backgroundColor="transparent" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-1" size="980,250" pixmap="ViX_HD/event-info-bg.png" />
 		<widget name="channel" position="50,8" size="400,30" font="Boldit; 30" valign="center" halign="left" noWrap="1" foregroundColor="un7255d" backgroundColor="infobar-bkgrnd" transparent="1" />
@@ -1055,36 +1166,6 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="datetime" position="510,16" size="150,22" font="Regular;22" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="left" foregroundColor="black" />
 		<widget name="duration" position="660,16" size="150,22" font="Regular;22" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="left" foregroundColor="black" />
 		<widget name="epg_description" position="54,50" size="870,150" font="Regular; 22" backgroundColor="infobar_sunken" transparent="1" foregroundColor="black" />
-	</screen>
-	<screen name="VIXEPGSetup" position="32,0" size="541,720" title="Program Guide Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
-			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
-		</widget>
-		<ePixmap pixmap="ViX_HD/menu/ico_menu_Timer.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget source="Title" render="Label" position="10,80" size="370,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
-		<widget name="config" position="10,133" size="503,495" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" zPosition="2" />
-		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
-		<widget name="key_green" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
-	</screen>
-	<screen name="VIXEPGHelp" position="0,0" size="1280,720" title="Help" backgroundColor="black" flags="wfNoBorder" zPosition="1">
-		<ePixmap pixmap="ViX_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="-1" />
-		<ePixmap pixmap="ViX_HD/icons/ico_EPG_title.png" position="50,52" size="45,36" alphatest="blend" transparent="1" />
-		<eLabel text="Help" position="105,57" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
-		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<widget name="Picture" position="320,114" size="639,530" zPosition="3" backgroundColor="black" />
-		<ePixmap pixmap="ViX_HD/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/green.png" position="380,655" size="25,25" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<widget name="key_green" position="420,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<ePixmap pixmap="ViX_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="VIXEPGBouquetSelector" position="32,0" size="541,720" title="Choose Bouquet" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
@@ -3562,7 +3643,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="list" render="Listbox" position="10,133" size="503,495" selectionPixmap="ViX_HD/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
@@ -3578,7 +3659,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="config" position="10,133" size="503,450" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" scrollbarMode="showOnDemand" />
 		<widget name="standbystatus" position="10,520" size="250,55" font="Regular;20" zPosition="5" />
 		<widget name="deepstandbystatus" position="10,575" size="250,55" font="Regular;20" zPosition="5" />
@@ -3595,7 +3676,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="config" position="10,133" size="503,495" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
@@ -3605,7 +3686,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<screen name="VIXSwap" position="32,0" size="541,720" title="Swap Manager" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" zPosition="-1" alphatest="on" transparent="1" />
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="autostart_off" position="40,183" zPosition="1" pixmap="ViX_HD/icons/lock_off.png" size="32,32" alphatest="on" />
 		<widget name="autostart_on" position="40,183" zPosition="2" pixmap="ViX_HD/icons/lock_on.png" size="32,32" alphatest="on" />
 		<widget name="lab1" position="90,183" size="400,30" font="Regular;20" valign="center" transparent="0" backgroundColor="window-bg" />
@@ -3629,7 +3710,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="lab1" position="40,270" size="170,20" font="Regular; 22" halign="right" zPosition="2" backgroundColor="window-bg" transparent="0" valign="center" />
 		<widget name="list" position="225,271" size="240,150" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="lab2" position="40,140" size="170,20" font="Regular; 22" halign="right" zPosition="2" backgroundColor="window-bg" transparent="0" />
@@ -3663,7 +3744,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+
 		<widget name="connect" position="220,220" size="64,64" zPosition="2" pixmaps="ViX_HD/busy/busy1.png,ViX_HD/busy/busy2.png,ViX_HD/busy/busy3.png,ViX_HD/busy/busy4.png,ViX_HD/busy/busy5.png,ViX_HD/busy/busy6.png,ViX_HD/busy/busy7.png,ViX_HD/busy/busy8.png,ViX_HD/busy/busy9.png,ViX_HD/busy/busy9.png,ViX_HD/busy/busy10.png,ViX_HD/busy/busy11.png,ViX_HD/busy/busy12.png,ViX_HD/busy/busy13.png,ViX_HD/busy/busy14.png,ViX_HD/busy/busy15.png,ViX_HD/busy/busy17.png,ViX_HD/busy/busy18.png,ViX_HD/busy/busy19.png,ViX_HD/busy/busy20.png,ViX_HD/busy/busy21.png,ViX_HD/busy/busy22.png,ViX_HD/busy/busy23.png,ViX_HD/busy/busy24.png" transparent="1" alphatest="blend" />
 		<widget name="lab1" position="10,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0" />
 	</screen>
@@ -3673,7 +3755,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_Timer.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="config" position="10,133" size="503,495" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" zPosition="2" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
@@ -3686,7 +3768,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="connect" position="220,220" size="64,64" zPosition="2" pixmaps="ViX_HD/busy/busy1.png,ViX_HD/busy/busy2.png,ViX_HD/busy/busy3.png,ViX_HD/busy/busy4.png,ViX_HD/busy/busy5.png,ViX_HD/busy/busy6.png,ViX_HD/busy/busy7.png,ViX_HD/busy/busy8.png,ViX_HD/busy/busy9.png,ViX_HD/busy/busy9.png,ViX_HD/busy/busy10.png,ViX_HD/busy/busy11.png,ViX_HD/busy/busy12.png,ViX_HD/busy/busy13.png,ViX_HD/busy/busy14.png,ViX_HD/busy/busy15.png,ViX_HD/busy/busy17.png,ViX_HD/busy/busy18.png,ViX_HD/busy/busy19.png,ViX_HD/busy/busy20.png,ViX_HD/busy/busy21.png,ViX_HD/busy/busy22.png,ViX_HD/busy/busy23.png,ViX_HD/busy/busy24.png" transparent="1" alphatest="blend" />
 		<widget name="lab1" position="10,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0" />
 	</screen>
@@ -3696,7 +3778,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="connect" position="220,220" size="64,64" zPosition="2" pixmaps="ViX_HD/busy/busy1.png,ViX_HD/busy/busy2.png,ViX_HD/busy/busy3.png,ViX_HD/busy/busy4.png,ViX_HD/busy/busy5.png,ViX_HD/busy/busy6.png,ViX_HD/busy/busy7.png,ViX_HD/busy/busy8.png,ViX_HD/busy/busy9.png,ViX_HD/busy/busy9.png,ViX_HD/busy/busy10.png,ViX_HD/busy/busy11.png,ViX_HD/busy/busy12.png,ViX_HD/busy/busy13.png,ViX_HD/busy/busy14.png,ViX_HD/busy/busy15.png,ViX_HD/busy/busy17.png,ViX_HD/busy/busy18.png,ViX_HD/busy/busy19.png,ViX_HD/busy/busy20.png,ViX_HD/busy/busy21.png,ViX_HD/busy/busy22.png,ViX_HD/busy/busy23.png,ViX_HD/busy/busy24.png" transparent="1" alphatest="blend" />
 		<widget name="lab1" position="10,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0" />
 	</screen>
@@ -3706,7 +3788,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="lab1" position="10,133" size="503,50" font="Regular;20" zPosition="2" transparent="0" halign="center" />
 		<widget name="list" position="10,190" size="503,435" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="backupstatus" position="12,608" size="503,20" font="Regular;20" zPosition="5" valign="top" />
@@ -3729,7 +3811,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="config" position="10,133" size="503,435" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="HelpWindow" pixmap="ViX_HD/buttons/vkey_icon.png" position="100,490" zPosition="1" size="541,720" transparent="1" alphatest="on" />
 		<ePixmap pixmap="skin_default/buttons/key_text.png" position="150,642" zPosition="4" size="35,25" alphatest="on" transparent="1" />
@@ -3747,7 +3829,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="lab1" position="10,139" size="100,24" font="Regular;20" valign="center" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
 		<widget name="labdisabled" position="110,136" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
 		<widget name="labactive" position="110,136" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
@@ -3773,7 +3855,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="config" position="10,133" size="503,435" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="HelpWindow" pixmap="ViX_HD/buttons/vkey_icon.png" position="100,490" zPosition="1" size="541,720" transparent="1" alphatest="on" />
 		<ePixmap pixmap="skin_default/buttons/key_text.png" position="150,642" zPosition="4" size="35,25" alphatest="on" transparent="1" />
@@ -3786,7 +3868,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="autostart" position="10,139" size="100,24" font="Regular;20" valign="center" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
 		<widget name="labdisabled" position="110,136" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
 		<widget name="labactive" position="110,136" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
@@ -3821,7 +3903,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="config" position="10,133" size="503,435" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="HelpWindow" pixmap="ViX_HD/buttons/vkey_icon.png" position="100,490" zPosition="1" size="541,720" transparent="1" alphatest="on" />
 		<ePixmap pixmap="skin_default/buttons/key_text.png" position="150,642" zPosition="4" size="35,25" alphatest="on" transparent="1" />
@@ -3834,7 +3916,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="infotext" position="10,133" size="503,495" font="Regular;18" />
 	</screen>
 	<screen name="NetworkOpenvpn" position="32,0" size="541,720" title="OpenVPN Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -3843,7 +3925,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="lab1" position="70,190" size="150,30" font="Regular;20" valign="center" transparent="0" />
 		<widget name="labactive" position="230,190" size="250,30" font="Regular;20" valign="center" transparent="0" />
 		<widget name="lab2" position="70,260" size="150,30" font="Regular;20" valign="center" transparent="0" />
@@ -3864,7 +3946,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="infotext" position="10,133" size="503,495" font="Regular;18" />
 	</screen>
 	<screen name="NetworkSamba" position="32,0" size="541,720" title="Samba Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -3873,7 +3955,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="lab1" position="70,190" size="150,30" font="Regular;20" valign="center" transparent="0" />
 		<widget name="labactive" position="230,190" size="250,30" font="Regular;20" valign="center" transparent="0" />
 		<widget name="lab2" position="70,260" size="150,30" font="Regular;20" valign="center" transparent="0" />
@@ -3892,7 +3974,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="lab1" position="70,190" size="150,30" font="Regular;20" valign="center" transparent="0" />
 		<widget name="labactive" position="230,190" size="250,30" font="Regular;20" valign="center" transparent="0" />
 		<widget name="lab2" position="70,260" size="150,30" font="Regular;20" valign="center" transparent="0" />
@@ -3911,7 +3993,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="lab1" position="70,140" size="363,80" font="Regular;20" valign="center" transparent="0" />
 		<widget name="lab2" position="70,260" size="150,30" font="Regular;20" valign="center" transparent="0" />
 		<widget name="labstop" position="230,260" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
@@ -3927,7 +4009,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="lab1" position="70,140" size="363,80" font="Regular;20" valign="center" transparent="0" />
 		<widget name="lab2" position="70,260" size="150,30" font="Regular;20" valign="center" transparent="0" />
 		<widget name="labstop" position="230,260" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
@@ -3943,7 +4025,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_Timer.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="config" position="10,133" size="503,495" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" zPosition="2" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
@@ -4137,42 +4219,43 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_green" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
 		<widget name="key_yellow" position="315,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
 	</screen>
-  <screen name="OscamInfoMenu" position="32,0" size="541,720" title="OscamInfo-Main Menu" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
-    <widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
-      <convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
-    </widget>
-    <ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-    <widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
-    <widget name="mainmenu" position="10,133" size="503,450" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
-  </screen>
-  <screen name="oscECMInfo" position="32,0" size="541,720" title="ECM Info" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
-    <widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
-      <convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
-    </widget>
-    <ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-    <widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
-    <widget name="output" position="10,133" size="503,450" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
- </screen>
-  <screen name="OscamInfoConfigScreen" position="32,0" size="541,720" title="Oscam Info Setup" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
-    <widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
-      <convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
-    </widget>
-    <ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-    <widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
-    <widget name="config" position="10,133" size="503,250" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" scrollbarMode="showOnDemand" transparent="0" />
-    <widget name="status" position="10,390" size="503,240" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
-    <ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
-    <widget source="key_red" render="Label" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
-    <widget source="key_green" render="Label" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
-  </screen>
+	<screen name="OscamInfoMenu" position="32,0" size="541,720" title="OscamInfo-Main Menu" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
+			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
+		</widget>
+		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget name="mainmenu" position="10,133" size="503,450" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
+		</screen>
+		<screen name="oscECMInfo" position="32,0" size="541,720" title="ECM Info" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
+			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
+		</widget>
+		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget name="output" position="10,133" size="503,450" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
+		</screen>
+		<screen name="OscamInfoConfigScreen" position="32,0" size="541,720" title="Oscam Info Setup" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
+			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
+		</widget>
+		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget name="config" position="10,133" size="503,250" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" scrollbarMode="showOnDemand" transparent="0" />
+		<widget name="status" position="10,390" size="503,240" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
+		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
+		<widget source="key_red" render="Label" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
+		<widget source="key_green" render="Label" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
+	</screen>
 	<screen name="VIXIPKInstaller" position="32,0" size="541,720" title="IPK Installer" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" zPosition="-1" alphatest="on" transparent="1" />
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+
 		<widget name="lab1" position="10,133" size="503,25" font="Regular; 20" zPosition="2" transparent="0" halign="center" />
 		<widget name="list" position="10,165" size="503,450" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
@@ -4189,7 +4272,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+
 		<widget source="list" render="Listbox" position="10,133" size="503,490" selectionPixmap="ViX_HD/buttons/FocusBar_H85x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -4226,7 +4310,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+
 		<widget source="list" render="Listbox" position="10,133" size="503,490" selectionPixmap="ViX_HD/buttons/FocusBar_H85x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -4248,7 +4333,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<screen name="VIXScriptRunner" position="32,0" size="541,720" title="Script Runner" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" zPosition="-1" alphatest="on" transparent="1" />
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget name="title" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+
 		<widget name="lab1" position="10,133" size="503,25" font="Regular; 20" zPosition="2" transparent="0" halign="center" />
 		<widget name="list" position="10,165" size="503,450" selectionPixmap="ViX_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
