@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-HD-ViX Vs 1.59 by VU+NL @www.world-of-satellite.com, based on Magic-HD Vs 1.91.54  -->
+  <!--  Skin:  Magic-HD-ViX Vs 1.60 by VU+NL @www.world-of-satellite.com, based on Magic-HD Vs 1.91.54  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -8555,6 +8555,87 @@
     <widget name="menu" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
+  <screen name="GraphicalEPG" position="center,center" size="1280,720" backgroundColor="background" title="Programme Guide">
+    <widget source="Title" render="Label" position="85,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
+    <widget source="global.CurrentTime" render="Label" position="970,15" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget name="date" position="788,30" size="180,30" font="Regular;26" halign="left" foregroundColor="#00e5b243" backgroundColor="secondBG" transparent="1" />
+    <widget name="timeline_text" position="9,60" size="1200,30" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+    <widget name="list" position="70,90" size="1140,435" scrollbarMode="showNever" transparent="1" />
+    <widget name="timeline0" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
+    <widget name="timeline1" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
+    <widget name="timeline2" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
+    <widget name="timeline3" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
+    <widget name="timeline4" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
+    <widget name="timeline5" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
+    <widget name="timeline_now" position="0,90" zPosition="2" size="19,435" pixmap="Magic-HD-Common/window/timeline-now.png" alphatest="on" />
+    <widget source="Event" render="Label" position="70,528" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="background" shadowColor="#000000" halign="right" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText" />
+    </widget>
+    <widget source="Event" render="Label" position="172,528" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="background" shadowColor="#000000" halign="left" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:- %H:%M</convert>
+    </widget>
+    <widget source="Event" render="Label" position="272,528" size="970,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="background" transparent="1" halign="left">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="Event" render="Label" position="70,560" zPosition="1" size="1150,73" font="Regular;20" foregroundColor="foreground" backgroundColor="background" shadowColor="#000000" transparent="1">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="115,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" alphatest="on" position="680,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" alphatest="on" position="970,643" size="26,26" />
+    <widget name="key_red" backgroundColor="secondBG" font="Regular;22" halign="left" position="150,643" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,643" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,643" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,643" size="220,26" transparent="1" zPosition="1" />
+    <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="65,638" size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="65,665" size="35,25" />
+  </screen>
+  <screen name="GraphicalEPGPIG" position="center,center" size="1280,720" backgroundColor="#000000" title="Programme Guide" flags="wfNoBorder">
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,30" halign="left" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="970,35"  size="250,25" transparent="1" valign="center" zPosition="1">
+       <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="85,60" size="393,221" zPosition="3" backgroundColor="#ff000000" />
+    <widget source="Event" render="Label" position="490,60" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" shadowColor="#000000" halign="right" transparent="1">
+	    <convert type="EventTime">StartTime</convert>
+	    <convert type="ClockToText" />
+    </widget>
+    <widget name="date" position="788,30" size="180,30" font="Regular;26" halign="left"  foregroundColor="#00e5b243" backgroundColor="secondBG" transparent="1" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="115,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" alphatest="on" position="680,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" alphatest="on" position="970,643" size="26,26" />
+    <widget name="key_red" backgroundColor="secondBG" font="Regular;22" halign="left" position="150,645" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,645" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,645" size="220,26" transparent="1" zPosition="1" />
+    <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="65,638" size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="65,665" size="35,25" />
+    <widget source="Event" render="Label" position="587,60" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" shadowColor="#000000" halign="left" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+	    <convert type="ClockToText">Format:- %H:%M</convert>
+    </widget>
+    <widget source="Event" render="Label" position="690,60" size="550,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" halign="left">
+	    <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="Event" render="Label" position="490,90" zPosition="1" size="750,185" font="Regular;20" foregroundColor="#00dddddd" backgroundColor="#000000" shadowColor="#000000" transparent="1" valign="top">
+	    <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <widget name="timeline_text" position="85,286" size="1165,30" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
+    <widget name="list" position="85,313" size="1165,325" scrollbarMode="showNever" transparent="1" />
+    <widget name="timeline0" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
+    <widget name="timeline1" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
+    <widget name="timeline2" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
+    <widget name="timeline3" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
+    <widget name="timeline4" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
+    <widget name="timeline5" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
+    <widget name="timeline_now" position="0,313" zPosition="2" size="19,360" pixmap="Magic-HD-Common/window/timeline-now.png" alphatest="on" />
+  </screen>    
   <screen flags="wfNoBorder" name="VIXEPGHelp" position="0,0" size="1280,720" title="Help">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
