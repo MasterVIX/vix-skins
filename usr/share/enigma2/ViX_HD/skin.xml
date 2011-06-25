@@ -540,23 +540,25 @@
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_Info.png" position="427,30" size="88,88" alphatest="blend" transparent="1" />
-    <widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<eLabel text="Virtuosso Image Xtreme" position="30,133" size="458,25" font="Boldit; 24" transparent="0" zPosition="2" />
-		<eLabel text="By Team VIX" position="30,158" size="458,25" font="Italic; 19" transparent="0" zPosition="2" />
+		<eLabel text="By Team ViX" position="30,158" size="458,25" font="Italic; 19" transparent="0" zPosition="2" />
 		<eLabel text="Support at www.vuplus-support.co.uk" position="30,183" size="458,25" font="Italic; 19" transparent="0" zPosition="1" />
-		<widget source="EnigmaVersion" render="Label" position="30,225" size="458,30" font="Regular; 20" transparent="0" zPosition="1" />
-		<widget source="ImageVersion" render="Label" position="30,255" size="458,30" font="Regular; 20" transparent="0" zPosition="1" />
-		<widget source="FPVersion" render="Label" position="30,285" size="458,30" font="Regular; 20" transparent="0" zPosition="1" />
-		<widget source="TunerHeader" render="Label" position="30,338" size="458,36" font="Regular; 20" transparent="0" zPosition="1" />
-		<widget source="Tuner0" render="Label" position="30,374" size="458,28" font="Regular; 20" transparent="0" zPosition="1" />
-		<widget source="Tuner1" render="Label" position="30,402" size="458,28" font="Regular; 20" transparent="0" zPosition="1" />
-		<widget source="Tuner2" render="Label" position="30,430" size="458,28" font="Regular; 20" transparent="0" zPosition="1" />
-		<widget source="Tuner3" render="Label" position="30,458" size="458,28" font="Regular; 20" transparent="0" zPosition="1" />
-		<widget source="HDDHeader" render="Label" position="30,514" size="458,36" font="Regular; 20" transparent="0" zPosition="1" />
-		<widget source="hddA" render="Label" position="30,550" size="458,72" font="Regular; 18" transparent="0" zPosition="1" />
+		<widget source="BoxType" render="Label" position="30,225" size="458,25" font="Regular; 20" transparent="0" zPosition="1" />
+		<widget source="ImageVersion" render="Label" position="30,250" size="458,25" font="Regular; 20" transparent="0" zPosition="1" />
+		<widget source="ImageType" render="Label" position="30,275" size="458,25" font="Regular; 20" transparent="0" zPosition="1" />
+		<widget source="EnigmaVersion" render="Label" position="30,300" size="458,25" font="Regular; 20" transparent="0" zPosition="1" />
+<!-- 		<widget source="FPVersion" render="Label" position="30,300" size="458,30" font="Regular; 20" transparent="0" zPosition="1" /> -->
+		<widget source="TunerHeader" render="Label" position="30,345" size="458,36" font="Regular; 20" transparent="0" zPosition="1" />
+		<widget source="Tuner0" render="Label" position="30,375" size="458,25" font="Regular; 20" transparent="0" zPosition="1" />
+		<widget source="Tuner1" render="Label" position="30,400" size="458,25" font="Regular; 20" transparent="0" zPosition="1" />
+		<widget source="Tuner2" render="Label" position="30,425" size="458,25" font="Regular; 20" transparent="0" zPosition="1" />
+		<widget source="Tuner3" render="Label" position="30,450" size="458,25" font="Regular; 20" transparent="0" zPosition="1" />
+		<widget source="HDDHeader" render="Label" position="30,525" size="458,36" font="Regular; 20" transparent="0" zPosition="1" />
+		<widget source="hddA" render="Label" position="30,550" size="458,75" font="Regular; 18" transparent="0" zPosition="1" />
+		<ePixmap pixmap="ViX_HD/buttons/key_info.png" position="35,644" size="35,25" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
 		<eLabel text="Info" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
-		<ePixmap pixmap="ViX_HD/buttons/key_info.png" position="40,647" size="35,25" alphatest="blend" transparent="1" />
 	</screen>
 	<screen name="AboutReleaseNotes" position="32,0" size="541,720" title="Release Notes" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
@@ -564,7 +566,7 @@
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-    <widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="list" font="Regular;15" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,133" size="503,490" />
 	</screen>
 	<screen name="AdapterSetup" position="32,0" size="541,720" title="Network Setup" flags="wfNoBorder" backgroundColor="transparent">
