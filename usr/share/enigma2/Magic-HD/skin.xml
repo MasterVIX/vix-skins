@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-HD-ViX Vs 1.65 by VU+NL @www.world-of-satellite.com, based on Magic-HD Vs 1.91.54  -->
+  <!--  Skin:  Magic-HD-ViX Vs 1.66 by VU+NL @www.world-of-satellite.com, based on Magic-HD Vs 1.91.54  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -243,10 +243,10 @@
       </convert>
     </widget>
     <ePixmap pixmap="Magic-HD-Common/icons/icon_update_off.png" position="60,35" size="20,20" zPosition="0" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_update.png" position="60,35" size="20,20" zPosition="10" alphatest="blend">
+<!--    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_update.png" position="60,35" size="20,20" zPosition="10" alphatest="blend">
         <convert type="ServiceInfo">ImageUpdateAvailable</convert>
         <convert type="ConditionalShowHide" />
-    </widget>
+    </widget>-->
   </screen>
   <screen name="MoviePlayer" title="InfoBar" position="4,45" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="session.CurrentService" render="Label" position="224,5" size="832,52" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
@@ -8083,6 +8083,7 @@
     <widget name="lab1" position="560,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
+<!-- ## ImageManager ## -->  
   <screen flags="wfNoBorder" name="VIXImageManager" position="0,0" size="1280,720" title="Image Manager">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
@@ -8123,6 +8124,51 @@
     <eLabel text="'Text' = Virtual Keyboard" backgroundColor="secondBG" font="Regular;22" halign="left" position="755,645" size="290,26" transparent="1" zPosition="1" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
 		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="85,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
+  </screen>
+<!-- ## BackUpManager ## -->
+  <screen flags="wfNoBorder" name="VIXBackupManager" position="0,0" size="1280,720" title="Backup Manager">
+    <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="center" position="970,35"  size="250,50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="85,110" render="Pig" size="417,243" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="115,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" alphatest="on" position="680,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" alphatest="on" position="970,643" size="26,26" />
+    <widget name="key_red" backgroundColor="secondBG" font="Regular;22" halign="left" position="150,643" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,643" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,643" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,643" size="220,26" transparent="1" zPosition="1" />
+    <ePixmap pixmap="skin_default/buttons/key_menu.png" position="65,638" size="35,25" alphatest="on" />
+		<widget name="lab1" position="590,110" size="600,50" font="Regular; 22" zPosition="2" transparent="0" halign="center"/>
+		<widget name="backupstatus" position="85,435" size="417,70" font="Regular;22" zPosition="5" />
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(25)
+		</applet>
+    <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="590,170" size="600,420" transparent="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
+  </screen>
+  <screen flags="wfNoBorder" name="BackupManagerMenu" position="0,0" size="1280,720" title="Backup Manager Setup">
+    <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="center" position="970,35"  size="250,50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="85,110" render="Pig" size="417,243" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="115,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" alphatest="on" position="680,643" size="26,26" />
+    <widget name="key_red" backgroundColor="secondBG" font="Regular;22" halign="left" position="150,643" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,643" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,643" size="220,26" transparent="1" zPosition="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
+		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="85,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+ 		<ePixmap pixmap="skin_default/buttons/key_text.png" position="65,638" zPosition="4" size="35,25" alphatest="on" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen flags="wfNoBorder" name="VIXCronManager" position="0,0" size="1280,720" title="Cron Manager">
