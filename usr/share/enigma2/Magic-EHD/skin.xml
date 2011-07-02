@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-EHD-ViX Vs 1.66 by VU+NL @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin:  Magic-EHD-ViX Vs 1.67 by VU+NL @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1135,32 +1135,32 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
-    <widget source="job_name" render="Label" position="590,112" size="480,60" font="Regular;28" />
+    <widget source="job_name" render="Label" position="590,112" size="480,60" font="Regular;28" valign="center" />
     <widget source="job_task" render="Label" position="590,170" size="480,50" font="Regular;23" />
-    <widget source="job_progress" render="Progress" position="590,262" size="480,36" borderWidth="2" backgroundColor="un254f7497" />
-    <widget source="job_progress" render="Label" position="710,266" size="280,32" font="Regular;28" foregroundColor="background" zPosition="2" halign="center" transparent="1">
+<!--    <widget source="job_progress" render="Progress" position="590,262" size="480,36" borderWidth="2" backgroundColor="un254f7497" />-->
+    <widget source="job_progress" render="Label" position="590,262" size="280,36" font="Regular;28" foregroundColor="yellow" zPosition="2" halign="left" transparent="1">
       <convert type="ProgressToText" />
     </widget>
-    <widget source="job_status" render="Label" position="590,312" size="480,26" font="Regular;23" />
-    <widget name="config" position="590,354" size="480,20" />
-    <widget source="cancelable" render="Pixmap" pixmap="skin_default/buttons/red.png" position="590,400" size="140,65" alphatest="on">
+    <widget source="job_status" render="Label" position="590,312" size="480,30" font="Regular;23" />
+    <widget name="config" position="590,400" size="480,30" font="Regular;23" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget source="cancelable" render="Pixmap" pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" zPosition="1" alphatest="on">
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="cancelable" render="FixedLabel" text="Cancel" position="590,400" zPosition="1" size="140,65" font="Regular;20" halign="center" valign="center" backgroundColor="un9f1313" transparent="1">
+    <widget source="cancelable" render="FixedLabel" text="Cancel" position="50,682" size="220,26" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1">
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="finished" render="Pixmap" pixmap="skin_default/buttons/green.png" position="780,400" size="140,65" alphatest="on">
+    <widget source="finished" render="Pixmap" pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26"  alphatest="on">
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="finished" render="FixedLabel" text="OK" font="Regular;20" halign="center" valign="top" position="780,400" size="140,65" transparent="1" backgroundColor="un1f771f">
+    <widget source="finished" render="FixedLabel" text="OK" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left">
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="backgroundable" render="Pixmap" pixmap="skin_default/buttons/blue.png" position="950,400" size="140,65" alphatest="on">
+    <widget source="backgroundable" render="Pixmap" pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on">
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="backgroundable" render="FixedLabel" text="Continue in background" font="Regular;20" halign="center" valign="top" position="950,400" size="140,65" transparent="1" backgroundColor="un18188b">
+    <widget source="backgroundable" render="FixedLabel" text="Continue in background" position="875,682" size="320,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" >
       <convert type="ConditionalShowHide" />
-    </widget>
+    </widget>-->
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ##Pin input## -->
