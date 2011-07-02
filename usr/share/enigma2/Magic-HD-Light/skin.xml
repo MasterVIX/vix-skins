@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-HD-Light ViX Vs 1.19 by VU+NL @www.world-of-satellite.com, based on agic-HD-ViX Vs 1.55 but now in "Light version" (not supporting as many screens) -->
+  <!--  Skin:  Magic-HD-Light ViX Vs 1.20 by VU+NL @www.world-of-satellite.com, based on agic-HD-ViX Vs 1.68 but now in "Light version" (not supporting as many screens) -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -243,7 +243,7 @@
       </convert>
     </widget>
     <ePixmap pixmap="Magic-HD-Common/icons/icon_update_off.png" position="60,35" size="20,20" zPosition="0" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_update.png" position="60,35" size="20,20" zPosition="10" alphatest="blend">
+    <widget source="session.OnlineCheckState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_update.png" position="60,35" size="20,20" zPosition="10" alphatest="blend">
         <convert type="ServiceInfo">ImageUpdateAvailable</convert>
         <convert type="ConditionalShowHide" />
     </widget>
@@ -618,7 +618,7 @@
     <widget name="datetime" position="85,440" size="435,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="duration" position="85,485" size="435,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="epg_description" position="540,110" size="680,500" transparent="1" font="Regular;26" />
-    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
     <!-- ## Menus ## -->
   <screen name="Menu" title="Main menu" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -632,7 +632,7 @@
     <widget source="menu" render="Listbox" position="590,110" size="600,500" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png">
       <convert type="StringList" />
     </widget>
-    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen name="menu_mainmenu" title="Main menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
@@ -650,7 +650,7 @@
 			}
       </convert>
     </widget>
-    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen name="menu_setup" title="Setup menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
@@ -668,7 +668,7 @@
 			}
       </convert>
     </widget>
-    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen name="menu_system" title="System menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
@@ -686,7 +686,7 @@
 			}
       </convert>
     </widget>
-    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen name="menu_information" title="Information menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
@@ -704,7 +704,7 @@
 			}
       </convert>
     </widget>
-    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen name="menu_scan" title="Scan menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
@@ -722,7 +722,7 @@
 			}
       </convert>
     </widget>
-    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen name="Console" title="Command execution" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
@@ -733,7 +733,7 @@
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="85,110" size="417,243" backgroundColor="transparent" zPosition="1" />
     <widget name="text" position="530,105" size="690,476" font="Console;19" />
-    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen name="NumberZap" title="Channel" position="center,center" size="280,60" backgroundColor="transparent" flags="wfNoBorder">
     <widget name="channel" position="0,-200" size="150,60" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="3" valign="center" halign="center"></widget>
@@ -993,7 +993,7 @@
     <widget name="config" position="530,110" size="690,500" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <widget name="canceltext" position="145,645" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="oktext" position="435,645" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen name="TimerEditList" title="Timer Overview" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
@@ -1012,7 +1012,7 @@
     <widget name="key_yellow" position="725,645" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="key_blue" position="1015,645" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="timerlist" position="530,110" size="690,500" font="Regular;26" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
-    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen name="TimerLog" title="Timer log" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
@@ -1066,7 +1066,7 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="115,643" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="390,643" size="26,26" alphatest="on" />
     <widget source="session.VideoPicture" render="Pig" position="85,110" size="417,243" backgroundColor="transparent" zPosition="1" />
-    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen name="PluginDownloadBrowser" title="Downloadable plugins" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
@@ -1092,7 +1092,7 @@
     <widget name="key_red" position="145,645" size="220,30" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="key_green" position="435,645" size="220,30" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="filelist" position="590,110" size="630,500" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
-    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen name="ServiceInfo" title="Serviceinfo" position="0,0" size="1280,720" flags="wfNoBorder">
     <widget name="infolist" position="530,100" size="690,500" selectionDisabled="1" />
@@ -1111,7 +1111,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="85,110" size="417,243" backgroundColor="transparent" zPosition="1" />
-    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
 		<eLabel text="Skin Magic-HD Light   by VU+ NL" foregroundColor="grey" backgroundColor="secondBG" font="Regular;19" halign="center" position="25,450" size="420,55" transparent="1" zPosition="1" />
 		<eLabel text="www.pli-images.org" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" position="25,510" size="420,55" transparent="1" zPosition="1" />
   </screen>
@@ -1145,7 +1145,7 @@
 			}
       </convert>
     </widget>
-    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen name="AdapterSetupConfiguration" title="Network Configuration" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="115,643" size="26,26" alphatest="on" />
@@ -1285,7 +1285,7 @@
     <widget name="EditSettings_Text" position="1015,645" size="200,26" transparent="1" zPosition="2" foregroundColors="#000000,#8c8c93,#1cff1c" font="Regular;19" />
     <widget name="InfoText" position="590,110" size="630,300" zPosition="25" font="Regular;21" />
     <widget name="InfoTextBorder" position="520,82" size="740,350" />
-    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen name="NetworkBrowser" title="Network Neighbourhood" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="115,643" size="26,26" alphatest="on" />
@@ -1319,7 +1319,7 @@
 	</convert>
     </widget>
     <widget source="infotext" render="Label" position="530,590" size="690,30" transparent="1" zPosition="10" font="Regular;20" valign="center" halign="center" />
-    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen name="AutoMountManager" title="MountManager" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
@@ -1344,7 +1344,7 @@
 				}
 			</convert>
     </widget>
-    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <!-- ##Media-Player## -->
   <screen name="MediaPlayer" title="MediaPlayer" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1399,7 +1399,7 @@
     <widget source="Tuner3" render="Label" position="635,395" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
     <widget source="HDDHeader" render="Label" position="635,445" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
     <widget source="hddA" render="Label" position="635,485" size="580,50" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
-    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
 		<eLabel text="Skin Magic-HD   by VU+ NL" foregroundColor="grey" backgroundColor="secondBG" font="Regular;19" halign="center" position="25,450" size="420,55" transparent="1" zPosition="1" />
 		<eLabel text="www.world-of-satellite.com" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" position="25,510" size="420,55" transparent="1" zPosition="1" />
   </screen>  
