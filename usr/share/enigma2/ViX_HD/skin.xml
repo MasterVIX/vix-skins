@@ -846,9 +846,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/icons/icon_update_off.png" position="609,12" size="20,20" zPosition="0" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_HD/icons/icon_update.png" position="609,12" size="20,20" zPosition="10" alphatest="blend">
-			<convert type="ServiceInfo">ImageUpdateAvailable</convert>
-			<convert type="ConditionalShowHide" />
+		<widget source="session.OnlineCheckState" render="Pixmap" pixmap="ViX_HD/icons/icon_update.png" position="609,12" size="20,20" zPosition="1" alphatest="blend" >
+			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD/icons/icon_rec_off.png" position="634,12" size="31,20" zPosition="0" alphatest="blend" />
 		<widget source="session.RecordState" render="Pixmap" pixmap="ViX_HD/icons/icon_rec.png" position="634,12" size="31,20" zPosition="1" alphatest="blend">
