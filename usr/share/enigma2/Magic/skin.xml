@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-ViX Vs 1.02 by VU+NL @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
+  <!--  Skin:  Magic-ViX Vs 1.03 by VU+NL @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -168,6 +168,9 @@
 		<widget alphatest="on" position="54,160" render="Picon" size="70,53" source="session.CurrentService" zPosition="5">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
+		<widget source="session.OnlineCheckState" render="Pixmap" pixmap="Magic/infobar/icon_update.png" position="55,70" size="32,32" zPosition="10" alphatest="blend" >
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>	
 	</screen>
   <screen flags="wfNoBorder" name="SecondInfoBar" position="0,0" size="720,96" title="SecondInfoBar">
     <widget source="session.CurrentService" render="Label" position="50, 20" size="600,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;16" valign="top" halign="left">
