@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-HD Vs 1.06 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-HD Vs 1.07 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -4738,6 +4738,29 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text="Add Timer" position="420,657" size="260,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
 		<eLabel text="Primetime" position="710,658" size="260,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
 		<eLabel text="Refresh" position="1000,658" size="260,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<ePixmap pixmap="ViX_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
+	</screen>
+	<screen name="AutoTimerHelp" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder" title=" ">
+		<ePixmap pixmap="ViX_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX_HD/icons/ico_Chlist_title.png" position="50,52" size="38,34" alphatest="blend" transparent="1" />
+		<widget render="Label" source="title" position="105,57" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<eLabel position="695,120" size="533,300" zPosition="2" backgroundColor="menu_title" foregroundColor="window-bg" />
+		<widget source="session.VideoPicture" render="Pig" position="697,122" size="529,296" zPosition="3" backgroundColor="unff000000" />
+		<widget name="detailtext" position="50,122" size="630,525" zPosition="3" font="Regular;21" backgroundColor="black" transparent="0" halign="left" valign="top"/>
+		<ePixmap pixmap="ViX_HD/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/green.png" position="380,655" size="25,25" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="670,655" size="25,25" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/blue.png" position="960,655" size="25,25" alphatest="blend" transparent="1" />
+		<widget render="Label" source="key_red" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+<!--		<widget render="Label" source="key_green"  position="420,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />-->
+		<widget render="Label" source="key_yellow"  position="710,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<widget render="Label" source="key_blue"  position="1000,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
 		<ePixmap pixmap="ViX_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="AutoTimerOverview" position="32,0" size="541,720" title="AutoTimer" flags="wfNoBorder" backgroundColor="transparent">
