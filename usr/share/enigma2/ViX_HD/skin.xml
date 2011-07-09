@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-HD Vs 1.07 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-HD Vs 1.08 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -2516,6 +2516,22 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="arrowup2" pixmap="ViX_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<ePixmap pixmap="ViX_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
+	</screen>
+	<screen name="MessageBoxWizard" position="0,0" size="1280,720" flags="wfNoBorder">
+		<ePixmap pixmap="ViX_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget name="text" position="150,140" size="730,250" font="Regular;23" transparent="1" foregroundColor="window-fg" backgroundColor="window-bg" />
+		<widget name="ErrorPixmap" pixmap="ViX_HD/icons/input_error.png" position="100,140" size="53,53" alphatest="blend" />
+		<widget name="QuestionPixmap" pixmap="ViX_HD/icons/input_question.png" position="100,140" size="53,53" alphatest="blend" />
+		<widget name="InfoPixmap" pixmap="ViX_HD/icons/input_info.png" position="100,140" size="53,53" alphatest="blend" />
+		<widget name="list" position="150,400" size="730,220"  transparent="1" backgroundColor="window-bg" />
+		<widget name="rc" pixmap="skin_default/rc.png" position="950,140" zPosition="10" size="154,500" transparent="0" alphatest="blend" />
 		<ePixmap pixmap="ViX_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<!-- Software Manger Screens -->
