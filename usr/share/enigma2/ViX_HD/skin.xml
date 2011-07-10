@@ -2621,9 +2621,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="TemplatedMultiContent">
 				{"templates":
 				{"default": (51,[
-				MultiContentEntryText(pos = (5,1), size = (445,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-				MultiContentEntryText(pos = (5,25), size = (445,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-				MultiContentEntryPixmapAlphaTest(pos = (450,0), size = (48,48), png = 5), # index 5 is the status pixmap
+				MultiContentEntryText(pos = (5,1), size = (430,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (5,27), size = (430,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (435,0), size = (48,48), png = 5), # index 5 is the status pixmap
 				MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (503,2), png = 6), # index 6 is the div pixmap
 				]),
 				"category": (40,[
@@ -2632,7 +2632,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 				MultiContentEntryPixmapAlphaTest(pos = (0,38), size = (503,2), png = 3), # index 3 is the div pixmap
 				])
 				},
-				"fonts": [gFont("Regular",22),gFont("Regular",20),gFont("Regular",16)],
+				"fonts": [gFont("Regular",22),gFont("Regular",18),gFont("Regular",16)],
 				"itemHeight": 52
 				}
 			</convert>
@@ -3704,16 +3704,30 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
 			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
 		</widget>
-		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
+		<ePixmap pixmap="ViX_HD/menu/ico_menu_Setup.png" position="427,30" size="88,88" alphatest="blend" transparent="1" />
 		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
-		<widget source="list" render="Listbox" position="10,133" size="503,495" selectionPixmap="ViX_HD/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand">
+		<widget source="menu" render="Listbox" position="10,133" size="503,420" selectionPixmap="ViX_HD/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
+				{"template": [
+				MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
+				],
 				"fonts": [gFont("Regular",28)],
 				"itemHeight": 38
 				}
 			</convert>
 		</widget>
+		<widget source="menu" render="Listbox" position="30,570" size="458,60" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (0,0),size = (450,60),flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM|RT_WRAP,text = 2),# index 0 is the MenuText,
+				],
+				"fonts": [gFont("Regular",20)],
+				"itemHeight": 60
+				}
+			</convert>
+		</widget>
+		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
+		<widget source="key_red" render="Label" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
 	</screen>
 	<screen name="VIXPowerManager" position="32,0" size="541,720" title="Power Manager" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
