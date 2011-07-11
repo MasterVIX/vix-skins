@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-HD Vs 1.09 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-HD Vs 1.10 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -2763,8 +2763,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 				{"template": [
 				MultiContentEntryText(pos = (5,1), size = (430,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
 				MultiContentEntryText(pos = (5,27), size = (430,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-				MultiContentEntryPixmapAlphaTest(pos = (435,0), size = (48,48), png = 5), # index 5 is the status pixmap
-				MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (503,2), png = 6), # index 6 is the div pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (435,0), size = (48,48), png = 4), # index 5 is the status pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (503,2), png = 5), # index 6 is the div pixmap
 				],
 				"fonts": [gFont("Regular",22),gFont("Regular",18)],
 				"itemHeight": 52
@@ -3110,7 +3110,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="ViX_HD/buttons/green.png" position="210,91" size="25,25" alphatest="blend" />
 		<widget source="key_red" render="Label" position="58,93" zPosition="1" size="150,20" font="Regular;20" halign="center" valign="center" backgroundColor="un27b5b9bd" transparent="1" />
 		<widget source="key_green" render="Label" position="248,93" zPosition="1" size="150,20" font="Regular;20" halign="center" valign="center" backgroundColor="un27b5b9bd" transparent="1" />
-		<widget name="CiList" position="15,125" itemHeight="42" selectionPixmap="ViX_HD/buttons/FocusBar_H42.png" transparent="1" zPosition="1" size="490,336" scrollbarMode="showOnDemand" />
+		<widget name="CiList" position="15,125" itemHeight="42" selectionPixmap="ViX_HD/buttons/FocusBar_H42x503.png" transparent="1" zPosition="1" size="490,336" scrollbarMode="showOnDemand" />
 	</screen>
 	<screen name="CIconfigMenu" position="209,48" size="865,623" title="CI assignment" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
