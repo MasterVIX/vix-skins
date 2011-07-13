@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-EHD-ViX Vs 1.75 by VU+NL @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin:  Magic-EHD-ViX Vs 1.76 by VU+NL @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1201,6 +1201,21 @@
     <widget name="list" position="15,390" size="600,240" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
+  <screen name="MessageBoxWizard" position="0,0" size="1280,720" flags="wfNoBorder">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
+    <widget name="text" position="650,80" size="445,590" font="Regular;22" />
+    <widget name="ErrorPixmap" pixmap="Magic-HD-Common/window/input_error.png" position="550,110" size="54,54" alphatest="on" />
+    <widget name="QuestionPixmap" pixmap="Magic-HD-Common/window/input_question.png" position="550,110" size="54,54" alphatest="on" />
+    <widget name="InfoPixmap" pixmap="Magic-HD-Common/window/input_info.png" position="550,110" size="54,54" alphatest="on" />
+    <widget name="list" position="15,390" size="600,240" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" />
+		<widget name="rc" pixmap="skin_default/rc.png" position="1105,140" zPosition="10" size="154,500" transparent="0" alphatest="blend" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>  
   <screen flags="wfNoBorder" name="TimeDateInput" position="0,0" size="1280,720" title="Time/Date Input">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
@@ -2509,16 +2524,17 @@
     <widget source="key_red" render="Label" position="50,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
     <widget source="key_green" render="Label" position="340,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
     <widget source="list" render="Listbox" position="520,82" size="755,586" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png">
-      <convert type="TemplatedMultiContent">
-			{"template": [
-				MultiContentEntryPixmapAlphaTest(pos = (18,21),size = (48,48),png = 4),# index 4 is the status pixmap
-				MultiContentEntryText(pos = (95,9),size = (530,28),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
-				MultiContentEntryText(pos = (95,45),size = (530,40),font=1,flags = RT_HALIGN_LEFT | RT_WRAP,text = 2),# index 2 is the description
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (5,1), size = (430,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (5,27), size = (430,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (435,0), size = (48,48), png = 4), # index 5 is the status pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (503,2), png = 5), # index 6 is the div pixmap
 				],
-			"fonts": [gFont("Regular",22),gFont("Regular",16)],
-			"itemHeight": 90
-			}
-      </convert>
+				"fonts": [gFont("Regular",22),gFont("Regular",18)],
+				"itemHeight": 52
+				}
+			</convert>
     </widget>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -2584,21 +2600,23 @@
     <widget source="key_yellow" render="Label" position="614,682" size="220,26" backgroundColor="secondBG" zPosition="1" transparent="1" font="Regular;22" halign="left" />
     <widget source="key_blue" render="Label" position="875,682" size="220,26" backgroundColor="secondBG" zPosition="1" transparent="1" font="Regular;22" halign="left" />
     <widget source="list" render="Listbox" position="520,82" size="755,586" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png">
-      <convert type="TemplatedMultiContent">
-			{"templates":
-				{"default": (75,[
-						MultiContentEntryPixmapAlphaTest(pos = (18,14),size = (48,48),png = 5),# index 5 is the status pixmap
-						MultiContentEntryText(pos = (90,5),size = (565,26),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
-						MultiContentEntryText(pos = (100,33),size = (555,38),font=1,flags = RT_HALIGN_LEFT,text = 2),# index 2 is the description
-					]),
-				"category": (75,[
-						MultiContentEntryText(pos = (15,5),size = (565,26),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
-						MultiContentEntryText(pos = (15,33),size = (565,20),font=1,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the description
-					])
+			<convert type="TemplatedMultiContent">
+				{"templates":
+				{"default": (51,[
+				MultiContentEntryText(pos = (5,1), size = (430,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (5,27), size = (430,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (435,0), size = (48,48), png = 5), # index 5 is the status pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (503,2), png = 6), # index 6 is the div pixmap
+				]),
+				"category": (40,[
+				MultiContentEntryText(pos = (5,0), size = (498,22), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (5,22), size = (498,16), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (0,38), size = (503,2), png = 3), # index 3 is the div pixmap
+				])
 				},
-				"fonts": [gFont("Regular",22),gFont("Regular",17)],
-				"itemHeight": 75
-			}
+				"fonts": [gFont("Regular",22),gFont("Regular",18),gFont("Regular",16)],
+				"itemHeight": 52
+				}
 			</convert>
     </widget>
     <widget source="status" render="Label" position="15,400" size="447,200" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;22" halign="center" />
@@ -8018,7 +8036,9 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
-     <widget source="list" render="Listbox" position="590,110" size="600,500" selectionPixmap="Magic-HD-Common/buttons/sel.png" scrollbarMode="showOnDemand">
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+    <widget source="key_red" render="Label" position="50,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
+     <widget source="menu" render="Listbox" position="590,110" size="600,500" selectionPixmap="Magic-HD-Common/buttons/sel.png" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 			{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
 			"fonts": [gFont("Regular",24)],
