@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-HD-ViX Vs 1.78 by VU+NL @www.world-of-satellite.com, based on Magic-HD Vs 1.91.54  -->
+  <!--  Skin:  Magic-HD-ViX Vs 1.80 by VU+NL @www.world-of-satellite.com, based on Magic-HD Vs 1.91.54  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -4987,18 +4987,6 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
-  <!-- ## Cronmanager ## -->
-  <screen flags="wfNoBorder" name="Cronmanager" position="0,0" size="1280,720" title="Cronmanager Menu">
-    <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
-    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
-    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
-    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="970,35"  size="250,50" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Full</convert>
-    </widget>
-    <widget source="session.VideoPicture" backgroundColor="transparent" position="85,110" render="Pig" size="417,243" zPosition="1" />
-    <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
-    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
-  </screen>
   <!-- ## RSS ## -->
   <screen flags="wfNoBorder" name="FeedScreenList" position="0,0" size="1280,720" title="PLi RSS reader">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
@@ -8292,7 +8280,7 @@
 		<widget name="lab2" position="85,480" size="150,26" font="Regular;20" valign="center" transparent="0" />
 		<widget name="labstop" position="260,480" size="250,26" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
 		<widget name="labrun" position="260,480" size="250,26" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
-    <eLabel text="H: = Hourly    D: = Daily    W: = Weekly    M: = Monthly" position="590,110" size="600,25" font="Regular; 20" halign="center" transparent="1" valign="center" backgroundColor="background" />
+    <widget name="key" position="590,110" size="600,25" font="Regular; 20" halign="center" transparent="1" valign="center" backgroundColor="background" />
     <widget source="list" render="Listbox" position="590,150" size="600,430" selectionPixmap="Magic-HD-Common/buttons/sel.png" scrollbarMode="showOnDemand">
       <convert type="StringList" />
     </widget>
