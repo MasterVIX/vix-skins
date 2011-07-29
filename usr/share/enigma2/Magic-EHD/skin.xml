@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-EHD-ViX Vs 1.86 by VU+NL @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin:  Magic-EHD-ViX Vs 1.87 by VU+NL @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -194,6 +194,9 @@
     </widget>
     <widget source="session.FrontendStatus" render="Label" position="1100,137" size="110,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19">
       <convert type="FrontendInfo">SNRdB</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Label" position="1170,137" size="75,22" backgroundColor="secondBG" transparent="1" font="Regular;19" zPosition="1" foregroundColor="foreground">
+      <convert type="FrontendInfo">AGC</convert>
     </widget>
     <widget source="session.TunerInfo" render="FixedLabel" position="1100,80" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="A" foregroundColor="orange" font="Regular;20">
       <convert type="TunerInfo">TunerUseMask</convert>
@@ -871,7 +874,7 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget source="key_red" render="Label" position="50,682" size="220,30" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget source="key_green" render="Label" position="340,682" size="220,30" foregroundColor="foreground" font="Regular;22" halign="left" />
-		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,410" size="1,1" zPosition="1" transparent="1" alphatest="on" />
+   <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,410" size="1,1" zPosition="1" transparent="1" alphatest="on" />
     <widget name="config" position="520,82" size="755,577" itemHeight="32" font="Regular;25" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -890,8 +893,7 @@
     <widget source="EnigmaVersion" render="Label" position="635,120" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
     <widget source="ImageType" render="Label" position="635,165" size="580,25" font="Regular; 20" halign="center" transparent="0" zPosition="1" />
     <widget source="ImageVersion" render="Label" position="635,220" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
-    <widget source="BuildVersion" render="Label" position="30,275" size="458,25" font="Regular; 20" transparent="0" zPosition="1" />
-
+    <widget source="BuildVersion" render="Label" position="635,255" size="580,25" font="Regular; 20" transparent="0" zPosition="1" />
   <!--<widget source="FPVersion" render="Label" position="635,200" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />-->
     <widget source="TunerHeader" render="Label" position="635,300" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
     <widget source="Tuner0" render="Label" position="635,340" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
@@ -900,7 +902,6 @@
     <widget source="Tuner3" render="Label" position="635,445" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
     <widget source="HDDHeader" render="Label" position="635,545" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
     <widget source="hddA" render="Label" position="635,570" size="580,75" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
-
     <widget source="lab1" render="Label" position="10,390" size="477,48" font="Boldit; 24" transparent="0" zPosition="2" />
     <widget source="lab2" render="Label" position="10,440" size="477,48" font="Italic; 19" transparent="0" zPosition="2" />
     <widget source="lab3" render="Label" position="10,490" size="477,48" font="Italic; 19" transparent="0" zPosition="1" />
