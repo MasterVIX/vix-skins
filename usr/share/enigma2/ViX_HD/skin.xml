@@ -1984,22 +1984,22 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text=" " position="40,275" zPosition="1" size="458,2" backgroundColor="un8c8c8c" />
 		<widget name="config" position="40,288" transparent="0" backgroundColor="window-bg" size="455,340" scrollbarMode="showOnDemand" />
 	</screen>
-	<screen name="ScanSetup" position="32,0" size="541,720" title="Service scan" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ScanSetup" position="32,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" zPosition="-1" alphatest="on" transparent="1" />
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_Setup.png" position="427,30" size="88,88" alphatest="blend" transparent="1" />
 		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="config" position="10,133" size="503,350" selectionPixmap="ViX_HD/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand" />
 		<widget name="introduction" position="10,565" size="500,40" font="Regular;20" halign="center" />
 	</screen>
-	<screen name="ScanSimple" position="32,0" size="541,720" title="Service scan" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ScanSimple" position="32,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" zPosition="-1" alphatest="on" transparent="1" />
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_Setup.png" position="427,30" size="88,88" alphatest="blend" transparent="1" />
-		<widget name="header" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="config" position="10,133" size="503,250" selectionPixmap="ViX_HD/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand" />
 		<widget name="footer" position="10,565" size="503,40" font="Regular;20" halign="center" />
 	</screen>
 	<screen name="Scart" position="0,0" size="1280,720" backgroundColor="transparent" />
-	<screen name="ServiceInfo" position="250,125" size="780,510" title="Serviceinfo" flags="wfBorder" backgroundColor="window-bg">
+	<screen name="ServiceInfo" position="250,125" size="780,510" flags="wfBorder" backgroundColor="window-bg">
 		<widget name="infolist" position="40,0" size="700,460" itemHeight="36" selectionDisabled="1" transparent="0" />
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="0,478" size="25,25" alphatest="blend" />
 		<ePixmap pixmap="ViX_HD/buttons/green.png" position="200,478" size="25,25" alphatest="blend" />
@@ -2010,7 +2010,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="yellow" position="423,491" size="150,20" zPosition="1" font="Regular;20" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
 		<widget name="blue" position="618,491" size="150,20" zPosition="1" font="Regular;20" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
 	</screen>
-	<screen name="ServiceScan" position="32,0" size="541,720" title="Service Scan" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ServiceScan" position="32,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
 			<convert type="ClockToText">Full</convert>
@@ -3234,7 +3234,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="VKeyIcon" pixmap="ViX_HD/buttons/key_text.png" position="160,490" zPosition="10" size="35,25" transparent="1" alphatest="on" />
 		<widget name="HelpWindow" pixmap="ViX_HD/buttons/vkey_icon.png" position="310,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 	</screen>
-	<screen name="DefaultServiceScan" position="150,115" size="420,390" title="Service Scan">
+	<screen name="DefaultServiceScan" position="150,115" size="420,390">
 		<widget source="FrontendInfo" render="Pixmap" pixmap="ViX_HD/icons/scan-s.png" position="5,5" size="64,64" transparent="1" alphatest="blend">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
