@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-<!--  Skin:  Magic-HD-ViX Vs 1.84 by VU+NL @www.world-of-satellite.com, based on Magic-HD Vs 1.91.54  -->
+<!--  Skin:  Magic-HD-ViX Vs 1.89 by VU+NL @www.world-of-satellite.com, based on Magic-HD Vs 1.91.54  -->
 <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
 <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
 <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -190,8 +190,11 @@
     <widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1216,83" size="20,20" zPosition="3" alphatest="on">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Label" position="1100,137" size="110,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19">
+    <widget source="session.FrontendStatus" render="Label" position="1100,137" size="75,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19">
       <convert type="FrontendInfo">SNRdB</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Label" position="1144,137" size="75,22" backgroundColor="secondBG" transparent="1" font="Regular;19" zPosition="1" foregroundColor="foreground">
+      <convert type="FrontendInfo">AGC</convert>
     </widget>
     <widget source="session.TunerInfo" render="FixedLabel" position="1100,80" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="A" foregroundColor="orange" font="Regular;20">
       <convert type="TunerInfo">TunerUseMask</convert>
@@ -244,11 +247,8 @@
     </widget>
 <!--<ePixmap pixmap="Magic-HD-Common/icons/icon_update_off.png" position="60,35" size="20,20" zPosition="0" alphatest="blend" />-->
     <widget source="session.OnlineCheckState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_update.png" position="60,35" size="32,32" zPosition="10" alphatest="blend">
-        <convert type="ConditionalShowHide" />
+      <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-
-
-
   </screen>
   <screen name="MoviePlayer" title="InfoBar" position="4,45" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="session.CurrentService" render="Label" position="224,5" size="832,52" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
@@ -956,19 +956,21 @@
     <eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
     <widget source="BoxType" render="Label" position="635,125" size="580,25" font="Regular; 20" halign="center" transparent="0" zPosition="1" />
     <widget source="EnigmaVersion" render="Label" position="635,160" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
-    <widget source="ImageType" render="Label" position="635,205" size="580,25" font="Regular; 20" halign="center" transparent="0" zPosition="1" />
-    <widget source="ImageVersion" render="Label" position="635,250" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
-<!--<widget source="FPVersion" render="Label" position="635,200" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />-->
+    <widget source="KernelVersion" render="Label" position="635,205" size="580,25" font="Regular; 20" halign="center" transparent="0" zPosition="1" />
+    <widget source="ImageType" render="Label" position="635,230" size="580,25" font="Regular; 20" halign="center" transparent="0" zPosition="1" />
+    <widget source="BuildVersion" render="Label" position="635,270" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
     <widget source="TunerHeader" render="Label" position="635,330" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
     <widget source="Tuner0" render="Label" position="635,370" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
     <widget source="Tuner1" render="Label" position="635,405" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
     <widget source="Tuner2" render="Label" position="635,440" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
     <widget source="Tuner3" render="Label" position="635,475" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
-    <widget source="HDDHeader" render="Label" position="635,535" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
-    <widget source="hddA" render="Label" position="635,565" size="580,50" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
-    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
-    <eLabel text="Skin Magic-HD   by VU+ NL" foregroundColor="grey" backgroundColor="secondBG" font="Regular;19" halign="center" position="25,450" size="420,55" transparent="1" zPosition="1" />
-    <eLabel text="www.world-of-satellite.com" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" position="25,510" size="420,55" transparent="1" zPosition="1" />
+    <widget source="HDDHeader" render="Label" position="635,510" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
+    <widget source="hddA" render="Label" position="635,550" size="580,75" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
+    <widget source="lab1" render="Label" position="10,390" size="477,48" font="Boldit; 24" transparent="0" zPosition="2" />
+    <widget source="lab2" render="Label" position="10,440" size="477,48" font="Italic; 19" transparent="0" zPosition="2" />
+    <widget source="lab3" render="Label" position="10,490" size="477,48" font="Italic; 19" transparent="0" zPosition="1" />
+    <eLabel text="Skin Magic-HD   by VU+ NL" foregroundColor="grey" backgroundColor="secondBG" font="Regular;19" halign="center" position="25,535" size="420,55" transparent="1" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,600" size="300,25" alphatest="on" />
   </screen>
   <screen flags="wfNoBorder" name="AboutReleaseNotes" position="0,0" size="1280,720" title="Release Notes">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
@@ -8570,12 +8572,12 @@
     <widget source="session.VideoPicture" backgroundColor="transparent" position="85,110" render="Pig" size="417,243" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="115,643" size="26,26" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" alphatest="on" position="680,643" size="26,26" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" alphatest="on" position="970,643" size="26,26" />
+<!--    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" alphatest="on" position="680,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" alphatest="on" position="970,643" size="26,26" />-->
     <widget name="key_red" backgroundColor="secondBG" font="Regular;22" halign="left" position="150,643" size="220,26" transparent="1" zPosition="1" />
     <widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,643" size="220,26" transparent="1" zPosition="1" />
-    <widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,643" size="220,26" transparent="1" zPosition="1" />
-    <widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,643" size="220,26" transparent="1" zPosition="1" />
+<!--    <widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,643" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,643" size="220,26" transparent="1" zPosition="1" />-->
     <widget source="list" render="Listbox" position="590,110" size="600,430" selectionPixmap="Magic-HD-Common/buttons/sel.png" ransparent="0" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 	{"template": [
