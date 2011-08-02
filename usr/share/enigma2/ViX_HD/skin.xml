@@ -1266,7 +1266,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
 			<convert type="ClockToText">Full</convert>
 		</widget>
-		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget source="title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget source="menu" render="Listbox" position="10,133" size="503,495" selectionPixmap="ViX_HD/buttons/FocusBar_H45x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (20,8), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
