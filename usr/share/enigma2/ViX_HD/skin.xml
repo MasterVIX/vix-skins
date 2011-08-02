@@ -377,41 +377,44 @@
 		<ePixmap pixmap="ViX_HD/buttons/blue.png" position="490,150" size="25,25" alphatest="blend" />
 		<widget name="key_blue" position="520,154" zPosition="1" size="130,20" font="Regular; 20" foregroundColor="foreground" backgroundColor="infobar_collab_back" transparent="1" />
 	</screen>
-	<screen name="MediaPlayer" position="213,48" size="858,660" title="MediaPlayer" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-1" size="858,450" pixmap="ViX_HD/Bg_MediaPlayer_Info.png" />
-		<ePixmap position="0,458" zPosition="-1" size="858,184" pixmap="ViX_HD/Bg_MediaPlayer.png" />
-		<widget name="title" position="50,476" size="475,30" font="Boldit; 30" foregroundColor="un240256" backgroundColor="infobar-bkgrnd" transparent="1" />
-		<ePixmap pixmap="ViX_HD/icons/clock.png" position="710,480" zPosition="1" size="20,20" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Label" position="728,482" zPosition="1" size="59,20" font="Regular; 21" foregroundColor="foreground" halign="right" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top">
-			<convert type="ClockToText">Format:%H:%M</convert>
+	<screen name="MediaPlayer" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder" title="Media Player">
+		<ePixmap pixmap="ViX_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX_HD/icons/ico_Chlist_title.png" position="50,52" size="38,34" alphatest="blend" transparent="1" />
+		<widget source="Title" render="Label" position="105,57" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
+			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="788,485" zPosition="1" size="35,18" font="Regular; 17" valign="top" backgroundColor="infobar-bkgrnd" foregroundColor="foreground" transparent="1" noWrap="1">
-			<convert type="ClockToText">Format::%S</convert>
+		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
+			<convert type="ClockToText">Date</convert>
 		</widget>
-		<widget name="artisttext" position="174,515" size="74,22" font="Regular; 20" valign="top" foregroundColor="black" backgroundColor="infobar_sunken" transparent="1" />
-		<widget name="artist" position="254,515" size="315,22" font="Regular; 20" valign="top" foregroundColor="black" backgroundColor="infobar_sunken" transparent="1" />
-		<widget name="albumtext" position="174,540" size="74,22" font="Regular; 20" valign="top" foregroundColor="black" backgroundColor="infobar_sunken" transparent="1" />
-		<widget name="album" position="254,540" size="315,22" font="Regular; 20" valign="top" foregroundColor="black" backgroundColor="infobar_sunken" transparent="1" />
-		<widget name="yeartext" position="574,540" size="74,22" font="Regular; 20" valign="top" foregroundColor="black" backgroundColor="infobar_sunken" transparent="1" />
-		<widget name="year" position="649,540" size="150,22" font="Regular; 20" valign="top" foregroundColor="black" backgroundColor="infobar_sunken" transparent="1" />
-		<widget name="genretext" position="574,515" size="74,22" font="Regular; 20" valign="top" foregroundColor="black" backgroundColor="infobar_sunken" transparent="1" />
-		<widget name="genre" position="649,515" size="150,22" font="Regular; 20" valign="top" foregroundColor="black" backgroundColor="infobar_sunken" transparent="1" />
-		<widget name="coverArt" pixmap="ViX_HD/no_coverArt.png" position="50,514" size="102,102" transparent="1" alphatest="blend" />
-		<ePixmap pixmap="ViX_HD/icons/Mediaplayerbar_gray.png" zPosition="2" position="192,575" size="563,18" alphatest="blend" />
-		<widget name="PositionGauge" zPosition="3" position="192,573" size="563,18" pointer="ViX_HD/icons/Mediaplayerbar_purple.png:563,0" seek_pointer="ViX_HD/icons/Mediaplayerbar_purple.png:563,0" transparent="1" />
-		<widget source="session.CurrentService" render="Label" position="175,594" size="120,18" foregroundColor="un3d0e82" font="Italic;18" halign="right" valign="center" backgroundColor="infobar_sunken" transparent="1">
+		<eLabel name="Filelist" position="50,120" size="110,22" text="File List" font="Italic;22" foregroundColor="unffb300" transparent="1" />
+		<eLabel position="48,150" size="574,476" zPosition="0" backgroundColor="menu_title" />
+		<widget name="filelist" position="50,152" size="570,472" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD/buttons/FocusBar_H25x590.png" foregroundColor="window-fg" backgroundColor="black" transparent="0" />
+		<eLabel name="Playlist" position="650,120" size="110,22" text="Play List" font="Italic;22" foregroundColor="unffb300" transparent="1" />
+		<eLabel position="648,150" size="574,306" zPosition="0" backgroundColor="menu_title" />
+		<widget name="playlist" position="650,152" size="570,302" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD/buttons/FocusBar_H25x590.png" foregroundColor="window-fg" backgroundColor="black" transparent="0" />
+		<widget name="currenttext" position="465,120" size="0,0" />
+		<widget name="titletext" position="465,120" size="0,0" />
+		<widget name="coverArt" pixmap="ViX_HD/no_coverArt.png" position="650,485" size="102,102" transparent="1" alphatest="blend" />
+		<widget name="artisttext" position="774,485" size="74,22" font="Regular; 20" valign="top" transparent="1" />
+		<widget name="artist" position="854,485" size="315,22" font="Regular; 20" valign="top" transparent="1" />
+		<widget name="albumtext" position="774,510" size="74,22" font="Regular; 20" valign="top" transparent="1" />
+		<widget name="album" position="854,510" size="315,22" font="Regular; 20" valign="top" transparent="1" />
+		<widget name="yeartext" position="774,535" size="74,22" font="Regular; 20" valign="top" transparent="1" />
+		<widget name="year" position="854,535" size="150,22" font="Regular; 20" valign="top" transparent="1" />
+		<widget name="genretext" position="774,560" size="74,22" font="Regular; 20" valign="top" transparent="1" />
+		<widget name="genre" position="854,560" size="150,22" font="Regular; 20" valign="top" transparent="1" />
+		<ePixmap pixmap="ViX_HD/icons/Mediaplayerbar_gray.png" zPosition="2" position="650,595" size="563,18" alphatest="blend" />
+		<widget name="PositionGauge" zPosition="3" position="650,593" size="963,18" pointer="ViX_HD/icons/Mediaplayerbar_purple.png:563,0" seek_pointer="ViX_HD/icons/Mediaplayerbar_purple.png:563,0" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="650,614" size="120,18" foregroundColor="un3d0e82" font="Italic;18" halign="left" valign="center" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="693,594" size="120,18" foregroundColor="un2c2c2c" font="Italic;18" halign="left" valign="center" backgroundColor="infobar_sunken" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="1170,614" size="120,18" font="Italic;18" halign="left" valign="center" transparent="1">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
-		<widget name="repeat" position="767,574" size="23,20" pixmaps="ViX_HD/icons/ico_noreplay.png,ViX_HD/icons/ico_replay.png" transparent="1" alphatest="blend" />
-		<eLabel name="Filelist" position="50,14" size="110,22" text="File List" font="Italic;22" foregroundColor="un3c3c3c" backgroundColor="und9dee2" transparent="1" />
-		<widget name="filelist" position="44,55" size="364,350" itemHeight="25" selectionPixmap="ViX_HD/buttons/FocusBar_H25x365.png" foregroundColor="foreground" backgroundColor="infobar_sunken" transparent="1" scrollbarMode="showOnDemand" />
-		<eLabel name="Playlist" position="452,14" size="110,22" text="Play List" font="Italic;22" foregroundColor="un3c3c3c" backgroundColor="und9dee2" transparent="1" />
-		<widget name="playlist" position="449,55" size="364,350" itemHeight="25" selectionPixmap="ViX_HD/buttons/FocusBar_H25x365.png" foregroundColor="foreground" backgroundColor="infobar_sunken" transparent="1" scrollbarMode="showOnDemand" />
-		<widget name="currenttext" position="65,80" size="0,0" />
-		<widget name="titletext" position="65,80" size="0,0" />
+		<widget name="repeat" position="1190,580" size="23,20" pixmaps="ViX_HD/icons/ico_noreplay.png,ViX_HD/icons/ico_replay.png" transparent="1" alphatest="blend" />
+		<ePixmap pixmap="ViX_HD/buttons/key_menu.png" position="50,655" size="35,25" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="PVRState" position="92,50" zPosition="2" size="88,88" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
 		<ePixmap position="0,0" zPosition="1" size="88,88" pixmap="ViX_HD/pvr-bg.png" />
@@ -678,7 +681,7 @@
 		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="menu" position="10,133" size="503,480" itemHeight="30" selectionPixmap="ViX_HD/buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" />
 	</screen>
-	<screen name="ChannelSelection" position="1,center" size="1280,720" backgroundColor="black" flags="wfNoBorder" title=" ">
+	<screen name="ChannelSelection" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder" title=" ">
 		<ePixmap pixmap="ViX_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="-1" />
 		<ePixmap pixmap="ViX_HD/icons/ico_Chlist_title.png" position="50,52" size="38,34" alphatest="blend" transparent="1" />
 		<widget source="Title" render="Label" position="105,57" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
