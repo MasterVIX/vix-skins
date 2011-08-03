@@ -2066,7 +2066,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_tv.png" position="427,30" size="88,88" alphatest="blend" transparent="1" />
 		<eLabel text="Select Channel" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
-		<widget name="list" position="10,133" size="503,390" itemHeight="30" selectionPixmap="ViX_HD/buttons/FocusBar_H30x503.png" foregroundColorEvent="darkgrey" foregroundColorEventSelected="menu_title" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" />
+		<widget name="list" position="10,133" size="503,392" itemHeight="30" selectionPixmap="ViX_HD/buttons/FocusBar_H30x503.png" foregroundColorEvent="darkgrey" foregroundColorEventSelected="menu_title" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" />
 		<widget source="ServiceEvent" render="Label" position="10,530" zPosition="2" size="60,25" font="Bold; 22" backgroundColor="black" halign="right" noWrap="1" valign="top" foregroundColor="unffb300" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">
