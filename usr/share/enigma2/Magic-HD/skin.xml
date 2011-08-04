@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-<!--  Skin:  Magic-HD-ViX Vs 1.91 by VU+NL @www.world-of-satellite.com, based on Magic-HD Vs 1.91.54  -->
+<!--  Skin:  Magic-HD-ViX Vs 1.92 by VU+NL @www.world-of-satellite.com, based on Magic-HD Vs 1.91.54  -->
 <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
 <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
 <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -190,11 +190,8 @@
     <widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1216,83" size="20,20" zPosition="3" alphatest="on">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Label" position="1100,137" size="75,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19">
+    <widget source="session.FrontendStatus" render="Label" position="1100,137" size="110,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19">
       <convert type="FrontendInfo">SNRdB</convert>
-    </widget>
-    <widget source="session.FrontendStatus" render="Label" position="1144,137" size="75,22" backgroundColor="secondBG" transparent="1" font="Regular;19" zPosition="1" foregroundColor="foreground">
-      <convert type="FrontendInfo">AGC</convert>
     </widget>
     <widget source="session.TunerInfo" render="FixedLabel" position="1100,80" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="A" foregroundColor="orange" font="Regular;20">
       <convert type="TunerInfo">TunerUseMask</convert>
