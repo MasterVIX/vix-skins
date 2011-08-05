@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-ViX Vs 1.04 by VU+NL @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
+  <!--  Skin:  Magic-ViX Vs 1.05 by VU+NL @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -510,7 +510,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap alphatest="on" pixmap="skin_default/buttons/green-big.png" position="320,415" size="200,40" />
     <eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="center" valign="center" position="320,415" size="200,40" transparent="1" zPosition="1" />
     <!--<eLabel text="www.pli-images.org" foregroundColor="grey" backgroundColor="background" font="Regular;22" halign="center" position="10,320" size="340,25" transparent="1" zPosition="1" />-->
-	</screen>	
+	</screen>
+	<screen name="AboutReleaseNotes" position="80,80" size="540,460" title="Release Notes">
+    <widget name="list" render="Label" font="Regular;22" position="25,30" size="490,350" transparent="1" />
+    <ePixmap pixmap="Magic/logos/pli.png" position="10,422" size="210,25" alphatest="on" />
+    <eLabel text="www.pli-images.org" foregroundColor="grey" backgroundColor="background" font="Regular;22" halign="center" position="315,422" size="210,25" transparent="1" zPosition="1" />
+	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="TimeshiftState" position="50,310" size="150,60" zPosition="2">
 		<widget font="Enigma;24" halign="center" name="state" position="0,0" size="150,30" backgroundColor="transparent" borderColor="black" borderWidth="2" />
 		<widget font="Enigma;24" halign="center" position="0,30" render="Label" size="150,30" source="session.CurrentService" backgroundColor="transparent" borderColor="black" borderWidth="2">
