@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-<!--  Skin:  Magic-HD-ViX Vs 1.99 by VU+NL @www.world-of-satellite.com, based on Magic-HD Vs 1.91.54  -->
+<!--  Skin:  Magic-HD-ViX Vs 2.01 by VU+NL @www.world-of-satellite.com, based on Magic-HD Vs 1.91.54  -->
 <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
 <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
 <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -9058,6 +9058,73 @@
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="85,110" render="Pig" size="417,243" zPosition="1" />
     <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="530,100" size="690,500" transparent="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
+  </screen>
+  <screen flags="wfNoBorder" name="VPS_check_PDC_Screen" position="0,0" size="1280,720" title="VPS-Plugin">
+    <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="center" position="970,35"  size="250,50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="85,110" render="Pig" size="417,243" zPosition="1" />
+    <widget source="infotext" render="Label" font="Regular;22" position="530,100" size="690,500" transparent="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="VPS_Setup" flags="wfNoBorder" position="0,0" size="1280,720" title="VPS-Plugin">
+    <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="center" position="970,35"  size="250,50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="85,110" render="Pig" size="417,243" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="115,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" alphatest="on" position="970,643" size="26,26" />
+    <widget source="key_red" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="150,643" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,643" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_blue" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,643" size="220,26" transparent="1" zPosition="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="530,100" size="690,500" transparent="1" />
+    <widget source="help" render="Label" font="Regular;22" position="85,375" size="417,200" transparent="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="VPS_Screen_Info" position="0,0" size="1280,720" flags="wfNoBorder" title="VPS-Plugin Information">
+    <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="center" position="970,35"  size="250,50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="85,110" render="Pig" size="417,243" zPosition="1" />
+    <widget name="text" font="Regular;22" position="530,100" size="690,500" transparent="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
+  </screen>
+  <screen flags="wfNoBorder" name="YTTrailerList" position="0,0" size="1280,720" title="YT Trailer-List">
+    <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="center" position="970,35"  size="250,50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="85,110" render="Pig" size="417,243" zPosition="1" />
+    <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="530,100" size="690,500" transparent="1" />
+    <eLabel text="'OK' = Play trailer" backgroundColor="secondBG" position="435,643" size="220,26" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
+  </screen>
+  <screen flags="wfNoBorder" name="YTTrailerSetup" position="0,0" size="1280,720" title="YT-Trailer Setup">
+    <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="center" position="970,35"  size="250,50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="85,110" render="Pig" size="417,243" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="115,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
+    <widget source="key_red" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="150,643" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,643" size="220,26" transparent="1" zPosition="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="530,100" size="690,500" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
 <!-- ## End of Magic-HD-ViX ## -->
