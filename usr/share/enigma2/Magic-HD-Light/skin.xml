@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-HD-Light ViX Vs 1.33 by VU+NL @www.world-of-satellite.com, based on agic-HD-ViX Vs 2.04 but now in "Light version" (not supporting as many screens) -->
+  <!--  Skin:  Magic-HD-Light ViX Vs 1.34 by VU+NL @www.world-of-satellite.com, based on agic-HD-ViX Vs 2.05 but now in "Light version" (not supporting as many screens) -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -459,8 +459,8 @@
     <widget source="session.CurrentService" render="Label" position="1100,675" size="110,22" backgroundColor="secondBG" transparent="1" zPosition="1" text="DVB-S" font="Regular;19">
       <convert type="ServiceOrbitalPosition">
       </convert>
-    </widget>    
-  </screen> 
+    </widget>
+  </screen>
  <screen name="DVDPlayer" title="InfoBar" position="4,22" size="1280,215" backgroundColor="transparent" flags="wfNoBorder">
   <widget source="session.CurrentService" render="Label" position="415,0" size="455,40" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
     <convert type="ServiceName">Name</convert>
@@ -555,7 +555,7 @@
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
-  </screen>     
+  </screen>
   <screen name="EPGSelection" title="EPG Selection" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
@@ -588,10 +588,10 @@
     <widget source="Event" render="Label" position="315,412" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Format:- %H:%M</convert>
-    </widget>    
+    </widget>
     <widget source="Event" render="Label" position="85,360" size="435,50" foregroundColor="secondFG" font="Regular;20" transparent="1">
       <convert type="EventName">Description</convert>
-    </widget>    
+    </widget>
     <widget source="Event" render="Label" position="85,440" size="435,165" transparent="1" font="Regular; 24">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
@@ -940,7 +940,7 @@
     </widget>
     <widget source="session.CurrentService" render="Label" position="385,110" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right">
       <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
-    </widget>   
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="115,643" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="390,643" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="680,643" size="26,26" alphatest="on" />
@@ -1561,6 +1561,6 @@
   </screen>
   <screen name="PiPSetup" flags="wfNoBorder" backgroundColor="transparent" position="200,200" size="800,200" zPosition="-1" >
     <widget name="text" position="0,0" size="800,200" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
-  </screen>     
+  </screen>
   <!-- ## End of Magic-HD-Light ViX ## -->
 </skin>
