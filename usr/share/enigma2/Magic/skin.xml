@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-ViX Vs 1.06 by VU+NL @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
+  <!--  Skin:  Magic-ViX Vs 1.08 by VU+NL @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
-  <!--  But: thanks to the way Dream Multimedia and a number of its lickspittles behave,-->
-  <!--  I hereby explicitly forbid this skin to be used on any Dreambox.-->
   <!--  ## Head ## -->
 	<output id="0">
 		<resolution bpp="32" xres="720" yres="576"/>
@@ -724,6 +722,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="435,426" size="14,14" zPosition="4"/>
 		<eLabel backgroundColor="darkgrey" position="0,416" size="560,2" zPosition="5"/>
+		<widget source="session.CurrentService" render="Progress" position="0,416" size="560,2" borderWidth="0" zPosition="6" transparent="1" borderColor="yellow" >
+			<convert type="ServicePosition">Position</convert>
+		</widget>
 	</screen>
 	<!-- ########## EGP selection ########## -->	
 	<screen name="GraphMultiEPG" position="center,70" size="640,460" title="Electronic Program Guide">
