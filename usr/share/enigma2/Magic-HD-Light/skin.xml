@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-HD-Light ViX Vs 1.34 by VU+NL @www.world-of-satellite.com, based on agic-HD-ViX Vs 2.05 but now in "Light version" (not supporting as many screens) -->
+  <!--  Skin:  Magic-HD-Light ViX Vs 1.35 by VU+NL @www.world-of-satellite.com, based on agic-HD-ViX Vs 2.06 but now in "Light version" (not supporting as many screens) -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -594,6 +594,45 @@
     </widget>
     <widget source="Event" render="Label" position="85,440" size="435,165" transparent="1" font="Regular; 24">
       <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+  </screen>
+  <screen name="QuickEPG" title="InfoBar" position="0,510" size="1280,400" backgroundColor="transparent" flags="wfNoBorder">
+    <ePixmap alphatest="off" pixmap="Magic-HD-Common/infobar/hd.png" position="0,0" size="1280,220" zPosition="-1" />
+    <widget source="Service" render="Picon" position="60,70" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget name="list" position="220,115" size="850,75" selectionPixmap="Magic-HD-Common/buttons/sel.png"  backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24"  />
+    <widget source="Service" render="Label" position="305,63" size="500,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" valign="center" halign="left">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="60,135" size="100,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;24" valign="center" halign="center">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="60,165" size="100,20" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;20" valign="center" halign="center">
+      <convert type="ClockToText">ShortDate</convert>
+    </widget>
+    <widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1216,83" size="20,20" zPosition="3" alphatest="on">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" position="1100,80" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="A" foregroundColor="orange" font="Regular;20">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" position="1130,80" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="B" foregroundColor="orange" font="Regular;20">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" position="1160,80" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="C" foregroundColor="orange" font="Regular;20">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">4</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" position="1190,80" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="D" foregroundColor="orange" font="Regular;20">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">8</convert>
+      <convert type="ConditionalShowHide" />
     </widget>
   </screen>
   <screen name="EventView" title="Eventview" position="0,0" size="1280,720" flags="wfNoBorder">
