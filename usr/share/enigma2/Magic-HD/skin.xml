@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-<!--  Skin:  Magic-HD-ViX Vs 2.06 by VU+NL @www.world-of-satellite.com, based on Magic-HD Vs 1.91.54  -->
+<!--  Skin:  Magic-HD-ViX Vs 2.07 by VU+NL @www.world-of-satellite.com, based on Magic-HD Vs 1.91.54  -->
 <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
 <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
 <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -8018,13 +8018,15 @@
     <widget source="key_red" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="150,643" size="220,26" transparent="1" zPosition="1" />
     <widget source="menu" render="Listbox" position="590,110" size="600,500" selectionPixmap="Magic-HD-Common/buttons/sel.png" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
-			{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
-			"fonts": [gFont("Regular",24)],
-			"itemHeight": 38
-			}
+				{"template": [
+				MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
+				],
+				"fonts": [gFont("Regular",28)],
+				"itemHeight": 38
+				}
     </convert>
     </widget>
-    <widget source="menu" render="Listbox" position="85,400" size="417,60" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
+    <widget source="menu" render="Listbox" position="85,400" size="475,60" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (0,0),size = (450,60),flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM|RT_WRAP,text = 2),# index 0 is the MenuText,
