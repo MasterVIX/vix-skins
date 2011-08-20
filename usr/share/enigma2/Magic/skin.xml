@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-ViX Vs 1.08 by VU+NL @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
+  <!--  Skin:  Magic-ViX Vs 1.09 by VU+NL @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -491,11 +491,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<screen name="About" position="80,80" size="540,460" title="About">
 		<widget font="Enigma;18" position="10,0" render="Label" size="490,22" source="EnigmaVersion"/>
 		<widget font="Enigma;18" position="10,22" render="Label" size="490,22" source="ImageVersion"/>
-		<widget font="Enigma;18" position="10,44" render="Label" size="490,22" source="TunerHeader"/>
-		<widget font="Enigma;18" position="10,66" render="Label" size="490,22" source="Tuner0"/>
-		<widget font="Enigma;18" position="10,88" render="Label" size="490,22" source="Tuner1"/>
-		<widget font="Enigma;18" position="10,110" render="Label" size="490,22" source="Tuner2"/>
-		<widget font="Enigma;18" position="10,132" render="Label" size="490,22" source="Tuner3"/>
     <widget source="BoxType" render="Label" position="10,154" size="490,22" font="Regular; 18" transparent="0" zPosition="1" />
     <widget source="KernelVersion" render="Label" position="10,176" size="490,22" font="Regular; 18" transparent="0" zPosition="1" />
     <widget source="ImageType" render="Label" position="10,198" size="490,22" font="Regular; 18" transparent="0" zPosition="1" />
@@ -503,14 +498,25 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="lab1" render="Label" position="10,244" size="490,22" font="Regular; 18" transparent="0" zPosition="2" />
     <widget source="lab2" render="Label" position="10,266" size="490,22" font="Regular; 18" transparent="0" zPosition="2" />
     <widget source="lab3" render="Label" position="10,288" size="490,22" font="Regular; 18" transparent="0" zPosition="1" />
-		<widget font="Enigma;18" position="10,310" render="Label" size="490,22" source="HDDHeader"/>
-		<widget font="Enigma;18" position="10,332" render="Label" size="490,75" source="hddA"/>
+		<widget font="Enigma;18" position="10,310" render="Label" size="490,22" source="TranslationHeader"/>
+		<widget font="Enigma;18" position="10,332" render="Label" size="490,75" source="TranslatorName"/>
+		<widget font="Enigma;18" position="10,132" render="Label" size="490,22" source="TranslationInfo"/>
     <ePixmap pixmap="Magic/logos/pli.png" position="10,422" size="210,25" alphatest="on" />
     <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="260,425" size="35,25" />
-    <ePixmap alphatest="on" pixmap="skin_default/buttons/green-big.png" position="320,415" size="200,40" />
     <eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="center" valign="center" position="320,415" size="200,40" transparent="1" zPosition="1" />
-    <!--<eLabel text="www.pli-images.org" foregroundColor="grey" backgroundColor="background" font="Regular;22" halign="center" position="10,320" size="340,25" transparent="1" zPosition="1" />-->
 	</screen>
+
+
+
+		<screen name="Devices" position="80,80" size="540,460" title="Systeminfo">
+		<widget font="Enigma;18" position="10,0" render="Label" size="490,22" source="TunerHeader"/>
+		<widget font="Enigma;18" position="10,32" render="Label" size="490,100" source="nims"/>
+		<widget font="Enigma;18" position="10,150" render="Label" size="490,22" source="HDDHeader"/>
+		<widget font="Enigma;18" position="10,175" render="Label" size="490,100" source="hdd"/>
+    <widget source="MountsHeader" render="Label" position="10,300" size="490,22" font="Regular; 18" transparent="0" zPosition="1" />
+    <widget source="mounts" render="Label" position="10,325" size="490,100" font="Regular; 18" transparent="0" zPosition="1" />
+	</screen>
+
 	<screen name="AboutReleaseNotes" position="80,80" size="540,460" title="Release Notes">
     <widget name="list" render="Label" font="Regular;22" position="25,30" size="490,350" transparent="1" />
     <ePixmap pixmap="Magic/logos/pli.png" position="10,422" size="210,25" alphatest="on" />
