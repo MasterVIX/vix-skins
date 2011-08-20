@@ -505,18 +505,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="260,425" size="35,25" />
     <eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="center" valign="center" position="320,415" size="200,40" transparent="1" zPosition="1" />
 	</screen>
-
-
-
 		<screen name="Devices" position="80,80" size="540,460" title="Systeminfo">
-		<widget font="Enigma;18" position="10,0" render="Label" size="490,22" source="TunerHeader"/>
+		<widget font="Enigma;18" position="10,5" render="Label" size="490,22" source="TunerHeader"/>
 		<widget font="Enigma;18" position="10,32" render="Label" size="490,100" source="nims"/>
 		<widget font="Enigma;18" position="10,150" render="Label" size="490,22" source="HDDHeader"/>
 		<widget font="Enigma;18" position="10,175" render="Label" size="490,100" source="hdd"/>
     <widget source="MountsHeader" render="Label" position="10,300" size="490,22" font="Regular; 18" transparent="0" zPosition="1" />
     <widget source="mounts" render="Label" position="10,325" size="490,100" font="Regular; 18" transparent="0" zPosition="1" />
 	</screen>
-
 	<screen name="AboutReleaseNotes" position="80,80" size="540,460" title="Release Notes">
     <widget name="list" render="Label" font="Regular;22" position="25,30" size="490,350" transparent="1" />
     <ePixmap pixmap="Magic/logos/pli.png" position="10,422" size="210,25" alphatest="on" />
