@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-<!--  Skin:  Magic-HD-ViX Vs 2.10 by VU+NL @www.world-of-satellite.com, based on Magic-HD Vs 1.91.54  -->
+<!--  Skin:  Magic-HD-ViX Vs 2.11 by VU+NL @www.world-of-satellite.com, based on Magic-HD Vs 1.91.54  -->
 <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
 <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
 <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -8016,8 +8016,8 @@
 				{"template": [
 				MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
 				],
-				"fonts": [gFont("Regular",28)],
-				"itemHeight": 38
+				"fonts": [gFont("Regular",22)],
+				"itemHeight": 30
 				}
     </convert>
     </widget>
@@ -9107,8 +9107,12 @@
     <widget source="session.VideoPicture" backgroundColor="transparent" position="85,110" render="Pig" size="417,243" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="115,643" size="26,26" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" alphatest="on" position="680,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" alphatest="on" position="970,643" size="26,26" />
     <widget source="key_red" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="150,643" size="220,26" transparent="1" zPosition="1" />
     <widget source="key_green" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,643" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_yellow" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,643" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_blue" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,643" size="220,26" transparent="1" zPosition="1" />
     <widget name="config" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="530,100" size="690,500" transparent="1" />
     <widget source="current_address" render="Label" position="85,430" size="417,50" zPosition="10" font="Regular;21" halign="left" valign="center" />
     <widget source="fixed_address" render="Label" position="85,500" size="417,50" zPosition="10" font="Regular;21" halign="left" valign="center" />
