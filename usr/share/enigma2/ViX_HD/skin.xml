@@ -3991,6 +3991,27 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
 		<widget name="key_red" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
 	</screen>
+	<screen name="NetworkServiceSetup" position="32,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
+			<convert type="ClockToText">Full</convert>
+		</widget>
+		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
+		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
+		<widget name="lab1" position="70,190" size="150,30" font="Regular;20" valign="center" transparent="0" />
+		<widget name="labactive" position="230,190" size="250,30" font="Regular;20" valign="center" transparent="0" />
+		<widget name="lab2" position="70,260" size="150,30" font="Regular;20" valign="center" transparent="0" />
+		<widget name="labstop" position="230,260" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
+		<widget name="labrun" position="230,260" size="100,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
+		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="280,643" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_HD/buttons/blue.png" position="280,670" size="24,24" alphatest="blend" transparent="1" />
+		<widget name="key_red" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
+		<widget name="key_green" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
+		<widget name="key_yellow" position="315,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
+		<widget name="key_blue" position="315,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
+	</screen>
 	<screen name="NetworkInadyn" position="32,0" size="541,720" title="Inadyn Manager" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" zPosition="-1" alphatest="on" transparent="1" />
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
@@ -4004,7 +4025,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="status" position="240,139" size="150,24" font="Regular;20" valign="center" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
 		<widget name="labstop" position="390,136" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
 		<widget name="labrun" position="390,136" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2"/>
-
 		<widget name="time" position="10,183" size="230,30" font="Regular;20" valign="center" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0"/>
 		<widget name="labtime" position="240,183" size="100,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
 		<widget name="username" position="10,233" size="150,30" font="Regular;20" valign="center" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0"/>
@@ -4048,27 +4068,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="infotext" position="10,133" size="503,495" font="Regular;18" />
 	</screen>
-	<screen name="NetworkOpenvpn" position="32,0" size="541,720" title="OpenVPN Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
-			<convert type="ClockToText">Full</convert>
-		</widget>
-		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
-		<widget name="lab1" position="70,190" size="150,30" font="Regular;20" valign="center" transparent="0" />
-		<widget name="labactive" position="230,190" size="250,30" font="Regular;20" valign="center" transparent="0" />
-		<widget name="lab2" position="70,260" size="150,30" font="Regular;20" valign="center" transparent="0" />
-		<widget name="labstop" position="230,260" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
-		<widget name="labrun" position="230,260" size="100,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
-		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="280,643" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/blue.png" position="280,670" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
-		<widget name="key_green" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
-		<widget name="key_yellow" position="315,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
-		<widget name="key_blue" position="315,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
-	</screen>
 	<screen name="NetworkVpnLog" position="32,0" size="541,720" title="OpenVPN Log" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
@@ -4077,63 +4076,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
 		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
 		<widget name="infotext" position="10,133" size="503,495" font="Regular;18" />
-	</screen>
-	<screen name="NetworkAfp" position="32,0" size="541,720" title="Samba Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
-			<convert type="ClockToText">Full</convert>
-		</widget>
-		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
-		<widget name="lab1" position="70,190" size="150,30" font="Regular;20" valign="center" transparent="0" />
-		<widget name="labactive" position="230,190" size="250,30" font="Regular;20" valign="center" transparent="0" />
-		<widget name="lab2" position="70,260" size="150,30" font="Regular;20" valign="center" transparent="0" />
-		<widget name="labstop" position="230,260" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
-		<widget name="labrun" position="230,260" size="100,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
-		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="280,643" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
-		<widget name="key_green" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
-		<widget name="key_yellow" position="315,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
-	</screen>
-	<screen name="NetworkSamba" position="32,0" size="541,720" title="Samba Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
-			<convert type="ClockToText">Full</convert>
-		</widget>
-		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
-		<widget name="lab1" position="70,190" size="150,30" font="Regular;20" valign="center" transparent="0" />
-		<widget name="labactive" position="230,190" size="250,30" font="Regular;20" valign="center" transparent="0" />
-		<widget name="lab2" position="70,260" size="150,30" font="Regular;20" valign="center" transparent="0" />
-		<widget name="labstop" position="230,260" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
-		<widget name="labrun" position="230,260" size="100,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
-		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="280,643" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
-		<widget name="key_green" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
-		<widget name="key_yellow" position="315,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
-	</screen>
-	<screen name="NetworkNfs" position="32,0" size="541,720" title="NFS Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
-			<convert type="ClockToText">Full</convert>
-		</widget>
-		<ePixmap pixmap="ViX_HD/menu/ico_menu_VIX.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
-		<widget name="lab1" position="70,190" size="150,30" font="Regular;20" valign="center" transparent="0" />
-		<widget name="labactive" position="230,190" size="250,30" font="Regular;20" valign="center" transparent="0" />
-		<widget name="lab2" position="70,260" size="150,30" font="Regular;20" valign="center" transparent="0" />
-		<widget name="labstop" position="230,260" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
-		<widget name="labrun" position="230,260" size="100,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
-		<ePixmap pixmap="ViX_HD/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD/buttons/yellow.png" position="280,643" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
-		<widget name="key_green" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
-		<widget name="key_yellow" position="315,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
 	</screen>
 	<screen name="NetworkTelnet" position="32,0" size="541,720" title="Telnet Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
