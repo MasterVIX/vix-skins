@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-EHD-Light ViX(Extreme-HD) Vs 1.39 by VU+NL @www.world-of-satellite.com, based on Magic-EHD-ViX Vs 2.13 but now in "Light version" (not supporting as many screens)  -->
-  <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
-  <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
-  <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
+  <!--  Skin:  Magic-EHD-Light ViX(Extreme-HD) Vs 1.41 by VU+NL @www.world-of-satellite.com, based on Magic-EHD-ViX Vs 2.13 but now in "Light version" (not supporting as many screens)  -->
+  <!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
+  <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!  -->
+  <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are  -->
   <!--  ## Head ## -->
   <output id="0">
     <resolution bpp="32" xres="1280" yres="720"/>
@@ -776,11 +776,12 @@
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
     <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
+    <eLabel text="= Release notes" position="1190,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
     <widget source="lab1" render="Label" position="10,455" size="500,25" font="Regular; 24" transparent="0" zPosition="2" foregroundColor="grey" halign="center" />
     <widget source="lab2" render="Label" position="10,480" size="500,20" font="Crs; 19" transparent="0" zPosition="2" foregroundColor="grey" halign="center" />
     <widget source="lab3" render="Label" position="10,500" size="500,20" font="Crs; 19" transparent="0" zPosition="1" foregroundColor="grey" halign="center" />
     <widget name="AboutScrollLabel" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-    <eLabel text="Skin Magic-EHD   by VU+ NL" foregroundColor="grey" font="Regular;19" halign="center" position="5,590" size="500,55" transparent="1" zPosition="1" />
+    <eLabel text="Skin Magic-HD  ViX-team skin by VU+ NL" foregroundColor="grey" font="Regular;19" halign="center" position="5,590" size="500,55" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen name="Devices" title="Systeminfo" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -810,7 +811,7 @@
     <widget name="list" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="TranslationInfo" position="0,0" size="1280,720" title="Translation">
+<!--  <screen flags="wfNoBorder" name="TranslationInfo" position="0,0" size="1280,720" title="Translation">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,50" transparent="1" valign="center" zPosition="1" />
@@ -823,7 +824,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,650" size="300,25" alphatest="on" />
 		<eLabel text="Skin Magic-EHD   by VU+ NL" foregroundColor="grey" backgroundColor="secondBG" font="Regular;19" halign="center" position="25,450" size="420,55" transparent="1" zPosition="1" />
 		<eLabel text="www.pli-images.org" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" position="25,510" size="420,55" transparent="1" zPosition="1" />
-  </screen>
+  </screen>-->
   <screen name="ServiceInfo" title="Serviceinfo" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
