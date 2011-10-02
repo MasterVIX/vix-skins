@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 2.41 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 2.42 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -779,7 +779,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
-    <widget source="menu" render="Listbox" position="520,82" size="755,575" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png">
+    <widget source="menu" render="Listbox" position="520,82" size="755,570" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png">
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 22)],
@@ -935,7 +935,7 @@
     <widget source="TranslatorName" render="Label" position="590,90" size="520,90" font="Regular;27" halign="center" backgroundColor="background" transparent="1" />
     <widget source="TranslationInfo" render="Label" position="590,180" size="590,380" font="Regular;27" halign="center" backgroundColor="background" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,650" size="300,25" alphatest="on" />
-    <eLabel text="Skin Magic-EHD   by Rob van der Does" foregroundColor="grey" backgroundColor="secondBG" font="Regular;19" halign="center" position="25,450" size="420,55" transparent="1" zPosition="1" />
+    <eLabel text="Skin Magic-HD   by Rob van der Does" foregroundColor="grey" backgroundColor="secondBG" font="Regular;19" halign="center" position="25,450" size="420,55" transparent="1" zPosition="1" />
     <eLabel text="www.pli-images.org" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" position="25,510" size="420,55" transparent="1" zPosition="1" />
   </screen>-->
   <screen name="ServiceInfo" title="Serviceinfo" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -956,7 +956,6 @@
     <widget name="yellow" position="624,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
-    <eLabel text="Skin Magic-EHD   by Rob van der Does" foregroundColor="grey" backgroundColor="secondBG" font="Regular;19" halign="center" position="25,450" size="420,55" transparent="1" zPosition="1" />
     <eLabel text="Skin Magic-HD  ViX-team skin by Rob van der Does" foregroundColor="grey" font="Regular;19" halign="center" position="5,590" size="500,55" transparent="1" zPosition="1" />
   </screen>
   <screen name="HarddiskSelection" title="HDD Select" flags="wfNoBorder" position="0,0" size="1280,720">
@@ -9205,8 +9204,8 @@
     <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-<!-- ## OSD Position setup @@ -->
-  <screen flags="wfNoBorder" name="OSDScreenPosition" position="0,0" size="1280,720" title="OSD position setup">
+<!-- ## OSD setup @@ -->
+  <screen flags="wfNoBorder" name="OSDSetup" position="0,0" size="1280,720" title="OSD position setup">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -9218,9 +9217,25 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="cancel" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="ok" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-    <eLabel text="Use arrows Up/Down to select" position="85,400" size="417,50" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
-    <eLabel text="Use arrows Left/Right to adjust" position="85,460" size="417,50" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
+    <widget source="satus" render="Label" font="Regular;22" position="5,360" size="477,150"  transparent="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,150" size="700,400" transparent="1" />
+    <eLabel text="Use arrows Up/Down to select" position="5,540" size="477,50" backgroundColor="secondBG" font="Regular;22" halign="center" transparent="1" zPosition="1" />
+    <eLabel text="Use arrows Left/Right to adjust" position="5,590" size="477,50" backgroundColor="secondBG" font="Regular;22" halign="center" transparent="1" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen flags="wfNoBorder" name="OSD3DSetupScreen" position="0,0" size="1280,720" title="OSD 3D-Setup">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+    <widget name="cancel" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="ok" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="config" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="740,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen name="NameZap" title="Channel" position="center,center" size="400,80" backgroundColor="transparent" flags="wfNoBorder" >
@@ -9242,10 +9257,6 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  
-
-  
-  
   <screen flags="wfNoBorder" name="SortableMenu" position="0,0" size="1280,720" title="Sort Menu">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
@@ -9411,5 +9422,5 @@
     <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,108" size="740,540" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <!-- ## End of Magic-EHD-ViX ## -->
+  <!-- ## End of Magic-HD-ViX ## -->
 </skin>
