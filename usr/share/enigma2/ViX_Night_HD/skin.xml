@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.13 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.14 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1030,7 +1030,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="key_blue" position="1000,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="colourbuttonsbg" />
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,680" size="1280,40" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
-	<screen name="GraphicalEPG" position="0,0" size="1280,720" title="Programme Guide" backgroundColor="black" flags="wfNoBorder" zPosition="1">
+	<screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder" zPosition="1">
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
 		<ePixmap pixmap="ViX_Night_HD/icons/ico_EPG_title.png" position="50,20" size="45,36" alphatest="blend" transparent="1" />
 		<widget source="Title" render="Label" position="105,25" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
@@ -1062,7 +1062,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="key_blue" position="1000,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="colourbuttonsbg" />
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,680" size="1280,40" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
-	<screen name="GraphicalEPGPIG" position="0,0" size="1280,720" title="Programme Guide" backgroundColor="black" flags="wfNoBorder">
+	<screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
 		<ePixmap pixmap="ViX_Night_HD/icons/ico_EPG_title.png" position="50,20" size="45,36" alphatest="blend" transparent="1" />
 		<widget source="Title" render="Label" position="105,25" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
@@ -2280,7 +2280,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 	</screen>
 	<screen name="Volume" position="92,40" zPosition="1" size="320,68" title="Volume" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="ViX_Night_HD/volume_background.png" position="0,0" size="320,68" />
+		<ePixmap pixmap="ViX_Night_HD/volume_background.png" position="0,0" size="320,68" alphatest="blend" />
 		<widget name="Volume" pixmap="ViX_Night_HD/volume_up.png" position="62,14" zPosition="1" size="240,34" transparent="1" />
 	</screen>
 	<screen name="WebIfConfigScreen" position="0,0" size="541,720" title="Webinterface: Main Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -2304,11 +2304,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<!-- Wizzard's -->
 	<screen name="StartWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="1130,10" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="880,40" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
+		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<widget name="text" position="150,140" size="730,250" font="Regular;22" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" />
@@ -2321,16 +2321,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="arrowdown2" pixmap="ViX_Night_HD/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
 		<widget name="arrowup" pixmap="ViX_Night_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
 		<widget name="arrowup2" pixmap="ViX_Night_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
-		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="90,686" size="25,25" alphatest="blend" transparent="1" />
-		<widget name="languagetext" position="130,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,680" size="1280,40" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
+		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="NetworkWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="1130,10" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="880,40" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
+		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<widget name="text" position="150,140" size="730,250" font="Regular;22" transparent="1" foregroundColor="window-fg" backgroundColor="window-bg" />
@@ -2347,16 +2347,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget name="HelpWindow" pixmap="ViX_Night_HD/buttons/vkey_icon.png" position="125,170" zPosition="1" size="1,1" transparent="1" alphatest="on" />
-		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="90,686" size="25,25" alphatest="blend" transparent="1" />
-		<widget name="languagetext" position="130,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,680" size="1280,40" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
+		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="LanguageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="1130,10" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="880,40" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
+		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<widget name="text" position="150,140" size="730,250" font="Regular;23" transparent="1" foregroundColor="window-fg" backgroundColor="window-bg" />
@@ -2375,14 +2375,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="arrowdown" pixmap="ViX_Night_HD/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<widget name="arrowup" pixmap="ViX_Night_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<widget name="arrowup2" pixmap="ViX_Night_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,680" size="1280,40" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="ImageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="1130,10" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="880,40" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
+		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<widget name="text" position="150,140" size="730,250" font="Regular;23" transparent="1" foregroundColor="window-fg" backgroundColor="window-bg" />
@@ -2394,16 +2394,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="arrowdown" pixmap="ViX_Night_HD/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<widget name="arrowup" pixmap="ViX_Night_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<widget name="arrowup2" pixmap="ViX_Night_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="90,686" size="25,25" alphatest="blend" transparent="1" />
-		<widget name="languagetext" position="130,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,680" size="1280,40" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
+		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="DefaultWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="1130,10" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="880,40" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
+		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<widget name="text" position="150,140" size="730,250" font="Regular;23" transparent="1" foregroundColor="window-fg" backgroundColor="window-bg" />
@@ -2415,16 +2415,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="arrowdown" pixmap="ViX_Night_HD/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<widget name="arrowup" pixmap="ViX_Night_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<widget name="arrowup2" pixmap="ViX_Night_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="90,686" size="25,25" alphatest="blend" transparent="1" />
-		<widget name="languagetext" position="130,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,680" size="1280,40" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
+		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="VideoWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="1130,10" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="880,40" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
+		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<widget name="text" position="150,140" size="730,250" font="Regular;23" transparent="1" foregroundColor="window-fg" backgroundColor="window-bg" />
@@ -2438,16 +2438,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="arrowdown2" pixmap="ViX_Night_HD/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<widget name="arrowup" pixmap="ViX_Night_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<widget name="arrowup2" pixmap="ViX_Night_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="90,686" size="25,25" alphatest="blend" transparent="1" />
-		<widget name="languagetext" position="130,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,680" size="1280,40" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
+		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="DreamPackageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="1130,10" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="880,40" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
+		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<widget name="text" position="150,140" size="730,250" font="Regular;23" transparent="1" foregroundColor="window-fg" backgroundColor="window-bg" />
@@ -2459,9 +2459,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="arrowdown" pixmap="ViX_Night_HD/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<widget name="arrowup" pixmap="ViX_Night_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<widget name="arrowup2" pixmap="ViX_Night_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="90,686" size="25,25" alphatest="blend" transparent="1" />
-		<widget name="languagetext" position="130,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,680" size="1280,40" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
+		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="TutorialWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
@@ -2523,11 +2523,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="status" render="Label" position="160,525" size="540,60" zPosition="10" foregroundColor="un3c3c3c" backgroundColor="un27aeaeae" font="Regular;20" halign="center" valign="center" transparent="1" />
 	</screen>
 	<screen name="DefaultSatLists" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="1130,10" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="880,40" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
+		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<widget name="text" position="150,140" size="730,250" font="Regular;23" transparent="1" foregroundColor="window-fg" backgroundColor="window-bg" />
@@ -2539,18 +2539,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="arrowdown" pixmap="ViX_Night_HD/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<widget name="arrowup" pixmap="ViX_Night_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<widget name="arrowup2" pixmap="ViX_Night_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="90,686" size="25,25" alphatest="blend" transparent="1" />
-		<widget name="languagetext" position="130,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,680" size="1280,40" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
+		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
-
-
 	<screen name="MessageBoxWizard" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="1130,10" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="880,40" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
+		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<widget name="text" position="150,140" size="730,250" font="Regular;23" transparent="1" foregroundColor="window-fg" backgroundColor="window-bg" />
@@ -2559,7 +2557,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="InfoPixmap" pixmap="ViX_Night_HD/icons/input_info.png" position="100,140" size="53,53" alphatest="blend" />
 		<widget name="list" position="150,400" size="730,220"  transparent="1" backgroundColor="window-bg" />
 		<widget name="rc" pixmap="skin_default/rc.png" position="950,140" zPosition="10" size="154,500" transparent="0" alphatest="blend" />
-		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,680" size="1280,40" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<!-- Software Manger Screens -->
 	<screen name="UpdatePluginMenu" position="0,0" size="541,720" title="Software Manager" flags="wfNoBorder" backgroundColor="transparent">
