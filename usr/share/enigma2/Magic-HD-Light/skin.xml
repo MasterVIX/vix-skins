@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-HD-Light ViX(Extreme-HD) Vs 1.52 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 2.55 but now in "Light version" (not supporting as many screens)  -->
-  <!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
-  <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!  -->
-  <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are  -->
-  <!--  ## Head ## -->
+<!--Skin:  Magic-HD-Light ViX(Extreme-HD) Vs 1.53 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 2.56 but now in "Light version" (not supporting as many screens)-->
+<!--This skin is a Freeware. Everyone can modify and use it in other images.-->
+<!--BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!-->
+<!--Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are-->
+<!--## Head ##-->
   <output id="0">
     <resolution bpp="32" xres="1280" yres="720"/>
   </output>
@@ -593,7 +593,7 @@
     <widget source="Service" render="Label" position="375,15" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" font="Regular;22" valign="center" halign="right">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="Event" render="Label" position="5,355" size="500,46" foregroundColor="secondFG" valign="center" halign="center" font="Regular;22">
+    <widget source="Event" render="Label" position="5,355" size="500,46" valign="center" halign="left" font="Regular;22">
       <convert type="EventName">Description</convert>
     </widget>
     <widget source="Event" render="Label" position="15,401" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
@@ -1046,7 +1046,7 @@
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="waitingtext" position="520,87" size="755,581" font="Regular;22" halign="center" valign="center" zPosition="4" />
     <widget name="list" position="520,87" size="755,570" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
-    <widget source="Service" render="Label" position="5,380" size="500,50" foregroundColor="secondFG" halign="center" valign="center" font="Regular;20" transparent="1">
+    <widget source="Service" render="Label" position="5,380" size="500,50" foregroundColor="secondFG" halign="left" valign="center" font="Regular;20" transparent="1">
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>
     <widget source="Service" render="Label" position="5,430" size="500,205" font="Regular;20" valign="center">
