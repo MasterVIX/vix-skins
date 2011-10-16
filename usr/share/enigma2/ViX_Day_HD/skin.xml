@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Day-HD Vs 1.20 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Day-HD Vs 1.21 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -191,8 +191,8 @@
 		<widget source="session.OnlineCheckState" render="Pixmap" pixmap="ViX_Day_HD/icons/icon_update.png" position="609,12" size="20,20" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="ViX_Day_HD/icons/icon_rec_off.png" position="634,12" size="31,20" zPosition="0" alphatest="blend" />
-		<widget source="session.RecordState" render="Pixmap" pixmap="ViX_Day_HD/icons/icon_rec.png" position="634,12" size="31,20" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX_Day_HD/icons/icon_rec_off.png" position="634,12" size="31,17" zPosition="0" alphatest="blend" />
+		<widget source="session.RecordState" render="Pixmap" pixmap="ViX_Day_HD/icons/icon_rec.png" position="634,12" size="31,17" zPosition="1" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<ePixmap pixmap="ViX_Day_HD/icons/ico_hd_off.png" position="667,11" size="29,20" zPosition="1" alphatest="blend" />
@@ -256,11 +256,11 @@
 		<widget name="conax" text="CO" font="Regular;17" position="83,62" size="29,17" halign="center" foregroundNotCrypted="foreground" backgroundNotCrypted="infobar-bkgrnd" foregroundCrypted="infobar-bkgrnd" backgroundCrypted="#555555" foregroundEncrypted="infobar-bkgrnd" backgroundEncrypted="foreground" zPosition="1" transparent="1" valign="center" />
 		<widget name="crypto" text="CW" font="Regular;17" position="113,43" size="30,17" halign="center" foregroundNotCrypted="foreground" backgroundNotCrypted="infobar-bkgrnd" foregroundCrypted="infobar-bkgrnd" backgroundCrypted="#555555" foregroundEncrypted="infobar-bkgrnd" backgroundEncrypted="foreground" zPosition="1" transparent="1" valign="center" noWrap="1" />
 		<widget name="dreamcrypt" text="DC" font="Regular; 17" position="114,62" size="29,17" halign="center" foregroundNotCrypted="foreground" backgroundNotCrypted="infobar-bkgrnd" foregroundCrypted="infobar-bkgrnd" backgroundCrypted="#555555" foregroundEncrypted="infobar-bkgrnd" backgroundEncrypted="foreground" zPosition="1" transparent="1" valign="center" />
-		<widget source="session.CurrentService" render="Label" position="815,62" size="55,20" font="Regular; 18" foregroundColor="foreground" halign="right" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1">
+		<widget source="session.CurrentService" render="Label" position="810,62" size="55,20" font="Regular; 18" foregroundColor="foreground" halign="right" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
-		<eLabel text="x" position="869,62" size="15,20" font="Regular; 18" foregroundColor="foreground" halign="center" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" />
-		<widget source="session.CurrentService" render="Label" position="883,62" size="47,20" font="Regular; 18" foregroundColor="foreground" halign="left" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1">
+		<eLabel text="x" position="864,62" size="15,20" font="Regular; 18" foregroundColor="foreground" halign="center" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" />
+		<widget source="session.CurrentService" render="Label" position="878,62" size="47,20" font="Regular; 18" foregroundColor="foreground" halign="left" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
 		<eLabel text="Tuner" position="837,164" size="60,20" font="Regular; 20" foregroundColor="foreground" backgroundColor="infobar_collab_back" transparent="1" />
@@ -856,8 +856,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget source="session.OnlineCheckState" render="Pixmap" pixmap="ViX_Day_HD/icons/icon_update.png" position="609,12" size="20,20" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="ViX_Day_HD/icons/icon_rec_off.png" position="634,12" size="31,20" zPosition="0" alphatest="blend" />
-		<widget source="session.RecordState" render="Pixmap" pixmap="ViX_Day_HD/icons/icon_rec.png" position="634,12" size="31,20" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX_Day_HD/icons/icon_rec_off.png" position="634,12" size="31,17" zPosition="0" alphatest="blend" />
+		<widget source="session.RecordState" render="Pixmap" pixmap="ViX_Day_HD/icons/icon_rec.png" position="634,12" size="31,17" zPosition="1" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<ePixmap pixmap="ViX_Day_HD/icons/ico_hd_off.png" position="667,11" size="29,20" zPosition="1" alphatest="blend" />
@@ -899,11 +899,11 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<eLabel text="CW" font="Regular;17" position="113,43" size="30,17" halign="center" foregroundColor="menu_title" backgroundColor="unaeaeae" zPosition="1" transparent="1" valign="center" noWrap="1" />
 		<eLabel text="DC" font="Regular; 17" position="114,62" size="29,17" halign="center" foregroundColor="menu_title" backgroundColor="unaeaeae" zPosition="1" transparent="1" valign="center" />
 		<eLabel text="NDS" font="Regular;17" position="43,62" size="38,17" halign="center" foregroundColor="menu_title" backgroundColor="unaeaeae" zPosition="1" transparent="1" valign="center" />
-		<widget source="session.CurrentService" render="Label" position="815,62" size="55,20" font="Regular; 18" foregroundColor="foreground" halign="right" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1">
+		<widget source="session.CurrentService" render="Label" position="810,62" size="55,20" font="Regular; 18" foregroundColor="foreground" halign="right" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
-		<eLabel text="x" position="869,62" size="15,20" font="Regular; 18" foregroundColor="foreground" halign="center" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" />
-		<widget source="session.CurrentService" render="Label" position="883,62" size="47,20" font="Regular; 18" foregroundColor="foreground" halign="left" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1">
+		<eLabel text="x" position="864,62" size="15,20" font="Regular; 18" foregroundColor="foreground" halign="center" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" />
+		<widget source="session.CurrentService" render="Label" position="878,62" size="47,20" font="Regular; 18" foregroundColor="foreground" halign="left" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
 		<eLabel text="Tuner" position="837,164" size="60,20" font="Regular; 20" foregroundColor="foreground" backgroundColor="infobar_collab_back" transparent="1" />
