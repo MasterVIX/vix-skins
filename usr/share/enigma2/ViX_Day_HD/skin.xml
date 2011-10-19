@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Day-HD Vs 1.24 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Day-HD Vs 1.25 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -697,16 +697,16 @@
 		<eLabel position="695,80" size="574,325" zPosition="2" backgroundColor="menu_title" foregroundColor="window-bg" />
 		<widget source="session.VideoPicture" render="Pig" position="697,82" size="570,321" zPosition="3" backgroundColor="unff000000" />
 		<eLabel position="18,80" size="664,578" zPosition="0" backgroundColor="menu_title" />
-		<widget name="list" position="20,82" size="660,574" selectionPixmap="ViX_Night_HD/buttons/FocusBar_H36x660.png" backgroundColor="black" foregroundColorEvent="darkgrey" foregroundColorEventSelected="#00202020" backgroundColorEvent="black" serviceItemHeight="36" foregroundColorServiceNotAvail="menu_title" serviceNumberFont="Regular;25" serviceNameFont="Regular;25" serviceInfoFont="Bold;22" transparent="0" zPosition="3" scrollbarMode="showOnDemand" />
-		<widget source="ServiceEvent" render="Label" position="695,410" size="300,25" font="Bold;24" foregroundColor="infobar_service_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
+		<widget name="list" position="20,82" size="660,574" selectionPixmap="ViX_Day_HD/buttons/FocusBar_H36x660.png" backgroundColor="black" foregroundColorEvent="darkgrey" foregroundColorEventSelected="#00202020" backgroundColorEvent="black" serviceItemHeight="36" foregroundColorServiceNotAvail="menu_title" serviceNumberFont="Regular;25" serviceNameFont="Regular;25" serviceInfoFont="Bold;22" transparent="0" zPosition="3" scrollbarMode="showOnDemand" />
+		<widget source="ServiceEvent" render="Label" position="695,410" size="300,25" font="Bold;24" foregroundColor="unffb300" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="1005,410" size="60,25" font="Bold;24" foregroundColor="infobar_service_frgrnd" backgroundColor="black" zPosition="2" transparent="0" halign="right" noWrap="1" valign="top">
+		<widget source="ServiceEvent" render="Label" position="1005,410" size="60,25" font="Bold;24" foregroundColor="unffb300" backgroundColor="black" zPosition="2" transparent="0" halign="right" noWrap="1" valign="top">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">
 			</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="1070,410" size="80,25" font="Bold;24" foregroundColor="infobar_service_frgrnd" backgroundColor="black" zPosition="2" transparent="0" noWrap="1" valign="top">
+		<widget source="ServiceEvent" render="Label" position="1070,410" size="80,25" font="Bold;24" foregroundColor="unffb300" backgroundColor="black" zPosition="2" transparent="0" noWrap="1" valign="top">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
@@ -973,7 +973,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget source="Service" render="Picon" position="1165,412" size="58,35" transparent="1" zPosition="5" backgroundColor="menu_title" alphatest="on">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="Service" render="Label" position="695,410" size="400,25" font="Bold;24" foregroundColor="infobar_service_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
+		<widget source="Service" render="Label" position="695,410" size="400,25" font="Bold;24" foregroundColor="unffb300" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="Event" render="Label" position="695,450" size="575,210" font="Regular;22" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
@@ -1153,13 +1153,13 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="datetime" position="510,14" size="150,22" font="Regular;22" foregroundColor="black" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
 		<widget name="duration" position="660,14" size="150,22" font="Regular;22" foregroundColor="black" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
 		<widget name="epg_description" position="54,50" size="870,150" font="Regular; 22" foregroundColor="black" backgroundColor="infobar_sunken" transparent="1" />
-		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="100,213" size="25,25" alphatest="blend" zPosition="3" />
+		<ePixmap pixmap="ViX_Day_HD/buttons/red.png" position="100,213" size="25,25" alphatest="blend" zPosition="3" />
 		<widget name="key_red" position="140,217" size="130,20" font="Regular; 20" foregroundColor="foreground" backgroundColor="infobar_collab_back" halign="left" transparent="1" zPosition="1" />
-		<ePixmap pixmap="ViX_Night_HD/buttons/green.png" position="300,213" size="25,25" alphatest="blend" />
+		<ePixmap pixmap="ViX_Day_HD/buttons/green.png" position="300,213" size="25,25" alphatest="blend" />
 		<widget name="key_green" position="340,217" size="130,20" font="Regular; 20" foregroundColor="foreground" backgroundColor="infobar_collab_back" halign="left" transparent="1" zPosition="1" />
-		<ePixmap pixmap="ViX_Night_HD/buttons/yellow.png" position="500,213" size="25,25" alphatest="blend" />
+		<ePixmap pixmap="ViX_Day_HD/buttons/yellow.png" position="500,213" size="25,25" alphatest="blend" />
 		<widget name="key_yellow" position="540,217" size="130,20" font="Regular; 20" foregroundColor="foreground" backgroundColor="infobar_collab_back" halign="left" transparent="1" zPosition="1" />
-		<ePixmap pixmap="ViX_Night_HD/buttons/blue.png" position="700,213" size="25,25" alphatest="blend" />
+		<ePixmap pixmap="ViX_Day_HD/buttons/blue.png" position="700,213" size="25,25" alphatest="blend" />
 		<widget name="key_blue" position="740,217" size="130,20" font="Regular; 20" foregroundColor="foreground" backgroundColor="infobar_collab_back" halign="left" transparent="1" zPosition="1" />
 	</screen>
 	<screen name="EventViewSimple" position="center,e-260" size="980,250" title="Programme Info" backgroundColor="transparent" flags="wfNoBorder">
