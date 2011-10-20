@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.18 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.19 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -12,19 +12,22 @@
 		<color name="background" value="#27d8dee2" />
 		<color name="background_fs" value="#00919191" />
 		<color name="topbar-frgrnd" value="#00b3b3b3" />
+		<color name="topbar-frgrnd-on" value="#004c7d3f" />
 		<color name="topbar-bkgrnd" value="#00151515" />
 		<color name="infobar-frgrnd" value="#00b3b3b3" />
 		<color name="infobar-bkgrnd" value="#12151515" />
 		<color name="infobar_sunken" value="#12191919" />
 		<color name="infobar_sunken_frgnd_dark" value="#00666666" />
 		<color name="infobar_collab_back" value="#12131313" />
-		<color name="infobar_service_frgrnd" value="#00375795" />
+		<color name="infobar_service_frgrnd" value="#00385896" />
 		<color name="menu_title-frgrnd" value="#00b3b3b3" />
 		<color name="menu-title-bkgrnd" value="#12151515" />
 		<color name="menu-time-bkgrnd" value="#12151515" />
 		<color name="menu-buttons-frgrnd" value="#00b3b3b3" />
 		<color name="menu-buttons-bkgrnd" value="#12151515" />
 		<color name="colourbuttonsbg" value="#00666666" />
+		<color name="event-frgrnd" value="#00b1762b" />
+		<color name="event-bkgrnd" value="#00000000" />
 		<color name="transparent" value="#ffffffff" />
 		<color name="transpBlack" value="#80000000" />
 		<color name="transpWhite" value="#80ffffff" />
@@ -33,6 +36,7 @@
 		<color name="blue" value="#000064c7" />
 		<color name="dark" value="#25062748" />
 		<color name="darkgrey" value="#279e9fa4" />
+		<color name="verydarkgrey" value="#274e4e4e" />
 		<color name="green" value="#27307e13" />
 		<color name="grey" value="#00bbbbbb" />
 		<color name="un111112" value="#00111112" />
@@ -163,7 +167,7 @@
 		<widget source="session.CurrentService" render="Label" position="44,8" size="520,30" font="Boldit; 30" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" valign="top" halign="left" noWrap="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="545,14" size="60,20" font="Bold; 17" backgroundColor="infobar-bkgrnd" foregroundColor="infobar-frgrnd" transparent="1" halign="center">
+		<widget source="session.CurrentService" render="Label" position="545,14" size="60,20" font="Bold; 17" foregroundColor="topbar-frgrnd-on" backgroundColor="infobar-bkgrnd" transparent="1" halign="center">
 			<convert type="ServiceOrbitalPosition" />
 		</widget>
 		<ePixmap pixmap="ViX_Night_HD/icons/icon_update_off.png" position="609,12" size="20,20" zPosition="0" alphatest="blend" />
@@ -389,7 +393,7 @@
 	</screen>
 	<screen name="RadioInfoBar" flags="wfNoBorder" position="center,e-172" size="843,162" title="InfoBar" backgroundColor="transparent">
 		<ePixmap position="0,0" zPosition="-1" size="843,162" pixmap="ViX_Night_HD/radio-infobar-bg.png" />
-		<widget source="session.CurrentService" render="Label" position="44,8" size="520,30" font="Boldit; 30" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" valign="top" halign="left" noWrap="1">
+		<widget source="session.CurrentService" render="Label" position="44,8" size="520,30" font="Boldit; 30" backgroundColor="topbar-frgrnd-on" foregroundColor="infobar_service_frgrnd" transparent="1" valign="top" halign="left" noWrap="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="345,14" size="60,20" font="Bold; 17" backgroundColor="infobar-bkgrnd" foregroundColor="infobar-frgrnd" transparent="1" halign="center">
@@ -727,8 +731,8 @@
 		</widget>
 		<eLabel position="695,80" size="574,325" zPosition="2" backgroundColor="menu_title-frgrnd" foregroundColor="window-bg" />
 		<widget source="session.VideoPicture" render="Pig" position="697,82" size="570,321" zPosition="3" backgroundColor="unff000000" />
-		<eLabel position="18,80" size="664,578" zPosition="0" backgroundColor="menu_title-frgrnd" />
-		<widget name="list" position="20,82" size="660,574" selectionPixmap="ViX_Night_HD/buttons/FocusBar_H36x660.png" backgroundColor="black" foregroundColorEvent="darkgrey" foregroundColorEventSelected="#00202020" backgroundColorEvent="black" serviceItemHeight="36" foregroundColorServiceNotAvail="menu_title-frgrnd" serviceNumberFont="Regular;25" serviceNameFont="Regular;25" serviceInfoFont="Bold;22" transparent="0" zPosition="3" scrollbarMode="showOnDemand" />
+		<eLabel position="18,80" size="664,582" zPosition="0" backgroundColor="menu_title-frgrnd" />
+		<widget name="list" position="20,82" size="660,578" selectionPixmap="ViX_Night_HD/buttons/FocusBar_H36x660.png" backgroundColor="black" foregroundColorEvent="event-frgrnd" backgroundColorEvent="black" foregroundColorEventSelected="#00202020" foregroundColorServiceNotAvail="verydarkgrey" serviceItemHeight="36" serviceNumberFont="Regular;25" serviceNameFont="Regular;25" serviceInfoFont="Bold;22" transparent="0" zPosition="3" scrollbarMode="showOnDemand" />
 		<widget source="ServiceEvent" render="Label" position="695,410" size="300,25" font="Bold;24" foregroundColor="infobar_service_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
 			<convert type="EventName">Name</convert>
 		</widget>
@@ -756,6 +760,35 @@
 		<widget name="key_yellow" position="710,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="topbar-frgrnd" backgroundColor="topbar-bkgrnd" />
 		<widget name="key_blue" position="1000,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="topbar-frgrnd" backgroundColor="topbar-bkgrnd" />
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,680" size="1280,40" zPosition="-1" />
+	</screen>
+	<screen name="SlimChannelSelection" position="0,0" size="541,720" title=" " flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="ViX_Night_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="10,8" size="410,28" font="Regular;24" foregroundColor="menu_title-frgrnd" backgroundColor="menu-time-bkgrnd" halign="right" transparent="1">
+			<convert type="ClockToText">Full</convert>
+		</widget>
+		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_tv.png" position="426,10" size="88,88" alphatest="blend" />
+		<widget source="Title" render="Label" position="10,60" size="385,38" font="Bold;36" foregroundColor="menu_title-frgrnd" backgroundColor="menu-title-bkgrnd" transparent="1" />
+		<widget name="list" position="10,107" size="503,420" backgroundColor="black" selectionPixmap="ViX_Night_HD/buttons/FocusBar_H30x503.png" foregroundColorEvent="event-frgrnd" foregroundColorEventSelected="#00202020" foregroundColorServiceNotAvail="verydarkgrey" serviceItemHeight="30" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Bold;21" transparent="1" zPosition="3" scrollbarMode="showOnDemand"/>
+		<widget source="ServiceEvent" render="Label" position="10,530" zPosition="2" size="60,25" font="Bold; 22" backgroundColor="black" halign="right" noWrap="1" valign="top" foregroundColor="infobar_service_frgrnd" transparent="1">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">
+			</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="75,530" zPosition="2" size="73,25" font="Bold; 22" backgroundColor="black" noWrap="1" valign="top" foregroundColor="infobar_service_frgrnd" transparent="1">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format:- %H:%M</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="15,555" size="503,90" font="Regular; 19" backgroundColor="black" foregroundColor="window-fg" valign="top" zPosition="2" transparent="1">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_Night_HD/buttons/green.png" position="40,690" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_Night_HD/buttons/yellow.png" position="280,663" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_Night_HD/buttons/blue.png" position="280,690" size="24,24" alphatest="blend" transparent="1" />
+		<widget name="key_red" position="75,667" size="190,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" valign="top" />
+		<widget name="key_green" position="75,694" size="190,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" valign="top" />
+		<widget name="key_yellow" position="315,667" size="190,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" valign="top" />
+		<widget name="key_blue" position="315,694" size="190,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" valign="top" />
 	</screen>
 	<screen name="ChannelSelectionRadio" position="center,100" size="660,400" title="Radio Channels" flags="wfBorder" backgroundColor="window-bg" transparent="0">
 		<widget name="list" position="0,0" size="660,324" zPosition="3" scrollbarMode="showOnDemand" foregroundColor="window-fg" backgroundColor="window-bg" selectionPixmap="ViX_Night_HD/buttons/FocusBar_H36x660.png" foregroundColorEvent="darkgrey" foregroundColorEventSelected="menu_title-frgrnd" foregroundColorServiceNotAvail="#2c2c2c" serviceItemHeight="36" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Regular;21" transparent="0" />
@@ -855,7 +888,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget source="session.CurrentService" render="Label" position="44,8" size="520,30" font="Boldit; 30" valign="top" halign="left" noWrap="1" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar-bkgrnd" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="545,14" size="60,20" font="Bold; 17" backgroundColor="infobar-bkgrnd" foregroundColor="infobar-frgrnd" transparent="1" halign="center">
+		<widget source="session.CurrentService" render="Label" position="545,14" size="60,20" font="Bold; 17" foregroundColor="topbar-frgrnd-on" backgroundColor="infobar-bkgrnd" transparent="1" halign="center">
 			<convert type="ServiceOrbitalPosition" />
 		</widget>
 		<ePixmap pixmap="ViX_Night_HD/icons/icon_update_off.png" position="609,12" size="20,20" zPosition="0" alphatest="blend" />
@@ -999,8 +1032,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		</widget>
 		<eLabel position="695,80" size="574,325" zPosition="2" backgroundColor="menu_title-frgrnd" foregroundColor="window-bg" />
 		<widget source="session.VideoPicture" render="Pig" position="697,82" size="570,321" zPosition="3" backgroundColor="unff000000" />
-		<eLabel position="18,80" size="664,578" zPosition="0" backgroundColor="menu_title-frgrnd" />
-		<widget name="list" position="20,82" size="660,574" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="black" selectionPixmap="ViX_Night_HD/buttons/FocusBar_H36x660.png" foregroundColorEvent="darkgrey" foregroundColorEventSelected="menu_title-frgrnd" serviceItemHeight="36" foregroundColorServiceNotAvail="menu_title-frgrnd" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Regular;21" transparent="0" />
+		<eLabel position="18,80" size="664,580" zPosition="0" backgroundColor="menu_title-frgrnd" />
+		<widget name="list" position="20,82" size="660,576" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="black" selectionPixmap="ViX_Night_HD/buttons/FocusBar_H36x660.png" foregroundColorEvent="darkgrey" foregroundColorEventSelected="menu_title-frgrnd" serviceItemHeight="36" foregroundColorServiceNotAvail="menu_title-frgrnd" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Regular;21" transparent="0" />
 		<widget source="Service" render="Picon" position="1165,412" size="58,35" transparent="1" zPosition="5" backgroundColor="menu_title-frgrnd" alphatest="on">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -2153,35 +2186,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="VKeyIcon" render="Pixmap" pixmap="skin_default/buttons/key_text.png" position="150,662" zPosition="10" size="35,25" transparent="1" alphatest="on" >
 			<convert type="ConditionalShowHide" />
 		</widget>
-	</screen>
-	<screen name="SlimChannelSelection" position="0,0" size="541,720" title=" " flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="ViX_Night_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="10,8" size="410,28" font="Regular;24" foregroundColor="menu_title-frgrnd" backgroundColor="menu-time-bkgrnd" halign="right" transparent="1">
-			<convert type="ClockToText">Full</convert>
-		</widget>
-		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_tv.png" position="426,10" size="88,88" alphatest="blend" />
-		<widget source="Title" render="Label" position="10,60" size="385,38" font="Bold;36" foregroundColor="menu_title-frgrnd" backgroundColor="menu-title-bkgrnd" transparent="1" />
-		<widget name="list" position="10,107" size="503,420" backgroundColor="black" selectionPixmap="ViX_Night_HD/buttons/FocusBar_H30x503.png" foregroundColorEvent="darkgrey" foregroundColorEventSelected="menu_title-frgrnd" serviceItemHeight="30" foregroundColorServiceNotAvail="menu_title-frgrnd" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Regular;21" transparent="1" zPosition="3" scrollbarMode="showOnDemand"/>
-		<widget source="ServiceEvent" render="Label" position="10,530" zPosition="2" size="60,25" font="Bold; 22" backgroundColor="black" halign="right" noWrap="1" valign="top" foregroundColor="infobar_service_frgrnd" transparent="1">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">
-			</convert>
-		</widget>
-		<widget source="ServiceEvent" render="Label" position="75,530" zPosition="2" size="73,25" font="Bold; 22" backgroundColor="black" noWrap="1" valign="top" foregroundColor="infobar_service_frgrnd" transparent="1">
-			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText">Format:- %H:%M</convert>
-		</widget>
-		<widget source="ServiceEvent" render="Label" position="15,555" size="503,90" font="Regular; 19" backgroundColor="black" foregroundColor="window-fg" valign="top" zPosition="2" transparent="1">
-			<convert type="EventName">FullDescription</convert>
-		</widget>
-		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_Night_HD/buttons/green.png" position="40,690" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_Night_HD/buttons/yellow.png" position="280,663" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_Night_HD/buttons/blue.png" position="280,690" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="75,667" size="190,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" valign="top" />
-		<widget name="key_green" position="75,694" size="190,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" valign="top" />
-		<widget name="key_yellow" position="315,667" size="190,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" valign="top" />
-		<widget name="key_blue" position="315,694" size="190,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" valign="top" />
 	</screen>
 	<screen name="SimpleChannelSelection" position="0,0" size="541,720" title=" " flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_Night_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
