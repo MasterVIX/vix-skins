@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.19 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.20 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -3590,8 +3590,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="ViX_Night_HD/buttons/blue.png" position="280,690" size="24,24" alphatest="blend" transparent="1" />
 		<widget name="red" position="75,667" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" />
 		<widget name="green" position="75,694" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" />
-		<widget name="yellow" position="315,641" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="un9c9c9c" foregroundColor="foreground" />
-		<widget name="blue" position="315,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="un868686" foregroundColor="foreground" />
+		<widget name="yellow" position="315,667" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="un9c9c9c" foregroundColor="foreground" />
+		<widget name="blue" position="315,694" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="un868686" foregroundColor="foreground" />
 	</screen>
 	<screen name="VideoEnhancementSetup" position="0,0" size="541,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_Night_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
@@ -4682,10 +4682,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="ViX_Night_HD/buttons/green.png" position="380,686" size="25,25" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_Night_HD/buttons/yellow.png" position="670,686" size="25,25" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_Night_HD/buttons/blue.png" position="960,686" size="25,25" alphatest="blend" transparent="1" />
-		<widget name="red" position="130,658" size="260,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<widget name="green" position="420,657" size="260,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<widget name="yellow" position="710,658" size="260,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<widget name="blue" position="1000,658" size="260,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<widget source="key_red" render="Label" position="130,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="topbar-frgrnd" backgroundColor="topbar-bkgrnd" />
+		<widget source="key_green" render="Label" position="420,657" size="260,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="foreground" backgroundColor="topbar-bkgrnd" />
+		<widget source="key_yellow" render="Label" position="710,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="topbar-frgrnd" backgroundColor="topbar-bkgrnd" />
+		<widget source="key_blue" render="Label" position="1000,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="topbar-frgrnd" backgroundColor="topbar-bkgrnd" />
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,680" size="1280,40" zPosition="-1" />
 	</screen>
 	<screen name="AutoTimerOverview" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">

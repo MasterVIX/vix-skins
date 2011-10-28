@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Day-HD Vs 1.26 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Day-HD Vs 1.27 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -3516,8 +3516,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="ViX_Day_HD/buttons/blue.png" position="280,690" size="24,24" alphatest="blend" transparent="1" />
 		<widget name="red" position="75,667" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="colourbuttonsbg" foregroundColor="foreground" />
 		<widget name="green" position="75,694" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="colourbuttonsbg" foregroundColor="foreground" />
-		<widget name="yellow" position="315,641" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="un9c9c9c" foregroundColor="foreground" />
-		<widget name="blue" position="315,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="un868686" foregroundColor="foreground" />
+		<widget name="yellow" position="315,667" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="un9c9c9c" foregroundColor="foreground" />
+		<widget name="blue" position="315,694" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="un868686" foregroundColor="foreground" />
 	</screen>
 	<screen name="VideoEnhancementSetup" position="0,0" size="541,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_Day_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
@@ -4591,125 +4591,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_yellow" position="75,641" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="un9c9c9c" foregroundColor="foreground" />
 		<widget name="key_blue" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="un868686" foregroundColor="foreground" />
 	</screen>
-	<screen name="SuomipoekaMenu" position="0,0" size="541,720" title="SuomipoekaMenu" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="ViX_Day_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="10,8" size="410,28" font="Regular;24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="menuclockbg">
-			<convert type="ClockToText">Full</convert>
-		</widget>
-		<ePixmap pixmap="ViX_Day_HD/menu/ico_menu_pvr.png" position="426,10" size="88,88" alphatest="blend" />
-		<widget source="Title" render="Label" position="10,60" size="415,38" font="Bold;38" foregroundColor="menu_title" backgroundColor="menutitlebg" transparent="1" />
-		<widget name="config" position="10,107" size="503,526" selectionPixmap="ViX_Day_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" zPosition="2" />
-		<ePixmap pixmap="ViX_Day_HD/buttons/red.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_Day_HD/buttons/green.png" position="40,690" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_Day_HD/buttons/yellow.png" position="280,663" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_Day_HD/buttons/blue.png" position="280,690" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="75,667" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="colourbuttonsbg" foregroundColor="foreground" />
-		<widget name="key_green" position="75,694" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="colourbuttonsbg" foregroundColor="foreground" />
-		<widget name="key_yellow" position="315,667" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="colourbuttonsbg" foregroundColor="foreground" />
-		<widget name="key_blue" position="315,694" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="colourbuttonsbg" foregroundColor="foreground" />
-	</screen>
-	<screen name="MovieSelectionSP" position="0,0" size="541,720" title="Recordings" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="ViX_Day_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="10,8" size="410,28" font="Regular;24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="menuclockbg">
-			<convert type="ClockToText">Full</convert>
-		</widget>
-		<ePixmap pixmap="ViX_Day_HD/menu/ico_menu_pvr.png" position="426,10" size="88,88" alphatest="blend" />
-		<widget source="Title" render="Label" position="10,60" size="415,38" font="Bold;38" foregroundColor="menu_title" backgroundColor="menutitlebg" transparent="1" />
-		<widget name="wait" position="10,107" size="503,487" font="Regular;21" halign="center" valign="center" transparent="0" foregroundColor="window-fg" backgroundColor="window-bg" zPosition="3" />
-		<widget name="list" position="10,107" size="503,526" selectionPixmap="ViX_Day_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" zPosition="2" />
-		<widget name="DescriptionBorder" position="10,478" size="503,149" zPosition="3" transparent="1" />
-		<widget source="Service" render="Label" position="313,510" zPosition="2" size="175,25" font="Italic;20" halign="right" backgroundColor="window-bg" transparent="0" foregroundColor="window-fg">
-			<convert type="MovieInfo">RecordServiceName</convert>
-		</widget>
-		<widget source="Service" render="Label" position="10,540" zPosition="1" size="503,87" font="Regular;18" backgroundColor="window-bg" foregroundColor="window-fg" transparent="0">
-			<convert type="MovieInfo">ShortDescription</convert>
-		</widget>
-		<widget source="Service" render="Label" position="10,540" zPosition="1" size="503,87" font="Regular;18" backgroundColor="window-bg" transparent="0" foregroundColor="window-fg">
-			<convert type="EventName">ExtendedDescription</convert>
-		</widget>
-		<widget source="Service" render="Label" position="428,488" zPosition="1" size="60,20" font="Regular;18" halign="right" backgroundColor="window-bg" transparent="0" foregroundColor="window-fg">
-			<convert type="ServiceTime">Duration</convert>
-			<convert type="ClockToText">AsLength</convert>
-		</widget>
-		<widget name="FileSize" position="320,488" size="100,20" font="Regular; 18" backgroundColor="window-bg" transparent="0" foregroundColor="window-fg" zPosition="1" />
-		<widget source="Service" render="Label" position="10,510" size="310,25" font="Regular;18" zPosition="1" halign="left" transparent="0" backgroundColor="window-bg" foregroundColor="window-fg">
-			<convert type="ServiceTime">StartTime</convert>
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<ePixmap pixmap="ViX_Day_HD/buttons/red.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_Day_HD/buttons/green.png" position="40,690" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_Day_HD/buttons/yellow.png" position="280,663" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_Day_HD/buttons/blue.png" position="280,690" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="75,667" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="colourbuttonsbg" foregroundColor="foreground" />
-		<widget name="key_green" position="75,694" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="colourbuttonsbg" foregroundColor="foreground" />
-		<widget name="key_yellow" position="315,667" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="colourbuttonsbg" foregroundColor="foreground" />
-		<widget name="key_blue" position="315,694" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="colourbuttonsbg" foregroundColor="foreground" />
-	</screen>
-	<screen name="Merlin_PGd" position="0,0" size="1280,720" title="Merlin Program Guide" backgroundColor="black" flags="wfNoBorder">
-		<ePixmap pixmap="ViX_Day_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
-		<ePixmap pixmap="ViX_Day_HD/icons/ico_Chlist_title.png" position="50,20" size="38,34" alphatest="blend" transparent="1" />
-		<widget source="Title" render="Label" position="105,42" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
-		<widget source="global.CurrentTime" render="Label" position="1160,10" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="910,40" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<eLabel position="670,120" size="560,315" zPosition="2" backgroundColor="darkgrey" foregroundColor="window-bg" />
-		<widget source="session.VideoPicture" render="Pig" position="672,122" size="556,311" zPosition="3" backgroundColor="unff000000" />
-		<widget itemHeight="25" name="prg_list" position="670,447" size="560,175" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="ViX_Day_HD/buttons/FocusBar_H25x615.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
-		<widget itemHeight="25" name="epg_list" position="50,170" size="590,450" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="ViX_Day_HD/buttons/FocusBar_H25x615.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
-		<eLabel text=" " backgroundColor="un9c9c9c" position="655,120" size="2,500" />
-		<widget name="currCh" position="50,125" size="500,33" font="Regular;30" backgroundColor="window-bg" transparent="0" foregroundColor="window-fg" />
-		<ePixmap pixmap="ViX_Day_HD/buttons/red.png" position="90,686" size="25,25" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_Day_HD/buttons/green.png" position="380,686" size="25,25" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_Day_HD/buttons/yellow.png" position="670,686" size="25,25" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_Day_HD/buttons/blue.png" position="960,686" size="25,25" alphatest="blend" transparent="1" />
-		<eLabel text="Zap" position="130,658" size="260,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<eLabel text="Add Timer" position="420,657" size="260,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<eLabel text="Preview" position="1000,658" size="260,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<ePixmap pixmap="ViX_Day_HD/fs-bg-bot.png" position="0,680" size="1280,40" alphatest="on" transparent="1" zPosition="-1" />
-	</screen>
-	<screen name="Merlin_PGII" position="0,0" size="1280,720" title="Merlin Program Guide" backgroundColor="black" flags="wfNoBorder">
-		<ePixmap pixmap="ViX_Day_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
-		<ePixmap pixmap="ViX_Day_HD/icons/ico_Chlist_title.png" position="50,20" size="38,34" alphatest="blend" transparent="1" />
-		<widget source="Title" render="Label" position="105,42" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" />
-		<widget source="global.CurrentTime" render="Label" position="1160,10" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="910,40" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<widget enableWrapAround="0" itemHeight="25" name="prg_list" position="-55,120" size="50,521" transparent="0" />
-		<widget font="Regular;18" halign="center" valign="center" name="currCh1" position="60,120" size="231,24" transparent="0" zPosition="2" backgroundColor="black" />
-		<widget font="Regular;18" halign="center" valign="center" name="currCh2" position="291,120" size="231,24" transparent="0" zPosition="2" backgroundColor="black" />
-		<widget font="Regular;18" halign="center" valign="center" name="currCh3" position="522,120" size="231,24" transparent="0" zPosition="2" backgroundColor="black" />
-		<widget font="Regular;18" halign="center" valign="center" name="currCh4" position="753,120" size="231,24" transparent="0" zPosition="2" backgroundColor="black" />
-		<widget font="Regular;18" halign="center" valign="center" name="currCh5" position="984,120" size="231,24" transparent="0" zPosition="2" backgroundColor="black" />
-		<widget backgroundColor="un3c3c3c" name="Active1" position="60,150" size="225,490" transparent="0" zPosition="3" />
-		<widget backgroundColor="un3c3c3c" name="Active2" position="291,150" size="225,490" transparent="0" zPosition="3" />
-		<widget backgroundColor="un3c3c3c" name="Active3" position="522,150" size="225,490" transparent="0" zPosition="3" />
-		<widget backgroundColor="un3c3c3c" name="Active4" position="753,150" size="225,490" transparent="0" zPosition="3" />
-		<widget backgroundColor="un3c3c3c" name="Active5" position="984,150" size="225,490" transparent="0" zPosition="3" />
-		<widget itemHeight="70" name="epg_list1" position="60,150" scrollbarMode="showOnDemand" size="225,490" transparent="1" zPosition="4" foregroundColor="window-fg" backgroundColor="black" />
-		<widget itemHeight="70" name="epg_list2" position="291,150" scrollbarMode="showOnDemand" size="225,490" transparent="1" zPosition="4" foregroundColor="window-fg" backgroundColor="black" />
-		<widget itemHeight="70" name="epg_list3" position="522,150" scrollbarMode="showOnDemand" size="225,490" transparent="1" zPosition="4" foregroundColor="window-fg" backgroundColor="black" />
-		<widget itemHeight="70" name="epg_list4" position="753,150" scrollbarMode="showOnDemand" size="225,490" transparent="1" zPosition="4" foregroundColor="window-fg" backgroundColor="black" />
-		<widget itemHeight="70" name="epg_list5" position="984,150" scrollbarMode="showOnDemand" size="225,490" transparent="1" zPosition="4" foregroundColor="window-fg" backgroundColor="black" />
-		<ePixmap pixmap="ViX_Day_HD/buttons/red.png" position="90,686" size="25,25" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_Day_HD/buttons/green.png" position="380,686" size="25,25" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_Day_HD/buttons/yellow.png" position="670,686" size="25,25" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_Day_HD/buttons/blue.png" position="960,686" size="25,25" alphatest="blend" transparent="1" />
-		<eLabel text="Zap" position="130,658" size="260,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<eLabel text="Add Timer" position="420,657" size="260,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<eLabel text="Primetime" position="710,658" size="260,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<eLabel text="Refresh" position="1000,658" size="260,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<ePixmap pixmap="ViX_Day_HD/fs-bg-bot.png" position="0,680" size="1280,40" alphatest="on" transparent="1" zPosition="-1" />
-	</screen>
 	<screen name="AutoTimerHelp" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder" >
 		<ePixmap pixmap="ViX_Day_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
 		<ePixmap pixmap="ViX_Day_HD/icons/ico_Chlist_title.png" position="50,20" size="38,34" alphatest="blend" transparent="1" />
-		<widget render="Label" source="title" position="105,57" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
+		<widget source="title" render="Label" position="105,25" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
 		<widget source="global.CurrentTime" render="Label" position="1160,10" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -4723,10 +4608,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="ViX_Day_HD/buttons/green.png" position="380,686" size="25,25" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_Day_HD/buttons/yellow.png" position="670,686" size="25,25" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_Day_HD/buttons/blue.png" position="960,686" size="25,25" alphatest="blend" transparent="1" />
-		<widget render="Label" source="key_red" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-<!--		<widget render="Label" source="key_green"  position="420,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />-->
-		<widget render="Label" source="key_yellow"  position="710,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<widget render="Label" source="key_blue"  position="1000,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
+		<widget source="key_red" render="Label" position="130,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="colourbuttonsbg" />
+		<widget source="key_green" render="Label" position="420,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="colourbuttonsbg" />
+		<widget source="key_yellow" render="Label" position="710,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="colourbuttonsbg" />
+		<widget source="key_blue" render="Label" position="1000,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="colourbuttonsbg" />
 		<ePixmap pixmap="ViX_Day_HD/fs-bg-bot.png" position="0,680" size="1280,40" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="AutoTimerOverview" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -4737,7 +4622,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="ViX_Day_HD/menu/ico_menu_Timer.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget source="Title" render="Label" position="10,60" size="415,38" font="Bold;38" foregroundColor="menu_title" backgroundColor="menutitlebg" transparent="1" />
 		<widget name="entries" position="10,107" size="503,475" selectionPixmap="ViX_Day_HD/buttons/FocusBar_H25x503.png" colorDisabled="#c80000" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" zPosition="2" enableWrapAround="1" />
-		<ePixmap pixmap="ViX_Day_HD/buttons/key_menu.png" position="470,663" size="35,25" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="ViX_Day_HD/buttons/key_menu.png" position="40,663" size="35,25" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_Day_HD/buttons/green.png" position="40,690" size="24,24" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_Day_HD/buttons/yellow.png" position="280,663" size="24,24" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_Day_HD/buttons/blue.png" position="280,690" size="24,24" alphatest="blend" transparent="1" />
