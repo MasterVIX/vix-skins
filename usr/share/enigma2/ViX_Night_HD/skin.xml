@@ -885,7 +885,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 	</screen>
 	<screen name="QuickEPG" flags="wfNoBorder" position="center,e-210" size="980,200" title="InfoBar" backgroundColor="transparent">
 		<ePixmap position="0,0" size="980,200" pixmap="ViX_Night_HD/info-bg.png" alphatest="on" zPosition="-1"/>
-		<widget source="session.CurrentService" render="Label" position="44,8" size="520,30" font="Boldit; 30" valign="top" halign="left" noWrap="1" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar-bkgrnd" transparent="1">
+		<widget source="Service" render="Label" position="44,8" size="520,30" font="Boldit; 30" valign="top" halign="left" noWrap="1" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar-bkgrnd" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="545,14" size="60,20" font="Bold; 17" foregroundColor="topbar-frgrnd-on" backgroundColor="infobar-bkgrnd" transparent="1" halign="center">
