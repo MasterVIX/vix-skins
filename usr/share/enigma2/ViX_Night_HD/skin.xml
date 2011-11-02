@@ -5170,17 +5170,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="ViX_Night_HD/buttons/button_off.png" position="435,300" size="25,25" alphatest="blend" />
 		<ePixmap pixmap="ViX_Night_HD/buttons/button_off.png" position="630,300" size="25,25" alphatest="blend" />
 	</screen>
-	<screen name="RemotePlayer" title="Partnerbox - RemotePlayer" flags="wfNoBorder" position="center,506" size="730,144" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-1" size="730,144" pixmap="ViX_Night_HD/movie_infobar-bg.png" />
+	<screen name="RemotePlayer" title="Partnerbox - RemotePlayer" flags="wfNoBorder" position="center,e-200" size="750,190" title="InfoBar" backgroundColor="transparent">
+		<ePixmap position="0,0" zPosition="-1" size="750,190" pixmap="ViX_Night_HD/movie_infobar-bg.png" />
 		<ePixmap pixmap="ViX_Night_HD/icons/clock.png" position="580,22" zPosition="1" size="20,20" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Label" position="598,24" zPosition="1" size="59,20" font="Regular; 21" foregroundColor="foreground" halign="right" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top">
+		<widget source="global.CurrentTime" render="Label" position="598,24" zPosition="1" size="59,20" font="Regular; 21" foregroundColor="topbar-frgrnd" halign="right" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="658,27" zPosition="1" size="35,18" font="Regular; 17" valign="top" backgroundColor="infobar-bkgrnd" foregroundColor="foreground" transparent="1" noWrap="1">
+		<widget source="global.CurrentTime" render="Label" position="658,27" zPosition="1" size="35,18" font="Regular; 17" valign="top" backgroundColor="infobar-bkgrnd" foregroundColor="topbar-frgrnd" transparent="1" noWrap="1">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
 		<widget name="ServiceName" position="39,18" size="540,30" font="Boldit; 30" valign="top" halign="left" noWrap="1" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" />
-		<widget name="DateTime" position="50,75" size="430,24" font="Regular;22" noWrap="1" foregroundColor="black" backgroundColor="infobar_sunken" transparent="1" />
-		<widget name="IP" position="495,75" size="180,24" font="Regular;22" noWrap="1" foregroundColor="black" backgroundColor="infobar_sunken" transparent="1" halign="right" />
+		<widget name="DateTime" position="50,75" size="430,24" font="Regular;22" noWrap="1" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" />
+		<widget name="IP" position="495,75" size="180,24" font="Regular;22" noWrap="1" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" halign="right" />
 	</screen>
 </skin>
