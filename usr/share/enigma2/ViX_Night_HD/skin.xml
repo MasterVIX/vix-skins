@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.24 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.25 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -634,7 +634,7 @@
 		<widget source="Adapter" render="Label" position="180,560" size="235,21" zPosition="10" backgroundColor="window-bg" font="Regular;19" transparent="0" />
 		<ePixmap pixmap="skin_default/div-h.png" position="10,605" zPosition="1" size="503,2" />
 		<widget source="introduction2" render="Label" position="10,616" size="503,30" zPosition="1" font="Regular;20" halign="center" transparent="0" valign="center" backgroundColor="window-bg" />
-		<widget name="VKeyIcon" pixmap="ViX_Night_HD/buttons/key_text.png" position="280,642" zPosition="1" size="35,25" transparent="1" alphatest="on" />
+		<widget name="VKeyIcon" pixmap="ViX_Night_HD/buttons/key_text.png" position="280,663" zPosition="1" size="35,25" transparent="1" alphatest="on" />
 		<widget name="HelpWindow" pixmap="ViX_Night_HD/buttons/vkey_icon.png" position="100,399" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_Night_HD/buttons/blue.png" position="40,690" size="24,24" alphatest="blend" transparent="1" />
@@ -1469,7 +1469,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 			<convert type="ClockToText">Full</convert>
 		</widget>
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
-		<widget source="Title" render="Label" position="10,60" size="415,38" font="Bold;38" foregroundColor="menu_title-frgrnd" backgroundColor="menu-title-bkgrnd" transparent="1" />
+		<widget source="title" render="Label" position="10,60" size="415,38" font="Bold;38" foregroundColor="menu_title-frgrnd" backgroundColor="menu-title-bkgrnd" transparent="1" />
 		<widget source="menu" render="Listbox" position="10,107" size="503,533" selectionPixmap="ViX_Night_HD/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
@@ -1747,7 +1747,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" position="10,107" size="503,250" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="ViX_Night_HD/buttons/FocusBar_H25x503.png" />
 		<ePixmap pixmap="skin_default/div-h.png" position="10,585" zPosition="1" size="503,2" />
 		<widget source="introduction" render="Label" position="10,596" size="503,30" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="window-bg" transparent="0" />
-		<widget name="VKeyIcon" pixmap="ViX_Night_HD/buttons/key_text.png" position="280,642" zPosition="1" size="35,25" transparent="1" alphatest="on" />
+		<widget name="VKeyIcon" pixmap="ViX_Night_HD/buttons/key_text.png" position="280,663" zPosition="1" size="35,25" transparent="1" alphatest="on" />
 		<widget name="HelpWindow" pixmap="ViX_Night_HD/buttons/vkey_icon.png" position="100,450" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
 		<widget source="key_red" render="Label" position="75,667" size="190,20" zPosition="1" font="Regular;20" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" halign="left" transparent="1" valign="top" />
@@ -1819,7 +1819,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" position="10,107" size="503,200" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="ViX_Night_HD/buttons/FocusBar_H25x503.png" />
 		<ePixmap pixmap="skin_default/div-h.png" position="10,585" zPosition="1" size="503,2" />
 		<widget source="introduction" render="Label" position="10,596" size="503,30" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="window-bg" transparent="0" />
-		<widget name="VKeyIcon" pixmap="ViX_Night_HD/buttons/key_text.png" position="280,642" zPosition="1" size="35,25" transparent="1" alphatest="on" />
+		<widget name="VKeyIcon" pixmap="ViX_Night_HD/buttons/key_text.png" position="280,663" zPosition="1" size="35,25" transparent="1" alphatest="on" />
 		<widget name="HelpWindow" pixmap="ViX_Night_HD/buttons/vkey_icon.png" position="100,450" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
 		<widget source="key_red" render="Label" position="75,667" size="190,20" zPosition="1" font="Regular;20" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" halign="left" transparent="1" valign="top" />
@@ -1959,8 +1959,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="satus" render="Label" position="20,630" size="660,30" zPosition="10" font="Regular;18" halign="center" valign="center" transparent="1" />
 		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="90,686" size="25,25" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_Night_HD/buttons/green.png" position="380,686" size="25,25" alphatest="blend" transparent="1" />
-		<widget name="ok" position="130,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
-		<widget name="cancel" position="420,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
+		<widget source="key_red" render="Label" position="130,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
+		<widget source="key_green" render="Label" position="420,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,680" size="1280,40" zPosition="-1" />
 	</screen>
 	<screen name="OSD3DSetupScreen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -1973,8 +1973,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" position="10,107" size="503,496" selectionPixmap="ViX_Night_HD/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<ePixmap pixmap="ViX_Night_HD/buttons/red.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_Night_HD/buttons/green.png" position="40,690" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="ok" position="75,667" size="190,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" valign="top" />
-		<widget name="cancel" position="75,694" size="190,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" valign="top" />
+		<widget source="key_red" render="Label" position="75,667" size="190,20" zPosition="1" font="Regular;20" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" halign="left" transparent="1" valign="top" />
+		<widget source="key_green" render="Label" position="75,694" size="190,20" zPosition="1" font="Regular;20" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" halign="left" transparent="1" valign="top" />
 	</screen>
 	<screen name="ParentalControlChangePin" position="0,0" size="541,720" title="Change pin code" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_Night_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
