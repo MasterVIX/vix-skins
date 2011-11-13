@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-<!--Skin:  Magic-HD-Light ViX(Extreme-HD) Vs 1.55 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 2.67 but now in "Light version" (not supporting as many screens)-->
+<!--Skin:  Magic-HD-Light ViX(Extreme-HD) Vs 1.56 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 2.74 but now in "Light version" (not supporting as many screens)-->
 <!--This skin is a Freeware. Everyone can modify and use it in other images.-->
 <!--BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!-->
 <!--Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are-->
@@ -1020,18 +1020,18 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
-    <ePixmap pixmap="Magic-HD-Common/dvr/scale2.png" position="15,110" size="477,12" zPosition="1" alphatest="on" />
-    <eLabel backgroundColor="infobarBG" position="15,111" size="477,14" zPosition="0" />
-    <widget source="session.CurrentService" render="PositionGauge" position="15,110" size="477,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer2.png:477,0">
+    <ePixmap pixmap="Magic-HD-Common/dvr/scale2.png" position="5,110" size="477,12" zPosition="1" alphatest="on" />
+    <eLabel backgroundColor="infobarBG" position="5,111" size="477,14" zPosition="0" />
+    <widget source="session.CurrentService" render="PositionGauge" position="5,110" size="477,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer2.png:477,0">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="15,75" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+    <widget source="session.CurrentService" render="Label" position="5,75" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="15,90" size="90,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="left">
+    <widget source="session.CurrentService" render="Label" position="5,90" size="90,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="left">
       <convert type="ServicePosition">Position,ShowHours</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="375,90" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right">
+    <widget source="session.CurrentService" render="Label" position="365,90" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right">
       <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
     </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
