@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.31 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.32 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -666,16 +666,16 @@
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_tv.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget source="Title" render="Label" position="10,60" size="415,38" font="Bold;38" foregroundColor="menu_title-frgrnd" backgroundColor="menu-title-bkgrnd" transparent="1" />
 		<widget name="config" position="80,123" size="400,110" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x420.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" />
-		<widget source="key_red" render="Pixmap" pixmap="ViX_HD_Common/buttons/red.png" position="40,140" size="25,25" alphatest="on" zPosition="1">
+		<widget source="key_red" render="Pixmap" pixmap="ViX_HD_Common/buttons/red.png" position="40,120" size="25,25" alphatest="blend" zPosition="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="key_green" render="Pixmap" pixmap="ViX_HD_Common/buttons/green.png" position="40,165" size="25,25" alphatest="on" zPosition="1">
+		<widget source="key_green" render="Pixmap" pixmap="ViX_HD_Common/buttons/green.png" position="40,145" size="25,25" alphatest="blend" zPosition="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="key_yellow" render="Pixmap" pixmap="ViX_HD_Common/buttons/yellow.png" position="40,190" size="25,25" alphatest="on" zPosition="1">
+		<widget source="key_yellow" render="Pixmap" pixmap="ViX_HD_Common/buttons/yellow.png" position="40,170" size="25,25" alphatest="blend" zPosition="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="key_blue" render="Pixmap" pixmap="ViX_HD_Common/buttons/blue.png" position="40,215" size="25,25" alphatest="on" zPosition="1">
+		<widget source="key_blue" render="Pixmap" pixmap="ViX_HD_Common/buttons/blue.png" position="40,195" size="25,25" alphatest="blend" zPosition="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="streams" render="Listbox" position="10,258" size="503,200" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand">
@@ -683,16 +683,16 @@
 				{"templates":
 				{"default": (25, [ 
 				MultiContentEntryText(pos = (0, 1),	 size = (35, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 1), # key,
-				MultiContentEntryText(pos = (20, 1),	size = (40, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 2), # number,
-				MultiContentEntryText(pos = (80, 1), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 3), # description,
-				MultiContentEntryText(pos = (220, 1), size = (180, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 4), # language,
+				MultiContentEntryText(pos = (20, 1),	size = (30, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 2), # number,
+				MultiContentEntryText(pos = (60, 1), size = (100, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 3), # description,
+				MultiContentEntryText(pos = (180, 1), size = (220, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 4), # language,
 				MultiContentEntryText(pos = (408, 5), size = (65, 25),	font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 				], True, "showNever"),
 				"notselected": (25, [ 
 				MultiContentEntryText(pos = (0, 1),	 size = (35, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 1), # key,
-				MultiContentEntryText(pos = (20, 1),	size = (40, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 2), # number,
-				MultiContentEntryText(pos = (80, 1), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 3), # description,
-				MultiContentEntryText(pos = (220, 1), size = (180, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 4), # language,
+				MultiContentEntryText(pos = (20, 1),	size = (30, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 2), # number,
+				MultiContentEntryText(pos = (60, 1), size = (100, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 3), # description,
+				MultiContentEntryText(pos = (180, 1), size = (220, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 4), # language,
 				MultiContentEntryText(pos = (408, 5), size = (65, 25),	font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 				], False, "showNever")
 				},
