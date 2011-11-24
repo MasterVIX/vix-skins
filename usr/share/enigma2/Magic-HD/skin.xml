@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 2.83 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 2.84 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -635,7 +635,7 @@
     </widget>
     <widget source="Event" render="Label" position="15,401" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
     <convert type="EventTime">StartTime</convert>
-    <convert type="ClockToText">Format:%A</convert>
+    <convert type="ClockToText">ShortDate</convert>
     </widget>
     <widget source="Event" render="Label" position="165,401" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right">
     <convert type="EventTime">StartTime</convert>
