@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-ViX Vs 1.12 by VU+NL @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
+  <!--  Skin: Magic-ViX Vs 1.13 by VU+NL @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -792,7 +792,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget backgroundColor="#266926" font="Enigma;18" halign="center" name="key_green" position="140,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
 		<widget backgroundColor="#8C5900" font="Enigma;18" halign="center" name="key_yellow" position="280,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
 		<widget backgroundColor="#254177" font="Enigma;18" halign="center" name="key_blue" position="420,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
-		<widget font="Enigma;22" name="epg_description" position="5,50" size="547,350"/>
+    <widget source="session.Event_Now" render="Label" position="5,50" size="547,350" font="Regular;18" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="background" foregroundColor="white" transparent="1">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
 		<widget font="Enigma;22" name="datetime" position="5,410" size="140,30" noWrap="1" />
 		<widget font="Enigma;22" name="duration" position="150,410" size="115,30" noWrap="1" />
 		<widget font="Enigma;22" name="channel" position="270,410" size="220,30" noWrap="1" /> 
