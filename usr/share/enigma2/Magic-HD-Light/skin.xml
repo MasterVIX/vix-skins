@@ -616,7 +616,7 @@
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
-  <screen name="  <screen name="QuickEPG" title="InfoBar" position="0,510" size="1280,400" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="QuickEPG" title="InfoBar" position="0,510" size="1280,400" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap alphatest="off" pixmap="Magic-HD-Common/infobar/hd.png" position="0,0" size="1280,220" zPosition="-1" />
 <!--    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,180" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,180" size="26,26" alphatest="on" />
@@ -650,7 +650,7 @@
     <widget source="Event" render="Progress" pixmap="Magic-HD-Common/infobar/pbar.png" position="180,103" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
     <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="Event" render="Label" position="920,110" size="160,30" backgroundColor="secondBG" transparent="1" zPosition="10" foregroundColor="foreground" font="Regular;24" halign="center">
+    <widget source="Event" render="Label" position="1070,110" size="160,30" backgroundColor="secondBG" transparent="1" zPosition="10" foregroundColor="foreground" font="Regular;24" halign="center">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
