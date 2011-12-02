@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 2.96 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 2.97 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -296,28 +296,42 @@
     <widget source="session.CurrentService" render="Label" position="50,20" size="600,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;16" valign="top" halign="left">
       <convert type="pliExpertInfo">ExpertInfo</convert>
     </widget>
-    <eLabel name="snr" position="685,15" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text=" SNR" font="Regular;14" />
+<!--    <eLabel name="snr" position="685,15" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text=" SNR" font="Regular;14" />
     <widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,15" size="410,20" borderWidth="2" borderColor="uncccccc">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Label" position="1174,15" size="80,28" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
       <convert type="FrontendInfo">SNR</convert>
+    </widget>-->
+    <eLabel name="snr" position="685,15" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text=" SNR" font="Regular;14" />    
+    <widget source="session.FrontendStatus" render="Label" position="765,15" size="80,28" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
+      <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <eLabel name="agc" position="685,45" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text=" AGC" font="Regular;14" />
+<!--    <eLabel name="agc" position="685,45" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text=" AGC" font="Regular;14" />
     <widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,45" size="410,20" borderWidth="2" borderColor="uncccccc">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Label" position="1174,45" size="80,28" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
       <convert type="FrontendInfo">AGC</convert>
+    </widget>-->
+    <eLabel name="agc" position="845,15" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text=" Strength" font="Regular;14" />
+   <widget source="session.FrontendStatus" render="Label" position="925,15" size="80,28" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
+      <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <eLabel name="ber" position="685,75" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text=" BER:" font="Regular;14" />
+
+<!--    <eLabel name="ber" position="685,75" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text=" BER:" font="Regular;14" />
     <widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,75" size="410,20" borderWidth="2" borderColor="grey">
       <convert type="FrontendInfo">BER</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Label" position="1174,75" size="80,28" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
       <convert type="FrontendInfo">BER</convert>
+    </widget>-->
+    <eLabel name="ber" position="685,55" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text=" BER:" font="Regular;14" />
+    <widget source="session.FrontendStatus" render="Label" position="765,55" size="80,28" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
+      <convert type="FrontendInfo">BER</convert>
     </widget>
-    <eLabel name="lock" position="685,105" size="80,28" backgroundColor="darkgrey" halign="center" transparent="1" text="Lock:" zPosition="1" font="Regular;14" />
+
+<!--    <eLabel name="lock" position="685,105" size="80,28" backgroundColor="darkgrey" halign="center" transparent="1" text="Lock:" zPosition="1" font="Regular;14" />
     <widget source="session.FrontendStatus" render="Pixmap" pixmap="skin_default/icons/lock_on.png" position="760,100" size="38,31" alphatest="on">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide" />
@@ -325,7 +339,19 @@
     <widget source="session.FrontendStatus" render="Pixmap" pixmap="skin_default/icons/lock_off.png" position="760,100" zPosition="1" size="38,31">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide">Invert</convert>
+    </widget>-->
+   <eLabel name="lock" position="845,55" size="80,28" backgroundColor="darkgrey" halign="center" transparent="1" text="Lock:" zPosition="1" font="Regular;14" />
+    <widget source="session.FrontendStatus" render="Pixmap" pixmap="skin_default/icons/lock_on.png" position="925,55" size="38,31" alphatest="on">
+      <convert type="FrontendInfo">LOCK</convert>
+      <convert type="ConditionalShowHide" />
     </widget>
+    <widget source="session.FrontendStatus" render="Pixmap" pixmap="skin_default/icons/lock_off.png" position="925,55" zPosition="1" size="38,31">
+      <convert type="FrontendInfo">LOCK</convert>
+      <convert type="ConditionalShowHide">Invert</convert>
+    </widget>    
+    
+    
+    
     <eLabel position="0,0" size="1280,720" backgroundColor="transpBlack" zPosition="-50" />
     <eLabel text="Now:" position="15,150" size="63,26" zPosition="2" font="Regular;24" foregroundColor="white" transparent="1" backgroundColor="background" />
     <eLabel text="Next:" position="650,150" size="63,26" zPosition="2" font="Regular;24" foregroundColor="white" transparent="1" backgroundColor="background" />
@@ -385,13 +411,13 @@
     <widget source="session.Event_Now" render="Progress" pixmap="Magic-HD-Common/infobar/pbar.png" position="180,613" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1153,610" size="50,20" backgroundColor="secondBG" transparent="1" font="Regular;18" halign="right">
+<!--    <widget source="session.CurrentService" render="Label" position="1153,610" size="50,20" backgroundColor="secondBG" transparent="1" font="Regular;18" halign="right">
       <convert type="ServiceInfo">VideoWidth</convert>
     </widget>
     <eLabel position="1204,610" size="15,20" backgroundColor="secondBG" transparent="1" text="x" font="Regular;16" halign="center" />
     <widget source="session.CurrentService" render="Label" position="1220,610" size="50,20" backgroundColor="secondBG" transparent="1" font="Regular;18" halign="left">
       <convert type="ServiceInfo">VideoHeight</convert>
-    </widget>
+    </widget>-->
     <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_dolby_on.png" position="935,576" size="60,24" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
@@ -421,9 +447,9 @@
     <widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1246,580" size="20,20" zPosition="3" alphatest="on">
     <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Label" position="1170,637" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19">
+<!--    <widget source="session.FrontendStatus" render="Label" position="1170,637" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19">
       <convert type="FrontendInfo">SNRdB</convert>
-    </widget>
+    </widget>-->
     <widget source="session.TunerInfo" render="FixedLabel" position="1130,580" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="A" foregroundColor="orange" font="Regular;20">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">1</convert>
