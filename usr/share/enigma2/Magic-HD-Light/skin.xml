@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-<!--Skin:  Magic-HD-Light ViX(Extreme-HD) Vs 1.61 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 2.92 but now in "Light version" (not supporting as many screens)-->
+<!--Skin:  Magic-HD-Light ViX(Extreme-HD) Vs 1.62 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 2.95 but now in "Light version" (not supporting as many screens)-->
 <!--This skin is a Freeware. Everyone can modify and use it in other images.-->
 <!--BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!-->
 <!--Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are-->
@@ -111,14 +111,14 @@
   </screen>
   <!--  ## InfoBars ## -->
   <screen name="InfoBar" title="InfoBar" position="0,510" size="1280,400" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,180" size="26,26" alphatest="on" />
+<!--    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,180" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,180" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,180" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,180" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,180" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
     <widget name="key_green" position="340,180" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
     <widget name="key_yellow" position="614,180" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
-    <widget name="key_blue" position="875,180" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
+    <widget name="key_blue" position="875,180" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />-->
     <ePixmap alphatest="off" pixmap="Magic-HD-Common/infobar/hd.png" position="0,-7" size="1280,220" zPosition="-1" />
     <widget source="session.CurrentService" render="Picon" position="45,45" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
       <convert type="ServiceName">Reference</convert>
@@ -616,45 +616,45 @@
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
-  <screen name="QuickEPG" title="InfoBar" position="0,510" size="1280,400" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="  <screen name="QuickEPG" title="InfoBar" position="0,510" size="1280,400" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap alphatest="off" pixmap="Magic-HD-Common/infobar/hd.png" position="0,0" size="1280,220" zPosition="-1" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,180" size="26,26" alphatest="on" />
+<!--    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,180" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,180" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,180" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,180" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,180" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
     <widget name="key_green" position="340,180" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
     <widget name="key_yellow" position="614,180" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
-    <widget name="key_blue" position="875,180" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
-    <widget source="Service" render="Picon" position="60,45" size="100,60" alphatest="blend" transparent="1" zPosition="2">
+    <widget name="key_blue" position="875,180" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />-->
+    <widget source="Service" render="Picon" position="45,45" size="100,60" alphatest="blend" transparent="1" zPosition="2">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget name="list" position="220,115" size="850,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" />
-    <widget source="Service" render="Label" position="305,65" size="500,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" valign="center" halign="left" >
+    <widget name="list" position="220,115" size="850,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget source="Service" render="Label" position="255,65" size="990,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" valign="center" halign="left" >
     <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="48,135" size="120,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;24" valign="center" halign="center">
+    <widget source="global.CurrentTime" render="Label" position="20,135" size="120,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;24" valign="center" halign="center">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="50,110" size="120,20" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;20" valign="center" halign="center">
+    <widget source="global.CurrentTime" render="Label" position="20,110" size="120,20" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;20" valign="center" halign="center">
       <convert type="ClockToText">ShortDate</convert>
     </widget>
-    <widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1216,80" size="20,20" zPosition="3" alphatest="on">
+<!--    <widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1216,80" size="20,20" zPosition="3" alphatest="on">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <widget source="session.TunerInfo" render="FixedLabel" position="1100,80" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="A" foregroundColor="orange" font="Regular;20">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">1</convert>
       <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="Event" render="Progress" pixmap="Magic-HD-Common/infobar/pbar.png" position="220,105" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
+    </widget>-->
+    <widget source="Event" render="Progress" pixmap="Magic-HD-Common/infobar/pbar.png" position="180,103" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
     <convert type="EventTime">Progress</convert>
-  </widget>
+    </widget>
     <widget source="Event" render="Label" position="920,110" size="160,30" backgroundColor="secondBG" transparent="1" zPosition="10" foregroundColor="foreground" font="Regular;24" halign="center">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" position="1130,80" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="B" foregroundColor="orange" font="Regular;20">
+<!--    <widget source="session.TunerInfo" render="FixedLabel" position="1130,80" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="B" foregroundColor="orange" font="Regular;20">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">2</convert>
       <convert type="ConditionalShowHide" />
@@ -668,7 +668,7 @@
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">8</convert>
       <convert type="ConditionalShowHide" />
-    </widget>
+    </widget>-->
   </screen>
   <screen name="EventView" title="Eventview" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
