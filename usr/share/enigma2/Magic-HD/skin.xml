@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 2.95 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 2.96 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -255,10 +255,10 @@
     <widget source="session.CurrentService" render="Label" position="1170,155" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" text="DVB-S" font="Regular;19">
       <convert type="ServiceOrbitalPosition">
       </convert>
-    </widget>
+    </widget>-->
     <widget source="session.OnlineCheckState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_update.png" position="5,45" size="32,32" zPosition="10" alphatest="blend" >
       <convert type="ConditionalShowHide">Blink</convert>
-    </widget>-->
+    </widget>
   </screen>
   <screen name="MoviePlayer" title="InfoBar" position="4,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="session.CurrentService" render="Label" position="224,0" size="832,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
@@ -542,11 +542,11 @@
     <widget source="ServiceEvent" render="Label" position="5,355" size="500,57" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="center" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="15,415" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="right">
+    <widget source="ServiceEvent" render="Label" position="10,415" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="right">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="ServiceEvent" render="Label" position="270,415" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19">
+    <widget source="ServiceEvent" render="Label" position="275,415" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText" />
     </widget>
@@ -561,7 +561,7 @@
       <convert type="ServiceOrbitalPosition">
       </convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="5,445" size="500,230" transparent="1" font="Regular;20">
+    <widget source="ServiceEvent" render="Label" position="5,445" size="500,228" transparent="1" font="Regular;22">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
@@ -648,7 +648,7 @@
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="5,447" size="500,225" transparent="1" font="Regular;20">
+    <widget source="Event" render="Label" position="5,447" size="500,225" transparent="1" font="Regular;22">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
@@ -673,6 +673,7 @@
     <widget name="datetime" position="15,458" size="460,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="duration" position="15,488" size="460,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="epg_description" position="520,82" font="Regular;22" size="755,583" transparent="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen flags="wfNoBorder" name="EventViewContextMenu" position="0,0" size="1280,720" title="Eventview menu">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
@@ -719,10 +720,10 @@
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="waitingtext" position="520,87" size="755,581" font="Regular;22" halign="center" valign="center" zPosition="4" />
     <widget name="list" position="520,87" size="755,570" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
-    <widget source="Service" render="Label" position="5,380" size="500,50" foregroundColor="secondFG" halign="left" valign="center" font="Regular;20" transparent="1">
+    <widget source="Service" render="Label" position="5,380" size="500,50" foregroundColor="secondFG" halign="left" valign="center" font="Regular;22" transparent="1">
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>
-    <widget source="Service" render="Label" position="5,430" size="500,205" font="Regular;20" valign="center">
+    <widget source="Service" render="Label" position="5,430" size="500,203" font="Regular;22" valign="center">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="Service" render="Label" position="15,645" size="140,25" transparent="1" foregroundColor="grey" font="Regular;20">
