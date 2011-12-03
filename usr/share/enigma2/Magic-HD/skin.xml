@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 2.97 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 2.98 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -318,7 +318,6 @@
    <widget source="session.FrontendStatus" render="Label" position="925,15" size="80,28" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-
 <!--    <eLabel name="ber" position="685,75" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text=" BER:" font="Regular;14" />
     <widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,75" size="410,20" borderWidth="2" borderColor="grey">
       <convert type="FrontendInfo">BER</convert>
@@ -330,7 +329,6 @@
     <widget source="session.FrontendStatus" render="Label" position="765,55" size="80,28" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
       <convert type="FrontendInfo">BER</convert>
     </widget>
-
 <!--    <eLabel name="lock" position="685,105" size="80,28" backgroundColor="darkgrey" halign="center" transparent="1" text="Lock:" zPosition="1" font="Regular;14" />
     <widget source="session.FrontendStatus" render="Pixmap" pixmap="skin_default/icons/lock_on.png" position="760,100" size="38,31" alphatest="on">
       <convert type="FrontendInfo">LOCK</convert>
@@ -349,9 +347,6 @@
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide">Invert</convert>
     </widget>    
-    
-    
-    
     <eLabel position="0,0" size="1280,720" backgroundColor="transpBlack" zPosition="-50" />
     <eLabel text="Now:" position="15,150" size="63,26" zPosition="2" font="Regular;24" foregroundColor="white" transparent="1" backgroundColor="background" />
     <eLabel text="Next:" position="650,150" size="63,26" zPosition="2" font="Regular;24" foregroundColor="white" transparent="1" backgroundColor="background" />
@@ -860,7 +855,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
-    <widget source="menu" render="Listbox" position="520,82" size="755,575" font="Regular;22" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
+    <widget source="menu" render="Listbox" position="520,82" size="755,575" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
       <convert type="StringList" />
     </widget>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
@@ -876,7 +871,7 @@
     <widget source="menu" render="Listbox" position="520,82" size="755,575" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 22)],
+			"fonts": [gFont("Regular", 24)],
 			"itemHeight": 40
 			}
       </convert>
@@ -894,7 +889,7 @@
     <widget source="menu" render="Listbox" position="520,82" size="755,575" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 22)],
+			"fonts": [gFont("Regular", 24)],
 			"itemHeight": 40
 			}
       </convert>
@@ -912,7 +907,7 @@
     <widget source="menu" render="Listbox" position="520,82" size="755,570" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 22)],
+			"fonts": [gFont("Regular", 24)],
 			"itemHeight": 40
 			}
       </convert>
@@ -930,7 +925,7 @@
     <widget source="menu" render="Listbox" position="520,82" size="755,577" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 22)],
+			"fonts": [gFont("Regular", 24)],
 			"itemHeight": 40
 			}
       </convert>
@@ -949,7 +944,7 @@
     <widget source="menu" render="Listbox" position="520,82" size="755,580" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 22)],
+			"fonts": [gFont("Regular", 24)],
 			"itemHeight": 40
 			}
       </convert>
@@ -967,7 +962,7 @@
     <widget source="menu" render="Listbox" position="520,82" size="755,580" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 22)],
+			"fonts": [gFont("Regular", 24)],
 			"itemHeight": 40
 			}
       </convert>
@@ -985,7 +980,7 @@
     <widget source="menu" render="Listbox" position="520,82" size="755,580" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 22)],
+			"fonts": [gFont("Regular", 24)],
 			"itemHeight": 40
 			}
       </convert>
@@ -1005,7 +1000,7 @@
     <widget source="key_red" render="Label" position="50,682" size="220,30" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget source="key_green" render="Label" position="340,682" size="220,30" foregroundColor="foreground" font="Regular;22" halign="left" />
    <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,410" size="1,1" zPosition="1" transparent="1" alphatest="on" />
-    <widget name="config" position="520,82" size="755,577" itemHeight="25" font="Regular;20" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="config" position="520,82" size="755,577" itemHeight="25" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen name="About" title="About" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -8081,13 +8076,13 @@
     <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <widget source="key_red" render="Label" position="50,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
-     <widget source="menu" render="Listbox" position="590,110" size="600,500" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
+     <widget source="menu" render="Listbox" position="520,82" size="755,583" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
       <convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
 				],
-				"fonts": [gFont("Regular",22)],
-				"itemHeight": 30
+				"fonts": [gFont("Regular",24)],
+				"itemHeight": 40
 				}
     </convert>
     </widget>
@@ -8096,7 +8091,7 @@
 				{"template": [
 				MultiContentEntryText(pos = (0,0),size = (450,60),flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM|RT_WRAP,text = 2),# index 0 is the MenuText,
 				],
-				"fonts": [gFont("Regular",20)],
+				"fonts": [gFont("Regular",24)],
 				"itemHeight": 60
 				}
       </convert>
@@ -8115,7 +8110,7 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,500" transparent="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <widget name="standbystatus" position="10,470" size="250,55" font="Regular;20" zPosition="5" />
     <widget name="deepstandbystatus" position="10,525" size="250,55" font="Regular;20" zPosition="5" />
     <widget name="guirestartstatus" position="260,470" size="250,55" font="Regular;20" zPosition="6" />
@@ -8829,7 +8824,7 @@
     <widget source="Service" render="Picon" position="45,45" size="100,60" alphatest="blend" transparent="1" zPosition="2">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget name="list" position="220,115" size="850,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="list" position="180,115" size="890,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <widget source="Service" render="Label" position="255,65" size="990,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" valign="center" halign="left" >
     <convert type="ServiceName">Name</convert>
     </widget>
