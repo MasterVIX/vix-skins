@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 3.03 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 3.04 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -561,8 +561,8 @@
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="list" position="520,82" size="755,520" itemHeight="25" serviceNumberFont="Regular;22" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="25" colorServiceDescription="yellow" transparent="1" foregroundColorServiceNotAvail="#656565" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
-    <eLabel text="Next:" position="520,602" size="75,30" zPosition="2" font="Regular;25" foregroundColor="secondFG" transparent="1" />
-    <widget source="ServiceEvent" render="NextEpgInfo" position="595,602" size="680,70" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" valign="center"/>
+    <eLabel text="Next:" position="520,602" size="75,70" zPosition="2" font="Regular;25" foregroundColor="secondFG" valign="center" halign="center" transparent="1" />
+    <widget source="ServiceEvent" render="NextEpgInfo" position="595,602" size="680,70" transparent="1" foregroundColor="secondFG" valign="center" halign="center" noWrap="1" font="Regular;22" />
     <widget source="ServiceEvent" render="Label" position="5,355" size="500,57" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="center" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
