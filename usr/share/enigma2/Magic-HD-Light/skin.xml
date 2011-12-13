@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-<!--Skin:  Magic-HD-Light ViX(Extreme-HD) Vs 1.65 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 3.06 but now in "Light version" (not supporting as many screens)-->
+<!--Skin:  Magic-HD-Light ViX(Extreme-HD) Vs 1.66 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 3.07 but now in "Light version" (not supporting as many screens)-->
 <!--This skin is a Freeware. Everyone can modify and use it in other images.-->
 <!--BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!-->
 <!--Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are-->
@@ -624,26 +624,29 @@
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <ePixmap pixmap="skin_default/buttons/key_menu.png" position="1110,682" size="35,25" alphatest="on" />
-    <widget name="list" position="520,82" size="755,575" itemHeight="25" font="Regular;20" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="list" position="520,82" size="755,575" itemHeight="25" font="Regular;22" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <widget source="Service" render="Label" position="375,15" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" font="Regular;22" valign="center" halign="right">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="Event" render="Label" position="5,355" size="500,46" valign="center" halign="left" font="Regular;22">
+    <widget source="Event" render="Label" position="5,355" size="500,25" transparent="1" foregroundColor="secondFG" font="Regular;24" halign="center" valign="top">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="Event" render="Label" position="5,380" size="500,23" transparent="1" foregroundColor="blue" font="Regular;22" halign="center" valign="top">
       <convert type="EventName">Description</convert>
     </widget>
-    <widget source="Event" render="Label" position="15,401" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
+    <widget source="Event" render="Label" position="15,403" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
     <convert type="EventTime">StartTime</convert>
-    <convert type="ClockToText">Format:%A</convert>
+    <convert type="ClockToText">ShortDate</convert>
     </widget>
-    <widget source="Event" render="Label" position="165,401" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right">
+    <widget source="Event" render="Label" position="165,403" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText" />
     </widget>
-    <widget source="Event" render="Label" position="245,401" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left">
+    <widget source="Event" render="Label" position="245,403" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="5,427" size="500,225" transparent="1" font="Regular;22">
+    <widget source="Event" render="Label" position="5,428" size="500,245" transparent="1" font="Regular;22" foregroundcolor="grey" >
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
