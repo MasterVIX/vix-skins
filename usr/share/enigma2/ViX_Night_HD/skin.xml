@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.37 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.39 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -738,23 +738,28 @@
 		<widget source="session.VideoPicture" render="Pig" position="697,82" size="570,321" zPosition="3" backgroundColor="unff000000" />
 		<eLabel position="18,80" size="664,582" zPosition="0" backgroundColor="menu_title-frgrnd" />
 		<widget name="list" position="20,82" size="660,578" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" backgroundColor="black" foregroundColorEvent="event-frgrnd" backgroundColorEvent="black" foregroundColorEventSelected="#00202020" foregroundColorServiceNotAvail="verydarkgrey" serviceItemHeight="36" serviceNumberFont="Regular;25" serviceNameFont="Regular;25" serviceInfoFont="Bold;22" transparent="0" zPosition="3" scrollbarMode="showOnDemand" />
-		<widget source="ServiceEvent" render="Label" position="695,410" size="300,25" font="Bold;24" foregroundColor="infobar_service_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
+		<eLabel text="NOW:" position="695,410" size="70,25" font="Bold;24" foregroundColor="infobar_service_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top" />
+		<widget source="ServiceEvent" render="Label" position="770,410" size="330,25" font="Bold;24" foregroundColor="infobar_service_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="1005,410" size="60,25" font="Bold;24" foregroundColor="infobar_service_frgrnd" backgroundColor="black" zPosition="2" transparent="0" halign="right" noWrap="1" valign="top">
+		<widget source="ServiceEvent" render="Label" position="1105,410" size="60,25" font="Bold;24" foregroundColor="infobar_service_frgrnd" backgroundColor="black" zPosition="2" transparent="0" halign="right" noWrap="1" valign="top">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">
 			</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="1070,410" size="80,25" font="Bold;24" foregroundColor="infobar_service_frgrnd" backgroundColor="black" zPosition="2" transparent="0" noWrap="1" valign="top">
+		<widget source="ServiceEvent" render="Label" position="1170,410" size="80,25" font="Bold;24" foregroundColor="infobar_service_frgrnd" backgroundColor="black" zPosition="2" transparent="0" noWrap="1" valign="top">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Progress" position="1170,417" size="65,10" backgroundColor="black" zPosition="2"  borderWidth="2" borderColor="white" transparent="0">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<widget source="ServiceEvent" render="Label" position="695,450" size="575,210" font="Regular;22" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
+		<widget source="ServiceEvent" render="Label" position="695,440" size="575,110" font="Regular;22" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<eLabel text="NEXT:" position="695,565" size="70,25" font="Bold;24" foregroundColor="infobar_service_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top" />
+		<widget source="ServiceEvent" render="Label" position="775,565" size="330,25" font="Bold;24" foregroundColor="infobar_service_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
+			<convert type="EventName">NextName</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="695,592" size="575,80" font="Regular;22" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
+			<convert type="EventName">NextDescription</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="90,686" size="25,25" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/green.png" position="380,686" size="25,25" alphatest="blend" transparent="1" />
@@ -1257,10 +1262,10 @@ self.autoResize()
 		</widget>
 		<widget name="list" position="60,150" size="503,456" transparent="0" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" scrollbarMode="showOnDemand" />
 		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="950,140" zPosition="10" size="154,500" alphatest="blend" transparent="0" />
-		<widget name="arrowdown" pixmap="ViX_HD_Common/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
-		<widget name="arrowdown2" pixmap="ViX_HD_Common/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
-		<widget name="arrowup" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
-		<widget name="arrowup2" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
+		<widget name="arrowdown" pixmap="skin_default//arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
+		<widget name="arrowdown2" pixmap="skin_default//arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
+		<widget name="arrowup" pixmap="skin_default//arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
+		<widget name="arrowup2" pixmap="skin_default//arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
 		<widget name="long_key" position="760,600" size="180,40" font="Regular; 20" halign="right" foregroundColor="yellow" transparent="0" />
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,680" size="1280,40" zPosition="-1" />
 	</screen>
@@ -2448,10 +2453,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 		<widget name="config" position="150,400" size="730,220" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x740.png" transparent="1" scrollbarMode="showOnDemand" />
 		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="950,140" zPosition="10" size="154,500" alphatest="blend" transparent="1" />
-		<widget name="arrowdown" pixmap="ViX_HD_Common/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
-		<widget name="arrowdown2" pixmap="ViX_HD_Common/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
-		<widget name="arrowup" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
-		<widget name="arrowup2" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
+		<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
+		<widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
+		<widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
+		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
@@ -2470,10 +2475,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 		<widget name="config" position="150,400" size="730,220" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x740.png" transparent="1" scrollbarMode="showOnDemand" />
 		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="950,140" zPosition="10" size="154,500" alphatest="blend" transparent="1" />
-		<widget name="arrowdown" pixmap="ViX_HD_Common/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
-		<widget name="arrowdown2" pixmap="ViX_HD_Common/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
-		<widget name="arrowup" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
-		<widget name="arrowup2" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
+		<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
+		<widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
+		<widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
+		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
 		<widget source="VKeyIcon" render="Pixmap" pixmap="ViX_HD_Common/buttons/key_text.png" position="40,260" zPosition="0" size="35,25" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -2503,9 +2508,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			</convert>
 		</widget>
 		<widget name="rc" pixmap="skin_default/rc.png" position="950,140" zPosition="10" size="154,500" transparent="1" alphatest="blend" />
-		<widget name="arrowdown" pixmap="ViX_HD_Common/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<widget name="arrowup" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<widget name="arrowup2" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="ImageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
@@ -2522,9 +2527,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 		<widget name="config" position="150,400" size="730,220" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x740.png" zPosition="1" transparent="1" scrollbarMode="showOnDemand" />
 		<widget name="rc" pixmap="skin_default/rc.png" position="950,140" zPosition="10" size="154,500" transparent="0" alphatest="blend" />
-		<widget name="arrowdown" pixmap="ViX_HD_Common/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<widget name="arrowup" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<widget name="arrowup2" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
@@ -2543,9 +2548,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 		<widget name="config" position="150,400" size="730,220" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x740.png" zPosition="1" transparent="1" scrollbarMode="showOnDemand" />
 		<widget name="rc" pixmap="skin_default/rc.png" position="950,140" zPosition="10" size="154,500" transparent="0" alphatest="blend" />
-		<widget name="arrowdown" pixmap="ViX_HD_Common/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<widget name="arrowup" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<widget name="arrowup2" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
@@ -2565,10 +2570,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" position="250,400" zPosition="1" size="630,220" transparent="1" scrollbarMode="showOnDemand" />
 		<widget name="portpic" position="100,370" zPosition="10" size="150,150" transparent="1" alphatest="on" />
 		<widget name="rc" pixmap="skin_default/rc.png" position="950,140" zPosition="10" size="154,500" transparent="1" alphatest="blend" />
-		<widget name="arrowdown" pixmap="ViX_HD_Common/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<widget name="arrowdown2" pixmap="ViX_HD_Common/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<widget name="arrowup" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<widget name="arrowup2" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
@@ -2587,9 +2592,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 		<widget name="config" position="150,400" size="730,220" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x740.png" zPosition="1" transparent="1" scrollbarMode="showOnDemand" />
 		<widget name="rc" pixmap="skin_default/rc.png" position="950,140" zPosition="10" size="154,500" transparent="0" alphatest="blend" />
-		<widget name="arrowdown" pixmap="ViX_HD_Common/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<widget name="arrowup" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<widget name="arrowup2" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
@@ -2607,9 +2612,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="StringList" />
 		</widget>
 		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="950,140" zPosition="10" size="154,500" alphatest="blend" />
-		<widget name="arrowdown" pixmap="ViX_HD_Common/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
-		<widget name="arrowup" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
-		<widget name="arrowup2" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
+		<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
+		<widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
+		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot-wizzard.png" position="0,680" size="1280,40" zPosition="-1" />
 	</screen>
 	<screen name="CleanupWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
@@ -2627,10 +2632,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" position="250,400" size="630,220" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x630.png" transparent="1" scrollbarMode="showOnDemand" zPosition="1" />
 		<widget name="portpic" position="100,370" zPosition="10" size="150,150" transparent="1" alphatest="on" />
 		<widget name="rc" pixmap="skin_default/rc.png" position="950,140" zPosition="10" size="154,500" transparent="1" alphatest="blend" />
-		<widget name="arrowdown" pixmap="ViX_HD_Common/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<widget name="arrowdown2" pixmap="ViX_HD_Common/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<widget name="arrowup" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<widget name="arrowup2" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="90,686" size="25,25" alphatest="blend" transparent="1" />
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot-wizzard.png" position="0,680" size="1280,40" zPosition="-1" />
@@ -2667,9 +2672,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 		<widget name="config" position="150,400" zPosition="1" size="730,220" transparent="1" scrollbarMode="showOnDemand" />
 		<widget name="rc" pixmap="skin_default/rc.png" position="950,140" zPosition="10" size="154,500" transparent="0" alphatest="blend" />
-		<widget name="arrowdown" pixmap="ViX_HD_Common/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<widget name="arrowup" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<widget name="arrowup2" pixmap="ViX_HD_Common/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
+		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" />
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
