@@ -704,7 +704,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget backgroundColor="#8C5900" font="Enigma;18" halign="center" name="key_yellow" position="280,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
 		<widget backgroundColor="#254177" font="Enigma;18" halign="center" name="key_blue" position="420,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
 		<widget name="list" position="0,40" scrollbarMode="showOnDemand" size="560,285" zPosition="2"/>
-        </screen>
+  </screen>
 	<screen name="ServiceInfo" position="80,85" size="560,440" title="Serviceinfo">
 		<ePixmap alphatest="on" name="bg_red" pixmap="Magic/buttons/key-red.png" position="0,0" size="140,40" transparent="1" zPosition="1"/>
 		<ePixmap alphatest="on" name="bg_green" pixmap="Magic/buttons/key-green.png" position="140,0" size="140,40" transparent="1" zPosition="1"/>
@@ -889,7 +889,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget backgroundColor="#254177" font="Enigma;18" halign="center" name="key_blue" position="420,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
 		<widget name="timerlist" position="5,40" scrollbarMode="showOnDemand" size="550,350"/>
 		<eLabel backgroundColor="darkgrey" position="0,392" size="560,2" zPosition="5"/>
-                <widget font="Enigma;18" halign="right" position="490,396" render="Label" size="55,24" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+    <widget font="Enigma;18" halign="right" position="490,396" render="Label" size="55,24" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="475,400" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
@@ -1061,7 +1061,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 					}
 				</convert>
 			</widget>
-    		<ePixmap pixmap="Magic/border/div_h.png" position="5,360" size="550,2" zPosition="2"/>
+		<ePixmap pixmap="Magic/border/div_h.png" position="5,360" size="550,2" zPosition="2"/>
 			<widget backgroundColor="#25062748" font="Enigma;20" halign="center" position="10,370" render="Label" size="540,21" source="introduction" transparent="1" valign="center" zPosition="10"/>
 		</screen>	
 		<screen name="NetworkBrowser" position="90,80" size="560,450" title="Network Neighbourhood">
@@ -1092,7 +1092,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<widget backgroundColor="#25062748" font="Regular;21" halign="center" position="0,420" render="Label" size="560,30" source="infotext" transparent="1" valign="center" zPosition="10"/>
 		</screen>
 		<screen name="UpdatePluginMenu" position="80,130" size="560,330" title="Softwaremanager...">
-    		<eLabel backgroundColor="black" position="5,15" size="300,270" zPosition="1"/>
+      <eLabel backgroundColor="black" position="5,15" size="300,270" zPosition="1"/>
 			<widget position="10,20" render="Listbox" scrollbarMode="showOnDemand" size="290,260" source="menu" zPosition="2">
 				<convert type="TemplatedMultiContent">
 					{"template": [
@@ -1258,5 +1258,5 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen name="PiPSetup" flags="wfNoBorder" backgroundColor="transparent" position="85,85" size="550,300" zPosition="-1" >
     <widget name="text" position="0,0" size="550,300" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
-  </screen>     
+  </screen>
 </skin>
