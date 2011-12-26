@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 2.76 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 2.77 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -400,7 +400,7 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <ePixmap pixmap="Magic-HD-Common/infobar/ico_format_off.png" position="1020,588" size="40,21" zPosition="1" alphatest="on" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_format_on.png" position="1020,78" size="40,21" zPosition="2" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_format_on.png" position="1020,588" size="40,21" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -8764,11 +8764,11 @@
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682"  size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="autostart" position="630,109" size="100,24" font="Regular;20" valign="center" transparent="0" />
-    <widget name="labdisabled" position="730,106" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-    <widget name="labactive" position="730,106" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
-    <widget name="status" position="860,109" size="150,24" font="Regular;20" valign="center" transparent="0" />
-    <widget name="labstop" position="1020,106" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-    <widget name="labrun" position="1020,106" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2"/>
+    <widget name="labdisabled" position="730,106" size="150,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
+    <widget name="labactive" position="730,106" size="150,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
+    <widget name="status" position="900,109" size="150,24" font="Regular;20" valign="left" transparent="0" />
+    <widget name="labstop" position="1050,106" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
+    <widget name="labrun" position="1050,106" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2"/>
     <widget name="username" position="630,183" size="150,30" font="Regular;20" valign="center" transparent="1"/>
     <widget name="labuser" position="790,183" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
     <widget name="iface" position="630,220" size="150,30" font="Regular;20" valign="center" transparent="1"/>
@@ -8779,18 +8779,18 @@
     <widget name="labtelnetport" position="790,300" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
     <widget name="sharedir" position="630,340" size="150,30" font="Regular;20" valign="center" transparent="1"/>
     <widget name="labsharedir" position="790,340" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
-    <widget name="web" position="580,405" size="180,30" font="Regular;20" valign="center" transparent="1"/>
-    <widget name="webinactive" position="800,405" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32"  alphatest="on" />
-    <widget name="webactive" position="800,405" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32"  alphatest="on" />
-    <widget name="telnet" position="580,455" size="180,30" font="Regular;20" valign="center" transparent="1"/>
-    <widget name="telnetinactive" position="800,455" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32"  alphatest="on" />
-    <widget name="telnetactive" position="800,455" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32"  alphatest="on" />
-    <widget name="xbox" position="580,510" size="200,30" font="Regular;20" valign="center" transparent="1"/>
-    <widget name="xboxinactive" position="800,510" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32"  alphatest="on" />
-    <widget name="xboxactive" position="800,510" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32"  alphatest="on" />
-    <widget name="dlna" position="580,560" size="200,30" font="Regular;20" valign="center" transparent="1"/>
-    <widget name="dlnainactive" position="800,560" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32"  alphatest="on" />
-    <widget name="dlnaactive" position="800,560" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32"  alphatest="on" />
+    <widget name="web" position="580,405" size="230,30" font="Regular;20" valign="center" transparent="1"/>
+    <widget name="webinactive" position="850,405" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32"  alphatest="on" />
+    <widget name="webactive" position="850,405" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32"  alphatest="on" />
+    <widget name="telnet" position="580,455" size="230,30" font="Regular;20" valign="center" transparent="1"/>
+    <widget name="telnetinactive" position="850,455" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32"  alphatest="on" />
+    <widget name="telnetactive" position="850,455" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32"  alphatest="on" />
+    <widget name="xbox" position="580,510" size="230,30" font="Regular;20" valign="center" transparent="1"/>
+    <widget name="xboxinactive" position="850,510" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32"  alphatest="on" />
+    <widget name="xboxactive" position="850,510" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32"  alphatest="on" />
+    <widget name="dlna" position="580,560" size="230,30" font="Regular;20" valign="center" transparent="1"/>
+    <widget name="dlnainactive" position="850,560" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32"  alphatest="on" />
+    <widget name="dlnaactive" position="850,560" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32"  alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen flags="wfNoBorder" name="NetworkuShareSetup" position="0,0" size="1280,720" title="Network uShare Setup">
