@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.43 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.44 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -277,42 +277,42 @@
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
 		<eLabel text="Tuner" position="837,164" size="60,20" font="Regular; 20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" transparent="1" />
-		<widget source="session.TunerInfo" render="FixedLabel" text="A" position="895,164" size="30,20" font="Bold;20" foregroundColor="un5c5c5c" backgroundColor="infobar_collab_back" zPosition="1" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="A" position="895,164" size="15,20" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" halign="center" zPosition="1" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="B" position="907,164" size="30,20" font="Bold;20" foregroundColor="un5c5c5c" backgroundColor="infobar_collab_back" zPosition="1" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="B" position="908,164" size="15,20" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" halign="center" zPosition="1" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">2</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="C" position="919,164" size="30,20" font="Bold;20" foregroundColor="un5c5c5c" backgroundColor="infobar_collab_back" zPosition="1" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="C" position="921,164" size="15,20" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" halign="center" zPosition="1" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">4</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="D" position="931,164" size="30,20" font="Bold;20" foregroundColor="un5c5c5c" backgroundColor="infobar_collab_back" zPosition="1" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="D" position="934,164" size="15,20" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" halign="center" zPosition="1" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">8</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" position="895,164" size="30,20" text="A" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" zPosition="2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="895,164" size="15,20" font="Bold;20" foregroundColor="infobar_collab_back" backgroundColor="infobar-frgrnd" halign="center" zPosition="2" transparent="0">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" position="907,164" size="30,20" text="B" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" zPosition="2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="908,164" size="15,20" font="Bold;20" foregroundColor="infobar_collab_back" backgroundColor="infobar-frgrnd" halign="center" zPosition="2" transparent="0">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" position="919,164" size="30,20" text="C" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" zPosition="2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="C" position="921,164" size="15,20" font="Bold;20" foregroundColor="infobar_collab_back" backgroundColor="infobar-frgrnd" halign="center" zPosition="2" transparent="0">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" position="931,164" size="30,20" text="D" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" zPosition="2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="D" position="934,164" size="15,20" font="Bold;20" foregroundColor="infobar_collab_back" backgroundColor="infobar-frgrnd" halign="center" zPosition="2" transparent="0">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">3,3</convert>
 			<convert type="ConditionalShowHide" />
@@ -486,47 +486,46 @@
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
 		<eLabel text="Tuner" position="837,164" size="60,20" font="Regular; 20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" transparent="1" />
-		<widget source="session.TunerInfo" render="FixedLabel" text="A" position="895,164" size="30,20" font="Bold;20" foregroundColor="un5c5c5c" backgroundColor="infobar_collab_back" zPosition="1" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="A" position="895,164" size="15,20" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" halign="center" zPosition="1" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="B" position="907,164" size="30,20" font="Bold;20" foregroundColor="un5c5c5c" backgroundColor="infobar_collab_back" zPosition="1" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="B" position="908,164" size="15,20" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" halign="center" zPosition="1" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">2</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="C" position="919,164" size="30,20" font="Bold;20" foregroundColor="un5c5c5c" backgroundColor="infobar_collab_back" zPosition="1" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="C" position="921,164" size="15,20" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" halign="center" zPosition="1" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">4</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="D" position="931,164" size="30,20" font="Bold;20" foregroundColor="un5c5c5c" backgroundColor="infobar_collab_back" zPosition="1" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="D" position="934,164" size="15,20" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" halign="center" zPosition="1" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">8</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" position="895,164" size="30,20" text="A" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" zPosition="2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="895,164" size="15,20" font="Bold;20" foregroundColor="infobar_collab_back" backgroundColor="infobar-frgrnd" halign="center" zPosition="2" transparent="0">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" position="907,164" size="30,20" text="B" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" zPosition="2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="908,164" size="15,20" font="Bold;20" foregroundColor="infobar_collab_back" backgroundColor="infobar-frgrnd" halign="center" zPosition="2" transparent="0">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" position="919,164" size="30,20" text="C" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" zPosition="2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="C" position="921,164" size="15,20" font="Bold;20" foregroundColor="infobar_collab_back" backgroundColor="infobar-frgrnd" halign="center" zPosition="2" transparent="0">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" position="931,164" size="30,20" text="D" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" zPosition="2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="D" position="934,164" size="15,20" font="Bold;20" foregroundColor="infobar_collab_back" backgroundColor="infobar-frgrnd" halign="center" zPosition="2" transparent="0">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">3,3</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-
 		<widget source="RdsDecoder" render="Pixmap" pixmap="ViX_HD_Common/icons/rass_logo.png" position="270,0" size="50,21" alphatest="on">
 			<convert type="RdsInfo">RasInteractiveAvailable</convert>
 			<convert type="ConditionalShowHide" />
@@ -948,42 +947,42 @@ self.autoResize()
 		</widget>
 		<widget name="list" position="176,95" size="600,50" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x600.png" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" ListboxSelectedForeground="black" transparent="1" />
 		<eLabel text="Tuner" position="837,164" size="60,20" font="Regular; 20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" transparent="1" />
-		<widget source="session.TunerInfo" render="FixedLabel" text="A" position="895,164" size="30,20" font="Bold;20" foregroundColor="un5c5c5c" backgroundColor="infobar_collab_back" zPosition="1" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="A" position="895,164" size="15,20" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" halign="center" zPosition="1" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="B" position="907,164" size="30,20" font="Bold;20" foregroundColor="un5c5c5c" backgroundColor="infobar_collab_back" zPosition="1" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="B" position="908,164" size="15,20" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" halign="center" zPosition="1" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">2</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="C" position="919,164" size="30,20" font="Bold;20" foregroundColor="un5c5c5c" backgroundColor="infobar_collab_back" zPosition="1" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="C" position="921,164" size="15,20" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" halign="center" zPosition="1" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">4</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="D" position="931,164" size="30,20" font="Bold;20" foregroundColor="un5c5c5c" backgroundColor="infobar_collab_back" zPosition="1" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="D" position="934,164" size="15,20" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" halign="center" zPosition="1" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">8</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" position="895,164" size="30,20" text="A" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" zPosition="2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="895,164" size="15,20" font="Bold;20" foregroundColor="infobar_collab_back" backgroundColor="infobar-frgrnd" halign="center" zPosition="2" transparent="0">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" position="907,164" size="30,20" text="B" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" zPosition="2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="908,164" size="15,20" font="Bold;20" foregroundColor="infobar_collab_back" backgroundColor="infobar-frgrnd" halign="center" zPosition="2" transparent="0">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" position="919,164" size="30,20" text="C" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" zPosition="2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="C" position="921,164" size="15,20" font="Bold;20" foregroundColor="infobar_collab_back" backgroundColor="infobar-frgrnd" halign="center" zPosition="2" transparent="0">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" position="931,164" size="30,20" text="D" font="Bold;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" zPosition="2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="D" position="934,164" size="15,20" font="Bold;20" foregroundColor="infobar_collab_back" backgroundColor="infobar-frgrnd" halign="center" zPosition="2" transparent="0">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">3,3</convert>
 			<convert type="ConditionalShowHide" />
