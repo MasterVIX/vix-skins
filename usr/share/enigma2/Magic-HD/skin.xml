@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 3.19 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 3.20 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -417,17 +417,17 @@
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="Magic-HD-Common/infobar/ico_format_off.png" position="930,55" size="40,21" zPosition="1" alphatest="on" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_format_on.png" position="930,55" size="40,21" zPosition="2" alphatest="on">
+    <ePixmap pixmap="Magic-HD-Common/infobar/ico_format_off.png" position="920,55" size="40,21" zPosition="1" alphatest="on" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_format_on.png" position="920,55" size="40,21" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_hd_on.png" position="930,55" size="40,21" zPosition="4" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_hd_on.png" position="920,55" size="40,21" zPosition="4" alphatest="on">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">800,2000</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_txt_on.png" position="870,55" size="40,24" zPosition="2" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_txt_on.png" position="865,55" size="40,24" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -435,7 +435,11 @@
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_sub_on.png" position="670,55" size="36,24" zPosition="2" alphatest="on">
+       <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_hbbtv_on.png" position="975,55" size="46,21" zPosition="2" alphatest="on">
+      <convert type="ServiceInfo">HasHBBTV</convert>
+      <convert type="ConditionalShowHide"  />
+    </widget>
+       <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_sub_on.png" position="670,55" size="36,24" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -446,47 +450,47 @@
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>-->
     <eLabel name="Tuner" position="1030,58" size="90,20" backgroundColor="transpBlack" foregroundColor="grey" halign="right" transparent="1" text="Tuner:" font="Regular;20" />
-    <widget source="session.TunerInfo" render="FixedLabel" position="1130,58" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="A" foregroundColor="orange" font="Regular;20">
+    <widget source="session.TunerInfo" render="FixedLabel" position="1130,55" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="A" foregroundColor="orange" font="Regular;20">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" position="1160,58" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="B" foregroundColor="orange" font="Regular;20">
+    <widget source="session.TunerInfo" render="FixedLabel" position="1160,55" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="B" foregroundColor="orange" font="Regular;20">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" position="1190,58" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="C" foregroundColor="orange" font="Regular;20">
+    <widget source="session.TunerInfo" render="FixedLabel" position="1190,55" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="C" foregroundColor="orange" font="Regular;20">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">4</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" position="1220,58" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="D" foregroundColor="orange" font="Regular;20">
+    <widget source="session.TunerInfo" render="FixedLabel" position="1220,55" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="D" foregroundColor="orange" font="Regular;20">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">8</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_hd_on.png" position="930,55" size="40,21" zPosition="4" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_hd_on.png" position="920,55" size="40,21" zPosition="4" alphatest="on">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">800,2000</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" position="1130,58" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="3" text="A" foregroundColor="green" font="Regular;20" halign="left">
+    <widget source="session.FrontendInfo" render="FixedLabel" position="1130,55" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="3" text="A" foregroundColor="green" font="Regular;20" halign="left">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" position="1160,58" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="3" text="B" foregroundColor="green" font="Regular;20" halign="left">
+    <widget source="session.FrontendInfo" render="FixedLabel" position="1160,55" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="3" text="B" foregroundColor="green" font="Regular;20" halign="left">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" position="1190,58" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="3" text="C" foregroundColor="green" font="Regular;20" halign="left">
+    <widget source="session.FrontendInfo" render="FixedLabel" position="1190,55" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="3" text="C" foregroundColor="green" font="Regular;20" halign="left">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" position="1220,58" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="3" text="D" foregroundColor="green" font="Regular;20" halign="left">
+    <widget source="session.FrontendInfo" render="FixedLabel" position="1220,55" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="3" text="D" foregroundColor="green" font="Regular;20" halign="left">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">3,3</convert>
       <convert type="ConditionalShowHide" />
@@ -1039,7 +1043,7 @@
     <widget source="key_green" render="Label" position="340,682" size="220,30" foregroundColor="foreground" font="Regular;22" halign="left" />
    <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,410" size="1,1" zPosition="1" transparent="1" alphatest="on" />
     <widget name="config" position="520,82" size="755,577" itemHeight="25" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
-    <eLabel text="* = Restart Required" position="780,694" size="190,20" zPosition="1" font="Regular;18" halign="right" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
+    <eLabel text="* = Restart Required" position="780,682" size="220,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="foreground" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen name="About" title="About" position="0,0" size="1280,720" flags="wfNoBorder">
