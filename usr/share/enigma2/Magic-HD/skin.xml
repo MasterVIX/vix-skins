@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 3.20 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 3.21 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -747,6 +747,7 @@
     <widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="config" font="Regular;22" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,82" size="755,580" transparent="1" />
+    <widget source="satus" render="Label" position="10,400" size="500,100" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen name="MovieSelection" title="MovieSelection" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1776,7 +1777,7 @@
   <screen name="Dish" title="Dish" backgroundColor="transparent" flags="wfNoBorder" position="50,50" size="130,160" zPosition="100">
     <widget name="Dishpixmap" pixmap="Magic-HD-Common/icons/dish.png" alphatest="off" position="0,0" size="130,160" />
   </screen>
-  <screen name="UnhandledKey" title="UnhandledKey" position="1000,20" size="34,45" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
+  <screen name="UnhandledKey" title="UnhandledKey" position="1000,20" size="34,45" backgroundColor="black" zPosition="100" flags="wfNoBorder">
     <widget name="UnhandledKeyPixmap" pixmap="Magic-HD-Common/icons/unhandled-key.png" position="0,0" size="34,45" alphatest="off" />
   </screen>
   <screen name="SubservicesQuickzap" title="Subservices" position="405,328" size="470,64" backgroundColor="transpBlack" flags="wfNoBorder">
