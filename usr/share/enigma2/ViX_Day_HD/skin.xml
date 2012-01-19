@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Day-HD Vs 1.52 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Day-HD Vs 1.53 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1020,6 +1020,7 @@ self.autoResize()
 		<ePixmap pixmap="ViX_HD_Common/buttons/green.png" position="40,690" size="24,24" alphatest="blend" transparent="1" />
 		<widget name="key_red" position="75,667" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
 		<widget name="key_green" position="75,694" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
+		<widget name="footnote" position="300,694" size="190,20" zPosition="1" font="Regular;18" halign="right" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
 	</screen>
 	<screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder" zPosition="1">
 		<ePixmap pixmap="ViX_Day_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
@@ -1032,9 +1033,8 @@ self.autoResize()
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<widget name="lab1" position="0,55" size="1280,620" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
-		<widget name="date" position="20,70" size="180,25" backgroundColor="black" font="Bold; 22" noWrap="1" transparent="0" valign="top" foregroundColor="unffb300" />
-		<widget name="timeline_text" position="20,75" size="1240,25" backgroundColor="black" transparent="1" />
-		<widget name="list" position="20,95" size="1240,572" transparent="0" backgroundColor="black" scrollbarMode="showNever" />
+		<widget name="timeline_text" position="20,70" size="1240,30" backgroundColor="black" foregroundColor="une5b243" zPosition="0" transparent="1" />
+		<widget name="list" position="20,95" size="1240,572" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" />
 		<widget name="timeline0" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline1" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline2" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />
@@ -1080,9 +1080,8 @@ self.autoResize()
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget name="lab1" position="0,292" size="1280,380" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
-		<widget name="timeline_text" position="20,297" size="1240,25" backgroundColor="black" transparent="1" zPosition="0" />
-		<widget name="date" position="20,292" size="180,25" font="Bold;22" halign="left" foregroundColor="une5b243" backgroundColor="black" transparent="1" zPosition="1" />
-		<widget name="list" position="20,317" size="1240,360" backgroundColor="black" scrollbarMode="showNever" zPosition="1" />
+		<widget name="timeline_text" position="20,290" size="1240,30" backgroundColor="black" foregroundColor="une5b243" zPosition="0" transparent="1" />
+		<widget name="list" position="20,317" size="1240,360" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" />
 		<widget name="timeline0" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline1" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline2" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />
