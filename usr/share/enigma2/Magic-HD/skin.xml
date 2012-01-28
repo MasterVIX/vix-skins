@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 3.27 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 3.29 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -705,7 +705,7 @@
     <widget name="channel" position="15,390" size="460,42" transparent="1" foregroundColor="secondFG" font="Regular;24" halign="center" />
     <widget name="datetime" position="15,433" size="460,30" transparent="1" font="Regular;22" halign="center" />
     <widget name="duration" position="15,463" size="460,30" transparent="1" font="Regular;22" halign="center" />
-    <widget name="epg_description" position="520,82" font="Regular;22" size="755,583" transparent="1" />
+    <widget name="epg_description" position="520,82" font="Regular;24" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen flags="wfNoBorder" name="EventViewContextMenu" position="0,0" size="1280,720" title="Eventview menu">
@@ -1775,11 +1775,11 @@
     <widget name="list" position="647,380" size="540,225" selectionDisabled="1" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="Dish" title="Dish" backgroundColor="transparent" flags="wfNoBorder" position="50,50" size="130,160" zPosition="100">
-    <widget name="Dishpixmap" pixmap="Magic-HD-Common/icons/dish.png" alphatest="off" position="0,0" size="130,160" />
+  <screen name="Dish" title="Dish" backgroundColor="black" flags="wfNoBorder" position="50,50" size="130,160" zPosition="100">
+    <widget name="Dishpixmap" pixmap="Magic-HD-Common/icons/dish.png" alphatest="on" position="0,0" size="130,160" />
   </screen>
   <screen name="UnhandledKey" title="UnhandledKey" position="1000,20" size="34,45" backgroundColor="black" zPosition="100" flags="wfNoBorder">
-    <widget name="UnhandledKeyPixmap" pixmap="Magic-HD-Common/icons/unhandled-key.png" position="0,0" size="34,45" alphatest="off" />
+    <widget name="UnhandledKeyPixmap" pixmap="Magic-HD-Common/icons/unhandled-key.png" position="0,0" size="34,45" alphatest="on" />
   </screen>
   <screen name="SubservicesQuickzap" title="Subservices" position="405,328" size="470,64" backgroundColor="transpBlack" flags="wfNoBorder">
     <widget source="session.RecordState" render="Pixmap" pixmap="skin_default/icons/record.png" position="450,3" size="14,14" zPosition="2" alphatest="on">
@@ -8622,7 +8622,7 @@
     <widget name="key_green" position="340,180" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
     <widget name="key_yellow" position="614,180" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
     <widget name="key_blue" position="875,180" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />-->
-		<widget source="Event" render="Label" position="50,-200" size="1180,300" font="Regular;34" borderColor="black" borderWidth="4" foregroundColor="secondFG" transparent="1" backgroundColor="background" valign="bottom" halign="center" zPosition="2">
+		<widget source="Event" render="Label" position="50,-200" size="1180,300" font="Regular;30" borderColor="black" borderWidth="4" foregroundColor="secondFG" transparent="1" backgroundColor="background" valign="bottom" halign="center" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
     <widget source="Service" render="Picon" position="45,305" size="100,60" alphatest="blend" transparent="1" zPosition="2">
