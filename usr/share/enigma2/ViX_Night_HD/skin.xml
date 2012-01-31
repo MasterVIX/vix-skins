@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.55 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.56 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -735,8 +735,7 @@
 		</widget>
 		<eLabel position="695,80" size="574,325" zPosition="2" backgroundColor="menu_title-frgrnd" foregroundColor="window-bg" />
 		<widget source="session.VideoPicture" render="Pig" position="697,82" size="570,321" zPosition="3" backgroundColor="unff000000" />
-		<eLabel position="18,80" size="664,582" zPosition="0" backgroundColor="menu_title-frgrnd" />
-		<widget name="list" position="20,82" size="660,578" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" backgroundColor="black" foregroundColorEvent="event-frgrnd" backgroundColorEvent="black" foregroundColorEventSelected="#00202020" foregroundColorServiceNotAvail="verydarkgrey" serviceItemHeight="36" serviceNumberFont="Regular;25" serviceNameFont="Regular;25" serviceInfoFont="Bold;22" transparent="0" zPosition="3" scrollbarMode="showOnDemand" />
+		<widget name="list" position="20,82" size="660,590" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" backgroundColor="black" foregroundColorEvent="event-frgrnd" backgroundColorEvent="black" foregroundColorEventSelected="#00202020" foregroundColorServiceNotAvail="verydarkgrey" serviceItemHeight="36" serviceNumberFont="Regular;25" serviceNameFont="Regular;25" serviceInfoFont="Bold;22" transparent="0" zPosition="3" scrollbarMode="showOnDemand" />
 		<eLabel text="NOW:" position="695,410" size="70,25" font="Bold;24" foregroundColor="infobar_service_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top" />
 		<widget source="ServiceEvent" render="Label" position="770,410" size="330,25" font="Bold;24" foregroundColor="infobar_service_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
 			<convert type="EventName">Name</convert>
@@ -1011,8 +1010,7 @@ self.autoResize()
 		</widget>
 		<eLabel position="695,80" size="574,325" zPosition="2" backgroundColor="menu_title-frgrnd" foregroundColor="window-bg" />
 		<widget source="session.VideoPicture" render="Pig" position="697,82" size="570,321" zPosition="3" backgroundColor="unff000000" />
-		<eLabel position="18,80" size="664,580" zPosition="0" backgroundColor="menu_title-frgrnd" />
-		<widget name="list" position="20,82" size="660,576" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="black" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" foregroundColorEvent="darkgrey" foregroundColorEventSelected="menu_title-frgrnd" serviceItemHeight="36" foregroundColorServiceNotAvail="menu_title-frgrnd" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Regular;21" transparent="0" />
+		<widget name="list" position="20,82" size="660,590" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" zPosition="3" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget source="Service" render="Picon" position="1165,412" size="58,35" transparent="1" zPosition="5" backgroundColor="menu_title-frgrnd" alphatest="on">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -1045,8 +1043,7 @@ self.autoResize()
 		</widget>
 		<eLabel position="695,80" size="574,325" zPosition="2" backgroundColor="menu_title-frgrnd" foregroundColor="window-bg" />
 		<widget source="session.VideoPicture" render="Pig" position="697,82" size="570,321" zPosition="3" backgroundColor="unff000000" />
-		<eLabel position="18,128" size="664,530" zPosition="0" backgroundColor="menu_title-frgrnd" />
-		<widget name="list" position="20,130" size="660,526" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="black" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x660.png" foregroundColorEvent="darkgrey" foregroundColorEventSelected="menu_title-frgrnd" serviceItemHeight="36" foregroundColorServiceNotAvail="menu_title-frgrnd" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Regular;21" transparent="0" />
+		<widget name="list" position="20,130" size="660,526" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x660.png" zPosition="3" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="now_button_sel" pixmap="ViX_Night_HD/epg_now.png" position="30,85" zPosition="1" size="463,34" alphatest="on" />
 		<widget name="next_button_sel" pixmap="ViX_Night_HD/epg_next.png" position="30,85" zPosition="1" size="463,34" alphatest="on" />
 		<widget name="more_button_sel" pixmap="ViX_Night_HD/epg_more.png" position="30,85" zPosition="1" size="463,34" alphatest="on" />
@@ -1348,7 +1345,7 @@ self.autoResize()
 		<widget source="Title" render="Label" position="10,60" size="415,38" font="Bold;38" foregroundColor="menu_title-frgrnd" backgroundColor="menu-title-bkgrnd" transparent="1" />
 		<widget source="menu" render="Listbox" position="10,107" size="503,533" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H45x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,8), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
+				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,45), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
 				"fonts": [gFont("Regular",30)],
 				"itemHeight": 45
 				}
@@ -1404,7 +1401,7 @@ self.autoResize()
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Info.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget source="menu" render="Listbox" position="10,107" size="503,533" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
+				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
 				"fonts": [gFont("Regular",28)],
 				"itemHeight": 38
 				}
@@ -1420,7 +1417,7 @@ self.autoResize()
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Standby.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget source="menu" render="Listbox" position="10,107" size="503,533" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
+				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
 				"fonts": [gFont("Regular",28)],
 				"itemHeight": 38
 				}
@@ -1436,7 +1433,7 @@ self.autoResize()
 		<widget source="Title" render="Label" position="10,60" size="415,38" font="Bold;38" foregroundColor="menu_title-frgrnd" backgroundColor="menu-title-bkgrnd" transparent="1" />
 		<widget source="menu" render="Listbox" position="10,107" size="503,533" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
+				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
 				"fonts": [gFont("Regular",28)],
 				"itemHeight": 38
 				}
@@ -1452,7 +1449,7 @@ self.autoResize()
 		<widget source="title" render="Label" position="10,60" size="415,38" font="Bold;38" foregroundColor="menu_title-frgrnd" backgroundColor="menu-title-bkgrnd" transparent="1" />
 		<widget source="menu" render="Listbox" position="10,107" size="503,533" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
+				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
 				"fonts": [gFont("Regular",28)],
 				"itemHeight": 38
 				}
@@ -2212,8 +2209,8 @@ self.autoResize()
 		</widget>
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget source="Title" render="Label" position="10,60" size="415,38" font="Bold;38" foregroundColor="menu_title-frgrnd" backgroundColor="menu-title-bkgrnd" transparent="1" />
-		<widget name="config" position="10,107" size="503,526" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand" />
-		<widget source="satus" render="Label" position="10,610" size="503,30" zPosition="10" font="Regular;18" halign="center" valign="center" transparent="0" />
+		<widget name="config" position="10,107" size="503,500" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand" />
+		<widget source="satus" render="Label" position="10,620" size="503,25" font="Regular;18" halign="center" valign="center" transparent="0" />
 		<widget name="HelpWindow" pixmap="ViX_HD_Common/buttons/vkey_icon.png" position="100,490" zPosition="1" size="541,720" transparent="1" alphatest="on" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/green.png" position="40,690" size="24,24" alphatest="blend" transparent="1" />
