@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Day-HD Vs 1.59 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Day-HD Vs 1.60 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -934,10 +934,13 @@ self.autoResize()
 		<ePixmap pixmap="ViX_HD_Common/buttons/blue.png" position="630,310" size="25,25" alphatest="blend" />
 		<widget name="key_blue" position="670,313" size="150,20" halign="left" font="Regular; 20" foregroundColor="foreground" backgroundColor="infobar_collab_back" transparent="1" zPosition="1" />
 	</screen>
-	<screen name="EPGSelection" position="0,0" size="1280,720" title="Program Guide" backgroundColor="black" flags="wfNoBorder">
+	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
 		<ePixmap pixmap="ViX_Day_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
 		<ePixmap pixmap="ViX_HD_Common/icons/ico_EPG_title.png" position="50,20" size="45,36" alphatest="blend" transparent="1" />
-		<widget source="Title" render="Label" position="105,25" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
+		<widget source="Service" render="Picon" position="105,10" size="100,60" transparent="1" zPosition="5" alphatest="on">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget source="Title" render="Label" position="220,25" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
 		<widget source="global.CurrentTime" render="Label" position="1160,10" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -946,14 +949,8 @@ self.autoResize()
 		</widget>
 		<eLabel position="695,80" size="574,325" zPosition="2" backgroundColor="menu_title" foregroundColor="window-bg" />
 		<widget source="session.VideoPicture" render="Pig" position="697,82" size="570,321" zPosition="3" backgroundColor="unff000000" />
-		<widget name="list" position="20,82" size="660,590" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" zPosition="3" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
-		<widget source="Service" render="Picon" position="1165,412" size="58,35" transparent="1" zPosition="5" backgroundColor="menu_title" alphatest="on">
-			<convert type="ServiceName">Reference</convert>
-		</widget>
-		<widget source="Service" render="Label" position="695,410" size="400,25" font="Bold;24" foregroundColor="unffb300" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<widget source="Event" render="Label" position="695,450" size="575,210" font="Regular;22" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
+		<widget name="list" position="20,82" size="660,592" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" zPosition="3" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget source="Event" render="Label" position="695,450" size="575,250" font="Regular;22" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD_Common/buttons/key_menu.png" position="20,686" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
@@ -967,7 +964,7 @@ self.autoResize()
 		<widget name="key_blue" position="1000,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="colourbuttonsbg" />
 		<ePixmap pixmap="ViX_Day_HD/fs-bg-bot.png" position="0,680" size="1280,40" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
-	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" title="Program Guide" backgroundColor="black" flags="wfNoBorder">
+	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
 		<ePixmap pixmap="ViX_Day_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
 		<ePixmap pixmap="ViX_HD_Common/icons/ico_EPG_title.png" position="50,20" size="45,36" alphatest="blend" transparent="1" />
 		<widget source="Title" render="Label" position="105,25" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
@@ -979,7 +976,7 @@ self.autoResize()
 		</widget>
 		<eLabel position="695,80" size="574,325" zPosition="2" backgroundColor="menu_title" foregroundColor="window-bg" />
 		<widget source="session.VideoPicture" render="Pig" position="697,82" size="570,321" zPosition="3" backgroundColor="unff000000" />
-		<widget name="list" position="20,130" size="660,526" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x660.png" zPosition="3" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="list" position="20,130" size="660,540" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" zPosition="3" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="now_button_sel" pixmap="ViX_Day_HD/epg_now.png" position="30,85" zPosition="1" size="463,34" alphatest="on" />
 		<widget name="next_button_sel" pixmap="ViX_Day_HD/epg_next.png" position="30,85" zPosition="1" size="463,34" alphatest="on" />
 		<widget name="more_button_sel" pixmap="ViX_Day_HD/epg_more.png" position="30,85" zPosition="1" size="463,34" alphatest="on" />
@@ -1022,7 +1019,7 @@ self.autoResize()
 		<widget name="key_green" position="75,694" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
 		<widget name="footnote" position="300,694" size="190,20" zPosition="1" font="Regular;18" halign="right" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
 	</screen>
-	<screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder" zPosition="1">
+	<screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder" >
 		<ePixmap pixmap="ViX_Day_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
 		<ePixmap pixmap="ViX_HD_Common/icons/ico_EPG_title.png" position="50,20" size="45,36" alphatest="blend" transparent="1" />
 		<widget source="Title" render="Label" position="105,25" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
@@ -1053,7 +1050,7 @@ self.autoResize()
 		<widget name="key_blue" position="1000,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="colourbuttonsbg" />
 		<ePixmap pixmap="ViX_Day_HD/fs-bg-bot.png" position="0,680" size="1280,40" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
-	<screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+	<screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
 		<ePixmap pixmap="ViX_Day_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
 		<ePixmap pixmap="ViX_HD_Common/icons/ico_EPG_title.png" position="50,20" size="45,36" alphatest="blend" transparent="1" />
 		<widget source="Title" render="Label" position="105,25" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
@@ -1098,23 +1095,6 @@ self.autoResize()
 		<widget name="key_green" position="420,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="colourbuttonsbg" />
 		<widget name="key_yellow" position="710,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="colourbuttonsbg" />
 		<widget name="key_blue" position="1000,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="colourbuttonsbg" />
-		<ePixmap pixmap="ViX_Day_HD/fs-bg-bot.png" position="0,680" size="1280,40" alphatest="on" transparent="1" zPosition="-1" />
-	</screen>
-	<screen name="GraphEPGHelp" position="0,0" size="1280,720" title="Help" backgroundColor="black" flags="wfNoBorder" zPosition="1">
-		<ePixmap pixmap="ViX_Day_HD/fs-bg-top.png" position="0,0" size="1280,70" alphatest="on" transparent="1" zPosition="-1" />
-		<ePixmap pixmap="ViX_HD_Common/icons/ico_EPG_title.png" position="50,20" size="45,36" alphatest="blend" transparent="1" />
-		<eLabel text="Help" position="105,25" size="800,43" font="Boldit;32" transparent="1" backgroundColor="background" foregroundColor="foreground" zPosition="2" />
-		<widget source="global.CurrentTime" render="Label" position="1160,10" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="und2dee2">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="910,40" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="foreground" backgroundColor="window-fg">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<widget name="Picture" position="320,114" size="639,530" zPosition="3" backgroundColor="black" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="90,686" size="25,25" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/green.png" position="380,686" size="25,25" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="130,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
-		<widget name="key_green" position="420,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="foreground" backgroundColor="un868686" />
 		<ePixmap pixmap="ViX_Day_HD/fs-bg-bot.png" position="0,680" size="1280,40" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="EventView" position="center,e-260" size="980,250" title="Programme Info" backgroundColor="transparent" flags="wfNoBorder">
