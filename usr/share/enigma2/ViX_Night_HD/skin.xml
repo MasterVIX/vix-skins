@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.58 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.59 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -726,7 +726,10 @@
 	<screen name="ChannelSelection" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder" title=" ">
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,70" zPosition="-1" />
 		<ePixmap pixmap="ViX_HD_Common/icons/ico_Chlist_title.png" position="50,20" size="38,34" alphatest="blend" transparent="1" />
-		<widget source="Title" render="Label" position="105,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="topbar-frgrnd" backgroundColor="topbar-bkgrnd" zPosition="2" />
+		<widget source="ServiceEvent" render="Picon" position="105,10" size="100,60" transparent="1" zPosition="5" alphatest="on">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget source="Title" render="Label" position="220,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="topbar-frgrnd" backgroundColor="topbar-bkgrnd" zPosition="2" />
 		<widget source="global.CurrentTime" render="Label" position="1160,10" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="topbar-frgrnd" backgroundColor="topbar-bkgrnd" >
 			<convert type="ClockToText">Default</convert>
 		</widget>
