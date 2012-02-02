@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.57 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.58 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1066,22 +1066,6 @@ self.autoResize()
 		<widget name="key_yellow" position="710,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="topbar-frgrnd" backgroundColor="topbar-bkgrnd" />
 		<widget name="key_blue" position="1000,690" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="topbar-frgrnd" backgroundColor="topbar-bkgrnd" />
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,680" size="1280,40" zPosition="-1" />
-	</screen>
-	<screen name="EPGSelectionSetup" position="0,0" size="541,720" title="Program Guide Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="ViX_Night_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="10,8" size="410,28" font="Regular;24" foregroundColor="menu_title-frgrnd" backgroundColor="menu-time-bkgrnd" halign="right" transparent="1">
-			<convert type="ClockToText">Full</convert>
-		</widget>
-		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Timer.png" position="426,10" size="88,88" alphatest="blend" />
-		<widget source="Title" render="Label" position="10,60" size="415,38" font="Bold;38" foregroundColor="menu_title-frgrnd" backgroundColor="menu-title-bkgrnd" transparent="1" />
-		<widget name="config" position="10,107" size="503,526" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
-		<eLabel position="10,610" size="503,2" foregroundColor="un5d5d5d" backgroundColor="un5c5c5c" zPosition="3" />
-		<widget source="satus" render="Label" position="10,610" size="503,30" zPosition="10" font="Regular;18" halign="center" valign="center" transparent="0" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/green.png" position="40,690" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="75,667" size="190,20" zPosition="1" font="Regular;20" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" halign="left" transparent="1" valign="top" />
-		<widget name="key_green" position="75,694" size="190,20" zPosition="1" font="Regular;20" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" halign="left" transparent="1" valign="top" />
-		<widget name="footnote" position="300,694" size="190,20" zPosition="1" font="Regular;18" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" halign="right" transparent="1" valign="top" />
 	</screen>
 	<screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder" >
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,70" zPosition="-1" />
