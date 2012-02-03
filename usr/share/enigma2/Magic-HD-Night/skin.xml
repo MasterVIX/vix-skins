@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 2.80 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 2.81 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -2244,37 +2244,36 @@
     </widget>
     <widget name="DescriptionBorder" position="0,0" size="0,0" />
   </screen>
-  <!-- ## Will have to consider taking in the Movieselection Slim ## -->
-  <!--<screen name="MovieSelectionSlim" position="32,0" size="541,720" title=" " flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Magic-HD-Common/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
-		<ePixmap pixmap="Magic-HD-Common/menu/ico_menu_pvr.png" position="427,30" size="88,88" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="und2dee2">
-			<convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
-		</widget>
-		<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="unacacac" transparent="1" />
-		<widget name="waitingtext" position="10,133" size="503,495" font="Regular;21" halign="center" valign="center" transparent="0" foregroundColor="window-fg" backgroundColor="window-bg" zPosition="4" />
-		<widget name="list" position="10,133" size="503,495" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/FocusBar_H25x630.png" foregroundColor="window-fg" backgroundColor="background" transparent="1" enableWrapAround="1" />
-		<widget name="DescriptionBorder" position="10,400" size="503,95" zPosition="3" transparent="1" />
-		<widget source="Service" render="Label" position="10,535" size="420,25" zPosition="1" backgroundColor="background" font="Bold; 22" noWrap="1" transparent="1" valign="top" foregroundColor="unffb300">
-			<convert type="MovieInfo">RecordServiceName</convert>
-		</widget>
-		<widget source="Service" render="Label" position="380,535" zPosition="1" size="100,25" transparent="1" backgroundColor="background" font="Bold; 22" halign="right" foregroundColor="unffb300">
-			<convert type="ServiceTime">Duration</convert>
-			<convert type="ClockToText">AsLength</convert>
-		</widget>
-		<widget source="Service" render="Label" position="10,560" size="498,65" font="Regular; 19" backgroundColor="background" foregroundColor="window-fg" valign="top" zPosition="1" transparent="1">
-			<convert type="MovieInfo">ShortDescription</convert>
-		</widget>-->
-  <!--<widget name="freeDiskSpace" position="10,530" size="533,20" font="Regular; 18" backgroundColor="window-sel-fg" valign="center" halign="right" transparent="1" />-->
-  <!--<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="40,643" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="40,670" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="280,643" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="280,670" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="key_red" position="75,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
-		<widget name="key_green" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
-		<widget name="key_yellow" position="315,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
-		<widget name="key_blue" position="315,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un868686" foregroundColor="foreground" />
-	</screen>-->
+  <!-- ## Movieselection Slim ## -->
+  <screen name="MovieSelectionSlim" position="0,0" size="541,720" title="SlimMovieSelction" flags="wfNoBorder" backgroundColor="transpBlack">
+	<widget source="global.CurrentTime" render="Label" position="10,28" size="410,28" font="Regular; 24" halign="right" transparent="1" foregroundColor="menu_title" backgroundColor="background">
+	 <convert type="ClockToText">Format:%a %d/%m %H:%M</convert>
+	</widget>
+	<widget source="Title" render="Label" position="10,80" size="385,38" font="Regular;38" foregroundColor="menu_title" backgroundColor="background" transparent="1" />
+	<widget name="waitingtext" position="10,133" size="503,495" font="Regular;21" halign="center" valign="center" transparent="0" foregroundColor="green" backgroundColor="background" zPosition="4" />
+	<widget name="list" position="10,133" size="503,495" zPosition="3" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="background" transparent="1" enableWrapAround="1" />
+	<widget name="DescriptionBorder" position="10,400" size="503,95" zPosition="3" transparent="1" />
+	<widget source="Service" render="Label" position="10,535" size="420,25" zPosition="1" backgroundColor="background" font="Bold; 22" noWrap="1" transparent="1" valign="top" foregroundColor="white">
+		<convert type="MovieInfo">RecordServiceName</convert>
+	</widget>
+	<widget source="Service" render="Label" position="380,535" zPosition="1" size="100,25" transparent="1" backgroundColor="background" font="Bold; 22" halign="right" foregroundColor="white">
+		<convert type="ServiceTime">Duration</convert>
+		<convert type="ClockToText">AsLength</convert>
+	</widget>
+	<widget source="Service" render="Label" position="10,560" size="498,65" font="Regular; 19" backgroundColor="background" foregroundColor="yellow" valign="top" zPosition="1" transparent="1">
+		<convert type="MovieInfo">ShortDescription</convert>
+	</widget>
+    <widget name="freeDiskSpace" position="10,530" size="533,20" font="Regular; 18" backgroundColor="background" valign="center" halign="right" transparent="1" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,643" size="24,24" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="15,670" size="24,24" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="240,643" size="24,24" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="240,670" size="24,24" alphatest="blend" transparent="1" />
+	<widget name="key_red" position="50,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="background" foregroundColor="foreground" />
+	<widget name="key_green" position="50,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="background" foregroundColor="foreground" />
+	<widget name="key_yellow" position="265,647" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="background" foregroundColor="foreground" />
+	<widget name="key_blue" position="265,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="background" foregroundColor="foreground" />
+	<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="450,674" size="35,25" />
+  </screen>
   <!-- ## Timers ## -->
   <screen name="TimerSelection" title="Timer selection" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
