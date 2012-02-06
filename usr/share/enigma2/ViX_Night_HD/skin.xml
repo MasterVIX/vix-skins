@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.59 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.60 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -661,7 +661,7 @@
 		<widget source="Statustext" render="Label" position="75,694" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" />
 		<widget name="statuspic" pixmaps="ViX_HD_Common/buttons/green.png,ViX_HD_Common/buttons/button_off.png" zPosition="10" position="40,690" size="24,24" alphatest="blend" transparent="1" />
 	</screen>
-	<screen name="AudioSelection" position="0,0" size="541,720" title="Audio Selection" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AudioSelection" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_Night_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" transparent="1" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="10,8" size="410,28" font="Regular;24" foregroundColor="menu_title-frgrnd" backgroundColor="menu-time-bkgrnd" halign="right" transparent="1">
 			<convert type="ClockToText">Full</convert>
@@ -685,18 +685,18 @@
 			<convert type="TemplatedMultiContent">
 				{"templates":
 				{"default": (25, [ 
-				MultiContentEntryText(pos = (0, 1),	 size = (35, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 1), # key,
-				MultiContentEntryText(pos = (20, 1),	size = (30, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 2), # number,
-				MultiContentEntryText(pos = (60, 1), size = (100, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 3), # description,
-				MultiContentEntryText(pos = (180, 1), size = (220, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 4), # language,
-				MultiContentEntryText(pos = (408, 5), size = (65, 25),	font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+				MultiContentEntryText(pos = (0, 1), size = (35, 25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # key,
+				MultiContentEntryText(pos = (20, 1), size = (50, 25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # number,
+				MultiContentEntryText(pos = (80, 1), size = (100, 25), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
+				MultiContentEntryText(pos = (200, 1), size = (260, 25), font = 0, flags = RT_HALIGN_LEFT, text = 4), # language,
+				MultiContentEntryText(pos = (485, 5), size = (25, 25), font = 1, flags = RT_HALIGN_LEFT, text = 5), # selection,
 				], True, "showNever"),
 				"notselected": (25, [ 
-				MultiContentEntryText(pos = (0, 1),	 size = (35, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 1), # key,
-				MultiContentEntryText(pos = (20, 1),	size = (30, 25),	font = 0, flags = RT_HALIGN_LEFT,	text = 2), # number,
-				MultiContentEntryText(pos = (60, 1), size = (100, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 3), # description,
-				MultiContentEntryText(pos = (180, 1), size = (220, 25), font = 0, flags = RT_HALIGN_LEFT,	text = 4), # language,
-				MultiContentEntryText(pos = (408, 5), size = (65, 25),	font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+				MultiContentEntryText(pos = (0, 1), size = (35, 25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # key,
+				MultiContentEntryText(pos = (20, 1), size = (50, 25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # number,
+				MultiContentEntryText(pos = (88, 1), size = (100, 25), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
+				MultiContentEntryText(pos = (200, 1), size = (260, 25), font = 0, flags = RT_HALIGN_LEFT, text = 4), # language,
+				MultiContentEntryText(pos = (485, 5), size = (25, 25), font = 1, flags = RT_HALIGN_LEFT, text = 5), # selection,
 				], False, "showNever")
 				},
 				"fonts": [gFont("Regular", 20), gFont("Regular", 16)],
