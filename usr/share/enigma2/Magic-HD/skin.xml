@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 3.40 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 3.41 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -903,7 +903,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
-    <widget source="menu" render="Listbox" position="520,82" size="755,575" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
+    <widget source="menu" render="Listbox" position="520,82" size="755,575" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" >
 <!--      <convert type="StringList" />
     </widget>-->
 			<convert type="TemplatedMultiContent">
@@ -923,7 +923,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
-    <widget source="menu" render="Listbox" position="520,82" size="755,575" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
+    <widget source="menu" render="Listbox" position="520,82" size="755,575" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" >
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 24)],
@@ -941,7 +941,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
-    <widget source="menu" render="Listbox" position="520,82" size="755,575" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
+    <widget source="menu" render="Listbox" position="520,82" size="755,575" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" >
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 24)],
@@ -959,7 +959,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
-    <widget source="menu" render="Listbox" position="520,82" size="755,570" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
+    <widget source="menu" render="Listbox" position="520,82" size="755,570" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" >
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 24)],
@@ -1055,7 +1055,7 @@
     <widget source="key_red" render="Label" position="50,682" size="220,30" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget source="key_green" render="Label" position="340,682" size="220,30" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,410" size="1,1" zPosition="1" transparent="1" alphatest="on" />
-    <widget name="config" position="520,82" size="755,583" itemHeight="25" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="config" position="520,82" size="755,583" itemHeight="25" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
     <widget source="satus" render="Label" position="10,580" size="500,60" zPosition="10" font="Regular;22" halign="center" transparent="0" foregroundColor="secondFG" />
     <widget source="VKeyIcon" render="Pixmap" pixmap="Magic-HD-Common/buttons/key_text.png" position="1160,682" zPosition="1" size="35,25" transparent="1" alphatest="on" >
       <convert type="ConditionalShowHide" />
@@ -1606,7 +1606,7 @@
     </widget>
     <widget name="text" position="15,379" size="477,260" zPosition="2" font="Regular;24" foregroundColor="secondFG" />
     <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
-    <widget name="list" position="520,82" size="755,583" font="Regular;26" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="list" position="520,82" size="755,583" font="Regular;26" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1"/>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen name="SubtitleDisplay" position="0,0" size="1280,720" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder" />
@@ -7209,9 +7209,11 @@
     <widget name="list" position="5,90" size="1270,475" scrollbarMode="showNever" transparent="1" 
     ServiceBackgroundColor="bluetransparent"  ServiceBackgroundColorSelected="black" ServiceBackgroundColorNow="greentransparent" ServiceBackgroundColorNowSelected="greentransparent" 
     EntryBackgroundColor="bluetransparent"    EntryBackgroundColorSelected="black"   EntryBackgroundColorNow="redtransparent"     EntryBackgroundColorNowSelected="black" 
-                                              EntryForegroundColorSelected="selectedFG"                                           EntryForegroundColorNowSelected="selectedFG"
+    EntryFontAlignment="center"               EntryForegroundColorSelected="selectedFG"                                           EntryForegroundColorNowSelected="selectedFG"
                                               ServiceForegroundColorSelected="selectedFG"                                         ServiceForegroundColorNowSelected="selectedFG" 
-    RecordBackgroundColor="yellowtransparent" ZapBackgroundColor="yellowtransparent" />
+    RecordBackgroundColor="yellowtransparent" RecordBackgroundColorSelected="yellowtransparent"                                   RecordForegroundColorSelected="selectedFG"
+    ZapBackgroundColor="transpWhite"          ZapBackgroundColorSelected="transpWhite"                                            ZapForegroundColorSelected="selectedFG"   />
+
     <widget name="timeline0" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline1" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline2" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
@@ -7286,9 +7288,10 @@
     <widget name="list" position="5,313" size="1275,365" scrollbarMode="showNever" transparent="1" 
     ServiceBackgroundColor="bluetransparent"  ServiceBackgroundColorSelected="black" ServiceBackgroundColorNow="greentransparent" ServiceBackgroundColorNowSelected="greentransparent" 
     EntryBackgroundColor="bluetransparent"    EntryBackgroundColorSelected="black"   EntryBackgroundColorNow="redtransparent"     EntryBackgroundColorNowSelected="redtransparent" 
-                                              EntryForegroundColorSelected="selectedFG"                                           EntryForegroundColorNowSelected="selectedFG" 
+    EntryFontAlignment="center"               EntryForegroundColorSelected="selectedFG"                                           EntryForegroundColorNowSelected="selectedFG" 
                                               ServiceForegroundColorSelected="selectedFG"                                         ServiceForegroundColorNowSelected="selectedFG" 
-    RecordBackgroundColor="yellowtransparent" ZapBackgroundColor="yellowtransparent"  />
+    RecordBackgroundColor="yellowtransparent" RecordBackgroundColorSelected="yellowtransparent"                                   RecordForegroundColorSelected="selectedFG"
+    ZapBackgroundColor="transpWhite"          ZapBackgroundColorSelected="transpWhite"                                            ZapForegroundColorSelected="selectedFG"   />
     <widget name="timeline0" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline1" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline2" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
