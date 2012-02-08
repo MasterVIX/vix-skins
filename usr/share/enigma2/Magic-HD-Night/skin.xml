@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 2.83 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 2.84 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -544,7 +544,7 @@
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="list" backgroundColor="background" position="520,82" size="755,575" itemHeight="30" serviceNumberFont="Regular;22" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="30" colorServiceDescription="#DBB96E" colorEventProgressbarBorderSelected="grey" transparent="1" foregroundColorServiceNotAvail="#00656565" scrollbarMode="showOnDemand" />
-    <widget source="ServiceEvent" render="Label" position="5,355" size="500,57" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="center" valign="center">
+    <widget source="ServiceEvent" render="Label" position="5,355" size="500,57" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="left" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="15,415" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="right">
@@ -566,9 +566,13 @@
       <convert type="ServiceOrbitalPosition">
       </convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="5,445" size="490,220" transparent="1" font="Regular;19">
+    <widget source="ServiceEvent" render="Label" position="5,445" size="490,180" transparent="1" font="Regular;19">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
+	<eLabel text="Next:" position="5,640" size="70,25" zPosition="2" font="Regular;22" foregroundColor="white" valign="center" transparent="1" />
+    <widget source="ServiceEvent" render="Label" position="80,640" size="425,25" font="Regular;22" foregroundColor="secondFG" noWrap="1" zPosition="2" transparent="1" halign="left">
+      <convert type="EventName">NextName</convert>
+	</widget>
   </screen>
   <!-- Simple channelselection -->
   <screen flags="wfNoBorder" name="SimpleChannelSelection" position="0,0" size="1280,720" title="Channel Selection">
