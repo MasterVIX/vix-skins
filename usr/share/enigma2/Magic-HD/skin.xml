@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 3.43 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 3.44 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -792,18 +792,19 @@
     <widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="waitingtext" position="520,87" size="755,581" font="Regular;26" halign="center" valign="center" zPosition="4" />
-    <widget name="list" position="520,87" size="755,570" scrollbarMode="showOnDemand" font="Regular;26" itemHeight="25" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
+    <widget name="waitingtext" position="520,87" size="755,550" font="Regular;26" halign="center" valign="center" zPosition="4" />
+    <widget name="list" position="520,87" size="755,550" scrollbarMode="showOnDemand" font="Regular;26" itemHeight="25" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
     <widget source="Service" render="Label" position="5,380" size="500,50" foregroundColor="secondFG" halign="left" valign="center" font="Regular;22" transparent="1">
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>
-    <widget source="Service" render="Label" position="5,430" size="500,203" font="Regular;22" valign="center">
+    <widget source="Service" render="Label" position="5,430" size="500,241" font="Regular;21" valign="center">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="Service" render="Label" position="15,645" size="140,25" transparent="1" foregroundColor="grey" font="Regular;20">
+    <widget source="Service" render="Label" position="520,648" size="150,21" transparent="1" foregroundColor="grey" halign="center" font="Regular;20">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
-    <widget name="freeDiskSpace" position="155,645" size="250,25" foregroundColor="grey" font="Regular;20" />
+    <widget name="freeDiskSpace" position="680,648" size="250,21" foregroundColor="grey" font="Regular;20" halign="center" />
+    <widget name="TrashcanSize" position="930,648" size="250,21" foregroundColor="grey" font="Regular;20" halign="center" />
     <widget source="Service" render="Label" position="185,355" size="310,25" zPosition="1" foregroundColor="grey" font="Regular;20" halign="right">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
