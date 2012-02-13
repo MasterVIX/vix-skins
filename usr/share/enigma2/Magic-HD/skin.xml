@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 3.55 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 3.56 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -561,37 +561,37 @@
     <widget name="key_green" position="340,682" size="220,26"  foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26"  foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="list" position="520,82" size="755,475" itemHeight="25" noWrap="1" serviceNumberFont="Regular;22" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="25" colorServiceDescription="yellow" transparent="1" foregroundColorServiceNotAvail="#656565" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
-    <eLabel text="Next:" position="520,565" size="75,25" zPosition="2" font="Regular;24" foregroundColor="blue" valign="center" transparent="1" />
-    <widget source="ServiceEvent" render="Label" position="595,565" size="680,25" font="Regular;24" foregroundColor="blue" noWrap="1" zPosition="2" transparent="1" halign="center">
+    <widget name="list" position="520,82" size="755,583" itemHeight="25" noWrap="1" serviceNumberFont="Regular;22" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="25" colorServiceDescription="yellow" transparent="1" foregroundColorServiceNotAvail="#656565" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <eLabel text="Next:" position="5,645" size="75,25" zPosition="2" font="Regular;24" foregroundColor="blue" valign="center" transparent="1" />
+    <widget source="ServiceEvent" render="Label" position="85,645" size="400,25" font="Regular;22" foregroundColor="blue" noWrap="1" zPosition="2" transparent="1" halign="center">
       <convert type="EventName">NextName</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="520,595" size="755,75" font="Regular;22" foregroundColor="grey" transparent="1" zPosition="2">
+<!-->    <widget source="ServiceEvent" render="Label" position="520,636" size="755,75" font="Regular;22" foregroundColor="grey" transparent="1" zPosition="2">
       <convert type="EventName">NextDescription</convert>
-    </widget>
-    <widget source="ServiceEvent" render="Label" position="5,355" size="500,47" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="center" valign="top" >
+    </widget>-->
+    <widget source="ServiceEvent" render="Label" position="5,355" size="500,25" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="center" valign="top" >
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="10,408" size="62,22" transparent="1" foregroundColor="grey" font="Regular;21" halign="right">
+    <widget source="ServiceEvent" render="Label" position="10,386" size="62,22" transparent="1" foregroundColor="grey" font="Regular;21" halign="right">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="ServiceEvent" render="Label" position="275,408" size="62,22" transparent="1" foregroundColor="grey" font="Regular;21">
+    <widget source="ServiceEvent" render="Label" position="275,386" size="62,22" transparent="1" foregroundColor="grey" font="Regular;21">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="ServiceEvent" render="Progress" pixmap="Magic-HD-Common/window/progress.png" position="80,416" size="190,8" transparent="1" borderWidth="1" foregroundcolor="grey" borderColor="grey">
+    <widget source="ServiceEvent" render="Progress" pixmap="Magic-HD-Common/window/progress.png" position="80,394" size="190,8" transparent="1" borderWidth="1" foregroundcolor="grey" borderColor="grey">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="335,408" size="62,22" transparent="1" foregroundColor="grey" font="Regular;21">
+    <widget source="ServiceEvent" render="Label" position="335,386" size="62,22" transparent="1" foregroundColor="grey" font="Regular;21">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="400,408" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;21" halign="right">
+    <widget source="ServiceEvent" render="Label" position="400,386" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;21" halign="right">
       <convert type="ServiceOrbitalPosition">
       </convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="5,431" size="500,227" font="Regular;22" foregroundColor="grey" transparent="1" >
+    <widget source="ServiceEvent" render="Label" position="5,409" size="500,227" font="Regular;22" foregroundColor="grey" halign="center" valign="center" transparent="1" >
       <convert type="EventName">FullDescription</convert>
     </widget>
   </screen>
@@ -805,11 +805,11 @@
     <widget name="key_yellow" position="614,682" size="220,26"  foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="waitingtext" position="520,87" size="755,550" font="Regular;26" halign="center" valign="center" zPosition="4" />
-    <widget name="list" position="520,82" size="755,553" scrollbarMode="showOnDemand"  selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeights="75,53,25" fontSizesOriginal="21,20,19" fontSizesCompact="21,19" fontSizesMinimal="20,18" enableWrapAround="1" />
+    <widget name="list" position="520,82" size="755,548" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeights="75,53,25" fontSizesOriginal="21,20,19" fontSizesCompact="21,19" fontSizesMinimal="20,18" enableWrapAround="1" />
 <!--    <widget source="Service" render="Label" position="5,380" size="500,50" foregroundColor="secondFG" halign="left" valign="center" font="Regular;22" transparent="1">
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>-->
-    <widget source="Service" render="Label" position="5,380" size="500,280" font="Regular;20" valign="center">
+    <widget source="Service" render="Label" position="5,380" size="500,280" font="Regular;20" halign="center" valign="center">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="Service" render="Label" position="520,648" size="150,21" transparent="1" foregroundColor="grey" halign="left" font="Regular;20">
@@ -817,7 +817,7 @@
     </widget>
     <widget name="freeDiskSpace" position="725,648" size="250,21" foregroundColor="grey" font="Regular;20" halign="center" />
     <widget name="TrashcanSize" position="1025,648" size="250,21" foregroundColor="grey" font="Regular;20" halign="right" />
-    <widget source="Service" render="Label" position="185,355" size="310,25" zPosition="1" foregroundColor="grey" font="Regular;20" halign="right">
+    <widget source="Service" render="Label" position="185,355" size="310,25" zPosition="1" foregroundColor="grey" font="Regular;22" halign="right">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
     <widget source="Service" render="Label" position="15,355" size="80,24" font="Regular;20" foregroundColor="grey" halign="left" transparent="1">
@@ -7311,11 +7311,11 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_green" position="340,682" size="220,26"  foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-    <widget name="standbystatus" position="10,470" size="250,55" font="Regular;20" zPosition="5" />
-    <widget name="deepstandbystatus" position="10,525" size="250,55" font="Regular;20" zPosition="5" />
-    <widget name="guirestartstatus" position="260,470" size="250,55" font="Regular;20" zPosition="6" />
-    <widget name="rebootstatus" position="260,525" size="250,55" font="Regular;20" zPosition="6" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,460" transparent="1" foregroundColor="grey" itemHeight="28" enableWrapAround="1" />
+    <widget name="standbystatus" position="10,575" size="300,60" font="Regular;20" zPosition="5" halign="center" foregroundColor="secondFG" />
+    <widget name="deepstandbystatus" position="330,575" size="300,60" font="Regular;20" zPosition="5" halign="center" foregroundColor="secondFG" />
+    <widget name="guirestartstatus" position="655,575" size="300,60" font="Regular;20" zPosition="6" halign="center" foregroundColor="secondFG" />
+    <widget name="rebootstatus" position="970,575" size="300,60" font="Regular;20" zPosition="6" halign="center" foregroundColor="secondFG" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen flags="wfNoBorder" name="VIXSetup" position="0,0" size="1280,720" title="Setup">
