@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.65 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.66 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -762,6 +762,15 @@
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="695,592" size="575,80" font="Regular;22" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
 			<convert type="EventName">NextDescription</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="1105,565" size="60,25" font="Bold;24" foregroundColor="infobar_service_frgrnd" backgroundColor="black" zPosition="2" transparent="0" halign="right" noWrap="1" valign="top">
+			<convert type="EventTime">NextStartTime</convert>
+			<convert type="ClockToText">
+			</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="1170,565" size="80,25" font="Bold;24" foregroundColor="infobar_service_frgrnd" backgroundColor="black" zPosition="2" transparent="0" noWrap="1" valign="top">
+			<convert type="EventTime">NextEndTime</convert>
+			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="90,686" size="25,25" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/green.png" position="380,686" size="25,25" alphatest="blend" transparent="1" />
