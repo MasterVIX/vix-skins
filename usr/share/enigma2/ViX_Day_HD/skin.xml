@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Day-HD Vs 1.69 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Day-HD Vs 1.70 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -319,6 +319,8 @@
 	</screen>
 	<screen name="MoviePlayer" flags="wfNoBorder" position="center,e-200" size="750,190" title="InfoBar" backgroundColor="transparent">
 		<ePixmap position="0,0" zPosition="-1" size="750,190" pixmap="ViX_Day_HD/Bg_Media_info.png" />
+		<widget name="statusicon" position="45,18" size="20,20" zPosition="3" alphatest="on" pixmaps="ViX_HD_Common/icons/play.png,ViX_HD_Common/icons/pause.png,ViX_HD_Common/icons/stop.png,ViX_HD_Common/icons/forward.png,ViX_HD_Common/icons/backward.png,ViX_HD_Common/icons/slow.png" />
+		<widget name="speed" position="70,21" size="80,15" font="Regular; 17" halign="left" foregroundColor="foreground" backgroundColor="infobar-bkgrnd" transparent="1" zPosition="4" />
 		<ePixmap pixmap="ViX_Day_HD/icons/clock.png" position="580,13" zPosition="1" size="20,20" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="598,14" zPosition="1" size="59,20" font="Regular; 21" foregroundColor="foreground" halign="right" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top">
 			<convert type="ClockToText">Format:%H:%M</convert>
@@ -2102,9 +2104,9 @@ self.autoResize()
 		</widget>
 		<ePixmap pixmap="ViX_Day_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget source="Title" render="Label" position="10,60" size="415,38" font="Bold;38" foregroundColor="menu_title" backgroundColor="menutitlebg" transparent="1" />
-		<widget name="config" position="10,107" size="503,500" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand" />
-		<widget source="satus" render="Label" position="10,620" size="503,25" font="Regular;18" halign="center" valign="center" transparent="0" />
-		<widget name="HelpWindow" pixmap="ViX_HD_Common/buttons/vkey_icon.png" position="100,490" zPosition="1" size="541,720" transparent="1" alphatest="on" />
+		<widget name="config" position="10,107" size="503,450" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand" />
+		<widget source="satus" render="Label" position="10,567" size="503,75" font="Regular;18" halign="center" valign="bottom" transparent="0" zPosition="1" />
+		<widget name="HelpWindow" pixmap="ViX_HD_Common/buttons/vkey_icon.png" position="60,490" zPosition="1" size="541,720" transparent="1" alphatest="on" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/green.png" position="40,690" size="24,24" alphatest="blend" transparent="1" />
 		<widget source="key_red" render="Label" position="75,667" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="un9c9c9c" foregroundColor="foreground" />
@@ -2297,7 +2299,9 @@ self.autoResize()
 	</screen>
 	<screen name="TimeshiftState" position="90,50" zPosition="2" size="216,74" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
 		<ePixmap position="0,0" zPosition="1" size="216,74" pixmap="ViX_Day_HD/pts-bg.png" />
-		<widget name="state" position="23,15" size="50,20" font="Regular; 17" halign="left" backgroundColor="infobar_sunken" transparent="1" foregroundColor="black" zPosition="2" valign="top" />
+		<widget name="statusicon" position="20,15" size="20,20" zPosition="3" alphatest="on" pixmaps="ViX_HD_Common/icons/play.png,ViX_HD_Common/icons/pause.png,ViX_HD_Common/icons/stop.png,ViX_HD_Common/icons/forward.png,ViX_HD_Common/icons/backward.png,ViX_HD_Common/icons/slow.png" />
+		<widget name="speed" position="45,18" size="80,18" font="Regular; 17" halign="left" backgroundColor="infobar_sunken" foregroundColor="black" transparent="1" zPosition="4" />
+		<widget name="state" position="0,0" size="0,0" />
 		<widget source="session.CurrentService" render="Label" position="88,17" size="50,20" font="Regular; 17" halign="center" foregroundColor="black" backgroundColor="infobar_sunken" transparent="1" zPosition="2" valign="top">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
