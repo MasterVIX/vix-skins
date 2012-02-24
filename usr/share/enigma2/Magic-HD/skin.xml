@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 3.66 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 3.68 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -271,6 +271,7 @@
       <convert type="ServiceName">Name</convert>
     </widget>
     <eLabel backgroundColor="infobarBG" position="120,49" size="1040,14" zPosition="0"/>
+    <widget name="state" position="0,0" size="150,30" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" zPosition="2" halign="center" />
     <ePixmap pixmap="Magic-HD-Common/dvr/scale1024.png" position="128,54" size="1024,4" zPosition="1" />
     <widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer1024.png:1012,0">
       <convert type="ServicePosition">Gauge</convert>
@@ -1119,7 +1120,7 @@
     <widget source="key_green" render="Label" position="340,682" size="220,30" foregroundColor="grey" font="Regular;22" halign="left" />
     <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,410" size="1,1" zPosition="1" transparent="1" alphatest="on" />
     <widget name="config" position="520,82" size="755,583" itemHeight="28" foregroundColor="grey" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
-    <widget source="satus" render="Label" position="10,580" size="500,60" zPosition="10" font="Regular;22" halign="center" transparent="0" foregroundColor="secondFG" />
+    <widget source="status" render="Label" position="10,385" size="500,250" zPosition="10" font="Regular;22" halign="center" transparent="0" foregroundColor="secondFG" />
     <widget source="VKeyIcon" render="Pixmap" pixmap="Magic-HD-Common/buttons/key_text.png" position="1160,682" zPosition="1" size="35,25" transparent="1" alphatest="on" >
       <convert type="ConditionalShowHide" />
     </widget>
