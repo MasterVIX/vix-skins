@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 3.70 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 3.71 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -544,7 +544,7 @@
     <widget name="angleLabel" position="780,122" size="200,22" font="Regular;21" backgroundColor="black" zPosition="3" transparent="1" />
   </screen>
   <!-- ## Channel, EPG, EventInfo ## -->
-  <screen name="ChannelSelection" title="Channel Selection" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="ChannelSelection" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -611,7 +611,7 @@
     </widget>
   </screen>
   <!-- Simple channelselection -->
-  <screen flags="wfNoBorder" name="SimpleChannelSelection" position="0,0" size="1280,720" title="Channel Selection">
+  <screen flags="wfNoBorder" position="0,0" size="1280,720" title="Channel Selection">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -632,7 +632,7 @@
     <widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
     <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;18" position="520,82" size="755,583" transparent="1" />
   </screen>
-  <screen flags="wfNoBorder" name="SlimChannelSelection" position="0,0" size="590,720" title="Channel Selection" backgroundColor="transparent" >
+  <screen flags="wfNoBorder" position="0,0" size="590,720" title="Channel Selection" backgroundColor="transparent" >
     <eLabel position="0,0" size="590,720" backgroundColor="transpBlack" zPosition="-50" />
     <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
       <convert type="ClockToText">Format:%-H:%M</convert>
@@ -662,7 +662,7 @@
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
   </screen>
-  <screen name="ChannelContextMenu" title="Channellist menu" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="ChannelContextMenu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -1751,10 +1751,7 @@
     <widget name="chapter" position="0,-200" size="200,40" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="4" valign="center" halign="right" />
     <widget name="number" position="200,-200" size="150,40" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="4" valign="center" halign="left" />
   </screen>
-  
-
   <screen name="TimeshiftState" position="4,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
-
   <widget source="session.CurrentService" render="Label" position="240,0" size="780,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
     <convert type="ServiceName">Name</convert>
   </widget>
@@ -1790,8 +1787,31 @@
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
   </screen>
-  
-  
+
+
+<!--	<screen name="PTSTimeshiftState" position="center,40" zPosition="2" size="420,70"
+backgroundColor="transpBlack" flags="wfNoBorder">
+ 	<widget name="statusicon" position="12,5" size="20,20" pixmaps="ViX_HD_Common/icons/play.png,ViX_HD_Common/icons/pause.png,ViX_HD_Common/icons/stop.png,ViX_HD_Common/icons/forward.png,ViX_HD_Common/icons/backwa
+rd.png,ViX_HD_Common/icons/slow.png" zPosition="5" alphatest="on" />
+		<widget name="speed" position="35,7" size="80,15" font="Regular; 17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="5" />
+		<widget source="session.CurrentService" render="Label" position="95,5" size="200,27" font="Regular;20" halign="left" foregroundColor="white" backgroundColor="transpBlack">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="280,5" size="120,27" font="Regular;20" halign="right" foregroundColor="white" backgroundColor="transpBlack">
+			<convert type="ServicePosition">Length</convert>
+		</widget>
+		<widget name="PTSSeekPointer" position="0,30" zPosition="3" size="19,20" pixmap="/usr/share/enigma2/skin_default/timeline-now.png" alphatest="on" />
+		<ePixmap position="15,33" size="390,15" zPosition="1" pixmap="/usr/share/enigma2/skin_default/slider_back.png" alphatest="on"/>
+   <widget source="session.CurrentService" render="Progress" position="15,33" size="390,15" zPosition="2" pixmap="/usr/share/enigma2/skin_default/slider.png" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget name="eventname" position="60,49" zPosition="4" size="320,20" font="Regular;18"
+halign="center" backgroundColor="transpBlack" />
+</screen>-->
+
+
+
+
 <!--  <screen name="TimeshiftState" position="center,30" size="860,60" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
     <widget name="state" position="10,2" size="150,27" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" valign="center" halign="center" foregroundColor="foreground" borderWidth="2" />
     <widget source="session.CurrentService" render="Label" position="160,2" size="150,27" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" font="Regular;22" halign="left">
@@ -8691,7 +8711,7 @@
     </applet>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="HdmiCECSetupScreen" position="0,0" size="1280,720" title="HDMI CEC setup">
+  <screen flags="wfNoBorder" name="HdmiCECSetupScreen" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
