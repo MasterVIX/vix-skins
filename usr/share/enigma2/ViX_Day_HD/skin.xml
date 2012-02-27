@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Day-HD Vs 1.73 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Day-HD Vs 1.74 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -803,8 +803,13 @@ self.autoResize()
 	<screen name="configTest" position="490,240" size="300,240" title="config menu">
 		<widget name="config" position="10,10" size="280,220" transparent="0" />
 	</screen>
-	<screen name="Dish" flags="wfNoBorder" position="92,50" size="130,160" title="Dish" zPosition="-1" backgroundColor="transparent">
-		<widget name="Dishpixmap" pixmap="ViX_HD_Common/icons/dish.png" position="0,0" size="130,160" alphatest="off" />
+	<screen name="Dish" flags="wfNoBorder" position="86,100" size="130,200" title="Dish" zPosition="1" backgroundColor="transparent" >
+		<widget name="Dishpixmap" position="0,0" size="130,160" zPosition="-1" pixmap="ViX_HD_Common/icons/dish.png" transparent="1" alphatest="on" />
+		<widget name="turnTime" position="5,0" size="120,20" zPosition="1" font="Regular;18" halign="right" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+		<eLabel name="From" position="5,164" size="45,16" zPosition="1" font="Regular;16" halign="left" foregroundColor="white" shadowColor="black" shadowOffset="-2,-1" transparent="1" text="From:" />
+		<widget name="posFrom" position="55,160" size="70,20" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+		<eLabel name="Goto" position="5,184" size="45,16" zPosition="1" font="Regular;16" halign="left" foregroundColor="white" shadowColor="black" shadowOffset="-2,-1" transparent="1" text="Goto:" />
+		<widget name="posGoto" position="55,180" size="70,20" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
 	</screen>
 	<screen name="UnhandledKey" flags="wfNoBorder" position="1110,50" size="98,88" title="UnhandledKey" zPosition="100" backgroundColor="transparent">
 		<widget name="UnhandledKeyPixmap" pixmap="ViX_Day_HD/unhandled-key.png" position="0,0" size="98,88" alphatest="off" />
