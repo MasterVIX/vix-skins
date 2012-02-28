@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 3.73 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 3.74 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -110,14 +110,24 @@
   <screen name="Mute" title="Mute" position="45,30" size="90,80" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/infobar/mute.png" position="0,0" size="90,80" alphatest="on" zPosition="0" />
   </screen>
-  <screen name="Dish" title="Dish" backgroundColor="transparent" flags="wfNoBorder" position="50,50" size="130,160" zPosition="-1">
+<!--  <screen name="Dish" backgroundColor="transparent" flags="wfNoBorder" position="50,50" size="130,160" zPosition="-1">
     <widget name="Dishpixmap" pixmap="Magic-HD-Common/icons/dish.png" alphatest="off" position="0,0" size="130,160" />
+  </screen>-->
+
+  <screen name="Dish" flags="wfNoBorder" position="86,100" size="130,200" title="Dish" zPosition="10" backgroundColor="transparent" >
+    <widget name="Dishpixmap" position="0,0" size="130,160" zPosition="-1" pixmap="Magic-HD-Common/icons/dish.png" transparent="1" alphatest="on" />
+    <widget name="turnTime" position="5,0" size="120,20" zPosition="1" font="Regular;18" halign="right" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+    <eLabel name="From" position="5,164" size="45,16" zPosition="1" font="Regular;16" halign="left" foregroundColor="white" shadowColor="black" shadowOffset="-2,-1" transparent="1" text="From:" />
+    <widget name="posFrom" position="55,160" size="70,20" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+    <eLabel name="Goto" position="5,184" size="45,16" zPosition="1" font="Regular;16" halign="left" foregroundColor="white" shadowColor="black" shadowOffset="-2,-1" transparent="1" text="Goto:" />
+    <widget name="posGoto" position="55,180" size="70,20" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
   </screen>
+
   <screen name="UnhandledKey" title="UnhandledKey" position="1000,20" size="98,88" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
     <widget name="UnhandledKeyPixmap" pixmap="Magic-HD-Common/icons/unhandled-key.png" position="0,0" size="98,88" alphatest="on" />
   </screen>
   <!--  ## InfoBars ## -->
-  <screen name="InfoBar" title="InfoBar" position="0,510" size="1280,400" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="InfoBar" position="0,510" size="1280,400" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap alphatest="off" pixmap="Magic-HD-Common/infobar/hd.png" position="0,-7" size="1280,220" zPosition="-1" />
     <widget source="session.CurrentService" render="Picon" position="45,45" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
       <convert type="ServiceName">Reference</convert>
@@ -161,7 +171,7 @@
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
-  <screen name="MoviePlayer" title="InfoBar" position="4,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="MoviePlayer" position="4,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="session.CurrentService" render="Label" position="240,0" size="780,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -197,7 +207,7 @@
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
-  <screen name="SecondInfoBar" title="Second InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="SecondInfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="session.CurrentService" render="Label" position="5,5" size="635,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;18" valign="top" halign="left">
       <convert type="PliExtraInfo">All</convert>
     </widget>
@@ -365,7 +375,7 @@
     </widget>
   </screen>
 <!-- ## DvD-Player ## -->
-  <screen name="DVDPlayer" title="InfoBar" position="4,30" size="1280,215" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="DVDPlayer" position="4,30" size="1280,215" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="session.CurrentService" render="Label" position="240,0" size="780,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -459,7 +469,7 @@
     </widget>
   </screen>
   <!-- Simple channelselection -->
-  <screen flags="wfNoBorder" position="0,0" size="1280,720" title="Channel Selection">
+  <screen name="SimpleChannelSelection" flags="wfNoBorder" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -480,7 +490,7 @@
     <widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
     <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;18" position="520,82" size="755,583" transparent="1" />
   </screen>
-  <screen flags="wfNoBorder" position="0,0" size="590,720" title="Channel Selection" backgroundColor="transparent" >
+  <screen name="SlimChannelSelection" flags="wfNoBorder" position="0,0" size="590,720" backgroundColor="transparent" >
     <eLabel position="0,0" size="590,720" backgroundColor="transpBlack" zPosition="-50" />
     <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
       <convert type="ClockToText">Format:%-H:%M</convert>
@@ -524,7 +534,7 @@
     <widget name="menu" position="520,82" size="755,583" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="EPGSelection" title="EPG Selection" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="EPGSelection" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" halign="right" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -568,7 +578,7 @@
       <convert type="EventName">FullDescription</convert>
     </widget>
   </screen>
-  <screen name="EventView" title="Eventview" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="EventView" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" halign="right" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -597,7 +607,7 @@
     <widget name="epg_description" position="520,82" font="Regular;22" size="755,583" foregroundColor="grey" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="EventViewContextMenu" position="0,0" size="1280,720" title="Eventview menu">
+  <screen flags="wfNoBorder" name="EventViewContextMenu" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -611,7 +621,7 @@
     <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" foregroundColor="grey" transparent="1" itemHeight="28" enableWrapAround="1"/>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="EventViewSimple" position="0,0" size="1280,720" title="Programme Info">
+  <screen flags="wfNoBorder" name="EventViewSimple" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -629,7 +639,7 @@
     <ePixmap pixmap="skin_default/buttons/key_menu.png" position="1110,682" size="35,25" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="MovieSelection" title="MovieSelection" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="MovieSelection" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -688,7 +698,7 @@
     <widget name="DescriptionBorder" position="0,0" size="0,0" />
   </screen>
   <!-- Audio selection -->
-  <screen flags="wfNoBorder" name="AudioSelection" position="0,0" size="1280,720" title="Audio">
+  <screen flags="wfNoBorder" name="AudioSelection" position="0,0" size="1280,720" >
    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -935,7 +945,7 @@
     <widget name="footnote" position="750,682" size="350,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="grey" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="About" title="About" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="About" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" halign="left" />
@@ -955,7 +965,7 @@
     <eLabel text="Skin Magic-HD  ViX-team skin by Rob van der Does" foregroundColor="grey" font="Regular;19" halign="center" position="5,590" size="500,55" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="Devices" title="Systeminfo" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="Devices" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" halign="left" />
@@ -975,7 +985,7 @@
     <eLabel text="Skin Magic-HD  ViX-team skin by Rob van der Does" foregroundColor="grey" font="Regular;19" halign="center" position="5,590" size="500,55" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="AboutReleaseNotes" position="0,0" size="1280,720" title="Release Notes">
+  <screen flags="wfNoBorder" name="AboutReleaseNotes" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -990,7 +1000,7 @@
     <eLabel text="Skin Magic-HD  ViX-team skin by Rob van der Does" foregroundColor="grey" font="Regular;19" halign="center" position="5,590" size="500,55" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="ServiceInfo" title="Serviceinfo" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="ServiceInfo" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -1013,7 +1023,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
     <eLabel text="Skin Magic-HD  ViX-team skin by Rob van der Does" foregroundColor="grey" font="Regular;19" halign="center" position="5,590" size="500,55" transparent="1" zPosition="1" />
   </screen>
-  <screen name="HarddiskSelection" title="HDD Select" flags="wfNoBorder" position="0,0" size="1280,720">
+  <screen name="HarddiskSelection" flags="wfNoBorder" position="0,0" size="1280,720">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -1027,7 +1037,7 @@
     <widget name="hddlist" position="520,82" size="755,583" font="Regular;22" transparent="1" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="HarddiskSetup" title="HDD setup" flags="wfNoBorder" position="0,0" size="1280,720">
+  <screen name="HarddiskSetup" flags="wfNoBorder" position="0,0" size="1280,720">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -1045,7 +1055,7 @@
     <widget name="bus" position="590,170" size="380,25" font="Regular;22" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="HarddiskWait" title="Harddisk Wait" flags="wfNoBorder" position="0,0" size="1280,720">
+  <screen name="HarddiskWait" flags="wfNoBorder" position="0,0" size="1280,720">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -1060,7 +1070,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ## Input & Output Boxes ## -->
-  <screen name="SelectPath" title="Select path" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="SelectPath" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -1079,7 +1089,7 @@
     <widget name="filelist" position="520,120" size="755,545" itemHeight="30" backgroundColor="background" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="RecordPathsSettings" title="Recording paths" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="RecordPathsSettings" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -1112,7 +1122,7 @@
     <widget name="theClock" position="590,160" size="280,50" />
     <widget name="title" position="590,220" size="280,50" />
   </screen>
-  <screen flags="wfNoBorder" name="ParentalControlChangePin" position="0,0" size="1280,720" title="Change pin code">
+  <screen flags="wfNoBorder" name="ParentalControlChangePin" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -1126,7 +1136,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,82" size="755,583" enableWrapAround="1" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="ParentalControlEditor" position="0,0" size="1280,720" title="Parental control services Editor">
+  <screen flags="wfNoBorder" name="ParentalControlEditor" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -1144,7 +1154,7 @@
     <eLabel text="OK" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="ParentalControlSetup" position="0,0" size="1280,720" title="Parental control setup">
+  <screen flags="wfNoBorder" name="ParentalControlSetup" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -1163,7 +1173,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- VideoSetup (VideoMode Plugin) -->
-  <screen name="VideoSetup" flags="wfNoBorder" position="0,0" size="1280,720" title="Video Setup">
+  <screen name="VideoSetup" flags="wfNoBorder" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
@@ -1220,7 +1230,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ##JobView## -->
-  <screen flags="wfNoBorder" name="JobView" position="0,0" size="1280,720" title="Job View">
+  <screen flags="wfNoBorder" name="JobView" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -1260,7 +1270,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ##Pin input## -->
-  <screen flags="wfNoBorder" name="PinInput" position="0,0" size="1280,720" title="Pin code needed">
+  <screen flags="wfNoBorder" name="PinInput" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -1278,7 +1288,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ##TextBox## -->
-  <screen flags="wfNoBorder" name="TextBox" position="0,0" size="1280,720" title="Message">
+  <screen flags="wfNoBorder" name="TextBox" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -1293,7 +1303,7 @@
     <eLabel text="'Exit' = Leave message" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="320,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="MessageBox" title="Message" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="MessageBox" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -1347,7 +1357,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,82" size="755,583" font="Regular;22" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="LanguageSelection" title="Language selection" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="LanguageSelection" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -1428,7 +1438,7 @@
     <widget source="introduction" render="Label" position="5,380" size="477,200" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="secondFG" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="Console" title="Command execution" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="Console" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -1442,7 +1452,7 @@
     <widget name="text" position="520,82" size="755,583" font="Console;19" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="InputBox" position="0,0" size="1280,720" title="InputBox">
+  <screen flags="wfNoBorder" name="InputBox" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -1457,7 +1467,7 @@
     <widget name="input" position="590,150" size="600,30" font="Regular;24" halign="center" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="Kernel" position="0,0" size="1280,720" title="Messages from Kernel">
+  <screen flags="wfNoBorder" name="Kernel" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -1573,7 +1583,7 @@
     <widget name="channel" position="0,-200" size="150,60" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="3" valign="center" halign="center" />
     <widget name="number" position="34,-200" size="280,60" backgroundColor="transparent" transparent="1" font="Regular;36" borderColor="black" borderWidth="3" valign="center" halign="center" />
   </screen>
-  <screen name="Subtitles" title="Subtitle selection" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="Subtitles" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -1667,7 +1677,7 @@
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
   </screen>
-  <screen flags="wfNoBorder" name="TimeshiftLocationBox" position="0,0" size="1280,720" title="TimeshiftLocationBox">
+  <screen flags="wfNoBorder" name="TimeshiftLocationBox" position="0,0" size="1280,720" >
    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -1693,7 +1703,7 @@
   <screen name="PVRState" position="40,100" size="150,30" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
     <widget name="state" position="0,0" size="150,30" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" halign="center" />
   </screen>
-  <screen name="BouquetSelector" title="Choose bouquet" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="BouquetSelector" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -1722,7 +1732,7 @@
     <widget name="key0" position="122,122" size="210,40" font="Console;20" valign="center" halign="center" />
     <widget name="help2" position="332,122" size="120,40" font="Console;20" valign="center" halign="center" />
   </screen>
-  <screen name="VirtualKeyBoard" title="Virtual KeyBoard" position="3,0" size="1280,720" zPosition="99" flags="wfNoBorder">
+  <screen name="VirtualKeyBoard" position="3,0" size="1280,720" zPosition="99" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -1749,7 +1759,7 @@
       <convert type="ServiceName">Name</convert>
     </widget>
   </screen>
-  <screen name="SleepTimerEdit" title="Sleep Timer" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="SleepTimerEdit" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -1795,7 +1805,7 @@
     <eLabel text="'Text' = Virtual Keyboard" backgroundColor="secondBG" font="Regular;22" halign="left" position="305,682" size="290,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="ChannelSelectionRadio" position="0,0" size="1280,502" title="Channel Selection">
+  <screen flags="wfNoBorder" name="ChannelSelectionRadio" position="0,0" size="1280,502" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
@@ -1919,7 +1929,7 @@
     <widget name="subpages_9" position="635,350" size="36,20" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="EPGSelectionMulti" title="EPG Selection" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="EPGSelectionMulti" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -1955,7 +1965,7 @@
     <widget name="more_button_sel" pixmap="Magic-HD-Common/border/epg_next_on.png" position="960,115" zPosition="3" size="180,40" alphatest="blend" />
     <widget name="more_text" position="960,115" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="MORE" font="Regular;20" valign="center" halign="center" />
   </screen>
-  <screen flags="wfNoBorder" name="SelectBouquet" position="0,0" size="1280,720" title="Choose bouquet">
+  <screen flags="wfNoBorder" name="SelectBouquet" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
@@ -1969,7 +1979,7 @@
     <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="LocationBox" title="Location Box" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="LocationBox" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -1993,7 +2003,7 @@
     <widget name="key_blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
   </screen>
   <!-- ## Timers ## -->
-  <screen name="TimerSelection" title="Timer selection" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="TimerSelection" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2007,7 +2017,7 @@
     <widget name="timerlist" position="520,82" size="755,583" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="TimerEntry" title="Timer entry" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="TimerEntry" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2025,7 +2035,7 @@
     <widget name="oktext" position="340,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="TimerEdit" title="Timer Edit" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="TimerEdit" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2044,7 +2054,7 @@
     <widget name="apply" position="929,325" size="250,35" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="TimerEditList" title="Timer Overview" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="TimerEditList" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2068,7 +2078,7 @@
     <widget name="timerlist" position="520,82" size="755,578" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="TimerLog" title="Timer log" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="TimerLog" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2090,7 +2100,7 @@
     <widget name="loglist" position="520,90" size="755,275" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <widget name="logentry" position="5,385" size="1270,285" font="Regular;22" />
   </screen>
-  <screen name="TimerSanityConflict" title="Timer sanity error" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="TimerSanityConflict" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2114,7 +2124,7 @@
     <widget name="timer2" position="520,90" size="755,320" scrollbarMode="showNever" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
   </screen>
   <!-- ## Setup ## -->
-  <screen name="WebIfConfigScreen" title="Main Setup" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="WebIfConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2134,7 +2144,7 @@
     <widget name="config" position="520,82" size="755,583" font="Regular;22" backgroundColor="darkgrey" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="WebIfInterfaceConfigScreen" title="Edit Interface" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="WebIfInterfaceConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2154,7 +2164,7 @@
     <widget name="config" position="520,82" size="755,583" backgroundColor="darkgrey" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="WebIfInterfaceListConfigScreen" title="List of configured Interfaces" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="WebIfInterfaceListConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2181,7 +2191,8 @@
     <widget name="ifacelist" position="520,180" size="755,485" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="PluginBrowser" title="Plugin browser" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="PluginBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
@@ -2195,11 +2206,10 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="green" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
     <widget name="list" position="520,82" size="755,550" font="Regular;30" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="49" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="PluginDownloadBrowser" title="Downloadable plugins" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="PluginDownloadBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2247,7 +2257,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- BlindScan -->
-  <screen flags="wfNoBorder" name="Blindscan" position="0,0" size="1280,720" title="Hardware Blindscan">
+  <screen flags="wfNoBorder" name="Blindscan" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -2266,7 +2276,7 @@
     <widget name="introduction" position="5,400" size="477,120" font="Regular;22" selectionDisabled="1" transparent="1" foregroundColor="secondFG" valign="center" halign="center" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="VideoFinetune" title="VideoFinetune" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="VideoFinetune" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2285,7 +2295,7 @@
     <ePixmap pixmap="skin_default/buttons/key_5.png" zPosition="2" position="90,560" size="35,25" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="SkinSelector" title="Choose your Skin" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="SkinSelector" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2305,7 +2315,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ##Softwaremanager## -->
- <screen flags="wfNoBorder" name="SoftwareManagerSetup" position="0,0" size="1280,720" title="SoftwareManager setup">
+ <screen flags="wfNoBorder" name="SoftwareManagerSetup" position="0,0" size="1280,720" >
    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -2328,7 +2338,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <widget source="introduction" render="Label" position="20,400" size="477,250" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="secondFG" transparent="1" />
   </screen>
-  <screen name="BackupScreen" title="Backup is running" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="BackupScreen" position="0,0" size="1280,720" flags="wfNoBorder">
     <widget name="config" position="520,82" size="755,583" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
@@ -2342,7 +2352,7 @@
     <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="BackupSelection" title="Select files/folders to backup" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="BackupSelection" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2362,7 +2372,7 @@
     <widget name="checkList" position="520,82" size="755,583" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="Ipkg" title="Installing Software" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="Ipkg" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2379,7 +2389,7 @@
     <widget name="activityslider" position="44,594" size="1194,6" pixmap="Magic-HD-Common/window/slider100.png" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="IpkgInstaller" title="Ipkg Installer" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="IpkgInstaller" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2398,7 +2408,7 @@
     <widget source="introduction" render="Label" position="590,430" size="600,27" backgroundColor="grey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" foregroundColor="white" font="Regular;24" halign="center" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="IPKGMenu" title="Select IPKG source" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="IPKGMenu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2416,7 +2426,7 @@
     <widget name="filelist" position="590,120" size="600,300" font="Fixed;24" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="IPKGSource" title="IPKG source" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="IPKGSource" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2434,7 +2444,7 @@
     <widget name="text" position="70,400" size="1150,30" font="Fixed;23" zPosition="3" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="PacketManager" title="IPKG upgrade" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="PacketManager" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2464,7 +2474,7 @@
     </widget>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="UpdatePlugin" title="Software Update" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="UpdatePlugin" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2481,7 +2491,7 @@
     <widget name="activityslider" position="49,609" size="1194,6" pixmap="Magic-HD-Common/window/slider100.png" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="SoftwareUpdateChanges" position="0,0" size="1280,720" title="SoftwareUpdate Changes">
+  <screen flags="wfNoBorder" name="SoftwareUpdateChanges" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -2501,7 +2511,7 @@
     <widget name="text" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="UpdatePluginMenu" title="Softwaremanager" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="UpdatePluginMenu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2536,7 +2546,7 @@
     </widget>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="PluginManager" title="Plugin manager" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="PluginManager" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2577,7 +2587,7 @@
     <widget source="status" render="Label" position="15,400" size="447,200" foregroundColor="secondFG" transparent="1" font="Regular;22" halign="center" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="PluginManagerInfo" title="Plugin manager activity" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="PluginManagerInfo" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2607,7 +2617,7 @@
     <widget source="status" render="Label" position="520,682" size="755,25" backgroundColor="background" transparent="1" font="Regular;22" foregroundColor="grey" halign="center" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="PluginManagerHelp" title="Plugin manager help" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="PluginManagerHelp" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2634,7 +2644,7 @@
     </widget>
     <widget source="status" render="Label" position="15,400" size="447,250" foregroundColor="secondFG" transparent="1" font="Regular;22" halign="center" />
   </screen>
-  <screen flags="wfNoBorder" name="PluginDetails" position="0,0" size="1280,720" title="Plugin Details">
+  <screen flags="wfNoBorder" name="PluginDetails" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" backgroundColor="secondBG" font="Regular;25" position="15,15" render="Label" size="700,50" transparent="1" valign="center" zPosition="1" />
@@ -2656,7 +2666,7 @@
      <widget name="detailtext" position="15,385" size="477,200" font="Regular;22" backgroundColor="background" halign="center" foregroundColor="grey" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="RestoreScreen" title="Restore is running" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="RestoreScreen" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2670,7 +2680,7 @@
     <widget name="config" position="520,82" size="755,583" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="RestoreMenu" title="Restore Backups" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="RestoreMenu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2710,7 +2720,7 @@
     <widget name="detailtext" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="SystemMessage" position="0,0" size="1280,720" title="System Message">
+  <screen flags="wfNoBorder" name="SystemMessage" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
@@ -2726,7 +2736,8 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ##VideoEnhancement## -->
-  <screen name="VideoEnhancementPreview" position="center,360" size="560,170" title="VideoEnhancementPreview">
+  <screen name="VideoEnhancementPreview" position="center,360" size="560,170" >
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
     <ePixmap pixmap="skin_default/buttons/red.png" position="0,0" size="140,40" alphatest="on" />
     <ePixmap pixmap="skin_default/buttons/green.png" position="140,0" size="140,40" alphatest="on" />
     <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
@@ -2735,7 +2746,7 @@
     <ePixmap pixmap="skin_default/div-h.png" position="0,130" zPosition="1" size="560,2" />
     <widget source="introduction" render="Label" position="0,140" size="550,25" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="#25062748" transparent="1" />
   </screen>
-  <screen name="VideoEnhancementSetup" title="VideoEnhancementSetup" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="VideoEnhancementSetup" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2759,7 +2770,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ##NetWorkmanager## -->
-  <screen name="NetworkSetup" title="Network Setup" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="NetworkSetup" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2795,7 +2806,7 @@
     <widget name="statuspic" position="525,645" size="35,25" transparent="1" zPosition="10" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_off.png" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="AdapterSetup" title="Network Setup" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="AdapterSetup" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2830,7 +2841,7 @@
     <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="50,410" size="1,1" transparent="1" zPosition="1" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="NameserverSetup" title="Nameserver Setup" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2851,7 +2862,7 @@
     <widget source="introduction" render="Label" position="850,682" size="477,26" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;21" halign="left" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-    <screen name="NetworkAdapterTest" title="Network test" position="0,0" size="1280,720" flags="wfNoBorder">
+    <screen name="NetworkAdapterTest" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2898,7 +2909,25 @@
     <widget name="InfoText" position="520,82" size="755,350" zPosition="25" font="Regular;21" />
     <widget name="InfoTextBorder" position="520,82" size="755,350" />
   </screen>
-  <screen name="NetworkBrowser" title="Network Neighbourhood" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="NetworkMountsMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+    <widget source="key_red" render="Label" position="50,682" size="220,26" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
+    <widget name="menulist" position="520,82" size="755,550" itemHeight="32" font="Regular;22" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
+    <widget source="introduction" render="Label" position="5,385" size="477,200" transparent="1" font="Regular;21" valign="center" halign="center" foregroundColor="secondFG" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="NetworkBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2935,7 +2964,7 @@
     <widget source="infotext" render="Label" position="5,500" size="477,70" transparent="1" zPosition="10" font="Regular;22" valign="center" halign="center" foregroundColor="grey" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="ScanIP" title="Scan IP" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="ScanIP" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -2955,7 +2984,7 @@
     <widget name="config" position="590,110" size="600,100" font="Regular;22" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="NetworkAdapterSelection" title="Select Network Adapter" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="NetworkAdapterSelection" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
@@ -2986,7 +3015,7 @@
     <widget source="introduction" render="Label" position="15,605" size="1100,60" transparent="1" zPosition="10" font="Regular;21" valign="center" halign="center" />
   </screen>
   <!-- ##AutoMount## -->
-  <screen name="AutoMountView" title="MountView" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="AutoMountView" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -3022,7 +3051,7 @@
     <widget source="introduction" render="Label" position="840,682" size="420,22" transparent="1" zPosition="10" font="Regular;22" valign="center" halign="center" foregroundColor="grey" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="AutoMountManager" title="MountManager" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="AutoMountManager" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -3050,7 +3079,7 @@
     </widget>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="AutoMountEdit" title="MountEdit" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="AutoMountEdit" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -3070,7 +3099,7 @@
 		<eLabel text="'Text' = Virtual Keyboard" backgroundColor="secondBG" font="Regular;22" halign="left" position="305,682" size="300,26" transparent="1" zPosition="1" foregroundColor="grey" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="devicesMount" position="0,0" size="1280,720" title="Devices">
+  <screen flags="wfNoBorder" name="devicesMount" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -3097,7 +3126,7 @@
     </widget>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="UserManager" position="0,0" size="1280,720" title="User Manager">
+  <screen flags="wfNoBorder" name="UserManager" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3127,7 +3156,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ## W-LAN ## -->
-  <screen flags="wfNoBorder" name="WlanStatus" position="0,0" size="1280,720" title="Wireless Network State">
+  <screen flags="wfNoBorder" name="WlanStatus" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
@@ -3157,7 +3186,7 @@
     <widget name="statuspic" position="993,600" size="25,24" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" transparent="1" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="WlanScan" position="0,0" size="1280,720" title="Choose a Wireless Network">
+  <screen flags="wfNoBorder" name="WlanScan" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
@@ -3189,7 +3218,7 @@
     </widget>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="NetworkInadyn" position="0,0" size="1280,720" title="Inadyn Manager">
+  <screen flags="wfNoBorder" name="NetworkInadyn" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3228,7 +3257,7 @@
     <widget name="labsys" position="860,383" size="310,30" font="Regular;20" valign="center" backgroundColor="background"/>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="NetworkInadynSetup" position="0,0" size="1280,720" title="Inadyn Setup">
+  <screen flags="wfNoBorder" name="NetworkInadynSetup" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3246,7 +3275,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,435" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="NetworkInadynLog" position="0,0" size="1280,720" title="Inadyn Log">
+  <screen flags="wfNoBorder" name="NetworkInadynLog" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3261,7 +3290,7 @@
     <widget name="infotext" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="NetworkVpnLog" position="0,0" size="1280,720" title="OpenVPN Log">
+  <screen flags="wfNoBorder" name="NetworkVpnLog" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3275,7 +3304,7 @@
     <widget name="infotext" font="Regular;22" position="590,110" size="600,500" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="NetworkServiceSetup" position="0,0" size="1280,720" title="NetworkService Setup">
+  <screen flags="wfNoBorder" name="NetworkServiceSetup" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3301,7 +3330,7 @@
     <widget name="labrun" position="780,260" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="NetworkuShare" position="0,0" size="1280,720" title="Network uShare">
+  <screen flags="wfNoBorder" name="NetworkuShare" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3350,7 +3379,7 @@
     <widget name="dlnaactive" position="800,560" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="NetworkMiniDLNA" position="0,0" size="1280,720" title="MiniDLNA Manager">
+  <screen flags="wfNoBorder" name="NetworkMiniDLNA" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3395,7 +3424,7 @@
     <widget name="dlnainactive" position="800,560" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="NetworkMiniDLNASetup" position="0,0" size="1280,720" title="MiniDLNA Setup">
+  <screen flags="wfNoBorder" name="NetworkMiniDLNASetup" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3415,7 +3444,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="NetworkuShareSetup" position="0,0" size="1280,720" title="Network uShare Setup">
+  <screen flags="wfNoBorder" name="NetworkuShareSetup" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3435,7 +3464,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="NetworkuShareLog" position="0,0" size="1280,720" title="uShare Log">
+  <screen flags="wfNoBorder" name="NetworkuShareLog" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3449,7 +3478,7 @@
     <widget name="infotext" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;20" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="uShareSelection" position="0,0" size="1280,720" title="uShare Selection">
+  <screen flags="wfNoBorder" name="uShareSelection" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3469,7 +3498,7 @@
     <widget name="checkList" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="NetworkTelnet" position="0,0" size="1280,720" title="Telnet Setup">
+  <screen flags="wfNoBorder" name="NetworkTelnet" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3490,7 +3519,7 @@
     <widget name="labrun" position="780,260" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="NetworkFtp" position="0,0" size="1280,720" title="FTP Setup">
+  <screen flags="wfNoBorder" name="NetworkFtp" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3512,7 +3541,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ##Common interface## -->
-  <screen flags="wfNoBorder" name="ScSelection" position="0,0" size="1280,720" title="Softcam Setup">
+  <screen flags="wfNoBorder" name="ScSelection" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
@@ -3530,7 +3559,7 @@
     <widget name="entries" font="Regular;22" position="520,82" size="755,583" transparent="1" itemHeight="28" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="CamControl" position="0,0" size="1280,720" title="Softcam Setup">
+  <screen flags="wfNoBorder" name="CamControl" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
@@ -3544,7 +3573,7 @@
     <widget name="entries" font="Regular;22" position="520,82" size="755,583" transparent="1" itemHeight="28" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="ConfigAction" position="0,0" size="1280,720" title="Cam selection">
+  <screen flags="wfNoBorder" name="ConfigAction" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -3558,7 +3587,7 @@
     <widget source="list" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,82" size="755,583" transparent="1" itemHeight="28" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="CamSelectMenu" position="0,0" size="1280,720" title="Cam selection menu">
+  <screen flags="wfNoBorder" name="CamSelectMenu" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -3580,7 +3609,7 @@
     <widget source="list" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,82" size="755,583" transparent="1" itemHeight="28" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="MMIDialog" position="0,0" size="1280,720" title="MMIDialog">
+  <screen flags="wfNoBorder" name="MMIDialog" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -3597,7 +3626,7 @@
     <widget name="bottom" position="590,330" size="600,25" font="Regular;23" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="CiSelection" title="Common Interface" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="CiSelection" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -3612,7 +3641,7 @@
     <widget name="entries" position="590,180" size="600,375" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="CIselectMainMenu" title="CI Assignment" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="CIselectMainMenu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -3630,7 +3659,7 @@
     <widget source="key_green" render="Label" position="340,682" size="220,26" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="CIconfigMenu" title="CI Assignment" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="CIconfigMenu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -3660,10 +3689,6 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  
-  
-  
-  
   <screen name="easyCIconfigMenu" title="CI Assignment" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
@@ -3712,7 +3737,7 @@
     <widget source="introduction" render="Label" position="590,600" size="600,27" backgroundColor="grey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" foregroundColor="white" font="Regular;24" halign="center" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXSoftcamMenu" position="0,0" size="1280,720" title="Softcam Manager Setup">
+  <screen flags="wfNoBorder" name="VIXSoftcamMenu" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget name="Title" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3730,7 +3755,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXSoftcamManager" position="0,0" size="1280,720" title="Softcam Manager">
+  <screen flags="wfNoBorder" name="VIXSoftcamManager" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3760,7 +3785,7 @@
       </applet>
    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXSoftcamLog" position="0,0" size="1280,720" title="Softcam Manager Log">
+  <screen flags="wfNoBorder" name="VIXSoftcamLog" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget name="Title" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3775,7 +3800,7 @@
     <widget name="list" font="Regular;18" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXAutoStartCam" position="0,0" size="1280,720" title="Softcam Autotart">
+  <screen flags="wfNoBorder" name="VIXAutoStartCam" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3792,7 +3817,7 @@
     <widget name="lab1" position="560,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXStartCam" position="0,0" size="1280,720" title="Softcam Starting...">
+  <screen flags="wfNoBorder" name="VIXStartCam" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3807,7 +3832,7 @@
     <widget name="lab1" position="560,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0" />
   <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXStopCam" position="0,0" size="1280,720" title="Softcam Stopping..">
+  <screen flags="wfNoBorder" name="VIXStopCam" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3824,7 +3849,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ##TunerSetUp## -->
-  <screen name="NimSelection" title="Choose Tuner" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="NimSelection" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -3848,7 +3873,7 @@
     </widget>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="NimSetup" title="Reception Settings" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="NimSetup" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -3862,7 +3887,7 @@
     <widget name="config" position="520,82" size="755,583" backgroundColor="darkgrey" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" itemHeight="28" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="ScanSetup" title="Service scan" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="ScanSetup" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -3877,7 +3902,7 @@
     <widget name="introduction" position="10,400" size="477,100" font="Regular;22" selectionDisabled="1" transparent="1" foregroundColor="secondFG" halign="center" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="ScanSimple" title="Service scan" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="ScanSimple" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -3893,7 +3918,7 @@
     <widget name="footer" position="10,400" size="477,100" font="Regular;22" selectionDisabled="1" transparent="1" foregroundColor="secondFG" halign="center" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="ServiceScan" title="Service scan" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="ServiceScan" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -3912,7 +3937,7 @@
     <widget name="servicelist" position="590,260" size="660,410" backgroundColor="darkgrey" selectionDisabled="1" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="SatNimSelection" position="0,0" size="1280,720" title="Choose Tuner">
+  <screen flags="wfNoBorder" name="SatNimSelection" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -3926,7 +3951,7 @@
     <widget name="nimlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="32" font="Regular;24" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="Satfinder" title="Satfinder" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="Satfinder" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
     <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
@@ -3983,7 +4008,7 @@
     <widget name="config" position="550,300" size="660,400" backgroundColor="darkgrey" transparent="1" itemHeight="40" font="Regular;32" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <widget name="introduction" position="0,0" size="0,0" />
     </screen>
-  <screen name="PositionerSetup" title="Positioner setup" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="PositionerSetup" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -4020,7 +4045,7 @@
     <widget name="fec_value" position="1110,520" size="100,24" backgroundColor="darkgrey" transparent="1" font="Regular;21" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="TunerScreen" title="Tune" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="TunerScreen" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -4037,7 +4062,7 @@
     <eLabel text="Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="FastScanScreen" position="0,0" size="1280,720" title="Fast Scan">
+  <screen flags="wfNoBorder" name="FastScanScreen" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
@@ -4052,7 +4077,7 @@
     <widget name="introduction" font="Regular;22" position="10,400" size="477,100" halign="center" selectionDisabled="1" foregroundColor="secondFG" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="FastScanStatus" position="0,0" size="1280,720" title="Fast Scan">
+  <screen flags="wfNoBorder" name="FastScanStatus" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
@@ -4068,7 +4093,7 @@
     <widget name="scan_progress" position="660,145" size="400,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="black" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="CableScanScreen" position="0,0" size="1280,720" title="Cable Scan">
+  <screen flags="wfNoBorder" name="CableScanScreen" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -4083,7 +4108,7 @@
     <widget name="introduction" position="10,450" size="477,75" font="Regular;20" halign="center" foregroundColor="secondFG" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="CableScanStatus" position="0,0" size="1280,720" title="Cable Scan">
+  <screen flags="wfNoBorder" name="CableScanStatus" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -4113,7 +4138,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ##Wizards## -->
-  <screen name="NetworkWizard" title="Welcome" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="NetworkWizard" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -4137,7 +4162,7 @@
     <widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
     <widget name="HelpWindow" pixmap="skin_default/buttons/key_text.png" position="125,170" zPosition="1" size="1,1" transparent="1" alphatest="on" />
   </screen>
-  <screen name="DefaultWizard" title="Wizard" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="DefaultWizard" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -4161,7 +4186,7 @@
     <widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" transparent="1" zPosition="11" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="DefaultSatLists" title="Default Sat-Lists" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="DefaultSatLists" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -4200,7 +4225,7 @@
     <widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" transparent="1" zPosition="11" alphatest="on" />
     <widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
   </screen>
-  <screen name="LanguageWizard" title="Language Wizard" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="LanguageWizard" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -4231,7 +4256,7 @@
     <widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="HelpMenu" title="Help" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="HelpMenu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -4251,7 +4276,7 @@
     <widget name="long_key" position="123,482" size="350,50" foregroundColor="yellow" font="Regular;25" halign="right" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="VideoWizard" title="Welcome" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="VideoWizard" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -4277,7 +4302,7 @@
     <widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" transparent="1" zPosition="11" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="ImageWizard" title="Welcome" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="ImageWizard" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -4304,7 +4329,7 @@
     <widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="TutorialWizard" title="Welcome" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="TutorialWizard" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -4323,7 +4348,7 @@
     <widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="StartWizard" title="Welcome" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="StartWizard" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -4712,7 +4737,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ## AC3LipSyncSetup	## -->
-  <screen flags="wfNoBorder" name="AC3LipSyncSetup" position="0,0" size="1280,720" title="AC3 Lip Sync Setup">
+  <screen flags="wfNoBorder" name="AC3LipSyncSetup" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -4730,7 +4755,7 @@
     <widget name="PluginInfo" position="15,385" size="477,270" zPosition="4" font="Regular;21" foregroundColor="secondFG" />
   </screen>
   <!-- ##AutomaticVolumeAdjustmentConfigScreen## -->
-   <screen flags="wfNoBorder" name="AutomaticVolumeAdjustmentConfigScreen" position="0,0" size="1280,720" title="Automatic VolumeAdjustment ConfigScreen">
+   <screen flags="wfNoBorder" name="AutomaticVolumeAdjustmentConfigScreen" position="0,0" size="1280,720" >
    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -4750,7 +4775,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;24" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="AutomaticVolumeAdjustmentEntriesListConfigScreen" position="0,0" size="1280,720" title="Automatic VolumeAdjustment EntriesList ConfigScreen">
+  <screen flags="wfNoBorder" name="AutomaticVolumeAdjustmentEntriesListConfigScreen" position="0,0" size="1280,720" >
    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -4774,7 +4799,7 @@
 		<widget name="entrylist" position="520,200" size="755,300" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;24" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="AutomaticVolumeAdjustmentEntryConfigScreen" position="0,0" size="1280,720" title="Automatic VolumeAdjustment Entry ConfigScreen">
+  <screen flags="wfNoBorder" name="AutomaticVolumeAdjustmentEntryConfigScreen" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -4826,7 +4851,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
  </screen>
   <!-- ## CCCam Info ##-->
-  <screen flags="wfNoBorder" name="EcmInfoScreen" position="0,0" size="755,25" title="ECM Info" backgroundColor="transpBlack" zPosition="-1">
+  <screen flags="wfNoBorder" name="EcmInfoScreen" position="0,0" size="755,25" backgroundColor="transpBlack" zPosition="-1">
     <widget name="irdeto" position="0,0" size="15,25" font="Regular;16" text="I" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
     <widget name="seca" position="15,0" size="15,25" font="Regular;16" text="S" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
     <widget name="nagra" position="30,0" size="15,25" font="Regular;16" text="N" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
@@ -4838,7 +4863,7 @@
     <widget name="nds" position="175,0" size="40,25" font="Regular;16" text="NDS" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
     <widget name="ecmInfo" position="225,0" size="530,25" font="Regular;16" valign="center" transparent="1" borderColor="black" borderWidth="2" noWrap="1" />
   </screen>
-  <screen flags="wfNoBorder" name="CCcamInfoMain" position="0,0" size="1280,720" title="CCcam Info Main">
+  <screen flags="wfNoBorder" name="CCcamInfoMain" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;22" position="15,15" size="700,50" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -4851,7 +4876,7 @@
     <eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="CCcamInfoEcmInfoSelection" position="0,0" size="1280,720" title="CCCam Ecm Info">
+  <screen flags="wfNoBorder" name="CCcamInfoEcmInfoSelection" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;26" position="15,15" size="700,50" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -4864,7 +4889,7 @@
     <eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="CCcamInfoInfoScreen" position="0,0" size="1280,720" title="CCcam Info">
+  <screen flags="wfNoBorder" name="CCcamInfoInfoScreen" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;26" position="15,15" size="700,50" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -4877,7 +4902,7 @@
     <eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="CCcamInfoConfigMenu" position="0,0" size="1280,720" title="CCcam Info Config Menu">
+  <screen flags="wfNoBorder" name="CCcamInfoConfigMenu" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;26" position="15,15" size="700,50" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -4888,7 +4913,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,82" size="755,583" font="Regular;22" transparent="1" itemHeight="30" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="CCcamInfoSubMenu" position="0,0" size="1280,720" title="CCcam Info Sub Menu">
+  <screen flags="wfNoBorder" name="CCcamInfoSubMenu" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;26" position="15,15" size="700,50" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -4904,7 +4929,7 @@
     <eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="CCcamInfoServerMenu" position="0,0" size="1280,720" title="CCcam Info Server Menu">
+  <screen flags="wfNoBorder" name="CCcamInfoServerMenu" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;26" position="15,15" size="700,50" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -4920,7 +4945,7 @@
     <eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="CCcamShareViewMenu" position="0,0" size="1280,720" title="CCcam Share View Menu">
+  <screen flags="wfNoBorder" name="CCcamShareViewMenu" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;26" position="15,15" size="700,50" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -4940,7 +4965,7 @@
     <eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,625" size="300,25" alphatest="on" />
   </screen>
-  <screen name="CCcamInfoRemoteBoxMenu" flags="wfNoBorder" position="0,0" size="1280,720" title="CCcam Info RemoteBox Menu">
+  <screen name="CCcamInfoRemoteBoxMenu" flags="wfNoBorder" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;26" position="15,15" size="700,50" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -4959,7 +4984,7 @@
     <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,90" size="755,575" font="Regular;22" transparent="1" itemHeight="30" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="CCcamInfoShareInfo" position="0,0" size="1280,720" title="CCcam Share Info">
+  <screen flags="wfNoBorder" name="CCcamInfoShareInfo" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;26" position="15,15" size="700,50" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -4978,7 +5003,7 @@
     <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,82" size="755,583" transparent="1" enableWrapAround="1"/>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="CCcamInfoConfigSwitcher" position="0,0" size="1280,720" title="CCcam ConfigSwitcher">
+  <screen flags="wfNoBorder" name="CCcamInfoConfigSwitcher" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;26" position="15,15" size="700,50" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -4997,7 +5022,7 @@
     <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,82" size="755,583" font="Regular;22" transparent="1" itemHeight="30" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="EcmInfoConfigMenu" position="0,0" size="1280,720" title="EcmInfo ConfigMenu">
+  <screen flags="wfNoBorder" name="EcmInfoConfigMenu" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,50" halign="left" transparent="1" valign="center" zPosition="1" />
@@ -5012,7 +5037,7 @@
     <eLabel text="Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="CCcamInfoMenuConfig" position="0,0" size="1280,720" title="CCcam Menu Config">
+  <screen flags="wfNoBorder" name="CCcamInfoMenuConfig" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;26" position="15,15" size="700,50" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -5030,7 +5055,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
    <!-- ## Oscam Info ##-->
-  <screen flags="wfNoBorder" name="OscamInfoMenu" position="0,0" size="1280,720" title="OscamInfoMenu">
+  <screen flags="wfNoBorder" name="OscamInfoMenu" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -5044,7 +5069,7 @@
     <widget name="mainmenu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="oscECMInfo" position="0,0" size="1280,720" title="ECM Info">
+  <screen flags="wfNoBorder" name="oscECMInfo" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -5058,7 +5083,7 @@
     <widget name="output" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="OscamInfoConfigScreen" position="0,0" size="1280,720" title="Oscam Info Setup">
+  <screen flags="wfNoBorder" name="OscamInfoConfigScreen" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -5237,7 +5262,7 @@
     <widget name="part1" position="627,596" size="520,25" font="Regular;18" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="Main_Menu" title="" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="Main_Menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -5417,7 +5442,7 @@
     <widget name="acur" position="840,300" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
   </screen>
   <!-- ## IMDB Plugin ## -->
-  <screen name="IMDB" title="IMDb Details" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="IMDB" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -5448,7 +5473,7 @@
     <widget name="statusbar" position="5,450" size="510,190" backgroundColor="darkgrey" transparent="1" font="Regular;18" halign="center" valign="bottom"/>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="IMDbSetup" position="0,0" size="1280,720" title="IMDb Setup">
+  <screen flags="wfNoBorder" name="IMDbSetup" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -5684,7 +5709,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ## Foreca Weather forecast ## -->
-  <screen flags="wfNoBorder" name="CityPanel" position="0,0" size="1280,720" title="CityPanel">
+  <screen flags="wfNoBorder" name="CityPanel" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -5704,7 +5729,7 @@
     <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="ForecaPreview" position="0,0" size="1280,720" title="Foreca Weather Forecast">
+  <screen flags="wfNoBorder" name="ForecaPreview" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Titel" render="Label" position="5,15" zPosition="3" size="968,40" font="Regular;25" valign="center" halign="center" transparent="1" foregroundColor="#ffffff"/>
@@ -5733,7 +5758,7 @@
     <widget name="MainList" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel780x110.png" font="Regular;20" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="SatPanel" position="0,0" size="1280,720" title="Satelliet Beelden">
+  <screen flags="wfNoBorder" name="SatPanel" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -5755,7 +5780,7 @@
     <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel780x110.png" zPosition="3" font="Regular;22" position="520,82" size="755,583" transparent="3" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="SatPanelb" position="0,0" size="1280,720" title="Duitsland">
+  <screen flags="wfNoBorder" name="SatPanelb" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -5769,7 +5794,7 @@
     <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel780x110.png" zPosition="3" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="SatPanelc" position="0,0" size="1280,720" title="Continenten">
+  <screen flags="wfNoBorder" name="SatPanelc" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -5783,7 +5808,7 @@
     <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel780x110.png" font="Regular;22" zPosition="3" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="SatPaneld" position="0,0" size="1280,720" title="Europa">
+  <screen flags="wfNoBorder" name="SatPaneld" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -5797,7 +5822,7 @@
     <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel780x110.png" font="Regular;22" zPosition="3" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="PicSetup" flags="wfNoBorder" position="0,0" size="1280,720" title="SlideShow Settings">
+  <screen name="PicSetup" flags="wfNoBorder" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -5982,7 +6007,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ## EPG importer ## -->
-  <screen flags="wfNoBorder" name="EPGMainSetup" position="0,0" size="1280,720" title="XMLTV Importer Setup">
+  <screen flags="wfNoBorder" name="EPGMainSetup" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -6007,29 +6032,7 @@
     <widget name="status" position="520,575" size="755,60" font="Regular;24" foregroundColor="secondFG" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-<!--  <screen flags="wfNoBorder" name="Config" position="0,0" size="1280,720" title="Configuration">
-    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
-    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
-    <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
-    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,15" size="250,50" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Full</convert>
-    </widget>
-    <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="305,682" size="26,26" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" alphatest="on" position="580,682" size="26,26" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" alphatest="on" position="840,682" size="26,26" />
-    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
-    <widget name="key_red" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-    <widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-    <widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
-    <widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
-    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;24" position="520,82" size="755,583" transparent="1" itemHeight="28" enableWrapAround="1" />
-    <widget name="statusbar" position="15,535" size="470,100" font="Regular;24" foregroundColor="secondFG" />
-    <widget name="status" position="15,380" size="470,150" font="Regular;24" foregroundColor="secondFG" />
-    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
-  </screen>-->
-  <screen flags="wfNoBorder" name="EPGImportSources" position="0,0" size="1280,720" title="EPG Import Sources">
+  <screen flags="wfNoBorder" name="EPGImportSources" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -6048,7 +6051,7 @@
     <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,584" transparent="1" itemHeight="28" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="EPGImportLog" position="0,0" size="1280,720" title="EPG Import Log">
+  <screen flags="wfNoBorder" name="EPGImportLog" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -6063,7 +6066,7 @@
     <widget name="list" font="Regular;22" position="520,82" size="755,584" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="Main_Menu_set" flags="wfNoBorder" position="0,0" size="1280,720" title="Settings">
+  <screen name="Main_Menu_set" flags="wfNoBorder" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -6095,7 +6098,7 @@
 				</convert>
   </screen>
   <!-- ## Autotimer Plugin ## -->
-  <screen flags="wfNoBorder" name="AutoTimerHelp" position="0,0" size="1280,720" title="AutoTimer Help">
+  <screen flags="wfNoBorder" name="AutoTimerHelp" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
@@ -6116,7 +6119,7 @@
     <widget name="detailtext" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="AutoTimerSettings" title="AutoTimer Settings" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="AutoTimerSettings" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -6134,7 +6137,7 @@
     <widget name="config" position="520,82" size="755,583" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" background="background" />
     <widget source="help" render="Label" position="5,385" size="477,270" foregroundColor="secondFG" transparent="1" font="Regular;20" />
   </screen>
-  <screen name="AutoTimerEditor" title="Edit AutoTimer" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="AutoTimerEditor" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -6156,7 +6159,7 @@
     <widget name="config" position="520,82" size="755,583" itemHeight="30" font="Regular;22" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <widget source="help" render="Label" position="5,385" size="477,270" foregroundColor="secondFG" transparent="1" font="Regular;20" />
   </screen>
-  <screen name="AutoTimerFilterEditor" title="Edit AutoTimer Filters" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="AutoTimerFilterEditor" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -6178,7 +6181,7 @@
     <widget name="config" position="520,82" size="755,583" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" background="background" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="AutoTimerServiceEditor" title="Edit AutoTimer Services" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="AutoTimerServiceEditor" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -6200,7 +6203,7 @@
     <widget name="config" position="520,82" size="755,583" itemHeight="30" font="Regular;22" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="AutoTimerImporter" title="Import AutoTimer" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="AutoTimerImporter" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -6222,7 +6225,7 @@
     <widget name="list" position="520,182" size="755,583" itemHeight="30" font="Regular;22" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="AutoTimerOverview" title="AutoTimer Overview" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="AutoTimerOverview" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -7249,7 +7252,7 @@
     <widget name="previewo" position="650,380" size="600,300" zPosition="2" alphatest="blend"/>
   </screen>
  <!-- ## Cross EPG ## -->
-  <screen flags="wfNoBorder" name="CrossEPG_Menu" position="0,0" size="1280,720" title="CrossEPG Menu">
+  <screen flags="wfNoBorder" name="CrossEPG_Menu" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7273,7 +7276,7 @@
     </widget>
      <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="CrossEPG_Setup" position="0,0" size="1280,720" title="CrossEPG Setup">
+  <screen flags="wfNoBorder" name="CrossEPG_Setup" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7290,7 +7293,7 @@
     <widget name="information" position="15,370" size="477,250" halign="center" valign="center" font="Regular;22" foregroundColor="secondFG" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="CrossEPG_Info" position="0,0" size="1280,720" title="CrossEPG Info">
+  <screen flags="wfNoBorder" name="CrossEPG_Info" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7316,7 +7319,7 @@
     <widget name="hashes_count" position="600,433" size="600,25" font="Regular;22" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="CrossEPG_Extra" position="0,0" size="1280,720" title="CrossEPG_Extra">
+  <screen flags="wfNoBorder" name="CrossEPG_Extra" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7338,7 +7341,7 @@
     <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" itemHeight="28" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="CrossEPG_Providers" position="0,0" size="1280,720" title="CrossEPG Providers">
+  <screen flags="wfNoBorder" name="CrossEPG_Providers" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7368,7 +7371,7 @@
     </widget>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="CrossEPG_About" position="0,0" size="1280,720" title="About CrossEPG">
+  <screen flags="wfNoBorder" name="CrossEPG_About" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7386,7 +7389,7 @@
     <widget name="krkadoni_pix" position="200,500" size="70,22" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="CrossEPG_Ordering" position="0,0" size="1280,720" title="CrossEPG Ordering">
+  <screen flags="wfNoBorder" name="CrossEPG_Ordering" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7593,7 +7596,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
 <!-- ## ViX-specific screens ## -->
-  <screen flags="wfNoBorder" name="VIXMenu" position="0,0" size="1280,720" title="VIX Menu">
+  <screen flags="wfNoBorder" name="VIXMenu" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7628,7 +7631,7 @@
     </widget>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXPowerManager" position="0,0" size="1280,720" title="Power Manager">
+  <screen flags="wfNoBorder" name="VIXPowerManager" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7650,7 +7653,7 @@
     <widget name="rebootstatus" position="970,575" size="300,60" font="Regular;20" zPosition="6" halign="center" foregroundColor="secondFG" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXSetup" position="0,0" size="1280,720" title="Setup">
+  <screen flags="wfNoBorder" name="VIXSetup" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7668,7 +7671,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXSwap" position="0,0" size="1280,720" title="Swap Manager">
+  <screen flags="wfNoBorder" name="VIXSwap" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7698,7 +7701,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
 <!-- ## ImageManager ## -->
-  <screen flags="wfNoBorder" name="VIXImageManager" position="0,0" size="1280,720" title="Image Manager">
+  <screen flags="wfNoBorder" name="VIXImageManager" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7727,7 +7730,7 @@
     <eLabel text="'Help' = Download image" position="15,600" size="417,26" backgroundColor="secondBG" foregroundColor="grey" font="Regular;22" halign="left" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="ImageManagerMenu" position="0,0" size="1280,720" title="Image Manager Setup">
+  <screen flags="wfNoBorder" name="ImageManagerMenu" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7748,7 +7751,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
 <!-- ## BackUpManager ## -->
-  <screen flags="wfNoBorder" name="VIXBackupManager" position="0,0" size="1280,720" title="Backup Manager">
+  <screen flags="wfNoBorder" name="VIXBackupManager" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7777,7 +7780,7 @@
     </applet>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXBackupManagerMenu" position="0,0" size="1280,720" title="Backup Manager Setup">
+  <screen flags="wfNoBorder" name="VIXBackupManagerMenu" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7799,7 +7802,7 @@
     <ePixmap pixmap="skin_default/buttons/key_text.png" position="1110,682" zPosition="4" size="35,25" alphatest="on" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXBackupManagerLogView" position="0,0" size="1280,720" title="Release Notesp">
+  <screen flags="wfNoBorder" name="VIXBackupManagerLogView" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7813,7 +7816,7 @@
     <widget name="list" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXCronManager" position="0,0" size="1280,720" title="Cron Manager">
+  <screen flags="wfNoBorder" name="VIXCronManager" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7845,7 +7848,7 @@
    <eLabel text="'OK' = Show details" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="1055,682" size="240,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXSetupCronConf" position="0,0" size="1280,720" title="Cron Manager Setup">
+  <screen flags="wfNoBorder" name="VIXSetupCronConf" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7863,7 +7866,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXIPKInstaller" position="0,0" size="1280,720" title="IPK Installer">
+  <screen flags="wfNoBorder" name="VIXIPKInstaller" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7885,7 +7888,7 @@
 		</applet>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXDevicesPanel" position="0,0" size="1280,720" title="Device Manager">
+  <screen flags="wfNoBorder" name="VIXDevicesPanel" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7919,7 +7922,7 @@
     <widget name="lab1" zPosition="2" position="520,550" size="740,60" font="Regular;24" halign="center" transparent="0" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXDevicePanelConf" position="0,0" size="1280,720" title="DevicePanel Configuration">
+  <screen flags="wfNoBorder" name="VIXDevicePanelConf" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7938,7 +7941,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,550" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXPartitionPanelConf" position="0,0" size="1280,720" title="Choose Device">
+  <screen flags="wfNoBorder" name="VIXPartitionPanelConf" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7968,7 +7971,7 @@
     <widget name="lab1" zPosition="2" position="590,550" size="600,70" font="Regular;24" halign="center" transparent="0" />
    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXScriptRunner" position="0,0" size="1280,720" title="Script Runner">
+  <screen flags="wfNoBorder" name="VIXScriptRunner" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -8016,7 +8019,7 @@
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
   </screen>
-  <screen flags="wfNoBorder" name="VIXEPGBouquetSelector" position="0,0" size="1280,720" title="Choose Bouquet">
+  <screen flags="wfNoBorder" name="VIXEPGBouquetSelector" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -8030,7 +8033,7 @@
     <widget name="menu" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen name="GraphicalEPG" position="center,center" size="1280,720" backgroundColor="background" title="Programme Guide">
+  <screen name="GraphicalEPG" position="center,center" size="1280,720" backgroundColor="background" >
     <widget source="Title" foregroundColor="grey" render="Label" position="5,5" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
     <widget source="global.CurrentTime" render="Label" position="1015,5" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
       <convert type="ClockToText">Full</convert>
@@ -8077,7 +8080,7 @@
     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25" />
     <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
     </screen>
-  <screen name="GraphicalEPGPIG" position="center,center" size="1280,720" title="Programme Guide" flags="wfNoBorder">
+  <screen name="GraphicalEPGPIG" position="center,center" size="1280,720" flags="wfNoBorder">
     <widget source="Title" foregroundColor="grey" render="Label" position="5,5" size="400,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
     <widget source="global.CurrentTime" render="Label" position="1015,5" size="250,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
      <convert type="ClockToText">Full</convert>
@@ -8160,7 +8163,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="LogManager" position="0,0" size="1280,720" title="Log Manager">
+  <screen flags="wfNoBorder" name="LogManager" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -8187,7 +8190,7 @@
   <widget name="LogsSize" position="10,450" size="503,50" font="Regular;22" foregroundColor="secondFG" halign="center" valign="center" transparent="0" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="LogManagerViewLog" position="0,0" size="1280,720" title="Log Manager View Log">
+  <screen flags="wfNoBorder" name="LogManagerViewLog" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -8200,7 +8203,7 @@
     <widget name="list" font="Regular;16" position="10,82" size="1260,555" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="30" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="LogManagerMenu" position="0,0" size="1280,720" title="Log Manager Setup">
+  <screen flags="wfNoBorder" name="LogManagerMenu" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -8221,7 +8224,7 @@
     <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="LogManagerFb" position="0,0" size="1280,720" title="LogManager FileBrowser">
+  <screen flags="wfNoBorder" name="LogManagerFb" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -8236,7 +8239,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
 <!-- ## OSD setup @@ -->
-  <screen flags="wfNoBorder" name="OSDSetup" position="0,0" size="1280,720" title="OSD position setup">
+  <screen flags="wfNoBorder" name="OSDSetup" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -8257,7 +8260,7 @@
     <eLabel text="Use arrows Left/Right to adjust" position="5,450" size="477,50" backgroundColor="secondBG" foregroundColor="grey" font="Regular;22" halign="center" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="OSD3DSetupScreen" position="0,0" size="1280,720" title="OSD 3D-Setup">
+  <screen flags="wfNoBorder" name="OSD3DSetupScreen" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -8313,7 +8316,7 @@
     <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VPS_check_PDC_Screen" position="0,0" size="1280,720" title="VPS-Plugin">
+  <screen flags="wfNoBorder" name="VPS_check_PDC_Screen" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -8327,7 +8330,7 @@
     <widget source="infotext" render="Label" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VPS_Setup" position="0,0" size="1280,720" title="VPS-Plugin">
+  <screen flags="wfNoBorder" name="VPS_Setup" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -8348,7 +8351,7 @@
     <widget source="help" render="Label" font="Regular;22" position="5,375" size="477,250" transparent="1" foregroundColor="secondFG" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VPS_Screen_Info" position="0,0" size="1280,720" title="VPS-Plugin Information">
+  <screen flags="wfNoBorder" name="VPS_Screen_Info" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -8489,7 +8492,7 @@
     <widget source="status" render="Label" position="520,602" zPosition="1" size="740,60" font="Regular;22" halign="center" valign="center" backgroundColor="#a08500" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="ImageManagerDownload" position="0,0" size="1280,720" title="Image Manager Download">
+  <screen flags="wfNoBorder" name="ImageManagerDownload" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -8661,7 +8664,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="OpenWebifConfig" position="0,0" size="1280,720" title="OpenWebif Configuration">
+  <screen flags="wfNoBorder" name="OpenWebifConfig" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
