@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.72 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.73 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -709,8 +709,8 @@
 		<widget source="Gateway" render="Label" position="285,474" size="130,21" zPosition="1" font="Regular;19" transparent="0" backgroundColor="window-bg" />
 		<widget source="Adaptertext" render="Label" position="95,560" size="100,21" zPosition="10" backgroundColor="window-bg" font="Regular;19" transparent="0" />
 		<widget source="Adapter" render="Label" position="180,560" size="235,21" zPosition="10" backgroundColor="window-bg" font="Regular;19" transparent="0" />
-		<ePixmap pixmap="skin_default/div-h.png" position="10,605" zPosition="1" size="503,2" />
-		<widget source="introduction2" render="Label" position="10,616" size="503,30" zPosition="1" font="Regular;20" halign="center" transparent="0" valign="center" backgroundColor="window-bg" />
+		<ePixmap pixmap="skin_default/div-h.png" position="10,610" zPosition="1" size="503,2" />
+		<widget source="introduction2" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
 		<widget name="VKeyIcon" pixmap="ViX_HD_Common/buttons/key_text.png" position="280,663" zPosition="1" size="35,25" transparent="1" alphatest="on" />
 		<widget name="HelpWindow" pixmap="ViX_HD_Common/buttons/vkey_icon.png" position="100,399" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 		<panel name="MenuRed2Panel" />
@@ -720,12 +720,13 @@
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="menulist" position="10,107" size="503,400" itemHeight="36" font="Regular;28" transparent="0" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x503.png" />
-		<widget source="description" render="Label" position="10,575" size="503,70" font="Regular;19" halign="center" valign="bottom" backgroundColor="window-bg" transparent="1" />
-		<widget source="IFtext" render="Label" position="180,667" size="100,20" zPosition="1" font="Regular;20" halign="right" transparent="1" valign="top" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" />
-		<widget source="IF" render="Label" position="285,667" size="220,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" />
+		<ePixmap pixmap="skin_default/div-h.png" position="10,590" zPosition="1" size="503,2" />
+		<widget source="description" render="Label" position="10,595" size="503,50" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
 		<panel name="MenuRed2Panel" />
 		<widget source="Statustext" render="Label" position="75,694" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" />
 		<widget name="statuspic" pixmaps="ViX_HD_Common/buttons/green.png,ViX_HD_Common/buttons/button_off.png" zPosition="10" position="40,690" size="24,24" alphatest="blend" transparent="1" />
+		<widget source="IFtext" render="Label" position="180,667" size="100,20" zPosition="1" font="Regular;20" halign="right" transparent="1" valign="top" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" />
+		<widget source="IF" render="Label" position="285,667" size="220,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" />
 	</screen>
 	<screen name="AudioSelection" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -1498,6 +1499,14 @@ self.autoResize()
 		<panel name="MenuGreen2Panel" />
 		<panel name="MenuYellow2Panel" />
 	</screen>
+	<screen name="NetworkMountsMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
+		<widget name="menulist" position="10,107" size="503,400" itemHeight="38" font="Regular;28" transparent="0" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H38x503.png" />
+		<ePixmap pixmap="skin_default/div-h.png" position="10,610" zPosition="1" size="503,2" />
+		<widget source="introduction" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
+		<panel name="MenuRed2Panel" />
+	</screen>
 	<screen name="NetworkBrowser" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
@@ -1516,24 +1525,24 @@ self.autoResize()
 				}
 			</convert>
 		</widget>
-		<ePixmap pixmap="skin_default/div-h.png" position="10,605" zPosition="1" size="503,2" />
-		<widget source="infotext" render="Label" position="10,616" size="503,30" zPosition="1" font="Regular;21" halign="center" valign="center" backgroundColor="window-bg" transparent="0" />
+		<ePixmap pixmap="skin_default/div-h.png" position="10,610" zPosition="1" size="503,2" />
+		<widget source="infotext" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
 		<panel name="MenuRed2Panel" />
 		<panel name="MenuGreen2Panel" />
 		<panel name="MenuYellow2Panel" />
 		<panel name="MenuBlue2Panel" />
 	</screen>
-	<screen name="AutoMountEdit" position="0,0" size="541,720" title="Mount Edit" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AutoMountEdit" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="config" position="10,107" size="503,250" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" />
-		<ePixmap pixmap="skin_default/div-h.png" position="10,585" zPosition="1" size="503,2" />
-		<widget source="introduction" render="Label" position="10,596" size="503,30" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="window-bg" transparent="0" />
+		<ePixmap pixmap="skin_default/div-h.png" position="10,610" zPosition="1" size="503,2" />
+		<widget source="introduction" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
 		<widget name="VKeyIcon" pixmap="ViX_HD_Common/buttons/key_text.png" position="280,663" zPosition="1" size="35,25" transparent="1" alphatest="on" />
 		<widget name="HelpWindow" pixmap="ViX_HD_Common/buttons/vkey_icon.png" position="100,450" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 		<panel name="MenuRed2Panel" />
 	</screen>
-	<screen name="AutoMountManager" position="0,0" size="541,720" title="Auto Mount Manager" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AutoMountManager" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget source="config" render="Listbox" position="10,107" size="503,450" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png">
@@ -1548,14 +1557,13 @@ self.autoResize()
 				}
 			</convert>
 		</widget>
-		<ePixmap pixmap="skin_default/div-h.png" position="10,585" zPosition="1" size="503,2" />
-		<widget source="introduction" render="Label" position="10,596" size="503,30" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="window-bg" transparent="0" />
+		<ePixmap pixmap="skin_default/div-h.png" position="10,610" zPosition="1" size="503,2" />
+		<widget source="introduction" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
 		<panel name="MenuRed2Panel" />
 	</screen>
-	<screen name="AutoMountView" position="0,0" size="541,720" title="Auto Mount Viewer" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AutoMountView" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
-		<widget source="Title" render="Label" position="10,60" size="385,38" font="Regular;38" foregroundColor="menu-title-frgrnd" backgroundColor="unacacac" transparent="1" />
 		<widget source="legend1" render="Label" position="10,133" zPosition="1" size="130,40" font="Regular;18" halign="center" valign="center" backgroundColor="window-bg" transparent="0" />
 		<widget source="legend2" render="Label" position="145,133" zPosition="1" size="303,40" font="Regular;18" halign="center" valign="center" backgroundColor="window-bg" transparent="0" />
 		<widget source="legend3" render="Label" position="410,133" zPosition="1" size="100,40" font="Regular;18" halign="center" valign="center" backgroundColor="window-bg" transparent="0" />
@@ -1575,18 +1583,17 @@ self.autoResize()
 				}
 			</convert>
 		</widget>
-		<ePixmap pixmap="skin_default/div-h.png" position="10,585" zPosition="1" size="503,2" />
-		<widget source="introduction" render="Label" position="10,596" size="503,30" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="window-bg" transparent="0" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/yellow.png" position="280,663" size="24,24" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="skin_default/div-h.png" position="10,610" zPosition="1" size="503,2" />
+		<widget source="introduction" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
 		<panel name="MenuRed2Panel" />
+		<panel name="MenuYellow2Panel" />
 	</screen>
 	<screen name="UserDialog" position="0,0" size="541,720" title="Enter User" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="config" position="10,107" size="503,200" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" />
-		<ePixmap pixmap="skin_default/div-h.png" position="10,585" zPosition="1" size="503,2" />
-		<widget source="introduction" render="Label" position="10,596" size="503,30" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="window-bg" transparent="0" />
+		<ePixmap pixmap="skin_default/div-h.png" position="10,610" zPosition="1" size="503,2" />
+		<widget source="introduction" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
 		<widget name="VKeyIcon" pixmap="ViX_HD_Common/buttons/key_text.png" position="280,663" zPosition="1" size="35,25" transparent="1" alphatest="on" />
 		<widget name="HelpWindow" pixmap="ViX_HD_Common/buttons/vkey_icon.png" position="100,450" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 		<panel name="MenuRed2Panel" />
@@ -1605,8 +1612,8 @@ self.autoResize()
 				}
 			</convert>
 		</widget>
-		<ePixmap pixmap="skin_default/div-h.png" position="10,585" zPosition="1" size="503,2" />
-		<widget source="introduction" render="Label" position="10,596" size="503,30" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="window-bg" transparent="0" />
+		<ePixmap pixmap="skin_default/div-h.png" position="10,610" zPosition="1" size="503,2" />
+		<widget source="introduction" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
 		<panel name="MenuRed2Panel" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/yellow.png" position="280,663" size="24,24" alphatest="blend" transparent="1" />
 		<widget source="key_yellow" render="Label" position="315,667" size="190,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" valign="top" />
@@ -1904,6 +1911,7 @@ self.autoResize()
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="config" position="10,107" size="503,450" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand" />
+		<ePixmap pixmap="skin_default/div-h.png" position="10,562" zPosition="1" size="503,2" />
 		<widget source="status" render="Label" position="10,567" size="503,75" font="Regular;18" halign="center" valign="bottom" transparent="0" zPosition="1" />
 		<widget name="HelpWindow" pixmap="ViX_HD_Common/buttons/vkey_icon.png" position="60,490" zPosition="1" size="541,720" transparent="1" alphatest="on" />
 		<panel name="MenuRed2Panel" />
