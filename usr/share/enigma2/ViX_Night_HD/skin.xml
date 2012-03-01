@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.73 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.74 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -3390,7 +3390,7 @@ self.autoResize()
 		</widget>
 		<panel name="MenuRed2Panel" />
 	</screen>
-	<screen name="VIXPowerManager" position="0,0" size="541,720" title="Power Manager" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="VIXPowerManager" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="config" position="10,107" size="503,450" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" scrollbarMode="showOnDemand" />
@@ -3401,14 +3401,14 @@ self.autoResize()
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
 	</screen>
-	<screen name="VIXSetup" position="0,0" size="541,720" title="Settings" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="VIXSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="config" position="10,107" size="503,526" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
 	</screen>
-	<screen name="VIXSwap" position="0,0" size="541,720" title="Swap Manager" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="VIXSwap" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="autostart_off" position="40,183" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
@@ -3428,7 +3428,7 @@ self.autoResize()
 		<widget name="key_green" position="75,694" size="190,20" zPosition="1" font="Regular;20" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" halign="left" transparent="1" valign="top" />
 		<widget name="key_yellow" position="315,667" size="190,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" valign="top" />
 	</screen>
-	<screen name="VIXSoftcamManager" position="0,0" size="541,720" title="Softcam Manager" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="VIXSoftcamManager" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="lab1" position="40,270" size="170,20" font="Regular;22" halign="right" zPosition="2" backgroundColor="window-bg" transparent="0" valign="center" />
@@ -3445,38 +3445,37 @@ self.autoResize()
 			self["list"].instance.setItemHeight(25)
 		</applet>
 	</screen>
-	<screen name="VIXSoftcamLog" position="0,0" size="541,720" title="Softcam Manager Log" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="VIXSoftcamLog" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="list" position="10,107" size="503,526" font="Regular;14" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
 	</screen>
-	<screen name="VIXAutoStartCam" position="0,0" size="541,720" title="Softcam Autotart.." flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="VIXAutoStartCam" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
-
 		<widget name="connect" position="220,220" size="64,64" zPosition="2" pixmaps="ViX_HD_Common/busy/busy1.png,ViX_HD_Common/busy/busy2.png,ViX_HD_Common/busy/busy3.png,ViX_HD_Common/busy/busy4.png,ViX_HD_Common/busy/busy5.png,ViX_HD_Common/busy/busy6.png,ViX_HD_Common/busy/busy7.png,ViX_HD_Common/busy/busy8.png,ViX_HD_Common/busy/busy9.png,ViX_HD_Common/busy/busy9.png,ViX_HD_Common/busy/busy10.png,ViX_HD_Common/busy/busy11.png,ViX_HD_Common/busy/busy12.png,ViX_HD_Common/busy/busy13.png,ViX_HD_Common/busy/busy14.png,ViX_HD_Common/busy/busy15.png,ViX_HD_Common/busy/busy17.png,ViX_HD_Common/busy/busy18.png,ViX_HD_Common/busy/busy19.png,ViX_HD_Common/busy/busy20.png,ViX_HD_Common/busy/busy21.png,ViX_HD_Common/busy/busy22.png,ViX_HD_Common/busy/busy23.png,ViX_HD_Common/busy/busy24.png" transparent="1" alphatest="blend" />
 		<widget name="lab1" position="10,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0" />
 	</screen>
-	<screen name="VIXSoftcamMenu" position="0,0" size="541,720" title="Softcam Manager Setup" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="VIXSoftcamMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Timer.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="config" position="10,107" size="503,526" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" zPosition="2" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
 	</screen>
-	<screen name="VIXStartCam" position="0,0" size="541,720" title="Softcam Starting..." flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="VIXStartCam" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="connect" position="220,220" size="64,64" zPosition="2" pixmaps="ViX_HD_Common/busy/busy1.png,ViX_HD_Common/busy/busy2.png,ViX_HD_Common/busy/busy3.png,ViX_HD_Common/busy/busy4.png,ViX_HD_Common/busy/busy5.png,ViX_HD_Common/busy/busy6.png,ViX_HD_Common/busy/busy7.png,ViX_HD_Common/busy/busy8.png,ViX_HD_Common/busy/busy9.png,ViX_HD_Common/busy/busy9.png,ViX_HD_Common/busy/busy10.png,ViX_HD_Common/busy/busy11.png,ViX_HD_Common/busy/busy12.png,ViX_HD_Common/busy/busy13.png,ViX_HD_Common/busy/busy14.png,ViX_HD_Common/busy/busy15.png,ViX_HD_Common/busy/busy17.png,ViX_HD_Common/busy/busy18.png,ViX_HD_Common/busy/busy19.png,ViX_HD_Common/busy/busy20.png,ViX_HD_Common/busy/busy21.png,ViX_HD_Common/busy/busy22.png,ViX_HD_Common/busy/busy23.png,ViX_HD_Common/busy/busy24.png" transparent="1" alphatest="blend" />
 		<widget name="lab1" position="10,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0" />
 	</screen>
-	<screen name="VIXStopCam" position="0,0" size="541,720" title="Softcam Stopping.." flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="VIXStopCam" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="connect" position="220,220" size="64,64" zPosition="2" pixmaps="ViX_HD_Common/busy/busy1.png,ViX_HD_Common/busy/busy2.png,ViX_HD_Common/busy/busy3.png,ViX_HD_Common/busy/busy4.png,ViX_HD_Common/busy/busy5.png,ViX_HD_Common/busy/busy6.png,ViX_HD_Common/busy/busy7.png,ViX_HD_Common/busy/busy8.png,ViX_HD_Common/busy/busy9.png,ViX_HD_Common/busy/busy9.png,ViX_HD_Common/busy/busy10.png,ViX_HD_Common/busy/busy11.png,ViX_HD_Common/busy/busy12.png,ViX_HD_Common/busy/busy13.png,ViX_HD_Common/busy/busy14.png,ViX_HD_Common/busy/busy15.png,ViX_HD_Common/busy/busy17.png,ViX_HD_Common/busy/busy18.png,ViX_HD_Common/busy/busy19.png,ViX_HD_Common/busy/busy20.png,ViX_HD_Common/busy/busy21.png,ViX_HD_Common/busy/busy22.png,ViX_HD_Common/busy/busy23.png,ViX_HD_Common/busy/busy24.png" transparent="1" alphatest="blend" />
 		<widget name="lab1" position="10,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0" />
 	</screen>
-	<screen name="VIXBackupManager" position="0,0" size="541,720" title="Image Manager" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="VIXBackupManager" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="lab1" position="10,107" size="503,50" font="Regular;20" zPosition="2" transparent="0" halign="center" />
@@ -3492,7 +3491,7 @@ self.autoResize()
 			self["list"].instance.setItemHeight(25)
 		</applet>
 	</screen>
-	<screen name="VIXBackupManagerMenu" position="0,0" size="541,720" title="Image Manager" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="VIXBackupManagerMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="config" position="10,107" size="503,435" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
@@ -3505,12 +3504,12 @@ self.autoResize()
 			self["config"].instance.setItemHeight(25)
 		</applet>
 	</screen>
-	<screen name="VIXBackupManagerLogView" position="0,0" size="541,720" title="Release Notes" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="VIXBackupManagerLogView" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="list" position="10,107" size="503,526" font="Regular;15" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
 	</screen>
-	<screen name="VIXImageManager" position="0,0" size="541,720" title="Image Manager" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="VIXImageManager" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="lab1" position="10,107" size="503,50" font="Regular;20" zPosition="2" transparent="0" halign="center" />
@@ -3525,7 +3524,7 @@ self.autoResize()
 			self["list"].instance.setItemHeight(25)
 		</applet>
 	</screen>
-	<screen name="ImageManagerMenu" position="0,0" size="541,720" title="Image Manager" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ImageManagerMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="config" position="10,107" size="503,435" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
@@ -3537,7 +3536,7 @@ self.autoResize()
 			self["config"].instance.setItemHeight(25)
 		</applet>
 	</screen>
-	<screen name="VIXCronManager" position="0,0" size="541,720" title="Cron Manager" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="VIXCronManager" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="lab1" position="10,139" size="100,24" font="Regular;20" valign="center" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
@@ -3555,7 +3554,14 @@ self.autoResize()
 		<panel name="MenuYellow1Panel" />
 		<panel name="MenuBlue1Panel" />
 	</screen>
-	<screen name="VIXSetupCronConf" position="0,0" size="541,720" title="Cron Manager" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="VIXImageManagerSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Timer.png" position="426,10" size="88,88" alphatest="blend" />
+		<widget name="config" position="10,107" size="503,526" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" zPosition="2" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+	</screen>
+	<screen name="VIXSetupCronConf" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="config" position="10,107" size="503,435" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
@@ -3576,7 +3582,7 @@ self.autoResize()
 		<panel name="MenuYellow1Panel" />
 		<panel name="MenuBlue1Panel" />
 	</screen>
-	<screen name="NetworkInadyn" position="0,0" size="541,720" title="Inadyn Manager" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="NetworkInadyn" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="autostart" position="10,139" size="100,24" font="Regular;20" valign="center" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
@@ -3602,7 +3608,7 @@ self.autoResize()
 		<panel name="MenuYellow1Panel" />
 		<panel name="MenuBlue1Panel" />
 	</screen>
-	<screen name="NetworkInadynSetup" position="0,0" size="541,720" title="Inadyn Setup" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="NetworkInadynSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="config" position="10,107" size="503,435" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
@@ -3615,7 +3621,7 @@ self.autoResize()
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="infotext" position="10,107" size="503,533" font="Regular;18" />
 	</screen>
-	<screen name="NetworkTelnet" position="0,0" size="541,720" title="Telnet Setup" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="NetworkTelnet" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="lab1" position="70,140" size="363,80" font="Regular;20" valign="center" transparent="0" />
@@ -3625,7 +3631,7 @@ self.autoResize()
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
 	</screen>
-	<screen name="NetworkFtp" position="0,0" size="541,720" title="FTP Setup" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="NetworkFtp" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="lab1" position="70,140" size="363,80" font="Regular;20" valign="center" transparent="0" />
@@ -3723,13 +3729,6 @@ self.autoResize()
 		<panel name="MenuGreen2Panel" />
 		<panel name="MenuYellow2Panel" />
 	</screen>
-	<screen name="VIXImageManagerSetup" position="0,0" size="541,720" title="Image Manager Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MenuPanel" />
-		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Timer.png" position="426,10" size="88,88" alphatest="blend" />
-		<widget name="config" position="10,107" size="503,526" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" zPosition="2" />
-		<panel name="MenuRed1Panel" />
-		<panel name="MenuGreen1Panel" />
-	</screen>
 	<screen name="EPGMainSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
@@ -3769,22 +3768,22 @@ self.autoResize()
 		<widget name="nodelist" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,107" size="503,450" />
 		<widget name="helptext" position="10,600" size="503,30" valign="center" halign="left" font="Regular;20" />
 	</screen>
-	<screen name="CCcamInfoMain" position="0,0" size="541,720" title="CCcam Info" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="CCcamInfoMain" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="menu" position="10,107" size="503,450" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
 	</screen>
-	<screen name="CCcamInfoEcmInfoSelection" position="0,0" size="541,720" title="CCcam Info" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="CCcamInfoEcmInfoSelection" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="list" position="10,107" size="503,450" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
 	</screen>
-	<screen name="CCcamInfoInfoScreen" position="0,0" size="541,720" title="CCcam Info" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="CCcamInfoInfoScreen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="text" position="10,107" size="503,450" font="Console;17" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
 	</screen>
-	<screen name="CCcamShareViewMenu" position="0,0" size="541,720" title="CCcam Info" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="CCcamShareViewMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="list" position="10,107" size="503,370" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
@@ -3795,26 +3794,26 @@ self.autoResize()
 		<widget name="reshare" position="270,570" size="220,25" halign="right" font="Regular;20" />
 		<widget name="title" position="10,600" size="480,20" halign="center" font="Regular;20" />
 	</screen>
-	<screen name="CCcamInfoSubMenu" position="0,0" size="541,720" title="CCcam Info" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="CCcamInfoSubMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="list" position="10,107" size="503,250" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
 		<eLabel text="" position="10,387" size="503,2" font="Regular;14" backgroundColor="white" />
 		<widget name="info" position="10,395" size="503,165" font="Regular;16" transparent="0" />
 	</screen>
-	<screen name="CCcamInfoServerMenu" position="0,0" size="541,720" title="CCcam Info" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="CCcamInfoServerMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="list" position="10,107" size="503,250" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
 		<eLabel text="" position="10,387" size="503,2" font="Regular;14" backgroundColor="white" />
 		<widget name="info" position="10,395" size="503,165" font="Regular;16" transparent="0" />
 	</screen>
-	<screen name="CCcamInfoConfigMenu" position="0,0" size="541,720" title="CCcam Info" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="CCcamInfoConfigMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="config" position="10,107" size="503,150" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
 	</screen>
-	<screen name="CCcamInfoRemoteBoxMenu" position="0,0" size="541,720" title="CCcam Info" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="CCcamInfoRemoteBoxMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="list" position="10,107" size="503,450" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
@@ -3823,7 +3822,7 @@ self.autoResize()
 		<panel name="MenuYellow1Panel" />
 		<panel name="MenuBlue1Panel" />
 	</screen>
-	<screen name="CCcamInfoShareInfo" position="0,0" size="541,720" title="CCcam Info" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="CCcamInfoShareInfo" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="list" position="10,107" size="503,450" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H60x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
@@ -3832,7 +3831,7 @@ self.autoResize()
 		<panel name="MenuYellow1Panel" />
 		<panel name="MenuBlue1Panel" />
 	</screen>
-	<screen name="CCcamInfoMenuConfig" position="0,0" size="541,720" title="CCcam Info" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="CCcamInfoMenuConfig" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="list" position="10,107" size="503,450" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
@@ -4070,7 +4069,7 @@ self.autoResize()
 		<panel name="MenuYellow1Panel" />
 		<panel name="MenuBlue1Panel" />
 	</screen>
-	<screen name="CrossEPG_Menu" position="0,0" size="541,720" title="CrossEPG" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="CrossEPG_Menu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget source="list" render="Listbox" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,107" size="503,533" scrollbarMode="showOnDemand" enableWrapAround="1">
@@ -4085,14 +4084,15 @@ self.autoResize()
 			</convert>
 		</widget>
 	</screen>
-	<screen name="CrossEPG_Setup" position="0,0" size="541,720" title="CrossEPG Setup" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="CrossEPG_Setup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="config" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,107" size="503,370" scrollbarMode="showOnDemand" enableWrapAround="1" />
-		<widget name="information" position="10,520" size="503,100" halign="center" valign="bottom" font="Regular;17" />
+		<ePixmap pixmap="skin_default/div-h.png" position="10,570" zPosition="1" size="503,2" />
+		<widget name="information" position="10,575" size="503,75" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
 		<panel name="MenuRed1Panel" />
 	</screen>
-	<screen name="CrossEPG_Info" position="0,0" size="541,720" title="CrossEPG Info" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="CrossEPG_Info" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="version" position="50,133" size="448,25" font="Regular;20" />
@@ -4108,7 +4108,7 @@ self.autoResize()
 		<widget name="hashes_count" position="50,433" size="448,25" font="Regular;20" />
 		<panel name="MenuRed1Panel" />
 	</screen>
-	<screen name="CrossEPG_Extra" position="0,0" size="541,720" title="CrossEPG Extra" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="CrossEPG_Extra" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="menu" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,107" size="503,526" scrollbarMode="showOnDemand" />
@@ -4117,7 +4117,7 @@ self.autoResize()
 		<panel name="MenuYellow1Panel" />
 		<panel name="MenuBlue1Panel" />
 	</screen>
-	<screen name="CrossEPG_Providers" position="0,0" size="541,720" title="CrossEPG - Providers" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="CrossEPG_Providers" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget source="list" render="Listbox" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,107" size="503,526" scrollbarMode="showOnDemand">
@@ -4135,7 +4135,7 @@ self.autoResize()
 		<panel name="MenuGreen1Panel" />
 		<panel name="MenuYellow1Panel" />
 	</screen>
-	<screen name="CrossEPG_Ordering" position="0,0" size="541,720" title="CrossEPG - Providers" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="CrossEPG_Ordering" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_VIX.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget source="list" render="Listbox" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,107" size="503,526" scrollbarMode="showOnDemand">
@@ -4153,7 +4153,7 @@ self.autoResize()
 		<panel name="MenuGreen1Panel" />
 		<panel name="MenuYellow1Panel" />
 	</screen>
-	<screen name="CrossEPG_About" position="0,0" size="541,720" title="CrossEPG - About" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="CrossEPG_About" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<widget name="about" position="10,143" size="503,360" font="Regular;16" />
 		<widget name="rytec_pix" position="235,525" size="70,70" />
