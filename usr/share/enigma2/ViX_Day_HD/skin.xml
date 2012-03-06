@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Day-HD Vs 1.77 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Day-HD Vs 1.78 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -656,10 +656,10 @@
 		<ePixmap pixmap="skin_default/div-h.png" position="10,590" zPosition="1" size="503,2" />
 		<widget source="description" render="Label" position="10,595" size="503,50" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
 		<panel name="MenuRed2Panel" />
-		<widget source="Statustext" render="Label" position="75,694" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" />
+		<widget source="Statustext" render="Label" position="75,694" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="menu-buttons-bkgrnd1" foregroundColor="menu-buttons-frgrnd" />
 		<widget name="statuspic" pixmaps="ViX_HD_Common/buttons/green.png,ViX_HD_Common/buttons/button_off.png" zPosition="10" position="40,690" size="24,24" alphatest="blend" transparent="1" />
-		<widget source="IFtext" render="Label" position="180,665" size="100,20" zPosition="1" font="Regular;20" halign="right" transparent="1" valign="top" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" />
-		<widget source="IF" render="Label" position="285,665" size="220,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="menu-buttons-bkgrnd" foregroundColor="menu-buttons-frgrnd" />
+		<widget source="IFtext" render="Label" position="180,665" size="100,20" zPosition="1" font="Regular;20" halign="right" transparent="1" valign="top" backgroundColor="menu-buttons-bkgrnd2" foregroundColor="menu-buttons-frgrnd" />
+		<widget source="IF" render="Label" position="285,665" size="220,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="menu-buttons-bkgrnd2" foregroundColor="menu-buttons-frgrnd" />
 	</screen>
 	<screen name="AudioSelection" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -1125,7 +1125,7 @@ self.autoResize()
 		<widget name="capacity" position="40,168" size="380,25" font="Regular;23" transparent="0" />
 		<widget name="bus" position="40,203" size="380,25" font="Regular;23" transparent="0" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="initializetext" position="75,665" size="190,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" valign="top" />
+		<widget name="initializetext" position="75,665" size="190,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd1" halign="left" transparent="1" valign="top" />
 	</screen>
 	<screen name="HelpMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
@@ -3829,7 +3829,7 @@ self.autoResize()
 		<ePixmap pixmap="ViX_Day_HD/menu/ico_menu_Timer.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="entries" position="10,107" size="503,526" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" colorDisabled="#c80000" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" zPosition="2" enableWrapAround="1" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/key_menu.png" position="36,663" size="35,25" alphatest="blend" transparent="1" />
-		<eLabel text="Setup" position="75,665" size="190,24" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" valign="top" />
+		<eLabel text="Setup" position="75,665" size="190,24" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd1" halign="left" transparent="1" valign="top" />
 		<panel name="MenuGreen2Panel" />
 		<panel name="MenuYellow2Panel" />
 		<panel name="MenuBlue2Panel" />
