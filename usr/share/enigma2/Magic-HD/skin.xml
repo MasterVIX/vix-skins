@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 3.79 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 3.80 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -14,7 +14,9 @@
     <font name="LCD" filename="/usr/share/fonts/lcd.ttf" scale="100" />
     <font name="Console" filename="/usr/share/fonts/tuxtxt.ttf" scale="100" />
     <font name="Fixed" filename="andale.ttf" scale="100" />
-    <font name="Regular" filename="/usr/share/fonts/hd.ttf" scale="100" />
+<!--    <font name="Regular" filename="/usr/share/fonts/hd.ttf" scale="100" />-->
+    <font name="Regular" filename="/usr/share/fonts/nmsbd.ttf" scale="100" />
+    <font name="TEXT" filename="/usr/share/fonts/nmsbd.ttf" scale="100" />
   </fonts>
   <!--  ## Colors ## -->
   <colors>
@@ -1714,18 +1716,18 @@
   </screen>
   <screen name="NumericalTextInputHelpDialog" position="center,450" size="454,164" backgroundColor="background" zPosition="2" flags="wfNoBorder">
     <eLabel position="0,0" size="454,164" backgroundColor="yellowtransparent" zPosition="-1" />
-    <widget name="key1" position="2,2" size="150,40" font="Console;20" valign="center" halign="center" />
-    <widget name="key2" position="152,2" size="150,40" font="Console;20" valign="center" halign="center" />
-    <widget name="key3" position="302,2" size="150,40" font="Console;20" valign="center" halign="center" />
-    <widget name="key4" position="2,42" size="150,40" font="Console;20" valign="center" halign="center" />
-    <widget name="key5" position="152,42" size="150,40" font="Console;20" valign="center" halign="center" />
-    <widget name="key6" position="302,42" size="150,40" font="Console;20" valign="center" halign="center" />
-    <widget name="key7" position="2,82" size="150,40" font="Console;20" valign="center" halign="center" />
-    <widget name="key8" position="152,82" size="150,40" font="Console;20" valign="center" halign="center" />
-    <widget name="key9" position="302,82" size="150,40" font="Console;20" valign="center" halign="center" />
-    <widget name="help1" position="2,122" size="120,40" font="Console;20" valign="center" halign="center" />
-    <widget name="key0" position="122,122" size="210,40" font="Console;20" valign="center" halign="center" />
-    <widget name="help2" position="332,122" size="120,40" font="Console;20" valign="center" halign="center" />
+    <widget name="key1" position="2,2" size="150,40" font="TEXT;20" valign="center" halign="center" />
+    <widget name="key2" position="152,2" size="150,40" font="TEXT;20" valign="center" halign="center" />
+    <widget name="key3" position="302,2" size="150,40" font="TEXT;20" valign="center" halign="center" />
+    <widget name="key4" position="2,42" size="150,40" font="TEXT;20" valign="center" halign="center" />
+    <widget name="key5" position="152,42" size="150,40" font="TEXT;20" valign="center" halign="center" />
+    <widget name="key6" position="302,42" size="150,40" font="TEXT;20" valign="center" halign="center" />
+    <widget name="key7" position="2,82" size="150,40" font="TEXT;20" valign="center" halign="center" />
+    <widget name="key8" position="152,82" size="150,40" font="TEXT;20" valign="center" halign="center" />
+    <widget name="key9" position="302,82" size="150,40" font="TEXT;20" valign="center" halign="center" />
+    <widget name="help1" position="2,122" size="120,40" font="TEXT;20" valign="center" halign="center" />
+    <widget name="key0" position="122,122" size="210,40" font="TEXT;20" valign="center" halign="center" />
+    <widget name="help2" position="332,122" size="120,40" font="TEXT;20" valign="center" halign="center" />
   </screen>
   <screen name="VirtualKeyBoard" position="3,0" size="1280,720" zPosition="99" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
