@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.77 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.78 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -316,7 +316,7 @@
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
 		<widget name="config" position="10,107" size="503,450" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand" />
 		<ePixmap pixmap="skin_default/div-h.png" position="10,562" zPosition="1" size="503,2" />
-		<widget source="status" render="Label" position="10,567" size="503,75" font="Regular;18" halign="center" valign="bottom" transparent="0" zPosition="1" />
+		<widget source="status" render="Label" position="10,567" size="503,75" font="Regular;18" halign="center" valign="center" transparent="0" zPosition="1" />
 		<widget name="HelpWindow" pixmap="ViX_HD_Common/buttons/vkey_icon.png" position="60,440" zPosition="1" size="541,720" transparent="1" alphatest="on" />
 		<panel name="MenuRed2Panel" />
 		<panel name="MenuGreen2Panel" />
@@ -1624,18 +1624,11 @@ self.autoResize()
 		<panel name="FullscreenTitlePanel" />
 		<ePixmap pixmap="ViX_Night_HD/menu/ico_title_Setup.png" position="20,20" size="40,40" alphatest="blend" transparent="1" />
 		<eLabel position="18,80" size="664,580" zPosition="0" backgroundColor="#005c5c5c" />
-		<widget name="config" position="20,82" size="660,576" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x660.png" foregroundColor="window-fg" backgroundColor="black" transparent="0" enableWrapAround="1" />
-		<eLabel position="20,625" size="660,2" foregroundColor="#005d5d5d" backgroundColor="#005c5c5c" zPosition="3" />
-		<widget source="status" render="Label" position="20,630" size="660,30" zPosition="10" font="Regular;18" halign="center" valign="center" transparent="1" />
+		<widget name="config" position="20,82" size="660,516" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x660.png" foregroundColor="window-fg" backgroundColor="black" transparent="0" enableWrapAround="1" />
+		<ePixmap pixmap="skin_default/div-h.png" position="20,600" zPosition="2" size="660,2" />
+		<widget source="status" render="Label" position="20,598" size="660,60" zPosition="1" font="Regular;18" foregroundColor="window-fg" backgroundColor="black" halign="center" valign="center" />
 		<panel name="FullscreenRed2Panel" />
 		<panel name="FullscreenGreen2Panel" />
-	</screen>
-	<screen name="OSD3DSetupScreen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MenuPanel" />
-		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
-		<widget name="config" position="10,107" size="503,496" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
-		<panel name="MenuRed2Panel" />
-		<panel name="MenuGreen2Panel" />
 	</screen>
 	<screen name="ParentalControlChangePin" position="0,0" size="541,720" title="Change pin code" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
