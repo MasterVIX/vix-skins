@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Day-HD Vs 1.80 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Day-HD Vs 1.81 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1309,7 +1309,7 @@ self.autoResize()
 		<panel name="MenuYellow1Panel" />
 		<panel name="MenuBlue1Panel" />
 	</screen>
-	<screen name="MessageBox" position="center,center" size="600,10">
+	<screen name="MessageBoxTemplate">
 		<widget name="ErrorPixmap" pixmap="ViX_HD_Common/icons/input_error.png" position="0,0" size="53,53" alphatest="blend" />
 		<widget name="QuestionPixmap" pixmap="ViX_HD_Common/icons/input_question.png" position="0,0" size="53,53" alphatest="blend" />
 		<widget name="InfoPixmap" pixmap="ViX_HD_Common/icons/input_info.png" position="0,0" size="53,53" alphatest="blend" />
@@ -1318,6 +1318,12 @@ self.autoResize()
 		<applet type="onLayoutFinish">
 self.autoResize()
 		</applet>
+	</screen>
+	<screen name="MessageBox" position="center,center" size="600,10">
+	   <panel name= "MessageBoxTemplate" />
+	</screen>
+	<screen name="MessageBoxSimple" position="center,center" size="600,10">
+	   <panel name= "MessageBoxTemplate" />
 	</screen>
 	<screen name="MinuteInput" position="center,center" size="280,60">
 		<widget name="minutes" position="80,15" size="160,25" halign="right" font="Regular;23" transparent="1" />
