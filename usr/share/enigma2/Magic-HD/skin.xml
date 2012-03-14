@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 3.86 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 3.87 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -39,7 +39,8 @@
     <color name="redtransparent" value="#084c0000" />
     <color name="rssviewtop" value="#00005050" />
     <color name="secondBG" value="#18101214" />
-    <color name="secondFG" value="#00fcc000" />
+    <color name="secondFG" value="#00879ce1" />
+<!--<color name="secondFG" value="#00fcc000" />-->
     <color name="selectedBG" value="#06303240" />
     <color name="selectedFG" value="#00fcc000" />
     <color name="transparent" value="#ff000000" />
@@ -426,7 +427,7 @@
     <widget name="key_green" position="340,682" size="220,26"  foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26"  foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="list" position="520,82" size="755,555" itemHeight="25" noWrap="1" serviceNumberFont="Regular;22" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="25" colorServiceDescription="yellow" transparent="1" foregroundColorServiceNotAvail="#656565" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="list" position="520,82" size="755,555" itemHeight="25" noWrap="1" serviceNumberFont="Regular;22" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="25" colorServiceDescription="blue" transparent="1" foregroundColorServiceNotAvail="#656565" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <eLabel text="Next:" position="520,645" size="70,25" zPosition="2" font="Regular;24" foregroundColor="blue" valign="center" transparent="1" />
     <widget source="ServiceEvent" render="Label" position="590,645" size="555,25" font="Regular;22" foregroundColor="blue" noWrap="1" zPosition="2" transparent="1" halign="center">
       <convert type="EventName">NextName</convert>
