@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 2.90 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 2.91 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -899,7 +899,7 @@
     <widget source="key_green" render="Label" position="340,682" size="220,30" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,410" size="1,1" zPosition="1" transparent="1" alphatest="on" />
     <widget name="config" position="520,82" size="755,577" itemHeight="25" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
-    <widget source="status" render="Label" position="10,580" size="500,60" zPosition="10" font="Regular;22" halign="center" transparent="0" />
+    <widget source="status" render="Label" position="10,385" size="480,250" zPosition="10" font="Regular;20" foregroundColor="secondFG" halign="center" transparent="0" />
     <widget source="VKeyIcon" render="Pixmap" pixmap="Magic-HD-Common/buttons/key_text.png" position="1160,682" zPosition="1" size="35,25" transparent="1" alphatest="on" >
       <convert type="ConditionalShowHide" />
     </widget>
@@ -9333,6 +9333,7 @@
     <applet type="onLayoutFinish">
             self["list"].instance.setItemHeight(25)
     </applet>
+	<widget name="LogsSize" position="10,450" size="503,50" font="Regular;22" foregroundColor="secondFG" halign="center" valign="center" transparent="0" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen flags="wfNoBorder" name="LogManagerViewLog" position="0,0" size="1280,720" title="Log Manager View Log">
@@ -9369,7 +9370,7 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget source="key_red" render="Label" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget source="key_green" render="Label" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget source="status" render="Label" font="Regular;22" position="520,320" size="700,150" zPosition="10" halign="center" valign="center" transparent="1" />
+    <widget source="status" render="Label" font="Regular;20" foregroundColor="secondFG" position="520,320" size="700,150" zPosition="10" halign="center" valign="center" transparent="1" />
     <widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,120" size="700,200" transparent="1" />
     <eLabel text="Use arrows Up/Down to select" position="5,400" size="477,50" backgroundColor="secondBG" font="Regular;22" halign="center" transparent="1" zPosition="1" />
     <eLabel text="Use arrows Left/Right to adjust" position="5,450" size="477,50" backgroundColor="secondBG" font="Regular;22" halign="center" transparent="1" zPosition="1" />
