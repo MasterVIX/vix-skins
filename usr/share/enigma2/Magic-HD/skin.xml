@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 3.87 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 3.88 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -8916,6 +8916,65 @@
     <widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen flags="wfNoBorder" name="OpenUg" position="0,0" size="1280,720" title="">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682"  size="35,25" />
+    <widget name="list" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="120" position="495,82" size="780,583" noWrap="0" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <widget name="thumbnail" position="0,0" size="150,150" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  
+<!--OpenUgc
+<screen position="80,70" size="e-160,e-110" title="" >
+					<widget name="list" position="0,0" size="e-0,e-0" scrollbarMode="showOnDemand" transparent="1" zPosition="2"/>
+					<widget name="thumbnail" position="0,0" size="150,150" alphatest="on" />
+				</screen>-->
+
+
+  <screen flags="wfNoBorder" name="OpenUgSetupScreen" position="0,0" size="1280,720" title="OpenUg Setup Screen">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <widget name="info" font="Regular;22" itemHeight="28" position="5,400" size="477,200" transparent="1" foregroundColor="grey" halign="center" valign="center"/>
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="MediaPlayer" position="4,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
+    <widget source="session.CurrentService" render="Label" position="240,0" size="780,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
+    <convert type="ServiceName">Name</convert>
+    </widget>
+    <eLabel backgroundColor="infobarBG" position="120,49" size="1040,14" zPosition="0" />
+    <widget name="state" position="35,70" size="150,30" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" zPosition="5" halign="center" />
+    <ePixmap pixmap="Magic-HD-Common/dvr/scale1024.png" position="128,54" size="1024,4" zPosition="1" />
+    <widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer1024.png:1012,0">
+      <convert type="ServicePosition">Gauge</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="40,13" size="200,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="1025,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
+      <convert type="ServicePosition">Remaining</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="1145,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
+      <convert type="ServicePosition">Length</convert>
+    </widget>
   </screen>
   <!-- ## End of Magic-HD-ViX ## -->
 </skin>
