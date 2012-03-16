@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-<!--Skin:  Magic-HD-Light ViX(Extreme-HD) Vs 1.68 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 3.20 but now in "Light version" (not supporting as many screens)-->
+<!--Skin:  Magic-HD-Light ViX(Extreme-HD) Vs 1.69 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 3.20 but now in "Light version" (not supporting as many screens)-->
 <!--This skin is a Freeware. Everyone can modify and use it in other images.-->
 <!--BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!-->
 <!--Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are-->
@@ -1171,16 +1171,14 @@
     </widget>
     <widget backgroundColor="transparent" position="15,90" render="Pig" size="477,270" source="session.VideoPicture" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-    <widget name="key_green" position="340,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-    <widget name="list" position="520,415" size="740,250" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
-    <widget name="timer1" position="15,385" size="477,285" scrollbarMode="showNever" />
-    <widget name="timer2" position="520,90" size="740,320" scrollbarMode="showNever" />
+    <widget name="list" position="0,0" size="0,25" />
+    <widget name="timer1" position="15,385" size="477,285" scrollbarMode="showNever" selectionDisabled="1" />
+    <widget name="timer2" position="520,90" size="755,550" scrollbarMode="showNever" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
   </screen>
   <screen name="PluginBrowser" title="Plugin browser" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
