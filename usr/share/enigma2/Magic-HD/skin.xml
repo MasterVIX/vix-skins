@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 3.92 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 3.93 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -116,9 +116,9 @@
   <screen name="Dish" flags="wfNoBorder" position="86,100" size="130,220" title="Dish" zPosition="-1" backgroundColor="transparent" >
     <widget name="Dishpixmap" position="0,20" size="130,160" zPosition="-1" pixmap="Magic-HD-Common/icons/dish.png" transparent="1" alphatest="on" />
     <widget name="turnTime" position="5,0" size="120,20" zPosition="1" font="Regular;18" halign="right" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
-    <eLabel name="From" position="5,184" size="45,16" zPosition="1" font="Regular;16" halign="left" foregroundColor="white" shadowColor="black" shadowOffset="-2,-1" transparent="1" text="From:" />
+    <widget name="From" position="5,184" size="45,16" zPosition="1" font="Regular;16" halign="left" foregroundColor="white" shadowColor="black" shadowOffset="-2,-1" transparent="1" text="From:" />
     <widget name="posFrom" position="55,180" size="70,20" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
-    <eLabel name="Goto" position="5,204" size="45,16" zPosition="1" font="Regular;16" halign="left" foregroundColor="white" shadowColor="black" shadowOffset="-2,-1" transparent="1" text="Goto:" />
+    <widget name="Goto" position="5,204" size="45,16" zPosition="1" font="Regular;16" halign="left" foregroundColor="white" shadowColor="black" shadowOffset="-2,-1" transparent="1" text="Goto:" />
     <widget name="posGoto" position="55,200" size="70,20" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
   </screen>
   <screen name="UnhandledKey" title="UnhandledKey" position="1000,20" size="98,88" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
@@ -168,6 +168,17 @@
     <widget source="session.OnlineCheckState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_update.png" position="5,45" size="32,32" zPosition="10" alphatest="blend" >
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
+<!--  ## The following items are only added to prevent logs being cluttered with warnings ## -->
+    <widget name="betacrypt" text="B" font="Regular;17" position="0,0" size="0,0" />
+    <widget name="nds" text="NDS" font="Regular;17" position="0,0" size="0,0" />
+    <widget name="irdeto" text="I" font="Regular;17" position="0,0" size="0,0" />
+    <widget name="seca" text="S" font="Regular;17" position="0,0" size="0,0" />
+    <widget name="via" text="V" font="Regular;17" position="0,0" size="0,0" />
+    <widget name="nagra" text="N" font="Regular;17" position="0,0" size="0,0" />
+    <widget name="conax" text="CO" font="Regular;17" position="0,0" size="0,0" />
+    <widget name="crypto" text="CW" font="Regular;17" position="0,0" size="0,0" />
+    <widget name="dreamcrypt" text="DC" font="Regular; 17" position="0,0" size="0,0" />
+    <widget name="ecmInfo" font="Regular;17" position="0,0" size="0,0" halign="left" />
   </screen>
   <screen name="MoviePlayer" position="4,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="session.CurrentService" render="Label" position="240,0" size="780,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
