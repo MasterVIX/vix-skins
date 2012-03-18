@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.83 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.84 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -107,10 +107,10 @@
 <!-- template -->
 	<screen name="FullscreenTopPanel">
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-top.png" position="0,0" size="1280,70" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="1160,10" size="100,28" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="1160,10" size="100,28" font="Regular;26" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="910,40" size="350,25" font="Regular;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="910,40" size="350,25" font="Regular;20" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,680" size="1280,40" zPosition="-1" />
@@ -1157,8 +1157,8 @@ self.autoResize()
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
 		<ePixmap pixmap="ViX_HD_Common/icons/ico_EPG_title.png" position="50,20" size="45,36" alphatest="blend" transparent="1" />
-		<widget name="lab1" position="0,55" size="1280,620" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
-		<widget name="timeline_text" position="20,70" size="1240,30" backgroundColor="black" foregroundColor="infobar_service_frgrnd" transparent="1" zPosition="0" />
+		<widget name="lab1" position="0,70" size="1280,600" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
+		<widget name="timeline_text" position="20,70" size="1240,30" backgroundColor="black" foregroundColor="event-now-next_frgrnd" transparent="1" zPosition="0" />
 		<widget name="list" position="20,95" size="1240,572" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" />
 		<widget name="timeline0" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline1" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />
@@ -1194,7 +1194,7 @@ self.autoResize()
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget name="lab1" position="0,292" size="1280,380" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
-		<widget name="timeline_text" position="20,290" size="1240,30" backgroundColor="black" foregroundColor="infobar_service_frgrnd" transparent="1" zPosition="0" />
+		<widget name="timeline_text" position="20,290" size="1240,30" backgroundColor="black" foregroundColor="event-now-next_frgrnd" transparent="1" zPosition="0" />
 		<widget name="list" position="20,317" size="1240,360" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" />
 		<widget name="timeline0" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline1" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />
