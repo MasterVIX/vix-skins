@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.88 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.89 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1308,11 +1308,11 @@ self.autoResize()
 		<panel name="MenuBlue1Panel" />
 	</screen>
 	<screen name="MessageBoxTemplate">
-		<widget name="ErrorPixmap" pixmap="ViX_HD_Common/icons/input_error.png" position="0,0" size="53,53" alphatest="blend" />
-		<widget name="QuestionPixmap" pixmap="ViX_HD_Common/icons/input_question.png" position="0,0" size="53,53" alphatest="blend" />
-		<widget name="InfoPixmap" pixmap="ViX_HD_Common/icons/input_info.png" position="0,0" size="53,53" alphatest="blend" />
-		<widget name="text" position="top" size="*,2h" font="TextNormal" transparent="0" foregroundColor="window-fg"/>
-		<widget name="list" position="fill" scrollbarMode="showOnDemand" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" />
+		<widget name="text" position="65,8" size="480,0" font="Regular;22" />
+		<widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="0,0" size="53,53" alphatest="on" />
+		<widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="0,0" size="53,53" alphatest="on" />
+		<widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="0,0" size="53,53" alphatest="on" />
+		<widget name="list" position="100,100" size="480,375" />
 		<applet type="onLayoutFinish">
 self.autoResize()
 		</applet>
@@ -3454,6 +3454,7 @@ self.autoResize()
 		<widget name="sactive" position="10,383" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
 		<widget name="system" position="50,383" size="100,30" font="Regular;20" valign="center" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0"/>
 		<widget name="labsys" position="160,383" size="310,30" font="Regular;20" valign="center" backgroundColor="#274D5375"/>
+		<ePixmap pixmap="ViX_HD_Common/buttons/key_menu.png" position="470,663" size="35,25" alphatest="blend" transparent="1" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
 		<panel name="MenuYellow1Panel" />
@@ -3520,6 +3521,7 @@ self.autoResize()
 		<widget name="dlna" position="10,520" size="200,30" font="Regular;20" valign="center" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0"/>
 		<widget name="dlnainactive" position="230,520" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
 		<widget name="dlnaactive" position="230,520" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+		<ePixmap pixmap="ViX_HD_Common/buttons/key_menu.png" position="470,663" size="35,25" alphatest="blend" transparent="1" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
 		<panel name="MenuYellow1Panel" />
@@ -3556,6 +3558,7 @@ self.autoResize()
 		<widget name="dlna" position="10,560" size="200,30" font="Regular;20" valign="center" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0"/>
 		<widget name="dlnainactive" position="230,560" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
 		<widget name="dlnaactive" position="230,560" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+		<ePixmap pixmap="ViX_HD_Common/buttons/key_menu.png" position="470,663" size="35,25" alphatest="blend" transparent="1" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
 		<panel name="MenuYellow1Panel" />
