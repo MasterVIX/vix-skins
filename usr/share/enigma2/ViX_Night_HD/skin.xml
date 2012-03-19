@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.85 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.86 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -989,8 +989,8 @@
 	<screen name="ChannelSelection" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<ePixmap pixmap="ViX_HD_Common/icons/ico_Chlist_title.png" position="20,20" size="38,34" alphatest="blend" transparent="1" />
-		<widget source="Title" render="Label" position="215,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
-		<widget source="ServiceEvent" render="Picon" position="105,10" size="100,60" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd" >
+		<widget source="Title" render="Label" position="185,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
+		<widget source="ServiceEvent" render="Picon" position="75,10" size="100,60" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<panel name="FullscreenPIGPanel" />
@@ -1111,8 +1111,8 @@ self.autoResize()
 	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<ePixmap pixmap="ViX_HD_Common/icons/ico_EPG_title.png" position="20,20" size="45,36" alphatest="blend" transparent="1" />
-		<widget source="Title" render="Label" position="215,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
-		<widget source="Service" render="Picon" position="105,10" size="100,60" transparent="1" zPosition="5" alphatest="on" backgroundColor="fullscreen-topbar-bkgrnd" >
+		<widget source="Title" render="Label" position="185,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
+		<widget source="Service" render="Picon" position="75,10" size="100,60" transparent="1" zPosition="5" alphatest="on" backgroundColor="fullscreen-topbar-bkgrnd" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<panel name="FullscreenPIGPanel" />
