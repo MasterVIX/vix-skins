@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Day-HD Vs 1.89 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Day-HD Vs 1.90 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1128,8 +1128,11 @@ self.autoResize()
 	</screen>
 	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
-		<panel name="FullscreenTitlePanel" />
 		<ePixmap pixmap="ViX_HD_Common/icons/ico_EPG_title.png" position="20,20" size="45,36" alphatest="blend" transparent="1" />
+		<widget source="Title" render="Label" position="185,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
+		<widget source="Service" render="Picon" position="75,10" size="100,60" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd" >
+			<convert type="ServiceName">Reference</convert>
+		</widget>
 		<panel name="FullscreenPIGPanel" />
 		<widget name="list" position="20,130" size="660,540" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" zPosition="3" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="now_button_sel" pixmap="ViX_Day_HD/epg_now.png" position="30,85" zPosition="1" size="463,34" alphatest="on" />
@@ -1139,15 +1142,10 @@ self.autoResize()
 		<widget name="next_text" position="207,85" zPosition="2" size="120,34" text="NEXT" font="Regular;20" halign="center" valign="center" foregroundColor="#00efefef" backgroundColor="#005c5c5c" transparent="1" />
 		<widget name="more_text" position="361,85" zPosition="2" size="120,34" text="MORE" font="Regular;20" halign="center" valign="center" foregroundColor="#00efefef" backgroundColor="#005c5c5c" transparent="1" />
 		<widget name="date" position="500,93" size="180,35" font="Regular;18" backgroundColor="black" valign="center" halign="left" transparent="0" />
-		<widget source="Service" render="Picon" position="1165,412" size="58,35" transparent="1" zPosition="5" alphatest="on" backgroundColor="fullscreen-topbar-bkgrnd" >
-			<convert type="ServiceName">Reference</convert>
-		</widget>
-		<widget source="Service" render="Label" position="695,410" size="400,25" zPosition="2" backgroundColor="black" font="Bold;22" noWrap="1" transparent="0" valign="top" foregroundColor="infobar_service_frgrnd">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<widget source="Event" render="Label" position="695,445" size="533,210" font="Regular;20" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
+		<widget source="Event" render="Label" position="695,410" size="575,250" font="Regular;22" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
+		<ePixmap pixmap="ViX_HD_Common/buttons/key_menu.png" position="20,686" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
