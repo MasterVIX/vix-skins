@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Day-HD Vs 1.88 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Day-HD Vs 1.89 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1112,7 +1112,7 @@ self.autoResize()
 		<panel name="FullscreenTopPanel" />
 		<ePixmap pixmap="ViX_HD_Common/icons/ico_EPG_title.png" position="20,20" size="45,36" alphatest="blend" transparent="1" />
 		<widget source="Title" render="Label" position="185,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
-		<widget source="Service" render="Picon" position="75,10" size="100,60" transparent="1" zPosition="5" alphatest="on" backgroundColor="fullscreen-topbar-bkgrnd" >
+		<widget source="Service" render="Picon" position="75,10" size="100,60" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<panel name="FullscreenPIGPanel" />
@@ -1981,7 +1981,7 @@ self.autoResize()
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 	</screen>
-	<screen name="Volume" position="10,e-330" zPosition="1" size="320,68" title="Volume" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="Volume" position="e-330,10" zPosition="1" size="320,68" title="Volume" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_Day_HD/volume_background.png" position="0,0" size="320,68" alphatest="blend" />
 		<widget name="Volume" pixmap="ViX_Day_HD/volume_up.png" position="62,14" zPosition="1" size="240,34" transparent="1" />
 	</screen>
