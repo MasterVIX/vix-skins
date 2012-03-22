@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.89 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.90 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -882,6 +882,36 @@
 		<widget source="lab3" render="Label" position="30,183" size="458,25" font="Italic;19" transparent="0" zPosition="1" />
 		<widget name="AboutScrollLabel" position="30,225" size="458,325" font="Regular;20" transparent="0" zPosition="1" scrollbarMode="showOnDemand"/>
 		<ePixmap pixmap="ViX_HD_Common/buttons/key_info.png" position="10,663" size="35,25" alphatest="blend" transparent="1" />
+	</screen>
+	<screen name="SystemMemoryInfo" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Info.png" position="426,10" size="88,88" alphatest="blend" />
+		<widget source="lab1" render="Label" position="30,133" size="458,25" font="Boldit;24" transparent="0" zPosition="2" />
+		<widget source="lab2" render="Label" position="30,158" size="458,25" font="Italic;19" transparent="0" zPosition="2" />
+		<widget name="AboutScrollLabel" position="30,225" size="458,325" font="Regular;20" transparent="0" zPosition="1" scrollbarMode="showOnDemand"/>
+	</screen>
+	<screen name="SystemNetworkInfo" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Info.png" position="426,10" size="88,88" alphatest="blend" />
+		<widget name="AboutScrollLabel" position="30,133" size="458,225" font="Regular;20" transparent="0" zPosition="1" scrollbarMode="showOnDemand"/>
+		<widget source="LabelBSSID" render="Label" position="30,360" size="200,25" valign="left" font="Regular;20" transparent="0"  />
+		<widget source="LabelESSID" render="Label" position="30,400" size="200,25" valign="center" font="Regular;20" transparent="0" />
+		<widget source="LabelQuality" render="Label" position="30,440" size="200,25" valign="center" font="Regular;20" transparent="0" />
+		<widget source="LabelSignal" render="Label" position="30,480" size="200,25" valign="center" font="Regular;20" transparent="0" />
+		<widget source="LabelBitrate" render="Label" position="30,520" size="200,25" valign="center" font="Regular;20" transparent="0" />
+		<widget source="LabelEnc" render="Label" position="30,560" size="200,25" valign="center" font="Regular;20" transparent="0" />
+		<widget source="BSSID" render="Label" position="200,360" size="310,25" valign="center" font="Regular;20" transparent="0" />
+		<widget source="ESSID" render="Label" position="200,400" size="310,25" valign="center" font="Regular;20" transparent="0" />
+		<widget source="quality" render="Label" position="200,440" size="310,25" valign="center" font="Regular;20" transparent="0" />
+		<widget source="signal" render="Label" position="200,480" size="310,25" valign="center" font="Regular;20" transparent="0" />
+		<widget source="bitrate" render="Label" position="200,520" size="310,25" valign="center" font="Regular;20" transparent="0" />
+		<widget source="enc" render="Label" position="200,560" size="310,25" valign="center" font="Regular;20" transparent="0" />
+
+		<ePixmap pixmap="skin_default/div-h.png" position="10,590" zPosition="1" size="507,2" />		
+		<widget source="IFtext" render="Label" position="30,595" size="120,21" zPosition="10" font="Regular;20" halign="left" transparent="0" />
+		<widget source="IF" render="Label" position="130,595" size="380,21" zPosition="10" font="Regular;20" halign="left" transparent="0" />
+		<widget source="Statustext" render="Label" position="30,617" size="115,21" zPosition="10" font="Regular;20" halign="left" transparent="0"/>
+		<widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="130,620" zPosition="10" size="15,16" transparent="0" alphatest="on"/>
 	</screen>
 	<screen name="Devices" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -2638,23 +2668,23 @@ self.autoResize()
 		<widget name="thumbnail" position="370,46" size="180,144" alphatest="on" />
 		<widget name="config" position="10,196" size="540,228" scrollbarMode="showOnDemand" />
 	</screen>
-	<screen name="DVDPlayer" flags="wfNoBorder" position="center,516" size="730,162" title="InfoBar" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-1" size="730,144" pixmap="ViX_Night_HD/movie_infobar-bg.png" />
+	<screen name="DVDPlayer" flags="wfNoBorder" position="center,e-200" size="750,190" backgroundColor="transparent">
+		<ePixmap position="0,0" zPosition="-1" size="750,190" pixmap="ViX_Night_HD/movie_infobar-bg.png" />
 		<ePixmap position="35,18" size="37,28" pixmap="ViX_Night_HD/menu/ico_title_media-info.png" alphatest="blend" />
 		<ePixmap pixmap="ViX_Night_HD/icons/clock.png" position="580,12" zPosition="1" size="20,20" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Label" position="598,14" zPosition="1" size="59,20" font="Regular;21" foregroundColor="foreground" halign="right" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top">
+		<widget source="global.CurrentTime" render="Label" position="598,14" zPosition="1" size="59,20" font="Regular;21" foregroundColor="infobar-frgrnd" halign="right" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="658,17" zPosition="1" size="35,18" font="Regular;17" valign="top" backgroundColor="infobar-bkgrnd" foregroundColor="foreground" transparent="1" noWrap="1">
+		<widget source="global.CurrentTime" render="Label" position="658,17" zPosition="1" size="35,18" font="Regular;17" valign="top" backgroundColor="infobar-bkgrnd" foregroundColor="infobar-frgrnd" transparent="1" noWrap="1">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
 		<ePixmap pixmap="ViX_HD_Common/icons/ico_event.png" position="85,15" zPosition="1" size="15,10" alphatest="on" />
 		<widget source="session.CurrentService" render="Label" position="110,10" size="300,20" font="Italic;20" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" foregroundColor="infobar_service_frgrnd">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget name="chapterLabel" position="110,32" size="360,20" font="Regular;18" foregroundColor="foreground" backgroundColor="infobar-bkgrnd" transparent="1" />
+		<widget name="chapterLabel" position="110,32" size="360,20" font="Regular;18" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" />
 		<ePixmap pixmap="ViX_Night_HD/icons/icon_dolby.png" position="480,52" zPosition="1" size="26,16" alphatest="on" />
-		<widget name="audioLabel" position="510,50" size="130,22" font="Regular;18" backgroundColor="infobar_sunken" transparent="1" foregroundColor="black" />
+		<widget name="audioLabel" position="510,50" size="130,22" font="Regular;18" backgroundColor="infobar_sunken" transparent="1" foregroundColor="infobar-frgrnd" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_Night_HD/icons/icon_txt.png" position="330,52" zPosition="1" size="26,16" alphatest="blend">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
@@ -2662,14 +2692,14 @@ self.autoResize()
 		<widget name="subtitleLabel" position="350,50" size="130,22" font="Regular;18" backgroundColor="infobar_sunken" transparent="1" foregroundColor="#00263c59" />
 		<widget name="anglePix" pixmap="ViX_HD_Common/icons/ico_view.png" position="160,50" size="26,16" alphatest="on" />
 		<widget name="angleLabel" position="190,48" size="130,22" font="Regular;18" backgroundColor="infobar_sunken" transparent="1" foregroundColor="#00263c59" />
-		<widget source="session.CurrentService" render="Label" position="80,95" size="100,24" font="Italic;18" halign="left" valign="center" foregroundColor="#003d0e82" backgroundColor="infobar_sunken" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="80,115" size="100,24" font="Italic;18" halign="left" valign="center" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar_sunken" transparent="1">
 			<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
-		<ePixmap position="80,75" size="563,18" pixmap="ViX_HD_Common/icons/Mediaplayerbar_gray.png" alphatest="blend" />
-		<widget source="session.CurrentService" render="PositionGauge" position="82,68" size="563,25" zPosition="2" pointer="ViX_HD_Common/icons/Mediaplayerbar_purple.png:563,0" transparent="1">
+		<ePixmap position="80,90" size="563,18" pixmap="ViX_HD_Common/icons/Mediaplayerbar_gray.png" alphatest="blend" />
+		<widget source="session.CurrentService" render="PositionGauge" position="80,83" size="563,25" zPosition="2" pointer="ViX_HD_Common/icons/Mediaplayerbar_purple.png:563,0" transparent="1">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="540,95" size="95,20" font="Regular;18" halign="right" valign="center" foregroundColor="black" backgroundColor="infobar_sunken" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="540,115" size="95,20" font="Regular;18" halign="right" valign="center" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1">
 			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
 	</screen>
