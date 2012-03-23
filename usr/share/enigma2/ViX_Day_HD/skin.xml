@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Day-HD Vs 1.92 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Day-HD Vs 1.93 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -200,11 +200,11 @@
 	<screen name="LanguageSelection" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Day_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
-		<widget source="languages" render="Listbox" position="10,107" size="503,533" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H45x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand">
+		<widget source="languages" render="Listbox" position="10,107" size="503,530" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H45x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (100,0), size = (360,44), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the language name,
-				MultiContentEntryPixmap(pos = (30,7), size = (45,30), png = 2), # index 2 is the pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (20,2), size = (60,40), png = 2), # index 2 is the pixmap
 				],
 				"fonts": [gFont("Regular",20)],
 				"itemHeight": 44
@@ -906,7 +906,6 @@
 		<widget source="signal" render="Label" position="200,480" size="310,25" valign="center" font="Regular;20" transparent="0" />
 		<widget source="bitrate" render="Label" position="200,520" size="310,25" valign="center" font="Regular;20" transparent="0" />
 		<widget source="enc" render="Label" position="200,560" size="310,25" valign="center" font="Regular;20" transparent="0" />
-
 		<ePixmap pixmap="skin_default/div-h.png" position="10,590" zPosition="1" size="507,2" />		
 		<widget source="IFtext" render="Label" position="30,595" size="120,21" zPosition="10" font="Regular;20" halign="left" transparent="0" />
 		<widget source="IF" render="Label" position="130,595" size="380,21" zPosition="10" font="Regular;20" halign="left" transparent="0" />
@@ -2084,11 +2083,11 @@ self.autoResize()
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<widget name="text" position="150,140" size="730,250" font="Regular;23" transparent="1" foregroundColor="window-fg" backgroundColor="window-bg" />
-		<widget source="languages" render="Listbox" position="150,400" size="440,210" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H42x440.png" transparent="1" scrollbarMode="showOnDemand">
+		<widget source="languages" render="Listbox" position="150,350" size="440,252" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H42x440.png" transparent="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (80,11), size = (200,20), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
-				MultiContentEntryPixmap(pos = (10,6), size = (45,30), png = 2), # index 2 is the pixmap
+				MultiContentEntryText(pos = (100,0), size = (360,44), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the language name,
+				MultiContentEntryPixmapAlphaTest(pos = (20,1), size = (60,40), png = 2), # index 2 is the pixmap
 				],
 				"fonts": [gFont("Regular",20)],
 				"itemHeight": 42
