@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 2.94 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 2.95 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -939,6 +939,52 @@
     <widget source="MountsHeader" render="Label" position="635,510" size="580,25" backgroundColor="background" transparent="1" font="Regular;24" halign="center" />
     <widget source="mounts" render="Label" position="635,550" size="580,100" backgroundColor="background" transparent="1" font="Regular;20" halign="center" />
     <eLabel text="Skin Magic-HD  ViX-team skin by Rob van der Does" foregroundColor="grey" font="Regular;19" halign="center" position="5,530" size="520,40" transparent="1" zPosition="1" noWrap="1" />
+    <eLabel text="HD-Night mod by DeLaGrooV" position="5,570" size="520,30" font="Regular; 14" halign="center" transparent="1" zPosition="1" valign="center" foregroundColor="grey" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="SystemMemoryInfo" position="0,0" size="1280,720" flags="wfNoBorder">
+	<ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" halign="left" />
+    <widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
+    <widget source="lab1" render="Label" position="520,90" size="755,30" font="Regular;24" transparent="0" zPosition="1" foregroundColor="secondFG" />
+    <widget source="lab2" render="Label" position="520,120" size="755,30" font="Regular;22" transparent="0" zPosition="1" foregroundColor="grey" />
+    <widget name="AboutScrollLabel" render="Label" position="520,160" size="755,325" transparent="0" font="Regular;20" zPosition="1" scrollbarMode="showOnDemand" />
+    <eLabel text="Skin Magic-HD  ViX-team skin by Rob van der Does" foregroundColor="grey" font="Regular;19" halign="center" position="5,530" size="520,40" transparent="1" zPosition="1" noWrap="1" />
+    <eLabel text="HD-Night mod by DeLaGrooV" position="5,570" size="520,30" font="Regular; 14" halign="center" transparent="1" zPosition="1" valign="center" foregroundColor="grey" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+	<screen name="SystemNetworkInfo" flags="wfNoBorder" position="0,0" size="1280,720" >
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" halign="left" />
+    <widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+    <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
+    <widget name="AboutScrollLabel" position="520,90" size="458,75" valign="left" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
+    <widget source="LabelBSSID" render="Label" position="520,170" size="200,25" valign="left" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
+    <widget source="LabelESSID" render="Label" position="520,200" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
+    <widget source="LabelQuality" render="Label" position="520,230" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
+    <widget source="LabelSignal" render="Label" position="520,260" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
+    <widget source="LabelBitrate" render="Label" position="520,290" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
+    <widget source="LabelEnc" render="Label" position="520,320" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
+	<widget source="BSSID" render="Label" position="670,170" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
+    <widget source="ESSID" render="Label" position="670,200" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
+    <widget source="quality" render="Label" position="670,230" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
+    <widget source="signal" render="Label" position="670,260" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
+    <widget source="bitrate" render="Label" position="670,290" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
+    <widget source="enc" render="Label" position="670,320" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
+	<widget source="IFtext" render="Label" position="520,400" size="120,21" zPosition="10" font="Regular;20" halign="left" transparent="1" />
+    <widget source="IF" render="Label" position="630,400" size="400,21" zPosition="10" font="Regular;20" halign="left" transparent="1" />
+	<widget source="Statustext" render="Label" position="520,450" size="115,21" zPosition="10" font="Regular;20" halign="left" transparent="1"/>
+    <widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="635,450" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+	<eLabel text="Skin Magic-HD  ViX-team skin by Rob van der Does" foregroundColor="grey" font="Regular;19" halign="center" position="5,530" size="520,40" transparent="1" zPosition="1" noWrap="1" />
     <eLabel text="HD-Night mod by DeLaGrooV" position="5,570" size="520,30" font="Regular; 14" halign="center" transparent="1" zPosition="1" valign="center" foregroundColor="grey" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
