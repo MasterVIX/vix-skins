@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 4.03 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 4.04 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -1383,7 +1383,7 @@
   <screen name="MessageBox" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
-    <widget source="Title" foregroundColor="grey" render="Label" position="650,110" size="610,250" font="Regular;25" />
+
     <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
@@ -1395,6 +1395,11 @@
     <widget name="ErrorPixmap" pixmap="Magic-HD-Common/window/input_error.png" position="550,110" size="54,54" alphatest="on" />
     <widget name="QuestionPixmap" pixmap="Magic-HD-Common/window/input_question.png" position="550,110" size="54,54" alphatest="on" />
     <widget name="InfoPixmap" pixmap="Magic-HD-Common/window/input_info.png" position="550,110" size="54,54" alphatest="on" />
+<!--    <widget source="Title" foregroundColor="grey" render="Label" position="650,110" size="610,250" font="Regular;25" />
+    <widget name="text" position="650,390" size="610,240" font="Regular;22" foregroundColor="grey" />
+    <widget name="list" position="15,390" size="600,240" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" foregroundColor="grey" />-->
+    <widget source="Title" foregroundColor="grey" render="Label" position="650,390" size="610,250" font="Regular;25" />
+    <widget name="text" position="650,110" size="610,240" font="Regular;22" foregroundColor="grey" />
     <widget name="list" position="15,390" size="600,240" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" foregroundColor="grey" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -9179,7 +9184,7 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="cam_voll" position="200,40" size="935,700" zPosition="5" alphatest="on" />
     <widget name="pfeil" position="5,380" size="20,30" zPosition="5" transparent="1" alphatest="on" />
-    <widget name="failed" position="200,350" size="477,30" halign="center" font="Regular;22" foregroundColor="grey" />
+    <widget name="failed" position="200,350" size="477,30" halign="center" font="Regular;22" foregroundColor="secondFG" />
     <ePixmap position="0,0" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/camoFS/cam.png" transparent="1" alphatest="on" />
 
   </screen>
