@@ -9256,14 +9256,16 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="camoFS_Screen" position="0,0" size="1280,720" >
+  <screen name="camoFS_Screen" position="0,0" size="1280,720" flags="wfNoBorder" >
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-    <widget name="cam_voll" position="200,40" size="935,700" zPosition="5" alphatest="on" />
+    <eLabel text="Start/Stop" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <eLabel text="PictureViewer" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682"  size="35,25" />
+    <widget name="cam_voll" position="200,50" size="800,600" zPosition="5" alphatest="on" />
     <widget name="pfeil" position="5,380" size="20,30" zPosition="5" transparent="1" alphatest="on" />
-    <widget name="failed" position="200,350" size="477,30" halign="center" font="Regular;22" foregroundColor="secondFG" />
-    <ePixmap position="0,0" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/camoFS/cam.png" transparent="1" alphatest="on" />
-
+    <widget name="failed" position="200,350" size="800,50" halign="center" font="Regular;35" foregroundColor="secondFG" />
+    <ePixmap position="30,30" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/camoFS/cam.png" transparent="1" alphatest="on" />
   </screen>
   <!-- ## End of Magic-HD-ViX ## -->
 </skin>
