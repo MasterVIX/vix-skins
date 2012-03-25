@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 2.99 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 2.98 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -9093,39 +9093,37 @@
         </applet>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
- <screen name="QuickEPG" title="InfoBar" position="0,0" size="1280,720" flags="wfNoBorder">
-	<ePixmap alphatest="off" pixmap="Magic-HD-Common/infobar/hd.png" position="0,500" size="1280,220" zPosition="-1" />
-	<eLabel position="0, 0" size="1280,720" backgroundColor="transpBlack" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,15" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,15" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,15" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,15" size="26,26" alphatest="on" />
-	<ePixmap pixmap="skin_default/buttons/key_menu.png" position="1110,15" size="35,25" alphatest="on" />
-	<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,15" size="35,25" />
-    <widget name="key_red" position="50,15" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
-    <widget name="key_green" position="340,15" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
-    <widget name="key_yellow" position="614,15" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
-    <widget name="key_blue" position="875,15" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />-->
-	<widget source="Event" render="Label" position="50,300" size="1180,230" font="Regular;20" foregroundColor="white" transparent="1" backgroundColor="background" valign="center" halign="center" zPosition="2">
+ <screen name="QuickEPG" title="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+    <ePixmap alphatest="off" pixmap="Magic-HD-Common/infobar/hd.png" position="0,500" size="1280,220" zPosition="-1" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,690" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,690" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,690" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,690" size="26,26" alphatest="on" />
+    <widget name="key_red" position="50,690" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
+    <widget name="key_green" position="340,690" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
+    <widget name="key_yellow" position="614,690" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
+    <widget name="key_blue" position="875,690" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />-->
+	<eLabel position="0, 0" size="1280,650" backgroundColor="transpBlack" />
+		<widget source="Event" render="Label" position="50,40" size="1180,500" font="Regular;20" foregroundColor="white" transparent="1" backgroundColor="background" valign="bottom" halign="center" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
-	</widget>
-    <widget source="Service" render="Picon" position="60,600" size="100,60" alphatest="blend" transparent="1" zPosition="2">
+		</widget>
+    <widget source="Service" render="Picon" position="45,555" size="100,60" alphatest="blend" transparent="1" zPosition="2">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget name="list" position="220,640" size="635,62" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="left" />
-    <widget source="Service" render="Label" position="305,585" size="500,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" valign="center" halign="left" >
+    <widget name="list" position="180,625" size="750,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" />
+    <widget source="Service" render="Label" position="305,575" size="990,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" valign="center" halign="left" >
     <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="50,665" size="120,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;24" valign="center" halign="center">
+    <widget source="global.CurrentTime" render="Label" position="20,645" size="120,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;24" valign="center" halign="center">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="50,695" size="120,20" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;20" valign="center" halign="center">
+    <widget source="global.CurrentTime" render="Label" position="20,620" size="120,20" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;20" valign="center" halign="center">
       <convert type="ClockToText">ShortDate</convert>
     </widget>
-    <widget source="Event" render="Progress" pixmap="Magic-HD-Common/infobar/pbar.png" position="220,625" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
+    <widget source="Event" render="Progress" pixmap="Magic-HD-Common/infobar/pbar.png" position="180,613" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
     <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="Event" render="Label" position="870,640" size="190,30" backgroundColor="secondBG" transparent="1" zPosition="10" foregroundColor="foreground" font="Regular;22" halign="right">
+    <widget source="Event" render="Label" position="940,625" size="190,30" backgroundColor="secondBG" transparent="1" zPosition="10" foregroundColor="foreground" font="Regular;22" halign="right">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
