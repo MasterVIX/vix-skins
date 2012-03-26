@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.00 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.01 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -367,10 +367,10 @@
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="305,640" size="620,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" noWrap="1" font="Regular;24" halign="left">
+    <widget source="session.Event_Now" render="Label" position="305,640" size="550,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" noWrap="1" font="Regular;24" halign="left">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="940,640" size="120,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="right">
+    <widget source="session.Event_Now" render="Label" position="870,640" size="190,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;22" halign="right">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
@@ -381,7 +381,7 @@
     <widget source="session.Event_Next" render="Label" position="305,672" size="620,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" noWrap="1" font="Regular;24" halign="left">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="940,672" size="120,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;24" halign="right">
+    <widget source="session.Event_Next" render="Label" position="940,672" size="120,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;22" halign="right">
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
     </widget>
@@ -9102,6 +9102,7 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,15" size="26,26" alphatest="on" />
 	<ePixmap pixmap="skin_default/buttons/key_menu.png" position="1110,15" size="35,25" alphatest="on" />
 	<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,15" size="35,25" />
+	<ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,50" size="1280,2" />
     <widget name="key_red" position="50,15" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
     <widget name="key_green" position="340,15" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
     <widget name="key_yellow" position="614,15" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
