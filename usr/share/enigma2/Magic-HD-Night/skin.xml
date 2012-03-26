@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 2.99 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.00 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -9093,20 +9093,20 @@
         </applet>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
- <screen name="QuickEPG" title="InfoBar" position="0,0" size="1280,720" flags="wfNoBorder">
-	<ePixmap alphatest="off" pixmap="Magic-HD-Common/infobar/hd.png" position="0,500" size="1280,220" zPosition="-1" />
-	<eLabel position="0, 0" size="1280,720" backgroundColor="transpBlack" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,15" size="26,26" alphatest="on" />
+ <screen name="QuickEPG" title="InfoBar" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transpBlack">
+	<!--<eLabel position="0, 0" size="1280,720" backgroundColor="transpBlack" alphatest="blend" />-->
+	<!--<ePixmap alphatest="on" pixmap="Magic-HD-Common/infobar/hd.png" position="0,520" size="1280,220" zPosition="-1" />-->
+	<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,15" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,15" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,15" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,15" size="26,26" alphatest="on" />
 	<ePixmap pixmap="skin_default/buttons/key_menu.png" position="1110,15" size="35,25" alphatest="on" />
 	<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,15" size="35,25" />
-    <widget name="key_red" position="50,15" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
-    <widget name="key_green" position="340,15" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
-    <widget name="key_yellow" position="614,15" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
-    <widget name="key_blue" position="875,15" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />-->
-	<widget source="Event" render="Label" position="50,300" size="1180,230" font="Regular;20" foregroundColor="white" transparent="1" backgroundColor="background" valign="center" halign="center" zPosition="2">
+    <widget name="key_red" position="50,15" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
+    <widget name="key_green" position="340,15" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
+    <widget name="key_yellow" position="614,15" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
+    <widget name="key_blue" position="875,15" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />-->
+	<widget source="Event" render="Label" position="50,300" size="1180,220" font="Regular;22" foregroundColor="white" transparent="1" backgroundColor="background" valign="center" halign="center" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 	</widget>
     <widget source="Service" render="Picon" position="60,600" size="100,60" alphatest="blend" transparent="1" zPosition="2">

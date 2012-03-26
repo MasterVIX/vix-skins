@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 4.07 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 4.08 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -2316,7 +2316,7 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
-    <widget name="text" position="520,82" size="755,500" zPosition="-1" transparent="1" font="Regular;26" valign="center" halign="center" foregroundColor="grey" />
+    <widget name="text" position="520,82" size="755,500" zPosition="-1" transparent="1" font="Regular;35" valign="center" halign="center" foregroundColor="grey" />
     <widget name="list" position="520,82" size="755,576" zPosition="3" transparent="0" scrollbarMode="showOnDemand" font="Regular;25" itemHeight="49" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -7552,7 +7552,7 @@
     <ePixmap name="i" pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
     <ePixmap name="v" pixmap="skin_default/buttons/key_video.png" alphatest="on" position="1200,682" size="35,25"/>
     <widget name="config" position="550,82" size="700,583" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="35" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-    <widget name="label_layout" position="225,385" size="150,25" font="Regular;22" halign="center" transparent="1" foregroundColor="grey" />
+    <widget name="label_layout" position="15,500" size="150,25" font="Regular;22" halign="center" transparent="1" foregroundColor="grey" />
     <widget name="label_tl" position="190,425" size="20,20" font="Regular;15" valign="center" halign="center" transparent="1"/>
     <widget name="label_tc" position="240,425" size="20,20" font="Regular;15" valign="center" halign="center" transparent="1"/>
     <widget name="label_tr" position="390,425" size="20,20" font="Regular;15" valign="center" halign="center" transparent="1"/>
@@ -7585,26 +7585,26 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
-    <widget name="config" position="620,100" size="400,250" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="35" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-    <widget name="label_tl" position="690,375" size="20,20" font="Regular;15" valign="center" halign="center" transparent="1"/>
-    <widget name="label_tc" position="740,375" size="20,20" font="Regular;15" valign="center" halign="center" transparent="1"/>
-    <widget name="label_tr" position="890,375" size="20,20" font="Regular;15" valign="center" halign="center" transparent="1"/>
-    <widget name="pic_tl" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_t.png" position="713,380" size="74,9" zPosition="4" transparent="1" alphatest="on"/>
-    <widget name="pic_tc" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_t.png" position="763,380" size="74,9" zPosition="4" transparent="1" alphatest="on"/>
-    <widget name="pic_tr" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_t.png" position="813,380" size="74,9" zPosition="4" transparent="1" alphatest="on"/>
-    <widget name="label_lt" position="680,400" size="20,20" font="Regular;15" valign="center" halign="center"/>
-    <widget name="label_rt" position="900,400" size="20,20" font="Regular;15" valign="center" halign="center"/>
-    <widget name="pic_l" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_l.png" position="685,423"  size="9,74" zPosition="4" transparent="1" alphatest="on"/>
-    <widget name="pic_r" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_r.png" position="906,423" size="9,74" zPosition="4" transparent="1" alphatest="on"/>
-    <widget name="label_lb" position="680,500" size="20,20" font="Regular;15" valign="center" halign="center"/>
-    <widget name="label_rb" position="900,500" size="20,20" font="Regular;15" valign="center" halign="center"/>
-    <widget name="pic_bl" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_b.png" position="713,531" size="74,9" zPosition="4" transparent="1" alphatest="on"/>
-    <widget name="pic_bc" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_b.png" position="763,531" size="74,9" zPosition="4" transparent="1" alphatest="on"/>
-    <widget name="pic_br" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_b.png" position="813,531" size="74,9" zPosition="4" transparent="1" alphatest="on"/>
-    <widget name="label_bl" position="690,525" size="20,20" font="Regular;15" valign="center" halign="center" transparent="1"/>
-    <widget name="label_bc" position="840,525" size="20,20" font="Regular;15" valign="center" halign="center" transparent="1"/>
-    <widget name="label_br" position="890,525" size="20,20" font="Regular;15" valign="center" halign="center" transparent="1"/>
-    <widget name="pic_tv" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/lcd.png" position="700,395" size="200,130" zPosition="4" transparent="1" alphatest="on"/>
+    <widget name="config" position="620,425" size="400,230" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="35" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+    <widget name="label_tl" position="190,425" size="20,20" font="Regular;15" valign="center" halign="center" transparent="1"/>
+    <widget name="label_tc" position="240,425" size="20,20" font="Regular;15" valign="center" halign="center" transparent="1"/>
+    <widget name="label_tr" position="390,425" size="20,20" font="Regular;15" valign="center" halign="center" transparent="1"/>
+    <widget name="pic_tl" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_t.png" position="213,430" size="74,9" zPosition="4" transparent="1" alphatest="on"/>
+    <widget name="pic_tc" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_t.png" position="263,430" size="74,9" zPosition="4" transparent="1" alphatest="on"/>
+    <widget name="pic_tr" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_t.png" position="313,430" size="74,9" zPosition="4" transparent="1" alphatest="on"/>
+    <widget name="label_lt" position="180,450" size="20,20" font="Regular;15" valign="center" halign="center"/>
+    <widget name="label_rt" position="400,450" size="20,20" font="Regular;15" valign="center" halign="center"/>
+    <widget name="pic_l" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_l.png" position="185,473"  size="9,74" zPosition="4" transparent="1" alphatest="on"/>
+    <widget name="pic_r" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_r.png" position="406,473" size="9,74" zPosition="4" transparent="1" alphatest="on"/>
+    <widget name="label_lb" position="180,550" size="20,20" font="Regular;15" valign="center" halign="center"/>
+    <widget name="label_rb" position="400,550" size="20,20" font="Regular;15" valign="center" halign="center"/>
+    <widget name="pic_bl" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_b.png" position="213,581" size="74,9" zPosition="4" transparent="1" alphatest="on"/>
+    <widget name="pic_bc" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_b.png" position="263,581" size="74,9" zPosition="4" transparent="1" alphatest="on"/>
+    <widget name="pic_br" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_b.png" position="313,581" size="74,9" zPosition="4" transparent="1" alphatest="on"/>
+    <widget name="label_bl" position="190,575" size="20,20" font="Regular;15" valign="center" halign="center" transparent="1"/>
+    <widget name="label_bc" position="340,575" size="20,20" font="Regular;15" valign="center" halign="center" transparent="1"/>
+    <widget name="label_br" position="390,575" size="20,20" font="Regular;15" valign="center" halign="center" transparent="1"/>
+    <widget name="pic_tv" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/lcd.png" position="200,445" size="200,130" zPosition="4" transparent="1" alphatest="on"/>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
 <!-- ## FanControl 2 ##-->
