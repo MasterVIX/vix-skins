@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.91 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.92 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -906,7 +906,7 @@
 		<widget source="signal" render="Label" position="200,480" size="310,25" valign="center" font="Regular;20" transparent="0" />
 		<widget source="bitrate" render="Label" position="200,520" size="310,25" valign="center" font="Regular;20" transparent="0" />
 		<widget source="enc" render="Label" position="200,560" size="310,25" valign="center" font="Regular;20" transparent="0" />
-		<ePixmap pixmap="skin_default/div-h.png" position="10,590" zPosition="1" size="507,2" />		
+		<ePixmap pixmap="skin_default/div-h.png" position="10,590" zPosition="1" size="507,2" />
 		<widget source="IFtext" render="Label" position="30,595" size="120,21" zPosition="10" font="Regular;20" halign="left" transparent="0" />
 		<widget source="IF" render="Label" position="130,595" size="380,21" zPosition="10" font="Regular;20" halign="left" transparent="0" />
 		<widget source="Statustext" render="Label" position="30,617" size="115,21" zPosition="10" font="Regular;20" halign="left" transparent="0"/>
@@ -984,14 +984,14 @@
 		<widget source="streams" render="Listbox" position="10,258" size="503,200" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"templates":
-				{"default": (25, [ 
+				{"default": (25, [
 				MultiContentEntryText(pos = (0, 1), size = (35, 25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # key,
 				MultiContentEntryText(pos = (20, 1), size = (50, 25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # number,
 				MultiContentEntryText(pos = (80, 1), size = (100, 25), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
 				MultiContentEntryText(pos = (200, 1), size = (260, 25), font = 0, flags = RT_HALIGN_LEFT, text = 4), # language,
 				MultiContentEntryText(pos = (485, 5), size = (25, 25), font = 1, flags = RT_HALIGN_LEFT, text = 5), # selection,
 				], True, "showNever"),
-				"notselected": (25, [ 
+				"notselected": (25, [
 				MultiContentEntryText(pos = (0, 1), size = (35, 25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # key,
 				MultiContentEntryText(pos = (20, 1), size = (50, 25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # number,
 				MultiContentEntryText(pos = (88, 1), size = (100, 25), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
@@ -1094,9 +1094,9 @@
 		<widget name="key_yellow" position="275,351" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="0" valign="center" backgroundColor="window-bg" />
 		<widget name="key_blue" position="275,381" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="0" valign="center" backgroundColor="window-bg" />
 	</screen>
-	<screen name="ChoiceBox" position="center,center" size="450,130">
-		<widget name="text" position="top" size="*,2h" font="TextNormal" transparent="0" foregroundColor="window-fg"/>
-		<widget name="list" position="fill" scrollbarMode="showOnDemand" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" />
+	<screen name="ChoiceBox" position="center,center" size="520,130">
+		<widget name="text" position="0,0" size="520,0" font="Regular;22" />
+		<widget name="list" position="100,100" size="520,0" enableWrapAround="1"/>
 		<applet type="onLayoutFinish">
 self.autoResize()
 		</applet>
@@ -1337,19 +1337,19 @@ self.autoResize()
 		<panel name="MenuBlue1Panel" />
 	</screen>
 	<screen name="MessageBoxTemplate">
-		<widget name="text" position="65,8" size="480,0" font="Regular;22" />
+		<widget name="text" position="65,8" size="520,0" font="Regular;22" />
 		<widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="0,0" size="53,53" alphatest="on" />
 		<widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="0,0" size="53,53" alphatest="on" />
 		<widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="0,0" size="53,53" alphatest="on" />
-		<widget name="list" position="100,100" size="480,375" />
+		<widget name="list" position="100,100" size="520,0" />
 		<applet type="onLayoutFinish">
 self.autoResize()
 		</applet>
 	</screen>
-	<screen name="MessageBox" position="center,center" size="600,10">
+	<screen name="MessageBox" position="center,center" size="520,10">
 	   <panel name= "MessageBoxTemplate" />
 	</screen>
-	<screen name="MessageBoxSimple" position="center,center" size="600,10">
+	<screen name="MessageBoxSimple" position="center,center" size="520,10">
 	   <panel name= "MessageBoxTemplate" />
 	</screen>
 	<screen name="MinuteInput" position="center,center" size="280,60">
