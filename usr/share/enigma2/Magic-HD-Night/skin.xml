@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.01 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.02 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -295,25 +295,25 @@
     </widget>
   </screen>
   <screen name="SecondInfoBar" title="Second InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
-    <widget source="session.CurrentService" render="Label" position="50,20" size="600,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;16" valign="top" halign="left">
+    <widget source="session.CurrentService" render="Label" position="50,20" size="600,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;18" valign="top" halign="left">
       <convert type="pliExpertInfo">ExpertInfo</convert>
     </widget>
-    <eLabel name="snr" position="685,15" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text="  SNR" font="Regular;14" />
-    <widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,15" size="410,20" borderWidth="2" borderColor="uncccccc">
+    <eLabel name="snr" position="685,15" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text="  SNR:" font="Regular;14" />
+    <widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,18" size="410,10" borderWidth="2" borderColor="uncccccc">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Label" position="1174,15" size="80,28" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <eLabel name="agc" position="685,45" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text="  AGC" font="Regular;14" />
-    <widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,45" size="410,20" borderWidth="2" borderColor="uncccccc">
+    <eLabel name="agc" position="685,45" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text="  AGC:" font="Regular;14" />
+    <widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,48" size="410,10" borderWidth="2" borderColor="uncccccc">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Label" position="1174,45" size="80,28" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
     <eLabel name="ber" position="685,75" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text="  BER:" font="Regular;14" />
-    <widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,75" size="410,20" borderWidth="2" borderColor="grey">
+    <widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,78" size="410,10" borderWidth="2" borderColor="grey">
       <convert type="FrontendInfo">BER</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Label" position="1174,75" size="80,28" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
@@ -9096,17 +9096,17 @@
  <screen name="QuickEPG" title="InfoBar" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transpBlack">
 	<!--<eLabel position="0, 0" size="1280,720" backgroundColor="transpBlack" alphatest="blend" />-->
 	<!--<ePixmap alphatest="on" pixmap="Magic-HD-Common/infobar/hd.png" position="0,520" size="1280,220" zPosition="-1" />-->
-	<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,15" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,15" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,15" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,15" size="26,26" alphatest="on" />
-	<ePixmap pixmap="skin_default/buttons/key_menu.png" position="1110,15" size="35,25" alphatest="on" />
-	<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,15" size="35,25" />
-	<ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,50" size="1280,2" />
-    <widget name="key_red" position="50,15" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
-    <widget name="key_green" position="340,15" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
-    <widget name="key_yellow" position="614,15" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
-    <widget name="key_blue" position="875,15" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />-->
+	<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,10" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,10" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,10" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,10" size="26,26" alphatest="on" />
+	<ePixmap pixmap="skin_default/buttons/key_menu.png" position="1110,14" size="35,25" alphatest="on" />
+	<ePixmap pixmap="skin_default/buttons/key_info.png" position="1150,14" size="35,25" alphatest="on" />
+	<ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,43" size="1280,2" />
+    <widget name="key_red" position="50,10" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
+    <widget name="key_green" position="340,10" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
+    <widget name="key_yellow" position="614,10" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
+    <widget name="key_blue" position="875,10" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />-->
 	<widget source="Event" render="Label" position="50,300" size="1180,220" font="Regular;22" foregroundColor="white" transparent="1" backgroundColor="background" valign="center" halign="center" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 	</widget>
