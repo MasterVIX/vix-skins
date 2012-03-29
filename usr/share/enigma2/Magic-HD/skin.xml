@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 4.08 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 4.10 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -683,9 +683,9 @@
     <widget name="key_green" position="340,682" size="220,26"  foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26"  foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="waitingtext" position="520,82" size="755,548" font="Regular;26" halign="center" valign="center" zPosition="4" />
+    <widget name="waitingtext" position="520,82" size="755,548" font="Regular;35" halign="center" valign="center" foregroundColor="grey" zPosition="4" />
     <widget name="chosenletter" position="520,82" size="755,548" foregroundColor="yellow" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4" />
-    <widget name="list" position="520,82" size="755,548" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeights="75,53,25" fontSizesOriginal="21,20,19" fontSizesCompact="21,19" fontSizesMinimal="20,18" enableWrapAround="1" />
+    <widget name="list" position="520,82" size="755,548" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeights="75,53,25" fontSizesOriginal="21,20,19" fontSizesCompact="21,19" fontSizesMinimal="20,18" foregroundColor="grey" enableWrapAround="1" />
     <widget source="Service" render="Label" position="5,380" size="500,280" font="Regular;20" halign="center" valign="center">
       <convert type="EventName">FullDescription</convert>
     </widget>
@@ -1079,7 +1079,7 @@
     <widget source="IFtext" render="Label" position="520,600" size="120,25" zPosition="10" font="Regular;22" halign="right" transparent="1" foregroundColor="grey"/>
     <widget source="IF" render="Label" position="640,600" size="400,25" zPosition="10" font="Regular;22" halign="left" transparent="1" foregroundColor="grey"/>
     <widget source="Statustext" render="Label" position="520,630" size="115,25" zPosition="10" font="Regular;22" halign="right" transparent="1" foregroundColor="grey"/>
-    <widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="635,633" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+    <widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="640,633" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen name="HarddiskSelection" flags="wfNoBorder" position="0,0" size="1280,720">
@@ -9120,6 +9120,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
+  <!-- ## Uitzending Gemist ## -->
   <screen flags="wfNoBorder" name="OpenUg" position="0,0" size="1280,720" title="">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
@@ -9130,11 +9131,10 @@
     <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
       <convert type="ClockToText">Date</convert>
     </widget>
-    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682"  size="35,25" />
-    <widget name="list" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="120" position="495,82" size="780,583" noWrap="0" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <widget name="list" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="120" position="5,82" size="1270,583" noWrap="0" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <widget name="thumbnail" position="0,0" size="150,150" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,682" size="300,25" alphatest="on" />
   </screen>
   <screen flags="wfNoBorder" name="OpenUgSetupScreen" position="0,0" size="1280,720" title="OpenUg Setup Screen">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
@@ -9255,4 +9255,4 @@
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ## End of Magic-HD-ViX ## -->
-</skin>
+</skin>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
