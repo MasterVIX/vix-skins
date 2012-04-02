@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.05 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.06 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -201,8 +201,8 @@
     <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_sub_on.png" position="812,76" size="36,24" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
-	 </widget>
-	 <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_hbbtv_on.png" position="810,78" size="46,21" zPosition="2" alphatest="on">
+	</widget>
+	<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_hbbtv_on.png" position="806,78" size="46,21" zPosition="2" alphatest="on">
 	  <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
 	</widget>
@@ -423,6 +423,10 @@
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_sub_on.png" position="812,586" size="36,24" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
+      <convert type="ConditionalShowHide" />
+	</widget>
+	<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_hbbtv_on.png" position="806,588" size="46,21" zPosition="2" alphatest="on">
+	  <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1216,590" size="20,20" zPosition="3" alphatest="on">
