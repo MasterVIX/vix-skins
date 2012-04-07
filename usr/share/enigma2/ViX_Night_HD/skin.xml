@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 0.94 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 0.95 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -116,11 +116,14 @@
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,680" size="1280,40" zPosition="-1" />
 	</screen>
 	<screen name="FullscreenTitlePanel">
-		<widget source="Title" render="Label" position="75,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
+		<widget source="Title" render="Label" position="20,25" size="850,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 	</screen>
 	<screen name="FullscreenPIGPanel">
 		<eLabel position="695,80" size="574,325" zPosition="2" backgroundColor="menu-title-frgrnd" foregroundColor="window-bg" />
 		<widget source="session.VideoPicture" render="Pig" position="697,82" size="570,321" zPosition="3" backgroundColor="#ff000000" />
+		<widget source="session.CurrentService" render="Label" position="697,87" size="570,30" font="Boldit;22" foregroundColor="event-frgrnd" borderWidth="1" borderColor="black" transparent="1" valign="top" halign="center" noWrap="1" zPosition="4" >
+			<convert type="ServiceName">Name</convert>
+		</widget>
 	</screen>
 	<screen name="FullscreenRed1Panel">
 		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="90,686" size="25,25" alphatest="blend" transparent="1" />
@@ -156,11 +159,11 @@
 	</screen>
 
 	<screen name="MenuPanel">
+		<widget source="Title" render="Label" position="10,60" size="415,38" font="Bold;32" foregroundColor="menu-title-frgrnd" backgroundColor="menu-title-bkgrnd" transparent="1" />
 		<ePixmap pixmap="ViX_Night_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="10,8" size="410,28" font="Regular;24" foregroundColor="menu-title-frgrnd" backgroundColor="menu-time-bkgrnd" halign="right" transparent="1">
 			<convert type="ClockToText">Full</convert>
 		</widget>
-		<widget source="Title" render="Label" position="10,60" size="415,38" font="Bold;32" foregroundColor="menu-title-frgrnd" backgroundColor="menu-title-bkgrnd" transparent="1" />
 	</screen>
 	<screen name="MenuRed1Panel">
 		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
@@ -840,7 +843,6 @@
 
 	<screen name="MediaPlayer" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
-		<ePixmap pixmap="ViX_HD_Common/icons/ico_Chlist_title.png" position="20,20" size="38,34" alphatest="blend" transparent="1" />
 		<eLabel name="Filelist" position="20,75" size="110,22" text="File List" font="Italic;22" foregroundColor="infobar_service_frgrnd" transparent="1" />
 		<eLabel position="18,100" size="604,556" zPosition="0" backgroundColor="menu-title-frgrnd" />
 		<widget name="filelist" position="20,102" size="600,552" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x600.png" foregroundColor="window-fg" backgroundColor="black" transparent="0" />
@@ -1017,11 +1019,10 @@
 	</screen>
 	<screen name="ChannelSelection" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
-		<ePixmap pixmap="ViX_HD_Common/icons/ico_Chlist_title.png" position="20,20" size="38,34" alphatest="blend" transparent="1" />
-		<widget source="Title" render="Label" position="185,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
-		<widget source="ServiceEvent" render="Picon" position="75,10" size="100,60" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd" >
+		<widget source="ServiceEvent" render="Picon" position="20,10" size="100,60" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
+		<widget source="Title" render="Label" position="135,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 		<panel name="FullscreenPIGPanel" />
 		<widget name="list" position="20,82" size="660,590" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" backgroundColor="black" foregroundColorEvent="event-frgrnd" backgroundColorEvent="black" foregroundColorEventSelected="#00202020" foregroundColorServiceNotAvail="verydarkgrey" serviceItemHeight="36" serviceNumberFont="Regular;25" serviceNameFont="Regular;25" serviceInfoFont="Bold;22" transparent="0" zPosition="3" scrollbarMode="showOnDemand" />
 		<eLabel text="NOW:" position="695,410" size="70,25" font="Bold;24" foregroundColor="event-now-next_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top" />
@@ -1139,11 +1140,10 @@ self.autoResize()
 <!-- EPG Screens -->
 	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
-		<ePixmap pixmap="ViX_HD_Common/icons/ico_EPG_title.png" position="20,20" size="45,36" alphatest="blend" transparent="1" />
-		<widget source="Title" render="Label" position="185,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
-		<widget source="Service" render="Picon" position="75,10" size="100,60" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd" >
+		<widget source="Service" render="Picon" position="20,10" size="100,60" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
+		<widget source="Title" render="Label" position="135,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 		<panel name="FullscreenPIGPanel" />
 		<widget name="list" position="20,82" size="660,592" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" zPosition="3" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget source="Event" render="Label" position="695,410" size="575,250" font="Regular;22" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
@@ -1157,11 +1157,10 @@ self.autoResize()
 	</screen>
 	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
-		<ePixmap pixmap="ViX_HD_Common/icons/ico_EPG_title.png" position="20,20" size="45,36" alphatest="blend" transparent="1" />
-		<widget source="Title" render="Label" position="185,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
-		<widget source="Service" render="Picon" position="75,10" size="100,60" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd" >
+		<widget source="Service" render="Picon" position="20,10" size="100,60" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
+		<widget source="Title" render="Label" position="135,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 		<panel name="FullscreenPIGPanel" />
 		<widget name="list" position="20,130" size="660,540" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" zPosition="3" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="now_button_sel" pixmap="ViX_Night_HD/epg_now.png" position="30,85" zPosition="1" size="463,34" alphatest="on" />
@@ -1183,7 +1182,6 @@ self.autoResize()
 	<screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder" >
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
-		<ePixmap pixmap="ViX_HD_Common/icons/ico_EPG_title.png" position="20,20" size="45,36" alphatest="blend" transparent="1" />
 		<widget name="lab1" position="0,70" size="1280,600" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
 		<widget name="timeline_text" position="20,70" size="1240,30" backgroundColor="black" foregroundColor="event-now-next_frgrnd" transparent="1" zPosition="0" />
 		<widget name="list" position="20,95" size="1240,572" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" />
@@ -1203,9 +1201,11 @@ self.autoResize()
 	<screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
-		<ePixmap pixmap="ViX_HD_Common/icons/ico_EPG_title.png" position="20,20" size="45,36" alphatest="blend" transparent="1" />
 		<eLabel position="878,73" size="382,215" zPosition="2" backgroundColor="darkgrey" foregroundColor="window-bg" />
 		<widget source="session.VideoPicture" render="Pig" position="880,75" size="378,211" zPosition="3" backgroundColor="#ff000000" />
+		<widget source="session.CurrentService" render="Label" position="880,80" size="378,30" font="Boldit;22" foregroundColor="event-now-next_frgrnd" borderWidth="1" borderColor="black" transparent="1" valign="top" halign="center" noWrap="1" zPosition="4" >
+			<convert type="ServiceName">Name</convert>
+		</widget>
 		<widget source="Event" render="Label" position="20,70" size="577,30" halign="left" backgroundColor="black" font="Bold;24" noWrap="1" transparent="0" foregroundColor="event-now-next_frgrnd">
 			<convert type="EventName">Name</convert>
 		</widget>
@@ -1358,7 +1358,6 @@ self.autoResize()
 	<screen name="MovieSelection" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder" >
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
-		<ePixmap pixmap="ViX_HD_Common/icons/ico_Chlist_title.png" position="20,20" size="38,34" alphatest="blend" transparent="1" />
 		<panel name="FullscreenPIGPanel" />
 		<widget name="waitingtext" position="20,82" size="660,590" font="Regular;21" halign="center" valign="center" transparent="0" foregroundColor="window-fg" backgroundColor="window-bg" zPosition="4" />
 		<widget name="list" position="20,82" size="660,590" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" foregroundColor="window-fg" backgroundColor="black" transparent="0" enableWrapAround="1" />
@@ -1826,6 +1825,14 @@ self.autoResize()
 		<widget name="config" position="10,107" size="503,495" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
 		<panel name="MenuRed2Panel" />
 		<panel name="MenuGreen2Panel" />
+	</screen>
+	<screen name="OpenWebifConfig" position="0,0" size="541,720" title="OpenWebif Configuration" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Subtitles.png" position="426,10" size="88,88" alphatest="blend" />
+		<widget name="lab1" position="10,107" halign="center" size="503,30" zPosition="1" font="Regular;24" valign="top" transparent="0" />
+		<widget name="config" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,147" size="503,493" scrollbarMode="showOnDemand" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
 	</screen>
 	<screen name="Scart" position="0,0" size="1280,720" backgroundColor="transparent" />
 	<screen name="ServiceInfo" position="250,125" size="780,510" flags="wfBorder" backgroundColor="window-bg">
@@ -2307,34 +2314,12 @@ self.autoResize()
 		</widget>
 		<panel name="MenuRed2Panel" />
 	</screen>
-	<screen name="SoftwareManagerSetup" position="0,0" size="541,720" title="SoftwareManager setup" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MenuPanel" />
-		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
-		<widget name="config" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,107" size="503,350" scrollbarMode="showOnDemand" />
-		<widget source="introduction" render="Label" position="40,600" size="458,25" font="Regular;20" />
-		<panel name="MenuRed2Panel" />
-		<panel name="MenuGreen2Panel" />
-		<panel name="MenuYellow2Panel" />
-		<panel name="MenuBlue2Panel" />
-	</screen>
-	<screen name="SoftwareManagerInfo" position="0,0" size="541,720" title="Software Manager Info" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MenuPanel" />
-		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
-		<widget source="list" render="Listbox" position="10,107" size="503,350" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-				MultiContentEntryText(pos = (5,0), size = (540, 25), font=0, flags = RT_HALIGN_LEFT | RT_HALIGN_CENTER, text = 0), # index 0 is the name
-				],
-				"fonts": [gFont("Regular", 24),gFont("Regular", 22)],
-				"itemHeight": 25
-				}
-			</convert>
-		</widget>
-		<widget source="introduction" render="Label" position="10,600" size="503,25" font="Regular;20" />
-		<panel name="MenuRed2Panel" />
-		<panel name="MenuGreen2Panel" />
-		<panel name="MenuYellow2Panel" />
-		<panel name="MenuBlue2Panel" />
+	<screen name="SoftwareUpdateChanges" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+		<panel name="FullscreenTopPanel" />
+		<widget source="Title" render="Label" position="20,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
+		<widget name="text" position="20,82" size="1240,590" font="Regular;21" backgroundColor="black" transparent="0" />
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
 	</screen>
 	<screen name="PluginManager" position="0,0" size="541,720" title="Plugin Manager" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -2519,7 +2504,6 @@ self.autoResize()
 	<screen name="CutListEditor" position="center,center" size="1280,720" title="Cutlist editor" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
-		<ePixmap pixmap="ViX_HD_Common/icons/ico_Chlist_title.png" position="20,20" size="38,34" alphatest="blend" transparent="1" />
 		<eLabel position="50,123" size="394,504" zPosition="1" backgroundColor="menu-title-frgrnd" foregroundColor="window-bg" />
 		<eLabel position="52,125" size="390,500" zPosition="2" backgroundColor="black" foregroundColor="window-bg" />
 		<widget source="cutlist" render="Listbox" position="52,125" zPosition="3" size="390,500" scrollbarMode="showOnDemand" backgroundColor="window-bg" transparent="1">
@@ -2572,7 +2556,6 @@ self.autoResize()
 	<screen name="TitleCutter" position="0,0" size="1280,720" title="Cutlist editor" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
-		<ePixmap pixmap="ViX_HD_Common/icons/ico_Chlist_title.png" position="20,20" size="38,34" alphatest="blend" transparent="1" />
 		<eLabel position="50,123" size="394,504" zPosition="1" backgroundColor="menu-title-frgrnd" foregroundColor="window-bg" />
 		<eLabel position="52,125" size="390,500" zPosition="2" backgroundColor="black" foregroundColor="window-bg" />
 		<widget source="cutlist" render="Listbox" position="52,125" zPosition="3" size="390,500" scrollbarMode="showOnDemand" backgroundColor="window-bg" transparent="1">
@@ -2709,18 +2692,16 @@ self.autoResize()
 		<widget name="list" position="10,60" size="300,120" />
 		<widget name="state" position="10,210" size="300,80" font="Regular;20" />
 	</screen>
-	<screen name="picshow" position="center,120" size="560,420" title="PicturePlayer">
-		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="0,0" size="140,40" alphatest="blend" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/green.png" position="140,0" size="140,40" alphatest="blend" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/yellow.png" position="280,0" size="140,40" alphatest="blend" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/blue.png" position="420,0" size="140,40" alphatest="blend" />
-		<widget source="key_red" render="Label" position="20,0" zPosition="1" size="115,40" font="Regular;20" halign="center" valign="center" backgroundColor="#009f1313" transparent="1" />
-		<widget source="key_green" render="Label" position="160,0" zPosition="1" size="115,40" font="Regular;20" halign="center" valign="center" backgroundColor="#001f771f" transparent="1" />
-		<widget source="key_yellow" render="Label" position="300,0" zPosition="1" size="115,40" font="Regular;20" halign="center" valign="center" backgroundColor="#00a08500" transparent="1" />
-		<widget source="key_blue" render="Label" position="440,0" zPosition="1" size="115,40" font="Regular;20" halign="center" valign="center" backgroundColor="#0018188b" transparent="1" />
-		<widget source="label" render="Label" position="5,55" size="350,140" font="Regular;19" backgroundColor="dark" transparent="1" />
-		<widget name="thn" position="360,40" size="180,160" alphatest="on" />
-		<widget name="filelist" position="5,205" zPosition="2" size="550,210" scrollbarMode="showOnDemand" />
+	<screen name="picshow" position="0,0" size="541,720" title="PicturePlayer" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Subtitles.png" position="426,10" size="88,88" alphatest="blend" />
+		<widget source="label" render="Label" position="200,132" size="100,160" font="Regular;19" transparent="0" />
+		<widget name="thn" position="10,107" size="180,160" alphatest="on" />
+		<widget name="filelist" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,267" size="503,373" scrollbarMode="showOnDemand" />
+		<panel name="MenuRed2Panel" />
+		<panel name="MenuGreen2Panel" />
+		<panel name="MenuYellow2Panel" />
+		<panel name="MenuBlue2Panel" />
 	</screen>
 	<screen name="Pic_Exif" position="center,center" size="560,360" title="Info">
 		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="0,0" size="140,40" alphatest="blend" />
@@ -2975,7 +2956,6 @@ self.autoResize()
 	<screen name="FilebrowserScreen" osition="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder" title=" ">
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
-		<ePixmap pixmap="ViX_HD_Common/icons/ico_Chlist_title.png" position="20,20" size="38,34" alphatest="blend" transparent="1" />
 		<eLabel position="30,100" size="1220,2" zPosition="5" backgroundColor="fullscreen-topbar-frgrnd" />
 		<widget name="list_left" position="30,120" size="600,525" scrollbarMode="showOnDemand" transparent="1" backgroundColor="black" />
 		<eLabel position="639,102" size="2,550" zPosition="5" transparent="0" backgroundColor="fullscreen-topbar-frgrnd" />
@@ -2992,7 +2972,6 @@ self.autoResize()
 	<screen name="FilebrowserConfigScreen" position="center,center" size="1280,720" title="Filebrowser" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
-		<ePixmap pixmap="ViX_HD_Common/icons/ico_Chlist_title.png" position="20,20" size="38,34" alphatest="blend" transparent="1" />
 		<eLabel position="755,120" size="475,267" zPosition="2" backgroundColor="darkgrey" foregroundColor="window-bg" />
 		<widget source="session.VideoPicture" render="Pig" position="757,122" size="471,264" zPosition="3" backgroundColor="#ff000000" />
 		<widget name="config" position="50,150" size="660,450" zPosition="3" scrollbarMode="showOnDemand" transparent="1" />
@@ -3849,7 +3828,6 @@ self.autoResize()
 	<screen name="AutoTimerHelp" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder" >
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
-		<ePixmap pixmap="ViX_HD_Common/icons/ico_Chlist_title.png" position="20,20" size="38,34" alphatest="blend" transparent="1" />
 		<panel name="FullscreenPIGPanel" />
 		<widget name="detailtext" position="50,122" size="630,525" zPosition="3" font="Regular;21" backgroundColor="black" transparent="0" halign="left" valign="top"/>
 		<panel name="FullscreenRed2Panel" />
@@ -4035,7 +4013,6 @@ self.autoResize()
 	<screen title="Sherlock" name="SherlockII" position="center,center" size="1280,720" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
-		<ePixmap pixmap="ViX_HD_Common/icons/ico_Chlist_title.png" position="20,20" size="38,34" alphatest="blend" transparent="1" />
 		<eLabel position="529,120" size="711,380" zPosition="2" backgroundColor="darkgrey" foregroundColor="window-bg" />
 		<widget source="session.VideoPicture" render="Pig" position="531,122" size="707,378" zPosition="3" backgroundColor="#ff000000" />
 		<widget backgroundColor="#00111112" font="Regular;20" foregroundColor="#00fcc000" halign="left" noWrap="1" position="510,510" render="Label" size="462,25" source="session.CurrentService" transparent="1" valign="top" zPosition="2">
