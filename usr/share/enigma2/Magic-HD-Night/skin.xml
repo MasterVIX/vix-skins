@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.09 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.10 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -2279,24 +2279,21 @@
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="waitingtext" position="520,87" size="755,581" font="Regular;22" halign="center" valign="center" zPosition="4" />
     <widget name="list" position="520,87" size="755,570" scrollbarMode="showOnDemand" />
-    <widget source="Service" render="Label" position="5,380" size="500,50" foregroundColor="secondFG" halign="left" valign="center" font="Regular;20" transparent="1">
-      <convert type="MovieInfo">ShortDescription</convert>
+    <widget source="Service" render="Label" position="5,390" size="500,245" foregroundColor="grey" font="Regular;19" transparent="1" valign="center">
+      <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="Service" render="Label" position="5,430" size="500,205" font="Regular;20" valign="center">
-      <convert type="EventName">ExtendedDescription</convert>
-    </widget>
-    <widget source="Service" render="Label" position="15,645" size="140,25" transparent="1" foregroundColor="grey" font="Regular;20">
+    <widget source="Service" render="Label" position="15,645" size="140,25" transparent="1" foregroundColor="white" font="Regular;20">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
-    <widget name="freeDiskSpace" position="155,645" size="250,25" foregroundColor="grey" font="Regular;20" />
-    <widget source="Service" render="Label" position="185,355" size="310,25" zPosition="1" foregroundColor="grey" font="Regular;20" halign="right">
+    <widget name="freeDiskSpace" position="155,645" size="250,25" foregroundColor="white" font="Regular;20" />
+    <widget source="Service" render="Label" position="185,355" size="300,25" zPosition="1" foregroundColor="secondFG" font="Regular;20" halign="center">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
-    <widget source="Service" render="Label" position="15,355" size="80,24" font="Regular;20" foregroundColor="grey" halign="left" transparent="1">
+    <widget source="Service" render="Label" position="15,355" size="80,24" font="Regular;20" foregroundColor="white" halign="left" transparent="1">
       <convert type="ServiceTime">Duration</convert>
       <convert type="ClockToText">AsLength</convert>
     </widget>
-    <widget source="Service" render="Label" position="95,355" size="90,25" font="Regular;20" foregroundColor="grey" halign="center" transparent="1">
+    <widget source="Service" render="Label" position="95,355" size="90,25" font="Regular;20" foregroundColor="white" halign="center" transparent="1">
       <convert type="ServiceTime">StartTime</convert>
       <convert type="ClockToText">ShortDate</convert>
     </widget>
