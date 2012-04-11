@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.10 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.11 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -110,8 +110,8 @@
       <pixmap filename="Magic-HD-Common/window/unten_rechts.png" pos="bpBottomRight" />
     </borderset>
     <borderset name="bsListboxEntry">
-      <pixmap filename="Magic-HD-Common/border/line.png" pos="bpTop" />
-      <pixmap filename="Magic-HD-Common/border/line.png" pos="bpBottom" />
+      <pixmap filename="Magic-HD-Common/border/line2.png" pos="bpTop" />
+      <pixmap filename="Magic-HD-Common/border/line2.png" pos="bpBottom" />
     </borderset>
   </windowstyle>
   <!--  ## Volume ## -->
@@ -906,7 +906,7 @@
     <widget source="key_red" render="Label" position="50,682" size="220,30" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget source="key_green" render="Label" position="340,682" size="220,30" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,410" size="1,1" zPosition="1" transparent="1" alphatest="on" />
-    <widget name="config" position="520,82" size="755,577" itemHeight="25" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="config" position="520,82" size="755,577" itemHeight="25" font="Regular;22" scrollbarMode="showOnDemand" />
     <widget source="status" render="Label" position="10,385" size="480,250" zPosition="10" font="Regular;20" foregroundColor="secondFG" halign="center" transparent="0" />
     <widget source="VKeyIcon" render="Pixmap" pixmap="Magic-HD-Common/buttons/key_text.png" position="1160,682" zPosition="1" size="35,25" transparent="1" alphatest="on" >
       <convert type="ConditionalShowHide" />
@@ -2429,7 +2429,7 @@
     <widget name="key_blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="list" position="0,0" size="0,25" />
     <widget name="timer1" position="15,385" size="477,285" scrollbarMode="showNever" selectionDisabled="1" />
-    <widget name="timer2" position="520,90" size="755,550" scrollbarMode="showNever" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="timer2" position="520,90" size="755,550" scrollbarMode="showNever" />
   </screen>
   <!-- ## Setup ## -->
   <screen name="WebIfConfigScreen" title="Main Setup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2979,7 +2979,6 @@
     <widget source="key_green" render="Label" position="340,682" zPosition="1" size="220,26" font="Regular;22" halign="center" backgroundColor="background" transparent="1" />
     <widget name="statuspic" position="315,600" size=" 48,48" alphatest="on" />
     <widget source="author" render="Label" position="520,90" size="755,30" zPosition="10" font="Regular;27" backgroundColor="background" transparent="1" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/sel.png" position=" 520,150" size="700,30" alphatest="on" />
     <widget name="detailtext" position="520,120" size="755,575" font="Regular;25" backgroundColor="background" transparent="1" />
     <widget name="screenshot" position="15,385" size="477,200" alphatest="on" />
     <widget name="divpic" position="0,0" size="0,0" />
@@ -9062,7 +9061,7 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-   <widget source="list" render="Listbox" position="590,110" size="600,440" sselectionPixmap="Magic-HD-Common/buttons/sel.png" transparent="0" scrollbarMode="showOnDemand">
+   <widget source="list" render="Listbox" position="590,110" size="600,440" transparent="0" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 				{"template": [
 				 MultiContentEntryText(pos = (90, 0), size = (368, 30), font=0, text = 0),
