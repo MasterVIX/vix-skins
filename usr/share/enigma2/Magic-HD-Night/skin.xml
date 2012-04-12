@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.11 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.12 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -551,7 +551,7 @@
     <widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="list" backgroundColor="background" position="520,82" size="755,575" itemHeight="30" serviceNumberFont="Regular;22" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="30" colorServiceDescription="#DBB96E" colorEventProgressbarBorderSelected="grey" transparent="1" foregroundColorServiceNotAvail="#00656565" scrollbarMode="showOnDemand" />
+    <widget name="list" backgroundColor="background" position="520,85" size="755,575" itemHeight="30" serviceNumberFont="Regular;22" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="30" colorServiceDescription="#DBB96E" colorEventProgressbarBorderSelected="grey" transparent="1" foregroundColorServiceNotAvail="#00656565" scrollbarMode="showOnDemand" />
     <widget source="ServiceEvent" render="Label" position="5,355" size="500,57" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="left" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
@@ -574,7 +574,7 @@
       <convert type="ServiceOrbitalPosition">
       </convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="5,445" size="490,180" transparent="1" font="Regular;19">
+    <widget source="ServiceEvent" render="Label" position="5,445" size="490,180" transparent="1" foregroundColor="grey" font="Regular;19">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
 	<eLabel text="Next:" position="5,640" size="70,25" zPosition="2" font="Regular;20" foregroundColor="white" valign="center" transparent="1" />
@@ -646,7 +646,7 @@
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <ePixmap pixmap="skin_default/buttons/key_menu.png" position="1110,682" size="35,25" alphatest="on" />
-    <widget name="list" position="520,82" size="755,570" itemHeight="30" font="Regular;22" transparent="1" scrollbarMode="showOnDemand" />
+    <widget name="list" position="520,85" size="755,570" itemHeight="30" font="Regular;22" transparent="1" scrollbarMode="showOnDemand" />
     <widget source="Service" render="Label" position="375,15" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" font="Regular;22" valign="center" halign="right">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -665,7 +665,7 @@
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="5,445" size="490,220" transparent="1" font="Regular;19">
+    <widget source="Event" render="Label" position="5,445" size="490,220" transparent="1" font="Regular;19" foregroundColor="grey">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
@@ -2253,18 +2253,18 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
-    <ePixmap pixmap="Magic-HD-Common/dvr/scale2.png" position="15,110" size="477,12" zPosition="1" alphatest="on" />
-    <eLabel backgroundColor="infobarBG" position="15,111" size="477,14" zPosition="0" />
-    <widget source="session.CurrentService" render="PositionGauge" position="15,110" size="477,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer2.png:477,0">
+    <ePixmap pixmap="Magic-HD-Common/dvr/scale2.png" position="5,110" size="477,12" zPosition="1" alphatest="on" />
+    <eLabel backgroundColor="infobarBG" position="5,111" size="477,14" zPosition="0" />
+    <widget source="session.CurrentService" render="PositionGauge" position="5,110" size="477,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer2.png:477,0">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="15,75" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+    <widget source="session.CurrentService" render="Label" position="5,75" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="15,90" size="90,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="left">
+    <widget source="session.CurrentService" render="Label" position="5,90" size="90,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="left">
       <convert type="ServicePosition">Position,ShowHours</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="375,90" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right">
+    <widget source="session.CurrentService" render="Label" position="365,90" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right">
       <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
     </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
