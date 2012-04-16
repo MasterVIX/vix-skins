@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.15 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.16 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -1993,18 +1993,16 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="5,85" render="Pig" size="477,270" zPosition="1" />
-    <ePixmap pixmap="Magic-HD-Common/dvr/scale2.png" position="5,110" size="477,12" zPosition="1" alphatest="on" />
-    <eLabel backgroundColor="infobarBG" position="5,111" size="477,14" zPosition="0" />
-    <widget source="session.CurrentService" render="PositionGauge" position="5,110" size="477,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer2.png:477,0">
-      <convert type="ServicePosition">Gauge</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="5,75" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+	<widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="white" borderWidth="1" noWrap="1" font="Regular;20" borderColor="black" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="5,90" size="90,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="left">
+    <widget source="session.CurrentService" render="PositionGauge" position="5,355" size="477,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer2.png:477,0">
+      <convert type="ServicePosition">Gauge</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="5,335" size="90,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="white" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="left">
       <convert type="ServicePosition">Position,ShowHours</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="365,90" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right">
+    <widget source="session.CurrentService" render="Label" position="365,335" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="white" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right">
       <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
     </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
@@ -2019,21 +2017,21 @@
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="waitingtext" position="520,87" size="755,581" font="Regular;22" halign="center" valign="center" zPosition="4" />
     <widget name="list" position="520,87" size="755,570" scrollbarMode="showOnDemand" />
-    <widget source="Service" render="Label" position="5,390" size="500,245" foregroundColor="grey" font="Regular;19" transparent="1" valign="center">
+    <widget source="Service" render="Label" position="5,405" size="500,223" foregroundColor="grey" font="Regular;19" transparent="1" valign="center">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="Service" render="Label" position="15,645" size="140,25" transparent="1" foregroundColor="white" font="Regular;20">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
     <widget name="freeDiskSpace" position="155,645" size="250,25" foregroundColor="white" font="Regular;20" />
-    <widget source="Service" render="Label" position="185,355" size="300,25" zPosition="1" foregroundColor="secondFG" font="Regular;20" halign="center">
+    <widget source="Service" render="Label" position="185,370" size="300,25" zPosition="1" foregroundColor="secondFG" font="Regular;20" halign="center">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
-    <widget source="Service" render="Label" position="15,355" size="80,24" font="Regular;20" foregroundColor="white" halign="left" transparent="1">
+    <widget source="Service" render="Label" position="15,370" size="80,24" font="Regular;20" foregroundColor="white" halign="left" transparent="1">
       <convert type="ServiceTime">Duration</convert>
       <convert type="ClockToText">AsLength</convert>
     </widget>
-    <widget source="Service" render="Label" position="95,355" size="90,25" font="Regular;20" foregroundColor="white" halign="center" transparent="1">
+    <widget source="Service" render="Label" position="95,370" size="90,25" font="Regular;20" foregroundColor="white" halign="center" transparent="1">
       <convert type="ServiceTime">StartTime</convert>
       <convert type="ClockToText">ShortDate</convert>
     </widget>
