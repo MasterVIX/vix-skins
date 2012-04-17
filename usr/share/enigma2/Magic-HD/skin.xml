@@ -184,8 +184,8 @@
       <convert type="ServiceName">Name</convert>
     </widget>
     <eLabel backgroundColor="infobarBG" position="120,49" size="1040,14" zPosition="0"/>
-    <widget name="state" position="35,70" size="150,30" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" zPosition="5" halign="center" />
-    <widget name="speed" position="185,70" size="80,15" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" zPosition="5" halign="center" />
+    <widget name="statusicon" position="120,70" size="20,20" pixmaps="Magic-HD-Common/icons/play.png,Magic-HD-Common/icons/pause.png,Magic-HD-Common/icons/stop.png,Magic-HD-Common/icons/forward.png,Magic-HD-Common/icons/backward.png,Magic-HD-Common/icons/slow.png" zPosition="5" alphatest="on" />
+    <widget name="speed" position="140,70" size="80,15" font="Regular; 17" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" transparent="1" zPosition="5" />
     <ePixmap pixmap="Magic-HD-Common/dvr/scale1024.png" position="128,54" size="1024,4" zPosition="1" />
     <widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer1024.png:1012,0">
       <convert type="ServicePosition">Gauge</convert>
@@ -1720,7 +1720,7 @@
     </widget>
     <eLabel backgroundColor="infobarBG" position="120,49" size="1040,14" zPosition="0" />
     <widget name="state" position="35,70" size="150,30" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" zPosition="5" halign="center" />
-    <widget name="speed" position="185,70" size="80,15" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" zPosition="5" halign="center" />
+<!--    <widget name="speed" position="185,70" size="80,15" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" zPosition="5" halign="center" />-->
     <ePixmap pixmap="Magic-HD-Common/dvr/scale1024.png" position="128,54" size="1024,4" zPosition="1" />
     <widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer1024.png:1012,0">
     <convert type="ServicePosition">Gauge</convert>
@@ -1755,47 +1755,22 @@
     <widget name="chapter" position="0,-200" size="200,40" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="4" valign="center" halign="right" />
     <widget name="number" position="200,-200" size="150,40" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="4" valign="center" halign="left" />
   </screen>
-  <screen name="PTSTimeshiftState" position="4,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
-    <widget source="session.CurrentService" render="Label" position="240,0" size="780,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <eLabel backgroundColor="infobarBG" position="120,49" size="1040,14" zPosition="0" />
-    <widget name="state" position="35,70" size="150,30" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" zPosition="5" halign="center" />
-    <widget name="speed" position="185,70" size="80,15" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" zPosition="5" halign="center" />
-    <widget source="session.CurrentService" render="Label" position="240,0" size="780,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <widget name="PTSSeekPointer" position="0,50" zPosition="3" size="19,20" pixmap="/usr/share/enigma2/skin_default/timeline-now.png" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/dvr/scale1024.png" position="128,54" size="1024,4" zPosition="1" />
-    <widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer1024.png:1012,0">
-      <convert type="ServicePosition">Gauge</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="40,13" size="200,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
-      <convert type="ServicePosition">Position</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1025,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
-      <convert type="ServicePosition">Remaining</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1145,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
-      <convert type="ServicePosition">Length</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_dolby_on.png" position="986,63" size="60,24" zPosition="2" alphatest="on">
-      <convert type="ServiceInfo">IsMultichannel</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_hd_on.png" position="1048,63" size="40,21" zPosition="4" alphatest="on">
-      <convert type="ServiceInfo">VideoWidth</convert>
-      <convert type="ValueRange">800,2000</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_format_on.png" position="1090,63" size="40,21" zPosition="2" alphatest="on">
-      <convert type="ServiceInfo">IsWidescreen</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1132,63" size="20,20" zPosition="3" alphatest="on">
-      <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
-  </screen>
+	<screen name="PTSTimeshiftState" position="center,40" zPosition="2" size="420,70" backgroundColor="transparent" flags="wfNoBorder">
+		<widget name="statusicon" position="12,5" size="20,20" pixmaps="Magic-HD-Common/icons/play.png,Magic-HD-Common/icons/pause.png,Magic-HD-Common/icons/stop.png,Magic-HD-Common/icons/forward.png,Magic-HD-Common/icons/backward.png,Magic-HD-Common/icons/slow.png" zPosition="5" alphatest="on" />
+		<widget name="speed" position="35,7" size="80,15" font="Regular; 17" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" transparent="1" zPosition="5" />
+		<widget source="session.CurrentService" render="Label" position="95,5" size="200,27" font="Regular;20" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" >
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="280,5" size="120,27" font="Regular;20" halign="right" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black">
+			<convert type="ServicePosition">Length</convert>
+		</widget>
+		<widget name="PTSSeekPointer" position="0,30" zPosition="3" size="19,20" pixmap="/usr/share/enigma2/skin_default/timeline-now.png" alphatest="on" />
+		<ePixmap position="15,33" size="390,15" zPosition="1" pixmap="/usr/share/enigma2/skin_default/slider_back.png" alphatest="on"/>
+		   <widget source="session.CurrentService" render="Progress" position="15,33" size="390,15" zPosition="2" pixmap="/usr/share/enigma2/skin_default/slider.png" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget name="eventname" position="0,49" zPosition="4" size="420,20" font="Regular;20" halign="center" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" />
+	</screen>
   <screen flags="wfNoBorder" name="TimeshiftLocationBox" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
