@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: ViX-Night-HD Vs 1.01 by AndyBlac @ www.world-of-satellite.com  -->
+  <!--  Skin: ViX-Night-HD Vs 1.02 by AndyBlac @ www.world-of-satellite.com  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -34,7 +34,7 @@
 		<color name="window-sel-fg" value="#00000000" />
 		<color name="event-frgrnd" value="#00b1762b" />
 		<color name="event-bkgrnd" value="#00000000" />
-		<color name="event-now-next_frgrnd" value="#00385896" />
+		<color name="event-now-next_frgrnd" value="#00ffb300" />
 		<color name="transparent" value="#ffffffff" />
 		<color name="transpBlack" value="#80000000" />
 		<color name="transpWhite" value="#80ffffff" />
@@ -121,7 +121,8 @@
 	<screen name="FullscreenPIGPanel">
 		<eLabel position="695,80" size="574,325" zPosition="2" backgroundColor="menu-title-frgrnd" foregroundColor="window-bg" />
 		<widget source="session.VideoPicture" render="Pig" position="697,82" size="570,321" zPosition="3" backgroundColor="#ff000000" />
-		<widget source="session.CurrentService" render="Label" position="697,87" size="570,30" font="Boldit;22" foregroundColor="event-frgrnd" borderWidth="1" borderColor="black" transparent="1" valign="top" halign="center" noWrap="1" zPosition="4" >
+		<eLabel position="697,82" size="570,25" zPosition="4" backgroundColor="#A0000000" />
+		<widget source="session.CurrentService" render="Label" position="697,82" size="570,25" font="Boldit;22" foregroundColor="event-frgrnd" borderWidth="1" borderColor="black" transparent="1" valign="center" halign="center" noWrap="1" zPosition="5" >
 			<convert type="ServiceName">Name</convert>
 		</widget>
 	</screen>
@@ -1208,7 +1209,8 @@ self.autoResize()
 		<panel name="FullscreenTitlePanel" />
 		<eLabel position="878,73" size="382,215" zPosition="2" backgroundColor="darkgrey" foregroundColor="window-bg" />
 		<widget source="session.VideoPicture" render="Pig" position="880,75" size="378,211" zPosition="3" backgroundColor="#ff000000" />
-		<widget source="session.CurrentService" render="Label" position="880,80" size="378,30" font="Boldit;22" foregroundColor="event-now-next_frgrnd" borderWidth="1" borderColor="black" transparent="1" valign="top" halign="center" noWrap="1" zPosition="4" >
+		<eLabel position="880,75" size="378,25" zPosition="4" backgroundColor="#A0000000" />
+		<widget source="session.CurrentService" render="Label" position="880,75" size="378,25" font="Boldit;22" foregroundColor="event-frgrnd" borderWidth="1" borderColor="black" transparent="1" valign="center" halign="center" noWrap="1" zPosition="5" >
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="Event" render="Label" position="20,70" size="577,30" halign="left" backgroundColor="black" font="Bold;24" noWrap="1" transparent="0" foregroundColor="event-now-next_frgrnd">
