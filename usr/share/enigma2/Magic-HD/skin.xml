@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 4.33 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 4.34 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -2784,29 +2784,6 @@
     <widget name="config" position="5,50" size="550,80" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="28" enableWrapAround="1"/>
     <ePixmap pixmap="skin_default/div-h.png" position="0,130" zPosition="1" size="560,2" />
     <widget source="introduction" render="Label" position="0,140" size="550,25" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="#25062748" transparent="1" />
-  </screen>
-  <screen name="VideoEnhancementSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
-    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
-    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
-      <convert type="ClockToText">Format:%-H:%M</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
-      <convert type="ClockToText">Date</convert>
-    </widget>
-    <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
-    <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-    <widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-    <widget source="key_yellow" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
-    <widget source="key_blue" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
-    <widget name="config" position="520,82" size="755,558" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="28" foregroundColor="grey" enableWrapAround="1" />
-    <widget name="introduction" position="520,640" size="755,25" backgroundColor="black" foregroundColor="grey" transparent="1" font="Regular;22" halign="center" />
-    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ##NetWorkmanager## -->
   <screen name="NetworkSetup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -7197,7 +7174,7 @@
     <widget name="key_green" position="340,682" size="220,26"  foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26"  foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="text" position="520,82" zPosition="1" size="755,25" font="Regular;24" halign="center" valign="center" />
+    <widget name="text" position="520,82" zPosition="1" size="755,25" font="Regular;24" halign="center" valign="center" />
     <widget name="timerlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="522,110" size="755,552" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -8582,20 +8559,14 @@
     </widget>
     <widget name="lab1" position="5,313" size="1275,365" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
     <widget name="timeline_text" position="5,286" size="1275,30" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
-<!--    <widget name="list" position="5,313" size="1275,365" scrollbarMode="showNever" transparent="1"
+    <widget name="list" position="5,313" size="1275,365" scrollbarMode="showNever" transparent="1"
     ServiceBackgroundColor="bluetransparent"  ServiceBackgroundColorSelected="black" ServiceBackgroundColorNow="greentransparent" ServiceBackgroundColorNowSelected="greentransparent" 
     EntryBackgroundColor="bluetransparent"    EntryBackgroundColorSelected="black"   EntryBackgroundColorNow="redtransparent"     EntryBackgroundColorNowSelected="redtransparent" 
     EntryFontAlignment="center"               EntryForegroundColorSelected="selectedFG"                                           EntryForegroundColorNowSelected="selectedFG" 
                                               ServiceForegroundColorSelected="selectedFG"                                         ServiceForegroundColorNowSelected="selectedFG" 
     RecordBackgroundColor="yellowtransparent" RecordBackgroundColorSelected="yellowtransparent"                                   RecordForegroundColorSelected="selectedFG"
-    ZapBackgroundColor="transpWhite"          ZapBackgroundColorSelected="transpWhite"                                            ZapForegroundColorSelected="selectedFG"   />-->
-    <widget name="list" position="5,313" size="1275,365" scrollbarMode="showNever" transparent="1"
-    ServiceBackgroundColor="bluetransparent"                                         ServiceBackgroundColorNow="greentransparent" ServiceBackgroundColorNowSelected="greentransparent"
-    EntryBackgroundColor="bluetransparent"    EntryBackgroundColorSelected="black"   EntryBackgroundColorNow="redtransparent"     EntryBackgroundColorNowSelected="redtransparent"
-    EntryFontAlignment="center"               EntryForegroundColorSelected="selectedFG"                                           EntryForegroundColorNowSelected="selectedFG"
-    RecordBackgroundColor="yellowtransparent" RecordBackgroundColorSelected="yellowtransparent"                                   RecordForegroundColorSelected="selectedFG"
     ZapBackgroundColor="transpWhite"          ZapBackgroundColorSelected="transpWhite"                                            ZapForegroundColorSelected="selectedFG"   />
-    <widget name="timeline0" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
+<    <widget name="timeline0" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline1" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline2" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline3" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
