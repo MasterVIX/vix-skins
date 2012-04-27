@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-ViX Vs 1.18 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
+  <!--  Skin: Magic-ViX Vs 1.21 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -174,7 +174,7 @@
 	</screen>
   <screen flags="wfNoBorder" name="SecondInfoBar" position="0,0" size="720,96" title="SecondInfoBar">
     <widget source="session.CurrentService" render="Label" position="50, 20" size="600,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;16" valign="top" halign="left">
-      <convert type="pliExpertInfo">ExpertInfo</convert>
+      <convert type="PliExtraInfo">All</convert>
     </widget>
 	</screen>	
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="MoviePlayer" position="60,40" size="600,102" title="MoviePlayer">
@@ -286,7 +286,7 @@
 		</widget>
 <!--<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="226,289" size="14,14" zPosition="4"/>-->
 		<eLabel backgroundColor="darkgrey" position="0,282" size="300,2" zPosition="5"/>
-    <ePixmap pixmap="Magic/logos/pli.png" position="-10,290" size="250,25" alphatest="on" />
+    <ePixmap pixmap="Magic/logos/vix.png" position="5,290" size="250,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_mainmenu" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
@@ -337,7 +337,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
-    <ePixmap pixmap="Magic/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
+    <ePixmap pixmap="Magic/logos/vix.png" position="120,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_information" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
@@ -353,7 +353,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
-    <ePixmap pixmap="Magic/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
+    <ePixmap pixmap="Magic/logos/vix.png" position="120,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_shutdown" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
@@ -369,7 +369,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
-    <ePixmap pixmap="Magic/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
+    <ePixmap pixmap="Magic/logos/vix.png" position="120,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_harddisk" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
@@ -385,7 +385,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
-    <ePixmap pixmap="Magic/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
+    <ePixmap pixmap="Magic/logos/vix.png" position="120,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_network" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
@@ -401,7 +401,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
-    <ePixmap pixmap="Magic/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
+    <ePixmap pixmap="Magic/logos/vix.png" position="120,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_setup" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
@@ -417,7 +417,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
-    <ePixmap pixmap="Magic/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
+    <ePixmap pixmap="Magic/logos/vix.png" position="120,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_scan" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
@@ -433,7 +433,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
-    <ePixmap pixmap="Magic/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
+    <ePixmap pixmap="Magic/logos/vix.png" position="120,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_system" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
@@ -449,7 +449,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
-    <ePixmap pixmap="Magic/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
+    <ePixmap pixmap="Magic/logos/vix.png" position="120,290" size="340,25" alphatest="on" />
 	</screen>	
 	<!--  ##### Input and Output Boxes #####  -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="NumberZap" position="50,50" size="160,26" title="Channel">
@@ -586,7 +586,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   	<widget source="global.CurrentTime" render="Label" position="580,20" size="100,24" font="Regular;18" foregroundColor="#FFFFFF" backgroundColor="#000000" shadowColor="#000000" halign="right" transparent="1">
     	<convert type="ClockToText">Format:%d.%m.%Y</convert>
 	  </widget>
-    <eLabel text="Kanaal Selectie" position="300,20" size="380,28" font="Regular;18" foregroundColor="#FFFFFF" backgroundColor="#000000" shadowColor="#000000" halign="center" transparent="1" />
 	  <widget source="session.VideoPicture" render="Pig" position="30,48" size="200,160" zPosition="3" backgroundColor="#ff000000" />
 		<widget foregroundColorServiceNotAvail="#5a5a5a" name="list" position="240,48" scrollbarMode="showOnDemand" serviceInfoFont="Enigma;18" serviceNameFont="Enigma;22" serviceNumberFont="Enigma;22" foregroundColorEventSelected="#5a5a00" size="450,450"/>			
 		<widget font="Enigma;17" halign="left" position="250,353" render="Label" size="50,20" source="ServiceEvent">
@@ -611,50 +610,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   	<widget name="key_yellow" position="395,529" size="125,26" font="Regular;18" foregroundColor="#B59E01" backgroundColor="#000000" shadowColor="#000000" halign="left" valign="top" transparent="1" />
   	<widget name="key_blue" position="545,529" size="170,26" font="Regular;18" foregroundColor="#1E28B6" backgroundColor="#000000" shadowColor="#000000" halign="left" valign="top" transparent="1" />
   </screen>
-<!--	<screen name="ChannelSelection" position="80,85" size="560,440" title="Channel Selection">
-		<ePixmap alphatest="on" name="red" pixmap="Magic/buttons/key-red.png" position="0,0" size="140,40" transparent="1"/>
-		<ePixmap alphatest="on" name="green" pixmap="Magic/buttons/key-green.png" position="140,0" size="140,40" transparent="1"/>
-		<ePixmap alphatest="on" name="yellow" pixmap="Magic/buttons/key-yellow.png" position="280,0" size="140,40" transparent="1"/>
-		<ePixmap alphatest="on" name="blue" pixmap="Magic/buttons/key-blue.png" position="422,0" size="140,40" transparent="1"/>
-		<widget backgroundColor="#7C1C1C" font="Enigma;18" halign="center" name="key_red" position="0,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
-		<widget backgroundColor="#266926" font="Enigma;18" halign="center" name="key_green" position="140,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
-		<widget backgroundColor="#8C5900" font="Enigma;18" halign="center" name="key_yellow" position="280,0" size="140,41" transparent="1" valign="center" zPosition="2"/>
-		<widget backgroundColor="#254177" font="Enigma;18" halign="center" name="key_blue" position="420,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
-		<widget foregroundColorServiceNotAvail="#5a5a5a" name="list" position="0,39" scrollbarMode="showOnDemand"
-			serviceInfoFont="Enigma;18" serviceNameFont="Enigma;22" serviceNumberFont="Enigma;22"
-			foregroundColorEventSelected="#5a5a00"
-			size="558,310"/>			
-		<widget font="Enigma;17" halign="left" position="10,353" render="Label" size="50,20" source="ServiceEvent">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText"/>
-		</widget>
-		<widget borderColor="#888888" borderWidth="1" pixmap="Magic/window/chan_p_bar.png" position="60,358" render="Progress" size="100,10" source="ServiceEvent" zPosition="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>		
-		<widget font="Enigma;17" noWrap="1" position="240,353" render="Label" size="80,20" source="ServiceEvent">
-			<convert type="EventTime">Remaining</convert>
-			<convert type="RemainingToText">InMinutes</convert>
-		</widget>
-		<widget font="Enigma;17" noWrap="1" position="170,353" render="Label" size="70,20" source="ServiceEvent">
-			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText">Format:%1H:%M</convert>
-		</widget>
-		<widget font="Enigma;17" position="3,377" render="Label" size="555,62" source="ServiceEvent">
-			<convert type="EventName">FullDescription</convert>
-		</widget>
-    <widget font="Enigma;17" noWrap="1" position="370,353" render="Label" size="80,20" source="ServiceEvent">
-      <convert type="ServiceOrbitalPosition"></convert>
-    </widget>
-		<widget font="Enigma;18" halign="right" position="495,353" render="Label" size="55,20" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="450,356" size="14,14" zPosition="4"/>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="450,356" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<eLabel backgroundColor="darkgrey" position="0,350" size="620,2" zPosition="5"/>
-		<eLabel backgroundColor="darkgrey" position="0,374" size="620,2" zPosition="5"/>
-	</screen>-->
 	<screen flags="wfNoBorder" name="SlimChannelSelection" position="80,85" size="560,440" title="Channel Selection" backgroundColor="transparent" >
     <eLabel position="0,0" size="560,440" backgroundColor="transpBlack" zPosition="-50" />
 		<ePixmap alphatest="on" name="red" pixmap="Magic/buttons/key-red.png" position="0,0" size="140,40" transparent="1"/>
