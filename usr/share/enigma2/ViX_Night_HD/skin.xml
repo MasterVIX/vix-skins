@@ -1,5 +1,5 @@
 <skin>
-	<!--  Skin: ViX-Night-HD Vs 1.06 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Night-HD Vs 1.07 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -394,16 +394,39 @@
 		<widget source="global.CurrentTime" render="Label" position="815,42" zPosition="1" size="115,18" font="Regular; 18" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="center" valign="top">
 			<convert type="ClockToText">Format:%a %d/%m/%y</convert>
 		</widget>
-		<widget name="betacrypt" text="B" font="Regular;17" position="43,43" size="12,17" halign="center" foregroundNotCrypted="infobar-frgrnd" backgroundNotCrypted="infobar-bkgrnd" foregroundCrypted="infobar-bkgrnd" backgroundCrypted="#666666" foregroundEncrypted="infobar-bkgrnd" backgroundEncrypted="infobar-frgrnd" zPosition="1" transparent="1" valign="center" noWrap="1" />
-		<widget name="nds" text="NDS" font="Regular;17" position="43,62" size="38,17" halign="center" foregroundNotCrypted="infobar-frgrnd" backgroundNotCrypted="infobar-bkgrnd" foregroundCrypted="infobar-bkgrnd" backgroundCrypted="#666666" foregroundEncrypted="infobar-bkgrnd" backgroundEncrypted="infobar-frgrnd" zPosition="1" transparent="1" valign="center" />
-		<widget name="irdeto" text="I" font="Regular;17" position="57,43" size="12,17" halign="center" foregroundNotCrypted="infobar-frgrnd" backgroundNotCrypted="infobar-bkgrnd" foregroundCrypted="infobar-bkgrnd" backgroundCrypted="#666666" foregroundEncrypted="infobar-bkgrnd" backgroundEncrypted="infobar-frgrnd" zPosition="1" transparent="1" valign="center" noWrap="1" />
-		<widget name="seca" text="S" font="Regular;17" position="71,43" size="12,17" halign="center" foregroundNotCrypted="infobar-frgrnd" backgroundNotCrypted="infobar-bkgrnd" foregroundCrypted="infobar-bkgrnd" backgroundCrypted="#666666" foregroundEncrypted="infobar-bkgrnd" backgroundEncrypted="infobar-frgrnd" zPosition="1" transparent="1" valign="center" noWrap="1" />
-		<widget name="via" text="V" font="Regular;17" position="85,43" size="12,17" halign="center" foregroundNotCrypted="infobar-frgrnd" backgroundNotCrypted="infobar-bkgrnd" foregroundCrypted="infobar-bkgrnd" backgroundCrypted="#666666" foregroundEncrypted="infobar-bkgrnd" backgroundEncrypted="infobar-frgrnd" zPosition="1" transparent="1" valign="center" noWrap="1" />
-		<widget name="nagra" text="N" font="Regular;17" position="99,43" size="12,17" halign="center" foregroundNotCrypted="infobar-frgrnd" backgroundNotCrypted="infobar-bkgrnd" foregroundCrypted="infobar-bkgrnd" backgroundCrypted="#666666" foregroundEncrypted="infobar-bkgrnd" backgroundEncrypted="infobar-frgrnd" zPosition="1" transparent="1" valign="center" noWrap="1" />
-		<widget name="conax" text="CO" font="Regular;17" position="83,62" size="29,17" halign="center" foregroundNotCrypted="infobar-frgrnd" backgroundNotCrypted="infobar-bkgrnd" foregroundCrypted="infobar-bkgrnd" backgroundCrypted="#666666" foregroundEncrypted="infobar-bkgrnd" backgroundEncrypted="infobar-frgrnd" zPosition="1" transparent="1" valign="center" />
-		<widget name="crypto" text="CW" font="Regular;17" position="113,43" size="30,17" halign="center" foregroundNotCrypted="infobar-frgrnd" backgroundNotCrypted="infobar-bkgrnd" foregroundCrypted="infobar-bkgrnd" backgroundCrypted="#666666" foregroundEncrypted="infobar-bkgrnd" backgroundEncrypted="infobar-frgrnd" zPosition="1" transparent="1" valign="center" noWrap="1" />
-		<widget name="dreamcrypt" text="DC" font="Regular; 17" position="114,62" size="29,17" halign="center" foregroundNotCrypted="infobar-frgrnd" backgroundNotCrypted="infobar-bkgrnd" foregroundCrypted="infobar-bkgrnd" backgroundCrypted="#666666" foregroundEncrypted="infobar-bkgrnd" backgroundEncrypted="infobar-frgrnd" zPosition="1" transparent="1" valign="center" />
-		<widget name="ecmInfo" font="Regular;17" position="155,43" size="320,36" halign="left" zPosition="1" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" />
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="43,43" size="34,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoNDS</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="79,43" size="12,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoBeta</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="93,43" size="7,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoIrdeto</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="102,43" size="12,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoSeca</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="116,43" size="12,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoVia</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="130,43" size="12,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoNagra</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="43,62" size="25,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoCryptoW</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="70,62" size="25,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoConax</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="97,62" size="20,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoBiss</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="119,62" size="23,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoDre</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="155,43" size="320,36" halign="left" zPosition="1" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" >
+			<convert type="CryptoInfo">VerboseInfo</convert>
+		</widget>
 		<widget source="session.CurrentService" render="Label" position="400,43" size="390,36" font="Regular;17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" halign="right">
 			<convert type="pliExpertInfo">FrequencyInfo</convert>
 		</widget>
@@ -907,22 +930,27 @@
 		<widget source="Event" render="Label" position="25,15" size="935,135" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" valign="top" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget source="Service" render="Label" position="44,158" size="520,180" font="Boldit; 30" valign="top" halign="left" noWrap="1" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar-bkgrnd" transparent="1">
+		<widget source="Service" render="Label" position="44,158" size="520,34" font="Boldit; 30" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" valign="top" halign="left" noWrap="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="545,164" size="60,20" font="Bold; 17" foregroundColor="infobar-frgrnd-on" backgroundColor="infobar-bkgrnd" transparent="1" halign="center">
+		<widget source="session.CurrentService" render="Label" position="495,164" size="60,20" font="Bold; 17" foregroundColor="infobar-frgrnd-on" backgroundColor="infobar-bkgrnd" transparent="1" halign="center">
 			<convert type="ServiceOrbitalPosition" />
 		</widget>
-		<ePixmap pixmap="ViX_Night_HD/icons/icon_update_off.png" position="609,162" size="20,20" zPosition="0" alphatest="blend" />
-		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="ViX_HD_Common/icons/icon_stableupdate.png" position="609,162" size="20,20" zPosition="1" alphatest="blend" >
+		<ePixmap pixmap="ViX_Night_HD/icons/icon_update_off.png" position="559,162" size="20,20" zPosition="0" alphatest="blend" />
+		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="ViX_HD_Common/icons/icon_stableupdate.png" position="559,162" size="20,20" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="ViX_HD_Common/icons/icon_unstableupdate.png" position="609,162" size="20,20" zPosition="1" alphatest="blend" >
+		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="ViX_HD_Common/icons/icon_unstableupdate.png" position="559,162" size="20,20" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="ViX_Night_HD/icons/icon_rec_off.png" position="634,163" size="31,17" zPosition="0" alphatest="blend" />
-		<widget source="session.RecordState" render="Pixmap" pixmap="ViX_Night_HD/icons/icon_rec.png" position="634,163" size="31,17" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX_Night_HD/icons/icon_rec_off.png" position="583,163" size="31,17" zPosition="0" alphatest="blend" />
+		<widget source="session.RecordState" render="Pixmap" pixmap="ViX_Night_HD/icons/icon_rec.png" position="583,163" size="31,17" zPosition="1" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<ePixmap pixmap="ViX_Night_HD/icons/ico_hbbtv_off.png" position="617,162" size="46,17" zPosition="0" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_Night_HD/icons/ico_hbbtv_on.png" position="617,162" size="46,17" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">HasHBBTV</convert>
+			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap pixmap="ViX_Night_HD/icons/icon_hd_off.png" position="667,161" size="29,20" zPosition="1" alphatest="blend" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_Night_HD/icons/icon_hd_on.png" position="667,161" size="29,20" zPosition="2" alphatest="blend">
@@ -936,7 +964,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap pixmap="ViX_Night_HD/icons/icon_dolby_off.png" position="734,164" zPosition="0" size="25,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_Night_HD/icons/icon_dolby.png" position="734,164" size="25,15" zPosition="1" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX_Night_HD/icons/icon_dolby.png" position="734,164" size="25,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -960,15 +988,39 @@
 		<widget source="global.CurrentTime" render="Label" position="815,192" zPosition="1" size="115,18" font="Regular; 18" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="center" valign="top">
 			<convert type="ClockToText">Format:%a %d/%m/%y</convert>
 		</widget>
-		<eLabel text="B" position="43,193" size="12,17" halign="center" font="Regular;17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" zPosition="1" transparent="1" valign="center" noWrap="1" />
-		<eLabel text="I" position="57,193" size="12,17" font="Regular;17" halign="center" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" zPosition="1" transparent="1" valign="center" />
-		<eLabel text="S" position="71,193" size="12,17" font="Regular;17" halign="center" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" zPosition="1" transparent="1" valign="center" noWrap="1" />
-		<eLabel text="N" position="99,193" size="12,17" font="Regular;17" halign="center" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" zPosition="1" transparent="1" valign="center" noWrap="1" />
-		<eLabel text="V" position="85,193" size="12,17" font="Regular;17" halign="center" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" zPosition="1" transparent="1" valign="center" noWrap="1" />
-		<eLabel text="CW" position="113,193" size="30,17" font="Regular;17" halign="center" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" zPosition="1" transparent="1" valign="center" noWrap="1" />
-		<eLabel text="CO" position="83,212" size="29,17" font="Regular;17" halign="center" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" zPosition="1" transparent="1" valign="center" />
-		<eLabel text="DC" position="114,212" size="29,17" font="Regular; 17" halign="center" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" zPosition="1" transparent="1" valign="center" noWrap="1" />
-		<eLabel text="NDS" position="43,212" size="38,17" font="Regular;17" halign="center" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" zPosition="1" valign="center" />
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="43,193" size="34,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoNDS</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="79,193" size="12,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoBeta</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="93,193" size="7,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoIrdeto</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="102,193" size="12,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoSeca</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="116,193" size="12,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoVia</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="130,193" size="12,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoNagra</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="43,212" size="25,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoCryptoW</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="70,212" size="25,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoConax</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="97,212" size="20,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="center" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoBiss</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="119,212" size="23,17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1" >
+			<convert type="PliExtraInfo">CryptoDre</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Regular;17" position="155,193" size="320,36" halign="left" zPosition="1" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" >
+			<convert type="CryptoInfo">VerboseInfo</convert>
+		</widget>
 		<widget source="session.CurrentService" render="Label" position="400,193" size="390,36" font="Regular;17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" halign="right">
 			<convert type="pliExpertInfo">FrequencyInfo</convert>
 		</widget>
@@ -1045,7 +1097,6 @@
 		<ePixmap pixmap="ViX_HD_Common/buttons/blue.png" position="630,310" size="25,25" alphatest="blend" />
 		<widget name="key_blue" position="665,310" size="150,25" font="Regular; 20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" halign="left" transparent="1" zPosition="1"/>
 	</screen>
-
 
 	<screen name="MediaPlayer" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
