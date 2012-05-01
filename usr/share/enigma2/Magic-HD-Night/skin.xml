@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.19 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.20 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -278,7 +278,10 @@
       </convert>
     </widget>
     <!--<ePixmap pixmap="Magic-HD-Common/icons/icon_update_off.png" position="60,35" size="20,20" zPosition="0" alphatest="blend" />-->
-    <widget source="session.OnlineCheckState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_update.png" position="60,35" size="32,32" zPosition="10" alphatest="blend">
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_stableupdate.png" position="60,35" size="32,32" zPosition="10" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_unstableupdate.png" position="60,35" size="32,32" zPosition="10" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
@@ -363,7 +366,6 @@
     <widget source="session.Event_Next" render="Label" position="650,187" size="610,335" font="Regular; 18" zPosition="1" backgroundColor="background" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-
     <widget source="session.CurrentService" render="Picon" position="60,600" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
@@ -501,10 +503,12 @@
       </convert>
     </widget>
     <!--<ePixmap pixmap="Magic-HD-Common/icons/icon_update_off.png" position="60,35" size="20,20" zPosition="0" alphatest="blend" />-->
-    <widget source="session.OnlineCheckState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_update.png" position="60,545" size="32,32" zPosition="10" alphatest="blend">
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_stableupdate.png" position="60,35" size="32,32" zPosition="10" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-
+    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_unstableupdate.png" position="60,35" size="32,32" zPosition="10" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
   </screen>
   <screen flags="wfNoBorder" name="SIBsetupScreen" position="0,0" size="1280,720" title="Second-InfoBar setup">
     <panel name="BasicTemplate"/>
