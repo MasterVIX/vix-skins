@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 4.37 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 4.38 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -164,7 +164,13 @@
     <widget source="session.Event_Now" render="Progress" pixmap="Magic-HD-Common/infobar/pbar.png" position="180,103" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="session.OnlineCheckState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_update.png" position="5,45" size="32,32" zPosition="10" alphatest="blend" >
+<!--    <widget source="session.OnlineCheckState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_update.png" position="5,45" size="32,32" zPosition="10" alphatest="blend" >
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>-->
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_stableupdate.png" position="5,45" size="32,32" zPosition="10" alphatest="blend" >
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_unstableupdate.png" position="5,45" size="32,32" zPosition="10" alphatest="blend" >
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
 <!--  ## The following items are only added to prevent logs being cluttered with warnings ## -->
@@ -394,7 +400,10 @@
       <convert type="ValueRange">3,3</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.OnlineCheckState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_update.png" position="5,555" size="32,32" zPosition="10" alphatest="blend">
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_unstableupdate.png" position="5,555" size="32,32" zPosition="10" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_stableupdate.png" position="5,555" size="32,32" zPosition="10" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
