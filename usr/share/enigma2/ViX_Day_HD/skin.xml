@@ -1,5 +1,5 @@
 <skin>
-	<!--  Skin: ViX-Day-HD Vs 2.10 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Day-HD Vs 2.11 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -437,6 +437,7 @@
 		<widget source="session.CurrentService" render="Label" position="878,62" size="47,20" font="Regular; 18" foregroundColor="infobar-frgrnd" halign="left" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
+		<widget source="session.CurrentService" render="PiconBg" position="43,88" size="102,62" transparent="0" alphatest="blend" />
 		<widget source="session.CurrentService" render="Picon" position="44,90" size="100,60" transparent="0" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -564,6 +565,7 @@
 		<widget source="session.Event_Next" render="Label" position="650,157" size="610,385" font="Regular;22" zPosition="1" backgroundColor="background" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
+		<widget source="session.CurrentService" render="PiconBg" position="43,553" size="102,62" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1" />
 		<widget source="session.CurrentService" render="Picon" position="45,555" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
 		<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -839,6 +841,7 @@
 		<widget source="global.CurrentTime" render="Label" position="700,16" zPosition="1" size="115,20" font="Regular;18" foregroundColor="infobar-frgrnd" halign="center" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top">
 			<convert type="ClockToText">Format:%a %d/%m/%y</convert>
 		</widget>
+		<widget source="session.CurrentService" render="PiconBg" position="43,88" size="102,62" transparent="0" alphatest="blend" />
 		<widget source="session.CurrentService" render="Picon" position="44,90" size="100,60" transparent="0" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -1031,6 +1034,7 @@
 		<widget source="session.CurrentService" render="Label" position="878,212" size="47,20" font="Regular; 18" foregroundColor="infobar-frgrnd" halign="left" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
+		<widget source="Service" render="PiconBg" position="43,238" size="102,62" transparent="1" zPosition="2" alphatest="blend" />
 		<widget source="Service" render="Picon" position="44,240" size="100,60" transparent="1" zPosition="2" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -1276,6 +1280,7 @@
 	</screen>
 	<screen name="ChannelSelection" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
+		<widget source="ServiceEvent" render="PiconBg" position="18,8" size="102,62"  zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd"  />
 		<widget source="ServiceEvent" render="Picon" position="20,10" size="100,60" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -1397,6 +1402,7 @@ self.autoResize()
 <!-- EPG Screens -->
 	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
+		<widget source="Service" render="PiconBg" position="18,8" size="102,62"  zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd"  />
 		<widget source="Service" render="Picon" position="20,10" size="100,60" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -1414,6 +1420,7 @@ self.autoResize()
 	</screen>
 	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
+		<widget source="Service" render="PiconBg" position="18,8" size="102,62"  zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd"  />
 		<widget source="Service" render="Picon" position="20,10" size="100,60" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
