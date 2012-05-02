@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.20 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.21 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -1728,15 +1728,14 @@
   <screen name="TimerSanityConflict" title="Timer sanity error" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
     <ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow2.png" position="580,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/blue2.png" position="840,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-    <widget name="list" position="0,0" size="0,25" />
-    <widget name="timer1" position="15,385" size="477,285" scrollbarMode="showNever" selectionDisabled="1" />
-    <widget name="timer2" position="520,90" size="755,550" scrollbarMode="showNever" />
+    <widget name="list" position="520,82" size="755,295" scrollbarMode="showNever" />
+    <widget name="timer1" position="15,385" size="500,285" scrollbarMode="showNever" selectionDisabled="1" />
+    <widget name="timer2" position="520,385" size="755,285" scrollbarMode="showNever" />
   </screen>
   <!-- ## Setup ## -->
   <screen name="WebIfConfigScreen" title="Main Setup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -7006,7 +7005,11 @@
     <widget source="key_green" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
     <widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="740,583" transparent="1" />    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
+  <!-- ## VU+ StreamTV ## -->
+  <screen name="StreamTVList" position="0,0" size="1280,720" flags="wfNoBorder" title="StreamTV List">
+	<panel name="BasicTemplate"/>
+    <widget name="streamlist" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="30" position="520,85" size="755,575" transparent="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
   <!-- ## End of Magic-HD-ViX ## -->
 </skin>
-  
-  
