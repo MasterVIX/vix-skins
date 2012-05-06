@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.23 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.24 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -141,6 +141,7 @@
   <!--  ## InfoBars ## -->
   <screen name="InfoBar" title="InfoBar" position="0,510" size="1280,400" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap alphatest="off" pixmap="Magic-HD-Common/infobar/hd.png" position="0,0" size="1280,220" zPosition="-1" />
+	<widget source="session.CurrentService" render="PiconBg" position="59,88" size="102,62" transparent="0" alphatest="blend" zPosition="1" />
     <widget source="session.CurrentService" render="Picon" position="60,90" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
@@ -366,6 +367,7 @@
     <widget source="session.Event_Next" render="Label" position="650,187" size="610,335" font="Regular; 18" zPosition="1" backgroundColor="background" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
+	<widget source="session.CurrentService" render="PiconBg" position="59,598" size="102,62" transparent="0" alphatest="blend" zPosition="1" />
     <widget source="session.CurrentService" render="Picon" position="60,600" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
