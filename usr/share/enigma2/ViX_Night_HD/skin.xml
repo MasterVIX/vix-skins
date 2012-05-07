@@ -937,12 +937,10 @@
 		<widget source="Service" render="Picon" position="44,193" size="100,60" transparent="0" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="Event" render="Progress" position="152,187" size="647,35" pixmap="ViX_Night_HD/infobareventprogress.png" backgroundColor="infobar_sunken" transparent="1" zPosition="0" alphatest="blend" >
+		<widget source="Event" render="Progress" position="152,187" size="647,35" pixmap="ViX_Night_HD/infobareventprogress.png" backgroundColor="infobar_sunken" transparent="1" zPosition="0" >
 			<convert type="EventTime">Progress</convert>
 		</widget>
-
-		<widget name="list" position="176,191" size="600,60" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" ListboxSelectedForeground="infobar-frgrnd-on" ListboxSelectedBackground="infobar_sunken" transparent="1" />
-
+		<widget name="list" position="176,191" size="600,60" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" />
 		<eLabel text="Tuner" position="830,265" size="60,20" font="Regular;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" transparent="1" />
 		<widget source="session.TunerInfo" render="FixedLabel" text="A" position="888,265" size="14,20" font="Bold;20" foregroundColor="infobar_tuner_rec" backgroundColor="infobar_collab_back" halign="center" zPosition="1" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
@@ -1178,7 +1176,7 @@
 		</widget>
 		<widget source="Title" render="Label" position="135,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 		<panel name="FullscreenPIGPanel" />
-		<widget name="list" position="20,82" size="660,590" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" backgroundColor="black" foregroundColorEvent="event-frgrnd" backgroundColorEvent="black" foregroundColorEventSelected="#00202020" foregroundColorServiceNotAvail="verydarkgrey" serviceItemHeight="36" serviceNumberFont="Regular;25" serviceNameFont="Regular;25" serviceInfoFont="Bold;22" transparent="0" zPosition="3" scrollbarMode="showOnDemand" />
+		<widget name="list" position="20,82" size="660,590" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" backgroundColor="black" foregroundColorEvent="event-frgrnd" foregroundColorEventSelected="#00202020" foregroundColorServiceNotAvail="verydarkgrey" serviceItemHeight="36" serviceNumberFont="Regular;25" serviceNameFont="Regular;25" serviceInfoFont="Bold;22" transparent="0" zPosition="3" scrollbarMode="showOnDemand" />
 		<eLabel text="NOW:" position="695,410" size="70,25" font="Bold;24" foregroundColor="event-now-next_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top" />
 		<widget source="ServiceEvent" render="Label" position="770,410" size="330,25" font="Bold;24" foregroundColor="event-now-next_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
 			<convert type="EventName">Name</convert>
