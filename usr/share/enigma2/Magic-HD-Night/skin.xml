@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.27 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.28 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -6565,20 +6565,24 @@
     <widget name="key_yellow" position="614,10" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
     <widget name="key_blue" position="875,10" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />-->
 	<widget source="Event" render="Label" position="50,300" size="1180,220" font="Regular;22" foregroundColor="white" transparent="1" backgroundColor="background" valign="center" halign="center" zPosition="2">
-			<convert type="EventName">FullDescription</convert>
+		<convert type="EventName">FullDescription</convert>
 	</widget>
-    <widget source="Service" render="Picon" position="60,600" size="100,60" alphatest="blend" transparent="1" zPosition="2">
-      <convert type="ServiceName">Reference</convert>
+	<widget source="session.CurrentService" render="PiconBg" position="59,634" size="102,62" transparent="0" alphatest="blend" zPosition="1" />
+    <widget source="session.CurrentService" render="Picon" position="60,636" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
+	    <convert type="ServiceName">Reference</convert>
     </widget>
     <widget name="list" position="220,640" size="635,62" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="left" />
     <widget source="Service" render="Label" position="305,585" size="500,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" valign="center" halign="left" >
     <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="50,665" size="120,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;24" valign="center" halign="center">
-      <convert type="ClockToText">Default</convert>
+    <widget source="global.CurrentTime" render="Label" position="64,589" size="62,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="white" font="Regular;24" valign="bottom" halign="right">
+      <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="50,695" size="120,20" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;20" valign="center" halign="center">
-      <convert type="ClockToText">ShortDate</convert>
+	<widget source="global.CurrentTime" render="Label" position="126,589" size="35,28" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="white" font="Regular;20" valign="bottom" >
+      <convert type="ClockToText">Format::%S</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="64,564" size="159,20" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;15" valign="center" halign="left">
+      <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="Event" render="Progress" pixmap="Magic-HD-Common/infobar/pbar.png" position="220,625" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
     <convert type="EventTime">Progress</convert>
