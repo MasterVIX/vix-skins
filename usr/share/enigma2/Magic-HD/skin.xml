@@ -1,5 +1,5 @@
 ﻿<skin>
-  <!--  Skin: Magic-HD-ViX Vs 4.45 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 4.46 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -165,9 +165,6 @@
     <widget source="session.Event_Now" render="Progress" pixmap="Magic-HD-Common/infobar/pbar.png" position="180,103" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
       <convert type="EventTime">Progress</convert>
     </widget>
-<!--    <widget source="session.OnlineCheckState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_update.png" position="5,45" size="32,32" zPosition="10" alphatest="blend" >
-      <convert type="ConditionalShowHide">Blink</convert>
-    </widget>-->
     <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_stableupdate.png" position="5,45" size="32,32" zPosition="10" alphatest="blend" >
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
@@ -182,17 +179,6 @@
     <widget name="key_green" position="340,179" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
     <widget name="key_yellow" position="614,179" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
     <widget name="key_blue" position="875,179" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />-->
-<!--  ## The following items are only added to prevent logs being cluttered with warnings ## -->
-    <widget name="betacrypt" text="B" font="Regular;17" position="0,0" size="0,0" />
-    <widget name="nds" text="NDS" font="Regular;17" position="0,0" size="0,0" />
-    <widget name="irdeto" text="I" font="Regular;17" position="0,0" size="0,0" />
-    <widget name="seca" text="S" font="Regular;17" position="0,0" size="0,0" />
-    <widget name="via" text="V" font="Regular;17" position="0,0" size="0,0" />
-    <widget name="nagra" text="N" font="Regular;17" position="0,0" size="0,0" />
-    <widget name="conax" text="CO" font="Regular;17" position="0,0" size="0,0" />
-    <widget name="crypto" text="CW" font="Regular;17" position="0,0" size="0,0" />
-    <widget name="dreamcrypt" text="DC" font="Regular; 17" position="0,0" size="0,0" />
-    <widget name="ecmInfo" font="Regular;17" position="0,0" size="0,0" halign="left" />
   </screen>
   <screen name="MoviePlayer" position="4,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="session.CurrentService" render="Label" position="240,0" size="780,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
@@ -736,7 +722,7 @@
     <widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="waitingtext" position="520,82" size="755,548" font="Regular;25" halign="center" valign="center" foregroundColor="grey" zPosition="4" />
     <widget name="chosenletter" position="520,82" size="755,548" foregroundColor="yellow" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4" />
-    <widget name="list" position="520,82" size="755,548" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeights="75,53,25" fontSizesOriginal="21,20,19" fontSizesCompact="21,19" fontSizesMinimal="20,18" foregroundColor="grey" enableWrapAround="1" />
+    <widget name="list" position="520,82" size="755,548" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" foregroundColor="grey" enableWrapAround="1" />
     <widget source="Service" render="Label" position="5,380" size="500,280" font="Regular;20" halign="center" valign="center">
       <convert type="EventName">FullDescription</convert>
     </widget>
@@ -1444,9 +1430,6 @@
     <widget name="ErrorPixmap" pixmap="Magic-HD-Common/window/input_error.png" position="600,7" size="54,54" zPosition="4" alphatest="on" />
     <widget name="QuestionPixmap" pixmap="Magic-HD-Common/window/input_question.png" position="600,7" size="54,54" zPosition="4" alphatest="on" />
     <widget name="InfoPixmap" pixmap="Magic-HD-Common/window/input_info.png" position="600,7" size="54,54" zPosition="4" alphatest="on" />
-<!--    <widget source="Title" foregroundColor="grey" render="Label" position="650,110" size="610,250" font="Regular;25" />
-    <widget name="text" position="650,390" size="610,240" font="Regular;22" foregroundColor="grey" />
-    <widget name="list" position="15,390" size="600,240" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" foregroundColor="grey" />-->
     <widget source="Title" foregroundColor="grey" render="Label" position="650,390" size="610,250" font="Regular;25" />
     <widget name="text" position="520,82" size="755,260" font="Regular;22" foregroundColor="grey" />
     <widget name="list" position="15,390" size="600,240" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" foregroundColor="grey" />
