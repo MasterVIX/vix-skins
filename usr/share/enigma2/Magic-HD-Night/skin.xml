@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.29 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.30 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -1521,20 +1521,20 @@
     <widget name="key_green" position="340,682" size="220,26" backgroundColor="background" zPosition="1" transparent="1" font="Regular;20" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="background" zPosition="1" transparent="1" font="Regular;20" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="background" zPosition="1" transparent="1" font="Regular;20" halign="left" />
-    <widget name="date" position="750,90" size="250,24" transparent="1" font="Regular;20" valign="center" halign="right" />
-    <widget name="list" position="590,165" size="600,500" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" />
-    <widget source="Event" render="Label" position="15,370" size="485,300" backgroundColor="background" transparent="1" foregroundColor="grey" font="Regular;20">
+    <widget name="date" position="750,85" size="250,24" transparent="1" font="Regular;20" valign="center" halign="center" />
+    <widget name="list" position="520,165" size="755,500" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" />
+    <widget source="Event" render="Label" position="15,380" size="477,290" backgroundColor="background" transparent="1" foregroundColor="grey" font="Regular;19">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget name="now_button" pixmap="Magic-HD-Common/border/epg_off.png" position="590,115" zPosition="2" size="180,40" alphatest="blend" />
-    <widget name="now_button_sel" pixmap="Magic-HD-Common/border/epg_now_on.png" position="590,115" zPosition="3" size="180,40" alphatest="blend" />
-    <widget name="now_text" position="590,115" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="  NOW" font="Regular;20" valign="center" halign="center" />
-    <widget name="next_button" pixmap="Magic-HD-Common/border/epg_off.png" position="780,115" zPosition="2" size="180,40" alphatest="blend" />
-    <widget name="next_button_sel" pixmap="Magic-HD-Common/border/epg_next_on.png" position="780,115" zPosition="3" size="180,40" alphatest="blend" />
-    <widget name="next_text" position="780,115" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="  NEXT" font="Regular;20" valign="center" halign="center" />
-    <widget name="more_button" pixmap="Magic-HD-Common/border/epg_off.png" position="960,115" zPosition="2" size="180,40" alphatest="blend" />
-    <widget name="more_button_sel" pixmap="Magic-HD-Common/border/epg_next_on.png" position="960,115" zPosition="3" size="180,40" alphatest="blend" />
-    <widget name="more_text" position="960,115" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="MORE" font="Regular;20" valign="center" halign="center" />
+    <widget name="now_button" pixmap="Magic-HD-Common/border/epg_off.png" position="590,110" zPosition="2" size="180,40" alphatest="blend" />
+    <widget name="now_button_sel" pixmap="Magic-HD-Common/border/epg_now_on.png" position="590,110" zPosition="3" size="180,40" alphatest="blend" />
+    <widget name="now_text" position="590,110" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="  Now" font="Regular;20" valign="center" halign="center" />
+    <widget name="next_button" pixmap="Magic-HD-Common/border/epg_off.png" position="780,110" zPosition="2" size="180,40" alphatest="blend" />
+    <widget name="next_button_sel" pixmap="Magic-HD-Common/border/epg_next_on.png" position="780,110" zPosition="3" size="180,40" alphatest="blend" />
+    <widget name="next_text" position="780,110" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="  Next" font="Regular;20" valign="center" halign="center" />
+    <widget name="more_button" pixmap="Magic-HD-Common/border/epg_off.png" position="960,110" zPosition="2" size="180,40" alphatest="blend" />
+    <widget name="more_button_sel" pixmap="Magic-HD-Common/border/epg_next_on.png" position="960,110" zPosition="3" size="180,40" alphatest="blend" />
+    <widget name="more_text" position="960,110" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="More" font="Regular;20" valign="center" halign="center" />
   </screen>
   <screen name="GraphMultiEPG" title="Electronic Program Guide" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top3_bg.png" position="0,0" size="1280,75" />
