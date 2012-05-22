@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-ViX Vs 1.22 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
+  <!--  Skin: Magic-ViX Vs 1.23 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -291,56 +291,58 @@
 		<eLabel backgroundColor="darkgrey" position="0,282" size="300,2" zPosition="5"/>
     <ePixmap pixmap="Magic/logos/vix.png" position="5,290" size="250,25" alphatest="on" />
 	</screen>
-	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_mainmenu" position="0,128" size="720,320" title="Main menu">
-		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
-		<widget font="Enigma;22" position="269,14" render="Label" size="310,26" source="title" transparent="1" zPosition="1"/>
-		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
+<!--	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_mainmenu" position="0,128" size="720,320" title="Main menu">-->
+	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_mainmenu" position="120,128" size="480,302" title="Main menu">
+<!--		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>-->
+		<eLabel backgroundColor="background" position="0,0" size="480,302" zPosition="-1"/>
+		<widget font="Enigma;22" position="149,4" render="Label" size="310,26" source="title" transparent="1" zPosition="1"/>
+		<widget position="149,53" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
 			<convert type="StringList"/>
 		</widget>
-		<widget alphatest="on" pixmap="skin_default/menu/shutdown.png" position="123,63" render="Pixmap" size="128,128" source="menu" zPosition="1">
+		<widget alphatest="on" pixmap="skin_default/menu/shutdown.png" position="3,53" render="Pixmap" size="128,128" source="menu" zPosition="1">
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget alphatest="on" pixmap="skin_default/menu/setup.png" position="123,63" render="Pixmap" size="128,128" source="menu" zPosition="1">
+		<widget alphatest="on" pixmap="skin_default/menu/setup.png" position="3,53" render="Pixmap" size="128,128" source="menu" zPosition="1">
 			<convert type="MenuEntryCompare">setup_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget alphatest="on" pixmap="skin_default/menu/plugins.png" position="123,63" render="Pixmap" size="128,128" source="menu" zPosition="1">
+		<widget alphatest="on" pixmap="skin_default/menu/plugins.png" position="3,53" render="Pixmap" size="128,128" source="menu" zPosition="1">
 			<convert type="MenuEntryCompare">plugin_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget alphatest="on" pixmap="skin_default/menu/information.png" position="123,63" render="Pixmap" size="128,128" source="menu" zPosition="1">
+		<widget alphatest="on" pixmap="skin_default/menu/information.png" position="3,53" render="Pixmap" size="128,128" source="menu" zPosition="1">
 			<convert type="MenuEntryCompare">info_screen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget alphatest="on" pixmap="skin_default/menu/scart.png" position="123,63" render="Pixmap" size="128,128" source="menu" zPosition="1">
+		<widget alphatest="on" pixmap="skin_default/menu/scart.png" position="3,53" render="Pixmap" size="128,128" source="menu" zPosition="1">
 			<convert type="MenuEntryCompare">scart_switch</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget alphatest="on" pixmap="skin_default/menu/timer.png" position="123,63" render="Pixmap" size="128,128" source="menu" zPosition="1">
+		<widget alphatest="on" pixmap="skin_default/menu/timer.png" position="3,53" render="Pixmap" size="128,128" source="menu" zPosition="1">
 			<convert type="MenuEntryCompare">timer_edit</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget alphatest="on" pixmap="skin_default/menu/media_player.png" position="123,63" render="Pixmap" size="128,128" source="menu" zPosition="1">
+		<widget alphatest="on" pixmap="skin_default/menu/media_player.png" position="3,53" render="Pixmap" size="128,128" source="menu" zPosition="1">
 			<convert type="MenuEntryCompare">media_player</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget alphatest="on" pixmap="skin_default/menu/dvd_player.png" position="123,63" render="Pixmap" size="128,128" source="menu" zPosition="1">
+		<widget alphatest="on" pixmap="skin_default/menu/dvd_player.png" position="3,53" render="Pixmap" size="128,128" source="menu" zPosition="1">
 			<convert type="MenuEntryCompare">dvd_player</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget alphatest="on" pixmap="skin_default/menu/subtitles.png" position="123,63" render="Pixmap" size="128,128" source="menu" zPosition="1">
+		<widget alphatest="on" pixmap="skin_default/menu/subtitles.png" position="3,53" render="Pixmap" size="128,128" source="menu" zPosition="1">
 			<convert type="MenuEntryCompare">subtitle_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+		<widget font="Enigma;18" halign="right" position="404,10" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,18" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="390,8" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
-    <ePixmap pixmap="Magic/logos/vix.png" position="120,290" size="340,25" alphatest="on" />
+		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="390,8" size="14,14" zPosition="4"/>
+    <ePixmap pixmap="Magic/logos/vix.png" position="0,280" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_information" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
@@ -358,21 +360,21 @@
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
     <ePixmap pixmap="Magic/logos/vix.png" position="120,290" size="340,25" alphatest="on" />
 	</screen>
-	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_shutdown" position="0,128" size="720,320" title="Main menu">
-		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
-		<ePixmap alphatest="on" pixmap="skin_default/menu/shutdown.png" position="123,63" size="128,128" zPosition="1"/>
-		<widget font="Enigma;22" position="269,14" render="Label" size="310,26" source="title" transparent="1" zPosition="1"/>
-		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
+	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_shutdown" position="120,128" size="480,302" title="Main menu">
+		<eLabel backgroundColor="background" position="0,0" size="480,302" zPosition="-1"/>
+		<ePixmap alphatest="on" pixmap="skin_default/menu/shutdown.png" position="3,53" size="128,128" zPosition="1"/>
+		<widget font="Enigma;20" position="80,10" render="Label" size="250,20" source="title" transparent="1" zPosition="1"/>
+		<widget position="200,63" render="Listbox" scrollbarMode="showOnDemand" size="250,217" source="menu" transparent="1" zPosition="1">
 			<convert type="StringList"/>
 		</widget>
-		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+		<widget font="Enigma;18" halign="right" position="404,4" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,18" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="390,8" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
-    <ePixmap pixmap="Magic/logos/vix.png" position="120,290" size="340,25" alphatest="on" />
+		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="390,8" size="14,14" zPosition="4"/>
+    <ePixmap pixmap="Magic/logos/vix.png" position="0,280" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_harddisk" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
@@ -422,6 +424,22 @@
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
     <ePixmap pixmap="Magic/logos/vix.png" position="120,290" size="340,25" alphatest="on" />
 	</screen>
+  <screen backgroundColor="transBG" flags="wfNoBorder" name="Setup" position="120,128" size="480,302" title="Main menu">
+    <eLabel backgroundColor="background" position="0,0" size="480,302" zPosition="-1" />
+    <widget source="status" render="Label" position="3,53" size="125,245" zPosition="10" font="Enigma;16" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
+<!--    <widget font="Enigma;22" position="149,4" render="Label" size="310,26" source="Title" transparent="1" zPosition="1" />-->
+    <widget name="config" position="149,53" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="10" itemHeight="20" enableWrapAround="1" zPosition="1" />
+    <widget name="footnote" position="149,282" size="310,19" zPosition="1" font="Regular;18" transparent="1" />
+    <widget font="Enigma;18" halign="right" position="404,4" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <ePixmap alphatest="on" pixmap="skin_default/buttons/red.png" position="0,0" size="140,40" />
+    <ePixmap alphatest="on" pixmap="skin_default/buttons/green.png" position="140,0" size="140,40" />
+    <widget source="key_red" render="Label" font="Regular;20" halign="center" position="-2,1" size="140,40" transparent="1" valign="center" zPosition="10" />
+    <widget source="key_green" render="Label" font="Regular;20" halign="center" position="140,0" size="140,40" transparent="1" valign="center" zPosition="10" />
+    <ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="390,8" size="14,14" zPosition="4" />
+</screen>
+
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_scan" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
 		<ePixmap alphatest="on" pixmap="skin_default/menu/information.png" position="123,63" size="128,128" zPosition="1"/>
@@ -522,6 +540,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 	</screen>
+
+  <screen name="SystemMemoryInfo" position="80,80" size="540,460" title="Release Notes">
+    <widget name="AboutScrollLabel" render="Label" font="Regular;22" position="25,30" size="490,350" scrollbarMode="showOnDemand" transparent="1" />
+    <ePixmap pixmap="Magic/logos/vix.png" position="10,422" size="210,25" alphatest="on" />
+    <eLabel text="www.world-of-satellite.com" foregroundColor="grey" backgroundColor="background" font="Regular;22" halign="center" position="225,422" size="300,25" transparent="1" zPosition="1" />
+  </screen>
+
+  <screen name="SystemNetworkInfo" position="80,80" size="540,460" title="Release Notes">
+    <widget name="AboutScrollLabel" render="Label" font="Regular;22" position="25,30" size="490,350" transparent="1" />
+    <ePixmap pixmap="Magic/logos/vix.png" position="10,422" size="210,25" alphatest="on" />
+    <eLabel text="www.world-of-satellite.com" foregroundColor="grey" backgroundColor="background" font="Regular;22" halign="center" position="225,422" size="300,25" transparent="1" zPosition="1" />
+  </screen>
+
 	<!-- Plugin browser -->
 	<screen name="PluginBrowser" position="160,95" size="400,405" title="Plugin browser">
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/red-big.png" position="0,0" size="200,40"/>
