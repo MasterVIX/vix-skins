@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-ViX Vs 1.28 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
+  <!--  Skin: Magic-ViX Vs 1.29 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -165,6 +165,7 @@
 			<convert type="ValueBitTest">8</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+    <widget source="session.CurrentService" render="PiconBg" position="53,158" size="72,55" transparent="0" alphatest="blend" zPosition="1" />
 		<widget alphatest="on" position="54,160" render="Picon" size="70,53" source="session.CurrentService" zPosition="5">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
