@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.35 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.36 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -188,14 +188,10 @@
     <widget source="session.Event_Now" render="Progress" pixmap="Magic-HD-Common/infobar/pbar.png" position="220,115" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1093,110" size="50,20" backgroundColor="secondBG" transparent="1" font="Regular;18" halign="right">
-      <convert type="ServiceInfo">VideoWidth</convert>
-    </widget>
-    <eLabel position="1144,110" size="15,20" backgroundColor="secondBG" transparent="1" text="x" font="Regular;16" halign="center" />
-    <widget source="session.CurrentService" render="Label" position="1160,110" size="50,20" backgroundColor="secondBG" transparent="1" font="Regular;18" halign="left">
-      <convert type="ServiceInfo">VideoHeight</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_dolby_on.png" position="905,76" size="60,24" zPosition="2" alphatest="on">
+    <widget source="session.CurrentService" render="Label" position="1100,110" size="130,20" font="Regular;18" foregroundColor="foreground" backgroundColor="secondBG" transparent="1" halign="left">
+		<convert type="PliExtraInfo">ResolutionString</convert>
+	</widget>
+	<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_dolby_on.png" position="905,76" size="60,24" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -417,13 +413,9 @@
     <widget source="session.Event_Now" render="Progress" pixmap="Magic-HD-Common/infobar/pbar.png" position="220,625" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1093,620" size="50,20" backgroundColor="secondBG" transparent="1" font="Regular;18" halign="right">
-      <convert type="ServiceInfo">VideoWidth</convert>
-    </widget>
-    <eLabel position="1144,620" size="15,20" backgroundColor="secondBG" transparent="1" text="x" font="Regular;16" halign="center" />
-    <widget source="session.CurrentService" render="Label" position="1160,620" size="50,20" backgroundColor="secondBG" transparent="1" font="Regular;18" halign="left">
-      <convert type="ServiceInfo">VideoHeight</convert>
-    </widget>
+    <widget source="session.CurrentService" render="Label" position="1100,620" size="130,20" font="Regular;18" foregroundColor="foreground" backgroundColor="secondBG" transparent="1" halign="left">
+		<convert type="PliExtraInfo">ResolutionString</convert>
+	</widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_dolby_on.png" position="905,586" size="60,24" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
