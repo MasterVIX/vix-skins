@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-ViX Vs 1.29 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
+  <!--  Skin: Magic-ViX Vs 1.30 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -165,10 +165,10 @@
 			<convert type="ValueBitTest">8</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-    <widget source="session.CurrentService" render="PiconBg" position="53,158" size="72,55" transparent="0" alphatest="blend" zPosition="1" />
-		<widget alphatest="on" position="54,160" render="Picon" size="70,53" source="session.CurrentService" zPosition="5">
-			<convert type="ServiceName">Reference</convert>
-		</widget>
+    <widget source="session.CurrentService" render="PiconBg" position="53,158" size="72,55" transparent="0" alphatest="blend" zPosition="5" />
+	<widget source="session.CurrentService" render="Picon" position="54,160"  size="70,53" transparent="1" alphatest="blend"  zPosition="5">
+		<convert type="ServiceName">Reference</convert>
+	</widget>
     <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="Magic/infobar/icon_stableupdate.png" position="55,70" size="32,32" zPosition="10" alphatest="blend" >
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
