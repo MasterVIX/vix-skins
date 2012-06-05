@@ -1,5 +1,5 @@
 ﻿<skin>
-  <!--  Skin: Magic-HD-ViX Vs 4.57 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 4.58 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -9546,6 +9546,299 @@
     <eLabel text="OK" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="target" position="520,82" size="755,22" font="Regular;22" />
     <widget name="config" position="520,105" size="755,561" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+  </screen>
+  <!-- ## MediaCenter ## -->
+  <screen name="MCS_GlobalSettings" position="0,0" size="1280,720" flags="wfNoBorder" title="Media Center - Global Settings">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <widget name="configlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="MCS_SkinSelector" position="0,0" size="1280,720" flags="wfNoBorder" title="Choose your Skin">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="5,80" render="Pig" size="477,270" zPosition="1" />
+    <widget name="SkinList" position="520,90" size="300,570" itemHeight="28" font="Regular;22" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
+    <widget name="Preview" position="918,110" size="280,210" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="MC_AudioInfoView" position="0,0" size="1280,720" flags="wfNoBorder" title="View Audio Info">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <widget name="infolist" selectionDisabled="1" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="MC_VideoInfoView" position="0,0" size="1280,720" flags="wfNoBorder" title="View Video Info">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <widget name="infolist" selectionDisabled="1" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="MC_FolderOptions" position="0,0" size="1280,720" flags="wfNoBorder" title="Media Center - Folder Options">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <widget source="pathlabel" render="Label" font="Regular;22" itemHeight="28" position="520,82" size="755,24" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <widget source="menu" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,106" size="755,560" transparent="1" foregroundColor="grey" enableWrapAround="1" >
+      <convert type="StringList" />
+    </widget>
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="MC_FavoriteFolderAdd" position="0,0" size="1280,720" flags="wfNoBorder" title="Media Center - Add Favorite">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="MC_FavoriteFolderEdit" position="0,0" size="1280,720" flags="wfNoBorder" title="Media Center - Add Favorite">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="AudioPlayerSettings" position="0,0" size="1280,720" flags="wfNoBorder" title="Audioplayer Settings">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <widget name="configlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="VideoPlayerSettings" position="0,0" size="1280,720" flags="wfNoBorder" title="Videoplayer Settings">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="MC_PicSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="Pictureplayer Settings">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <widget name="liste" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="DMC_MainMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="Media Center - Home">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+            <widget source="menu" render="Listbox" position="77,135" size="343,420" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/select1.png" backgroundColorSelected="#3e3e3d" foregroundColorSelected="#e9cb00" scrollbarMode="showNever" enableWrapAround="1" transparent="1" itemHeight="35">
+            <convert type="StringList">
+				{"template": [ MultiContentEntryText(pos = (70,3), size = (372, 35), flags = RT_HALIGN_LEFT, text = 0) ],
+				"fonts": [gFont("Regular", 28)],
+				"itemHeight": 35
+				}
+			</convert>
+    </widget>
+    <widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/MenuIconMusic.png" position="517,147" size="680,385" alphatest="on">
+      <convert type="MenuEntryCompare">menu_music</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/weblinks.png" position="517,147" size="680,385" alphatest="on">
+      <convert type="MenuEntryCompare">menu_weblinks</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/tunein.png" position="517,147" size="680,385" alphatest="on">
+      <convert type="MenuEntryCompare">menu_webbrowser</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/webmedia.png" position="517,147" size="680,385" alphatest="on">
+      <convert type="MenuEntryCompare">menu_webmedia</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/shoutcast.png" position="517,147" size="680,385" alphatest="on">
+      <convert type="MenuEntryCompare">menu_shoutcast</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/MenuIconVideo.png" position="517,147" size="680,385" alphatest="on">
+      <convert type="MenuEntryCompare">menu_video</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/MenuIconPicture.png" position="517,147" size="680,385" alphatest="on">
+      <convert type="MenuEntryCompare">menu_pictures</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/MenuIconDVD.png" position="517,147" size="680,385" alphatest="on">
+      <convert type="MenuEntryCompare">menu_dvd</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/MenuIconVLC.png" position="517,147" size="680,385" alphatest="on">
+      <convert type="MenuEntryCompare">menu_vlc</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/MenuIconSettings.png" position="517,147" size="680,385" alphatest="on">
+      <convert type="MenuEntryCompare">menu_settings</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="MC_Settings" position="0,0" size="1280,720" flags="wfNoBorder" title="Media Center - Settings">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="menu" render="Listbox" position="77,135" size="343,420" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/select1.png" backgroundColorSelected="#3e3e3d" foregroundColorSelected="#e9cb00" scrollbarMode="showNever" enableWrapAround="1" transparent="1" itemHeight="35">
+            <convert type="StringList">
+				{"template": [ MultiContentEntryText(pos = (70,3), size = (372, 35), flags = RT_HALIGN_LEFT, text = 0) ],
+				"fonts": [gFont("Regular", 28)],
+				"itemHeight": 33
+				}
+			</convert>
+    </widget>
+    <widget source="menu" render="Pixmap" transparent="1" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaCenter/skins/defaultHD/images/MenuIconMusic1.png" position="717,304" size="500,300" alphatest="on">
+      <convert type="MenuEntryCompare">menu_music</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="MC_FavoriteFolders" position="0,0" size="1280,720" flags="wfNoBorder" title="Media Center - Favorite Folders">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
+    <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_green" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_yellow" position="614,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget source="menu" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" >
+      <convert type="StringList">
+				{"template": [ MultiContentEntryText(pos = (70,3), size = (372, 35), flags = RT_HALIGN_LEFT, text = 0) ],
+				"fonts": [gFont("Regular", 28)],
+				"itemHeight": 33
+				}
+      </convert>
+    </widget>
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="MC_VLCServerlist" position="0,0" size="1280,720" flags="wfNoBorder" title="Media Center - VLC Player - Serverlist">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
+    <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_green" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_yellow" position="614,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="serverlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="MC_VLCFavoriteFolders" position="0,0" size="1280,720" flags="wfNoBorder" title="Media Center - VLC Favorites">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
+    <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_green" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_yellow" position="614,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget source="favoritelist" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" >
+      <convert type="StringList" />
+    </widget>
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ## CamoFS ## -->
   <screen name="camSetupFS_Screen" position="0,0" size="1280,720" flags="wfNoBorder" title="camoFS - Setup">
