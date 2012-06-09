@@ -1,5 +1,5 @@
-<skin>
-	<!--  Skin: ViX-Day-HD Vs 2.21 by AndyBlac @ www.world-of-satellite.com  -->
+﻿<skin>
+	<!--  Skin: ViX-Day-HD Vs 2.22 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -3282,9 +3282,9 @@ self.autoResize()
 		<widget source="introduction" render="Label" position="0,140" size="550,25" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" />
 	</screen>
 	<screen name="MyTubePlayerMainScreen" flags="wfBorder" position="280,70" size="720,576" title="MyTubePlayerMainScreen...">
-		<ePixmap position="0,0" zPosition="-1" size="720,576" pixmap="~/mytubemain_bg.png" alphatest="on" transparent="1" backgroundColor="transparent" />
+<!--		<ePixmap position="0,0" zPosition="-1" size="720,576" pixmap="~/mytubemain_bg.png" alphatest="on" transparent="1" backgroundColor="transparent" />-->
 		<widget name="config" zPosition="2" position="60,60" size="600,50" scrollbarMode="showNever" transparent="1" />
-		<widget source="feedlist" render="Listbox" position="49,110" size="628,385" zPosition="1" scrollbarMode="showOnDemand" transparent="1" backgroundPixmap="~/list_bg.png" selectionPixmap="~/list_sel.png">
+		<widget source="feedlist" render="Listbox" position="49,110" size="628,385" zPosition="1" scrollbarMode="showOnDemand" transparent="1" >
 			<convert type="TemplatedMultiContent">
 				{"templates":
 				{"default": (77,[
@@ -3307,7 +3307,7 @@ self.autoResize()
 		</widget>
 		<ePixmap pixmap="ViX_HD_Common/buttons/key_info.png" position="50,500" zPosition="4" size="35,25" alphatest="on" transparent="1" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/key_menu.png" position="50,520" zPosition="4" size="35,25" alphatest="on" transparent="1" />
-		<ePixmap position="90,500" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1" />
+<!--		<ePixmap position="90,500" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1" />-->
 		<ePixmap position="190,500" zPosition="4" size="140,40" pixmap="skin_default/buttons/red.png" transparent="1" alphatest="on" />
 		<ePixmap position="330,500" zPosition="4" size="140,40" pixmap="skin_default/buttons/green.png" transparent="1" alphatest="on" />
 		<ePixmap position="470,500" zPosition="4" size="140,40" pixmap="skin_default/buttons/yellow.png" transparent="1" alphatest="on" />
@@ -3315,9 +3315,10 @@ self.autoResize()
 		<widget name="key_green" position="330,500" zPosition="5" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
 		<widget name="key_yellow" position="470,500" zPosition="5" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
 		<widget name="ButtonBlue" pixmap="skin_default/buttons/button_blue.png" position="610,510" zPosition="10" size="15,16" transparent="1" alphatest="on" />
-		<widget name="VKeyIcon" pixmap="ViX_HD_Common/buttons/vkey_icon.png" position="620,495" zPosition="10" size="60,48" transparent="1" alphatest="on" />
+<!--		<widget name="VKeyIcon" pixmap="ViX_HD_Common/buttons/vkey_icon.png" position="620,495" zPosition="10" size="60,48" transparent="1" alphatest="on" />-->
 		<widget name="thumbnail" position="0,0" size="100,75" alphatest="on" /> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
 		<widget name="HelpWindow" position="340,325" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+		<eLabel text="'Text' = Virtual Keyboard" font="Regular;22" halign="left" position="190,545" size="300,26" transparent="1" zPosition="1" />
 	</screen>
 	<screen name="MyTubeVideoInfoScreen" flags="wfBorder" position="center,center" size="720,576" title="MyTubePlayerMainScreen...">
 		<ePixmap position="0,0" zPosition="-1" size="720,576" pixmap="~/mytubemain_bg.png" alphatest="on" transparent="1" backgroundColor="transparent" />
@@ -3364,7 +3365,7 @@ self.autoResize()
 	<screen name="MyTubePlayer" flags="wfNoBorder" position="center,550" size="720,160" title="InfoBar" backgroundColor="transparent">
 		<ePixmap position="0,0" pixmap="skin_default/2ndinfobar_mp.png" zPosition="-1" size="720,160" />
 		<ePixmap position="29,40" pixmap="skin_default/screws_mp.png" size="665,104" alphatest="on" />
-		<ePixmap position="48,70" pixmap="skin_default/icons/mp_buttons.png" size="108,13" alphatest="on" />
+<!--		<ePixmap position="48,70" pixmap="skin_default/icons/mp_buttons.png" size="108,13" alphatest="on" />-->
 		<ePixmap pixmap="skin_default/icons/ico_event.png" position="207,78" size="15,10" alphatest="on" />
 		<widget source="session.CurrentService" render="Label" position="230,73" size="360,40" font="Regular;20" foregroundColor="window-fg" backgroundColor="#00263c59" shadowColor="#1d354c" shadowOffset="-1,-1" transparent="1">
 			<convert type="ServiceName">Name</convert>
