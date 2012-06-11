@@ -1,5 +1,5 @@
 ﻿<skin>
-  <!--  Skin: Magic-HD-ViX Vs 4.63 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 4.64 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -4800,10 +4800,12 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+    <eLabel text="Cancel" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
     <widget name="ButtonYellowtext" position="614,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="stationmenu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-    <eLabel text="Press 'OK' to add to favorites" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="15,682" size="320,26" transparent="1" zPosition="1" />
+    <eLabel text="Press 'OK' to add to favorites" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="840,682" size="320,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen name="classicplayingscrn" position="0,0" size="1280,720" flags="wfNoBorder" title="NetRadio">
@@ -4816,10 +4818,8 @@
     <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
       <convert type="ClockToText">Date</convert>
     </widget>
-<!--    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />-->
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <eLabel text="Cancel" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-<!--    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NetRadioClassic/icons/stationshd.png" position="0,0" size="820,530"/>-->
     <ePixmap position="990,120" zPosition="4" size="60,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NetRadioClassic/icons/arrows.png" transparent="1" alphatest="on" />
     <ePixmap position="250,250" zPosition="4" size="800,360" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NetRadioClassic/icons/musichd.png" transparent="1" alphatest="on" />
     <widget name="station" position="250,90" zPosition="1" size="800,30" font="Regular;20" transparent="1" foregroundColor="yellow" backgroundColor="yellow"/>
@@ -4827,15 +4827,6 @@
     <widget name="leagueNumberWidget" position="990,162" size="50,40" transparent="1" zPosition="4"  halign="left" font="Regular;20" foregroundColor="yellow" backgroundColor="yellow" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-<!--  <screen name="classicplayingscrn" position="center,center" size="800,500" title="NetRadio">
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NetRadioClassic/icons/stationshd.png" position="0,0" size="820,530"/>
-    <ePixmap position="740,30" zPosition="4" size="60,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NetRadioClassic/icons/arrows.png" transparent="1" alphatest="on" />
-    <ePixmap position="0,140" zPosition="4" size="800,360" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NetRadioClassic/icons/musichd.png" transparent="1" alphatest="on" />
-		<widget name="station" position="0,0" zPosition="1" size="800,30" font="Regular;20" transparent="1" foregroundColor="yellow" backgroundColor="yellow"/>
-    <widget name="titel" position="0,30" zPosition="1" size="730,130" font="Regular;27" transparent="1"  backgroundColor="#00000000"/>
-		<widget name="leagueNumberWidget" position="740,72" size="50,40" transparent="1" zPosition="4"  halign="left" font="Regular;20" foregroundColor="yellow" backgroundColor="yellow" />
-  </screen>-->
-
   <!-- ##WebRadioFS## -->
   <screen name="WebradioFSScreen_8" position="0,0" size="1280,720" flags="wfNoBorder" title="webradioFS - Favoriten">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
