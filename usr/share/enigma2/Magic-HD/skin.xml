@@ -1,5 +1,5 @@
 ﻿<skin>
-  <!--  Skin: Magic-HD-ViX Vs 4.66 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 4.68 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -10283,6 +10283,194 @@
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
     <widget name="myLabel" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="SpinnerSelectionBox" position="0,0" size="1280,720" flags="wfNoBorder" >
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <widget name="bild" position="100,400" zPosition="1" size="300,200" transparent="1" />
+    <widget name="text" position="520, 82" size="550,25" font="Regular;24" halign='center' transparent="1" foregroundColor="secondFG" />
+    <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,110" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <!-- ## Formel1 ## -->
+  <screen name="Formel1Preview" position="0,0" size="1280,720" flags="wfNoBorder" title="Formel1 2011 V 0.8">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="305,640"  size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_0.png" alphatest="on" position="580,640" size="35,25" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/key_ok.png" alphatest="on" position="840,640" size="35,26" />
+    <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_yellow" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_blue" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_menu" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,640" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_0" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,640" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_ok" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,640" size="220,26" transparent="1" zPosition="1" />
+    <widget name="MainList" scrollbarMode="showOnDemand" position="520,82" size="755,530" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="Tipprunde" position="0,0" size="1280,720" flags="wfNoBorder" title="AAF Formel1 Tippspiel">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
+    <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_yellow" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_blue" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
+    <widget name="Kopfzeile" zPosition="2" position="100,108" size="1051,20" font="Console;20" halign="left" transparent="1" foregroundColor="#ffa500"/>
+    <widget name="feedlist" position="10,143" zPosition="1" size="100,100" scrollbarMode="showOnDemand" />
+    <eLabel position="100,130" zPosition="2" size="1050,1" backgroundColor="#c1cdc1" />
+    <eLabel position="296,130" zPosition="2" size="1,420" backgroundColor="#c1cdc1" />
+    <eLabel position="366,130" zPosition="2" size="1,420" backgroundColor="#c1cdc1" />
+    <eLabel position="438,130" zPosition="2" size="1,420" backgroundColor="#c1cdc1" />
+    <eLabel position="510,130" zPosition="2" size="1,420" backgroundColor="#c1cdc1" />
+    <eLabel position="582,130" zPosition="2" size="1,420" backgroundColor="#c1cdc1" />
+    <eLabel position="654,130" zPosition="2" size="1,420" backgroundColor="#c1cdc1" />
+    <eLabel position="726,130" zPosition="2" size="1,420" backgroundColor="#c1cdc1" />
+    <eLabel position="798,130" zPosition="2" size="1,420" backgroundColor="#c1cdc1" />
+    <eLabel position="870,130" zPosition="2" size="1,420" backgroundColor="#c1cdc1" />
+    <eLabel position="942,130" zPosition="2" size="1,420" backgroundColor="#c1cdc1" />
+    <eLabel position="1014,130" zPosition="2" size="2,420" backgroundColor="#c1cdc1" />
+    <eLabel position="1101,130" zPosition="2" size="1,420" backgroundColor="#c1cdc1" />
+    <eLabel position="1158,130" zPosition="2" size="2,420" backgroundColor="#c1cdc1" />
+    <eLabel position="100,549" zPosition="2" size="1050,1" backgroundColor="#c1cdc1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="TippSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="Tipprunde Settings">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+    <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_green" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="liste" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="RacingPanel" position="0,0" size="1280,720" flags="wfNoBorder" title="Formel1 Rennen Auswertung">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="titel" foregroundColor="grey" render="Label" position="15,15" size="900, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+    <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_green" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="10,82" size="980,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="DriverPanel" position="0,0" size="1280,720" flags="wfNoBorder" title="Fahrerwertung und Fahrerinfos">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="titel" render="Label" position="200,82" zPosition="3" size="830,40" font="Regular;28" valign="center" halign="left" transparent="1" foregroundColor="#e0eeee"/>
+    <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="210,125" size="500,515" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <widget name="Preview" position="775,195" size="375,375" alphatest="on"/>
+    <widget source="team" render="Label" position="830,125" zPosition="3" size="190,60" font="Regular;28" valign="center" halign="center" transparent="1" foregroundColor="#cd3700"/>
+    <widget source="geboren" render="Label" position="830,575" zPosition="2" size="190,30" font="Regular;28" valign="center" halign="center" transparent="1" foregroundColor="#f47d19"/>
+    <widget source="national" render="Label" position="830,605" zPosition="2" size="190,60" font="Regular;28" valign="center" halign="center" transparent="1" foregroundColor="#f47d19"/>
+    <widget source="titel2" render="Label" position="30,682" zPosition="3" size="1200,40" font="Regular;26" valign="center" halign="center" transparent="1" foregroundColor="#c1cdcd"/>
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="TeamPanel" position="0,0" size="1280,720" flags="wfNoBorder" title="Formel1 Teamwertung">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="titel" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget name="Mlist" scrollbarMode="showOnDemand" position="10,82" size="900,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <widget source="key_esc" render="Label" position="430,682" zPosition="2" size="180,40" font="Regular;20" valign="center" halign="left" transparent="1" foregroundColor="#c1cdcd"/>
+    <ePixmap position="370,682" zPosition="2" size="76,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Formel1/strecken/esc.png" transparent="0" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="TeamsPanel" position="0,0" size="1280,720" flags="wfNoBorder" title="Formel1 und die Teams 2011">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <widget name="textpage" scrollbarMode="showOnDemand" position="520,82" size="755,583" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <widget name="Mlist" zPosition="3" position="5,365" size="500,270" font="Regular;22" halign="left" transparent="1" />
+    <widget source="key_esc" render="Label" position="430,682" zPosition="2" size="180,40" font="Regular;20" valign="center" halign="left" transparent="1" foregroundColor="#c1cdcd"/>
+    <ePixmap position="370,682" zPosition="2" size="76,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Formel1/strecken/esc.png" transparent="0" alphatest="on" />
+    <widget source="key_ok" render="Label" position="200,682" zPosition="2" size="180,40" font="Regular;20" valign="center" halign="left" transparent="1" foregroundColor="#c1cdcd"/>
+    <ePixmap position="140,682" size="76,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Formel1/strecken/ok.png" transparent="1" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="PicSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="Formel1 SlideShow Settings">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+    <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_green" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="liste" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ## End of Magic-HD-ViX ## -->
