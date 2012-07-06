@@ -1,5 +1,5 @@
 ﻿<skin>
-  <!--  Skin: Magic-HD-ViX Vs 4.74 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 4.75 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -10288,7 +10288,7 @@
   <screen name="SpinnerSelectionBox" position="0,0" size="1280,720" flags="wfNoBorder" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
-    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget name="text" foregroundColor="grey" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
     <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
       <convert type="ClockToText">Format:%-H:%M</convert>
     </widget>
@@ -10297,8 +10297,7 @@
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
     <widget name="bild" position="100,400" zPosition="1" size="300,200" transparent="1" />
-    <widget name="text" position="520, 82" size="550,25" font="Regular;24" halign='center' transparent="1" foregroundColor="secondFG" />
-    <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,110" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ## Formel1 ## -->
