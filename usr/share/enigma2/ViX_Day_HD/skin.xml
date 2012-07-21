@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--  Skin: ViX-Day-HD Vs 2.22 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Day-HD Vs 2.23 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -1177,9 +1177,8 @@
 		<widget source="Title" render="Label" position="135,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 		<panel name="FullscreenPIGPanel" />
 		<widget name="list" position="20,82" size="660,590" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" backgroundColor="black" foregroundColorEvent="event-frgrnd" foregroundColorEventSelected="#00202020" foregroundColorServiceNotAvail="verydarkgrey" serviceItemHeight="36" serviceNumberFont="Regular;25" serviceNameFont="Regular;25" serviceInfoFont="Bold;22" transparent="0" zPosition="3" scrollbarMode="showOnDemand" />
-		<eLabel text="NOW:" position="695,410" size="70,25" font="Bold;24" foregroundColor="event-now-next_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top" />
-		<widget source="ServiceEvent" render="Label" position="770,410" size="330,25" font="Bold;24" foregroundColor="event-now-next_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
-			<convert type="EventName">Name</convert>
+		<widget source="ServiceEvent" render="Label" position="695,410" size="400,25" font="Bold;24" foregroundColor="event-now-next_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
+			<convert type="EventName">NowName</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="1105,410" size="60,25" font="Bold;24" foregroundColor="event-now-next_frgrnd" backgroundColor="black" zPosition="2" transparent="0" halign="right" noWrap="1" valign="top">
 			<convert type="EventTime">StartTime</convert>
@@ -1193,8 +1192,7 @@
 		<widget source="ServiceEvent" render="Label" position="695,440" size="575,110" font="Regular;22" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<eLabel text="NEXT:" position="695,565" size="70,25" font="Bold;24" foregroundColor="event-now-next_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top" />
-		<widget source="ServiceEvent" render="Label" position="775,565" size="330,25" font="Bold;24" foregroundColor="event-now-next_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
+		<widget source="ServiceEvent" render="Label" position="695,565" size="400,25" font="Bold;24" foregroundColor="event-now-next_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
 			<convert type="EventName">NextName</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="695,592" size="575,80" font="Regular;22" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
