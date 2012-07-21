@@ -1,5 +1,5 @@
 ﻿<skin>
-  <!--  Skin: Magic-HD-ViX Vs 4.79 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 4.80 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -252,13 +252,11 @@
       <convert type="ConditionalShowHide">Invert</convert>
     </widget>
     <eLabel position="0,0" size="1280,720" backgroundColor="transpBlack" zPosition="-50" />
-    <eLabel text="Now:" position="5,128" size="63,26" zPosition="2" font="Regular;24" foregroundColor="secondFG" transparent="1" backgroundColor="background" />
-    <eLabel text="Next:" position="650,128" size="63,26" zPosition="2" font="Regular;24" foregroundColor="secondFG" transparent="1" backgroundColor="background" />
-    <widget source="session.Event_Now" render="Label" position="85,128" size="540,26" font="Regular;22" foregroundColor="secondFG" halign="left" backgroundColor="background" transparent="1">
-      <convert type="EventName">Name</convert>
+    <widget source="ServiceEvent" render="Label" position="5,128" size="620,26" font="Regular;22" foregroundColor="secondFG" halign="left" backgroundColor="background" transparent="1">
+      <convert type="EventName">NowName</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="720,128" size="540,26" font="Regular;22" halign="left" foregroundColor="secondFG" backgroundColor="background" transparent="1">
-      <convert type="EventName">Name</convert>
+    <widget source="ServiceEvent" render="Label" position="650,128" size="620,26" font="Regular;22" halign="left" foregroundColor="secondFG" backgroundColor="background" transparent="1">
+      <convert type="EventName">NextName</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="5,157" size="620,385" font="Regular;22" zPosition="1" backgroundColor="background" foregroundColor="white" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
@@ -476,8 +474,7 @@
     <widget name="key_yellow" position="614,682" size="220,26"  foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="list" position="520,82" size="755,555" itemHeight="25" noWrap="1" serviceNumberFont="Regular;22" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="25" colorServiceDescription="blue" transparent="1" foregroundColorServiceNotAvail="#656565" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
-    <eLabel text="Next:" position="520,645" size="70,25" zPosition="2" font="Regular;24" foregroundColor="blue" valign="center" transparent="1" />
-    <widget source="ServiceEvent" render="Label" position="590,645" size="555,25" font="Regular;22" foregroundColor="blue" noWrap="1" zPosition="2" transparent="1" halign="center">
+    <widget source="ServiceEvent" render="Label" position="520,645" size="625,25" font="Regular;22" foregroundColor="blue" noWrap="1" zPosition="2" transparent="1" halign="center">
       <convert type="EventName">NextName</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="1145,645" size="62,25" transparent="1" foregroundColor="blue" font="Regular;21" halign="right">
