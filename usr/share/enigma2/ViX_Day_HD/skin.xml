@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--  Skin: ViX-Day-HD Vs 2.25 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Day-HD Vs 2.26 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -2954,38 +2954,28 @@ self.autoResize()
 			</convert>
 		</widget>
 	</screen>
-	<screen name="CIselectMainMenu" position="100,80" size="520,538" title="CI assignment" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="ViX_HD_Common/Bg_Subtitle.png" position="0,0" size="520,538" zPosition="-1" alphatest="on" />
-		<ePixmap pixmap="ViX_Day_HD/menu/ico_title_Setup.png" position="16,36" size="40,40" alphatest="blend" transparent="1" />
-		<widget source="Title" render="Label" position="69,45" size="400,32" font="Italic;32" foregroundColor="#004c4c4c" backgroundColor="#00b5b9bd" transparent="1" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="20,91" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/green.png" position="210,91" size="25,25" alphatest="blend" />
-		<widget source="key_red" render="Label" position="58,93" zPosition="1" size="150,20" font="Regular;20" halign="center" valign="center" backgroundColor="#27b5b9bd" transparent="1" />
-		<widget source="key_green" render="Label" position="248,93" zPosition="1" size="150,20" font="Regular;20" halign="center" valign="center" backgroundColor="#27b5b9bd" transparent="1" />
-		<widget name="CiList" position="15,125" itemHeight="42" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H42x503.png" transparent="1" zPosition="1" size="490,336" scrollbarMode="showOnDemand" />
+	<screen name="CIselectMainMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<ePixmap pixmap="ViX_Day_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
+		<widget name="CiList" position="10,107" size="503,450" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" />
+		<ePixmap pixmap="skin_default/div-h.png" position="10,610" zPosition="1" size="503,2" />
+		<widget source="infotext" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
+		<panel name="MenuRed2Panel" />
+		<panel name="MenuGreen2Panel" />
 	</screen>
-	<screen name="CIconfigMenu" position="209,48" size="865,623" title="CI assignment" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="ViX_HD_Common/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
-		<ePixmap pixmap="ViX_Day_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend" transparent="1" />
-		<widget source="Title" render="Label" position="90,50" size="600,32" font="Italic;32" foregroundColor="#005d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
-		<ePixmap pixmap="ViX_Day_HD/icons/clock.png" position="750,55" zPosition="1" size="20,20" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Label" position="770,57" zPosition="1" size="50,20" font="Regular;20" foregroundColor="foreground" halign="right" transparent="1">
-			<convert type="ClockToText">Format:%H:%M</convert>
-		</widget>
-		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="45,98" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/green.png" position="240,98" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/yellow.png" position="435,98" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/blue.png" position="630,98" size="25,25" alphatest="blend" />
-		<widget source="key_red" render="Label" position="73,97" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="foreground" transparent="1" />
-		<widget source="key_green" render="Label" position="268,97" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="foreground" transparent="1" />
-		<widget source="key_yellow" render="Label" position="473,97" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="foreground" transparent="1" />
-		<widget source="key_blue" render="Label" position="668,97" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="foreground" transparent="1" />
-		<widget source="CAidList_desc" render="Label" position="155,200" size="550,22" font="Regular;20" backgroundColor="#27d9dee2" transparent="1" />
-		<widget source="CAidList" render="Label" position="155,230" size="550,45" font="Regular;20" backgroundColor="#27d9dee2" transparent="1" />
-		<ePixmap pixmap="ViX_HD_Common/div-h.png" position="150,275" zPosition="1" size="560,2" />
-		<widget source="ServiceList_desc" render="Label" position="155,280" size="550,22" font="Regular;20" backgroundColor="#27d9dee2" transparent="1" />
-		<widget name="ServiceList" position="155,310" size="550,250" zPosition="1" scrollbarMode="showOnDemand" />
-		<widget source="ServiceList_info" render="Label" position="155,310" size="550,250" zPosition="2" font="Regular;20" backgroundColor="#27d9dee2" transparent="1" />
+	<screen name="CIconfigMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<ePixmap pixmap="ViX_Day_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
+		<widget source="CAidList_desc" render="Label" position="10,298" size="503,22" font="Regular;20" backgroundColor="#27d9dee2" transparent="1" />
+		<widget source="CAidList" render="Label" position="10,318" size="503,45" font="Regular;20" backgroundColor="#27d9dee2" transparent="1" />
+		<widget source="ServiceList_desc" render="Label" position="10,338" size="503,22" font="Regular;20" zPosition="1" backgroundColor="#27d9dee2" transparent="1" />
+		<widget name="ServiceList" position="10,197" size="503,360" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" />
+		<ePixmap pixmap="skin_default/div-h.png" position="10,610" zPosition="1" size="503,2" />
+		<widget source="infotext" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
+		<panel name="MenuRed2Panel" />
+		<panel name="MenuGreen2Panel" />
+		<panel name="MenuYellow2Panel" />
+		<panel name="MenuBlue2Panel" />
 	</screen>
 	<screen name="easyCIconfigMenu" position="209,48" size="865,623" title="CI assignment" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD_Common/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
@@ -3006,63 +2996,35 @@ self.autoResize()
 		<widget name="ServiceList" position="155,230" size="550,300" zPosition="1" scrollbarMode="showOnDemand" />
 		<widget source="ServiceList_info" render="Label" position="155,230" size="550,300" zPosition="2" font="Regular;20" backgroundColor="#27d9dee2" transparent="1" />
 	</screen>
-	<screen name="CAidSelect" position="209,48" size="865,623" title="select CAId's" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="ViX_HD_Common/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
-		<ePixmap pixmap="ViX_Day_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend" transparent="1" />
-		<widget source="Title" render="Label" position="90,50" size="600,32" font="Italic;32" foregroundColor="#005d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
-		<ePixmap pixmap="ViX_Day_HD/icons/clock.png" position="750,55" zPosition="1" size="20,20" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Label" position="770,57" zPosition="1" size="50,20" font="Regular;20" foregroundColor="foreground" halign="right" transparent="1">
-			<convert type="ClockToText">Format:%H:%M</convert>
-		</widget>
-		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="45,98" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/green.png" position="240,98" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/button_off.png" position="435,98" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/button_off.png" position="630,98" size="25,25" alphatest="blend" />
-		<widget source="key_red" render="Label" position="73,97" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="foreground" transparent="1" />
-		<widget source="key_green" render="Label" position="268,97" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="foreground" transparent="1" />
-		<widget name="list" position="155,150" size="540,350" scrollbarMode="showOnDemand" />
-		<ePixmap pixmap="ViX_HD_Common/div-h.png" position="150,520" zPosition="1" size="450,2" />
-		<widget source="introduction" render="Label" position="150,530" size="450,40" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="#27d9dee2" transparent="1" />
+	<screen name="CAidSelect" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<ePixmap pixmap="ViX_Day_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
+		<widget name="list" position="10,107" size="503,450" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" />
+		<ePixmap pixmap="skin_default/div-h.png" position="10,610" zPosition="1" size="503,2" />
+		<widget source="introduction" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
+		<panel name="MenuRed2Panel" />
+		<panel name="MenuGreen2Panel" />
 	</screen>
-	<screen name="myProviderSelection" position="209,48" size="865,623" title="Select provider to add..." flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="ViX_HD_Common/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
-		<ePixmap pixmap="ViX_Day_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend" transparent="1" />
-		<widget source="Title" render="Label" position="90,50" size="600,32" font="Italic;32" foregroundColor="#005d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
-		<ePixmap pixmap="ViX_Day_HD/icons/clock.png" position="750,55" zPosition="1" size="20,20" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Label" position="770,57" zPosition="1" size="50,20" font="Regular;20" foregroundColor="foreground" halign="right" transparent="1">
-			<convert type="ClockToText">Format:%H:%M</convert>
-		</widget>
-		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="45,98" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/button_off.png" position="240,98" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/button_off.png" position="435,98" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/button_off.png" position="630,98" size="25,25" alphatest="blend" />
-		<widget source="key_red" render="Label" position="73,97" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="foreground" transparent="1" />
-		<widget source="key_green" render="Label" position="268,97" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="foreground" transparent="1" />
-		<widget source="key_yellow" render="Label" position="473,97" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="foreground" transparent="1" />
-		<widget source="key_blue" render="Label" position="668,97" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="foreground" transparent="1" />
-		<widget name="list" position="155,150" size="550,350" scrollbarMode="showOnDemand" />
-		<ePixmap pixmap="ViX_HD_Common/div-h.png" position="150,510" zPosition="1" size="560,2" />
-		<widget source="introduction" render="Label" position="150,520" size="560,40" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="#27d9dee2" transparent="1" />
+	<screen name="myProviderSelection" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<ePixmap pixmap="ViX_Day_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
+		<widget name="list" position="10,107" size="503,450" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" />
+		<ePixmap pixmap="skin_default/div-h.png" position="10,610" zPosition="1" size="503,2" />
+		<widget source="introduction" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
+		<panel name="MenuRed2Panel" />
+		<panel name="MenuGreen2Panel" />
+		<panel name="MenuYellow2Panel" />
+		<panel name="MenuBlue2Panel" />
 	</screen>
-	<screen name="myChannelSelection" position="209,48" size="865,623" title="Select service to add..." flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="ViX_HD_Common/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
-		<ePixmap pixmap="ViX_Day_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend" transparent="1" />
-		<widget source="Title" render="Label" position="90,50" size="600,32" font="Italic;32" foregroundColor="#005d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
-		<ePixmap pixmap="ViX_Day_HD/icons/clock.png" position="750,55" zPosition="1" size="20,20" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Label" position="770,57" zPosition="1" size="50,20" font="Regular;20" foregroundColor="foreground" halign="right" transparent="1">
-			<convert type="ClockToText">Format:%H:%M</convert>
-		</widget>
-		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="45,98" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/green.png" position="240,98" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/button_off.png" position="435,98" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/blue.png" position="630,98" size="25,25" alphatest="blend" />
-		<widget source="key_red" render="Label" position="73,97" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="foreground" transparent="1" />
-		<widget source="key_green" render="Label" position="268,97" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="foreground" transparent="1" />
-		<widget source="key_yellow" render="Label" position="473,97" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="foreground" transparent="1" />
-		<widget source="key_blue" render="Label" position="668,97" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="foreground" transparent="1" />
-		<widget name="list" position="155,150" size="550,350" scrollbarMode="showOnDemand" />
-		<ePixmap pixmap="ViX_HD_Common/div-h.png" position="150,510" zPosition="1" size="560,2" />
-		<widget source="introduction" render="Label" position="150,520" size="560,40" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="#27d9dee2" transparent="1" />
+	<screen name="myChannelSelection" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<ePixmap pixmap="ViX_Day_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
+		<widget name="list" position="10,107" size="503,450" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" />
+		<ePixmap pixmap="skin_default/div-h.png" position="10,610" zPosition="1" size="503,2" />
+		<widget source="introduction" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
+		<panel name="MenuRed2Panel" />
+		<panel name="MenuGreen2Panel" />
+		<panel name="MenuBlue2Panel" />
 	</screen>
 	<screen name="CrashlogAutoSubmitConfiguration" position="209,48" size="865,623" title="CrashlogAutoSubmit settings" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX_HD_Common/Bg_EPG_list.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
