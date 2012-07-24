@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--  Skin: ViX-Night-HD Vs 1.21 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Night-HD Vs 1.22 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -1639,6 +1639,15 @@ self.autoResize()
 		<ePixmap pixmap="skin_default/div-h.png" position="10,610" zPosition="1" size="503,2" />
 		<widget source="introduction" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
 		<panel name="MenuRed2Panel" />
+	</screen>
+	<screen name="ScanIP" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<ePixmap pixmap="ViX_Night_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
+		<widget name="config" position="10,107" size="503,450" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" />
+		<ePixmap pixmap="skin_default/div-h.png" position="10,610" zPosition="1" size="503,2" />
+		<panel name="MenuRed2Panel" />
+		<panel name="MenuGreen2Panel" />
+		<panel name="MenuYellow2Panel" />
 	</screen>
 	<screen name="NetworkBrowser" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
