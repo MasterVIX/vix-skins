@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.44 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.45 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -352,13 +352,12 @@
       <convert type="ConditionalShowHide">Invert</convert>
     </widget>
     <eLabel position="0,0" size="1280,720" backgroundColor="transpBlack" zPosition="-50" />
-    <eLabel text="Now:" position="15,150" size="63,26" zPosition="2" font="Regular; 24" foregroundColor="white" transparent="1" backgroundColor="background" />
-    <eLabel text="Next:" position="650,150" size="63,26" zPosition="2" font="Regular; 24" foregroundColor="white" transparent="1" backgroundColor="background" />
-    <widget source="session.Event_Now" render="Label" position="85,150" size="540,26" font="Regular;24" foregroundColor="secondFG" halign="left" backgroundColor="background" transparent="1">
-      <convert type="EventName">Name</convert>
+
+    <widget source="session.Event_Now" render="Label" position="15,150" size="540,26" font="Regular;24" foregroundColor="secondFG" halign="left" backgroundColor="background" transparent="1">
+      <convert type="EventName">NameNow</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="720,150" size="540,26" font="Regular;24" halign="left" foregroundColor="secondFG" backgroundColor="background" transparent="1">
-      <convert type="EventName">Name</convert>
+    <widget source="session.Event_Next" render="Label" position="650,150" size="540,26" font="Regular;24" halign="left" foregroundColor="secondFG" backgroundColor="background" transparent="1">
+      <convert type="EventName">NameNext</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="15,187" size="610,325" font="Regular; 20" zPosition="1" backgroundColor="background" foregroundColor="white" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
