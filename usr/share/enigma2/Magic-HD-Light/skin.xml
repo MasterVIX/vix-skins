@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-<!--Skin:  Magic-HD-Light ViX(Extreme-HD) Vs 1.78 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 4.83 but now in "Light version" (not supporting as many screens)-->
+<!--Skin:  Magic-HD-Light ViX(Extreme-HD) Vs 1.79 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 4.88 but now in "Light version" (not supporting as many screens)-->
 <!--This skin is a Freeware. Everyone can modify and use it in other images.-->
 <!--BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!-->
 <!--Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are-->
@@ -253,7 +253,7 @@
     </widget>
     <eLabel position="0,0" size="1280,720" backgroundColor="transpBlack" zPosition="-50" />
     <widget source="session.Event_Now" render="Label" position="5,125" size="620,24" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="selectedFG" noWrap="1" font="Regular;22" halign="left">
-          <convert type="EventName">Name_Now</convert>
+          <convert type="EventName">NameNow</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="5,155" size="525,22" font="Regular;20" halign="left" foregroundColor="secondFG" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">Genre</convert>
@@ -265,7 +265,7 @@
           <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="650,125" size="620,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="selectedFG" noWrap="1" font="Regular;22" halign="left">
-          <convert type="EventName">Name_Next</convert>
+          <convert type="EventName">NameNext</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="650,155" size="525,22" font="Regular;20" halign="left" foregroundColor="secondFG" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">Genre</convert>
