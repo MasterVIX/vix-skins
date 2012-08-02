@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.46 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.47 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -158,7 +158,7 @@
 	    <widget source="global.CurrentTime" render="Label" position="111,79" size="35,28" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="white" font="Regular;20" valign="bottom" >
       <convert type="ClockToText">Format::%S</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="45,54" size="185,20" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;15" valign="center" halign="left">
+    <widget source="global.CurrentTime" render="Label" position="45,54" size="195,20" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;15" valign="center" halign="left">
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="440,192" size="620,18" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;14" halign="right">
@@ -353,10 +353,10 @@
     </widget>
     <eLabel position="0,0" size="1280,720" backgroundColor="transpBlack" zPosition="-50" />
 
-    <widget source="session.Event_Now" render="Label" position="15,150" size="540,26" font="Regular;24" foregroundColor="secondFG" halign="left" backgroundColor="background" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="15,150" size="540,26" font="Regular;22" foregroundColor="secondFG" halign="left" backgroundColor="background" transparent="1">
       <convert type="EventName">NameNow</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="650,150" size="540,26" font="Regular;24" halign="left" foregroundColor="secondFG" backgroundColor="background" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="650,150" size="540,26" font="Regular;22" halign="left" foregroundColor="secondFG" backgroundColor="background" transparent="1">
       <convert type="EventName">NameNext</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="15,187" size="610,325" font="Regular; 20" zPosition="1" backgroundColor="background" foregroundColor="white" transparent="1">
@@ -382,7 +382,7 @@
 	<widget source="global.CurrentTime" render="Label" position="111,589" size="35,28" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="white" font="Regular;20" valign="bottom" >
       <convert type="ClockToText">Format::%S</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="45,564" size="185,20" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;15" valign="center" halign="left">
+    <widget source="global.CurrentTime" render="Label" position="45,564" size="195,20" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;15" valign="center" halign="left">
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="440,702" size="620,18" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;14" halign="right">
@@ -6530,7 +6530,7 @@
 	<widget source="global.CurrentTime" render="Label" position="111,589" size="35,28" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="white" font="Regular;20" valign="bottom" >
       <convert type="ClockToText">Format::%S</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="45,564" size="165,20" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;15" valign="center" halign="left">
+    <widget source="global.CurrentTime" render="Label" position="45,564" size="195,20" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;15" valign="center" halign="left">
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="Event" render="Progress" pixmap="Magic-HD-Common/infobar/pbar.png" position="220,625" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
@@ -6604,18 +6604,18 @@
     <widget name="timeline4" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline5" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline_now" position="0,90" zPosition="2" size="19,480" pixmap="Magic-HD-Common/window/timeline-now.png" alphatest="on" />
-    <widget source="Event" render="Label" position="5,575" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="background" shadowColor="#000000" halign="right" transparent="1">
+    <widget source="Event" render="Label" position="5,575" size="100,30" font="Regular;22" foregroundColor="#00e5b243" backgroundColor="background" shadowColor="#000000" halign="right" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="Event" render="Label" position="113,575" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="background" shadowColor="#000000" halign="left" transparent="1">
+    <widget source="Event" render="Label" position="113,575" size="100,30" font="Regular;22" foregroundColor="#00e5b243" backgroundColor="background" shadowColor="#000000" halign="left" transparent="1">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="230,575" size="1035,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="background" transparent="1" halign="left">
+    <widget source="Event" render="Label" position="230,575" size="1035,30" font="Regular;22" foregroundColor="#00e5b243" backgroundColor="background" transparent="1" halign="left">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="Label" position="5,605" zPosition="1" size="1270,73" halign="left" valign="center" font="Regular;22" foregroundColor="foreground" backgroundColor="background" shadowColor="#000000" transparent="1">
+    <widget source="Event" render="Label" position="5,605" zPosition="1" size="1270,72" halign="left" valign="center" font="Regular;20" foregroundColor="grey" backgroundColor="background" shadowColor="#000000" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
