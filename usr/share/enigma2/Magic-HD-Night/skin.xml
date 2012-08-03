@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.48 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.49 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -1618,7 +1618,10 @@
     <widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="waitingtext" position="520,87" size="755,581" font="Regular;22" halign="center" valign="center" zPosition="4" />
+	<widget name="movie_sort" position="1195,684" size="35,25" pixmaps="skin_default/icons/az.png,skin_default/icons/newtop.png,skin_default/icons/shuffle.png,skin_default/icons/za.png,skin_default/icons/oldtop.png" zPosition="1" transparent="1" alphatest="on"/>
+    <widget name="movie_off" position="1235,684" size="35,25" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png" zPosition="1" transparent="1" alphatest="on"/>
+    <widget name="chosenletter" position="520,87" size="755,581" foregroundColor="yellow" font="Regular;28" halign="center" valign="center" transparent="1" zPosition="4" />
+	<widget name="waitingtext" position="520,87" size="755,581" font="Regular;22" halign="center" valign="center" zPosition="4" />
     <widget name="list" position="520,87" size="755,570" scrollbarMode="showOnDemand" />
     <widget source="Service" render="Label" position="5,405" size="500,223" foregroundColor="grey" font="Regular;19" transparent="1" valign="center">
       <convert type="EventName">FullDescription</convert>
