@@ -1,5 +1,5 @@
 ﻿<skin>
-  <!--  Skin: Magic-HD-ViX Vs 4.91 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 4.92 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -489,29 +489,29 @@
       <convert type="EventTime">NextEndTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="ServiceEvent" render="Label" position="5,355" size="500,25" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="center" valign="top" >
+    <widget source="ServiceEvent" render="Label" position="5,350" size="510,25" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="center" valign="top" >
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="10,386" size="62,22" transparent="1" foregroundColor="grey" font="Regular;21" halign="right">
+    <widget source="ServiceEvent" render="Label" position="5,376" size="52,22" transparent="1" foregroundColor="grey" font="Regular;21" halign="right">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="ServiceEvent" render="Label" position="275,386" size="62,22" transparent="1" foregroundColor="grey" font="Regular;21">
+    <widget source="ServiceEvent" render="Label" position="258,376" size="52,22" transparent="1" foregroundColor="grey" font="Regular;21">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="ServiceEvent" render="Progress" pixmap="Magic-HD-Common/window/progress.png" position="80,394" size="190,8" transparent="1" borderWidth="1" foregroundcolor="grey" borderColor="grey">
+    <widget source="ServiceEvent" render="Progress" pixmap="Magic-HD-Common/window/progress.png" position="63,384" size="190,8" transparent="1" borderWidth="1" foregroundcolor="grey" borderColor="grey">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="335,386" size="62,22" transparent="1" foregroundColor="grey" font="Regular;21">
+    <widget source="ServiceEvent" render="Label" position="310,376" size="120,22" transparent="1" foregroundColor="grey" font="Regular;21">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="400,386" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;21" halign="right">
+    <widget source="ServiceEvent" render="Label" position="430,376" size="85,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;21" halign="left">
       <convert type="ServiceOrbitalPosition">
       </convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="5,409" size="500,255" font="Regular;22" foregroundColor="grey" halign="center" valign="center" transparent="1" >
+    <widget source="ServiceEvent" render="Label" position="5,399" size="510,275" font="Regular;21" foregroundColor="grey" halign="center" valign="center" transparent="1" >
       <convert type="EventName">FullDescription</convert>
     </widget>
   </screen>
@@ -8966,7 +8966,8 @@
     <widget source="session.VideoPicture" render="Pig" position="5,80" size="477,270" backgroundColor="transparent" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
     <eLabel text="Hide" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
+<!--    <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />-->
+    <widget name="menu" scrollbarMode="showOnDemand" position="520,82" size="755,583" font="Regular;22" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen flags="wfNoBorder" name="VPS_check_PDC_Screen" position="0,0" size="1280,720" >
