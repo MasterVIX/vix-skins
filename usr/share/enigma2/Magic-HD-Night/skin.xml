@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.51 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.52 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -321,7 +321,7 @@
     <widget source="session.CurrentService" render="Label" position="50,20" size="600,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;18" valign="top" halign="left">
       <convert type="PliExtraInfo">All</convert>
     </widget>
-    <eLabel name="snr" position="685,15" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text="  SNR:" font="Regular;14" />
+    <!--<eLabel name="snr" position="685,15" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text="  SNR:" font="Regular;14" />
     <widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,18" size="410,10" borderWidth="2" borderColor="uncccccc">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
@@ -350,15 +350,56 @@
     <widget source="session.FrontendStatus" render="Pixmap" pixmap="skin_default/icons/lock_off.png" position="760,100" zPosition="1" size="38,31">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide">Invert</convert>
+    </widget>-->
+	<eLabel name="snr" position="685,5" size="80,15" backgroundColor="transpBlack" halign="center" transparent="1" text="  SNR:" font="Regular;14" />
+    <widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,8" size="410,10" borderWidth="2" borderColor="uncccccc">
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Label" position="1174,5" size="80,15" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <eLabel name="agc" position="685,25" size="80,15" backgroundColor="transpBlack" halign="center" transparent="1" text="  AGC:" font="Regular;14" />
+    <widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,25" size="410,10" borderWidth="2" borderColor="uncccccc">
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Label" position="1174,25" size="80,15" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <eLabel name="ber" position="685,45" size="80,15" backgroundColor="transpBlack" halign="center" transparent="1" text="  BER:" font="Regular;14" />
+    <widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,45" size="410,10" borderWidth="2" borderColor="grey">
+      <convert type="FrontendInfo">BER</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Label" position="1174,45" size="80,15" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
+      <convert type="FrontendInfo">BER</convert>
+    </widget>
+    <eLabel name="lock" position="685,65" size="80,15" backgroundColor="darkgrey" halign="center" transparent="1" text="Lock:" zPosition="1" font="Regular;14" />
+    <widget source="session.FrontendStatus" render="Pixmap" pixmap="skin_default/icons/lock_on.png" position="760,60" size="38,25" alphatest="on">
+      <convert type="FrontendInfo">LOCK</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendStatus" render="Pixmap" pixmap="skin_default/icons/lock_off.png" position="760,60" zPosition="1" size="38,25">
+      <convert type="FrontendInfo">LOCK</convert>
+      <convert type="ConditionalShowHide">Invert</convert>
     </widget>
     <eLabel position="0,0" size="1280,720" backgroundColor="transpBlack" zPosition="-50" />
-
-    <widget source="session.Event_Now" render="Label" position="15,150" size="540,26" font="Regular;22" foregroundColor="secondFG" halign="left" backgroundColor="background" transparent="1">
+	<widget source="session.Event_Now" render="Label" position="15,120" size="540,26" font="Regular;22" foregroundColor="secondFG" halign="left" backgroundColor="background" transparent="1">
       <convert type="EventName">NameNow</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="650,150" size="540,26" font="Regular;22" halign="left" foregroundColor="secondFG" backgroundColor="background" transparent="1">
+	<widget source="session.Event_Now" render="Label" position="15,147" size="525,22" font="Regular;20" halign="left" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="1">
+      <convert type="EventName">Genre</convert>
+    </widget>
+    <!--<widget source="session.Event_Now" render="Label" position="15,147" size="100,22" font="Regular;20" halign="left" foregroundColor="secondFG" backgroundColor="background" transparent="1" zPosition="1">
+      <convert type="EventName">SmallRating</convert>
+    </widget>-->
+    <widget source="session.Event_Next" render="Label" position="650,120" size="540,26" font="Regular;22" halign="left" foregroundColor="secondFG" backgroundColor="background" transparent="1">
       <convert type="EventName">NameNext</convert>
     </widget>
+    <widget source="session.Event_Next" render="Label" position="650,147" size="525,22" font="Regular;20" halign="left" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1">
+          <convert type="EventName">Genre</convert>
+    </widget>
+    <!--<widget source="session.Event_Next" render="Label" position="650,147" size="100,22" font="Regular;20" halign="left" foregroundColor="secondFG" backgroundColor="secondBG" transparent="1" zPosition="1">
+          <convert type="EventName">SmallRating</convert>
+    </widget>-->	
     <widget source="session.Event_Now" render="Label" position="15,187" size="610,325" font="Regular; 20" zPosition="1" backgroundColor="background" foregroundColor="white" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
