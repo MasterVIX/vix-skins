@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.52 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.53 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -715,10 +715,13 @@
     <widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="channel" position="15,415" size="460,42" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="left" />
+    <widget name="channel" position="15,400" size="460,50" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="left" />
     <widget name="datetime" position="15,458" size="460,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="duration" position="15,488" size="460,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="epg_description" position="520,82" size="755,583" transparent="1" font="Regular;22" />
+    <widget source="session.Event_Next" render="Label" position="15,640" size="425,25" font="Regular;20" foregroundColor="secondFG" transparent="1" valign="center" halign="left">
+      <convert type="EventName">NextName</convert>
+	</widget>
   </screen>
   <screen flags="wfNoBorder" name="EventViewContextMenu" position="0,0" size="1280,720" title="Eventview menu">
     <panel name="BasicTemplate"/>
