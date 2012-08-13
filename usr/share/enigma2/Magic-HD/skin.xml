@@ -1,5 +1,5 @@
 ﻿<skin>
-  <!--  Skin: Magic-HD-ViX Vs 4.96 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 4.97 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -8691,9 +8691,9 @@
   </screen>
   <screen name="QuickEPG" title="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap alphatest="off" pixmap="Magic-HD-Common/infobar/hd.png" position="0,500" size="1280,220" zPosition="-1" />
-		<widget source="Event" render="Label" position="50,40" size="1180,500" font="Regular;30" borderColor="black" borderWidth="4" foregroundColor="secondFG" transparent="1" backgroundColor="background" valign="bottom" halign="center" zPosition="2">
-			<convert type="EventName">FullDescription</convert>
-		</widget>
+    <widget source="Event" render="Label" position="50,40" size="1180,500" font="Regular;23" borderColor="black" borderWidth="4" foregroundColor="secondFG" transparent="1" backgroundColor="background" valign="bottom" halign="center" zPosition="2">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
     <widget source="Service" render="Picon" position="45,555" size="100,60" alphatest="blend" transparent="1" zPosition="2">
       <convert type="ServiceName">Reference</convert>
     </widget>
