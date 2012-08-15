@@ -1,5 +1,5 @@
 ﻿<skin>
-  <!--  Skin: Magic-HD-ViX Vs 4.99 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 5.00 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -221,6 +221,7 @@
     <widget source="session.CurrentService" render="Label" position="5,5" size="635,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;18" valign="top" halign="left">
       <convert type="PliExtraInfo">All</convert>
     </widget>
+    <widget render="MaxTemp" source="global.CurrentTime" position="900,65" size="50,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19"/>
     <eLabel name="snr" position="685,5" size="80,15" backgroundColor="transpBlack" halign="center" transparent="1" text="  SNR:" font="Regular;14" />
     <widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,8" size="410,10" borderWidth="2" borderColor="uncccccc">
       <convert type="FrontendInfo">SNR</convert>
@@ -1122,19 +1123,19 @@
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-    <widget name="AboutScrollLabel" position="520,90" size="458,175" valign="left" font="Regular;22" transparent="1" foregroundColor="grey" />
-    <widget source="LabelBSSID" render="Label" position="520,300" size="200,25" valign="left" font="Regular;22" transparent="1" foregroundColor="grey" />
-    <widget source="LabelESSID" render="Label" position="520,330" size="200,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
-    <widget source="LabelQuality" render="Label" position="520,360" size="200,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
-    <widget source="LabelSignal" render="Label" position="520,390" size="200,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
-    <widget source="LabelBitrate" render="Label" position="520,420" size="200,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
-    <widget source="LabelEnc" render="Label" position="520,450" size="200,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
-    <widget source="BSSID" render="Label" position="670,300" size="330,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
-    <widget source="ESSID" render="Label" position="670,330" size="330,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
-    <widget source="quality" render="Label" position="670,360" size="330,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
-    <widget source="signal" render="Label" position="670,390" size="330,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
-    <widget source="bitrate" render="Label" position="670,420" size="330,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
-    <widget source="enc" render="Label" position="670,450" size="330,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
+    <widget name="AboutScrollLabel" position="520,90" size="458,275" valign="left" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" foregroundColor="grey" />
+    <widget source="LabelBSSID" render="Label" position="520,400" size="200,25" valign="left" font="Regular;22" transparent="1" foregroundColor="grey" />
+    <widget source="LabelESSID" render="Label" position="520,430" size="200,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
+    <widget source="LabelQuality" render="Label" position="520,460" size="200,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
+    <widget source="LabelSignal" render="Label" position="520,490" size="200,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
+    <widget source="LabelBitrate" render="Label" position="520,520" size="200,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
+    <widget source="LabelEnc" render="Label" position="520,550" size="200,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
+    <widget source="BSSID" render="Label" position="670,400" size="330,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
+    <widget source="ESSID" render="Label" position="670,430" size="330,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
+    <widget source="quality" render="Label" position="670,460" size="330,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
+    <widget source="signal" render="Label" position="670,490" size="330,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
+    <widget source="bitrate" render="Label" position="670,520" size="330,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
+    <widget source="enc" render="Label" position="670,550" size="330,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
     <widget source="IFtext" render="Label" position="520,600" size="120,25" zPosition="10" font="Regular;22" halign="right" transparent="1" foregroundColor="grey"/>
     <widget source="IF" render="Label" position="640,600" size="400,25" zPosition="10" font="Regular;22" halign="left" transparent="1" foregroundColor="grey"/>
     <widget source="Statustext" render="Label" position="520,630" size="115,25" zPosition="10" font="Regular;22" halign="right" transparent="1" foregroundColor="grey"/>
@@ -2842,7 +2843,7 @@
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
     <widget name="menu" position="520,82" size="755,583" itemHeight="32" font="Regular;22" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
-	</screen>
+  </screen>
   <screen name="AdapterSetupConfiguration" position="0,0" size="1280,720" flags="wfNoBorder">
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
@@ -2861,8 +2862,8 @@
     <widget source="description" render="Label" position="5,385" size="477,200" transparent="1" font="Regular;21" valign="center" halign="center" foregroundColor="secondFG" />
     <widget source="IFtext" render="Label" position="590,645" size="166,25" transparent="1" zPosition="10" font="Regular;24" halign="right" foregroundColor="secondFG" />
     <widget source="IF" render="Label" position="765,645" size="500,25" transparent="1" zPosition="10" font="Regular;24" halign="left" foregroundColor="secondFG" />
-    <widget source="Statustext" render="Label" position="316,645" size="200,26" transparent="1" zPosition="10" font="Regular;24" valign="center" foregroundColor="secondFG" halign="right" />
-    <widget name="statuspic" position="525,645" size="35,25" transparent="1" zPosition="10" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_off.png" alphatest="on" />
+    <widget source="Statustext" render="Label" position="316,645" size="200,26" zPosition="10" font="Regular;24" halign="right" transparent="1" foregroundColor="secondFG" />
+    <widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="525,652" zPosition="10" size="15,16" transparent="1" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen name="AdapterSetup" position="0,0" size="1280,720" flags="wfNoBorder">
