@@ -1,5 +1,5 @@
 ﻿<skin>
-  <!--  Skin: Magic-HD-ViX Vs 5.01 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 5.03 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -10871,5 +10871,110 @@
     <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
+  <!-- ## ScreenGrabber ## -->
+  <screen name="sgrabberFilesScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="Screenshot Files">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
+    <widget name="ButtonYellowtext" position="614,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="ButtonBluetext" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <widget name="info" position="5,415" zPosition="4" size="500,200" font="Regular;22" foregroundColor="secondFG" transparent="1" halign="center" valign="center" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+<!-- done
+<screen name="sgrabberFilesScreen" position="center,center" size="640,520" title="Screenshot Files"  flags="wfNoBorder" >
+<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ScreenGrabber/images/framesd.png" position="0,0" size="640,520"/>
+<ePixmap position="15,65" size="610,5" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ScreenGrabber/images/slider.png" alphatest="blend" transparent="1" backgroundColor="transparent"/>
+<widget name="ButtonBluetext" position="75,25" size="160,40" valign="center" halign="left" zPosition="10" font="Regular;22" transparent="1" />
+<widget name="ButtonBlue" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ScreenGrabber/images/button_blue.png" position="55,35" zPosition="10" size="100,100" transparent="1" alphatest="on" />
+<widget name="ButtonYellowtext" position="285,25" size="200,40" valign="center" halign="left" zPosition="10" font="Regular;22" transparent="1" />
+<widget name="ButtonYellow" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ScreenGrabber/images/button_yellow.png" position="265,35" zPosition="10" size="100,100" transparent="1" alphatest="on" />
+<widget name="info" position="25,415" zPosition="4" size="400,30" font="Regular;20" foregroundColor="yellow" transparent="1" halign="left" valign="center" />
+<widget name="menu" position="30,75" size="580,425" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
+</screen>-->
+
+  <screen name="sgrabberScreenGrabberSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="ScreenGrabber Setup">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
+    <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_yellow" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <widget name="info" position="5,415" zPosition="4" size="500,200" font="Regular;22" foregroundColor="secondFG" transparent="1" halign="center" valign="center" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+<!-- Done
+<screen name="sgrabberScreenGrabberSetup" position="center,center" size="640,520" title="ScreebGrabber setup"  flags="wfNoBorder" >
+<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ScreenGrabber/images/framesd.png" position="0,0" size="640,520"/>
+<ePixmap position="15,45" size="610,5" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ScreenGrabber/images/slider.png" alphatest="blend" transparent="1" backgroundColor="transparent"/>
+<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ScreenGrabber/images/button_red.png" position="20,15" zPosition="0" size="140,40" transparent="1" alphatest="on" />
+<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ScreenGrabber/images/button_green.png" position="160,15" zPosition="0" size="140,40" transparent="1" alphatest="on" />
+<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ScreenGrabber/images/button_yellow.png" position="300,15" zPosition="0" size="140,40" transparent="1" alphatest="on" />
+<widget render="Label" source="key_red" position="40,5" size="140,40" zPosition="5" valign="center" halign="left" backgroundColor="red" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+<widget render="Label" source="key_green" position="180,5" size="140,40" zPosition="5" valign="center" halign="left" backgroundColor="red" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+<widget render="Label" source="key_yellow" position="320,5" size="140,40" zPosition="5" valign="center" halign="left" backgroundColor="red" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+<widget name="config" position="20,50" size="600,320" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
+<widget name="info" position="0,370" zPosition="4" size="580,30" font="Regular;20" foregroundColor="yellow" transparent="1" halign="center" valign="center" />
+</screen>-->
+
+<!--
+ title="Preview">
+<widget name="Picture" position="0,0" size="s"
+<eLabel font="Regular;18" backgroundColor="#00640808" halign="left" valign="center" position="10,80" size="300,25" text="Please wait....." zPosition="1"/>
+<eLabel font="Regular;18" backgroundColor="#00080808" halign="left" valign="center" position="10,50" size="620,25" text="OK=Save        Exit=Play TV        Green=Setup        Yellow=Files" zPosition="9"/>
+-->
+
+  <!-- ## GoogleNews Reader ## -->
+<!--GoogleNews Reader
+<screen  position="center,center" size="580,450" title="GoogleNews reader"   >
+<widget name="info" position="10,5" zPosition="4" size="560,30" font="Regular;20" foregroundColor="#ffffff" transparent="1" halign="center" valign="center" />
+<ePixmap position="15,35" size="550,5" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GoogleNews/images/slider.png" alphatest="blend" transparent="1" backgroundColor="transparent"/>
+<widget name="mylist" position="10,40" size="560,399" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
+</screen>
+
+GnewsFeedreaderMenuMain
+<screen position="center,center" size="630,440" title="GoogleNews reader" >
+<widget name="menu" position="0,0" size="620,480" scrollbarMode="showOnDemand" />
+</screen>
+
+
+<screen  position="center,center" size="920,600" title="GoogleNews reader"  >
+<widget name="info" position="10,10" zPosition="4" size="560,55" font="Regular;20" foregroundColor="#ffffff" transparent="1" halign="center" valign="center" />
+<ePixmap position="15,65" size="890,5" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GoogleNews/images/slider.png" alphatest="blend" transparent="1" backgroundColor="transparent"/>
+<widget name="mylist" position="20,80" size="880,490" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
+</screen>
+
+
+<screen name="FMenusimple" position="center,center" size="920,600" title="%s"  flags="wfNoBorder" >
+<widget name="titel" position="20,0" zPosition="1" size="560,130" font="Regular;24" transparent="1"  backgroundColor="#00000000" foregroundColor="yellow" valign="center" halign="left" />
+<widget name="leagueNumberWidget" position="830,60" size="90,30" transparent="1" halign="left" font="Regular;20" foregroundColor="yellow"/>
+<ePixmap position="830,20" zPosition="4" size="60,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GoogleNews/images/arrows.png" transparent="1" alphatest="on" />
+<ePixmap position="15,88" size="890,12" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GoogleNews/images/slider.png" alphatest="blend" transparent="1" backgroundColor="transparent"/>
+<widget name="text" position="20,100" size="880,400" font="Regular;22" />
+<ePixmap position="15,510" size="890,5" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GoogleNews/images/slider.png" alphatest="blend" transparent="1" backgroundColor="transparent"/>
+</screen>-->
+
+
   <!-- ## End of Magic-HD-ViX ## -->
 </skin>
