@@ -1,5 +1,5 @@
 ﻿<skin>
-  <!--  Skin: Magic-HD-ViX Vs 5.04 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 5.05 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -221,7 +221,7 @@
     <widget source="session.CurrentService" render="Label" position="5,5" size="635,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;18" valign="top" halign="left">
       <convert type="PliExtraInfo">All</convert>
     </widget>
-    <widget render="MaxTemp" source="global.CurrentTime" position="900,65" size="50,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19"/>
+<!--    <widget render="MaxTemp" source="global.CurrentTime" position="900,65" size="50,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19"/>-->
     <eLabel name="snr" position="685,5" size="80,15" backgroundColor="transpBlack" halign="center" transparent="1" text="  SNR:" font="Regular;14" />
     <widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,8" size="410,10" borderWidth="2" borderColor="uncccccc">
       <convert type="FrontendInfo">SNR</convert>
