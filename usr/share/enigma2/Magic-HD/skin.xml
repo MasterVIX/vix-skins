@@ -1,5 +1,5 @@
 ﻿<skin>
-  <!--  Skin: Magic-HD-ViX Vs 5.05 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 5.06 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -409,10 +409,10 @@
       <convert type="ValueRange">3,3</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_unstableupdate.png" position="145,615" size="32,32" zPosition="10" alphatest="blend">
+    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_unstableupdate.png" position="5,587" size="32,32" zPosition="10" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_stableupdate.png" position="145,615" size="32,32" zPosition="10" alphatest="blend">
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_stableupdate.png" position="5,587" size="32,32" zPosition="10" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,689" size="26,26" alphatest="on" />
@@ -10969,5 +10969,27 @@
 <screen position="center,center" size="630,440" title="GoogleNews reader" >
 <widget name="menu" position="0,0" size="620,480" scrollbarMode="showOnDemand" />
 </screen>-->
+
+  <!-- ## AutoBouquets ## -->
+  <screen name="MyShCom" position="0,0" size="1280,720" flags="wfNoBorder" title="AutoBouquets E2 for satellite 28.2E">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+<!-- Done
+MyShCom(Screen):
+		<screen position="300,150" size="380,400" title="AutoBouquets E2 for satellite 28.2E" >
+			<widget name="myMenu" position="10,10" size="360,380" scrollbarMode="showOnDemand" />
+		</screen>-->
+
   <!-- ## End of Magic-HD-ViX ## -->
 </skin>
