@@ -1,5 +1,6 @@
-﻿<skin>
-  <!--  Skin: Magic-HD-ViX Vs 5.08 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+﻿<?xml version="1.0" encoding="windows-1250"?>
+<skin>
+  <!--  Skin: Magic-HD-ViX Vs 5.09 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -108,7 +109,7 @@
   <screen name="Volume" position="92,40" zPosition="1" size="320,68" title="Volume" flags="wfNoBorder" backgroundColor="transparent">
     <widget name="Volume" pixmap="Magic-HD-Common/infobar/volume_up.png" position="62,14" zPosition="1" size="240,34" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/infobar/volume_background.png" position="0,0" size="320,68" alphatest="blend" />
-  </screen>  
+  </screen>
   <screen name="Mute" title="Mute" position="45,30" size="90,80" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/infobar/mute.png" position="0,0" size="90,80" alphatest="on" zPosition="0" />
   </screen>
@@ -795,14 +796,14 @@
     <widget source="streams" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="700,400" size="465,200" zPosition="3" foregroundColor="grey" transparent="1" >
       <convert type="TemplatedMultiContent">
 				{"templates":
-					{"default": (25, [ 
+					{"default": (25, [
 						MultiContentEntryText(pos = (0, 0),   size = (35, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
 						MultiContentEntryText(pos = (40, 0),  size = (60, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
 						MultiContentEntryText(pos = (110, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
 						MultiContentEntryText(pos = (240, 0), size = (200, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
 						MultiContentEntryText(pos = (450, 4), size = (15, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 					], True, "showNever"),
-					"notselected": (25, [ 
+					"notselected": (25, [
 						MultiContentEntryText(pos = (0, 0),   size = (35, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
 						MultiContentEntryText(pos = (40, 0),  size = (60, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
 						MultiContentEntryText(pos = (110, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
@@ -1564,7 +1565,7 @@
 							"fonts": [gFont("Regular", 20),gFont("Regular", 20)],
 							"itemHeight": 70
 							}
-						
+
       </convert>
     </widget>
     <widget source="introduction" render="Label" position="15,380" size="477,150" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="secondFG" transparent="1"/>
@@ -1707,7 +1708,7 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
-    <widget source="menu" render="Listbox" position="520,82" size="755,583" scrollbarMode="showNever" transparent="1">
+    <widget source="menu" render="Listbox" position="520,82" size="755,583" scrollbarMode="showNever" transparent="1" >
       <convert type="TemplatedMultiContent">
 				{"template": [  MultiContentEntryText(pos = (8, 7), size = (310, 30), flags = RT_HALIGN_LEFT, text = 0)],
 				"fonts": [gFont("Regular", 22)],
@@ -3906,7 +3907,7 @@
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25" />
-    <widget name="connect" position="770,220" size="64,64" zPosition="2" 
+    <widget name="connect" position="770,220" size="64,64" zPosition="2"
     pixmaps="Magic-HD-Common/busy/busy1.png,Magic-HD-Common/busy/busy2.png,Magic-HD-Common/busy/busy3.png,Magic-HD-Common/busy/busy4.png,Magic-HD-Common/busy/busy5.png,Magic-HD-Common/busy/busy6.png,Magic-HD-Common/busy/busy7.png,Magic-HD-Common/busy/busy8.png,Magic-HD-Common/busy/busy9.png,Magic-HD-Common/busy/busy9.png,Magic-HD-Common/busy/busy10.png,Magic-HD-Common/busy/busy11.png,Magic-HD-Common/busy/busy12.png,Magic-HD-Common/busy/busy13.png,Magic-HD-Common/busy/busy14.png,Magic-HD-Common/busy/busy15.png,Magic-HD-Common/busy/busy17.png,Magic-HD-Common/busy/busy18.png,Magic-HD-Common/busy/busy19.png,Magic-HD-Common/busy/busy20.png,Magic-HD-Common/busy/busy21.png,Magic-HD-Common/busy/busy22.png,Magic-HD-Common/busy/busy23.png,Magic-HD-Common/busy/busy24.png" transparent="1" alphatest="blend" />
     <widget name="lab1" position="560,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
@@ -3937,7 +3938,7 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
-    <widget name="connect" position="770,220" size="64,64" zPosition="2" 
+    <widget name="connect" position="770,220" size="64,64" zPosition="2"
     pixmaps="Magic-HD-Common/busy/busy1.png,Magic-HD-Common/busy/busy2.png,Magic-HD-Common/busy/busy3.png,Magic-HD-Common/busy/busy4.png,Magic-HD-Common/busy/busy5.png,Magic-HD-Common/busy/busy6.png,Magic-HD-Common/busy/busy7.png,Magic-HD-Common/busy/busy8.png,Magic-HD-Common/busy/busy9.png,Magic-HD-Common/busy/busy9.png,Magic-HD-Common/busy/busy10.png,Magic-HD-Common/busy/busy11.png,Magic-HD-Common/busy/busy12.png,Magic-HD-Common/busy/busy13.png,Magic-HD-Common/busy/busy14.png,Magic-HD-Common/busy/busy15.png,Magic-HD-Common/busy/busy17.png,Magic-HD-Common/busy/busy18.png,Magic-HD-Common/busy/busy19.png,Magic-HD-Common/busy/busy20.png,Magic-HD-Common/busy/busy21.png,Magic-HD-Common/busy/busy22.png,Magic-HD-Common/busy/busy23.png,Magic-HD-Common/busy/busy24.png" transparent="1" alphatest="blend" />
     <widget name="lab1" position="560,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
@@ -7743,7 +7744,7 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <eLabel text="Exit" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" foregroundColor="grey" transparent="1" zPosition="1" />
     <widget name="titel" font="Regular;30" position="40,140" size="1200,400" valign="center" halign="center" foregroundColor="yellow" transparent="1" />
-    <eLabel text="Favorite" backgroundColor="secondBG" font="Regular;24" halign="right" position="614,682" size="220,30" foregroundColor="grey" transparent="1" zPosition="1" />	
+    <eLabel text="Favorite" backgroundColor="secondBG" font="Regular;24" halign="right" position="614,682" size="220,30" foregroundColor="grey" transparent="1" zPosition="1" />
     <widget name="leagueNumberWidget" position="835,682" size="60,30" transparent="1" foregroundColor="grey" halign="center" font="Regular;24" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -8531,7 +8532,7 @@
     <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_green" position="340,682" size="220,26"  foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26"  foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget source="key_blue" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="lab1" position="35,480" size="150,30" font="Regular;20" valign="center" transparent="0" />
     <widget name="labdisabled" position="210,480" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
     <widget name="labactive" position="210,480" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
@@ -8539,7 +8540,7 @@
     <widget name="labstop" position="210,550" size="250,26" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
     <widget name="labrun" position="210,550" size="250,26" zPosition="1" font="Regular;20" valign="left" halign="center" backgroundColor="green" />
     <widget name="key" position="520,82" size="755,25" font="Regular;20" halign="center" transparent="1" valign="center" backgroundColor="background" />
-    <widget source="list" render="Listbox" position="520,130" size="755,500" scrollbarMode="showOnDemand" foregroundColor="grey" >
+    <widget source="list" render="Listbox" position="520,130" size="755,500" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" enableWrapAround="1" >
       <convert type="StringList" />
     </widget>
    <eLabel text="'OK' = Show details" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="1055,682" size="240,26" transparent="1" zPosition="1" />
@@ -10030,9 +10031,9 @@
 				</convert>
 			</widget>
     <widget source="introduction" render="Label" font="Regular;22" zPosition="10" position="520,635" size="755,30" transparent="1" foregroundColor="grey" />
-<!--		<widget name="klo" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/camoFS/k_l_o.png"  position="20,220"  size="40,40"  zPosition="4" alphatest="on"  /> 
-		<widget name="klu" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/camoFS/k_l_u.png"  position="20,405"  size="40,40"  zPosition="4" alphatest="on" /> 
-		<widget name="kro" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/camoFS/k_r_o.png"  position="280,220"  size="40,40"  zPosition="4" alphatest="on" /> 
+<!--		<widget name="klo" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/camoFS/k_l_o.png"  position="20,220"  size="40,40"  zPosition="4" alphatest="on"  />
+		<widget name="klu" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/camoFS/k_l_u.png"  position="20,405"  size="40,40"  zPosition="4" alphatest="on" />
+		<widget name="kro" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/camoFS/k_r_o.png"  position="280,220"  size="40,40"  zPosition="4" alphatest="on" />
 		<widget name="kru" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/camoFS/k_r_u.png"  position="280,405"  size="40,40"  zPosition="4" alphatest="on" />-->
     <widget name="cam_bild" position="65,365" size="367,275" zPosition="3" alphatest="blend" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
