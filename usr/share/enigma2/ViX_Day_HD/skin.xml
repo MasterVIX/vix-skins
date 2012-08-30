@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--  Skin: ViX-Day-HD Vs 2.34 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Day-HD Vs 2.35 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -318,20 +318,19 @@
 			</convert>
 		</widget>
 	</screen>
-	<screen name="Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="black">
+	<screen name="Setup" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
-<!--		<widget source="Title" render="Label" position="135,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />-->
 		<panel name="FullscreenTitlePanel" />
 		<panel name="FullscreenPIGPanel" />
-		<widget name="config" position="10,82" size="670,590" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="black" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand" />
-		<widget source="status" render="Label" position="695,440" size="575,200" font="Regular;18" halign="center" valign="center" backgroundColor="black" transparent="0" zPosition="1" />
+		<widget name="config" position="10,82" size="670,590" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x670.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand" />
+		<widget source="status" render="Label" position="695,440" size="575,200" font="Regular;18" halign="center" valign="center" transparent="0" zPosition="1" />
 		<widget name="HelpWindow" pixmap="ViX_HD_Common/buttons/vkey_icon.png" position="60,440" zPosition="1" size="541,720" transparent="1" alphatest="on" />
 		<panel name="FullscreenRed2Panel" />
 		<panel name="FullscreenGreen2Panel" />
 		<widget source="VKeyIcon" render="Pixmap" pixmap="ViX_HD_Common/buttons/key_text.png" position="1200,686" zPosition="1" size="35,25" transparent="1" alphatest="on" >
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget name="footnote" position="800,686" size="300,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd2" halign="left" transparent="1" valign="top" />
+		<widget name="footnote" position="800,686" size="300,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" halign="left" transparent="1" valign="top" />
 	</screen>
 
 <!-- InfoBar's -->
@@ -478,7 +477,7 @@
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="session.CurrentService" render="PiconBg" position="43,246" size="102,62" transparent="0" alphatest="blend" zPosition="1" />
-		<widget source="session.CurrentService" render="Picon" position="44,247" size="100,60" transparent="0" alphatest="blend" zPosition="2" >
+		<widget source="session.CurrentService" render="Picon" position="44,248" size="100,60" transparent="0" alphatest="blend" zPosition="2" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="495,172" size="60,20" font="Bold;17" foregroundColor="infobar-frgrnd-on" backgroundColor="infobar-bkgrnd" transparent="1" halign="center" >
@@ -1656,7 +1655,7 @@ self.autoResize()
 	<screen name="ScanIP" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<ePixmap pixmap="ViX_Day_HD/menu/ico_menu_Setup.png" position="426,10" size="88,88" alphatest="blend" />
-		<widget name="config" render="Listbox" position="10,107" size="503,450" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" />
+		<widget name="config" position="10,107" size="503,450" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" />
 		<ePixmap pixmap="skin_default/div-h.png" position="10,610" zPosition="1" size="503,2" />
 		<panel name="MenuRed2Panel" />
 		<panel name="MenuGreen2Panel" />
@@ -3352,7 +3351,6 @@ self.autoResize()
 	<screen name="MyTubePlayer" flags="wfNoBorder" position="center,550" size="720,160" title="InfoBar" backgroundColor="transparent">
 		<ePixmap position="0,0" pixmap="skin_default/2ndinfobar_mp.png" zPosition="-1" size="720,160" />
 		<ePixmap position="29,40" pixmap="skin_default/screws_mp.png" size="665,104" alphatest="on" />
-<!--		<ePixmap position="48,70" pixmap="skin_default/icons/mp_buttons.png" size="108,13" alphatest="on" />-->
 		<ePixmap pixmap="skin_default/icons/ico_event.png" position="207,78" size="15,10" alphatest="on" />
 		<widget source="session.CurrentService" render="Label" position="230,73" size="360,40" font="Regular;20" foregroundColor="window-fg" backgroundColor="#00263c59" shadowColor="#1d354c" shadowOffset="-1,-1" transparent="1">
 			<convert type="ServiceName">Name</convert>
