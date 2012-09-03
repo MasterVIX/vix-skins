@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="windows-1250"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 5.12 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 5.13 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -1111,7 +1111,7 @@
     <eLabel text="Skin Magic-HD  ViX-team skin by Rob van der Does" foregroundColor="grey" font="Regular;19" halign="center" position="5,590" size="500,55" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="SystemNetworkInfo" position="0,0" size="1280,720" >
+  <screen name="SystemNetworkInfo" flags="wfNoBorder" position="0,0" size="1280,720" >
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -1793,10 +1793,6 @@
     <widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1132,63" size="20,20" zPosition="3" alphatest="on">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-  </screen>
-  <screen name="ChapterZap" title="Chapter" position="center,center" size="280,60" backgroundColor="transparent" flags="wfNoBorder">
-    <widget name="chapter" position="0,-200" size="200,40" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="4" valign="center" halign="right" />
-    <widget name="number" position="200,-200" size="150,40" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="4" valign="center" halign="left" />
   </screen>
   <screen name="PTSTimeshiftState" position="center,40" zPosition="2" size="420,70" backgroundColor="transparent" flags="wfNoBorder">
     <widget name="statusicon" position="12,5" size="20,21" pixmaps="Magic-HD-Common/icons/play.png,Magic-HD-Common/icons/pause.png,Magic-HD-Common/icons/stop.png,Magic-HD-Common/icons/forward.png,Magic-HD-Common/icons/backward.png,Magic-HD-Common/icons/slow.png" zPosition="5" alphatest="on" />
