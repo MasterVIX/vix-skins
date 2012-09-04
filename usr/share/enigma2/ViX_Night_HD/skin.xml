@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--  Skin: ViX-Night-HD Vs 1.36 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Night-HD Vs 1.37 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -122,7 +122,7 @@
 		<widget source="Title" render="Label" position="20,25" size="850,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 	</screen>
 	<screen name="FullscreenPIGPanel">
-		<widget source="session.VideoPicture" render="Pig" position="697,82" size="570,321" zPosition="3" backgroundColor="transparent" />
+		<widget source="session.VideoPicture" render="Pig" position="697,82" size="570,321" zPosition="1" backgroundColor="transparent" />
 		<widget source="session.CurrentService" render="Label" position="697,82" size="570,25" font="Boldit;22" foregroundColor="event-frgrnd" borderWidth="2" backgroundColor="#00000000" transparent="1" valign="center" halign="center" noWrap="1" zPosition="5" >
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -320,7 +320,7 @@
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
 		<panel name="FullscreenPIGPanel" />
-		<widget name="config" position="10,82" size="670,590" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x670.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand" />
+		<widget name="config" position="10,82" size="670,590" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x670.png" foregroundColor="window-fg" backgroundColor="black" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand" />
 		<widget source="status" render="Label" position="695,440" size="575,200" font="Regular;18" halign="center" valign="center" transparent="0" zPosition="1" />
 		<widget name="HelpWindow" pixmap="ViX_HD_Common/buttons/vkey_icon.png" position="60,440" zPosition="1" size="541,720" transparent="1" alphatest="on" />
 		<panel name="FullscreenRed2Panel" />
