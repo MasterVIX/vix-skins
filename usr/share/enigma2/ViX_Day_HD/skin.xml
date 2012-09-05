@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--  Skin: ViX-Day-HD Vs 2.39 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Day-HD Vs 2.40 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -163,7 +163,7 @@
 	<screen name="MenuPanel">
 		<widget source="Title" render="Label" position="10,60" size="415,38" font="Bold;32" foregroundColor="menu-title-frgrnd" backgroundColor="menu-title-bkgrnd" transparent="1" />
 		<ePixmap pixmap="ViX_Day_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="10,8" size="410,28" font="Regular;24" foregroundColor="menu-title-frgrnd" backgroundColor="menu-time-bkgrnd" halign="right" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="200,8" size="300,28" font="Regular;24" foregroundColor="menu-title-frgrnd" backgroundColor="menu-time-bkgrnd" halign="right" transparent="1">
 			<convert type="ClockToText">Full</convert>
 		</widget>
 	</screen>
@@ -283,8 +283,8 @@
 		<widget source="VKeyIcon" render="Pixmap" pixmap="ViX_HD_Common/buttons/key_text.png" position="1200,686" zPosition="1" size="35,25" transparent="1" alphatest="on" >
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget name="footnote" position="800,686" size="300,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" halign="left" transparent="1" valign="top" />
-	</screen>
+		<widget name="footnote" position="800,686" size="300,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" halign="left" transparent="1" valign="top" />
+  </screen>
 
 <!-- InfoBar's -->
 	<screen name="InfoBar" flags="wfNoBorder" position="center,e-158" size="974,148" title="InfoBar" backgroundColor="transparent">
@@ -1972,7 +1972,7 @@ self.autoResize()
 	</screen>
 	<screen name="SkinSelector" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="SkinList" position="10,355" size="503,240" itemHeight="30" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="SkinList" position="15,355" size="495,240" itemHeight="30" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="Preview" position="117,138" size="280,210" alphatest="on" zPosition="0" />
 		<panel name="MenuRed2Panel" />
 		<widget source="introduction" render="Label" position="10,604" size="503,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="window-bg" />
@@ -4230,5 +4230,39 @@ self.autoResize()
 	<screen name="AutoBouquetsLogView" position="0,0" size="541,720" title="Backup Log" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<widget name="list" position="10,107" size="503,536" font="Regular;20" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+<!-- ## RemoteChannelStreamConverter ## -->
+	<screen name="StreamingChannelFromServerScreen" position="0,0" size="541,720" title="Select bouquets to convert" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<widget name="list" position="15,107" size="495,500" itemHeight="28" font="Regular;22" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget source="statusbar" render="Label" position="20,607" size="495,30" font="Regular;22" foregroundColor="window-fg" backgroundColor="window-bg" halign="center" transparent="0" />
+		<panel name="MenuRed2Panel" />
+		<panel name="MenuGreen2Panel" />
+		<panel name="MenuYellow2Panel" />
+		<panel name="MenuBlue2Panel" />
+	</screen>
+	<screen name="ServerEditor" position="0,0" size="541,720" title="FTP Server Editor" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<widget name="config" position="15,107" size="495,536" itemHeight="28" font="Regular;22" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<panel name="MenuRed2Panel" />
+		<panel name="MenuGreen2Panel" />
+		<panel name="MenuYellow2Panel" />
+		<panel name="MenuBlue2Panel" />
+	</screen>
+<!-- ## RemoteTimer ## -->
+	<screen name="RemoteTimerScreen" position="0,0" size="541,720" title="Remote-Timer digest" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<widget name="timerlist" position="15,107" size="495,500" itemHeight="48" font="Regular;22" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="text" position="20,607" size="495,30" font="Regular;22" foregroundColor="window-fg" backgroundColor="window-bg" halign="center" transparent="0" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<panel name="MenuYellow1Panel" />
+		<panel name="MenuBlue1Panel" />
+	</screen>
+	<screen name="RemoteTimerSetup" position="0,0" size="541,720" title="Settings" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<widget name="config" position="15,107" size="495,536" itemHeight="48" font="Regular;22" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
 	</screen>
 </skin>
