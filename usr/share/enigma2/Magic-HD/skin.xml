@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="windows-1250"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 5.21 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 5.22 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -530,6 +530,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+<widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+  <convert type="ServiceName">Name</convert>
+</widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="305,682" size="26,26" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" alphatest="on" position="580,682" size="26,26" />
@@ -581,6 +584,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+<widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+  <convert type="ServiceName">Name</convert>
+</widget>
     <widget name="menu" position="520,82" size="755,583" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -677,6 +683,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" foregroundColor="grey" transparent="1" itemHeight="28" enableWrapAround="1"/>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -691,6 +700,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="epg_description" font="Regular;24" position="520,82" size="755,583" foregroundColor="grey" transparent="1" />
     <widget name="channel" position="15,390" size="460,52" transparent="1" foregroundColor="secondFG" font="Regular;24" halign="center" />
     <widget name="datetime" position="15,463" size="460,30" transparent="1" font="Regular;22" halign="center" />
@@ -718,7 +730,10 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
-    <ePixmap pixmap="Magic-HD-Common/dvr/scale2.png" position="5,110" size="477,12" zPosition="1" alphatest="on" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+     <ePixmap pixmap="Magic-HD-Common/dvr/scale2.png" position="5,110" size="477,12" zPosition="1" alphatest="on" />
     <eLabel backgroundColor="infobarBG" position="5,111" size="477,14" zPosition="0" />
     <widget source="session.CurrentService" render="PositionGauge" position="5,110" size="477,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer2.png:477,0">
       <convert type="ServicePosition">Gauge</convert>
@@ -780,7 +795,10 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
-    <widget name="config" position="620,85" size="425,110" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+     <widget name="config" position="620,85" size="425,110" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" />
     <widget source="key_red" render="Pixmap" pixmap="skin_default/buttons/key_red.png" position="570,85" size="35,25" alphatest="on">
       <convert type="ConditionalShowHide" />
     </widget>
@@ -834,7 +852,10 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
-    <widget source="menu" render="Listbox" position="520,82" size="755,575" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="40" enableWrapAround="1" >
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+     <widget source="menu" render="Listbox" position="520,82" size="755,575" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="40" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
 				"fonts": [gFont("Regular",26)],
@@ -855,7 +876,10 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
-    <widget source="menu" render="Listbox" position="520,82" size="755,575" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" itemHeight="40" enableWrapAround="1" >
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+     <widget source="menu" render="Listbox" position="520,82" size="755,575" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" itemHeight="40" enableWrapAround="1" >
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 26)],
@@ -876,7 +900,10 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
-    <widget source="menu" render="Listbox" position="520,82" size="755,583" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="40" enableWrapAround="1" >
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+     <widget source="menu" render="Listbox" position="520,82" size="755,583" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="40" enableWrapAround="1" >
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 26)],
@@ -897,7 +924,10 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
-    <widget source="menu" render="Listbox" position="520,82" size="755,573" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" itemHeight="40" enableWrapAround="1" >
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+     <widget source="menu" render="Listbox" position="520,82" size="755,573" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" itemHeight="40" enableWrapAround="1" >
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 26)],
@@ -918,7 +948,10 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
-    <widget source="menu" render="Listbox" position="520,82" size="755,583" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+     <widget source="menu" render="Listbox" position="520,82" size="755,583" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 24)],
@@ -940,7 +973,10 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
-    <widget source="menu" render="Listbox" position="520,82" size="755,583" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+     <widget source="menu" render="Listbox" position="520,82" size="755,583" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 24)],
@@ -961,7 +997,10 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
-    <widget source="menu" render="Listbox" position="520,82" size="755,583" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+     <widget source="menu" render="Listbox" position="520,82" size="755,583" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 24)],
@@ -982,7 +1021,10 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
-    <widget source="menu" render="Listbox" position="520,82" size="755,583" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+     <widget source="menu" render="Listbox" position="520,82" size="755,583" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 24)],
@@ -1003,7 +1045,10 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget source="key_red" render="Label" position="50,682" size="220,30" foregroundColor="grey" font="Regular;22" halign="left" />
     <widget source="key_green" render="Label" position="340,682" size="220,30" foregroundColor="grey" font="Regular;22" halign="left" />
@@ -1027,6 +1072,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1020,682" size="35,25" />
     <eLabel text="= Release notes" position="1050,682" size="220,26" font="Regular;22" halign="left" transparent="1" zPosition="1" foregroundColor="grey" />
     <widget source="lab1" render="Label" position="10,455" size="500,25" font="Regular;24" transparent="0" zPosition="2" foregroundColor="secondFG" halign="center" />
@@ -1047,6 +1095,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget source="TunerHeader" render="Label" position="635,125" size="580,25" font="Regular;24" halign="center" transparent="0" zPosition="1" foregroundColor="secondFG" />
     <widget source="nims" render="Label" position="635,160" size="580,100"  transparent="1" font="Regular;20" halign="center" foregroundColor="grey" />
     <widget source="HDDHeader" render="Label" position="635,275" size="580,25" transparent="1" font="Regular;24" halign="center" foregroundColor="secondFG" />
@@ -1067,6 +1118,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="list" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey" />
     <eLabel text="Skin Magic-HD  ViX-team skin by Rob van der Does" foregroundColor="grey" font="Regular;19" halign="center" position="5,590" size="500,55" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
@@ -1082,6 +1136,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="infolist" position="520,82" size="755,583" selectionDisabled="1" foregroundColor="grey" />
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
@@ -1105,6 +1162,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget source="lab1" render="Label" position="10,455" size="500,30" font="Regular;24" transparent="0" zPosition="2" foregroundColor="secondFG" halign="center" />
     <widget source="lab2" render="Label" position="10,480" size="500,30" font="Crs;19" transparent="0" zPosition="2" foregroundColor="grey" halign="center" />
     <widget name="AboutScrollLabel" position="520,82" size="755,582" transparent="0" font="Regular;22" zPosition="1" scrollbarMode="showOnDemand" foregroundColor="grey" />
@@ -1122,6 +1182,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" position="520,90" size="458,275" valign="left" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" foregroundColor="grey" enableWrapAround="1" />
@@ -1154,6 +1217,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="hddlist" position="520,82" size="755,583" font="Regular;22" transparent="1" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -1168,6 +1234,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
     <widget name="initializetext" position="50,682" size="400,26" zPosition="10" font="Regular;22" halign="left" transparent="1" />
     <widget name="model" position="590,110" size="380,25" font="Regular;22" />
@@ -1186,6 +1255,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="wait" position="590,110" size="600,50" font="Regular;23" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -1201,6 +1273,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget source="key_red" render="Label" position="50,682" size="220,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left" />
@@ -1220,6 +1295,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget source="key_red" render="Label" position="50,682" size="176,24" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
@@ -1238,6 +1316,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="okbutton" position="590,110" size="280,40" />
     <widget name="theClock" position="590,160" size="280,50" />
     <widget name="title" position="590,220" size="280,50" />
@@ -1253,6 +1334,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,82" size="755,583" enableWrapAround="1" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -1267,6 +1351,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="servicelist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" position="520,82" size="755,583" transparent="1" />
     <eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
@@ -1285,6 +1372,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" position="520,82" size="755,583" font="Regular;20" transparent="1" />
     <eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
@@ -1304,6 +1394,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="305,682" size="26,26" />
     <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
@@ -1323,6 +1416,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="305,682" size="26,26" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" alphatest="on" position="580,682" size="26,26" />
@@ -1346,6 +1442,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="parent.Title" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -1361,6 +1460,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget source="job_name" render="Label" position="590,112" size="480,60" font="Regular;28" valign="center" />
     <widget source="job_task" render="Label" position="590,170" size="480,50" font="Regular;23" />
 <!--    <widget source="job_progress" render="Progress" position="590,262" size="480,36" borderWidth="2" backgroundColor="un254f7497" />-->
@@ -1401,6 +1503,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="service" position="590,110" size="600,25" font="Regular;20" />
     <widget name="text" position="590,140" size="600,25" font="Regular;20" halign="center" />
     <widget name="tries" position="590,170" size="600,25" font="Regular;20" halign="center" />
@@ -1418,6 +1523,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="service" font="Regular;22" position="520,90" size="755,30" foregroundColor="grey" halign="center" />
     <widget name="text" font="Regular;22" position="520,120" size="755,30" foregroundColor="grey" halign="center" />
     <widget name="tries" font="Regular;22" position="520,150" size="755,30" foregroundColor="grey" halign="center" />
@@ -1436,6 +1544,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget source="Title" foregroundColor="grey" render="Label" font="Regular;22" position="520,82" size="755,255" />
     <widget name="text" position="520,390" size="755,240" font="Regular;24" foregroundColor="grey" />
     <eLabel text="'Exit' = Leave message" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="320,26" transparent="1" zPosition="1" />
@@ -1451,6 +1562,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="ErrorPixmap" pixmap="Magic-HD-Common/window/input_error.png" position="600,7" size="54,54" zPosition="4" alphatest="on" />
     <widget name="QuestionPixmap" pixmap="Magic-HD-Common/window/input_question.png" position="600,7" size="54,54" zPosition="4" alphatest="on" />
     <widget name="InfoPixmap" pixmap="Magic-HD-Common/window/input_info.png" position="600,7" size="54,54" zPosition="4" alphatest="on" />
@@ -1470,6 +1584,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="text" position="650,390" size="610,240" font="Regular;22" foregroundColor="grey" />
     <widget name="ErrorPixmap" pixmap="Magic-HD-Common/window/input_error.png" position="550,110" size="54,54" alphatest="on" />
     <widget name="QuestionPixmap" pixmap="Magic-HD-Common/window/input_question.png" position="550,110" size="54,54" alphatest="on" />
@@ -1487,6 +1604,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="text" position="650,80" size="445,590" font="Regular;22" />
     <widget name="ErrorPixmap" pixmap="Magic-HD-Common/window/input_error.png" position="550,110" size="54,54" alphatest="on" />
     <widget name="QuestionPixmap" pixmap="Magic-HD-Common/window/input_question.png" position="550,110" size="54,54" alphatest="on" />
@@ -1505,7 +1625,10 @@
     <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
       <convert type="ClockToText">Date</convert>
     </widget>
-    <widget backgroundColor="transparent" position="15,90" render="Pig" size="477,270" source="session.VideoPicture" zPosition="1" />
+    <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="cancel" alphatest="on" pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" />
     <widget name="ok" alphatest="on" pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" />
     <widget name="canceltext" position="50,682" zPosition="1" size="220,26" font="Regular;24" halign="left" backgroundColor="background" transparent="1" />
@@ -1524,6 +1647,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget source="languages" render="Listbox" position="520,82" size="755,583" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" >
       <convert type="TemplatedMultiContent">
 			{"template": [
@@ -1548,6 +1674,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -1582,6 +1711,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -1605,6 +1737,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="text" position="520,82" size="755,583" font="Console;22" foregroundColor="grey" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -1619,6 +1754,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="text" position="590,110" size="600,30" font="Regular;22" halign="center" transparent="1" />
     <widget name="input" position="590,150" size="600,30" font="Regular;22" halign="center" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
@@ -1634,6 +1772,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="liste" position="520,82" size="755,583" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" selectionDisabled="1" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -1648,6 +1789,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="liste" position="520,82" size="755,583" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" transparent="1" />
     <widget name="label" position="15,400" size="447,200" font="Regular;24" halign="center" valign="center" foregroundColor="secondFG" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
@@ -1663,6 +1807,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="305,682" size="26,26" />
     <widget name="key_green" position="340,682" size="220,26" font="Regular;24" halign="left" valign="center" backgroundColor="secondBG" transparent="1" zPosition="1" />
     <widget name="liste" position="520,82" size="755,577" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" transparent="1" />
@@ -1679,6 +1826,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="liste" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,82" size="755,583" transparent="1" />
     <widget name="label1" position="15,400" size="447,200" font="Regular;24" halign="center" valign="center" foregroundColor="secondFG" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
@@ -1694,6 +1844,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="description" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -1708,6 +1861,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget source="menu" render="Listbox" position="520,82" size="755,583" scrollbarMode="showNever" transparent="1" >
       <convert type="TemplatedMultiContent">
 				{"template": [  MultiContentEntryText(pos = (8, 7), size = (310, 30), flags = RT_HALIGN_LEFT, text = 0)],
@@ -1728,6 +1884,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="text" position="15,379" size="477,260" zPosition="2" font="Regular;22" foregroundColor="secondFG" />
     <widget name="list" position="520,82" size="755,583" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="28" foregroundColor="grey" enableWrapAround="1"/>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
@@ -1750,6 +1909,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="config" position="520,82" size="755,583" backgroundColor="darkgrey" zPosition="3" transparent="1" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" itemHeight="28" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -1821,6 +1983,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -1850,6 +2015,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="menu" position="520,82" size="755,583" itemHeight="35" font="Regular;25" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -1879,6 +2047,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="skin_default/vkey_text.png" position="650,275" size="542,52" zPosition="-4" alphatest="on" />
     <widget name="header" position="652,239" size="500,26" transparent="1" noWrap="1" font="Regular;20" />
     <widget name="text" position="652,274" size="536,34" transparent="1" noWrap="1" font="Regular;24" valign="center" halign="right" />
@@ -1906,6 +2077,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -1932,6 +2106,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <widget source="key_red" render="Label" position="50,682" size="220,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" />
     <widget name="config" position="520,90" size="755,295" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
@@ -2042,6 +2219,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <eLabel text="Index" position="615,95" size="60,25" font="Regular;21" foregroundColor="black" backgroundColor="transpWhite" />
     <eLabel text="0" position="605,120" size="16,25" font="Regular;21" foregroundColor="black" backgroundColor="transpWhite" />
     <widget name="Marker" position="635,120" size="16,25" font="Regular;21" foregroundColor="black" backgroundColor="transpWhite" />
@@ -2076,6 +2256,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25" />
     <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
@@ -2112,6 +2295,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -2126,6 +2312,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="target" position="15,635" size="1230,27" backgroundColor="grey" foregroundColor="black" font="Regular;24" valign="right" />
     <widget name="filelist" position="520,90" size="755,545" itemHeight="28" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <widget name="booklist" position="15,375" size="477,250" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
@@ -2150,6 +2339,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="timerlist" position="520,82" size="755,583" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -2164,6 +2356,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="cancel" pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <widget name="ok" pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="config" position="520,82" size="755,583" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
@@ -2182,6 +2377,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="description" position="10,10" size="1080,40" font="Regular;25" />
     <widget name="lbegin" position="1005,140" size="103,30" foregroundColor="red" font="Regular;25" />
     <widget name="lend" position="1006,203" size="103,30" foregroundColor="green" font="Regular;25" />
@@ -2336,6 +2534,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -5992,6 +6193,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -6022,6 +6226,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -6042,6 +6249,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget source="key_red" render="Label" position="50,682" size="200,26" zPosition="1" transparent="1" font="Regular;22" halign="left" />
     <widget source="key_green" render="Label" position="340,682" size="200,26" zPosition="1" transparent="1" font="Regular;22" halign="left" />
     <widget source="key_yellow" render="Label" position="614,682" size="200,26" zPosition="1" transparent="1" font="Regular;22" halign="left" />
@@ -6066,6 +6276,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget source="key_red" render="Label" position="50,682" size="200,26" zPosition="1" transparent="1" font="Regular;22" halign="left" />
     <widget source="key_green" render="Label" position="340,682" size="200,26" zPosition="1" transparent="1" font="Regular;22" halign="left" />
     <widget source="key_blue" render="Label" position="875,682" size="200,26" zPosition="1" transparent="1" font="Regular;20" halign="left" />
@@ -6086,6 +6299,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget source="caption" render="Label" position="70,414" size="370,27" zPosition="1" transparent="1" font="Regular;24" />
     <widget source="currentTemp" render="Label" position="70,459" size="370,27" zPosition="1" transparent="1" font="Regular;24" />
     <widget source="condition" render="Label" position="70,500" size="370,25" zPosition="1" transparent="1" font="Regular;22" />
@@ -6118,6 +6334,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -6183,6 +6402,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/key_ok.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -6205,6 +6427,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -6234,6 +6459,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -6256,6 +6484,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel780x110.png" zPosition="3" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -6270,6 +6501,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel780x110.png" font="Regular;22" zPosition="3" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -6284,6 +6518,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel780x110.png" font="Regular;22" zPosition="3" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -6298,6 +6535,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
      <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
@@ -8020,6 +8260,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="pluginInfo" position="530,110" size="700,50" valign="center" halign="left" zPosition="5" transparent="1" font="Regular;24"/>
     <widget name="daemonInfo" position="530,200" size="700,50" valign="center" halign="left" zPosition="5" transparent="1" font="Regular;24"/>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
@@ -8035,6 +8278,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="key_r" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -8053,6 +8299,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="SetupEntry" position="590,110" size="500,25" font="Regular;22" halign="left"/>
     <widget name="SetupValue" position="590,110" size="500,25" font="Regular;22" halign="right"/>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
@@ -8068,6 +8317,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap name="r" pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap name="g" pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap name="y" pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -8120,6 +8372,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -8134,6 +8389,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -8170,6 +8428,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget source="TxtTemp0" render="Label" position="555,180" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
     <widget source="TxtTemp1" render="Label" position="555,210" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
     <widget source="TxtTemp2" render="Label" position="555,240" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
@@ -9175,6 +9436,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
@@ -9194,6 +9458,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -9220,6 +9487,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -9244,6 +9514,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -9270,6 +9543,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -9291,6 +9567,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="text" position="520,300" size="740,100" halign="center" font="Regular;22" />
     <widget name="list" font="Regular;22" position="520,82" size="755,220" selectionPixmap="Magic-HD-Common/buttons/sel.png" transparent="1" foregroundColor="grey" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
@@ -9306,6 +9585,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -9330,6 +9612,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
@@ -9348,6 +9633,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -9368,6 +9656,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
@@ -9402,6 +9693,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
@@ -9420,6 +9714,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="helptext" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -9434,6 +9731,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
@@ -9453,6 +9753,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="buttonred" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -9469,7 +9772,10 @@
     <widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
       <convert type="ClockToText">Full</convert>
     </widget>
-    <widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
+    <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -9490,6 +9796,9 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <widget source="key_red" render="Label" position="50,682" size="220,26" backgroundColor="black" transparent="1" foregroundColor="grey" font="Regular;24" halign="left" />
     <widget source="menu" render="Listbox" position="520,82" size="755,583" selectionDisabled="1" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
@@ -9511,6 +9820,9 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="305,682" size="26,26" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" alphatest="on" position="580,682" size="26,26" />
@@ -9541,6 +9853,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -9564,6 +9879,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
@@ -9583,6 +9901,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -9655,6 +9976,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <eLabel text="Cancel" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -9672,6 +9996,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <eLabel text="Cancel" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -9689,6 +10016,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <eLabel text="Cancel" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -9708,6 +10038,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="configlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -9722,6 +10055,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="SkinList" position="520,90" size="300,570" itemHeight="28" font="Regular;22" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
     <widget name="Preview" position="918,110" size="280,210" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
@@ -9737,6 +10073,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="infolist" selectionDisabled="1" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -9751,6 +10090,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="infolist" selectionDisabled="1" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -9765,6 +10107,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget source="pathlabel" render="Label" font="Regular;22" itemHeight="28" position="520,82" size="755,24" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <widget source="menu" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,106" size="755,560" transparent="1" foregroundColor="grey" enableWrapAround="1" >
       <convert type="StringList" />
@@ -9782,6 +10127,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -9796,6 +10144,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -9810,6 +10161,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="configlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -9824,6 +10178,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -9838,6 +10195,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="liste" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -9852,6 +10212,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget source="menu" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" >
       <convert type="StringList">
 				{"template": [ MultiContentEntryText(pos = (70,3), size = (372, 35), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -9873,6 +10236,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget source="menu" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" >
       <convert type="StringList">
 				{"template": [ MultiContentEntryText(pos = (70,3), size = (372, 35), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -9894,6 +10260,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -9923,6 +10292,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -9945,6 +10317,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -9969,6 +10344,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -9997,6 +10375,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -10046,6 +10427,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -10084,6 +10468,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -10105,6 +10492,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -10129,6 +10519,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -10151,6 +10544,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -10175,6 +10571,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -10202,6 +10601,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
@@ -10224,6 +10626,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="streamlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -10239,6 +10644,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -10253,10 +10661,12 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-
   <screen name="TvEpisode" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
@@ -10268,11 +10678,12 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-
-
   <screen name="MovieList" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
@@ -10284,10 +10695,12 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-
   <screen name="MovieSource" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
@@ -10299,6 +10712,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -10313,6 +10729,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="myLabel" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -10327,6 +10746,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="bild" position="100,400" zPosition="1" size="300,200" transparent="1" />
     <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
@@ -10343,6 +10765,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -10408,6 +10833,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -10477,6 +10905,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="textpage" scrollbarMode="showOnDemand" position="520,82" size="755,583" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <widget name="Mlist" zPosition="3" position="5,365" size="500,270" font="Regular;22" halign="left" transparent="1" />
     <widget source="key_esc" render="Label" position="430,682" zPosition="2" size="180,40" font="Regular;20" valign="center" halign="left" transparent="1" foregroundColor="#c1cdcd"/>
@@ -10496,6 +10927,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -10515,6 +10949,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -10529,6 +10966,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="skin_default/buttons/key_menu.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="skin_default/buttons/key_text.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SubsDownloader2/pic/buttons/HD/key_next.png" position="580,682" size="26,26" alphatest="on" />
@@ -10557,6 +10997,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <widget name="extendLibMediaInfo" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="5,360" size="500,270" transparent="1" foregroundColor="grey" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
@@ -10573,6 +11016,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="skin_default/vkey_icon.png" position="1000,670" size="60,48" transparent="1" zPosition="1" alphatest="on" />
     <widget name="ntitle" position="520,82" size="755,25" transparent="1" font="Regular;22" foregroundColor="grey" />
     <widget name="liste" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,110" size="755,250" font="Regular;22" transparent="1" foregroundColor="grey" />
@@ -10589,6 +11035,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="940,682" size="26,26" alphatest="on" />
     <widget name="key_yellow" position="614,682" size="320,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -10608,6 +11057,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -10627,6 +11079,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="skin_default/buttons/key_1.png" alphatest="on" position="500,682"  size="35,25" />
     <ePixmap pixmap="skin_default/buttons/key_2.png" alphatest="on" position="550,682"  size="35,25" />
     <widget name="ntitle" position="520,82" size="755,25" transparent="1" font="Regular;22" foregroundColor="grey" />
@@ -10648,6 +11103,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -10677,6 +11135,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -10731,6 +11192,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -10745,6 +11209,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -10760,6 +11227,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -10778,6 +11248,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -10798,6 +11271,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -10816,6 +11292,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -10834,6 +11313,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -10852,6 +11334,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -10870,6 +11355,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="text" font="Regular;20" position="520,82" size="755,583" transparent="1" foregroundColor="grey" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -10884,6 +11372,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="text" font="Regular;20" position="520,82" size="755,583" transparent="1" foregroundColor="grey" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -10895,6 +11386,9 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="filelist" position="520,90" size="755,575" zPosition="4" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="305,682" size="26,26" />
@@ -10920,6 +11414,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
     <widget name="ButtonYellowtext" position="614,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -10939,6 +11436,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -10967,6 +11467,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="mylist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,106" size="755,559" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <widget name="info" position="520,82" zPosition="4" size="755,24" font="Regular;22" foregroundColor="secondFG" transparent="1" halign="center" valign="center" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
@@ -10982,6 +11485,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="mylist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="482,106" size="800,559" transparent="1" enableWrapAround="1" />
     <widget name="info" position="482,82" zPosition="4" size="795,24" font="Regular;22" foregroundColor="secondFG" transparent="1" halign="center" valign="center" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
@@ -10999,6 +11505,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="text" font="Regular;22" itemHeight="28" position="520,182" size="755,483" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
@@ -11018,6 +11527,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -11047,6 +11559,12 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
@@ -11065,8 +11583,46 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <widget name="list" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
+  <!-- ## AadStreamURL ## -->
+  <screen name="LiveStreamingLinks" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Format:%-H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+    <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
+    <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+<!--Done
+LiveStreamingLinks
+	<screen position="c-300,c-210" size="600,420" title="">
+		<widget name="menu" position="10,5" size="e-20,e-90" scrollbarMode="showOnDemand" />
+		<widget source="statusbar" render="Label" position="c-300,e-80" zPosition="10" size="e-10,40" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+		<ePixmap pixmap="skin_default/buttons/red.png" position="c-150,e-45" size="140,40" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/green.png" position="c-0,e-45" size="140,40" alphatest="on" />
+		<widget source="key_red" render="Label" position="c-150,e-45" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
+		<widget source="key_green" render="Label" position="c-0,e-45" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1" />
+	</screen>-->
   <!-- ## End of Magic-HD-ViX ## -->
 </skin>
