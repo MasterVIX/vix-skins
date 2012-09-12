@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--  Skin: ViX-Day-HD Vs 2.51 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Day-HD Vs 2.52 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -1726,9 +1726,9 @@ self.autoResize()
 		<panel name="MenuPanel" />
 		<widget name="config" position="10,107" size="503,526" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" />
 	</screen>
-	<screen name="NumberZap" position="center,center" size="150,78" title="Channel" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-1" size="150,78" pixmap="ViX_Day_HD/ZapNumber.png" />
-		<widget name="number" position="20,21" size="110,40" halign="center" valign="top" font="Bold;34" noWrap="1" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" />
+	<screen name="NumberZap" position="center,center" size="434,109" backgroundColor="transparent" flags="wfNoBorder">
+		<widget name="number" position="0,0" size="434,50" backgroundColor="transparent" transparent="1" font="Regular;48" borderColor="black" borderWidth="2" valign="center" halign="center" />
+		<widget name="servicename" position="0,40" size="434,60" backgroundColor="transparent" transparent="1" font="Regular;30" borderColor="black" borderWidth="2" valign="center" halign="center" />
 	</screen>
 	<screen name="NumericalTextInputHelpDialog" position="453,410" zPosition="2" size="394,124" backgroundColor="window-bg" flags="wfNoBorder" transparent="0">
 		<widget name="key1" position="2,2" size="130,30" font="Regular;18" halign="center" valign="center" transparent="1" />
