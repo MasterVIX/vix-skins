@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="windows-1250"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 5.30 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 5.31 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -1891,9 +1891,9 @@
   <screen name="SubtitleDisplay" position="0,0" size="1280,720" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder" />
   <screen name="Scart" position="0,0" size="1280,720" backgroundColor="transparent" />
   <screen name="Standby" title="Standby" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="black" />
-  <screen name="NumberZap" title="Channel" position="center,center" size="280,60" backgroundColor="transparent" flags="wfNoBorder">
-    <widget name="channel" position="0,-200" size="150,60" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="3" valign="center" halign="center" />
-    <widget name="number" position="34,-200" size="280,60" backgroundColor="transparent" transparent="1" font="Regular;36" borderColor="black" borderWidth="3" valign="center" halign="center" />
+  <screen name="NumberZap" title="Channel" position="center,center" size="500,40" backgroundColor="transparent" flags="wfNoBorder">
+    <widget name="number" position="0,-200" size="130,40" backgroundColor="transparent" transparent="1" font="Regular;36" borderColor="black" borderWidth="3" valign="center" halign="right" foregroundColor="grey" />
+    <widget name="servicename" position="135,-200" size="350,40" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="3" valign="center" halign="left" foregroundColor="grey" />
   </screen>
   <screen name="Subtitles" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,90" />
@@ -9170,9 +9170,6 @@
     <widget source="key_yellow" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,238" transparent="1" foregroundColor="grey" itemHeight="35" enableWrapAround="1" />
     <widget source="status" render="Label" position="10,385" size="500,250" zPosition="10" font="Regular;22" halign="center" transparent="0" foregroundColor="secondFG" />
-  </screen>
-  <screen name="NameZap" title="Channel" position="center,center" size="400,80" backgroundColor="transparent" flags="wfNoBorder" >
-    <widget name="name" position="0,-200" size="350,80" backgroundColor="transparent" transparent="1" font="Regular;34" foregroundColor="grey" borderColor="black" borderWidth="3" valign="center" halign="center" />
   </screen>
   <screen flags="wfNoBorder" name="NamezapSetup" position="0,0" size="1280,720" title="NameZap Configuration">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
