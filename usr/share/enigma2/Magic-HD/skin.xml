@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="windows-1250"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 5.29 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 5.30 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -2358,7 +2358,7 @@
     </widget>
     <widget name="cancel" pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <widget name="ok" pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-    <widget name="config" position="520,82" size="755,583" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
+    <widget name="config" position="520,82" size="755,583" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
     <widget name="canceltext" position="50,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="oktext" position="340,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
@@ -2377,12 +2377,12 @@
     <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget name="description" position="10,10" size="1080,40" font="Regular;25" />
+    <widget name="description" position="10,10" size="1080,40" font="Regular;25" foregroundColor="grey" />
     <widget name="lbegin" position="1005,140" size="103,30" foregroundColor="red" font="Regular;25" />
     <widget name="lend" position="1006,203" size="103,30" foregroundColor="green" font="Regular;25" />
-    <widget name="begin" position="1111,144" size="72,35" font="Regular;25" />
-    <widget name="end" position="1112,195" size="72,35" font="Regular;25" />
-    <widget name="apply" position="929,325" size="250,35" />
+    <widget name="begin" position="1111,144" size="72,35" font="Regular;25" foregroundColor="grey" />
+    <widget name="end" position="1112,195" size="72,35" font="Regular;25" foregroundColor="grey" />
+    <widget name="apply" position="929,325" size="250,35" foregroundColor="grey" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen name="TimerEditList" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2396,6 +2396,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -2406,7 +2409,7 @@
     <widget name="key_yellow" position="614,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
-    <widget name="timerlist" position="520,82" size="755,578" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
+    <widget name="timerlist" position="520,82" size="755,578" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen name="TimerLog" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2420,6 +2423,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -2428,8 +2434,8 @@
     <widget name="key_green" position="340,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-    <widget name="loglist" position="520,90" size="755,275" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
-    <widget name="logentry" position="5,385" size="1270,285" font="Regular;22" />
+    <widget name="loglist" position="490,77" size="785,275" font="Regular;20" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
+    <widget name="logentry" position="5,385" size="1270,285" font="Regular;22" foregroundColor="grey" />
   </screen>
   <screen name="TimerSanityConflict" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
@@ -2442,6 +2448,9 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
@@ -2449,7 +2458,7 @@
     <widget name="key_yellow" position="614,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="timer2" position="520,385" size="755,285" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
-    <widget name="timer1" position="5,385" size="500,285" scrollbarMode="showNever" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="timer1" position="5,385" size="500,285" scrollbarMode="showNever" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" />
     <widget name="list" position="520,82" size="755,295" scrollbarMode="showNever" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" />
   </screen>
   <!-- ## Setup ## -->
@@ -6038,49 +6047,6 @@
     <widget name="thumbnail" position="200,400" size="100,75" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <!-- ##MovieTagEditor## -->
-  <screen flags="wfNoBorder" name="MovieTagEditor" position="0,0" size="1280,720" title="Edit tags">
-    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
-    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
-    <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
-    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,15" size="250,50" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Full</convert>
-    </widget>
-    <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="305,682" size="26,26" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" alphatest="on" position="580,682" size="26,26" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" alphatest="on" position="840,682" size="26,26" />
-    <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-    <widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-    <widget source="key_yellow" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
-    <widget source="key_blue" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
-    <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,90" size="755,575" transparent="1" />
-    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
-  </screen>
-  <screen flags="wfNoBorder" name="TagEditor" position="0,0" size="1280,720" title="TagEditor">
-    <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
-    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
-    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
-    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
-      <convert type="ClockToText">Format:%-H:%M</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
-      <convert type="ClockToText">Date</convert>
-    </widget>
-    <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
-    <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="key_green" position="340,682" size="220,26"  foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="key_yellow" position="614,682" size="220,26"  foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-    <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25" />
-    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
-  </screen>
   <!-- ## BitrateViewer## -->
   <screen flags="wfNoBorder" name="BitrateViewer" backgroundColor="transparent" position="0,0" size="1280,720" title="Bitrate viewer">
     <eLabel text="Video" position="590,150" zPosition="1" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
@@ -7716,7 +7682,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="RCSetupScreen" position="0,0" size="1280,720" title="Remote control setup">
+  <screen flags="wfNoBorder" name="RCSetupScreen" position="0,0" size="1280,720" title="Remote setup">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" valign="center" zPosition="1" />
@@ -7905,38 +7871,6 @@
     <widget name="RemainingTime" position="15,450" size="477,60" zPosition="4" font="Regular;20" foregroundColor="#cccccc" />
     <widget name="PluginInfo" position="15,520" size="477,60" zPosition="4" font="Regular;20" foregroundColor="#cccccc" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
-  </screen>
-  <!-- ## PiP ## -->
-  <screen name="PictureInPictureZapping" flags="wfNoBorder" backgroundColor="transparent" position="580,60" size="120,26" title="PiPZap" zPosition="-1">
-    <eLabel text="PiP-Zap" position="0,0" size="120,26" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
-  </screen>
-  <screen name="PiPSetup" flags="wfNoBorder" backgroundColor="transparent" position="200,200" size="800,200" zPosition="-1" >
-    <widget name="text" position="0,0" size="800,200" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
-  </screen>
-    <!--## MovieTagger ## -->
-  <screen flags="wfNoBorder" name="MovieTagger" position="0,0" size="1280,720" title="Movie Tagger">
-   <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
-    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
-    <widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
-    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
-      <convert type="ClockToText">Format:%-H:%M</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
-      <convert type="ClockToText">Date</convert>
-    </widget>
-    <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
-    <widget name="buttonred" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="buttongreen" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="buttonyellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="buttonblue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="moviename" position="520,82" size="745,50" halign="center" font="Regular;25"/>
-    <widget name="cTaglist" position="520,140" size="220,520" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
-    <widget name="aTaglist" position="750,140" size="515,520" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ## Classic NetRadio ## -->
@@ -9597,6 +9531,13 @@
     <widget name="text" position="520,300" size="740,100" halign="center" font="Regular;22" />
     <widget name="list" font="Regular;22" position="520,82" size="755,220" selectionPixmap="Magic-HD-Common/buttons/sel.png" transparent="1" foregroundColor="grey" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <!-- ## PiP ## -->
+  <screen name="PictureInPictureZapping" flags="wfNoBorder" backgroundColor="transparent" position="580,60" size="120,26" title="PiPZap" zPosition="-1">
+    <eLabel text="PiP-Zap" position="0,0" size="120,26" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
+  </screen>
+  <screen name="PiPSetup" flags="wfNoBorder" backgroundColor="transparent" position="200,200" size="800,200" zPosition="-1" >
+    <widget name="text" position="0,0" size="800,200" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
   </screen>
   <screen flags="wfNoBorder" name="PipServiceRelationSetup" position="0,0" size="1280,720" title="PipServiceRelation Setup">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
