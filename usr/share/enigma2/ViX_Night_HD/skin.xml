@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--  Skin: ViX-Night-HD Vs 1.50 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Night-HD Vs 1.51 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -1277,12 +1277,12 @@ self.autoResize()
 		<widget name="lab1" position="0,70" size="1280,600" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
 		<widget name="timeline_text" position="20,70" size="1240,30" backgroundColor="black" foregroundColor="event-now-next_frgrnd" transparent="1" zPosition="0" />
 		<widget name="list" position="20,95" size="1240,572" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" />
-		<widget name="timeline0" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />
+<!--		<widget name="timeline0" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline1" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline2" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline3" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline4" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />
-		<widget name="timeline5" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />
+		<widget name="timeline5" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />-->
 		<widget name="timeline_now" position="20,95" zPosition="3" size="19,572" pixmap="ViX_HD_Common/timeline-now.png" alphatest="on" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/key_menu.png" position="20,686" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
 		<panel name="FullscreenRed1Panel" />
@@ -1316,12 +1316,12 @@ self.autoResize()
 		<widget name="lab1" position="0,292" size="1280,380" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
 		<widget name="timeline_text" position="20,290" size="1240,30" backgroundColor="black" foregroundColor="event-now-next_frgrnd" transparent="1" zPosition="0" />
 		<widget name="list" position="20,317" size="1240,360" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" />
-		<widget name="timeline0" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />
+<!--		<widget name="timeline0" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline1" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline2" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline3" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline4" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />
-		<widget name="timeline5" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />
+		<widget name="timeline5" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />-->
 		<widget name="timeline_now" position="20,317" zPosition="3" size="19,360" pixmap="ViX_HD_Common/timeline-now.png" alphatest="on" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/key_menu.png" position="20,686" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
 		<panel name="FullscreenRed1Panel" />
@@ -2098,15 +2098,15 @@ self.autoResize()
 		<panel name="MenuGreen1Panel" />
 		<panel name="MenuYellow1Panel" />
 		<panel name="MenuBlue1Panel" />
+		<ePixmap pixmap="ViX_HD_Common/buttons/key_info.png" position="400,663" size="35,25" alphatest="blend" transparent="1" />
 	</screen>
-	<screen name="TimerEntry" position="256,140" size="765,440" title="Timer entry" flags="wfBorder" backgroundColor="window-bg" transparent="0">
-		<widget name="config" position="10,0" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x740.png" transparent="1" backgroundColor="window-bg" size="740,280" scrollbarMode="showOnDemand" />
-		<widget name="cancel" pixmap="ViX_HD_Common/buttons/red.png" position="45,400" size="25,25" alphatest="blend" backgroundColor="#27c5c9cc" />
-		<widget name="ok" pixmap="ViX_HD_Common/buttons/green.png" position="240,400" size="25,25" alphatest="blend" backgroundColor="#27c5c9cc" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/button_off.png" position="435,400" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/button_off.png" position="630,4000" size="25,25" alphatest="blend" />
-		<widget name="canceltext" position="83,403" zPosition="1" size="100,25" font="Regular;20" halign="left" valign="center" backgroundColor="window-bg" transparent="1" />
-		<widget name="oktext" position="273,403" zPosition="1" size="100,25" font="Regular;20" halign="left" valign="center" backgroundColor="window-bg" transparent="1" />
+	<screen name="TimerEntry" position="0,0" size="541,720" title="Timer entry" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<widget name="config" position="15,107" size="495,536" itemHeight="25" font="Regular;22" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x420.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="cancel" pixmap="ViX_HD_Common/buttons/red.png" position="40,663" size="25,25" alphatest="blend" backgroundColor="#27c5c9cc" />
+		<widget name="canceltext" position="75,663" zPosition="1" size="190,25" font="Regular;20" halign="left" valign="center" backgroundColor="window-bg" transparent="1" />
+		<widget name="ok" pixmap="ViX_HD_Common/buttons/green.png" position="40,690" size="25,25" alphatest="blend" backgroundColor="#27c5c9cc" />
+		<widget name="oktext" position="75,690" zPosition="1" size="190,25" font="Regular;20" halign="left" valign="center" backgroundColor="window-bg" transparent="1" />
 	</screen>
 	<screen name="TimerLog" position="209,100" size="845,520" title="Timer log" flags="wfBorder" backgroundColor="window-bg">
 		<widget name="loglist" position="50,0" size="740,300" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x740.png" scrollbarMode="showOnDemand" />
