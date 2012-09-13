@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.57 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.58 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -1294,9 +1294,9 @@
   <screen name="SubtitleDisplay" position="0,0" size="1280,720" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder" />
   <screen name="Scart" position="0,0" size="1280,720" backgroundColor="transparent" />
   <screen name="Standby" title="Standby" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" />
-  <screen name="NumberZap" title="Channel" position="center,center" size="280,60" backgroundColor="transparent" flags="wfNoBorder">
-    <widget name="channel" position="0,-200" size="150,60" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="3" valign="center" halign="center" />
-    <widget name="number" position="34,-200" size="280,60" backgroundColor="transparent" transparent="1" font="Regular;36" borderColor="black" borderWidth="3" valign="center" halign="center" />
+  <screen name="NumberZap" title="Channel" position="center,center" size="600,60" backgroundColor="transparent" flags="wfNoBorder">
+    <widget name="number" position="0,-200" size="150,60" backgroundColor="transparent" transparent="1" font="Regular;36" borderColor="black" borderWidth="3" valign="center" halign="center" />
+    <widget name="servicename" position="134,-200" size="450,60" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="3" valign="center" halign="center" />
   </screen>
   <screen name="Subtitles" title="Subtitle selection" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
@@ -5838,7 +5838,6 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="buttonred" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="buttongreen" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="label" position="85,460" size="200,40"  valign="center" halign="center" zPosition="1" foregroundColor="#f47d19" font="Regular;18"/>
     <widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
@@ -5885,7 +5884,9 @@
   <screen flags="wfNoBorder" name="CrossEPG_Info" position="0,0" size="1280,720" title="CrossEPG Info">
     <panel name="BasicTemplate"/>
     <ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
+	<ePixmap pixmap="Magic-HD-Common/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+	<widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="version" position="600,133" size="600,25" font="Regular;22" />
     <widget name="create" position="600,163" size="600,25" font="Regular;22" />
     <widget name="last_update" position="600,193" size="600,25" font="Regular;22" />
@@ -6099,12 +6100,12 @@
   </screen>
   <screen flags="wfNoBorder" name="VIXSwap" position="0,0" size="1280,720" title="Swap Manager">
     <panel name="BasicTemplate"/>
-    <ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow2.png" position="580,682" size="26,26" alphatest="on" />
-    <widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+	<ePixmap pixmap="Magic-HD-Common/buttons/blue2.png" position="840,682" size="26,26" alphatest="on" />
     <widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+	<widget name="key_blue" position="875,682"  size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="autostart_off" position="590,183" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
     <widget name="autostart_on" position="590,183" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
     <widget name="lab1" position="640,180" size="400,45" font="Regular;20" valign="center" transparent="0" />
