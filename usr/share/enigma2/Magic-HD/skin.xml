@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="windows-1250"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 5.35 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 5.36 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -1909,9 +1909,9 @@
   <screen name="SubtitleDisplay" position="0,0" size="1280,720" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder" />
   <screen name="Scart" position="0,0" size="1280,720" backgroundColor="transparent" />
   <screen name="Standby" title="Standby" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="black" />
-  <screen name="NumberZap" title="Channel" position="center,center" size="500,40" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="NumberZap" title="Channel" position="center,center" size="600,40" backgroundColor="transparent" flags="wfNoBorder">
     <widget name="number" position="0,-200" size="130,40" backgroundColor="transparent" transparent="1" font="Regular;36" borderColor="black" borderWidth="3" valign="center" halign="right" foregroundColor="grey" />
-    <widget name="servicename" position="135,-200" size="350,40" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="3" valign="center" halign="left" foregroundColor="grey" />
+    <widget name="servicename" position="135,-200" size="450,40" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="3" valign="center" halign="left" foregroundColor="grey" />
   </screen>
   <screen name="Subtitles" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,90" />
@@ -8268,7 +8268,9 @@
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
      <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_green" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" itemHeight="28" enableWrapAround="1" />
     <widget name="information" position="15,370" size="477,250" halign="center" valign="center" font="Regular;22" foregroundColor="secondFG" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
@@ -8768,12 +8770,12 @@
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
-    <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
     <widget name="key_green" position="340,682" size="220,26"  foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26"  foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="autostart_off" position="590,183" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
     <widget name="autostart_on" position="590,183" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
     <widget name="lab1" position="640,180" size="400,45" font="Regular;20" valign="center" transparent="0" />
