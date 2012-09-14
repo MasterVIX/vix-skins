@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="windows-1250"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX Vs 5.36 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
+  <!--  Skin: Magic-HD-ViX Vs 5.37 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -1069,7 +1069,7 @@
     <widget source="key_green" render="Label" position="340,682" size="220,30" foregroundColor="grey" font="Regular;22" halign="left" />
     <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="520,500" size="1,1" zPosition="1" transparent="1" alphatest="on" />
     <widget name="config" position="520,82" size="755,583" itemHeight="24" foregroundColor="grey" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
-    <widget source="status" render="Label" position="5,350" size="510,250" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
+    <widget source="status" render="Label" position="5,370" size="510,250" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
     <widget source="VKeyIcon" render="Pixmap" pixmap="Magic-HD-Common/buttons/key_text.png" position="1160,682" zPosition="1" size="35,25" transparent="1" alphatest="on" >
       <convert type="ConditionalShowHide" />
     </widget>
@@ -2097,16 +2097,10 @@
     </widget>
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
-    <widget name="red_text" position="50,682" size="220,26" font="Regular;20" valign="center" />
-    <widget name="green_text" position="340,682" size="220,26" font="Regular;20" valign="center" />
-    <widget name="yellow_text" position="614,682" size="220,26" font="Regular;20" valign="center" />
-    <widget name="blue_text" position="875,682" size="220,26" font="Regular;20" valign="center" />
-    <widget name="current_status" position="710,120" size="400,30" font="Regular;20" valign="center" />
-    <widget name="pretext" position="710,160" size="290,25" font="Regular;19" />
-    <widget name="input" position="1005,160" size="40,25" font="Regular;19" />
-    <widget name="aftertext" position="1050,160" size="100,25" font="Regular;19" />
+    <widget name="key_yellow" position="614,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <widget name="current_status" position="5,400" size="482,200" font="Regular;20" valign="center" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ## Service Selectors ## -->
