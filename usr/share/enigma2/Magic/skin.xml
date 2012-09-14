@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-ViX Vs 1.30 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
+  <!--  Skin: Magic-ViX Vs 1.31 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -989,14 +989,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
         <ePixmap alphatest="on" pixmap="skin_default/buttons/red.png" position="0,0" size="140,40"/>
         <ePixmap alphatest="on" pixmap="skin_default/buttons/blue.png" position="420,0" size="140,40"/>
         <widget backgroundColor="buttonRed" font="Regular;20" halign="center" position="0,0" render="Label" size="140,40" source="key_red" transparent="1" valign="center" zPosition="1"/>
+    		<ePixmap alphatest="on" pixmap="skin_default/buttons/green.png" position="140,0" size="140,40"/>
+    		<widget backgroundColor="buttonGreen" font="Regular;20" halign="center" position="140,0" render="Label" size="140,40" source="key_green" transparent="1" valign="center" zPosition="1"/>
         <widget backgroundColor="buttonBlue" font="Regular;20" halign="center" position="420,0" render="Label" size="140,40" source="key_blue" transparent="1" valign="center" zPosition="1"/>
         <widget name="config" position="5,40" scrollbarMode="showOnDemand" size="550,150"/>
-		<ePixmap pixmap="Magic/border/div_h.png" position="5,195" size="550,2" zPosition="1"/>		
+    		<ePixmap pixmap="Magic/border/div_h.png" position="5,195" size="550,2" zPosition="1"/>
         <widget backgroundColor="#25062748" font="Regular;19" halign="left" position="5,200" render="Label" size="190,21" source="DNS1text" transparent="1" valign="center" zPosition="1"/>
         <widget backgroundColor="#25062748" font="Regular;19" halign="left" position="5,220" render="Label" size="190,21" source="DNS2text" transparent="1" valign="center" zPosition="1"/>
         <widget backgroundColor="#25062748" font="Regular;18" halign="right" position="400,200" render="Label" size="145,21" source="DNS1" transparent="1" valign="center" zPosition="1"/>
         <widget backgroundColor="#25062748" font="Regular;18" halign="right" position="400,220" render="Label" size="145,21" source="DNS2" transparent="1" valign="center" zPosition="1"/>
-    	<ePixmap pixmap="Magic/border/div_h.png" position="5,240" size="550,2" zPosition="1"/>
+      	<ePixmap pixmap="Magic/border/div_h.png" position="5,240" size="550,2" zPosition="1"/>
         <widget font="Regular;20" halign="center" position="50,250" render="Label" size="380,20" source="introduction"/>
         <widget font="Regular;19" position="100,280" render="Label" size="190,21" source="IPtext" zPosition="1"/>
         <widget font="Regular;19" position="100,305" render="Label" size="190,21" source="Netmasktext" zPosition="1"/>
@@ -1004,7 +1006,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
         <widget font="Regular;19" position="300,280" render="Label" size="190,21" source="IP" zPosition="1"/>
         <widget font="Regular;19" position="300,305" render="Label" size="190,21" source="Mask" zPosition="1"/>
         <widget font="Regular;19" position="300,330" render="Label" size="1900,21" source="Gateway" zPosition="1"/>
-    	<ePixmap pixmap="Magic/border/div_h.png" position="5,350" size="550,2" zPosition="1"/>
+      	<ePixmap pixmap="Magic/border/div_h.png" position="5,350" size="550,2" zPosition="1"/>
         <widget backgroundColor="#25062748" font="Regular;20" halign="left" position="10,355" render="Label" size="120,21" source="Adaptertext" transparent="1" zPosition="10"/>
         <widget backgroundColor="#25062748" font="Regular;20" halign="left" position="120,355" render="Label" size="400,21" source="Adapter" transparent="1" zPosition="10"/>
         <widget backgroundColor="#25062748" font="Regular;21" halign="center" position="10,380" render="Label" size="540,21" source="introduction2" transparent="1" valign="center" zPosition="10"/>
@@ -1017,7 +1019,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel backgroundColor="darkgrey" position="13,53" size="234,264" zPosition="1"/>
 		<widget name="menulist" position="15,55" scrollbarMode="showOnDemand" size="230,260" zPosition="10"/>
 		<widget backgroundColor="#25062748" font="Regular;19" halign="center" position="305,50" render="Label" size="230,300" source="description" transparent="1" valign="center"/>
-    	<ePixmap pixmap="Magic/border/div_h.png" position="5,350" size="550,2" zPosition="1"/>
+   	<ePixmap pixmap="Magic/border/div_h.png" position="5,350" size="550,2" zPosition="1"/>
 		<widget backgroundColor="#25062748" font="Regular;20" halign="left" position="10,355" render="Label" size="120,21" source="IFtext" transparent="1" zPosition="10"/>
 		<widget backgroundColor="#25062748" font="Regular;20" halign="left" position="120,355" render="Label" size="400,21" source="IF" transparent="1" zPosition="10"/>
 		<widget backgroundColor="#25062748" font="Regular;20" halign="left" position="10,375" render="Label" size="115,21" source="Statustext" transparent="1" zPosition="10"/>
@@ -1028,9 +1030,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/red.png" position="0,0" size="140,40"/>
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/green.png" position="140,0" size="140,40"/>
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/yellow.png" position="280,0" size="140,40"/>
+		<ePixmap alphatest="on" pixmap="skin_default/buttons/blue.png" position="420,0" size="140,40"/>
 		<widget backgroundColor="buttonRed" font="Regular;20" halign="center" position="0,0" render="Label" size="140,40" source="key_red" transparent="1" valign="center" zPosition="1"/>
 		<widget backgroundColor="buttonGreen" font="Regular;20" halign="center" position="140,0" render="Label" size="140,40" source="key_green" transparent="1" valign="center" zPosition="1"/>
 		<widget backgroundColor="buttonYellow" font="Regular;20" halign="center" position="280,0" render="Label" size="140,40" source="key_yellow" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonBlue" font="Regular;20" halign="center" position="420,0" render="Label" size="140,40" source="key_blue" transparent="1" valign="center" zPosition="1"/>
 		<widget name="config" position="5,50" scrollbarMode="showOnDemand" size="550,280"/>
     	<ePixmap pixmap="Magic/border/div_h.png" position="5,340" size="550,2" zPosition="1"/>
 		<widget backgroundColor="#25062748" font="Regular;21" halign="center" position="0,350" render="Label" size="560,50" source="introduction" transparent="1" valign="center" zPosition="10"/>
