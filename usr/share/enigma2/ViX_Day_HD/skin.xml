@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--  Skin: ViX-Day-HD Vs 2.58 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Day-HD Vs 2.59 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -1978,18 +1978,10 @@ self.autoResize()
 	</screen>
 	<screen name="SleepTimerEdit" position="0,0" size="541,720" title="Sleep Timer" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="current_status" position="52,173" size="400,30" valign="center" font="Regular;20" transparent="0" />
-		<widget name="pretext" position="52,143" size="235,25" font="Regular;19" transparent="0" />
-		<widget name="input" position="297,143" size="40,25" font="Regular;19" transparent="0" />
-		<widget name="aftertext" position="347,143" size="100,25" font="Regular;19" transparent="0" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="40,587" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/green.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/yellow.png" position="280,587" size="24,24" alphatest="blend" transparent="1" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/blue.png" position="280,663" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="red_text" position="75,587" size="200,48" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="window-bg" />
-		<widget name="green_text" position="75,663" size="200,48" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd1" />
-		<widget name="yellow_text" position="315,587" size="200,48" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="window-bg" />
-		<widget name="blue_text" position="315,663" size="200,48" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd1" />
+		<widget name="config" position="10,107" size="503,464" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
+		<widget name="current_status" position="52,570" size="400,30" valign="center" font="Regular;20" transparent="0" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
 	</screen>
 	<screen name="Standby" flags="wfNoBorder" position="0,0" size="1280,720" title="Standby" backgroundColor="black" />
 	<screen name="SubservicesQuickzap" position="124,470" size="512,200" title="Subservices" backgroundColor="transparent" flags="wfNoBorder">
