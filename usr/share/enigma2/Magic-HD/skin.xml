@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="windows-1250"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
   <!--  Skin: Magic-HD-ViX Vs 5.37 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54  -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
@@ -1069,8 +1069,8 @@
     <widget source="key_green" render="Label" position="340,682" size="220,30" foregroundColor="grey" font="Regular;22" halign="left" />
     <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="520,500" size="1,1" zPosition="1" transparent="1" alphatest="on" />
     <widget name="config" position="520,82" size="755,583" itemHeight="24" foregroundColor="grey" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
-    <widget source="status" render="Label" position="5,370" size="510,250" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
-    <widget source="VKeyIcon" render="Pixmap" pixmap="Magic-HD-Common/buttons/key_text.png" position="1160,682" zPosition="1" size="35,25" transparent="1" alphatest="on" >
+    <widget name="description" position="5,370" size="510,250" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
+    <widget source="VKeyIcon" render="Pixmap" pixmap="Magic-HD-Common/buttons/key_<widget name="description"n="1" size="35,25" transparent="1" alphatest="on" >
       <convert type="ConditionalShowHide" />
     </widget>
     <widget name="footnote" position="750,682" size="350,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="grey" />
@@ -9431,7 +9431,7 @@
     <widget source="key_green" render="Label" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget source="key_yellow" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,238" transparent="1" foregroundColor="grey" itemHeight="35" enableWrapAround="1" />
-    <widget source="status" render="Label" position="10,385" size="500,250" zPosition="10" font="Regular;22" halign="center" transparent="0" foregroundColor="secondFG" />
+    <widget name="description" position="10,385" size="500,250" zPosition="10" font="Regular;22" halign="center" transparent="0" foregroundColor="secondFG" />
   </screen>
   <screen flags="wfNoBorder" name="NamezapSetup" position="0,0" size="1280,720" title="NameZap Configuration">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
