@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--  Skin: ViX-Night-HD Vs 1.66 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Night-HD Vs 1.67 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -4251,4 +4251,17 @@ self.autoResize()
 		<panel name="MenuGreen1Panel" />
 		<widget name="HelpWindow" pixmap="ViX_HD_Common/buttons/vkey_icon.png" position="15,440" zPosition="1" size="541,720" transparent="1" alphatest="on" />
 	</screen>
+  <!-- ## RecInfoBar ## -->
+  <screen name="RecInfoBar" title="Records Info" flags="wfNoBorder" position="0,0" size="1280,25" zPosition="1" >
+    <widget source="session.RecordState" render="Pixmap" pixmap="skin_default/icons/record.png" position="5,5" zPosition="1" size="14,14" alphatest="on" >
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget name="chTuner" position="25,2" size="20,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="blue" backgroundColor="black" />
+    <widget name="chProv" position="50,2" size="250,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="yellow" backgroundColor="black" />
+    <widget name="chBouq" position="300,2" size="250,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="yellow" backgroundColor="black" />
+    <widget name="chNum" position="550,2"  size="50,18"  zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" />
+    <widget name="chName" position="605,2" size="250,18" zPosition="1" font="Regular;18" halign="left"  transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" />
+    <widget name="timelen" position="850,2" size="80,18"  zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" />
+    <widget name="recName" position="950,2" size="250,18"  zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="grey" backgroundColor="black" />
+  </screen>
 </skin>
