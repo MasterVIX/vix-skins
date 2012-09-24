@@ -4206,7 +4206,7 @@ self.autoResize()
 		<widget name="HelpWindow" pixmap="ViX_HD_Common/buttons/vkey_icon.png" position="15,440" zPosition="1" size="541,720" transparent="1" alphatest="on" />
 	</screen>
   <!-- ## RecInfoBar ## -->
-  <screen name="RecInfoBar" Info" flags="wfNoBorder" position="0,0" size="1280,25" zPosition="1" >
+  <screen name="RecInfoBar" flags="wfNoBorder" position="0,0" size="1280,25" zPosition="1" >
     <widget source="session.RecordState" render="Pixmap" pixmap="skin_default/icons/record.png" position="5,5" zPosition="1" size="14,14" alphatest="on" >
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
