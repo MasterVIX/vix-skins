@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.62 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.63 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -7255,5 +7255,18 @@
     <widget name="currentfavname" zPosition="5" transparent="1" halign="left" position="5,450" size="484,40" font="Regular;22" foregroundColor="yellow" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <!-- ## End of Magic-HD-ViX ## -->
+    <!-- ## RecInfoBar ## -->
+  <screen name="RecInfoBar" title="Records Info" flags="wfNoBorder" position="0,0" size="1280,30" zPosition="1" backgroundColor="transpBlack" >
+    <widget source="session.RecordState" render="Pixmap" pixmap="skin_default/icons/record.png" position="5,16" zPosition="1" size="14,14" alphatest="on" >
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget name="chTuner" position="25,14" size="20,30" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="blue" backgroundColor="black" />
+    <widget name="chProv" position="50,14" size="250,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="yellow" backgroundColor="black" />
+    <widget name="chBouq" position="300,14" size="250,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="yellow" backgroundColor="black" />
+    <widget name="chNum" position="550,14"  size="50,18"  zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" />
+    <widget name="chName" position="605,14" size="250,18" zPosition="1" font="Regular;18" halign="left"  transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" />
+    <widget name="timelen" position="850,14" size="80,18"  zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" />
+    <widget name="recName" position="950,14" size="250,18"  zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="grey" backgroundColor="black" />
+  </screen>
+	<!-- ## End of Magic-HD-ViX ## -->
 </skin>
