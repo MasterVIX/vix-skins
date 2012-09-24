@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 5.60 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 5.61 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -680,9 +680,6 @@
 		<eLabel backgroundColor="infobarBG" position="5,111" size="477,14" zPosition="0" />
 		<widget source="session.CurrentService" render="PositionGauge" position="5,110" size="477,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer2.png:477,0">
 			<convert type="ServicePosition">Gauge</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="5,75" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
-			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="5,90" size="90,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="left">
 			<convert type="ServicePosition">Position,ShowHours</convert>
