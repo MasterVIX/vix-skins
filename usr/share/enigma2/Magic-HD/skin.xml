@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 5.62 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 5.64 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -869,7 +869,7 @@
 		<widget source="key_red" render="Label" position="50,682" size="220,30" foregroundColor="grey" font="Regular;22" halign="left" />
 		<widget source="key_green" render="Label" position="340,682" size="220,30" foregroundColor="grey" font="Regular;22" halign="left" />
 		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="520,500" size="1,1" zPosition="1" transparent="1" alphatest="on" />
-		<widget name="config" position="520,82" size="755,583" itemHeight="24" foregroundColor="grey" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
+		<widget name="config" position="520,80" size="755,588" itemHeight="28" foregroundColor="grey" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
 		<widget name="description" position="5,370" size="510,250" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
 		<widget source="VKeyIcon" render="Pixmap" pixmap="Magic-HD-Common/buttons/key_text.png" position="1160,682" zPosition="1" size="35,25" transparent="1" alphatest="on" >
 			<convert type="ConditionalShowHide" />
@@ -1616,12 +1616,12 @@
 		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
 		<widget name="red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<widget name="green" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="list" position="520,82" size="755,583" font="Regular;30" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="49" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="list" position="520,82" size="755,576" font="Regular;30" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="48" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 	<screen name="PluginDownloadBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="520,82" size="755,500" zPosition="-1" transparent="1" font="Regular;25" valign="center" halign="center" foregroundColor="grey" />
-		<widget name="list" position="520,82" size="755,576" zPosition="3" transparent="0" scrollbarMode="showOnDemand" font="Regular;25" itemHeight="49" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="list" position="520,82" size="755,576" zPosition="3" transparent="0" scrollbarMode="showOnDemand" font="Regular;25" itemHeight="48" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 	<screen name="DirectoryBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2542,7 +2542,7 @@
 		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
 		<widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
 		<widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="config" position="520,82" size="755,583" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" itemHeight="28" enableWrapAround="1" />
+		<widget name="config" position="520,80" size="755,588" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" itemHeight="28" enableWrapAround="1" />
 	</screen>
 	<screen name="ScanSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3864,7 +3864,19 @@
 		<widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
 	</screen>
 	<screen flags="wfNoBorder" name="ForecaPreview" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
+		<ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+		<ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+		<widget source="Titel" render="Label" position="5,15" zPosition="3" size="968,40" font="Regular;25" valign="center" halign="center" transparent="1" foregroundColor="#ffffff"/>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Format:%-H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+		<widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+			<convert type="ServiceName">Name</convert>
+		</widget>
 		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
 		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
 		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
@@ -3880,7 +3892,8 @@
 		<widget source="key_menu" render="Label" position="140,550" size="220,26" backgroundColor="secondBG" zPosition="1" transparent="1" font="Regular;22" halign="left" />
 		<widget source="key_info" render="Label" position="140,600" size="220,26" backgroundColor="secondBG" zPosition="1" transparent="1" font="Regular;22" halign="left" />
 		<widget source="Titel2" render="Label" position="230,15" zPosition="2" size="477,30" font="Regular;26" valign="center" halign="center" transparent="1" foregroundColor="secondFG"/>
-		<widget name="MainList" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel780x110.png" font="Regular;20" position="490,77" size="788,590" transparent="1" />
+		<widget name="MainList" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel780x110.png" font="Regular;20" position="490,77" size="788,540" transparent="1" />
+		<ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
 	</screen>
 	<screen flags="wfNoBorder" name="SatPanel" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
@@ -3892,7 +3905,7 @@
 		<widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
 		<widget source="key_yellow" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
 		<widget source="key_blue" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel780x110.png" zPosition="3" font="Regular;22" position="520,82" size="755,583" transparent="3" />
+		<widget name="Mlist" scrollbarMode="showOnDemand" zPosition="3" font="Regular;22" position="520,82" size="755,563" transparent="3" />
 	</screen>
 	<screen flags="wfNoBorder" name="SatPanelb" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
@@ -3904,7 +3917,7 @@
 	</screen>
 	<screen flags="wfNoBorder" name="SatPaneld" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
-		<widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel780x110.png" font="Regular;22" zPosition="3" position="520,82" size="755,583" transparent="1" />
+		<widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;22" zPosition="3" position="520,82" size="755,583" transparent="1" />
 	</screen>
 	<screen name="PicSetup" flags="wfNoBorder" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
@@ -3912,7 +3925,7 @@
 		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
 		 <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
 		<widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" zPosition="3" position="520,82" size="755,583" transparent="1" />
+		<widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;22" zPosition="3" position="520,82" size="755,583" transparent="1" />
 	</screen>
 	<!-- ##Merlin## -->
 	<screen name="iDreamAddToDatabase" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4138,7 +4151,7 @@
 		<widget name="key_yellow" position="614,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<ePixmap pixmap="skin_default/buttons/key_info.png" position="1150,682" size="35,25" alphatest="on" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,480" transparent="1" itemHeight="28" enableWrapAround="1" />
+		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,80" size="755,476" transparent="1" itemHeight="28" enableWrapAround="1" />
 		<widget name="statusbar" position="520,645" size="755,25" font="Regular;22" foregroundColor="secondFG" />
 		<widget name="status" position="520,575" size="755,60" font="Regular;24" foregroundColor="secondFG" />
 	</screen>
@@ -4152,7 +4165,7 @@
 		<widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
 		<widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
 		<widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,584" transparent="1" itemHeight="28" enableWrapAround="1" />
+		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,80" size="755,588" transparent="1" itemHeight="28" enableWrapAround="1" />
 	</screen>
 	<screen flags="wfNoBorder" name="EPGImportLog" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
@@ -4979,7 +4992,7 @@
 		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
 		 <widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<widget name="key_green" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" itemHeight="28" enableWrapAround="1" />
+		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,80" size="755,588" transparent="1" itemHeight="28" enableWrapAround="1" />
 		<widget name="information" position="15,370" size="477,250" halign="center" valign="center" font="Regular;22" foregroundColor="secondFG" />
 	</screen>
 	<screen flags="wfNoBorder" name="CrossEPG_Info" position="0,0" size="1280,720" >
@@ -5008,7 +5021,7 @@
 		<widget name="key_green" position="340,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<widget name="key_yellow" position="614,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" itemHeight="28" enableWrapAround="1" />
+		<widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,80" size="755,588" transparent="1" itemHeight="28" enableWrapAround="1" />
 	</screen>
 	<screen flags="wfNoBorder" name="CrossEPG_Providers" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
@@ -5018,7 +5031,7 @@
 		<widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<widget name="key_green" position="340,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<widget name="key_yellow" position="614,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget source="list" render="Listbox" transparent="0" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" >
+		<widget source="list" render="Listbox" transparent="0" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,80" size="755,588" >
 		<convert type="TemplatedMultiContent">
 		{"template": [
 		MultiContentEntryText(pos = (12, 1), size = (680, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
@@ -5926,6 +5939,10 @@
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
 		<widget name="label" position="5,400" size="500,200" font="Regular;22" halign="center" valign="center" />
 	</screen>
+	<screen flags="wfNoBorder" name="WebLinksSelectMenu" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+	 <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
+	</screen>
 	<!-- ##Picture-Player## -->
 	<screen name="picshow" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate2"/>
@@ -6319,7 +6336,7 @@
 		<widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
 		<widget source="key_yellow" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
 		<widget source="key_blue" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,80" size="755,588" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 	<screen name="StreamingChannelFromServerScreen" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
@@ -6331,7 +6348,7 @@
 		<widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
 		<widget source="key_yellow" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
 		<widget source="key_blue" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="list" font="Regular;22" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="list" font="Regular;22" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,80" size="755,588" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<widget source="statusbar" render="Label" font="Regular;22" itemHeight="28" position="5,400" size="477,200" valign="center" halign="center" transparent="1" foregroundColor="secondFG" enableWrapAround="1" />
 	</screen>
 	<!-- ## ClearMEM ## -->
@@ -6890,75 +6907,5 @@
 		<panel name="BasicTemplate"/>
 		<widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
-	<!-- ## Webbrowser ET ## -->
-<!--	<screen flags="wfNoBorder" name="UserAgentSelectScreen" position="0,0" size="1280,720" title="UserAgent Selection Screen">
-		<panel name="BasicTemplate"/>
-		<widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	</screen>-->
-<!--	<screen flags="wfNoBorder" name="browserControlMenu" position="0,0" size="1280,720" title="Browser menu">
-		<panel name="BasicTemplate"/>
-		<widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	</screen>-->
-<!--	<screen flags="wfNoBorder" name="browserSetupScreen" position="0,0" size="1280,720" title="WebBrowser config">
-		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-		<widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="config" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	</screen>-->
-<!--	<screen name="BrowserZoom" flags="wfNoBorder" backgroundColor="transparent" position="200,200" size="800,200" zPosition="-1" title="BrowserZoom" >
-		<widget name="text" position="0,0" size="800,200" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
-	</screen>
-	<screen name="BrowserResize" flags="wfNoBorder" backgroundColor="transparent" position="200,200" size="800,200" zPosition="-1" title="BrowserResize" >
-		<widget name="text" position="0,0" size="800,200" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
-	</screen>
-	<screen flags="wfNoBorder" name="BookmarkMenu" position="0,0" size="1280,720" title="Bookmark menu">
-		<panel name="BasicTemplate"/>
-		<widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	</screen>-->
-<!--	<screen flags="wfNoBorder" name="BookmarkEdit" position="0,0" size="1280,720" title="Bookmark Edit">
-		<panel name="BasicTemplate"/>
-		<widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	</screen>-->
-<!--	<screen flags="wfNoBorder" name="BookmarkEditDo" position="0,0" size="1280,720" title="Bookmark Editor">
-		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<widget name="red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	</screen>-->
-<!--	<screen flags="wfNoBorder" name="BookmarkEditMenu" position="0,0" size="1280,720" title="Bookmark Edit Menu">
-		<panel name="BasicTemplate"/>
-		<widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	</screen>-->
-<!--	<screen flags="wfNoBorder" name="BookmarkMenuSelect" position="0,0" size="1280,720" title="Bookmark Menu Select">
-		<panel name="BasicTemplate"/>
-		<widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	</screen>-->
-	<screen flags="wfNoBorder" name="WebLinksSelectMenu" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-	 <widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	</screen>
-<!--	<screen flags="wfNoBorder" name="WebLinkSetup" position="0,0" size="1280,720" title="WebLink config">
-		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-		<widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	</screen>-->
-	<!-- ## AutoDiseqcRun ## -->
-<!--	<screen name="AutoDiseqcRun" position="0,0" size="1280,720" flags="wfNoBorder" title="AutoDiseqc">
-		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-		<widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,490" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-		<widget name="statusbar" font="Regular;22" position="520,82" size="755,60" transparent="1" foregroundColor="grey" />
-		<widget name="tunerstatusbar" font="Regular;22" position="520,82" size="755,30" transparent="1" foregroundColor="grey" />
-	</screen>-->
 	<!-- ## End of Magic-HD-ViX ## -->
 </skin>
