@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 5.66 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 5.67 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -6880,7 +6880,12 @@
 		<widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
 		<widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget source="statusbar" render="Label" font="Regular;22" position="5,370" size="482,300" transparent="1" foregroundColor="grey" />
 		<widget source="info" render="Label" font="Regular;22" position="5,370" size="482,300" transparent="1" foregroundColor="grey" />
+	</screen>
+	<screen name="LiveStreamingLinksHeader" position="0,0" size="1280,720" flags="wfNoBorder" title="XXXXXXXXX">
+		<panel name="BasicTemplate"/>
+		<widget name="menu" position="490,80" size="785,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28"	transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 	<!-- ## RecInfoBar ## -->
 	<screen name="RecInfoBar" flags="wfNoBorder" position="0,0" size="1280,25" zPosition="1" >
