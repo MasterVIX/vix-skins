@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 5.65 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 5.66 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -876,6 +876,7 @@
 		</widget>
 		<widget name="footnote" position="750,682" size="350,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="grey" />
 	</screen>
+<!-- About -->
 	<screen name="About" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1020,682" size="35,25" />
@@ -1569,7 +1570,7 @@
 		<widget name="key_yellow" position="614,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
 		<widget name="key_blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
 		<widget name="timer2" position="490,80" size="785,585" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
-		<widget name="timer1" position="5,379" size="477,260" scrollbarMode="showNever" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" />
+		<widget name="timer1" position="5,379" size="477,260" scrollbarMode="showNever" foregroundColor="grey" />
 <!--<widget name="list" position="520,82" size="755,295" scrollbarMode="showNever" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" />-->
 	</screen>
 	<!-- ## Setup ## -->
@@ -3696,14 +3697,14 @@
 		<widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="149,380" size="210,21" zPosition="2" alphatest="blend" />
 		<widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" position="149,380" size="210,21" zPosition="3" transparent="1" />
-		<widget name="ratinglabel" position="50,410" size="400,24" backgroundColor="darkgrey" transparent="1" font="Regular;20" halign="center" />
-		<widget name="titellabel" position="5,445" size="510,50" backgroundColor="darkgrey" transparent="1" font="Regular;20" halign="center" />
+		<widget name="ratinglabel" position="50,410" size="400,24" foregroundColor="grey" transparent="1" font="Regular;20" halign="center" />
+		<widget name="titellabel" position="5,445" size="510,50" foregroundColor="grey" transparent="1" font="Regular;20" halign="center" />
 		<widget name="poster" position="520,82" size="110,180" alphatest="blend" />
 		<widget name="detailslabel" position="640,82" size="630,180" backgroundColor="darkgrey" transparent="1" font="Regular;20" halign="center" />
-		<widget name="menu" position="520,265" size="755,400" backgroundColor="darkgrey" zPosition="3" transparent="1" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="27" enableWrapAround="1" foregroundColor="grey" />
-		<widget name="castlabel" position="520,275" size="755,385" backgroundColor="darkgrey" transparent="1" font="Regular;22" itemHeight="27" foregroundColor="grey" />
-		<widget name="extralabel" position="520,82" size="755,583" backgroundColor="darkgrey" transparent="1" font="Regular;22" itemHeight="27" foregroundColor="grey" />
-		<widget name="statusbar" position="5,450" size="510,190" backgroundColor="darkgrey" transparent="1" font="Regular;18" halign="center" valign="bottom"/>
+		<widget name="menu" position="520,265" size="755,400" zPosition="3" transparent="1" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="27" enableWrapAround="1" foregroundColor="grey" />
+		<widget name="castlabel" position="520,275" size="755,385" transparent="1" font="Regular;22" itemHeight="27" foregroundColor="grey" />
+		<widget name="extralabel" position="520,82" size="755,583" transparent="1" font="Regular;22" itemHeight="27" foregroundColor="grey" />
+		<widget name="statusbar" position="5,450" size="510,190" transparent="1" font="Regular;18" halign="center" valign="bottom"/>
 	</screen>
 	<screen flags="wfNoBorder" name="IMDbSetup" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
@@ -3712,7 +3713,7 @@
 		<widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
 		<widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
 		<widget source="help" render="Label" position="5,400" size="477,80" font="Regular;20" foregroundColor="secondFG" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
+		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" foregroundColor="grey" size="755,583" transparent="1" />
 	</screen>
 	<!-- ## Screensaver Morpheus ## -->
 	<screen flags="wfNoBorder" name="Morpheus" position="0,0" size="1280,720" >
