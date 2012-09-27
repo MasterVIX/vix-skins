@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 5.67 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 5.68 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -5829,7 +5829,7 @@
 		<widget source="plugins" render="Label" valign="center" transparent="1" size="108,22" backgroundColor="#25062748" position="530,90" zPosition="2" halign="center" font="Regular;18" />
 		<widget source="extensions" render="Label" valign="center" transparent="1" size="108,22" backgroundColor="#25062748" position="636,90" zPosition="2" halign="center" font="Regular;18" />
 		<widget source="eventinfo" render="Label" valign="center" transparent="1" size="108,22" backgroundColor="#25062748" position="741,90" zPosition="2" halign="center" font="Regular;18" />
-		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,120" size="740,540" transparent="1" itemHeight="28" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,120" size="740,532" transparent="1" itemHeight="28" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 	<screen flags="wfNoBorder" name="AutomaticCleanupSetup" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
@@ -6779,6 +6779,7 @@
 		<panel name="BasicTemplate"/>
 		<widget name="text" font="Regular;20" position="520,82" size="755,583" transparent="1" foregroundColor="grey" />
 	</screen>
+	<!-- ## DreamExplorer ## -->
 	<screen name="DreamExplorerII" title="Dream-Explorer" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="filelist" position="520,90" size="755,575" zPosition="4" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
@@ -6793,6 +6794,66 @@
 		<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25" />
 		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
 	</screen>
+	<screen name="vEditor" position="0,0" size="1280,720" flags="wfNoBorder" title="File-Explorer">
+		<ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+		<ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Format:%-H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget name="filedata" position="5,80" size="1270,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28"	transparent="1" foregroundColor="grey" enableWrapAround="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,687" size="300,25" alphatest="on" />
+	</screen>
+	<screen name="vInputBox" position="0,0" size="1280,720" flags="wfNoBorder" title="Input...">
+		<panel name="BasicTemplate"/>
+		<widget name="input" position="5,379" size="1270,50" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28"	transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="text" position="490,80" size="785,5880" zPosition="2" font="Console;22" foregroundColor="secondFG" valign="center" halign="center" />
+	</screen>
+	<screen name="CPmaniger" position="0,0" size="1280,720" flags="wfNoBorder" title="Select Copy/Move location...">
+		<panel name="BasicTemplate"/>
+		<ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
+		<eLabel text="MOVE" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
+		<eLabel text="COPY" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
+		<widget name="File" position="490,80" size="785,200" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+		<widget name="CPto" position="490,280" size="785,388" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28"	transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+
+<!--MviExplorer(Screen)
+		<screen position="-300,-300" size="10,10" title="mvi-Explorer">
+		</screen>-->
+
+<!--PictureExplorerII(Screen)
+				<screen flags="wfNoBorder" position="0,0" size="1280,720" title="Picture-Explorer" backgroundColor="#00121214">
+					<widget name="Picture" position="0,0" size="1280,720" zPosition="1" alphatest="on" />
+					<widget name="State" font="Regular;20" halign="center" position="0,650" size="1280,70" backgroundColor="#01080911" foregroundColor="#fcc000" transparent="0" zPosition="9"/>
+				</screen>-->
+
+<!--MusicExplorer(MoviePlayer)
+	<screen backgroundColor="#50070810" flags="wfNoBorder" name="MusicExplorer" position="center,center" size="720,30">
+		<widget font="Regular;24" halign="right" position="50,0" render="Label" size="100,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+			<convert type="ServicePosition">Remaining</convert>
+		</widget>
+		<widget font="Regular;24" position="170,0" render="Label" size="650,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+	</screen>-->
+
+<!--SoftLinkScreen(Screen)
+				<screen position="center,center" size="900,450" title="Make a softlink...">
+				<widget name="File" font="Regular;20" halign="center" position="5,0" size="890,100" transparent="1" valign="center" zPosition="4"/>
+				<widget name="SLto" position="5,100" scrollbarMode="showOnDemand" size="890,312" zPosition="4"/>
+				<eLabel backgroundColor="#555555" position="5,420" size="890,2" zPosition="5"/>
+				<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamExplorer/res/red.png" position="0,425" size="35,25" zPosition="5"/>
+				<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamExplorer/res/yellow.png" position="310,425" size="35,25" zPosition="5"/>
+				<eLabel font="Regular;18" halign="left" position="35,425" size="120,25" text="Set name" transparent="1" valign="center" zPosition="6"/>
+				<eLabel font="Regular;18" halign="left" position="345,425" size="220,25" text="Make a softlink" transparent="1" valign="center" zPosition="6"/>
+				</screen>-->
+
 	<!-- ## ScreenGrabber ## -->
 	<screen name="sgrabberFilesScreen" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
@@ -6814,12 +6875,22 @@
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="info" position="5,415" zPosition="4" size="500,200" font="Regular;22" foregroundColor="secondFG" transparent="1" halign="center" valign="center" />
 	</screen>
-<!--
- title="Preview">
+<!--  title="Preview">
 <widget name="Picture" position="0,0" size="s"
 <eLabel font="Regular;18" backgroundColor="#00640808" halign="left" valign="center" position="10,80" size="300,25" text="Please wait....." zPosition="1"/>
-<eLabel font="Regular;18" backgroundColor="#00080808" halign="left" valign="center" position="10,50" size="620,25" text="OK=Save				Exit=Play TV				Green=Setup				Yellow=Files" zPosition="9"/>
--->
+<eLabel font="Regular;18" backgroundColor="#00080808" halign="left" valign="center" position="10,50" size="620,25" text="OK=Save				Exit=Play TV				Green=Setup				Yellow=Files" zPosition="9"/>-->
+	<!-- ## ShootYourScreen ## -->
+	<screen name="ShootYourScreenConfig" position="0,0" size="1280,720" flags="wfNoBorder" title="ShootYourScreen">
+		<panel name="BasicTemplate"/>
+		<ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
+		<widget name="buttonred" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget name="buttongreen" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget name="buttonyellow" position="614,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget name="config" position="490,80" size="785,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28"	transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
 	<!-- ## GoogleNews Reader ## -->
 	<screen name="GnewsFeedScreenList" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
