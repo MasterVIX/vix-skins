@@ -1,5 +1,5 @@
-<skin>
-	<!--	Skin: Magic-HD-ViX Vs 5.68 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+﻿<skin>
+	<!--	Skin: Magic-HD-ViX Vs 5.69 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -1082,30 +1082,29 @@
 		<widget name="text" position="520,390" size="755,240" font="Regular;24" foregroundColor="grey" />
 		<eLabel text="'Exit' = Leave message" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="320,26" transparent="1" zPosition="1" />
 	</screen>
-	<screen name="MessageBox" position="0,0" size="1280,720" flags="wfNoBorder">
+<screen name="MessageBox" title="Message" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="ErrorPixmap" pixmap="Magic-HD-Common/window/input_error.png" position="600,7" size="54,54" zPosition="4" alphatest="on" />
-		<widget name="QuestionPixmap" pixmap="Magic-HD-Common/window/input_question.png" position="600,7" size="54,54" zPosition="4" alphatest="on" />
-		<widget name="InfoPixmap" pixmap="Magic-HD-Common/window/input_info.png" position="60,7" size="54,54" zPosition="4" alphatest="on" />
-		<widget source="Title" foregroundColor="grey" render="Label" position="650,390" size="610,250" font="Regular;25" />
-		<widget name="text" position="520,82" size="755,260" font="Regular;22" foregroundColor="grey" />
-		<widget name="list" position="15,390" size="600,240" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" foregroundColor="grey" />
-	</screen>
+  <widget name="text" position="620,80" size="675,588" font="Regular;22" foregroundColor="grey" />
+  <widget name="ErrorPixmap" pixmap="Magic-HD-Common/window/input_error.png" position="540,100" size="54,54" alphatest="on" />
+  <widget name="QuestionPixmap" pixmap="Magic-HD-Common/window/input_question.png" position="540,100" size="54,54" alphatest="on" />
+  <widget name="InfoPixmap" pixmap="Magic-HD-Common/window/input_info.png" position="540,100" size="54,54" alphatest="on" />
+  <widget name="list" position="5,390" size="600,240" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" foregroundColor="grey" />
+</screen>
 	<screen name="MessageBoxSimple" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="text" position="650,390" size="610,240" font="Regular;22" foregroundColor="grey" />
-		<widget name="ErrorPixmap" pixmap="Magic-HD-Common/window/input_error.png" position="550,110" size="54,54" alphatest="on" />
-		<widget name="QuestionPixmap" pixmap="Magic-HD-Common/window/input_question.png" position="550,110" size="54,54" alphatest="on" />
-		<widget name="InfoPixmap" pixmap="Magic-HD-Common/window/input_info.png" position="550,110" size="54,54" alphatest="on" />
-		<widget name="list" position="15,390" size="600,240" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" foregroundColor="grey" />
+		<widget name="text" position="620,80" size="675,588" font="Regular;22" foregroundColor="grey" />
+		<widget name="ErrorPixmap" pixmap="Magic-HD-Common/window/input_error.png" position="540,100" size="54,54" alphatest="on" />
+		<widget name="QuestionPixmap" pixmap="Magic-HD-Common/window/input_question.png" position="540,100" size="54,54" alphatest="on" />
+		<widget name="InfoPixmap" pixmap="Magic-HD-Common/window/input_info.png" position="540,100" size="54,54" alphatest="on" />
+		<widget name="list" position="5,390" size="600,240" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" foregroundColor="grey" />
 	</screen>
 	<screen name="MessageBoxWizard" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="text" position="650,80" size="445,590" font="Regular;22" />
-		<widget name="ErrorPixmap" pixmap="Magic-HD-Common/window/input_error.png" position="550,110" size="54,54" alphatest="on" />
-		<widget name="QuestionPixmap" pixmap="Magic-HD-Common/window/input_question.png" position="550,110" size="54,54" alphatest="on" />
-		<widget name="InfoPixmap" pixmap="Magic-HD-Common/window/input_info.png" position="550,110" size="54,54" alphatest="on" />
-		<widget name="list" position="15,390" size="600,240" font="Regular;22" />
+		<widget name="text" position="620,80" size="675,588" font="Regular;22" foregroundColor="grey" />
+		<widget name="ErrorPixmap" pixmap="Magic-HD-Common/window/input_error.png" position="540,100" size="54,54" alphatest="on" />
+		<widget name="QuestionPixmap" pixmap="Magic-HD-Common/window/input_question.png" position="540,100" size="54,54" alphatest="on" />
+		<widget name="InfoPixmap" pixmap="Magic-HD-Common/window/input_info.png" position="540,100" size="54,54" alphatest="on" />
+		<widget name="list" position="5,390" size="600,240" font="Regular;22" />
 		<widget name="rc" pixmap="skin_default/rc.png" position="1105,140" zPosition="10" size="154,500" transparent="0" alphatest="blend" />
 	</screen>
 	<screen flags="wfNoBorder" name="TimeDateInput" position="0,0" size="1280,720" >
@@ -3926,7 +3925,7 @@
 		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
 		 <widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
 		<widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;22" zPosition="3" position="520,82" size="755,583" transparent="1" />
+		<widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" zPosition="3" position="520,82" size="755,583" transparent="1" />
 	</screen>
 	<!-- ##Merlin## -->
 	<screen name="iDreamAddToDatabase" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -6782,7 +6781,7 @@
 	<!-- ## DreamExplorer ## -->
 	<screen name="DreamExplorerII" title="Dream-Explorer" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="filelist" position="520,90" size="755,575" zPosition="4" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+		<widget name="filelist" position="520,90" size="755,575" zPosition="4" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28"	transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
 		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="305,682" size="26,26" />
 		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" alphatest="on" position="580,682" size="26,26" />
@@ -6810,7 +6809,7 @@
 	<screen name="vInputBox" position="0,0" size="1280,720" flags="wfNoBorder" title="Input...">
 		<panel name="BasicTemplate"/>
 		<widget name="input" position="5,379" size="1270,50" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28"	transparent="1" foregroundColor="grey" enableWrapAround="1" />
-		<widget name="text" position="490,80" size="785,5880" zPosition="2" font="Console;22" foregroundColor="secondFG" valign="center" halign="center" />
+		<widget name="text" position="490,80" size="785,250" zPosition="2" font="Console;22" foregroundColor="secondFG" valign="center" halign="center" />
 	</screen>
 	<screen name="CPmaniger" position="0,0" size="1280,720" flags="wfNoBorder" title="Select Copy/Move location...">
 		<panel name="BasicTemplate"/>
@@ -6822,38 +6821,24 @@
 		<widget name="File" position="490,80" size="785,200" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
 		<widget name="CPto" position="490,280" size="785,388" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28"	transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
-
-<!--MviExplorer(Screen)
-		<screen position="-300,-300" size="10,10" title="mvi-Explorer">
-		</screen>-->
-
-<!--PictureExplorerII(Screen)
-				<screen flags="wfNoBorder" position="0,0" size="1280,720" title="Picture-Explorer" backgroundColor="#00121214">
-					<widget name="Picture" position="0,0" size="1280,720" zPosition="1" alphatest="on" />
-					<widget name="State" font="Regular;20" halign="center" position="0,650" size="1280,70" backgroundColor="#01080911" foregroundColor="#fcc000" transparent="0" zPosition="9"/>
-				</screen>-->
-
-<!--MusicExplorer(MoviePlayer)
-	<screen backgroundColor="#50070810" flags="wfNoBorder" name="MusicExplorer" position="center,center" size="720,30">
-		<widget font="Regular;24" halign="right" position="50,0" render="Label" size="100,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+	<screen name="MusicExplorer" backgroundColor="#50070810" flags="wfNoBorder" position="center,center" size="1280,720">
+		<widget font="Regular;24" position="50,50" render="Label" size="100,30" source="session.CurrentService" borderWidth="3" borderColor="black" foregroundColor="grey" transparent="1" valign="center" zPosition="1">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
-		<widget font="Regular;24" position="170,0" render="Label" size="650,30" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+		<widget font="Regular;26" position="50,300" render="Label" size="1200,60" source="session.CurrentService" borderWidth="3" borderColor="black" foregroundColor="grey" transparent="1" valign="center" halign="center" zPosition="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-	</screen>-->
-
+	</screen>
 <!--SoftLinkScreen(Screen)
-				<screen position="center,center" size="900,450" title="Make a softlink...">
-				<widget name="File" font="Regular;20" halign="center" position="5,0" size="890,100" transparent="1" valign="center" zPosition="4"/>
-				<widget name="SLto" position="5,100" scrollbarMode="showOnDemand" size="890,312" zPosition="4"/>
-				<eLabel backgroundColor="#555555" position="5,420" size="890,2" zPosition="5"/>
-				<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamExplorer/res/red.png" position="0,425" size="35,25" zPosition="5"/>
-				<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamExplorer/res/yellow.png" position="310,425" size="35,25" zPosition="5"/>
-				<eLabel font="Regular;18" halign="left" position="35,425" size="120,25" text="Set name" transparent="1" valign="center" zPosition="6"/>
-				<eLabel font="Regular;18" halign="left" position="345,425" size="220,25" text="Make a softlink" transparent="1" valign="center" zPosition="6"/>
-				</screen>-->
-
+	<screen position="center,center" size="900,450" title="Make a softlink...">
+		<widget name="File" font="Regular;20" halign="center" position="5,0" size="890,100" transparent="1" valign="center" zPosition="4"/>
+		<widget name="SLto" position="5,100" scrollbarMode="showOnDemand" size="890,312" zPosition="4"/>
+		<eLabel backgroundColor="#555555" position="5,420" size="890,2" zPosition="5"/>
+		<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamExplorer/res/red.png" position="0,425" size="35,25" zPosition="5"/>
+		<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamExplorer/res/yellow.png" position="310,425" size="35,25" zPosition="5"/>
+		<eLabel font="Regular;18" halign="left" position="35,425" size="120,25" text="Set name" transparent="1" valign="center" zPosition="6"/>
+		<eLabel font="Regular;18" halign="left" position="345,425" size="220,25" text="Make a softlink" transparent="1" valign="center" zPosition="6"/>
+	</screen>-->
 	<!-- ## ScreenGrabber ## -->
 	<screen name="sgrabberFilesScreen" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
