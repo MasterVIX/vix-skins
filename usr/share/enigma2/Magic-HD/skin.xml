@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX Vs 5.71 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 5.72 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -775,7 +775,7 @@
 	<!-- ## Menus ## -->
 	<screen name="Menu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		 <widget source="menu" render="Listbox" position="520,82" size="755,575" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="40" enableWrapAround="1" >
+		 <widget source="menu" render="Listbox" position="520,82" size="755,575" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
 				"fonts": [gFont("Regular",26)],
@@ -786,7 +786,7 @@
 	</screen>
 	<screen name="menu_mainmenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		 <widget source="menu" render="Listbox" position="520,82" size="755,575" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" itemHeight="40" enableWrapAround="1" >
+		 <widget source="menu" render="Listbox" position="520,82" size="755,575" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 26)],
@@ -797,7 +797,7 @@
 	</screen>
 	<screen name="menu_setup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		 <widget source="menu" render="Listbox" position="520,82" size="755,583" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="40" enableWrapAround="1" >
+		 <widget source="menu" render="Listbox" position="520,82" size="755,583" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 26)],
@@ -808,7 +808,7 @@
 	</screen>
 	<screen name="menu_system" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		 <widget source="menu" render="Listbox" position="520,82" size="755,573" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" itemHeight="40" enableWrapAround="1" >
+		 <widget source="menu" render="Listbox" position="520,82" size="755,573" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 26)],
@@ -819,10 +819,10 @@
 	</screen>
 	<screen name="menu_information" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		 <widget source="menu" render="Listbox" position="520,82" size="755,583" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
+		 <widget source="menu" render="Listbox" position="520,82" size="755,583" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
 			<convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 24)],
+			"fonts": [gFont("Regular", 26)],
 			"itemHeight": 38
 			}
 			</convert>
@@ -846,7 +846,7 @@
 			<convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 24)],
-			"itemHeight": 40
+			"itemHeight": 38
 			}
 			</convert>
 		</widget>
@@ -857,7 +857,7 @@
 			<convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 24)],
-			"itemHeight": 40
+			"itemHeight": 38
 			}
 			</convert>
 		</widget>
