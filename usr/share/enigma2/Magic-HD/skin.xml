@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX Vs 5.70 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 5.71 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -1901,9 +1901,9 @@
 		<widget source="key_red" render="Label" position="50,682" size="220,26" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
 		<widget name="menulist" position="520,82" size="755,550" itemHeight="32" font="Regular;22" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
 		<widget source="description" render="Label" position="5,385" size="477,200" transparent="1" font="Regular;21" valign="center" halign="center" foregroundColor="secondFG" />
-		<widget source="IFtext" render="Label" position="590,645" size="166,25" transparent="1" zPosition="10" font="Regular;24" halign="right" foregroundColor="secondFG" />
-		<widget source="IF" render="Label" position="765,645" size="500,25" transparent="1" zPosition="10" font="Regular;24" halign="left" foregroundColor="secondFG" />
-		<widget source="Statustext" render="Label" position="316,645" size="200,26" zPosition="10" font="Regular;24" halign="right" transparent="1" foregroundColor="secondFG" />
+		<widget source="IFtext" render="Label" position="590,645" size="166,25" transparent="1" zPosition="10" font="Regular;24" halign="right" foregroundColor="grey" />
+		<widget source="IF" render="Label" position="765,645" size="500,25" transparent="1" zPosition="10" font="Regular;24" halign="left" foregroundColor="grey" />
+		<widget source="Statustext" render="Label" position="316,645" size="200,26" zPosition="10" font="Regular;24" halign="right" transparent="1" foregroundColor="grey" />
 		<widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="525,652" zPosition="10" size="15,16" transparent="1" alphatest="on" />
 	</screen>
 	<screen name="AdapterSetup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1926,8 +1926,8 @@
 		<widget source="IP" render="Label" position="560,450" size="200,25" zPosition="1" foregroundColor="grey" font="Regular;20" />
 		<widget source="Mask" render="Label" position="560,480" size="200,25" zPosition="1" foregroundColor="grey" font="Regular;20" />
 		<widget source="Gateway" render="Label" position="560,510" size="200,25" zPosition="1" font="Regular;20" foregroundColor="grey" />
-		<widget source="Adaptertext" render="Label" position="520,600" size="270,25" transparent="1" zPosition="10" foregroundColor="secondFG" font="Regular;24" halign="right" />
-		<widget source="Adapter" render="Label" position="850,600" size="400,25" transparent="1" zPosition="10" foregroundColor="secondFG" font="Regular;24" halign="left" />
+		<widget source="Adaptertext" render="Label" position="520,630" size="270,25" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;24" halign="right" />
+		<widget source="Adapter" render="Label" position="800,630" size="400,25" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;24" halign="left" />
 		<widget source="introduction2" render="Label" position="550,682" size="477,26" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;21" halign="center" />
 		<widget name="VKeyIcon" pixmap="skin_default/vkey_icon.png" position="60,410" size="35,25" transparent="1" zPosition="10" alphatest="on" />
 		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="50,410" size="1,1" transparent="1" zPosition="1" alphatest="on" />
@@ -2278,6 +2278,7 @@
 		<widget name="key_green" position="340,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<widget name="key_yellow" position="614,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<widget name="key_blue" position="875,682"	size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682"	size="35,25" />
 		<widget name="autostart" position="630,109" size="100,24" font="Regular;20" valign="center" transparent="0" />
 		<widget name="labdisabled" position="730,106" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
 		<widget name="labactive" position="730,106" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
@@ -3380,6 +3381,19 @@
 		<widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
  </screen>
+	<screen name="FanSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="BasicTemplate"/>
+		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
+		<widget name="cancel" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget name="ok" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget name="hddtemp" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget name="config" position="490,80" size="785,500" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28"	transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="powerstatus" position="500,600" size="250,22" halign="right" font="Regular;20" zPosition="1" transparent="1" foregroundColor="grey" />
+		<widget name="daemon0" alphatest="on" pixmap="skin_default/buttons/button_green_off.png" position="760,605" size="15,16" zPosition="10" transparent="1"/>
+		<widget name="daemon1" alphatest="on" pixmap="skin_default/buttons/button_green.png" position="760,605" size="15,16" zPosition="10" transparent="1"/>
+	</screen>
 	<!-- ## CCCam Info ##-->
 	<screen flags="wfNoBorder" name="EcmInfoScreen" position="0,0" size="755,25" backgroundColor="transpBlack" zPosition="-1">
 		<widget name="irdeto" position="0,0" size="15,25" font="Regular;16" text="I" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
