@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX Vs 5.80 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 5.81 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -2293,7 +2293,7 @@
 		<widget name="serialno" position="630,300" size="150,30" font="Regular;20" valign="center" transparent="1" />
 		<widget name="labserialno" position="790,300" size="310,30" font="Regular;20" valign="center" backgroundColor="un4d5375" />
 		<widget name="sharedir" position="630,340" size="150,30" font="Regular;20" valign="center" transparent="1" />
-		<widget name="labsharedir" position="790,340" size="410,60" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+		<widget name="labsharedir" position="790,330" size="480,82" font="Regular;20" valign="center" backgroundColor="un4d5375" />
 		<widget name="inotify" position="580,405" size="180,30" font="Regular;20" valign="center" transparent="1" />
 		<widget name="inotifyinactive" position="800,405" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
 		<widget name="inotifyactive" position="800,405" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
@@ -2348,7 +2348,53 @@
 		<widget source="key_yellow" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
 		<widget source="key_blue" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
 		<widget name="directory" position="490,80" size="785,45" halign="center" font="Regular;20" />
-		<widget name="filelist" position="490,125" size="785,566" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28"	transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="filelist" position="490,125" size="785,532" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28"	transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="DLNAImageViewer" position="fill" flags="wfNoBorder">
+		<eLabel position="0,0" zPosition="0" size="1280,720" backgroundColor="secondBG" />
+		<widget name="image" position="fill" zPosition="1" alphatest="on" />
+		<eLabel position="25,15" size="30,25" zPosition="2" backgroundColor="secondBG" transparent="1" />
+		<widget name="status" position="27,17" size="21,21" zPosition="3" pixmap="skin_default/icons/epgclock.png" alphatest="on" />
+		<widget name="icon" position="30,20" size="16,16" zPosition="3" pixmap="skin_default/icons/ico_mp_play.png" alphatest="on" />
+		<widget source="message" render="Label" position="70,15" size="600,25" zPosition="3" font="Regular;22" halign="left" noWrap="1" transparent="1" foregroundColor="foreground" backgroundColor="secondBG"/>
+	</screen>
+	<screen	name="DLNAStreamPlayer"	position="4,30"	size="1280,100"	backgroundColor="transparent"	flags="wfNoBorder">
+		<widget	source="session.CurrentService"	render="Label"	position="240,0"	size="780,49"	backgroundColor="transparent"	zPosition="1"	foregroundColor="foreground"	borderWidth="2"	font="Regular;24"	borderColor="black"	valign="center"	halign="center">
+				<convert	type="ServiceName">Name</convert>
+		</widget>
+		<eLabel	backgroundColor="infobarBG"	position="120,49"	size="1040,14"	zPosition="0"	/>
+		<!--				<widget	name="statusicon"	position="120,70"	size="20,20"	pixmaps="Magic-HD-Common/icons/play.png,Magic-HD-Common/icons/pause.png,Magic-HD-Common/icons/stop.png,Magic-HD-Common/icons/forward.png,Magic-HD-Common/icons/backward.png,Magic-HD-Common/icons/slow.png"	zPosition="5"	alphatest="on"	/>
+				<widget	name="speed"	position="140,70"	size="80,15"	font="Regular;	17"	halign="left"	backgroundColor="transparent"	foregroundColor="foreground"	borderWidth="2"	borderColor="black"	transparent="1"	zPosition="5"	/>-->
+		<ePixmap	pixmap="Magic-HD-Common/dvr/scale1024.png"	position="128,54"	size="1024,4"	zPosition="1"	/>
+		<widget	source="session.CurrentService"	render="PositionGauge"	position="128,50"	size="1024,12"	transparent="1"	zPosition="4"	pointer="Magic-HD-Common/dvr/position_pointer1024.png:1012,0">
+				<convert	type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget	source="session.CurrentService"	render="Label"	position="40,13"	size="200,25"	backgroundColor="transparent"	zPosition="4"	foregroundColor="foreground"	borderWidth="2"	font="Regular;22"	borderColor="black"	valign="center"	halign="left">
+				<convert	type="ServicePosition">Position</convert>
+		</widget>
+		<widget	source="session.CurrentService"	render="Label"	position="1025,13"	size="120,25"	backgroundColor="transparent"	transparent="1"	zPosition="4"	foregroundColor="foreground"	borderWidth="2"	font="Regular;22"	borderColor="black"	valign="center"	halign="left">
+				<convert	type="ServicePosition">Remaining</convert>
+		</widget>
+		<widget	source="session.CurrentService"	render="Label"	position="1145,13"	size="120,25"	backgroundColor="transparent"	transparent="1"	zPosition="4"	foregroundColor="foreground"	borderWidth="2"	font="Regular;22"	borderColor="black"	valign="center"	halign="left">
+				<convert	type="ServicePosition">Length</convert>
+		</widget>
+		<widget	source="session.CurrentService"	render="Pixmap"	pixmap="Magic-HD-Common/infobar/ico_dolby_on.png"	position="986,63"	size="60,24"	zPosition="2"	alphatest="on">
+				<convert	type="ServiceInfo">IsMultichannel</convert>
+				<convert	type="ConditionalShowHide"	/>
+		</widget>
+		<widget	source="session.CurrentService"	render="Pixmap"	pixmap="Magic-HD-Common/infobar/ico_hd_on.png"	position="1048,63"	size="40,21"	zPosition="4"	alphatest="on">
+				<convert	type="ServiceInfo">VideoWidth</convert>
+				<convert	type="ValueRange">800,2000</convert>
+				<convert	type="ConditionalShowHide"	/>
+		</widget>
+		<widget	source="session.CurrentService"	render="Pixmap"	pixmap="Magic-HD-Common/infobar/ico_format_on.png"	position="1090,63"	size="40,21"	zPosition="2"	alphatest="on">
+				<convert	type="ServiceInfo">IsWidescreen</convert>
+				<convert	type="ConditionalShowHide"	/>
+		</widget>
+		<widget	source="session.RecordState"	render="Pixmap"	pixmap="Magic-HD-Common/buttons/rec.png"	position="1132,63"	size="20,20"	zPosition="3"	alphatest="on">
+				<convert	type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget	name="sidebar"	position="362,20"	size="10,20"	font="Regular;18"	halign="center"	valign="center"	backgroundColor="#4e5a74"	transparent="1"	/>
 	</screen>
 	<screen name="SelectDirectoryWindow" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
