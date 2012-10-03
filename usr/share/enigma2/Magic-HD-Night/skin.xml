@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.71 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.72 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -690,21 +690,21 @@
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <ePixmap pixmap="skin_default/buttons/key_menu.png" position="1110,682" size="35,25" alphatest="on" />
     <widget name="list" position="520,85" size="755,570" itemHeight="30" font="Regular;22" transparent="1" scrollbarMode="showOnDemand" />
-    <widget source="Service" render="Label" position="375,15" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" font="Regular;22" valign="center" halign="right">
-      <convert type="ServiceName">Name</convert>
+    <widget source="Event" render="Label" position="5,355" size="477,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="white" font="Regular;22" valign="center" halign="center">
+      <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="Label" position="5,355" size="500,46" valign="center" halign="left" font="Regular;22">
+    <!--<widget source="Event" render="Label" position="5,355" size="500,46" valign="center" halign="left" font="Regular;22">
       <convert type="EventName">Description</convert>
-    </widget>
-    <widget source="Event" render="Label" position="15,401" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
+    </widget>-->
+    <widget source="Event" render="Label" position="15,410" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:%A</convert>
+      <convert type="ClockToText">ShortDate</convert>
     </widget>
-    <widget source="Event" render="Label" position="165,401" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right">
+    <widget source="Event" render="Label" position="165,410" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="Event" render="Label" position="245,401" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left">
+    <widget source="Event" render="Label" position="245,410" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
@@ -6702,7 +6702,7 @@
     <widget name="footnote" position="780,682" size="240,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="foreground" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="VIXSingleEPG" position="0,0" size="1280,720" title="ViX Program Guide Single">
+  <!--<screen flags="wfNoBorder" name="VIXSingleEPG" position="0,0" size="1280,720" title="ViX Program Guide Single">
     <panel name="BasicTemplate"/>
     <ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
@@ -6718,7 +6718,7 @@
     </widget>
     <widget name="epg_list" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
-  </screen>
+  </screen>-->
   <screen flags="wfNoBorder" name="VIXEPGBouquetSelector" position="0,0" size="1280,720" title="Choose Bouquet">
     <panel name="BasicTemplate"/>
     <widget name="menu" font="Regular;22" position="520,82" size="755,583" transparent="1" />
