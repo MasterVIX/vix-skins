@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.72 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.73 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -2076,6 +2076,12 @@
 	<widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
     <widget name="text" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+  </screen>
+  <screen name="SoftwareUpdateChoices" position="0,0" size="1280,720" flags="wfNoBorder">
+	<panel name="BasicTemplate"/>
+	<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25" />
+	<widget name="text" position="15,379" size="477,260" zPosition="2" font="Regular;22" foregroundColor="secondFG" />
+	<widget name="list" position="520,82" size="755,583" scrollbarMode="showOnDemand" itemHeight="30" foregroundColor="grey" enableWrapAround="1"/>
   </screen>
   <screen name="UpdatePluginMenu" title="Softwaremanager" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
