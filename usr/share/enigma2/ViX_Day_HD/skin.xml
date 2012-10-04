@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--  Skin: ViX-Day-HD Vs 2.71 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Day-HD Vs 2.73 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -2483,6 +2483,11 @@ self.autoResize()
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
 	</screen>
+	<screen name="SoftwareUpdateChoices" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<widget name="list" position="15,107" size="495,200" itemHeight="28" font="Regular;22" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="text" position="15,310" size="495,200" font="Regular;22" foregroundColor="window-fg" backgroundColor="window-bg" halign="center" transparent="0" />
+	</screen>
 	<screen name="PluginManager" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<widget source="list" render="Listbox" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H52x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,107" size="503,450" scrollbarMode="showOnDemand">
@@ -2884,7 +2889,6 @@ self.autoResize()
 		<panel name="MenuPanel" />
 		<widget name="CiList" position="10,107" size="503,450" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" />
 		<ePixmap pixmap="skin_default/div-h.png" position="10,610" zPosition="1" size="503,2" />
-		<widget source="infotext" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
 		<panel name="MenuRed2Panel" />
 		<panel name="MenuGreen2Panel" />
 	</screen>
@@ -4243,17 +4247,49 @@ self.autoResize()
 		<panel name="MenuGreen1Panel" />
 		<widget name="HelpWindow" pixmap="ViX_HD_Common/buttons/vkey_icon.png" position="15,440" zPosition="1" size="541,720" transparent="1" alphatest="on" />
 	</screen>
-  <!-- ## RecInfoBar ## -->
-  <screen name="RecInfoBar" flags="wfNoBorder" position="0,0" size="1280,25" zPosition="1" >
-    <widget source="session.RecordState" render="Pixmap" pixmap="skin_default/icons/record.png" position="5,5" zPosition="1" size="14,14" alphatest="on" >
-      <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
-    <widget name="chTuner" position="25,2" size="20,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="blue" backgroundColor="black" />
-    <widget name="chProv" position="50,2" size="250,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="yellow" backgroundColor="black" />
-    <widget name="chBouq" position="300,2" size="250,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="yellow" backgroundColor="black" />
-    <widget name="chNum" position="550,2"  size="50,18"  zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" />
-    <widget name="chName" position="605,2" size="250,18" zPosition="1" font="Regular;18" halign="left"  transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" />
-    <widget name="timelen" position="850,2" size="80,18"  zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" />
-    <widget name="recName" position="950,2" size="250,18"  zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="grey" backgroundColor="black" />
-  </screen>
+	<!-- ## RecInfoBar ## -->
+	<screen name="RecInfoBar" flags="wfNoBorder" position="0,0" size="1280,25" zPosition="1" >
+		<widget source="session.RecordState" render="Pixmap" pixmap="skin_default/icons/record.png" position="5,5" zPosition="1" size="14,14" alphatest="on" >
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget name="chTuner" position="25,2" size="20,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="blue" backgroundColor="black" />
+		<widget name="chProv" position="50,2" size="250,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="yellow" backgroundColor="black" />
+		<widget name="chBouq" position="300,2" size="250,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="yellow" backgroundColor="black" />
+		<widget name="chNum" position="550,2"  size="50,18"  zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" />
+		<widget name="chName" position="605,2" size="250,18" zPosition="1" font="Regular;18" halign="left"  transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" />
+		<widget name="timelen" position="850,2" size="80,18"  zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" />
+		<widget name="recName" position="950,2" size="250,18"  zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="grey" backgroundColor="black" />
+	</screen>
+	<!-- ## FastScan ## -->
+	<screen name="FastScanScreen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<widget name="config" position="15,107" size="495,485" itemHeight="28" font="Regular;22" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="introduction" position="20,590" size="495,45" font="Regular;22" foregroundColor="window-fg" backgroundColor="window-bg" halign="center" transparent="0" />
+	</screen>
+	<screen name="FastScanStatus" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<widget name="scan_state" position="15,107" size="495,500" foregroundColor="window-fg" backgroundColor="window-bg" font="Regular;22" transparent="0" />
+		<widget name="scan_progress" position="30,607" size="400,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="black" />
+	</screen>
+	<!-- ## BitrateViewer## -->
+	<screen flags="wfNoBorder" name="BitrateViewer" backgroundColor="transparent" position="0,0" size="1280,720" >
+		<eLabel text="Video" position="590,150" zPosition="1" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
+		<eLabel text="min" position="590,180" zPosition="1" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
+		<widget name="vmin" position="590,210" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
+		<eLabel text="max" position="660,180" zPosition="1" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
+		<widget name="vmax" position="660,210" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
+		<eLabel text="avg" position="740,180" zPosition="1" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
+		<widget name="vavg" position="740,210" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
+		<eLabel text="current" position="840,180" zPosition="1" size="110,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
+		<widget name="vcur" position="840,210" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
+		<eLabel text="Audio" position="590,250" zPosition="1" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
+		<eLabel text="min" position="590,275" zPosition="1" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
+		<widget name="amin" position="590,300" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
+		<eLabel text="max" position="660,275" zPosition="1" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
+		<widget name="amax" position="660,300" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
+		<eLabel text="avg" position="740,275" zPosition="1" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
+		<widget name="aavg" position="740,300" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
+		<eLabel text="current" position="840,275" zPosition="1" size="110,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
+		<widget name="acur" position="840,300" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
+	</screen>
 </skin>
