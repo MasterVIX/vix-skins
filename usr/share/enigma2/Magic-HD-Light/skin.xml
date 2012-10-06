@@ -1,5 +1,5 @@
 ﻿<skin>
-<!--Skin:  Magic-HD-Light ViX(Extreme-HD) Vs 1.88 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 5.67 but now in "Light version" (not supporting as many screens)-->
+<!--Skin:  Magic-HD-Light ViX(Extreme-HD) Vs 1.89 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 5.87 but now in "Light version" (not supporting as many screens)-->
 <!--This skin is a Freeware. Everyone can modify and use it in other images.-->
 <!--BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!-->
 <!--Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are-->
@@ -678,11 +678,22 @@
 		<panel name="BasicTemplate2"/>
 		<ePixmap pixmap="Magic-HD-Common/dvr/scale2.png" position="5,110" size="477,12" zPosition="1" alphatest="on" />
 		<eLabel backgroundColor="infobarBG" position="5,111" size="477,14" zPosition="0" />
-		<widget source="session.CurrentService" render="PositionGauge" position="5,110" size="477,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer2.png:477,0">
+		<widget source="session.CurrentService" render="PositionGauge" position="5,110" size="477,12" transparent="1" zPosition="5" pointer="Magic-HD-Common/dvr/position_pointer2.png:477,0">
 			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Progress" pixmap="Magic-HD-Common/dvr/position_pointer2.png" position="5,110" size="477,9" backgroundColor="un33333a" transparent="0" zPosition="4" borderWidth="0">
+			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="5,90" size="90,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="left">
 			<convert type="ServicePosition">Position,ShowHours</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="5,90" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="left">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="365,90" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right" >
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="365,90" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right">
 			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
@@ -697,12 +708,12 @@
 		<widget name="key_green" position="340,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<widget name="key_yellow" position="614,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="movie_sort" position="1195,682" size="35,20" pixmaps="skin_default/icons/az.png,skin_default/icons/newtop.png,skin_default/icons/shuffle.png,skin_default/icons/za.png,skin_default/icons/oldtop.png" zPosition="10" transparent="1" alphatest="on"/>
-		<widget name="movie_off" position="1240,682" size="35,20" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png" zPosition="10" transparent="1" alphatest="on"/>
+		<widget name="movie_sort" position="905,50" size="35,20" pixmaps="skin_default/icons/az.png,skin_default/icons/newtop.png,skin_default/icons/shuffle.png,skin_default/icons/za.png,skin_default/icons/oldtop.png" zPosition="10" transparent="1" alphatest="on"/>
+		<widget name="movie_off" position="960,50" size="35,20" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png" zPosition="10" transparent="1" alphatest="on"/>
 		<widget name="waitingtext" position="520,82" size="755,548" font="Regular;25" halign="center" valign="center" foregroundColor="grey" zPosition="4" />
 		<widget name="chosenletter" position="520,82" size="755,548" foregroundColor="yellow" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4" />
 		<widget name="list" position="520,82" size="755,548" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" foregroundColor="grey" enableWrapAround="1" />
-		<widget source="Service" render="Label" position="5,380" size="500,280" font="Regular;20" halign="center" valign="center">
+		<widget source="Service" render="Label" position="5,380" size="500,278" font="Regular;20" halign="center" valign="center">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget source="Service" render="Label" position="520,648" size="150,21" transparent="1" foregroundColor="grey" halign="left" font="Regular;20">
