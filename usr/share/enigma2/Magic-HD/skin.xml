@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX Vs 5.87 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 5.88 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -5809,15 +5809,6 @@
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,238" transparent="1" foregroundColor="grey" itemHeight="35" enableWrapAround="1" />
 		<widget name="description" position="10,385" size="500,250" zPosition="10" font="Regular;22" halign="center" transparent="0" foregroundColor="secondFG" />
 	</screen>
-	<screen flags="wfNoBorder" name="NamezapSetup" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" position="50,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
-		<widget source="key_green" render="Label" position="340,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
-		<widget source="help" render="Label" font="Regular;22" position="5,375" size="477,250" transparent="1" foregroundColor="secondFG" halign="center" valign="center" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	</screen>
 	<screen flags="wfNoBorder" name="SortableMenu" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
@@ -5843,12 +5834,12 @@
 		<panel name="BasicTemplate"/>
 		<widget name="text" font="Regular;22" position="520,82" size="755,583" transparent="1" />
 	</screen>
-	<screen flags="wfNoBorder" name="YTTrailerList" position="0,0" size="1280,720" >
+	<screen flags="wfNoBorder" name="YTTrailerList" position="0,0" size="1280,720" title="YTTrailer List" >
 		<panel name="BasicTemplate"/>
 		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
 		<eLabel text="'OK'= Play trailer" backgroundColor="secondBG" position="435,682" size="220,26" font="Regular;22" halign="left" transparent="1" zPosition="1" />
 	</screen>
-	<screen flags="wfNoBorder" name="YTTrailerSetup" position="0,0" size="1280,720" >
+	<screen flags="wfNoBorder" name="YTTrailerSetup" position="0,0" size="1280,720" title="YTTrailer configuration" >
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
 		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
@@ -6163,7 +6154,7 @@
 		<widget name="config" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 	<!-- ## WEB-Media ## -->
-	<screen name="ConfWebmed" position="0,0" size="1280,720" flags="wfNoBorder" >
+	<screen name="ConfWebmed" position="0,0" size="1280,720" flags="wfNoBorder" title="WebMedia configuration" >
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
 		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
@@ -6475,7 +6466,7 @@
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 <!-- ## RemoteChannelStreamConverter ## -->
-	<screen name="ServerEditor" position="0,0" size="1280,720" flags="wfNoBorder" >
+	<screen name="ServerEditor" position="0,0" size="1280,720" flags="wfNoBorder" title="RemoteChannelStreamConverter ServerEditor" >
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
 		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
@@ -6487,7 +6478,7 @@
 		<widget source="key_blue" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,80" size="755,588" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
-	<screen name="StreamingChannelFromServerScreen" position="0,0" size="1280,720" flags="wfNoBorder" >
+	<screen name="StreamingChannelFromServerScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="RemoteChannelStreamConverter " >
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
 		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
@@ -6530,7 +6521,7 @@
 		<widget name="memvalue" font="Regular;18" position="760,82" size="140,583" transparent="1" foregroundColor="grey" halign="right" />
 	</screen>
 	<!-- ## VU+ StreamTV ## -->
-	<screen name="StreamTVList" position="0,0" size="1280,720" flags="wfNoBorder" >
+	<screen name="StreamTVList" position="0,0" size="1280,720" flags="wfNoBorder" title="Stream TV" >
 		<panel name="BasicTemplate"/>
 		<widget name="streamlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
@@ -6809,7 +6800,7 @@
 	<widget name="zv" position="130,550" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/yp.png" transparent="1" />
 	</screen>
 	<!-- ## VCS Video ClipModes Switcher ## -->
-	<screen name="VcsSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder" >
+	<screen name="VcsSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="VCS Configuration" >
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
 		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
@@ -6863,7 +6854,8 @@
 		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="Text" position="5,415" zPosition="4" size="500,200" font="Regular;22" foregroundColor="secondFG" transparent="1" halign="center" valign="center" />
 	</screen>
-	<screen name="Weermenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+	<!-- ## Het weer ## -->
+	<screen name="Weermenu" position="0,0" size="1280,720" flags="wfNoBorder" title="Het weer">
 		<panel name="BasicTemplate"/>
 		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="Text" position="5,415" zPosition="4" size="500,200" font="Regular;22" foregroundColor="secondFG" transparent="1" halign="center" valign="center" />
