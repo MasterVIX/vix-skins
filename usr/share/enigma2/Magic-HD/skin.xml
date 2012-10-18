@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX Vs 5.97 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 5.98 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -6711,17 +6711,6 @@
 	<screen name="VcsMessageBox" position="center,50" size="720,100" zPosition="10" flags="wfNoBorder" backgroundColor="transparent" title=" ">
 		<widget source="message" render="Label" position="0,0" zPosition="1" size="720,100" halign="center" valign="center" noWrap="1" font="Regular;28" foregroundColor="secondFG" backgroundColor="transparent" borderWidth="2" transparent="1"/>
 	</screen>
-	<!-- ## RTL XL ## -->
-	<screen name="RTLXLMENU" position="0,0" size="1280,720" flags="wfNoBorder" title="RTL XL">
-		<panel name="BasicTemplate"/>
-		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-		<widget name="Text" position="5,415" zPosition="4" size="500,200" font="Regular;22" foregroundColor="secondFG" transparent="1" halign="center" valign="center" />
-	</screen>
-	<screen name="secondmenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
-		<panel name="BasicTemplate"/>
-		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-		<widget name="Text" position="5,415" zPosition="4" size="500,200" font="Regular;22" foregroundColor="secondFG" transparent="1" halign="center" valign="center" />
-	</screen>
 	<!-- ## Het weer ## -->
 	<screen name="Weermenu" position="0,0" size="1280,720" flags="wfNoBorder" title="Het weer">
 		<panel name="BasicTemplate"/>
@@ -6980,8 +6969,8 @@
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<widget name="list" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="110" position="5,80" size="1255,550" noWrap="1" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-		<ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+		<widget name="list" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="148" position="5,79" size="1255,592" noWrap="1" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,685" size="300,25" alphatest="on" />
 	</screen>
 	<screen name="OpenUgSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
