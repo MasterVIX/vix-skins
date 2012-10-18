@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX Vs 5.96 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 5.97 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -1317,7 +1317,7 @@
 	</screen>
 	<screen name="BouquetSelector" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="menu" position="520,82" size="755,583" itemHeight="35" font="Regular;25" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+		<widget name="menu" position="490,80" size="785,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 	<screen name="NumericalTextInputHelpDialog" position="center,450" size="454,164" backgroundColor="background" zPosition="2" flags="wfNoBorder">
 		<eLabel position="0,0" size="454,164" backgroundColor="yellowtransparent" zPosition="-1" />
@@ -2015,7 +2015,7 @@
 		<widget source="key_green" render="Label" position="340,682" size="220,26" transparent="1" zPosition="2" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
 		<widget source="key_yellow" render="Label" position="624,682" size="220,26" transparent="1" zPosition="2" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
 		<widget source="key_blue" render="Label" position="875,682" size="220,26" transparent="1" zPosition="2" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
-		<widget source="list" render="Listbox" position="520,82" size="755,583" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" >
+		<widget source="list" render="Listbox" position="520,85" size="755,572" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" >
 			<convert type="TemplatedMultiContent">
 		{"template": [
 				MultiContentEntryPixmapAlphaTest(pos = (0,0),size = (48,48),png = 1),# index 1 is the expandable/expanded/verticalline icon
@@ -5513,7 +5513,13 @@
 		</widget>
 		<widget name="timeline_text" position="5,60" size="1270,30" foregroundColor="#00e5b243" backgroundColor="background" transparent="1" />
 		<widget name="lab1" position="0,55" size="1280,485" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
-		<widget name="list" position="5,90" size="1270,455" scrollbarMode="showNever" backgroundColor="black" transparent="0" />
+		<widget name="list" position="5,90" size="1270,475" scrollbarMode="showNever" transparent="1"
+		ServiceBackgroundColor="bluetransparent"	ServiceBackgroundColorSelected="black" ServiceBackgroundColorNow="greentransparent" ServiceBackgroundColorNowSelected="greentransparent"
+		EntryBackgroundColor="bluetransparent"		EntryBackgroundColorSelected="black"	 EntryBackgroundColorNow="redtransparent"			EntryBackgroundColorNowSelected="black"
+		EntryFontAlignment="center"								EntryForegroundColorSelected="selectedFG"																						EntryForegroundColorNowSelected="selectedFG"
+																							ServiceForegroundColorSelected="selectedFG"																					ServiceForegroundColorNowSelected="selectedFG"
+		RecordBackgroundColor="yellowtransparent" RecordBackgroundColorSelected="yellowtransparent"																		RecordForegroundColorSelected="selectedFG"
+		ZapBackgroundColor="transpWhite"					ZapBackgroundColorSelected="transpWhite"																						ZapForegroundColorSelected="selectedFG" />
 <!--		<widget name="timeline0" position="5,90" zPosition="1" size="2,455" pixmap="skin_default/timeline.png" />
 		<widget name="timeline1" position="5,90" zPosition="1" size="2,455" pixmap="skin_default/timeline.png" />
 		<widget name="timeline2" position="5,90" zPosition="1" size="2,455" pixmap="skin_default/timeline.png" />
@@ -5593,7 +5599,13 @@
 		</widget>
 		<widget name="lab1" position="5,313" size="1275,365" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
 		<widget name="timeline_text" position="5,286" size="1275,30" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
-		<widget name="list" position="5,313" size="1275,365" scrollbarMode="showNever" backgroundColor="black" transparent="0" />
+		<widget name="list" position="5,313" size="1275,365" scrollbarMode="showNever" transparent="1"
+		ServiceBackgroundColor="bluetransparent"	ServiceBackgroundColorSelected="black" ServiceBackgroundColorNow="greentransparent" ServiceBackgroundColorNowSelected="greentransparent"
+		EntryBackgroundColor="bluetransparent"		EntryBackgroundColorSelected="black"	 EntryBackgroundColorNow="redtransparent"			EntryBackgroundColorNowSelected="redtransparent"
+		EntryFontAlignment="center"								EntryForegroundColorSelected="selectedFG"																						EntryForegroundColorNowSelected="selectedFG"
+																							ServiceForegroundColorSelected="selectedFG"																					ServiceForegroundColorNowSelected="selectedFG"
+		RecordBackgroundColor="yellowtransparent" RecordBackgroundColorSelected="yellowtransparent"																		RecordForegroundColorSelected="selectedFG"
+		ZapBackgroundColor="transpWhite"					ZapBackgroundColorSelected="transpWhite"																						ZapForegroundColorSelected="selectedFG" />
 <!--		<widget name="timeline0" position="5,313" zPosition="1" size="2,365" pixmap="skin_default/timeline.png" />
 		<widget name="timeline1" position="5,313" zPosition="1" size="2,365" pixmap="skin_default/timeline.png" />
 		<widget name="timeline2" position="5,313" zPosition="1" size="2,365" pixmap="skin_default/timeline.png" />
