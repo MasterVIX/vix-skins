@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX Vs 5.99 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.00 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -6942,22 +6942,53 @@
 		<widget name="satvalue" position="660,82" size="615,30" font="Regular;22" transparent="1" foregroundColor="grey" />
 		<widget name="area" position="520,120" size="140,30" font="Regular;22" transparent="1" halign="right" foregroundColor="grey" />
 		<widget name="areavalue" position="660,120" size="615,30" font="Regular;22" transparent="1" foregroundColor="grey" />
-		<widget name="hd" position="520,160" size="140,30" font="Regular;22" transparent="1" halign="right" foregroundColor="grey" />
-		<widget name="hdcheck" position="660,160" size="32,32" transparent="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" foregroundColor="grey" />
-		<widget name="status" position="520,200" size="140,60" font="Regular;22" transparent="1" halign="left" foregroundColor="grey" />
-		<widget name="status2" position="660,200" size="615,60" font="Regular;22" transparent="1" halign="left" foregroundColor="grey" />
+			<widget name="makemain" position="520,200" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
+			<widget name="makemaincheck" position="660,200" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
+		<widget name="hd" position="520,240" size="140,30" font="Regular;22" transparent="1" halign="right" foregroundColor="grey" />
+		<widget name="hdcheck" position="660,240" size="32,32" transparent="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" foregroundColor="grey" />
+			<widget name="makesections" position="520,280" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
+			<widget name="makesectionscheck" position="660,280" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
+			<widget name="makefta" position="520,320" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
+			<widget name="makeftacheck" position="660,320" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
+			<widget name="addprefix" position="520,360" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
+			<widget name="addprefixcheck" position="660,360" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
+		<widget name="status" position="520,450" size="140,60" font="Regular;22" transparent="1" halign="left" foregroundColor="grey" />
+		<widget name="status2" position="660,450" size="615,60" font="Regular;22" transparent="1" halign="left" foregroundColor="grey" />
 	</screen>
 	<screen name="AutoSkyBouquetsMenu" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
 		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
 		<widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<widget name="key_green" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget name="key_yellow" position="614,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 	<screen name="AutoSkyBouquetsLogView" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<widget name="list" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="HideSections" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="BasicTemplate"/>
+		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
+		<widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget name="key_green" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget name="key_yellow" position="614,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" >
+				<convert type="TemplatedMultiContent">
+					{"template": [
+						MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
+						MultiContentEntryText(pos = (47, 0), size = (400, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+						MultiContentEntryText(pos = (450, 0), size = (120, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+						],
+						"fonts": [gFont("Regular", 22)],
+						"itemHeight": 30
+					}
+				</convert>
+			</widget>
 	</screen>
 	<!-- ## AddStreamURL ## -->
 	<screen name="LiveStreamingLinks" position="0,0" size="1280,720" flags="wfNoBorder" title="">
