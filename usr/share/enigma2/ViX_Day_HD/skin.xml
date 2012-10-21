@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--  Skin: ViX-Day-HD Vs 2.75 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Day-HD Vs 2.76 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -4164,6 +4164,34 @@ self.autoResize()
 		<widget name="config" position="20,107" size="500,536" font="Regular;22" itemHeight="28" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="AutoBouquetsLogView" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<widget name="list" position="10,107" size="503,536" font="Regular;20" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
+	</screen>
+  <!-- ## AutoSkyBouquets ## -->
+	<screen name="AutoSkyBouquets" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<widget name="sat" position="20,114" size="140,30" font="Regular;22" transparent="0" halign="right" />
+		<widget name="satvalue" position="170,114" size="340,30" font="Regular;22" transparent="0" />
+		<widget name="area" position="20,150" size="140,30" font="Regular;22" transparent="0" halign="right" />
+		<widget name="areavalue" position="170,150" size="340,30" font="Regular;22" transparent="0" />
+		<widget name="hd" position="20,190" size="140,30" font="Regular;22" transparent="0" halign="right" />
+		<widget name="hdcheck" position="170,189" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" />
+		<widget name="status" position="20,230" size="140,30" font="Regular;22" transparent="0" halign="right" />
+		<widget name="status2" position="170,230" size="340,30" font="Regular;22" transparent="0" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<panel name="MenuYellow1Panel" />
+		<panel name="MenuBlue1Panel" />
+		<ePixmap pixmap="ViX_HD_Common/buttons/key_menu.png" position="400,695" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
+		<ePixmap pixmap="ViX_HD_Common/buttons/key_info.png" position="400,663" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
+	</screen>
+	<screen name="AutoSkyBouquetsMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<widget name="config" position="20,107" size="500,536" font="Regular;22" itemHeight="28" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="AutoSkyBouquetsLogView" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<widget name="list" position="10,107" size="503,536" font="Regular;20" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
 	</screen>
