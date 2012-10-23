@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--  Skin: ViX-Day-HD Vs 2.81 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Day-HD Vs 2.82 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -161,7 +161,7 @@
 	</screen>
 
 	<screen name="MenuPanel">
-		<widget source="Title" render="Label" position="10,60" size="415,38" font="Bold;26" foregroundColor="menu-title-frgrnd" backgroundColor="menu-title-bkgrnd" transparent="1" />
+		<widget source="Title" render="Label" position="10,60" size="540,38" font="Bold;26" foregroundColor="menu-title-frgrnd" backgroundColor="menu-title-bkgrnd" transparent="1" />
 		<ePixmap pixmap="ViX_Day_HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="200,8" size="300,28" font="Regular;24" foregroundColor="menu-title-frgrnd" backgroundColor="menu-time-bkgrnd" halign="right" transparent="1">
 			<convert type="ClockToText">Full</convert>
@@ -4145,45 +4145,88 @@ self.autoResize()
 		<panel name="MenuPanel" />
 		<widget name="list" position="10,107" size="503,536" itemHeight="48" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
-  <!-- ## AutoSkyBouquets ## -->
-	<screen name="AutoSkyBouquets" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+<!-- ## AutoBouquetsMaker ## -->
+	<screen name="AutoBouquetsMaker_Menu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="sat" position="20,114" size="140,30" font="Regular;22" transparent="0" halign="right" />
-		<widget name="satvalue" position="170,114" size="340,30" font="Regular;22" transparent="0" />
-		<widget name="area" position="20,150" size="140,30" font="Regular;22" transparent="0" halign="right" />
-		<widget name="areavalue" position="170,150" size="340,30" font="Regular;22" transparent="0" />
-		<widget name="makemain" position="20,190" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
-		<widget name="makemaincheck" position="170,190" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
-		<widget name="hd" position="20,230" size="140,30" font="Regular;22" transparent="0" halign="right" />
-		<widget name="hdcheck" position="170,230" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" />
-		<widget name="makesections" position="20,270" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
-		<widget name="makesectionscheck" position="170,270" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
-		<widget name="makefta" position="20,310" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
-		<widget name="makeftacheck" position="170,310" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
-		<widget name="addprefix" position="20,350" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
-		<widget name="addprefixcheck" position="170,350" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
-		<widget name="status" position="20,400" size="140,30" font="Regular;22" transparent="0" halign="right" />
-		<widget name="status2" position="170,400" size="340,30" font="Regular;22" transparent="0" />
+		<widget source="list" render="Listbox" position="15,107" size="500,532" font="Regular;24" itemHeight="28" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" >
+			<convert type="TemplatedMultiContent">
+			{"template": [
+					MultiContentEntryText(pos = (0,0), size = (500,532), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					],
+					"fonts": [gFont("Regular", 24)],
+					"itemHeight": 28
+				}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="AutoBouquetsMaker_ProvidersSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<widget name="config" position="15,107" size="500,532" font="Regular;22" itemHeight="28" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	</screen>
+	<screen name="AutoBouquetsMaker_Setup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<widget name="config" position="15,107" size="500,456" font="Regular;22" itemHeight="28" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="description" position="15,565" size="500,66" font="Regular;22" halign="center" valign="center" transparent="0" zPosition="1" />
+	</screen>
+	<screen name="AutoBouquetsMaker_Ordering" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
 		<panel name="MenuYellow1Panel" />
 		<panel name="MenuBlue1Panel" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/key_menu.png" position="400,695" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/key_info.png" position="400,663" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
+		<widget source="list" render="Listbox" position="15,107" size="500,532" font="Regular;22" itemHeight="28" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (12, 1), size = (440, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+					],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 30
+				}
+			</convert>
+		</widget>
 	</screen>
-	<screen name="AutoSkyBouquetsMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AutoBouquetsMaker_Providers" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
-		<panel name="MenuYellow1Panel" />
-		<widget name="config" position="15,107" size="500,536" font="Regular;22" itemHeight="28" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget source="list" render="Listbox" position="15,107" size="500,532" font="Regular;22" itemHeight="28" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
+					MultiContentEntryText(pos = (450, 0), size = (120, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 30
+				}
+			</convert>
+		</widget>
 	</screen>
-	<screen name="HideSections" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AutoBouquetsMaker_HideSections" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
-		<panel name="MenuYellow1Panel" />
-		<widget source="list" render="Listbox" position="15,107" size="500,536" font="Regular;22" itemHeight="28" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" >
+		<widget source="list" render="Listbox" position="15,107" size="500,532" font="Regular;22" itemHeight="28" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
+					MultiContentEntryText(pos = (47, 0), size = (400, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (400, 0), size = (120, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+					],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 30
+				}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="AutoBouquetsMaker_KeepBouquets" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<widget source="list" render="Listbox" position="15,107" size="500,532" font="Regular;22" itemHeight="28" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
@@ -4196,9 +4239,9 @@ self.autoResize()
 			</convert>
 		</widget>
 	</screen>
-	<screen name="AutoSkyBouquetsLogView" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AutoBouquetsMaker_Log" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="list" position="10,107" size="503,536" font="Regular;20" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
+		<widget name="list" position="15,107" size="500,532" font="Regular;22" itemHeight="28" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 <!-- ## RemoteChannelStreamConverter ## -->
 	<screen name="StreamingChannelFromServerScreen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
