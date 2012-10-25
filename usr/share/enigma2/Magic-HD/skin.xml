@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.05 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.06 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -568,16 +568,27 @@
 		<panel name="Green1Panel" />
 		<panel name="Yellow1Panel" />
 		<panel name="Blue1Panel" />
-		<widget name="list" position="520,82" size="755,555" itemHeight="25" noWrap="1" serviceNumberFont="Regular;22" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="25" colorServiceDescription="blue" transparent="1" foregroundColorServiceNotAvail="#656565" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
-		<widget source="ServiceEvent" render="Label" position="520,645" size="625,25" font="Regular;22" foregroundColor="selectedFG" noWrap="1" zPosition="2" transparent="1" halign="left">
+		<widget name="list" position="520,82" size="755,530" itemHeight="25" noWrap="1" serviceNumberFont="Regular;22" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="25" colorServiceDescription="blue" transparent="1" foregroundColorServiceNotAvail="#656565" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+		<widget source="ServiceEvent" render="Label" position="520,615" size="625,25" font="Regular;22" foregroundColor="selectedFG" noWrap="1" zPosition="2" transparent="1" halign="left">
 			<convert type="EventName">NextName</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="1145,645" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21" halign="right">
+		<widget source="ServiceEvent" render="Label" position="1145,615" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21" halign="right">
 			<convert type="EventTime">NextStartTime</convert>
 			<convert type="ClockToText" />
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="1215,645" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21">
+		<widget source="ServiceEvent" render="Label" position="1215,615" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21">
 			<convert type="EventTime">NextEndTime</convert>
+			<convert type="ClockToText" />
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="520,645" size="625,25" font="Regular;22" foregroundColor="selectedFG" noWrap="1" zPosition="2" transparent="1" halign="left">
+			<convert type="EventName">ThirdName</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="1145,645" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21" halign="right">
+			<convert type="EventTime">ThirdStartTime</convert>
+			<convert type="ClockToText" />
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="1215,645" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21">
+			<convert type="EventTime">ThirdEndTime</convert>
 			<convert type="ClockToText" />
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="5,350" size="510,25" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="center" valign="top" >
@@ -602,7 +613,7 @@
 			<convert type="ServiceOrbitalPosition">
 			</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="5,399" size="510,275" font="Regular;21" foregroundColor="grey" halign="center" valign="center" transparent="1" >
+		<widget source="ServiceEvent" render="Label" position="5,399" size="510,273" font="Regular;21" foregroundColor="grey" halign="center" valign="center" transparent="1" >
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
@@ -981,9 +992,9 @@
 		<widget source="bitrate" render="Label" position="670,520" size="330,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
 		<widget source="enc" render="Label" position="670,550" size="330,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
 		<widget source="IFtext" render="Label" position="520,600" size="120,25" zPosition="10" font="Regular;22" halign="right" transparent="1" foregroundColor="grey"/>
-		<widget source="IF" render="Label" position="640,600" size="400,25" zPosition="10" font="Regular;22" halign="left" transparent="1" foregroundColor="grey"/>
+		<widget source="IF" render="Label" position="645,600" size="400,25" zPosition="10" font="Regular;22" halign="left" transparent="1" foregroundColor="grey"/>
 		<widget source="Statustext" render="Label" position="520,630" size="115,25" zPosition="10" font="Regular;22" halign="right" transparent="1" foregroundColor="grey"/>
-		<widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="640,633" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+		<widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="645,635" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
 	</screen>
 	<screen name="HarddiskSelection" flags="wfNoBorder" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -3342,7 +3353,7 @@
 	<!-- ## WebCam Plugin ## -->
 	<screen name="WebcamViewer" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="menu" position="520,82" size="755,583" backgroundColor="darkgrey" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+		<widget name="menu" position="490,80" size="785,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 	<screen name="WebcamViewerMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -4465,7 +4476,6 @@
 		<widget source="list" render="Listbox" transparent="0" position="520,82" size="755,583" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
 			<convert type="TemplatedMultiContent">
 		{"template": [
-<!--			MultiContentEntryPixmapAlphaTest(pos = (12, 4), size = (32, 32), png = 0),-->
 			MultiContentEntryText(pos = (0,0), size = (755,583), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
 			],
 			"fonts": [gFont("Regular", 22)],
