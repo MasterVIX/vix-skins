@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.06 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.07 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -576,6 +576,7 @@
 			<convert type="EventTime">NextStartTime</convert>
 			<convert type="ClockToText" />
 		</widget>
+		<eLabel text="-" foregroundColor="selectedFG" backgroundColor="secondBG" font="Regular;22" halign="left" position="1208,615" size="220,26" transparent="1" zPosition="1" />
 		<widget source="ServiceEvent" render="Label" position="1215,615" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21">
 			<convert type="EventTime">NextEndTime</convert>
 			<convert type="ClockToText" />
@@ -587,6 +588,7 @@
 			<convert type="EventTime">ThirdStartTime</convert>
 			<convert type="ClockToText" />
 		</widget>
+  		<eLabel text="-" foregroundColor="selectedFG" backgroundColor="secondBG" font="Regular;22" halign="left" position="1208,645" size="220,26" transparent="1" zPosition="1" />
 		<widget source="ServiceEvent" render="Label" position="1215,645" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21">
 			<convert type="EventTime">ThirdEndTime</convert>
 			<convert type="ClockToText" />
@@ -1531,7 +1533,7 @@
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel" />
 		<panel name="Green1Panel" />
-		<widget name="config" position="520,82" size="755,583" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="config" position="520,80" size="755,588" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,400" size="1,1" transparent="1" zPosition="1" alphatest="on" />
 	</screen>
 	<screen name="TimerEdit" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1550,7 +1552,7 @@
 		<panel name="Yellow1Panel" />
 		<panel name="Blue1Panel" />
 		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
-		<widget name="timerlist" position="520,82" size="755,578" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="timerlist" position="520,90" size="755,550" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 	<screen name="TimerLog" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate2"/>
@@ -3868,7 +3870,7 @@
 		<panel name="Green2Panel" />
 		<panel name="Yellow2Panel" />
 		<panel name="Blue2Panel" />
-		<widget name="detailtext" font="Regular;22" position="520,82" size="755,583" transparent="1" />
+		<widget name="detailtext" font="Regular;22" position="520,80" size="755,588" transparent="1" />
 	</screen>
 	<screen name="AutoTimerSettings" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate2"/>
@@ -3883,7 +3885,7 @@
 		<panel name="Green2Panel" />
 		<panel name="Yellow2Panel" />
 		<panel name="Blue2Panel" />
-		<widget name="config" position="520,82" size="755,583" itemHeight="30" font="Regular;22" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="config" position="520,80" size="755,588" itemHeight="30" font="Regular;22" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
 		<widget source="help" render="Label" position="5,385" size="477,270" foregroundColor="secondFG" transparent="1" font="Regular;20" />
 	</screen>
 	<screen name="AutoTimerFilterEditor" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -3892,7 +3894,7 @@
 		<panel name="Green2Panel" />
 		<panel name="Yellow2Panel" />
 		<panel name="Blue2Panel" />
-		<widget name="config" position="520,82" size="755,583" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" background="background" />
+		<widget name="config" position="520,80" size="755,588" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" background="background" />
 	</screen>
 	<screen name="AutoTimerServiceEditor" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3900,7 +3902,7 @@
 		<panel name="Green2Panel" />
 		<panel name="Yellow2Panel" />
 		<panel name="Blue2Panel" />
-		<widget name="config" position="520,82" size="755,583" itemHeight="30" font="Regular;22" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="config" position="520,80" size="755,588" itemHeight="30" font="Regular;22" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 	<screen name="AutoTimerImporter" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3908,7 +3910,7 @@
 		<panel name="Green2Panel" />
 		<panel name="Yellow2Panel" />
 		<panel name="Blue2Panel" />
-		<widget name="list" position="520,82" size="755,583" itemHeight="30" font="Regular;22" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="list" position="520,80" size="755,588" itemHeight="30" font="Regular;22" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 	<screen name="AutoTimerOverview" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3916,7 +3918,7 @@
 		<panel name="Yellow2Panel" />
 		<panel name="Blue2Panel" />
 		<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25" />
-		<widget name="entries" position="520,82" size="755,575" itemHeight="30" font="Regular;22" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="entries" position="520,80" size="755,588" itemHeight="28" font="Regular;22" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 	<!-- ## PermanentClock ## -->
 	<screen flags="wfNoBorder" name="PermanentClockMenu" position="0,0" size="1280,720" >
@@ -4479,7 +4481,7 @@
 			MultiContentEntryText(pos = (0,0), size = (755,583), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
 			],
 			"fonts": [gFont("Regular", 22)],
-			"itemHeight": 28
+			"itemHeight": 32
 		}
 	</convert>
 		</widget>
@@ -6221,13 +6223,13 @@
 		<panel name="Green1Panel" />
 		<panel name="Yellow1Panel" />
 		<panel name="Blue1Panel" />
-		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" >
+		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (12, 1), size = (440, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
 					],
 					"fonts": [gFont("Regular", 22)],
-					"itemHeight": 30
+					"itemHeight": 28
 				}
 			</convert>
 		</widget>
@@ -6236,14 +6238,14 @@
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel" />
 		<panel name="Green1Panel" />
-		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" >
+		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
 					MultiContentEntryText(pos = (450, 0), size = (120, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
 					],
 					"fonts": [gFont("Regular", 22)],
-					"itemHeight": 30
+					"itemHeight": 28
 				}
 			</convert>
 		</widget>
@@ -6252,7 +6254,7 @@
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel" />
 		<panel name="Green1Panel" />
-		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" >
+		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
@@ -6260,7 +6262,7 @@
 					MultiContentEntryText(pos = (450, 0), size = (120, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
 					],
 					"fonts": [gFont("Regular", 22)],
-					"itemHeight": 30
+					"itemHeight": 28
 				}
 			</convert>
 		</widget>
@@ -6269,7 +6271,7 @@
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel" />
 		<panel name="Green1Panel" />
-		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,588" transparent="1" foregroundColor="grey" enableWrapAround="1" >
+		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,82" size="755,588" transparent="1" foregroundColor="grey" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
@@ -6277,7 +6279,7 @@
 					MultiContentEntryText(pos = (450, 0), size = (120, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
 					],
 					"fonts": [gFont("Regular", 22)],
-					"itemHeight": 30
+					"itemHeight": 28
 				}
 			</convert>
 		</widget>
