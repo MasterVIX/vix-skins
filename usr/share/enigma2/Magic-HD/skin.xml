@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.10 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.11 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -4995,7 +4995,7 @@
 		<widget source="list" render="Listbox" transparent="0" position="520,82" size="755,583" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
 			<convert type="TemplatedMultiContent">
 		{"template": [
-			MultiContentEntryText(pos = (58, 5), size = (440, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+			MultiContentEntryText(pos = (5, 5), size = (440, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
 			],
 			"fonts": [gFont("Regular", 22)],
 			"itemHeight": 32
@@ -7041,6 +7041,12 @@
 	<screen name="AutoBouquetsMaker_Log" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<widget name="list" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="AutoBouquetsMaker_About" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<widget name="about" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="28" position="520,82" size="755,430" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="oealogo" position="520,515" size="177,130" alphatest="on" zPosition="4" />
 	</screen>
 	<!-- ## AddStreamURL ## -->
 	<screen name="LiveStreamingLinks" position="0,0" size="1280,720" flags="wfNoBorder" title="">
