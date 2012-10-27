@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--  Skin: ViX-Day-HD Vs 2.85 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Day-HD Vs 2.86 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -4238,10 +4238,16 @@ self.autoResize()
 			</convert>
 		</widget>
 	</screen>
-<!--	<screen name="AutoBouquetsMaker_Log" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AutoBouquetsMaker_Log" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<widget name="list" position="15,107" size="500,532" font="Regular;22" itemHeight="28" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
-	</screen>-->
+	</screen>
+	<screen name="AutoBouquetsMaker_About" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuRed1Panel" />
+		<widget name="about" position="15,107" size="500,430" font="Regular;22" itemHeight="28" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H50x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+	<widget name="oealogo" position="200,500" size="177,130" alphatest="on" />
+	</screen>
 <!-- ## RemoteChannelStreamConverter ## -->
 	<screen name="StreamingChannelFromServerScreen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
