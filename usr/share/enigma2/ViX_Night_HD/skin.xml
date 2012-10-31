@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--  Skin: ViX-Night-HD Vs 1.86 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Night-HD Vs 1.87 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -1935,6 +1935,22 @@ self.autoResize()
 		<widget name="config" position="10,107" size="503,495" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
 		<panel name="MenuRed2Panel" />
 		<panel name="MenuGreen2Panel" />
+	</screen>
+	<screen name="VFD_GigaSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="VFD_Giga Setup" >
+		<panel name="MenuPanel" />
+		<widget name="config" position="20,107" size="490,495" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+	</screen>
+	<screen name="TunerServer" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<panel name="MenuYellow1Panel" />
+		<widget name="lab1" position="10,100" size="503,510" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H38x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" enableWrapAround="1" font="Regular;20" scrollbarMode="showOnDemand" />
+		<widget name="lab2" position="10,610" size="200,30" font="Regular;20" valign="center" halign="right" transparent="0"/>
+		<widget name="labstop" position="220,610" size="260,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
+		<widget name="labrun" position="220,610" size="260,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
 	</screen>
 	<screen name="OpenWebifConfig" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
