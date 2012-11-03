@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.13 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.14 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -3072,7 +3072,7 @@
 		<widget name="liste" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,90" size="755,575" transparent="1" />
 	</screen>
 	<!-- ## MyTube ## -->
-	<screen flags="wfNoBorder" name="MyTubePlayerMainScreen" position="0,0" size="1280,720" >
+	<screen flags="wfNoBorder" name="MyTubePlayerMainScreen" position="0,0" size="1280,720" title="InfoBar" >
 		<panel name="BasicTemplate2"/>
 		<widget name="thumbnail" position="0,0" size="130,98" alphatest="on" />
 		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
@@ -4794,7 +4794,7 @@
 		<widget name="config" font="Regular;22" position="520,90" size="755,575" selectionPixmap="Magic-HD-Common/buttons/sel.png" transparent="1" itemHeight="28" enableWrapAround="1" />
 	</screen>
 	<!-- ## CleanupWizard ## -->
-	<screen flags="wfNoBorder" name="CleanupWizardConfiguration" position="0,0" size="1280,720" >
+	<screen flags="wfNoBorder" name="CleanupWizardConfiguration" position="0,0" size="1280,720" title="CleanupWizard settings" >
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
 		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="305,682" size="26,26" />
@@ -6967,9 +6967,7 @@
 		<panel name="BasicTemplate"/>
 		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
-			{"template": [
-					MultiContentEntryText(pos = (0,0), size = (755,583), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
-					],
+			{"template": [	MultiContentEntryText(pos = (0,0), size = (755,583), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1) ],
 					"fonts": [gFont("Regular", 22)],
 					"itemHeight": 28
 				}
@@ -6981,6 +6979,7 @@
 		<panel name="Red1Panel" />
 		<panel name="Green1Panel" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="pleasewait" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey" />
 	</screen>
 	<screen name="AutoBouquetsMaker_Setup" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
@@ -6988,6 +6987,8 @@
 		<panel name="Green1Panel" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="description" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+		<widget name="pleasewait" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey" />
+		<widget name="text" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
 	</screen>
 	<screen name="AutoBouquetsMaker_Ordering" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
@@ -7005,6 +7006,7 @@
 				}
 			</convert>
 		</widget>
+		<widget name="pleasewait" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey" />
 	</screen>
 	<screen name="AutoBouquetsMaker_Providers" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
@@ -7021,6 +7023,7 @@
 				}
 			</convert>
 		</widget>
+		<widget name="pleasewait" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey" />
 	</screen>
 	<screen name="AutoBouquetsMaker_HideSections" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
