@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--  Skin: ViX-Night-HD Vs 1.92 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Night-HD Vs 1.93 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -1493,22 +1493,25 @@ self.autoResize()
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
 		<panel name="FullscreenPIGPanel" />
-		<widget name="waitingtext" position="20,82" size="660,590" font="Regular;21" halign="center" valign="center" transparent="0" foregroundColor="window-fg" backgroundColor="black" zPosition="4" />
+		<widget name="waitingtext" position="20,82" size="660,550" font="Regular;21" halign="center" valign="center" transparent="0" foregroundColor="window-fg" backgroundColor="black" zPosition="4" />
 		<widget name="list" position="20,82" size="660,590" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" foregroundColor="window-fg" backgroundColor="black" transparent="0" enableWrapAround="1" />
-		<widget name="chosenletter" position="20,82" size="660,576" foregroundColor="yellow" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4" />
+		<widget name="chosenletter" position="20,82" size="660,550" foregroundColor="yellow" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4" />
 		<widget name="DescriptionBorder" position="20,600" size="660,0" zPosition="3" transparent="1" />
-		<widget source="Service" render="Label" position="695,410" size="300,25" zPosition="2" backgroundColor="black" font="Bold;22" noWrap="1" transparent="0" valign="top" foregroundColor="infobar_service_frgrnd">
+		<widget source="Service" render="Label" position="695,410" size="300,25" zPosition="2" backgroundColor="window-sel-fg" font="Bold;22" noWrap="1" transparent="0" valign="top" >
 			<convert type="MovieInfo">RecordServiceName</convert>
 		</widget>
-		<widget source="Service" render="Label" position="1128,410" zPosition="2" size="100,25" transparent="0" backgroundColor="black" font="Bold;22" halign="right" foregroundColor="infobar_service_frgrnd">
+		<widget source="Service" render="Label" position="1128,410" zPosition="2" size="100,25" transparent="0" backgroundColor="window-sel-fg" font="Bold;22" halign="right" >
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>
 		</widget>
-		<widget source="Service" render="Label" position="695,445" size="570,210" font="Regular;20" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
+		<widget source="Service" render="Label" position="695,445" size="570,200" font="Regular;20" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
 			<convert type="MovieInfo">ShortDescription</convert>
 		</widget>
-		<widget name="freeDiskSpace" position="870,660" size="400,20" font="Regular;18" backgroundColor="window-sel-fg" valign="center" halign="right" zPosition="2" transparent="1" />
-		<widget name="TrashcanSize" position="695,660" size="400,20" font="Regular;18" backgroundColor="window-sel-fg" valign="center" halign="left" zPosition="2" transparent="1" />
+		<widget name="TrashcanSize" position="695,660" size="400,20" font="Regular;18" backgroundColor="window-sel-fg" halign="left" zPosition="2" transparent="1" />
+		<widget source="Service" render="Label" position="50,660" size="250,20" font="Regular;18" backgroundColor="window-sel-fg" halign="center" zPosition="2" transparent="1" >
+			<convert type="MovieInfo">FileSize</convert>
+		</widget>
+		<widget name="freeDiskSpace" position="870,660" size="400,20" font="Regular;18" backgroundColor="window-sel-fg" halign="right" zPosition="2" transparent="1" />
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
 		<panel name="FullscreenYellow1Panel" />
