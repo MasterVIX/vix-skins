@@ -1,9 +1,5 @@
 ﻿<skin>
-<<<<<<< HEAD
-	<!--  Skin: ViX-Day-HD Vs 2.92 by AndyBlac @ www.world-of-satellite.com  -->
-=======
-	<!--  Skin: ViX-Day-HD Vs 2.89 by AndyBlac @ www.world-of-satellite.com  -->
->>>>>>> parent of 97cb5c5... Screentweaks
+	<!--  Skin: ViX-Day-HD Vs 2.96 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -41,7 +37,7 @@
 		<color name="window-sel-fg" value="#00000000" />
 		<color name="event-frgrnd" value="#00b1762b" />
 		<color name="event-bkgrnd" value="#00000000" />
-		<color name="event-now-next_frgrnd" value="#00ffb300" />
+		<color name="orange" value="#00ffb300" />
 		<color name="transparent" value="#ffffffff" />
 		<color name="transpBlack" value="#80000000" />
 		<color name="transpWhite" value="#80ffffff" />
@@ -1130,34 +1126,34 @@
 			<convert type="ServiceOrbitalPosition">
 			</convert>
 		</widget>
-		<widget name="list" position="10,82" size="660,590" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" backgroundColor="black" foregroundColorEvent="event-frgrnd" foregroundColorEventSelected="#00202020" foregroundColorServiceNotAvail="verydarkgrey" serviceItemHeight="36" serviceNumberFont="Regular;25" serviceNameFont="Regular;25" serviceInfoFont="Bold;22" transparent="0" zPosition="3" scrollbarMode="showOnDemand" />
-		<widget source="ServiceEvent" render="Label" position="695,410" size="400,25" font="Bold;24" foregroundColor="event-now-next_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
+		<widget name="list" position="10,82" size="660,590" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" backgroundColor="black" foregroundColorEvent="event-frgrnd" foregroundColorEventSelected="#00202020" foregroundColorServiceNotAvail="orange" serviceItemHeight="36" serviceNumberFont="Regular;25" serviceNameFont="Regular;25" serviceInfoFont="Bold;22" transparent="0" zPosition="3" scrollbarMode="showOnDemand" />
+		<widget source="ServiceEvent" render="Label" position="695,410" size="400,25" font="Bold;24" foregroundColor="orange" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
 			<convert type="EventName">NowName</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="1105,410" size="60,25" font="Bold;24" foregroundColor="event-now-next_frgrnd" backgroundColor="black" zPosition="2" transparent="0" halign="right" noWrap="1" valign="top">
+		<widget source="ServiceEvent" render="Label" position="1105,410" size="60,25" font="Bold;24" foregroundColor="orange" backgroundColor="black" zPosition="2" transparent="0" halign="right" noWrap="1" valign="top">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">
 			</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="1170,410" size="80,25" font="Bold;24" foregroundColor="event-now-next_frgrnd" backgroundColor="black" zPosition="2" transparent="0" noWrap="1" valign="top">
+		<widget source="ServiceEvent" render="Label" position="1170,410" size="80,25" font="Bold;24" foregroundColor="orange" backgroundColor="black" zPosition="2" transparent="0" noWrap="1" valign="top">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="695,435" size="575,112" font="Regular;22" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="695,555" size="400,25" font="Bold;24" foregroundColor="event-now-next_frgrnd" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
+		<widget source="ServiceEvent" render="Label" position="695,555" size="400,25" font="Bold;24" foregroundColor="orange" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
 			<convert type="EventName">NextName</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="695,585" size="575,88" font="Regular;22" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
 			<convert type="EventName">NextDescription</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="1105,555" size="60,25" font="Bold;24" foregroundColor="event-now-next_frgrnd" backgroundColor="black" zPosition="2" transparent="0" halign="right" noWrap="1" valign="top">
+		<widget source="ServiceEvent" render="Label" position="1105,555" size="60,25" font="Bold;24" foregroundColor="orange" backgroundColor="black" zPosition="2" transparent="0" halign="right" noWrap="1" valign="top">
 			<convert type="EventTime">NextStartTime</convert>
 			<convert type="ClockToText">
 			</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="1170,555" size="80,25" font="Bold;24" foregroundColor="event-now-next_frgrnd" backgroundColor="black" zPosition="2" transparent="0" noWrap="1" valign="top">
+		<widget source="ServiceEvent" render="Label" position="1170,555" size="80,25" font="Bold;24" foregroundColor="orange" backgroundColor="black" zPosition="2" transparent="0" noWrap="1" valign="top">
 			<convert type="EventTime">NextEndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
@@ -1168,13 +1164,13 @@
 	</screen>
 	<screen name="SlimChannelSelection" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="list" position="10,107" size="503,420" backgroundColor="black" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H30x503.png" foregroundColorEvent="event-frgrnd" foregroundColorEventSelected="#00202020" foregroundColorServiceNotAvail="verydarkgrey" serviceItemHeight="30" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Bold;21" transparent="1" zPosition="3" scrollbarMode="showOnDemand"/>
-		<widget source="ServiceEvent" render="Label" position="10,530" zPosition="2" size="60,25" font="Bold;22" backgroundColor="black" halign="right" noWrap="1" valign="top" foregroundColor="event-now-next_frgrnd" transparent="1">
+		<widget name="list" position="10,107" size="503,420" backgroundColor="black" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H30x503.png" foregroundColorEvent="event-frgrnd" foregroundColorEventSelected="#00202020" foregroundColorServiceNotAvail="orange" serviceItemHeight="30" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Bold;21" transparent="1" zPosition="3" scrollbarMode="showOnDemand"/>
+		<widget source="ServiceEvent" render="Label" position="10,530" zPosition="2" size="60,25" font="Bold;22" backgroundColor="black" halign="right" noWrap="1" valign="top" foregroundColor="orange" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">
 			</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="75,530" zPosition="2" size="73,25" font="Bold;22" backgroundColor="black" noWrap="1" valign="top" foregroundColor="event-now-next_frgrnd" transparent="1">
+		<widget source="ServiceEvent" render="Label" position="75,530" zPosition="2" size="73,25" font="Bold;22" backgroundColor="black" noWrap="1" valign="top" foregroundColor="orange" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
@@ -1286,7 +1282,7 @@ self.autoResize()
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
 		<widget name="lab1" position="0,70" size="1280,600" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
-		<widget name="timeline_text" position="20,70" size="1240,30" backgroundColor="black" foregroundColor="event-now-next_frgrnd" transparent="1" zPosition="0" />
+		<widget name="timeline_text" position="20,70" size="1240,30" backgroundColor="black" foregroundColor="orange" transparent="1" zPosition="0" />
 		<widget name="list" position="20,95" size="1240,572" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" />
 <!--		<widget name="timeline0" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline1" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />
@@ -1310,14 +1306,14 @@ self.autoResize()
 		<widget source="session.CurrentService" render="Label" position="880,75" size="378,25" font="Boldit;22" foregroundColor="event-frgrnd" borderWidth="1" borderColor="black" transparent="1" valign="center" halign="center" noWrap="1" zPosition="5" >
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="Event" render="Label" position="20,70" size="577,30" halign="left" backgroundColor="black" font="Bold;24" noWrap="1" transparent="0" foregroundColor="event-now-next_frgrnd">
+		<widget source="Event" render="Label" position="20,70" size="577,30" halign="left" backgroundColor="black" font="Bold;24" noWrap="1" transparent="0" foregroundColor="orange">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="Event" render="Label" position="613,70" size="65,30" halign="right" backgroundColor="black" font="Bold;24" noWrap="1" transparent="0" foregroundColor="event-now-next_frgrnd">
+		<widget source="Event" render="Label" position="613,70" size="65,30" halign="right" backgroundColor="black" font="Bold;24" noWrap="1" transparent="0" foregroundColor="orange">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="Event" render="Label" position="680,70" size="100,30" halign="left" backgroundColor="black" font="Bold;24" noWrap="1" transparent="0" foregroundColor="event-now-next_frgrnd">
+		<widget source="Event" render="Label" position="680,70" size="100,30" halign="left" backgroundColor="black" font="Bold;24" noWrap="1" transparent="0" foregroundColor="orange">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
@@ -1325,7 +1321,7 @@ self.autoResize()
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget name="lab1" position="0,292" size="1280,380" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
-		<widget name="timeline_text" position="20,290" size="1240,30" backgroundColor="black" foregroundColor="event-now-next_frgrnd" transparent="1" zPosition="0" />
+		<widget name="timeline_text" position="20,290" size="1240,30" backgroundColor="black" foregroundColor="orange" transparent="1" zPosition="0" />
 		<widget name="list" position="20,317" size="1240,360" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" />
 <!--		<widget name="timeline0" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline1" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />
@@ -1501,10 +1497,10 @@ self.autoResize()
 		<widget name="list" position="20,82" size="660,590" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" foregroundColor="window-fg" backgroundColor="black" transparent="0" enableWrapAround="1" />
 		<widget name="chosenletter" position="20,82" size="660,576" foregroundColor="yellow" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4" />
 		<widget name="DescriptionBorder" position="20,600" size="660,0" zPosition="3" transparent="1" />
-		<widget source="Service" render="Label" position="695,410" size="300,25" zPosition="2" backgroundColor="black" font="Bold;22" noWrap="1" transparent="0" valign="top" foregroundColor="infobar_service_frgrnd">
+		<widget source="Service" render="Label" position="695,410" size="300,25" zPosition="2" foregroundColor="orange" backgroundColor="black" font="Bold;22" noWrap="1" transparent="0" valign="top" >
 			<convert type="MovieInfo">RecordServiceName</convert>
 		</widget>
-		<widget source="Service" render="Label" position="1128,410" zPosition="2" size="100,25" transparent="0" backgroundColor="black" font="Bold;22" halign="right" foregroundColor="infobar_service_frgrnd">
+		<widget source="Service" render="Label" position="1128,410" zPosition="2" size="100,25" transparent="0" foregroundColor="orange" backgroundColor="black" font="Bold;22" halign="right" >
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>
 		</widget>
@@ -2094,9 +2090,9 @@ self.autoResize()
 		<panel name="MenuPanel" />
 		<widget name="config" position="15,107" size="495,536" itemHeight="25" font="Regular;22" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x420.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="cancel" pixmap="ViX_HD_Common/buttons/red.png" position="40,663" size="25,25" alphatest="blend" backgroundColor="#27c5c9cc" />
-		<widget name="canceltext" position="75,663" zPosition="1" size="190,25" font="Regular;20" halign="left" valign="center" backgroundColor="window-bg" transparent="1" />
+		<widget name="canceltext" position="75,663" zPosition="1" size="190,25" font="Regular;20" halign="left" valign="center" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" transparent="1" />
 		<widget name="ok" pixmap="ViX_HD_Common/buttons/green.png" position="40,690" size="25,25" alphatest="blend" backgroundColor="#27c5c9cc" />
-		<widget name="oktext" position="75,690" zPosition="1" size="190,25" font="Regular;20" halign="left" valign="center" backgroundColor="window-bg" transparent="1" />
+		<widget name="oktext" position="75,690" zPosition="1" size="190,25" font="Regular;20" halign="left" valign="center" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" transparent="1" />
 		<widget name="HelpWindow" pixmap="ViX_HD_Common/buttons/vkey_icon.png" position="15,440" zPosition="1" size="541,720" transparent="1" alphatest="on" />
 	</screen>
 	<screen name="TimerLog" position="209,100" size="845,520" flags="wfBorder" backgroundColor="window-bg">
