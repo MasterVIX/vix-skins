@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.76 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.77 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -38,7 +38,7 @@
     <color name="rssviewtop" value="#00005050" />
     <color name="secondBG" value="#002b3447" />
     <color name="secondFG" value="#00fcc000" />
-    <color name="selectedBG" value="#00202529" />
+    <color name="selectedBG" value="#06303240" />
     <color name="selectedFG" value="#00fcc000" />
     <color name="transparent" value="#ff000000" />
     <color name="transpBlack" value="#54111112" />
@@ -782,17 +782,22 @@
   <!-- ## Menus ## -->
   <screen name="Menu" title="Main menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
-    <widget source="menu" render="Listbox" position="520,82" size="755,575" font="Regular;22" transparent="1" scrollbarMode="showOnDemand">
-      <convert type="StringList" />
+    <widget source="menu" render="Listbox" position="590,82" size="685,575" transparent="1" scrollbarMode="showOnDemand">
+      <convert type="TemplatedMultiContent">
+			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
+			"fonts": [gFont("Regular", 24)],
+			"itemHeight": 40
+			}
+      </convert>
     </widget>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen name="menu_mainmenu" title="Main menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
-    <widget source="menu" render="Listbox" position="520,82" size="755,575" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="menu" render="Listbox" position="590,82" size="685,575" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 22)],
+			"fonts": [gFont("Regular", 24)],
 			"itemHeight": 40
 			}
       </convert>
@@ -801,10 +806,10 @@
   </screen>
   <screen name="menu_setup" title="Setup menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
-    <widget source="menu" render="Listbox" position="520,82" size="755,575" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="menu" render="Listbox" position="590,82" size="685,575" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 22)],
+			"fonts": [gFont("Regular", 24)],
 			"itemHeight": 40
 			}
       </convert>
@@ -813,10 +818,10 @@
   </screen>
   <screen name="menu_system" title="System menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
-    <widget source="menu" render="Listbox" position="520,82" size="755,570" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="menu" render="Listbox" position="590,82" size="685,570" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 22)],
+			"fonts": [gFont("Regular", 24)],
 			"itemHeight": 40
 			}
       </convert>
@@ -825,10 +830,10 @@
   </screen>
   <screen name="menu_information" title="Information menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
-    <widget source="menu" render="Listbox" position="527,87" size="755,577" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="menu" render="Listbox" position="590,87" size="685,577" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 22)],
+			"fonts": [gFont("Regular", 24)],
 			"itemHeight": 40
 			}
       </convert>
@@ -839,10 +844,10 @@
   </screen>
   <screen name="menu_scan" title="Scan menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
-    <widget source="menu" render="Listbox" position="520,82" size="755,580" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="menu" render="Listbox" position="590,82" size="685,580" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 22)],
+			"fonts": [gFont("Regular", 24)],
 			"itemHeight": 40
 			}
       </convert>
@@ -851,10 +856,10 @@
   </screen>
   <screen name="menu_harddisk" title="HDD menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
-    <widget source="menu" render="Listbox" position="520,82" size="755,580" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="menu" render="Listbox" position="590,82" size="685,580" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 22)],
+			"fonts": [gFont("Regular", 24)],
 			"itemHeight": 40
 			}
       </convert>
@@ -863,10 +868,10 @@
   </screen>
   <screen name="menu_shutdown" title="Shutdown menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
-    <widget source="menu" render="Listbox" position="520,82" size="755,580" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="menu" render="Listbox" position="590,82" size="685,580" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 22)],
+			"fonts": [gFont("Regular", 24)],
 			"itemHeight": 40
 			}
       </convert>
@@ -6158,13 +6163,13 @@
     <panel name="BasicTemplate"/>
     <ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
     <widget source="key_red" render="Label" position="50,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
-     <widget source="menu" render="Listbox" position="590,110" size="600,500" scrollbarMode="showOnDemand">
+     <widget source="menu" render="Listbox" position="590,82" size="685,575" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
+				MultiContentEntryText(pos = (45,9), size = (535,30), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
 				],
-				"fonts": [gFont("Regular",22)],
-				"itemHeight": 30
+				"fonts": [gFont("Regular",24)],
+				"itemHeight": 40
 				}
     </convert>
     </widget>
