@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--  Skin: ViX-Day-HD Vs 2.97 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Day-HD Vs 2.98 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -4182,15 +4182,16 @@ self.autoResize()
 		<panel name="MenuPanel" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
-		<widget name="config" position="10,107" size="503,535" font="Regular;22" itemHeight="30" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="config" position="10,107" size="503,450" font="Regular;22" itemHeight="28" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="description" position="10,558" size="503,82" font="Regular;19" halign="center" valign="center" transparent="0" zPosition="1" />
 		<widget name="pleasewait" position="10,107" size="503,535" font="Regular;22" halign="center" valign="center" transparent="0" zPosition="5" />
 	</screen>
 	<screen name="AutoBouquetsMaker_Setup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
-		<widget name="config" position="10,107" size="503,455" font="Regular;22" itemHeight="28" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
-		<widget name="description" position="10,565" size="503,66" font="Regular;22" halign="center" valign="center" transparent="0" zPosition="1" />
+		<widget name="config" position="10,107" size="503,450" font="Regular;22" itemHeight="28" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="description" position="10,558" size="503,82" font="Regular;19" halign="center" valign="center" transparent="0" zPosition="1" />
 		<widget name="pleasewait" position="10,107" size="503,535" font="Regular;22" halign="center" valign="center" transparent="0" zPosition="5" />
 	</screen>
 	<screen name="AutoBouquetsMaker_Ordering" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -4236,8 +4237,8 @@ self.autoResize()
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
-					MultiContentEntryText(pos = (47, 0), size = (400, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
-					MultiContentEntryText(pos = (250, 0), size = (250, 28), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_TOP, text = 2),
+					MultiContentEntryText(pos = (45, 0), size = (200, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (260, 0), size = (225, 28), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_TOP, text = 2),
 					],
 					"fonts": [gFont("Regular", 22)],
 					"itemHeight": 28
@@ -4253,8 +4254,8 @@ self.autoResize()
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
-					MultiContentEntryText(pos = (47, 0), size = (400, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
-					MultiContentEntryText(pos = (250, 0), size = (250, 28), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_TOP, text = 2),
+					MultiContentEntryText(pos = (45, 0), size = (200, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (260, 0), size = (225, 28), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_TOP, text = 2),
 					],
 					"fonts": [gFont("Regular", 22)],
 					"itemHeight": 28
