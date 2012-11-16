@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.80 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.81 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -127,7 +127,8 @@
       <convert type="ClockToText">Date</convert>
     </widget>	
 	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-    <widget source="session.VideoPicture" backgroundColor="transparent" position="5,85" render="Pig" size="477,270" zPosition="1" />
+    <eLabel position="4,84" size="479,272" zPosition="1" backgroundColor="selectedBG" />
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="5,85" render="Pig" size="477,270" zPosition="3" />
   </screen>
   
   <!--  ## Volume ## -->
@@ -6811,7 +6812,8 @@
     <widget source="global.CurrentTime" render="Label" position="950,25" size="300,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
       <convert type="ClockToText">Date</convert>
     </widget>
-    <widget source="session.VideoPicture" render="Pig" position="5,60" size="393,221" backgroundColor="transparent" zPosition="1" />
+    <eLabel position="4,59" size="395,223" zPosition="1" backgroundColor="selectedBG" />	
+    <widget source="session.VideoPicture" render="Pig" position="5,60" size="393,221" backgroundColor="transparent" zPosition="2" />
 	<!--<widget name="date" position="720,15" size="180,30" font="Regular;26" halign="left" foregroundColor="#00e5b243" backgroundColor="secondBG" transparent="1" />-->
 	<!--    <widget source="global.CurrentTime" render="Label" position="650,15" size="350,25" font="Regular;26" halign="right" transparent="1" foregroundColor="#00e5b243" backgroundColor="#ff000000" >
       <convert type="ClockToText">Date</convert>
