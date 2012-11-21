@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.81 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.82 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -27,6 +27,7 @@
     <color name="foreground" value="#00f0f0f0" />
     <color name="green" value="#0056c856" />
     <color name="greentransparent" value="#08004c00" />
+    <color name="greenlight" value="#00D3E5B9"></color> 
     <color name="grey" value="#00aaaaaa" />
     <color name="infobarBG" value="#41080808" />
     <color name="listbox" value="#000f56a4" />
@@ -887,7 +888,7 @@
     <widget source="key_green" render="Label" position="340,682" size="220,30" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,410" size="1,1" zPosition="1" transparent="1" alphatest="on" />
     <widget name="config" position="520,82" size="755,577" itemHeight="25" font="Regular;22" scrollbarMode="showOnDemand" enableWrapAround="1" />
-    <widget name="description" position="10,385" size="480,250" zPosition="10" font="Regular;20" foregroundColor="secondFG" halign="center" transparent="0" />
+    <widget name="description" position="10,385" size="480,250" zPosition="10" font="Regular;20" foregroundColor="greenlight" halign="center" transparent="0" />
     <widget source="VKeyIcon" render="Pixmap" pixmap="Magic-HD-Common/buttons/key_text.png" position="1160,682" zPosition="1" size="35,25" transparent="1" alphatest="on" >
       <convert type="ConditionalShowHide" />
     </widget>
@@ -1208,7 +1209,7 @@
 						
       </convert>
     </widget>
-    <widget source="introduction" render="Label" position="15,380" size="477,150" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="unf47d19" transparent="1" />
+    <widget source="introduction" render="Label" position="15,380" size="477,150" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="greenlight" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen flags="wfNoBorder" name="InputDeviceSetup" position="0,0" size="1280,720" title="Input device setup">
@@ -1222,7 +1223,7 @@
     <widget source="key_yellow" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
     <widget source="key_blue" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
     <widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-    <widget source="introduction" render="Label" position="15,380" size="477,200" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="unf47d19" transparent="1" />
+    <widget source="introduction" render="Label" position="15,380" size="477,200" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="greenlight" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen name="Console" title="Command execution" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1980,7 +1981,7 @@
     <widget source="key_blue" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25" />
     <widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-    <widget source="introduction" render="Label" position="20,400" size="477,250" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="unf47d19" transparent="1" />
+    <widget source="introduction" render="Label" position="20,400" size="477,250" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="greenlight" transparent="1" />
   </screen>
   <screen name="BackupScreen" title="Backup is running" position="0,0" size="1280,720" flags="wfNoBorder">
     <widget name="config" position="520,90" size="755,575" transparent="1" scrollbarMode="showOnDemand" />
@@ -2303,7 +2304,7 @@
     <panel name="BasicTemplate"/>
     <widget source="key_red" render="Label" position="50,682" size="220,26" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
     <widget name="menulist" position="520,82" size="755,550" itemHeight="32" font="Regular;22" zPosition="10" scrollbarMode="showOnDemand" />
-    <widget source="description" render="Label" position="5,385" size="477,300" transparent="1" font="Regular;21" valign="center" halign="center" foregroundColor="unf47d19" />
+    <widget source="description" render="Label" position="5,385" size="477,300" transparent="1" font="Regular;21" valign="center" halign="center" foregroundColor="greenlight" />
     <widget source="IFtext" render="Label" position="590,645" size="166,25" transparent="1" zPosition="10" font="Regular;21" halign="right" />
     <widget source="IF" render="Label" position="760,645" size="500,25" transparent="1" zPosition="10" font="Regular;21" halign="left" />
     <widget source="Statustext" render="Label" position="316,645" size="200,26" transparent="1" zPosition="10" font="Regular;20" valign="center" halign="right" />
@@ -2323,7 +2324,7 @@
     <widget source="DNS2text" render="Label" position="835,480" size="150,25" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;21" valign="left" halign="left" />
     <widget source="DNS1" render="Label" position="990,450" size="230,25" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
     <widget source="DNS2" render="Label" position="990,480" size="230,25" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
-    <widget source="introduction" render="Label" position="400,413" size="820,27" font="Regular;21" halign="center" />
+    <widget source="introduction" render="Label" position="400,413" size="820,27" font="Regular;21" foregroundColor="greenlight" halign="center" />
     <widget source="IPtext" render="Label" position="400,450" size="150,25" zPosition="1" foregroundColor="foreground" font="Regular;21" halign="left" />
     <widget source="Netmasktext" render="Label" position="400,480" size="150,25" zPosition="1" foregroundColor="foreground" font="Regular;21" halign="left" />
     <widget source="Gatewaytext" render="Label" position="400,510" size="150,25" zPosition="1" foregroundColor="foreground" font="Regular;21" halign="left" />
@@ -2548,7 +2549,7 @@
 				}
 		</convert>
     </widget>
-    <widget source="introduction" render="Label" position="15,605" size="1100,60" transparent="1" zPosition="10" font="Regular;21" valign="center" halign="center" />
+    <widget source="introduction" render="Label" position="15,605" foregroundColor="greenlight" size="1100,60" transparent="1" zPosition="10" font="Regular;21" valign="center" halign="center" />
   </screen>
   <screen name="NetworkAdapterTest" title="Network test" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
@@ -2621,7 +2622,7 @@
 	<ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
     <widget source="key_red" render="Label" position="50,682" size="220,26" backgroundColor="background" zPosition="1" transparent="1" font="Regular;20" halign="left" />
 	<widget name="menulist" position="520,82" size="755,550" itemHeight="32" font="Regular;22" zPosition="10" scrollbarMode="showOnDemand" enableWrapAround="1" />
-	<widget source="introduction" render="Label" position="15,380" size="477,200" transparent="1" font="Regular;21" valign="center" halign="center" foregroundColor="secondFG" />
+	<widget source="introduction" render="Label" position="15,380" foregroundColor="greenlight" size="477,200" transparent="1" font="Regular;21" valign="center" halign="center" />
 	</screen>
   <screen name="UserManager" title="UserManager" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
@@ -6942,7 +6943,7 @@
     <widget source="key_red" render="Label" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget source="key_green" render="Label" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 	<widget source="key_yellow" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
-    <widget name="description" font="Regular;20" foregroundColor="secondFG" position="520,320" size="700,150" zPosition="10" halign="center" valign="center" transparent="1" />
+    <widget name="description" font="Regular;20" foregroundColor="greenlight" position="520,320" size="700,150" zPosition="10" halign="center" valign="center" transparent="1" />
     <widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,120" size="700,200" transparent="1" />
     <eLabel text="Use arrows Up/Down to select" position="5,400" size="477,50" backgroundColor="secondBG" font="Regular;22" halign="center" transparent="1" zPosition="1" />
     <eLabel text="Use arrows Left/Right to adjust" position="5,450" size="477,50" backgroundColor="secondBG" font="Regular;22" halign="center" transparent="1" zPosition="1" />
