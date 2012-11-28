@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.36 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.37 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -1368,6 +1368,31 @@
 		<panel name="Green1Panel" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="current_status" position="5,400" size="482,200" font="Regular;20" valign="center" />
+	</screen>
+	<screen name="CronTimers" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<widget name="lab1" position="35,480" size="150,30" font="Regular;20" valign="center" transparent="0" />
+		<widget name="labdisabled" position="210,480" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
+		<widget name="labactive" position="210,480" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
+		<widget name="lab2" position="35,550" size="150,26" font="Regular;20" valign="center" transparent="0" />
+		<widget name="labstop" position="210,550" size="250,26" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
+		<widget name="labrun" position="210,550" size="250,26" zPosition="1" font="Regular;20" valign="left" halign="center" backgroundColor="green" />
+		<widget name="key" position="520,82" size="755,25" font="Regular;20" halign="center" transparent="1" valign="center" backgroundColor="background" />
+		<widget source="list" render="Listbox" position="520,130" size="755,500" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" enableWrapAround="1" >
+			<convert type="StringList" />
+		</widget>
+	 <eLabel text="'OK' = Show details" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="1055,682" size="240,26" transparent="1" zPosition="1" />
+	</screen>
+	<screen name="CronTimersConfig" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<ePixmap pixmap="skin_default/buttons/key_text.png" position="1110,682" zPosition="4" size="35,25" alphatest="on" transparent="1" />
+		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey" />
 	</screen>
 	<!-- ## Service Selectors ## -->
 	<screen flags="wfNoBorder" name="ChannelSelectionRadio" position="0,0" size="1280,502" >
@@ -4990,31 +5015,6 @@
 		<panel name="Green2Panel" />
 		<panel name="Yellow2Panel" />
 		<widget name="checkList" position="520,82" size="755,583" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen flags="wfNoBorder" name="VIXCronManager" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<panel name="Yellow1Panel" />
-		<panel name="Blue1Panel" />
-		<widget name="lab1" position="35,480" size="150,30" font="Regular;20" valign="center" transparent="0" />
-		<widget name="labdisabled" position="210,480" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
-		<widget name="labactive" position="210,480" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
-		<widget name="lab2" position="35,550" size="150,26" font="Regular;20" valign="center" transparent="0" />
-		<widget name="labstop" position="210,550" size="250,26" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
-		<widget name="labrun" position="210,550" size="250,26" zPosition="1" font="Regular;20" valign="left" halign="center" backgroundColor="green" />
-		<widget name="key" position="520,82" size="755,25" font="Regular;20" halign="center" transparent="1" valign="center" backgroundColor="background" />
-		<widget source="list" render="Listbox" position="520,130" size="755,500" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" enableWrapAround="1" >
-			<convert type="StringList" />
-		</widget>
-	 <eLabel text="'OK' = Show details" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="1055,682" size="240,26" transparent="1" zPosition="1" />
-	</screen>
-	<screen flags="wfNoBorder" name="VIXSetupCronConf" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel" />
-		<ePixmap pixmap="skin_default/buttons/key_text.png" position="1110,682" zPosition="4" size="35,25" alphatest="on" transparent="1" />
-		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey" />
 	</screen>
 	<screen flags="wfNoBorder" name="VIXIPKInstaller" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
