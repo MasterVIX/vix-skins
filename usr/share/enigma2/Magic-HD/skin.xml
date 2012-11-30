@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.37 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.39 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -5212,11 +5212,19 @@
 		<widget name="timeline5" position="5,313" zPosition="1" size="2,365" pixmap="skin_default/timeline.png" />-->
 		<widget name="timeline_now" position="5,313" zPosition="2" size="19,365" pixmap="Magic-HD-Common/window/timeline-now.png" alphatest="on" />
 	</screen>
-	<screen flags="wfNoBorder" name="ManualFancontrol" position="0,0" size="1280,720" >
+	<screen flags="wfNoBorder" name="ManualFancontrol" position="0,0" size="1280,720" title="" >
 		<panel name="BasicTemplate"/>
 		<panel name="Red2Panel" />
 		<panel name="Green2Panel" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
+		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="30" position="520,82" size="755,150" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+			<widget source="SensorTempText0" render="Label" position="520,250" zPosition="1" size="90,40" font="Regular;20" halign="right" valign="top" transparent="1" foregroundColor="grey" />
+			<widget source="SensorTemp0" render="Label" position="620,250" zPosition="1" size="100,20" font="Regular;20" halign="left" foregroundColor="grey">
+				<convert type="SensorToText"></convert>
+			</widget>
+			<widget source="SensorFanText0" render="Label" position="800,250" zPosition="1" size="120,40" font="Regular;20" halign="right" valign="top" transparent="1" foregroundColor="grey" />
+			<widget source="SensorFan0" render="Label" position="930,250" zPosition="1" size="150,20" font="Regular;20" halign="left" foregroundColor="grey" >
+				<convert type="SensorToText"></convert>
+			</widget>
 	</screen>
 	<screen flags="wfNoBorder" name="FanSetupConfiguration" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
