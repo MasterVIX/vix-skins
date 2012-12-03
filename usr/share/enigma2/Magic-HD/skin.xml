@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.39 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.40 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -3204,6 +3204,104 @@
 		<widget name="daemon0" alphatest="on" pixmap="skin_default/buttons/button_green_off.png" position="760,605" size="15,16" zPosition="10" transparent="1"/>
 		<widget name="daemon1" alphatest="on" pixmap="skin_default/buttons/button_green.png" position="760,605" size="15,16" zPosition="10" transparent="1"/>
 	</screen>
+<!-- ## TempFanControl ##-->
+	<screen name="TempFanControl" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="BasicTemplate"/>
+		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+		<widget source="red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
+		<widget source="green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
+		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,120" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+			<widget source="SensorTempText0" render="Label" position="520,210" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" transparent="1" foregroundColor="grey" />
+			<widget source="SensorTemp0" render="Label" position="610,210" zPosition="1" size="100,20" font="Regular;20" halign="right" foregroundColor="grey" >
+				<convert type="SensorToText"></convert>
+			</widget>
+			<widget source="SensorTempText1" render="Label" position="520,230" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" transparent="1" foregroundColor="grey" />
+			<widget source="SensorTemp1" render="Label" position="610,230" zPosition="1" size="100,20" font="Regular;20" halign="right" foregroundColor="grey" >
+				<convert type="SensorToText"></convert>
+			</widget>
+			<widget source="SensorFanText0" render="Label" position="800,210" zPosition="1" size="120,40" font="Regular;20" halign="left" valign="top" transparent="1" foregroundColor="grey"  />
+			<widget source="SensorFan0" render="Label" position="920,210" zPosition="1" size="150,20" font="Regular;20" halign="right" foregroundColor="grey" >
+				<convert type="SensorToText"></convert>
+			</widget>
+			<widget source="SensorFanText1" render="Label" position="800,230" zPosition="1" size="120,40" font="Regular;20" halign="left" valign="top"	transparent="1" foregroundColor="grey" />
+			<widget source="SensorFan1" render="Label" position="920,230" zPosition="1" size="150,20" font="Regular;20" halign="right" foregroundColor="grey" >
+				<convert type="SensorToText"></convert>
+			</widget>
+	</screen>
+<!-- ## FanControl 2 ##-->
+	<screen flags="wfNoBorder" name="FanControl2SpezialSetup" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
+	</screen>
+	<screen flags="wfNoBorder" name="FanControl2Plugin" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
+		<panel name="Yellow2Panel" />
+		<panel name="Blue2Panel" />
+		<ePixmap pixmap="skin_default/buttons/key_menu.png" position="1110,682" size="35,25" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/key_info.png" position="1150,682" size="35,25" alphatest="on" />
+		<widget source="Version" render="Label" font="Regular;22" position="15,400" size="477,25" transparent="1" />
+		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,200" transparent="1" />
+		<widget source="introduction" render="Label" position="520,315" size="755,30" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="background" transparent="1" />
+		<widget source="TxtTemp" render="Label" position="520,415" size="200,25" zPosition="1" font="Regular;17" halign="right" valign="center" backgroundColor="background" transparent="1" />
+		<widget source="TxtZielRPM" render="Label" position="520,450" size="200,25" zPosition="1" font="Regular;17" halign="right" valign="center" backgroundColor="background" transparent="1" />
+		<widget source="TxtRPM" render="Label" position="520,485" size="200,25" zPosition="1" font="Regular;17" halign="right" valign="center" backgroundColor="background" transparent="1" />
+		<widget source="TxtVLT" render="Label" position="520,520" size="200,25" zPosition="1" font="Regular;17" halign="right" valign="center" backgroundColor="background" transparent="1" />
+		<widget source="TxtPWM" render="Label" position="520,565" size="200,25" zPosition="1" font="Regular;17" halign="right" valign="center" backgroundColor="background" transparent="1" />
+		<widget source="PixTemp" render="Progress" position="740,425" size="375,5" borderWidth="1" />
+		<widget source="PixZielRPM" render="Progress" position="740,460" size="375,5" borderWidth="1" />
+		<widget source="PixRPM" render="Progress" position="740,495" size="375,5" borderWidth="1" />
+		<widget source="PixVLT" render="Progress" position="740,530" size="375,5" borderWidth="1" />
+		<widget source="PixPWM" render="Progress" position="740,575" size="375,5" borderWidth="1" />
+	</screen>
+	<screen flags="wfNoBorder" name="FanControl2Monitor" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<widget source="TxtTemp0" render="Label" position="555,180" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
+		<widget source="TxtTemp1" render="Label" position="555,210" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
+		<widget source="TxtTemp2" render="Label" position="555,240" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
+		<widget source="TxtTemp3" render="Label" position="555,270" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
+		<widget source="TxtTemp4" render="Label" position="555,300" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
+		<widget source="TxtTemp5" render="Label" position="555,330" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
+		<widget source="TxtTemp6" render="Label" position="555,360" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
+		<widget source="TxtTemp7" render="Label" position="555,390" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
+		<widget source="TxtHDD" render="Label" position="505,420" size="300,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
+		<widget source="TxtFan" render="Label" position="555,450" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
+		<widget name="TxtMinTemp" position="820,150" size="50,25" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="#25062748" transparent="1" />
+		<widget source="TxtFC2Temp" render="Label" position="960,140" size="50,30" zPosition="1" font="Regular;25" halign="center" valign="center" backgroundColor="#25062748" transparent="1" foregroundColor="yellow" />
+		<widget name="TxtMaxTemp" position="1100,150" size="50,25" zPosition="1" font="Regular;20" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
+		<widget source="ProTemp0" render="Progress" position="825,190" size="325,5" borderWidth="1" />
+		<widget source="ProTemp1" render="Progress" position="825,220" size="325,5" borderWidth="1" />
+		<widget source="ProTemp2" render="Progress" position="825,250" size="325,5" borderWidth="1" />
+		<widget source="ProTemp3" render="Progress" position="825,280" size="325,5" borderWidth="1" />
+		<widget source="ProTemp4" render="Progress" position="825,310" size="325,5" borderWidth="1" />
+		<widget source="ProTemp5" render="Progress" position="825,340" size="325,5" borderWidth="1" />
+		<widget source="ProTemp6" render="Progress" position="825,370" size="325,5" borderWidth="1" />
+		<widget source="ProTemp7" render="Progress" position="825,400" size="325,5" borderWidth="1" />
+		<widget source="ProHDD" render="Progress" position="825,430" size="325,5" borderWidth="1" />
+		<widget source="ProFan" render="Progress" position="825,460" size="325,5" borderWidth="1" />
+	</screen>
+	<screen flags="wfNoBorder" name="FanControl2Test" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<widget source="TextTest1" render="Label" position="605,120" size="620,30" zPosition="10" font="Regular;20" halign="left" valign="center" backgroundColor="#25062748" transparent="1" />
+		<widget source="TextTest2" render="Label" position="605,150" size="620,30" zPosition="10" font="Regular;20" halign="left" valign="center" backgroundColor="#25062748" transparent="1" />
+		<widget source="TextTest3" render="Label" position="605,180" size="620,30" zPosition="10" font="Regular;20" halign="left" valign="center" backgroundColor="#25062748" transparent="1" />
+		<widget source="TextTest4" render="Label" position="605,230" size="620,30" zPosition="10" font="Regular;20" halign="left" valign="center" backgroundColor="#25062748" transparent="1" />
+		<widget source="TextTest5" render="Label" position="605,260" size="620,30" zPosition="10" font="Regular;20" halign="left" valign="center" backgroundColor="#25062748" transparent="1" />
+		<widget source="TextTest6" render="Label" position="605,290" size="620,30" zPosition="10" font="Regular;20" halign="left" valign="center" backgroundColor="#25062748" transparent="1" />
+		<widget source="TextTest7" render="Label" position="605,320" size="620,30" zPosition="10" font="Regular;20" halign="left" valign="center" backgroundColor="#25062748" transparent="1" />
+	</screen>
+	<screen flags="wfNoBorder" name="AutoShutDownConfiguration" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
+		<widget name="buttonred" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget name="buttongreen" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget name="buttonyellow" position="614,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" enableWrapAround="1" />
+	</screen>
 	<!-- ## VFD_GigaSetup ## -->
 	<screen name="VFD_GigaSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="VFD_Giga Setup" >
 		<panel name="BasicTemplate"/>
@@ -4792,103 +4890,6 @@
 		<widget name="key_3" position="805,640" zPosition="2" size="180,25" font="Regular;20" halign="left" valign="center" transparent="1" foregroundColor="grey" />
 		<widget name="key_4" position="1050,640" zPosition="2" size="180,25" font="Regular;20" halign="left" valign="center" transparent="1" foregroundColor="grey" />
 	</screen>
-<!-- ## FanControl 2 ##-->
-	<screen flags="wfNoBorder" name="FanControl2SpezialSetup" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	</screen>
-	<screen flags="wfNoBorder" name="FanControl2Plugin" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<panel name="Red2Panel" />
-		<panel name="Green2Panel" />
-		<panel name="Yellow2Panel" />
-		<panel name="Blue2Panel" />
-		<ePixmap pixmap="skin_default/buttons/key_menu.png" position="1110,682" size="35,25" alphatest="on" />
-		<ePixmap pixmap="skin_default/buttons/key_info.png" position="1150,682" size="35,25" alphatest="on" />
-		<widget source="Version" render="Label" font="Regular;22" position="15,400" size="477,25" transparent="1" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,200" transparent="1" />
-		<widget source="introduction" render="Label" position="520,315" size="755,30" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="TxtTemp" render="Label" position="520,415" size="200,25" zPosition="1" font="Regular;17" halign="right" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="TxtZielRPM" render="Label" position="520,450" size="200,25" zPosition="1" font="Regular;17" halign="right" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="TxtRPM" render="Label" position="520,485" size="200,25" zPosition="1" font="Regular;17" halign="right" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="TxtVLT" render="Label" position="520,520" size="200,25" zPosition="1" font="Regular;17" halign="right" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="TxtPWM" render="Label" position="520,565" size="200,25" zPosition="1" font="Regular;17" halign="right" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="PixTemp" render="Progress" position="740,425" size="375,5" borderWidth="1" />
-		<widget source="PixZielRPM" render="Progress" position="740,460" size="375,5" borderWidth="1" />
-		<widget source="PixRPM" render="Progress" position="740,495" size="375,5" borderWidth="1" />
-		<widget source="PixVLT" render="Progress" position="740,530" size="375,5" borderWidth="1" />
-		<widget source="PixPWM" render="Progress" position="740,575" size="375,5" borderWidth="1" />
-	</screen>
-	<screen flags="wfNoBorder" name="FanControl2Monitor" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<widget source="TxtTemp0" render="Label" position="555,180" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
-		<widget source="TxtTemp1" render="Label" position="555,210" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
-		<widget source="TxtTemp2" render="Label" position="555,240" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
-		<widget source="TxtTemp3" render="Label" position="555,270" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
-		<widget source="TxtTemp4" render="Label" position="555,300" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
-		<widget source="TxtTemp5" render="Label" position="555,330" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
-		<widget source="TxtTemp6" render="Label" position="555,360" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
-		<widget source="TxtTemp7" render="Label" position="555,390" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
-		<widget source="TxtHDD" render="Label" position="505,420" size="300,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
-		<widget source="TxtFan" render="Label" position="555,450" size="250,25" zPosition="1" font="Regular;22" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
-		<widget name="TxtMinTemp" position="820,150" size="50,25" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="#25062748" transparent="1" />
-		<widget source="TxtFC2Temp" render="Label" position="960,140" size="50,30" zPosition="1" font="Regular;25" halign="center" valign="center" backgroundColor="#25062748" transparent="1" foregroundColor="yellow" />
-		<widget name="TxtMaxTemp" position="1100,150" size="50,25" zPosition="1" font="Regular;20" halign="right" valign="center" backgroundColor="#25062748" transparent="1" />
-		<widget source="ProTemp0" render="Progress" position="825,190" size="325,5" borderWidth="1" />
-		<widget source="ProTemp1" render="Progress" position="825,220" size="325,5" borderWidth="1" />
-		<widget source="ProTemp2" render="Progress" position="825,250" size="325,5" borderWidth="1" />
-		<widget source="ProTemp3" render="Progress" position="825,280" size="325,5" borderWidth="1" />
-		<widget source="ProTemp4" render="Progress" position="825,310" size="325,5" borderWidth="1" />
-		<widget source="ProTemp5" render="Progress" position="825,340" size="325,5" borderWidth="1" />
-		<widget source="ProTemp6" render="Progress" position="825,370" size="325,5" borderWidth="1" />
-		<widget source="ProTemp7" render="Progress" position="825,400" size="325,5" borderWidth="1" />
-		<widget source="ProHDD" render="Progress" position="825,430" size="325,5" borderWidth="1" />
-		<widget source="ProFan" render="Progress" position="825,460" size="325,5" borderWidth="1" />
-	</screen>
-	<screen flags="wfNoBorder" name="FanControl2Test" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<widget source="TextTest1" render="Label" position="605,120" size="620,30" zPosition="10" font="Regular;20" halign="left" valign="center" backgroundColor="#25062748" transparent="1" />
-		<widget source="TextTest2" render="Label" position="605,150" size="620,30" zPosition="10" font="Regular;20" halign="left" valign="center" backgroundColor="#25062748" transparent="1" />
-		<widget source="TextTest3" render="Label" position="605,180" size="620,30" zPosition="10" font="Regular;20" halign="left" valign="center" backgroundColor="#25062748" transparent="1" />
-		<widget source="TextTest4" render="Label" position="605,230" size="620,30" zPosition="10" font="Regular;20" halign="left" valign="center" backgroundColor="#25062748" transparent="1" />
-		<widget source="TextTest5" render="Label" position="605,260" size="620,30" zPosition="10" font="Regular;20" halign="left" valign="center" backgroundColor="#25062748" transparent="1" />
-		<widget source="TextTest6" render="Label" position="605,290" size="620,30" zPosition="10" font="Regular;20" halign="left" valign="center" backgroundColor="#25062748" transparent="1" />
-		<widget source="TextTest7" render="Label" position="605,320" size="620,30" zPosition="10" font="Regular;20" halign="left" valign="center" backgroundColor="#25062748" transparent="1" />
-	</screen>
-	<screen name="TempFanControl" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<widget source="red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-		<widget source="green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,120" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-			<widget source="SensorTempText0" render="Label" position="520,210" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" transparent="1" />
-			<widget source="SensorTemp0" render="Label" position="610,210" zPosition="1" size="100,20" font="Regular;20" halign="right">
-				<convert type="SensorToText"></convert>
-			</widget>
-			<widget source="SensorTempText1" render="Label" position="520,230" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" transparent="1" />
-			<widget source="SensorTemp1" render="Label" position="610,230" zPosition="1" size="100,20" font="Regular;20" halign="right">
-				<convert type="SensorToText"></convert>
-			</widget>
-			<widget source="SensorFanText0" render="Label" position="800,210" zPosition="1" size="120,40" font="Regular;20" halign="left" valign="top" transparent="1" />
-			<widget source="SensorFan0" render="Label" position="920,210" zPosition="1" size="150,20" font="Regular;20" halign="right">
-				<convert type="SensorToText"></convert>
-			</widget>
-			<widget source="SensorFanText1" render="Label" position="800,230" zPosition="1" size="120,40" font="Regular;20" halign="left" valign="top"	transparent="1" />
-			<widget source="SensorFan1" render="Label" position="920,230" zPosition="1" size="150,20" font="Regular;20" halign="right">
-				<convert type="SensorToText"></convert>
-			</widget>
-	</screen>
-	<screen flags="wfNoBorder" name="AutoShutDownConfiguration" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
-		<widget name="buttonred" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="buttongreen" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="buttonyellow" position="614,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" enableWrapAround="1" />
-	</screen>
 <!-- ## ViX-specific screens ## -->
 	<screen flags="wfNoBorder" name="VIXMenu" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
@@ -5211,27 +5212,6 @@
 		<widget name="timeline4" position="5,313" zPosition="1" size="2,365" pixmap="skin_default/timeline.png" />
 		<widget name="timeline5" position="5,313" zPosition="1" size="2,365" pixmap="skin_default/timeline.png" />-->
 		<widget name="timeline_now" position="5,313" zPosition="2" size="19,365" pixmap="Magic-HD-Common/window/timeline-now.png" alphatest="on" />
-	</screen>
-	<screen flags="wfNoBorder" name="ManualFancontrol" position="0,0" size="1280,720" title="" >
-		<panel name="BasicTemplate"/>
-		<panel name="Red2Panel" />
-		<panel name="Green2Panel" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="30" position="520,82" size="755,150" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-			<widget source="SensorTempText0" render="Label" position="520,250" zPosition="1" size="90,40" font="Regular;20" halign="right" valign="top" transparent="1" foregroundColor="grey" />
-			<widget source="SensorTemp0" render="Label" position="620,250" zPosition="1" size="100,20" font="Regular;20" halign="left" foregroundColor="grey">
-				<convert type="SensorToText"></convert>
-			</widget>
-			<widget source="SensorFanText0" render="Label" position="800,250" zPosition="1" size="120,40" font="Regular;20" halign="right" valign="top" transparent="1" foregroundColor="grey" />
-			<widget source="SensorFan0" render="Label" position="930,250" zPosition="1" size="150,20" font="Regular;20" halign="left" foregroundColor="grey" >
-				<convert type="SensorToText"></convert>
-			</widget>
-	</screen>
-	<screen flags="wfNoBorder" name="FanSetupConfiguration" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<panel name="Red2Panel" />
-		<panel name="Green2Panel" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-		<ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
 	</screen>
 	<screen flags="wfNoBorder" name="LogManager" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
