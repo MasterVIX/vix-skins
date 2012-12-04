@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.83 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.84 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -1319,6 +1319,19 @@
     <widget name="number" position="0,-200" size="150,60" backgroundColor="transparent" transparent="1" font="Regular;36" borderColor="black" borderWidth="3" valign="center" halign="center" />
     <widget name="servicename" position="134,-200" size="450,60" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="3" valign="center" halign="center" />
   </screen>
+  <screen name="HistoryZapSelector" position="center,center" size="750,450" backgroundColor="transparent" flags="wfNoBorder" title="">
+		<widget source="menu" render="Listbox" position="0,10" size="750,442" scrollbarMode="showOnDemand" borderColor="transpBlack" borderWidth="3" backgroundColor="transparent" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (10, 0), size = (20, 34), flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+						MultiContentEntryText(pos = (40, 0), size = (700, 34), font = 1, flags = RT_HALIGN_LEFT, text = 2)
+					],
+				 "fonts": [gFont("Regular", 26), gFont("Regular", 26)],
+				 "itemHeight": 34
+				}
+			</convert>
+		</widget>
+  </screen>  
   <screen name="Subtitles" title="Subtitle selection" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
     <widget name="config" position="520,90" size="755,575" backgroundColor="darkgrey" zPosition="3" transparent="1" font="Regular;22" scrollbarMode="showOnDemand" />
@@ -2339,16 +2352,15 @@
     <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="50,410" size="1,1" transparent="1" zPosition="1" alphatest="on" />
   </screen>
   <screen name="NameserverSetup" title="Nameserver Setup" position="0,0" size="1280,720" flags="wfNoBorder">
+    <panel name="BasicTemplate"/>
     <ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow2.png" position="595,682" size="26,26" alphatest="on" />
-    <panel name="BasicTemplate"/>
     <widget source="key_red" render="Label" position="50,682" size="220,26" transparent="1" zPosition="2" font="Regular;22" valign="center" halign="left" />
     <widget source="key_green" render="Label" position="340,682" size="220,26" transparent="1" zPosition="2" font="Regular;22" valign="center" halign="left" />
     <widget source="key_yellow" render="Label" position="624,682" size="220,26" transparent="1" zPosition="2" font="Regular;22" valign="center" halign="left" />
     <widget name="config" position="520,82" size="755,522" itemHeight="32" font="Regular;22" scrollbarMode="showOnDemand" />
     <widget source="introduction" render="Label" position="100,605" size="1000,60" transparent="1" zPosition="10" font="Regular;21" valign="center" halign="center" />
-    <widget source="session.VideoPicture" backgroundColor="transparent" position="5,85" render="Pig" size="477,270" zPosition="1" />
   </screen>
   <!-- ## W-LAN ## -->
   <screen flags="wfNoBorder" name="WlanStatus" position="0,0" size="1280,720" title="Wireless Network State">
@@ -6857,14 +6869,31 @@
     <widget name="timeline5" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline_now" position="0,313" zPosition="2" size="19,365" pixmap="Magic-HD-Common/window/timeline-now.png" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="ManualFancontrol" position="0,0" size="1280,720" title="Standbymode Fancontrol settings">
+  
+  <!-- ## TempFanControl ##-->
+  <screen flags="wfNoBorder" name="TempFanControl" position="0,0" size="1280,720" title="">
     <panel name="BasicTemplate"/>
     <ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
-    <widget source="key_red" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-    <widget source="key_green" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-    <widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="740,583" transparent="1" />
-    <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+    <widget source="red" render="Label" position="50,682" size="220,30" foregroundColor="foreground" font="Regular;22" halign="left" />
+    <widget source="green" render="Label" position="340,682" size="220,30" foregroundColor="foreground" font="Regular;22" halign="left" />
+		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" position="520,82" size="755,120" transparent="1" enableWrapAround="1" />
+			<widget source="SensorTempText0" render="Label" position="520,210" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" transparent="1" />
+			<widget source="SensorTemp0" render="Label" position="610,210" zPosition="1" size="100,20" font="Regular;20" halign="right" >
+				<convert type="SensorToText"></convert>
+			</widget>
+			<widget source="SensorTempText1" render="Label" position="520,230" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" transparent="1" />
+			<widget source="SensorTemp1" render="Label" position="610,230" zPosition="1" size="100,20" font="Regular;20" halign="right" >
+				<convert type="SensorToText"></convert>
+			</widget>
+			<widget source="SensorFanText0" render="Label" position="800,210" zPosition="1" size="120,40" font="Regular;20" halign="left" valign="top" transparent="1" />
+			<widget source="SensorFan0" render="Label" position="920,210" zPosition="1" size="150,20" font="Regular;20" halign="right" >
+				<convert type="SensorToText"></convert>
+			</widget>
+			<widget source="SensorFanText1" render="Label" position="800,230" zPosition="1" size="120,40" font="Regular;20" halign="left" valign="top" transparent="1" />
+			<widget source="SensorFan1" render="Label" position="920,230" zPosition="1" size="150,20" font="Regular;20" halign="right" >
+				<convert type="SensorToText"></convert>
+			</widget>	
   </screen>
   <screen flags="wfNoBorder" name="FanSetupConfiguration" position="0,0" size="1280,720" title="Standbymode Fancontrol settings">
     <panel name="BasicTemplate"/>
