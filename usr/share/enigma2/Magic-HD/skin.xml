@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.40 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.41 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -1250,6 +1250,19 @@
 		<widget name="number" position="0,-200" size="130,40" backgroundColor="transparent" transparent="1" font="Regular;36" borderColor="black" borderWidth="3" valign="center" halign="right" foregroundColor="grey" />
 		<widget name="servicename" position="135,-200" size="450,40" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="3" valign="center" halign="left" foregroundColor="grey" />
 	</screen>
+<screen name="HistoryZapSelector" position="center,center" size="750,450" backgroundColor="transparent" flags="wfNoBorder" title="">
+		<widget source="menu" render="Listbox" position="0,10" size="750,442" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" borderColor="transpBlack" borderWidth="3" backgroundColor="transparent" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (10, 0), size = (20, 34), flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+						MultiContentEntryText(pos = (40, 0), size = (700, 34), font = 1, flags = RT_HALIGN_LEFT, text = 2)
+					],
+				 "fonts": [gFont("Regular", 26), gFont("Regular", 26)],
+				 "itemHeight": 34
+				}
+			</convert>
+		</widget>
+	</screen>
 	<screen name="Subtitles" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="config" position="520,82" size="755,583" backgroundColor="darkgrey" zPosition="3" transparent="1" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" itemHeight="28" enableWrapAround="1" />
@@ -1555,10 +1568,11 @@
 		<panel name="BasicTemplate"/>
 		<widget name="cancel" pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
 		<widget name="ok" pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<widget name="config" position="520,80" size="755,588" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="config" position="520,80" size="755,400" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="canceltext" position="50,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
 		<widget name="oktext" position="340,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,400" size="1,1" transparent="1" zPosition="1" alphatest="on" />
+		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="520,500" size="1,1" transparent="1" zPosition="1" alphatest="on" />
+		<widget name="description" position="5,370" size="510,250" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
 	</screen>
 	<screen name="TimerEdit" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
