@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.84 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.85 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -6686,21 +6686,10 @@
         </applet>
     <ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
- <screen name="QuickEPG" title="InfoBar" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transpBlack">
-	<!--<eLabel position="0, 0" size="1280,720" backgroundColor="transpBlack" alphatest="blend" />-->
-	<!--<ePixmap alphatest="on" pixmap="Magic-HD-Common/infobar/hd.png" position="0,520" size="1280,220" zPosition="-1" />-->
-	<ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,10" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/green2.png" position="305,10" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/yellow2.png" position="580,10" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/blue2.png" position="840,10" size="26,26" alphatest="on" />
-	<ePixmap pixmap="skin_default/buttons/key_menu.png" position="1110,14" size="35,25" alphatest="on" />
-	<ePixmap pixmap="skin_default/buttons/key_info.png" position="1150,14" size="35,25" alphatest="on" />
-	<ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,43" size="1280,2" />
-    <widget name="key_red" position="50,10" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
-    <widget name="key_green" position="340,10" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
-    <widget name="key_yellow" position="614,10" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />
-    <widget name="key_blue" position="875,10" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="left" />-->
-	<widget source="Event" render="Label" position="50,300" size="1180,220" font="Regular;22" foregroundColor="white" transparent="1" backgroundColor="background" valign="center" halign="center" zPosition="2">
+ <screen name="QuickEPG" title="InfoBar" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<ePixmap alphatest="off" pixmap="Magic-HD-Common/infobar/hd.png" position="0,520" size="1280,220" zPosition="-1" />
+    <eLabel position="149,309" size="982,222" zPosition="1" backgroundColor="white" />
+	<widget source="Event" render="Label" position="150,310" size="980,220" font="Regular;21" foregroundColor="white" backgroundColor="transpBlack" valign="center" halign="center" zPosition="11">
 		<convert type="EventName">FullDescription</convert>
 	</widget>
 	<widget source="session.CurrentService" render="PiconBg" position="44,634" size="102,62" transparent="0" alphatest="blend" zPosition="1" />
