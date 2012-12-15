@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.45 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.46 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -2134,6 +2134,7 @@
 		<panel name="Green1Panel" />
 		<panel name="Yellow1Panel" />
 		<panel name="Blue1Panel" />
+		<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682"	size="35,25" />
 		<widget name="autostart" position="610,139" size="150,24" font="Regular;20" halign="left" foregroundColor="foreground" backgroundColor="background" transparent="0" />
 		<widget name="labdisabled" position="760,136" size="150,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
 		<widget name="labactive" position="760,139" size="150,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
@@ -2162,7 +2163,6 @@
 	</screen>
 	<screen flags="wfNoBorder" name="NetworkInadynLog" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="skin_default/buttons/key_menu.png" position="1110,682" size="35,25" alphatest="on" />
 		<widget name="infotext" font="Regular;22" position="520,82" size="755,583" transparent="1" />
 	</screen>
 	<screen flags="wfNoBorder" name="NetworkVpnLog" position="0,0" size="1280,720" >
@@ -2187,6 +2187,7 @@
 		<panel name="Green1Panel" />
 		<panel name="Yellow1Panel" />
 		<panel name="Blue1Panel" />
+		<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682"	size="35,25" />
 		<widget name="autostart" position="630,109" size="100,24" font="Regular;20" valign="center" transparent="0" />
 		<widget name="labdisabled" position="730,106" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
 		<widget name="labactive" position="730,106" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
@@ -2230,15 +2231,15 @@
 		<widget name="labstop" position="1020,106" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
 		<widget name="labrun" position="1020,106" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
 		<widget name="username" position="630,183" size="150,30" font="Regular;20" valign="center" transparent="1" />
-		<widget name="labuser" position="790,183" size="310,30" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+		<widget name="labuser" position="790,183" size="310,30" font="Regular;20" valign="center" backgroundColor="background" />
 		<widget name="iface" position="630,220" size="150,30" font="Regular;20" valign="center" transparent="1" />
-		<widget name="labiface" position="790,220" size="310,30" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+		<widget name="labiface" position="790,220" size="310,30" font="Regular;20" valign="center" backgroundColor="background" />
 		<widget name="port" position="630,260" size="150,30" font="Regular;20" valign="center" transparent="1" />
-		<widget name="labport" position="790,260" size="310,30" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+		<widget name="labport" position="790,260" size="310,30" font="Regular;20" valign="center" backgroundColor="background" />
 		<widget name="serialno" position="630,300" size="150,30" font="Regular;20" valign="center" transparent="1" />
-		<widget name="labserialno" position="790,300" size="310,30" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+		<widget name="labserialno" position="790,300" size="310,30" font="Regular;20" valign="center" backgroundColor="background" />
 		<widget name="sharedir" position="630,340" size="150,30" font="Regular;20" valign="center" transparent="1" />
-		<widget name="labsharedir" position="790,330" size="480,82" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+		<widget name="labsharedir" position="790,330" size="480,82" font="Regular;20" valign="center" backgroundColor="background" />
 		<widget name="inotify" position="580,405" size="180,30" font="Regular;20" valign="center" transparent="1" />
 		<widget name="inotifyinactive" position="800,405" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
 		<widget name="inotifyactive" position="800,405" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
@@ -2247,6 +2248,7 @@
 		<widget name="tivoactive" position="800,455" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
 		<widget name="dlna" position="580,560" size="200,30" font="Regular;20" valign="center" transparent="1" />
 		<widget name="dlnainactive" position="800,560" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+		<widget name="dlnaactive" position="800,560" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
 	</screen>
 	<screen flags="wfNoBorder" name="NetworkMiniDLNASetup" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
@@ -2366,6 +2368,7 @@
 	</screen>
 	<screen flags="wfNoBorder" name="NetworkTelnet" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
 		<panel name="Green1Panel" />
 		<widget name="lab1" position="620,140" size="363,80" font="Regular;20" valign="center" transparent="0" />
 		<widget name="lab2" position="620,260" size="150,70" font="Regular;20" valign="top" transparent="0" />
@@ -2374,12 +2377,28 @@
 	</screen>
 	<screen flags="wfNoBorder" name="NetworkFtp" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
 		<panel name="Green1Panel" />
 		<widget name="lab1" position="620,140" size="363,80" font="Regular;20" valign="center" transparent="0" />
 		<widget name="lab2" position="620,260" size="150,70" font="Regular;20" valign="top" transparent="0" />
 		<widget name="labstop" position="780,260" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
 		<widget name="labrun" position="780,260" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
 	</screen>
+
+
+	<screen name="Config" position="0,0" size="1280,720" flags="wfNoBorder" title="Wake-On-LAN Configuration">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<widget name="config" position="520,80" size="755,450" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="status" position="520,530" size="755,130" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+	</screen>
+
+
+
+
 	<!-- ##Common interface## -->
 	<screen flags="wfNoBorder" name="ScSelection" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
