@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.47 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.48 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -4857,7 +4857,7 @@
 	</widget>
 	</screen>
 	<!-- ## AtmoLight ## -->
-	<screen flags="wfNoBorder" name="AtmoLightAbout" position="0,0" size="1280,720" >
+	<screen flags="wfNoBorder" name="AtmoLightAbout" position="0,0" size="1280,720" title="AtmoLight about" >
 		<panel name="BasicTemplate"/>
 		<widget name="pluginInfo" position="530,110" size="700,50" valign="center" halign="left" zPosition="5" transparent="1" font="Regular;24"/>
 		<widget name="daemonInfo" position="530,200" size="700,50" valign="center" halign="left" zPosition="5" transparent="1" font="Regular;24"/>
@@ -4875,7 +4875,7 @@
 		<widget name="SetupEntry" position="590,110" size="500,25" font="Regular;22" halign="left"/>
 		<widget name="SetupValue" position="590,110" size="500,25" font="Regular;22" halign="right"/>
 	</screen>
-	<screen name="AtmoLightConfigScreen" position="0,0" size="1280,720" >
+	<screen name="AtmoLightConfigScreen" position="0,0" size="1280,720" title="AtmoLight configuration" >
 		<panel name="BasicTemplate"/>
 		<ePixmap name="r" pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
 		<ePixmap name="g" pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
@@ -4887,19 +4887,19 @@
 		<widget name="key_b" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<ePixmap name="i" pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
 		<widget name="config" position="550,82" size="700,540" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="35" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-		<widget name="label_layout" position="5,500" size="160,25" font="Regular;22" halign="center" transparent="1" foregroundColor="grey" />
+		<widget name="label_layout" position="200,375" size="160,25" font="Regular;22" halign="center" transparent="1" foregroundColor="grey" />
 		<widget name="label_tl" position="190,425" size="20,20" font="Regular;15" valign="center" halign="center" transparent="1"/>
 		<widget name="label_tc" position="240,425" size="20,20" font="Regular;15" valign="center" halign="center" transparent="1"/>
 		<widget name="label_tr" position="390,425" size="20,20" font="Regular;15" valign="center" halign="center" transparent="1"/>
 		<widget name="pic_tl" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_t.png" position="213,430" size="74,9" zPosition="4" transparent="1" alphatest="on"/>
 		<widget name="pic_tc" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_t.png" position="263,430" size="74,9" zPosition="4" transparent="1" alphatest="on"/>
 		<widget name="pic_tr" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_t.png" position="313,430" size="74,9" zPosition="4" transparent="1" alphatest="on"/>
-		<widget name="label_lt" position="180,450" size="20,20" font="Regular;15" valign="center" halign="center"/>
-		<widget name="label_rt" position="400,450" size="20,20" font="Regular;15" valign="center" halign="center"/>
+		<widget name="label_l" position="180,450" size="20,20" font="Regular;15" valign="center" halign="center"/>
+		<widget name="label_r" position="400,450" size="20,20" font="Regular;15" valign="center" halign="center"/>
 		<widget name="pic_l" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_l.png" position="185,473"	size="9,74" zPosition="4" transparent="1" alphatest="on"/>
 		<widget name="pic_r" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_r.png" position="406,473" size="9,74" zPosition="4" transparent="1" alphatest="on"/>
-		<widget name="label_lb" position="180,550" size="20,20" font="Regular;15" valign="center" halign="center"/>
-		<widget name="label_rb" position="400,550" size="20,20" font="Regular;15" valign="center" halign="center"/>
+<!--		<widget name="label_lb" position="180,550" size="20,20" font="Regular;15" valign="center" halign="center"/>
+		<widget name="label_rb" position="400,550" size="20,20" font="Regular;15" valign="center" halign="center"/>-->
 		<widget name="pic_bl" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_b.png" position="213,581" size="74,9" zPosition="4" transparent="1" alphatest="on"/>
 		<widget name="pic_bc" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_b.png" position="263,581" size="74,9" zPosition="4" transparent="1" alphatest="on"/>
 		<widget name="pic_br" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AtmoLight/images/led_b.png" position="313,581" size="74,9" zPosition="4" transparent="1" alphatest="on"/>
