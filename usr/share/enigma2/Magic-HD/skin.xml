@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.46 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.47 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -2368,7 +2368,6 @@
 	</screen>
 	<screen flags="wfNoBorder" name="NetworkTelnet" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel" />
 		<panel name="Green1Panel" />
 		<widget name="lab1" position="620,140" size="363,80" font="Regular;20" valign="center" transparent="0" />
 		<widget name="lab2" position="620,260" size="150,70" font="Regular;20" valign="top" transparent="0" />
@@ -2377,15 +2376,13 @@
 	</screen>
 	<screen flags="wfNoBorder" name="NetworkFtp" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel" />
 		<panel name="Green1Panel" />
 		<widget name="lab1" position="620,140" size="363,80" font="Regular;20" valign="center" transparent="0" />
 		<widget name="lab2" position="620,260" size="150,70" font="Regular;20" valign="top" transparent="0" />
 		<widget name="labstop" position="780,260" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
 		<widget name="labrun" position="780,260" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
 	</screen>
-
-
+	<!-- ##Wake on LAN## -->
 	<screen name="Config" position="0,0" size="1280,720" flags="wfNoBorder" title="Wake-On-LAN Configuration">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel" />
@@ -2395,10 +2392,6 @@
 		<widget name="config" position="520,80" size="755,450" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="status" position="520,530" size="755,130" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
 	</screen>
-
-
-
-
 	<!-- ##Common interface## -->
 	<screen flags="wfNoBorder" name="ScSelection" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
