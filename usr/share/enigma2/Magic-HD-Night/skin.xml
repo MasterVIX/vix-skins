@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.89 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.90 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -6443,6 +6443,7 @@
     <widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+	<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25" />
     <widget name="autostart" position="610,139" size="150,24" font="Regular;20" halign="left" foregroundColor="foreground" backgroundColor="background" transparent="0" />
     <widget name="labdisabled" position="760,136" size="150,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
     <widget name="labactive" position="760,139" size="150,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
@@ -6467,14 +6468,13 @@
     <panel name="BasicTemplate"/>
     <ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
-		<ePixmap pixmap="skin_default/buttons/key_text.png" position="840,682" zPosition="4" size="35,25" alphatest="on" transparent="1" />
+	<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+	<ePixmap pixmap="skin_default/buttons/key_text.png" position="840,682" zPosition="4" size="35,25" alphatest="on" transparent="1" />
     <widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,435" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix2.png" position="60,638" size="300,34" alphatest="on" />
   </screen>
   <screen flags="wfNoBorder" name="NetworkInadynLog" position="0,0" size="1280,720" title="Inadyn Log">
     <panel name="BasicTemplate"/>
-    <ePixmap pixmap="skin_default/buttons/key_menu.png" position="1110,682" size="35,25" alphatest="on" />
     <widget name="infotext" font="Regular;22" position="520,82" size="755,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix2.png" position="60,638" size="300,34" alphatest="on" />
   </screen>
@@ -6510,6 +6510,7 @@
     <widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682"  size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+	<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25" />
     <widget name="autostart" position="630,109" size="100,24" font="Regular;20" valign="center" transparent="0" />
     <widget name="labdisabled" position="730,106" size="150,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
     <widget name="labactive" position="730,106" size="150,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
@@ -6569,9 +6570,7 @@
   </screen>
   <screen flags="wfNoBorder" name="NetworkTelnet" position="0,0" size="1280,720" title="Telnet Setup">
     <panel name="BasicTemplate"/>
-    <ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
-    <widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="lab1" position="620,140" size="363,80" font="Regular;20" valign="center" transparent="0" />
     <widget name="lab2" position="620,260" size="150,70" font="Regular;20" valign="top" transparent="0" />
@@ -6581,9 +6580,7 @@
   </screen>
   <screen flags="wfNoBorder" name="NetworkFtp" position="0,0" size="1280,720" title="FTP Setup">
     <panel name="BasicTemplate"/>
-    <ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
-    <widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="lab1" position="620,140" size="363,80" font="Regular;20" valign="center" transparent="0" />
     <widget name="lab2" position="620,260" size="150,70" font="Regular;20" valign="top" transparent="0" />
