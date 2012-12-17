@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.91 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.92 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -1332,19 +1332,19 @@
     <widget name="number" position="0,-200" size="150,60" backgroundColor="transparent" transparent="1" font="Regular;36" borderColor="black" borderWidth="3" valign="center" halign="center" />
     <widget name="servicename" position="134,-200" size="450,60" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="3" valign="center" halign="center" />
   </screen>
-  <screen name="HistoryZapSelector" position="center,center" size="750,450" backgroundColor="transparent" flags="wfNoBorder" title="">
-		<widget source="menu" render="Listbox" position="0,10" size="750,442" scrollbarMode="showOnDemand" borderColor="transpBlack" borderWidth="3" backgroundColor="transparent" transparent="1" >
+	<screen name="HistoryZapSelector" position="center,center" size="350,240" backgroundColor="transpBlack" title="History zap...">
+		<widget source="menu" render="Listbox" position="0,10" size="350,220" backgroundColor="transpBlack" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (10, 0), size = (20, 34), flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-						MultiContentEntryText(pos = (40, 0), size = (700, 34), font = 1, flags = RT_HALIGN_LEFT, text = 2)
+						MultiContentEntryText(pos = (10, 0), size = (20, 22), flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+						MultiContentEntryText(pos = (40, 0), size = (290, 22), font = 1, flags = RT_HALIGN_LEFT, text = 2)
 					],
-				 "fonts": [gFont("Regular", 26), gFont("Regular", 26)],
-				 "itemHeight": 34
+				 "fonts": [gFont("Regular", 22), gFont("Regular", 20)],
+				 "itemHeight": 22
 				}
 			</convert>
 		</widget>
-  </screen>  
+	</screen>
   <screen name="Subtitles" title="Subtitle selection" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
     <widget name="config" position="520,90" size="755,575" backgroundColor="darkgrey" zPosition="3" transparent="1" font="Regular;22" scrollbarMode="showOnDemand" />
