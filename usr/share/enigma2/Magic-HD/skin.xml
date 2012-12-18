@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.49 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.50 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -2648,10 +2648,14 @@
 		</screen>
 	<screen name="PositionerSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<panel name="Yellow1Panel" />
-		<panel name="Blue1Panel" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+		<widget name="red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+		<widget name="green" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
+		<widget name="yellow" position="614,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
+		<widget name="blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<widget name="list" position="590,110" size="600,255" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="snr_db" position="640,460" size="200,24" backgroundColor="background" transparent="1" font="Regular;21" valign="center" halign="center" />
 		<eLabel position="550,460" size="80,24" transparent="1" text="SNR:" font="Regular;21" foregroundColor="grey" />
