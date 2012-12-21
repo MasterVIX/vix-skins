@@ -744,7 +744,7 @@
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget name="timeline_text" position="50,184" size="1202,40" foregroundColor="#ffffff" backgroundColor="#0F293D" zPosition="3"/>
-		<widget name="list" position="50,225" size="1202,287" scrollbarMode="showNever" transparent="1" zPosition="3" backgroundColor="transparent" ServiceBackgroundColor="#244C68" ServiceBackgroundColorSelected="#596A7A" ServiceBackgroundColorNow="greentransparent" ServiceBackgroundColorNowSelected="greentransparent" EntryBackgroundColor="#323232" EntryBackgroundColorSelected="#3A3C3B" EntryBackgroundColorNow="#67999A" EntryBackgroundColorNowSelected="#596A7A" EntryFontAlignment="center" EntryForegroundColorSelected="selectedFG" EntryForegroundColorNowSelected="selectedFG" ServiceForegroundColorSelected="selectedFG" ServiceForegroundColorNowSelected="selectedFG" RecordBackgroundColor="redtransparent" RecordBackgroundColorSelected="redtransparent" RecordForegroundColorSelected="selectedFG" ZapBackgroundColor="transpWhite" ZapBackgroundColorSelected="transpWhite" ZapForegroundColorSelected="selectedFG"/>
+		<widget name="list" position="50,225" size="1202,287" scrollbarMode="showNever" transparent="1" zPosition="3" backgroundColor="transparent" ServiceBackgroundColor="#244C68" ServiceBackgroundColorSelected="#330000" ServiceBackgroundColorNow="greentransparent" ServiceBackgroundColorNowSelected="greentransparent" EntryBackgroundColor="#323232" EntryBackgroundColorSelected="#3A3C3B" EntryBackgroundColorNow="#330000" EntryBackgroundColorNowSelected="#330000" EntryFontAlignment="center" EntryForegroundColorSelected="selectedFG" EntryForegroundColorNowSelected="selectedFG" ServiceForegroundColorSelected="selectedFG" ServiceForegroundColorNowSelected="selectedFG" RecordBackgroundColor="redtransparent" RecordBackgroundColorSelected="redtransparent" RecordForegroundColorSelected="selectedFG" ZapBackgroundColor="transpWhite" ZapBackgroundColorSelected="transpWhite" ZapForegroundColorSelected="selectedFG"/>
 		<widget name="timeline0" position="50,225" zPosition="2" size="2,287" pixmap="ViXBMC_HD-Common/timeline.png"/>
 		<widget name="timeline1" position="50,225" zPosition="2" size="2,287" pixmap="ViXBMC_HD-Common/timeline.png"/>
 		<widget name="timeline2" position="50,225" zPosition="2" size="2,287" pixmap="ViXBMC_HD-Common/timeline.png"/>
@@ -767,7 +767,7 @@
 		<panel name="ClockTemplate2"/>
 		<panel name="Start/End/Duration_Template2"/>
 		<widget name="timeline_text" position="40,24" size="1202,40" foregroundColor="#ffffff" backgroundColor="#0F293D" zPosition="3"/>
-		<widget name="list" position="40,68" size="1202,367" scrollbarMode="showNever" transparent="1" zPosition="2" backgroundColor="transparent" ServiceBackgroundColor="#244C68" ServiceBackgroundColorSelected="#596A7A" ServiceBackgroundColorNow="greentransparent" ServiceBackgroundColorNowSelected="greentransparent" EntryBackgroundColor="#323232" EntryBackgroundColorSelected="#3A3C3B" EntryBackgroundColorNow="#67999A" EntryBackgroundColorNowSelected="#596A7A" EntryFontAlignment="center" EntryForegroundColorSelected="selectedFG" EntryForegroundColorNowSelected="selectedFG" ServiceForegroundColorSelected="selectedFG" ServiceForegroundColorNowSelected="selectedFG" RecordBackgroundColor="redtransparent" RecordBackgroundColorSelected="redtransparent" RecordForegroundColorSelected="selectedFG" ZapBackgroundColor="transpWhite" ZapBackgroundColorSelected="transpWhite" ZapForegroundColorSelected="selectedFG"/>
+		<widget name="list" position="40,68" size="1202,367" scrollbarMode="showNever" transparent="1" zPosition="2" backgroundColor="transparent" ServiceBackgroundColor="#244C68" ServiceBackgroundColorSelected="#330000" ServiceBackgroundColorNow="greentransparent" ServiceBackgroundColorNowSelected="greentransparent" EntryBackgroundColor="#323232" EntryBackgroundColorSelected="#3A3C3B" EntryBackgroundColorNow="#330000" EntryBackgroundColorNowSelected="#330000" EntryFontAlignment="center" EntryForegroundColorSelected="selectedFG" EntryForegroundColorNowSelected="selectedFG" ServiceForegroundColorSelected="selectedFG" ServiceForegroundColorNowSelected="white" RecordBackgroundColor="redtransparent" RecordBackgroundColorSelected="redtransparent" RecordForegroundColorSelected="selectedFG" ZapBackgroundColor="transpWhite" ZapBackgroundColorSelected="transpWhite" ZapForegroundColorSelected="selectedFG"/>
 		<widget name="timeline0" position="40,68" zPosition="2" size="2,367" pixmap="ViXBMC_HD-Common/timeline.png"/>
 		<widget name="timeline1" position="40,68" zPosition="2" size="2,367" pixmap="ViXBMC_HD-Common/timeline.png"/>
 		<widget name="timeline2" position="40,68" zPosition="2" size="2,367" pixmap="ViXBMC_HD-Common/timeline.png"/>
@@ -1253,7 +1253,7 @@
 		<panel name="MenuRed1Panel"/>
 	</screen>
 	<!-- ## Timers ## -->
-	<screen name="NumericalTextInputHelpDialog" zPosition="2"  position="0,0" size="560,223" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
+	<screen name="NumericalTextInputHelpDialog" zPosition="2" position="0,0" size="560,223" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
 		<ePixmap pixmap="ViXBMC_HD-Common/images/NumericalTextInput_bg.png" position="0,0" size="560,223" alphatest="on" transparent="1" zPosition="2"/>
 		<widget name="key1" position="22,13" size="173,40" font="Regular;22" halign="center" valign="center" transparent="1" zPosition="3"/>
 		<widget name="key2" position="197,13" size="173,40" font="Regular;22" halign="center" valign="center" transparent="1" zPosition="3"/>
@@ -1267,7 +1267,7 @@
 		<widget name="help1" position="22,169" size="173,40" font="Regular;22" halign="center" valign="center" transparent="1" zPosition="3"/>
 		<widget name="key0" position="197,166" size="173,40" font="Regular;20" halign="center" valign="center" transparent="1" zPosition="3"/>
 		<widget name="help2" position="370,166" size="173,40" font="Regular;22" halign="center" valign="center" transparent="1" zPosition="3"/>
-</screen>
+	</screen>
 	<screen name="TimerEntry" position="center,15" size="835,591" title="Timer entry" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
 		<ePixmap pixmap="ViXBMC_HD-Common/images/timer_bg.png" position="0,0" size="835,591" alphatest="on" transparent="1" zPosition="-1"/>
 		<widget source="Title" render="Label" position="35,10" size="232,60" font="Regular;35" Halign="center" backgroundColor="background2" transparent="1" halign="left" foregroundColor="white"/>
@@ -1279,8 +1279,7 @@
 		<ePixmap pixmap="ViXBMC_HD-Common/buttons/button_off.png" position="630,4000" size="25,25" alphatest="blend"/>
 		<widget name="canceltext" position="362,30" zPosition="1" size="100,25" font="Regular; 22" halign="left" valign="center" backgroundColor="background2" transparent="1"/>
 		<widget name="oktext" position="518,30" zPosition="1" size="100,25" font="Regular; 22" halign="left" valign="center" backgroundColor="background2" transparent="1"/>
-				<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="370,456" size="1,1" zPosition="3" transparent="1" alphatest="on"/>
-	
+		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="370,456" size="1,1" zPosition="3" transparent="1" alphatest="on"/>
 	</screen>
 	<screen name="TimerEdit" position="0,0" size="1280,720" flags="wfNoBorder">
 		<ePixmap pixmap="ViXBMC_Metropolis/border/top2_bg.png" position="0,0" size="1280,75"/>
