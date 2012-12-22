@@ -1253,33 +1253,33 @@
 		<panel name="MenuRed1Panel"/>
 	</screen>
 	<!-- ## Timers ## -->
-	<screen name="NumericalTextInputHelpDialog" zPosition="2" position="0,0" size="560,223" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
-		<ePixmap pixmap="ViXBMC_HD-Common/images/NumericalTextInput_bg.png" position="0,0" size="560,223" alphatest="on" transparent="1" zPosition="2"/>
-		<widget name="key1" position="22,13" size="173,40" font="Regular;22" halign="center" valign="center" transparent="1" zPosition="3"/>
-		<widget name="key2" position="197,13" size="173,40" font="Regular;22" halign="center" valign="center" transparent="1" zPosition="3"/>
-		<widget name="key3" position="370,13" size="173,40" font="Regular;22" halign="center" valign="center" transparent="1" zPosition="3"/>
-		<widget name="key4" position="22,63" size="173,40" font="Regular;22" halign="center" valign="center" transparent="1" zPosition="3"/>
-		<widget name="key5" position="197,63" size="173,40" font="Regular;22" halign="center" valign="center" transparent="1" zPosition="3"/>
-		<widget name="key6" position="370,63" size="173,40" font="Regular;22" halign="center" valign="center" transparent="1" zPosition="3"/>
-		<widget name="key7" position="22,114" size="173,40" font="Regular;22" halign="center" valign="center" transparent="1" zPosition="3"/>
-		<widget name="key8" position="197,114" size="173,40" font="Regular;22" halign="center" valign="center" transparent="1" zPosition="3"/>
-		<widget name="key9" position="370,114" size="173,40" font="Regular;22" halign="center" valign="center" transparent="1" zPosition="3"/>
-		<widget name="help1" position="22,169" size="173,40" font="Regular;22" halign="center" valign="center" transparent="1" zPosition="3"/>
-		<widget name="key0" position="197,166" size="173,40" font="Regular;20" halign="center" valign="center" transparent="1" zPosition="3"/>
-		<widget name="help2" position="370,166" size="173,40" font="Regular;22" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<screen name="NumericalTextInputHelpDialog" zPosition="1" position="0,0" size="436,720" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
+		<ePixmap pixmap="ViXBMC_Metropolis/osd/numerical-input-bg-fs8.png" position="0,0" size="436,720" alphatest="on" transparent="1" zPosition="2"/>
+		<ePixmap pixmap="ViXBMC_Metropolis/osd/keyboard-input-bg-fs8.png" position="33,203" size="368,432" alphatest="blend" transparent="1" zPosition="3"/>
+		<widget name="key1" position="41,203" size="83,68" font="Regular;22" foregroundColor="white" halign="center" valign="center" transparent="1" zPosition="3"/>
+		<widget name="key2" position="172,203" size="83,68" font="Regular;22" foregroundColor="white" halign="center" valign="center" transparent="1" zPosition="3"/>
+		<widget name="key3" position="303,203" size="83,68" font="Regular;22" foregroundColor="white" halign="center" valign="center" transparent="1" zPosition="3"/>
+		<widget name="key4" position="41,305" size="83,68" font="Regular;22" foregroundColor="white" halign="center" valign="center" transparent="1" zPosition="3"/>
+		<widget name="key5" position="172,305" size="83,68" font="Regular;22" foregroundColor="white" halign="center" valign="center" transparent="1" zPosition="3"/>
+		<widget name="key6" position="303,305" size="83,68" font="Regular;22" foregroundColor="white" halign="center" valign="center" transparent="1" zPosition="3"/>
+		<widget name="key7" position="41,406" size="83,68" font="Regular;22" foregroundColor="white" halign="center" valign="center" transparent="1" zPosition="3"/>
+		<widget name="key8" position="172,406" size="83,68" font="Regular;22" foregroundColor="white" halign="center" valign="center" transparent="1" zPosition="3"/>
+		<widget name="key9" position="303,406" size="83,68" font="Regular;22" foregroundColor="white" halign="center" valign="center" transparent="1" zPosition="3"/>
+		<widget name="help1" position="41,507" size="83,68" font="Regular;22" foregroundColor="white" halign="center" valign="center" transparent="1" zPosition="3"/>
+		<widget name="key0" position="172,507" size="83,119" font="Regular;20" foregroundColor="white" halign="center" valign="center" transparent="1" zPosition="3"/>
+		<widget name="help2" position="303,507" size="83,68" font="Regular;22" foregroundColor="white" halign="center" valign="center" transparent="1" zPosition="3"/>
 	</screen>
-	<screen name="TimerEntry" position="center,15" size="835,591" title="Timer entry" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
-		<ePixmap pixmap="ViXBMC_HD-Common/images/timer_bg.png" position="0,0" size="835,591" alphatest="on" transparent="1" zPosition="-1"/>
-		<widget source="Title" render="Label" position="35,10" size="232,60" font="Regular;35" Halign="center" backgroundColor="background2" transparent="1" halign="left" foregroundColor="white"/>
+	<screen name="TimerEntry" position="435,0" size="845,720" title="Timer entry" flags="wfNoBorder" backgroundColor="transparent"  transparent="0">
+		<ePixmap pixmap="ViXBMC_Metropolis/osd/timer-edit-bg-fs8.png" position="0,0" size="845,720" alphatest="on" transparent="1" zPosition="1"/>
+		<widget source="Title" render="Label" position="10,10" size="232,60" font="Regular;35" Halign="center" backgroundColor="background2" transparent="1" halign="left" foregroundColor="white"/>
 		<!--<widget name="config" position="32,86" selectionPixmap="ViXBMC_HD-Common/images/FocusBar_H25x740.png" transparent="1" backgroundColor="background2" size="781,350" scrollbarMode="showOnDemand" font="Regular; 24"/> -->
-		<widget name="config" position="32,86" size="781,350" itemHeight="28" transparent="1" foregroundColor="white" backgroundColor="background2" font="Ubuntu-Regular;24" scrollbarMode="showOnDemand" selectionPixmap="ViXBMC_Metropolis/buttons_old/sel.png" enableWrapAround="1"/>
-		<widget name="cancel" pixmap="ViXBMC_HD-Common/buttons/red.png" position="314,31" size="25,25" alphatest="blend" backgroundColor="background2"/>
-		<widget name="ok" pixmap="ViXBMC_HD-Common/buttons/green.png" position="479,31" size="25,25" alphatest="blend" backgroundColor="background2"/>
-		<ePixmap pixmap="ViXBMC_HD-Common/buttons/button_off.png" position="653,31" size="25,25" alphatest="blend"/>
-		<ePixmap pixmap="ViXBMC_HD-Common/buttons/button_off.png" position="630,4000" size="25,25" alphatest="blend"/>
-		<widget name="canceltext" position="362,30" zPosition="1" size="100,25" font="Regular; 22" halign="left" valign="center" backgroundColor="background2" transparent="1"/>
-		<widget name="oktext" position="518,30" zPosition="1" size="100,25" font="Regular; 22" halign="left" valign="center" backgroundColor="background2" transparent="1"/>
-		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="370,456" size="1,1" zPosition="3" transparent="1" alphatest="on"/>
+		<widget name="config" position="15,30" size="800,680" itemHeight="50" transparent="1" foregroundColor="white" backgroundColor="background2" font="Ubuntu-Regular;28" scrollbarMode="showOnDemand" selectionPixmap="ViXBMC_Metropolis/osd/list_selected-845px-fs8.png" enableWrapAround="1" zPosition="3" />
+		<widget name="cancel" pixmap="ViXBMC_Metropolis/buttons/red.png" position="314,638" size="18,18" alphatest="blend" backgroundColor="background2" zPosition="3"/>
+		<widget name="ok" pixmap="ViXBMC_Metropolis/buttons/green.png" position="479,638" size="18,18" alphatest="blend" backgroundColor="background2" zPosition="3"/>
+
+		<widget name="canceltext" position="362,637" zPosition="3" size="100,25" font="Ubuntu-Regular; 22" halign="left" valign="center" backgroundColor="background2" transparent="1" />
+		<widget name="oktext" position="518,637" zPosition="3" size="100,25" font="Ubuntu-Regular; 22" halign="left" valign="center" backgroundColor="background2" transparent="1"/>
+		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="0,0" size="1,1" zPosition="3" transparent="1" alphatest="on"/>
 	</screen>
 	<screen name="TimerEdit" position="0,0" size="1280,720" flags="wfNoBorder">
 		<ePixmap pixmap="ViXBMC_Metropolis/border/top2_bg.png" position="0,0" size="1280,75"/>
