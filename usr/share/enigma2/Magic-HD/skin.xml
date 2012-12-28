@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.52 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.53 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -6717,7 +6717,7 @@
 		<widget name="beschreibung" position="520,110" size="755,558" font="Regular;22" transparent="1" foregroundColor="grey" />
 		<widget name="VidPic" position="0,77" size="482,433" zPosition="1" alphatest="on" />
 		<widget name="menuname" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
-		<widget name="darsteller" position="5,520" size="477,22" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+<!--		<widget name="darsteller" position="5,520" size="477,22" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />-->
 		<widget name="year" position="5,545" size="477,22" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
 		<widget name="imdb" position="5,570" size="477,22" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
 		<widget name="regiseur" position="5,595" size="477,22" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
@@ -6741,7 +6741,7 @@
 		<panel name="BasicTemplate3"/>
 		<widget name="name" position="520,80" size="755,25" font="Regular;24" halign="center" transparent="1" foregroundColor="secondFG" />
 		<widget name="beschreibung" position="520,110" size="755,315" font="Regular;22" transparent="1" foregroundColor="grey" />
-		<widget name="menulist" position="520,425" size="755,242" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="menulist" position="520,425" size="755,224" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="VidPic" position="0,77" size="482,588" zPosition="1" alphatest="on" />
 		<widget name="menuname" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
 	</screen>
@@ -6888,5 +6888,45 @@
 		<widget name="VidPic" position="0,77" size="482,588" zPosition="1" alphatest="on" />
 		<widget name="menuname" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
 	</screen>
+	<!-- ##BobLight## -->
+<!--	<screen name="BoblightAboutScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<widget name="pluginInfo" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+		<widget name="enigmaInfo" position="520,90" size="755,25" font="Regular;22" transparent="1" foregroundColor="grey" />
+		<widget name="who" position="520,130" size="755,25" font="Regular;22" transparent="1" foregroundColor="grey" />
+		<widget name="ThanksInfo" position="520,170" size="755,25" font="Regular;22" transparent="1" foregroundColor="grey" />
+		<widget name="MoreInfo" position="520,210" size="755,25" font="Regular;22" transparent="1" foregroundColor="grey" />
+	</screen>
+	<screen name="BoblightConfig" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+		<widget name="buttonred" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+		<widget name="buttongreen" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
+		<widget name="buttonyellow" position="614,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
+		<widget name="buttonblue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<ePixmap pixmap="skin_default/buttons/key_1.png" zPosition="5" position="10,400" size="35,25" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/key_2.png" zPosition="5" position="10,440" size="35,25" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/key_3.png" zPosition="5" position="10,480" size="35,25" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/key_4.png" zPosition="5" position="10,520" size="35,25" alphatest="on" />
+		<widget name="button1" position="60,400" size="170,25" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget name="button2" position="60,440" size="170,25" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget name="button3" position="60,480" size="170,25" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget name="button4" position="60,520" size="170,25" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
+		<widget name="buttoninfo" position="1185,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget name="config" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="MoodLampConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="Moodlamp Settings">
+		<panel name="BasicTemplate"/>
+		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
+		<widget name="buttonyellow" position="614,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+		<widget name="buttongreen" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget name="config" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="text" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+	</screen>-->
 	<!-- ## End of Magic-HD-ViX ## -->
 </skin>
