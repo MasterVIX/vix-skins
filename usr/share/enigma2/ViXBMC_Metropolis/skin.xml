@@ -505,7 +505,14 @@
 		<widget name="key_green" position="204,678" size="120,22" backgroundColor="background2" transparent="1" zPosition="3" font="aeon_title_cy;22" valign="center" halign="left"/>
 		<ePixmap pixmap="ViXBMC_Metropolis/buttons/yellow.png" position="338,679" size="18,18" alphatest="on" zPosition="3"/>
 		<widget name="key_yellow" position="365,678" size="120,22" backgroundColor="background2" transparent="1" zPosition="3" font="aeon_title_cy;22" valign="center" halign="left"/>
-	</screen>
+			<widget source="session.CurrentService" render="Pixmap" pixmap="ViXBMC_Metropolis/icons/ico_crypt_on.png" position="500,679" size="40,21" zPosition="3" alphatest="on">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide"/>			
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="560,670" size="500,40" backgroundColor="transpBlack" transparent="1" zPosition="3" foregroundColor="white" font="Ubuntu-Regular;16" valign="top" halign="left">
+  <convert type="CryptoInfo">VerboseInfo</convert>
+</widget>
+</screen>
 	<!-- MoviePlayer -->
 	<screen name="MoviePlayer" flags="wfNoBorder" position="0,542" size="1280,179" title="InfoBar" backgroundColor="transparent">
 		<ePixmap pixmap="ViXBMC_Metropolis/osd/lower_InfoBar-semitrans-fs8.png" position="0,0" size="1280,179" zPosition="1" alphatest="blend"/>
@@ -1269,15 +1276,14 @@
 		<widget name="key0" position="172,507" size="83,119" font="Regular;20" foregroundColor="white" halign="center" valign="center" transparent="1" zPosition="3"/>
 		<widget name="help2" position="303,507" size="83,68" font="Regular;22" foregroundColor="white" halign="center" valign="center" transparent="1" zPosition="3"/>
 	</screen>
-	<screen name="TimerEntry" position="435,0" size="845,720" title="Timer entry" flags="wfNoBorder" backgroundColor="transparent"  transparent="0">
+	<screen name="TimerEntry" position="435,0" size="845,720" title="Timer entry" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
 		<ePixmap pixmap="ViXBMC_Metropolis/osd/timer-edit-bg-fs8.png" position="0,0" size="845,720" alphatest="on" transparent="1" zPosition="1"/>
 		<widget source="Title" render="Label" position="10,10" size="232,60" font="Regular;35" Halign="center" backgroundColor="background2" transparent="1" halign="left" foregroundColor="white"/>
 		<!--<widget name="config" position="32,86" selectionPixmap="ViXBMC_HD-Common/images/FocusBar_H25x740.png" transparent="1" backgroundColor="background2" size="781,350" scrollbarMode="showOnDemand" font="Regular; 24"/> -->
-		<widget name="config" position="15,30" size="800,680" itemHeight="50" transparent="1" foregroundColor="white" backgroundColor="background2" font="Ubuntu-Regular;28" scrollbarMode="showOnDemand" selectionPixmap="ViXBMC_Metropolis/osd/list_selected-845px-fs8.png" enableWrapAround="1" zPosition="3" />
+		<widget name="config" position="15,30" size="800,680" itemHeight="50" transparent="1" foregroundColor="white" backgroundColor="background2" font="Ubuntu-Regular;28" scrollbarMode="showOnDemand" selectionPixmap="ViXBMC_Metropolis/osd/list_selected-845px-fs8.png" enableWrapAround="1" zPosition="3"/>
 		<widget name="cancel" pixmap="ViXBMC_Metropolis/buttons/red.png" position="314,638" size="18,18" alphatest="blend" backgroundColor="background2" zPosition="3"/>
 		<widget name="ok" pixmap="ViXBMC_Metropolis/buttons/green.png" position="479,638" size="18,18" alphatest="blend" backgroundColor="background2" zPosition="3"/>
-
-		<widget name="canceltext" position="362,637" zPosition="3" size="100,25" font="Ubuntu-Regular; 22" halign="left" valign="center" backgroundColor="background2" transparent="1" />
+		<widget name="canceltext" position="362,637" zPosition="3" size="100,25" font="Ubuntu-Regular; 22" halign="left" valign="center" backgroundColor="background2" transparent="1"/>
 		<widget name="oktext" position="518,637" zPosition="3" size="100,25" font="Ubuntu-Regular; 22" halign="left" valign="center" backgroundColor="background2" transparent="1"/>
 		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="0,0" size="1,1" zPosition="3" transparent="1" alphatest="on"/>
 	</screen>
