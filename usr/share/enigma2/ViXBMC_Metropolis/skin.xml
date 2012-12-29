@@ -344,6 +344,11 @@
 		<ePixmap pixmap="ViXBMC_Metropolis/osd/channel-selection-fg-fs8.png" position="0,307" size="1280,414" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="ViXBMC_Metropolis/osd/PIG_bg_channel-selection-fs8.png" position="21,21" size="474,251" zPosition="3" alphatest="blend"/>
 		<widget source="session.VideoPicture" render="Pig" position="30,30" size="455,233" backgroundColor="transparent" zPosition="1"/>
+		
+			<widget source="global.CurrentTime" render="Label" position="1120,0" size="190,30" font="Ubuntu-Light; 28" halign="center" valign="top" foregroundColor="orange" backgroundColor="transpBlack" transparent="1" zPosition="3">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		
 		<widget name="list" position="530,21" size="740,260" selectionPixmap="ViXBMC_Metropolis/osd/list_selected-740px-fs8.png" backgroundPixmap="ViXBMC_HD-Common/images/sel_bg.png" foregroundColorEvent="white" backgroundColorEvent="blue" foregroundColorEventSelected="#CCCCCC" foregroundColorServiceNotAvail="red" serviceItemHeight="50" serviceNumberFont="Regular;26" serviceNameFont="Regular;26" serviceInfoFont="Ubuntu-Regular;26" transparent="1" zPosition="3" scrollbarMode="showNever"/>
 		<widget source="ServiceEvent" render="Label" position="21,313" size="95,30" halign="left" font="Ubuntu-Regular;30" foregroundColor="#996600" backgroundColor="background2" transparent="1" noWrap="1" zPosition="6">
 			<convert type="EventTime">StartTime</convert>
@@ -505,14 +510,14 @@
 		<widget name="key_green" position="204,678" size="120,22" backgroundColor="background2" transparent="1" zPosition="3" font="aeon_title_cy;22" valign="center" halign="left"/>
 		<ePixmap pixmap="ViXBMC_Metropolis/buttons/yellow.png" position="338,679" size="18,18" alphatest="on" zPosition="3"/>
 		<widget name="key_yellow" position="365,678" size="120,22" backgroundColor="background2" transparent="1" zPosition="3" font="aeon_title_cy;22" valign="center" halign="left"/>
-			<widget source="session.CurrentService" render="Pixmap" pixmap="ViXBMC_Metropolis/icons/ico_crypt_on.png" position="500,679" size="40,21" zPosition="3" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViXBMC_Metropolis/icons/ico_crypt_on.png" position="500,679" size="40,21" zPosition="3" alphatest="on">
 			<convert type="ServiceInfo">IsCrypted</convert>
-			<convert type="ConditionalShowHide"/>			
+			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="560,670" size="500,40" backgroundColor="transpBlack" transparent="1" zPosition="3" foregroundColor="white" font="Ubuntu-Regular;16" valign="top" halign="left">
-  <convert type="CryptoInfo">VerboseInfo</convert>
-</widget>
-</screen>
+			<convert type="CryptoInfo">VerboseInfo</convert>
+		</widget>
+	</screen>
 	<!-- MoviePlayer -->
 	<screen name="MoviePlayer" flags="wfNoBorder" position="0,542" size="1280,179" title="InfoBar" backgroundColor="transparent">
 		<ePixmap pixmap="ViXBMC_Metropolis/osd/lower_InfoBar-semitrans-fs8.png" position="0,0" size="1280,179" zPosition="1" alphatest="blend"/>
