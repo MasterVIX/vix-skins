@@ -4136,7 +4136,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_yellow" position="315,667" size="190,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" valign="top"/>
 		<widget name="key_blue" position="315,694" size="190,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" valign="top"/>
 	</screen>
-	<screen name="EPGImportSources" position="0,0" size="623,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="XMLTVImportSources" position="0,0" size="623,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViXBMC_HD-Common/images/menu_bg.png" position="0,0" size="622,720" alphatest="on" transparent="1" zPosition="-1"/>
 		<widget source="global.CurrentTime" render="Label" position="10,8" size="410,28" font="Regular;24" foregroundColor="menu_title-frgrnd" backgroundColor="menu-time-bkgrnd" halign="right" transparent="1">
 			<convert type="ClockToText">Full</convert>
@@ -4153,7 +4153,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="key_yellow" position="315,667" size="190,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" valign="top"/>
 		<widget name="key_blue" position="315,694" size="190,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd" halign="left" transparent="1" valign="top"/>
 	</screen>
-	<screen name="EPGImportLog" position="0,0" size="623,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="XMLTVImportLog" position="0,0" size="623,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViXBMC_HD-Common/images/menu_bg.png" position="0,0" size="622,720" alphatest="on" transparent="1" zPosition="-1"/>
 		<widget source="global.CurrentTime" render="Label" position="10,8" size="410,28" font="Regular;24" foregroundColor="menu_title-frgrnd" backgroundColor="menu-time-bkgrnd" halign="right" transparent="1">
 			<convert type="ClockToText">Full</convert>
