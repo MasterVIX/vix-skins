@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--  Skin: ViX-Night-HD Vs 1.10 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Night-HD Vs 1.11 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -3108,8 +3108,12 @@ self.autoResize()
 		<panel name="MenuPanel" />
 		<widget name="nimlist" position="10,107" size="503,533" itemHeight="45" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H45x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" scrollbarMode="showOnDemand" />
 	</screen>
-	<screen name="PositionerSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="PositionerSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent" title="Positioner setup" >
 		<panel name="MenuPanel" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<panel name="MenuYellow1Panel" />
+		<panel name="MenuBlue1Panel" />
 		<widget name="list" position="25,133" size="458,210" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" zPosition="1" />
 		<widget name="snr_db" position="80,355" size="120,22" halign="center" valign="center" font="Regular;19" backgroundColor="window-bg" transparent="0" />
 		<eLabel text="SNR:" position="25,380" size="50,22" font="Regular;19" backgroundColor="window-bg" transparent="0" />
@@ -3126,14 +3130,9 @@ self.autoResize()
 		<widget name="frequency_value" position="385,380" size="95,22" font="Regular;19" backgroundColor="window-bg" transparent="0" />
 		<widget name="symbolrate_value" position="385,405" size="95,22" font="Regular;19" backgroundColor="window-bg" transparent="0" />
 		<widget name="fec_value" position="385,430" size="95,22" font="Regular;21" backgroundColor="window-bg" transparent="0" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="red" position="75,663" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd1" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/green.png" position="40,690" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="green" position="75,690" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd2" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/yellow.png" position="280,663" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="yellow" position="315,663" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd1" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/blue.png" position="280,690" size="24,24" alphatest="blend" transparent="1" />
-		<widget name="blue" position="315,690" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd2" />
+		<eLabel text="Polarisation:" position="275,455" size="105,22" font="Regular;19" backgroundColor="window-bg" transparent="0" />
+		<widget name="polarisation" position="385,455" size="95,22" font="Regular;21" backgroundColor="window-bg" transparent="0" />
+		<widget name="status_bar" position="25,600" size="458,24" foregroundColor="window-fg" backgroundColor="window-bg" zPosition="1" transparent="0" font="Regular;21" />
 	</screen>
 	<screen name="VideoEnhancementSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
