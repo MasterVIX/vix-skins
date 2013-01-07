@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.61 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.62 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -1262,6 +1262,11 @@
 	<screen name="NumberZap" position="center,center" size="600,40" backgroundColor="transparent" flags="wfNoBorder">
 		<widget name="number" position="0,-200" size="130,40" backgroundColor="transparent" transparent="1" font="Regular;36" borderColor="black" borderWidth="3" valign="center" halign="right" foregroundColor="grey" />
 		<widget name="servicename" position="135,-200" size="450,40" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="3" valign="center" halign="left" foregroundColor="grey" />
+	</screen>
+	<screen name="QuickSubtitlesConfigMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<widget name="config" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="videofps" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
 	</screen>
 <screen name="HistoryZapSelector" position="center,center" size="750,450" backgroundColor="transpBlack" flags="wfNoBorder" title="">
 		<widget source="menu" render="Listbox" position="0,10" size="750,442" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" backgroundColor="transpBlack" transparent="1" >
