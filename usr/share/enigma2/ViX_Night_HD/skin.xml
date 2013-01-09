@@ -1,5 +1,5 @@
-﻿<skin>
-	<!--  Skin: ViX-Night-HD Vs 1.11 by AndyBlac @ www.world-of-satellite.com  -->
+<skin>
+	<!--  Skin: ViX-Night-HD Vs 1.12 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -2602,8 +2602,8 @@ self.autoResize()
 	</screen>
 	<screen name="IpkgInstaller" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="list" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="10,107" size="503,450" scrollbarMode="showOnDemand" />
-		<widget source="introduction" render="Label" position="10,600" size="503,25" font="Regular;20" />
+		<widget name="list" position="10,165" size="503,450" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" />
+		<widget source="introduction" render="Label" position="10,107" size="503,25" font="Regular;20" zPosition="2" transparent="0" halign="center" />
 		<panel name="MenuRed2Panel" />
 		<panel name="MenuGreen2Panel" />
 	</screen>
@@ -3746,12 +3746,12 @@ self.autoResize()
 	<screen name="VIXIPKInstaller" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<widget name="lab1" position="10,107" size="503,25" font="Regular;20" zPosition="2" transparent="0" halign="center" />
-		<widget name="list" position="10,165" size="503,450" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" />
+		<widget name="list" position="10,165" size="503,450" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
 		<panel name="MenuYellow1Panel" />
 		<applet type="onLayoutFinish">
-			self["list"].instance.setItemHeight(25)
+			self["list"].instance.setItemHeight(30)
 		</applet>
 	</screen>
 	<screen name="VIXDevicesPanel" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
