@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.70 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.71 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -251,6 +251,44 @@
 		<widget source="key_blue" render="Label" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" transparent="1" zPosition="1" />
 	</screen>
 
+	<screen name="Player">
+		<widget source="session.CurrentService" render="Label" position="240,0" size="780,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<eLabel backgroundColor="infobarBG" position="120,49" size="1040,14" zPosition="0"/>
+<!--		<widget name="statusicon" position="120,70" size="20,20" pixmaps="Magic-HD-Common/icons/play.png,Magic-HD-Common/icons/pause.png,Magic-HD-Common/icons/stop.png,Magic-HD-Common/icons/forward.png,Magic-HD-Common/icons/backward.png,Magic-HD-Common/icons/slow.png" zPosition="5" alphatest="on" />
+		<widget name="speed" position="140,70" size="80,15" font="Regular; 17" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" transparent="1" zPosition="5" />-->
+		<ePixmap pixmap="Magic-HD-Common/dvr/scale1024.png" position="128,54" size="1024,4" zPosition="1" />
+		<widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer1024.png:1012,0">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="40,13" size="200,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1025,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
+			<convert type="ServicePosition">Remaining</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1145,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
+			<convert type="ServicePosition">Length</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_dolby_on.png" position="986,63" size="60,24" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_hd_on.png" position="1048,63" size="40,21" zPosition="4" alphatest="on">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">800,2000</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_format_on.png" position="1090,63" size="40,21" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1132,63" size="20,20" zPosition="3" alphatest="on">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+	</screen>
+
 	<!--	## Volume ## -->
 	<screen name="Volume" position="92,40" zPosition="1" size="320,68" title="Volume" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="Volume" pixmap="Magic-HD-Common/infobar/volume_up.png" position="62,14" zPosition="1" size="240,34" transparent="1" />
@@ -319,42 +357,8 @@
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>
-	<screen name="MoviePlayer" position="4,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
-		<widget source="session.CurrentService" render="Label" position="240,0" size="780,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<eLabel backgroundColor="infobarBG" position="120,49" size="1040,14" zPosition="0"/>
-<!--		<widget name="statusicon" position="120,70" size="20,20" pixmaps="Magic-HD-Common/icons/play.png,Magic-HD-Common/icons/pause.png,Magic-HD-Common/icons/stop.png,Magic-HD-Common/icons/forward.png,Magic-HD-Common/icons/backward.png,Magic-HD-Common/icons/slow.png" zPosition="5" alphatest="on" />
-		<widget name="speed" position="140,70" size="80,15" font="Regular; 17" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" transparent="1" zPosition="5" />-->
-		<ePixmap pixmap="Magic-HD-Common/dvr/scale1024.png" position="128,54" size="1024,4" zPosition="1" />
-		<widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer1024.png:1012,0">
-			<convert type="ServicePosition">Gauge</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="40,13" size="200,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
-			<convert type="ServicePosition">Position</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="1025,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
-			<convert type="ServicePosition">Remaining</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="1145,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
-			<convert type="ServicePosition">Length</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_dolby_on.png" position="986,63" size="60,24" zPosition="2" alphatest="on">
-			<convert type="ServiceInfo">IsMultichannel</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_hd_on.png" position="1048,63" size="40,21" zPosition="4" alphatest="on">
-			<convert type="ServiceInfo">VideoWidth</convert>
-			<convert type="ValueRange">800,2000</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_format_on.png" position="1090,63" size="40,21" zPosition="2" alphatest="on">
-			<convert type="ServiceInfo">IsWidescreen</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1132,63" size="20,20" zPosition="3" alphatest="on">
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
+	<screen name="MoviePlayer" position="0,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="Player" />
 	</screen>
 	<screen name="SecondInfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<widget source="session.CurrentService" render="Label" position="5,5" size="635,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;18" valign="top" halign="left">
@@ -554,33 +558,13 @@
 		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_stableupdate.png" position="5,587" size="32,32" zPosition="10" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<panel name="Red1Panel" />
 		<panel name="Green1Panel" />
 		<panel name="Yellow1Panel" />
 		<panel name="Blue1Panel" />
 	</screen>
 <!-- ## DvD-Player ## -->
-	<screen name="DVDPlayer" position="4,30" size="1280,215" backgroundColor="transparent" flags="wfNoBorder">
-		<widget source="session.CurrentService" render="Label" position="240,0" size="780,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<eLabel backgroundColor="infobarBG" position="120,49" size="1040,14" zPosition="0"/>
-		<ePixmap pixmap="Magic-HD-Common/dvr/scale1024.png" position="128,54" size="1024,4" zPosition="1" />
-		<widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer1024.png:1012,0">
-			<convert type="ServicePosition">Gauge</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="40,13" size="200,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
-			<convert type="ServicePosition">Position</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="1025,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
-			<convert type="ServicePosition">Remaining</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="1145,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
-			<convert type="ServicePosition">Length</convert>
-		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1132,63" size="20,20" zPosition="3" alphatest="on">
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
+	<screen name="DVDPlayer" position="0,30" size="1280,215" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="Player" />
 		<widget name="chapterLabel" position="128,80" size="380,35" font="Regular;20" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3" />
 		<eLabel text="Audio:	" position="128,115" size="90,35" backgroundColor="secondBG" transparent="1" font="Regular;20" borderColor="black" borderWidth="2" valign="center" halign="left" />
 		<widget name="audioLabel" position="218,115" size="290,35" font="Regular;20" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3" />
@@ -2373,41 +2357,7 @@
 		<widget source="message" render="Label" position="70,15" size="600,25" zPosition="3" font="Regular;22" halign="left" noWrap="1" transparent="1" foregroundColor="foreground" backgroundColor="secondBG"/>
 	</screen>
 	<screen	name="DLNAStreamPlayer"	position="4,30"	size="1280,100"	backgroundColor="transparent"	flags="wfNoBorder">
-		<widget	source="session.CurrentService"	render="Label"	position="240,0"	size="780,49"	backgroundColor="transparent"	zPosition="1"	foregroundColor="foreground"	borderWidth="2"	font="Regular;24"	borderColor="black"	valign="center"	halign="center">
-				<convert	type="ServiceName">Name</convert>
-		</widget>
-		<eLabel	backgroundColor="infobarBG"	position="120,49"	size="1040,14"	zPosition="0"	/>
-		<!--				<widget	name="statusicon"	position="120,70"	size="20,20"	pixmaps="Magic-HD-Common/icons/play.png,Magic-HD-Common/icons/pause.png,Magic-HD-Common/icons/stop.png,Magic-HD-Common/icons/forward.png,Magic-HD-Common/icons/backward.png,Magic-HD-Common/icons/slow.png"	zPosition="5"	alphatest="on"	/>
-				<widget	name="speed"	position="140,70"	size="80,15"	font="Regular;	17"	halign="left"	backgroundColor="transparent"	foregroundColor="foreground"	borderWidth="2"	borderColor="black"	transparent="1"	zPosition="5"	/>-->
-		<ePixmap	pixmap="Magic-HD-Common/dvr/scale1024.png"	position="128,54"	size="1024,4"	zPosition="1"	/>
-		<widget	source="session.CurrentService"	render="PositionGauge"	position="128,50"	size="1024,12"	transparent="1"	zPosition="4"	pointer="Magic-HD-Common/dvr/position_pointer1024.png:1012,0">
-				<convert	type="ServicePosition">Gauge</convert>
-		</widget>
-		<widget	source="session.CurrentService"	render="Label"	position="40,13"	size="200,25"	backgroundColor="transparent"	zPosition="4"	foregroundColor="foreground"	borderWidth="2"	font="Regular;22"	borderColor="black"	valign="center"	halign="left">
-				<convert	type="ServicePosition">Position</convert>
-		</widget>
-		<widget	source="session.CurrentService"	render="Label"	position="1025,13"	size="120,25"	backgroundColor="transparent"	transparent="1"	zPosition="4"	foregroundColor="foreground"	borderWidth="2"	font="Regular;22"	borderColor="black"	valign="center"	halign="left">
-				<convert	type="ServicePosition">Remaining</convert>
-		</widget>
-		<widget	source="session.CurrentService"	render="Label"	position="1145,13"	size="120,25"	backgroundColor="transparent"	transparent="1"	zPosition="4"	foregroundColor="foreground"	borderWidth="2"	font="Regular;22"	borderColor="black"	valign="center"	halign="left">
-				<convert	type="ServicePosition">Length</convert>
-		</widget>
-		<widget	source="session.CurrentService"	render="Pixmap"	pixmap="Magic-HD-Common/infobar/ico_dolby_on.png"	position="986,63"	size="60,24"	zPosition="2"	alphatest="on">
-				<convert	type="ServiceInfo">IsMultichannel</convert>
-				<convert	type="ConditionalShowHide"	/>
-		</widget>
-		<widget	source="session.CurrentService"	render="Pixmap"	pixmap="Magic-HD-Common/infobar/ico_hd_on.png"	position="1048,63"	size="40,21"	zPosition="4"	alphatest="on">
-				<convert	type="ServiceInfo">VideoWidth</convert>
-				<convert	type="ValueRange">800,2000</convert>
-				<convert	type="ConditionalShowHide"	/>
-		</widget>
-		<widget	source="session.CurrentService"	render="Pixmap"	pixmap="Magic-HD-Common/infobar/ico_format_on.png"	position="1090,63"	size="40,21"	zPosition="2"	alphatest="on">
-				<convert	type="ServiceInfo">IsWidescreen</convert>
-				<convert	type="ConditionalShowHide"	/>
-		</widget>
-		<widget	source="session.RecordState"	render="Pixmap"	pixmap="Magic-HD-Common/buttons/rec.png"	position="1132,63"	size="20,20"	zPosition="3"	alphatest="on">
-				<convert	type="ConditionalShowHide">Blink</convert>
-		</widget>
+		<panel name="Player" />
 		<widget	name="sidebar"	position="362,20"	size="10,20"	font="Regular;18"	halign="center"	valign="center"	backgroundColor="#4e5a74"	transparent="1"	/>
 	</screen>
 	<screen name="SelectDirectoryWindow" position="0,0" size="1280,720" flags="wfNoBorder" >
@@ -3033,26 +2983,8 @@
 				</convert>
 		</widget>
 	</screen>
-	<screen name="MyTubePlayer" position="4,22" size="1280,70" backgroundColor="transparent" flags="wfNoBorder">
-		<widget source="session.CurrentService" render="Label" position="219,0" size="840,40" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" borderWidth="2" borderColor="black" valign="center" halign="center">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="190,0" size=" 145,40" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;18" borderWidth="2" borderColor="black" halign="center">
-			<convert type="ClockToText">ShortDate</convert>
-		</widget>
-		<ePixmap pixmap="Magic-HD-Common/dvr/mpslider.png" position="345,50" size="600,16" zPosition="3" alphatest="blend" />
-		<widget source="session.CurrentService" render="PositionGauge" position="364,51" size="560,14" zPosition="2" pointer="Magic-HD-Common/dvr/pointer.png:13,3">
-			<convert type="ServicePosition">Gauge</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="264,47" size="70,25" backgroundColor="background" transparent="1" zPosition="4" foregroundColor="foreground" font="Regular;22" borderWidth="2" borderColor="black" valign="center" halign="right">
-			<convert type="ServicePosition">Position</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="952,48" size="117,25" backgroundColor="background" transparent="1" zPosition="4" foregroundColor="foreground" font="Regular;22" borderWidth="2" borderColor="black" valign="center" halign="left">
-			<convert type="ServicePosition">Remaining</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="190,47" size="70,25" backgroundColor="background" transparent="1" zPosition="4" foregroundColor="foreground" font="Regular;24" borderWidth="2" borderColor="black" valign="center" halign="center">
-			<convert type="ServicePosition">Length</convert>
-		</widget>
+	<screen name="MyTubePlayer" position="0,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="Player" />
 	</screen>
 	<screen name="MyTubeSettingsScreen" flags="wfNoBorder" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
@@ -5577,7 +5509,8 @@ background
 		<ePixmap pixmap="Magic-HD-Common/VU/rc_wb_desc.png" position="730, 255" size="310,300" zPosition="4" alphatest="on" />
 	</screen>
 	<screen name="VuPlayer" position="4,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
-		<eLabel backgroundColor="infobarBG" position="120,49" size="1040,14" zPosition="0" />
+		<panel name="Player" />
+<!--		<eLabel backgroundColor="infobarBG" position="120,49" size="1040,14" zPosition="0" />
 		<ePixmap pixmap="Magic-HD-Common/dvr/scale1024.png" position="128,54" size="1024,4" zPosition="1" />
 		<widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer1024.png:1012,0">
 			<convert type="ServicePosition">Gauge</convert>
@@ -5587,7 +5520,7 @@ background
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="1035,13" size="117,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="right">
 			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
-		</widget>
+		</widget>-->
 	</screen>
 	<!-- ## Webbrowser VU-Plus (Opera) ## -->
 <!--<screen name="Opera Browser" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" title="Opera Browser">
