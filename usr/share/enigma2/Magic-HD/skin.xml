@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.68 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.70 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -988,7 +988,7 @@
 		<widget source="VKeyIcon" render="Pixmap" pixmap="Magic-HD-Common/buttons/key_text.png" position="1160,682" zPosition="1" size="35,25" transparent="1" alphatest="on" >
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget name="footnote" position="750,682" size="350,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="grey" />
+		<widget name="footnote" position="750,687" size="350,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="grey" />
 	</screen>
 <!-- About -->
 	<screen name="About" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5015,10 +5015,10 @@ background
 	</screen>
 	<screen name="AtmoLightConfigScreen" position="0,0" size="1280,720" title="AtmoLight configuration" >
 		<panel name="BasicTemplate"/>
-		<ePixmap name="r" pixmap="Magic-HD-Common/buttons/big-red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap name="g" pixmap="Magic-HD-Common/buttons/big-green.png" position="305,682" size="26,26" alphatest="on" />
-		<ePixmap name="y" pixmap="Magic-HD-Common/buttons/big-yellow.png" position="595,682" size="26,26" alphatest="on" />
-		<ePixmap name="b" pixmap="Magic-HD-Common/buttons/big-blue.png" position="890,682" size="26,26" alphatest="on" />
+		<ePixmap name="r" pixmap="Magic-HD-Common/buttons/big-red.png" position="15,682" size="284,40" alphatest="blend" />
+		<ePixmap name="g" pixmap="Magic-HD-Common/buttons/big-green.png" position="305,682" size="284,40" alphatest="blend" />
+		<ePixmap name="y" pixmap="Magic-HD-Common/buttons/big-yellow.png" position="595,682" size="284,40" alphatest="blend" />
+		<ePixmap name="b" pixmap="Magic-HD-Common/buttons/big-blue.png" position="890,682" size="284,40" alphatest="blend" />
 		<widget name="key_r" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 		<widget name="key_g" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 		<widget name="key_y" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
