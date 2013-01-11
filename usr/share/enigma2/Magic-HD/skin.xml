@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.73 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.74 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -5095,16 +5095,6 @@ background
 			</convert>
 		</widget>
 		<widget name="lab1" zPosition="2" position="520,592" size="755,70" font="Regular;24" halign="center" transparent="0" />
-	</screen>
-	<screen flags="wfNoBorder" name="VIXScriptRunner" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<widget name="lab1" position="15,450" size="477,70" font="Regular;20" zPosition="2" transparent="0" foregroundColor="secondFG" halign="center" />
-		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-				<applet type="onLayoutFinish">
-				self["list"].instance.setItemHeight(25)
-				</applet>
 	</screen>
 	<screen name="QuickEPG" title="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<ePixmap alphatest="off" pixmap="Magic-HD-Common/infobar/hd.png" position="0,500" size="1280,220" zPosition="-1" />
