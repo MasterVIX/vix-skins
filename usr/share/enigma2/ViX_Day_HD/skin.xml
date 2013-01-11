@@ -1,5 +1,5 @@
 <skin>
-	<!--  Skin: ViX-Day-HD Vs 2.112 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Day-HD Vs 2.113 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -3466,23 +3466,6 @@ self.autoResize()
 			self["list"].instance.setItemHeight(25)
 		</applet>
 	</screen>
-	<screen name="ImageManagerMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MenuPanel" />
-		<widget name="config" position="10,107" size="503,435" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
-		<widget name="HelpWindow" pixmap="ViX_HD_Common/buttons/vkey_icon.png" position="100,490" zPosition="1" size="541,720" transparent="1" alphatest="on" />
-		<ePixmap pixmap="ViX_HD_Common/buttons/key_text.png" position="470,663" size="35,25" zPosition="4" alphatest="on" transparent="1" />
-		<panel name="MenuRed1Panel" />
-		<panel name="MenuGreen1Panel" />
-		<applet type="onLayoutFinish">
-			self["config"].instance.setItemHeight(25)
-		</applet>
-	</screen>
-	<screen name="VIXImageManagerSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MenuPanel" />
-		<widget name="config" position="10,107" size="503,526" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" zPosition="2" />
-		<panel name="MenuRed1Panel" />
-		<panel name="MenuGreen1Panel" />
-	</screen>
 	<screen name="NetworkServiceSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<widget name="lab1" position="70,190" size="150,30" font="Regular;20" valign="center" transparent="0" />
@@ -3799,16 +3782,6 @@ self.autoResize()
 		<widget name="lab1" zPosition="2" position="10,140" size="503,60" font="Regular;24" halign="center" transparent="0" />
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
-	</screen>
-	<screen name="VIXScriptRunner" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MenuPanel" />
-		<widget name="lab1" position="10,107" size="503,25" font="Regular;20" zPosition="2" transparent="0" halign="center" />
-		<widget name="list" position="10,165" size="503,450" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" />
-		<panel name="MenuRed1Panel" />
-		<panel name="MenuGreen1Panel" />
-		<applet type="onLayoutFinish">
-			self["list"].instance.setItemHeight(25)
-		</applet>
 	</screen>
 	<screen name="IMDB" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
