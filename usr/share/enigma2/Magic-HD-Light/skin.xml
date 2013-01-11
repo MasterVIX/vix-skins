@@ -1,5 +1,5 @@
-﻿<skin>
-<!--Skin:  Magic-HD-Light ViX(Extreme-HD) Vs 1.89 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 5.87 but now in "Light version" (not supporting as many screens)-->
+<skin>
+<!--Skin: Magic-HD-Light ViX(Extreme-HD) Vs 2.00 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 6.72 but now in "Light version" (not supporting as many screens)-->
 <!--This skin is a Freeware. Everyone can modify and use it in other images.-->
 <!--BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!-->
 <!--Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are-->
@@ -121,6 +121,7 @@
 		</widget>
 		<ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
 	</screen>
+
 	<screen name="BasicTemplate2">
 		<ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
 		<ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
@@ -136,6 +137,158 @@
 			<convert type="ServiceName">Name</convert>
 		</widget>
 	</screen>
+
+	<screen name="BasicTemplate3">
+		<ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+		<ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+		<widget source="Title" render="Label" foregroundColor="grey"	position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Format:%-H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+	</screen>
+
+	<screen name="RedBPanel">
+		<ePixmap pixmap="Magic-HD-Common/buttons/big-red.png" position="15,682" size="284,40 " zPosition="-1" alphatest="blend" />
+	</screen>
+
+	<screen name="RedT1Panel">
+		<widget name="key_red" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+	</screen>
+
+	<screen name="RedT2Panel">
+		<widget source="key_red" render="Label" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+	</screen>
+
+	<screen name="GreenBPanel">
+		<ePixmap pixmap="Magic-HD-Common/buttons/big-green.png" position="305,682" size="284,40 " zPosition="-1" alphatest="blend" />
+	</screen>
+
+	<screen name="GreenT1Panel">
+		<widget name="key_green" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+	</screen>
+
+	<screen name="GreenT2Panel">
+		<widget source="key_green" render="Label" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+	</screen>
+
+	<screen name="YellowBPanel">
+		<ePixmap pixmap="Magic-HD-Common/buttons/big-yellow.png" position="595,682" size="284,40 " zPosition="-1" alphatest="blend" />
+	</screen>
+
+	<screen name="YellowT1Panel">
+		<widget name="key_yellow" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+	</screen>
+
+	<screen name="YellowT2Panel">
+		<widget source="key_yellow" render="Label" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+	</screen>
+
+	<screen name="BlueBPanel">
+		<ePixmap pixmap="Magic-HD-Common/buttons/big-blue.png" position="890,682" size="284,40 " zPosition="-1" alphatest="blend" />
+	</screen>
+
+	<screen name="BlueT1Panel">
+		<widget name="key_blue" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+	</screen>
+
+	<screen name="BlueT2Panel">
+		<widget source="key_blue" render="Label" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+	</screen>
+
+	<screen name="MenuBPanel">
+		<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1175,687"	size="35,25" />
+	</screen>
+
+	<screen name="InfoBPanel">
+		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1215,687" size="35,25" />
+	</screen>
+
+	<screen name="TextBPanel">
+		<ePixmap pixmap="skin_default/buttons/key_text.png" alphatest="on" position="1250,687" size="35,25" />
+	</screen>
+
+	<screen name="Red1Panel">
+		<ePixmap pixmap="Magic-HD-Common/buttons/big-red.png" position="15,682" size="284,40" zPosition="-1" alphatest="blend" />
+		<widget name="key_red" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+	</screen>
+
+	<screen name="Green1Panel">
+		<ePixmap pixmap="Magic-HD-Common/buttons/big-green.png" position="305,682" size="284,40 " zPosition="-1" alphatest="blend" />
+		<widget name="key_green" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+	</screen>
+
+	<screen name="Yellow1Panel">
+		<ePixmap pixmap="Magic-HD-Common/buttons/big-yellow.png" position="595,682" size="284,40 " zPosition="-1" alphatest="blend" />
+		<widget name="key_yellow" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+	</screen>
+
+	<screen name="Blue1Panel">
+		<ePixmap pixmap="Magic-HD-Common/buttons/big-blue.png" position="890,682" size="284,40 " zPosition="-1" alphatest="blend" />
+		<widget name="key_blue" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+	</screen>
+
+	<screen name="Red2Panel">
+		<ePixmap pixmap="Magic-HD-Common/buttons/big-red.png" position="15,682" size="284,40 " zPosition="-1" alphatest="blend" />
+		<widget source="key_red" render="Label" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" transparent="1" zPosition="1" />
+	</screen>
+
+	<screen name="Green2Panel">
+		<ePixmap pixmap="Magic-HD-Common/buttons/big-green.png" position="305,682" size="284,40 " zPosition="-1" alphatest="blend" />
+		<widget source="key_green" render="Label" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" transparent="1" zPosition="1" />
+	</screen>
+
+	<screen name="Yellow2Panel">
+		<ePixmap pixmap="Magic-HD-Common/buttons/big-yellow.png" position="595,682" size="284,40 " zPosition="-1" alphatest="blend" />
+		<widget source="key_yellow" render="Label" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" transparent="1" zPosition="1" />
+	</screen>
+
+	<screen name="Blue2Panel">
+		<ePixmap pixmap="Magic-HD-Common/buttons/big-blue.png" position="890,682" size="284,40 " zPosition="-1" alphatest="blend" />
+		<widget source="key_blue" render="Label" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" transparent="1" zPosition="1" />
+	</screen>
+
+	<screen name="Player">
+		<widget source="session.CurrentService" render="Label" position="240,0" size="780,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<eLabel backgroundColor="infobarBG" position="120,49" size="1040,14" zPosition="0"/>
+<!--		<widget name="statusicon" position="120,70" size="20,20" pixmaps="Magic-HD-Common/icons/play.png,Magic-HD-Common/icons/pause.png,Magic-HD-Common/icons/stop.png,Magic-HD-Common/icons/forward.png,Magic-HD-Common/icons/backward.png,Magic-HD-Common/icons/slow.png" zPosition="5" alphatest="on" />
+		<widget name="speed" position="140,70" size="80,15" font="Regular; 17" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" transparent="1" zPosition="5" />-->
+		<ePixmap pixmap="Magic-HD-Common/dvr/scale1024.png" position="128,54" size="1024,4" zPosition="1" />
+		<widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer1024.png:1012,0">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="40,13" size="200,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1025,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
+			<convert type="ServicePosition">Remaining</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1145,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
+			<convert type="ServicePosition">Length</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_dolby_on.png" position="986,63" size="60,24" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_hd_on.png" position="1048,63" size="40,21" zPosition="4" alphatest="on">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">800,2000</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_format_on.png" position="1090,63" size="40,21" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1132,63" size="20,20" zPosition="3" alphatest="on">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+	</screen>
+
 	<!--	## Volume ## -->
 	<screen name="Volume" position="92,40" zPosition="1" size="320,68" title="Volume" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="Volume" pixmap="Magic-HD-Common/infobar/volume_up.png" position="62,14" zPosition="1" size="240,34" transparent="1" />
@@ -203,57 +356,14 @@
 		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_unstableupdate.png" position="5,45" size="32,32" zPosition="10" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-<!--		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,179" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,179" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,179" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,179" size="26,26" alphatest="on" />
-		<widget name="key_red" position="50,179" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
-		<widget name="key_green" position="340,179" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
-		<widget name="key_yellow" position="614,179" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
-		<widget name="key_blue" position="875,179" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />-->
 	</screen>
-	<screen name="MoviePlayer" position="4,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
-		<widget source="session.CurrentService" render="Label" position="240,0" size="780,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<eLabel backgroundColor="infobarBG" position="120,49" size="1040,14" zPosition="0"/>
-<!--		<widget name="statusicon" position="120,70" size="20,20" pixmaps="Magic-HD-Common/icons/play.png,Magic-HD-Common/icons/pause.png,Magic-HD-Common/icons/stop.png,Magic-HD-Common/icons/forward.png,Magic-HD-Common/icons/backward.png,Magic-HD-Common/icons/slow.png" zPosition="5" alphatest="on" />
-		<widget name="speed" position="140,70" size="80,15" font="Regular; 17" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" transparent="1" zPosition="5" />-->
-		<ePixmap pixmap="Magic-HD-Common/dvr/scale1024.png" position="128,54" size="1024,4" zPosition="1" />
-		<widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer1024.png:1012,0">
-			<convert type="ServicePosition">Gauge</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="40,13" size="200,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
-			<convert type="ServicePosition">Position</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="1025,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
-			<convert type="ServicePosition">Remaining</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="1145,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
-			<convert type="ServicePosition">Length</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_dolby_on.png" position="986,63" size="60,24" zPosition="2" alphatest="on">
-			<convert type="ServiceInfo">IsMultichannel</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_hd_on.png" position="1048,63" size="40,21" zPosition="4" alphatest="on">
-			<convert type="ServiceInfo">VideoWidth</convert>
-			<convert type="ValueRange">800,2000</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_format_on.png" position="1090,63" size="40,21" zPosition="2" alphatest="on">
-			<convert type="ServiceInfo">IsWidescreen</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1132,63" size="20,20" zPosition="3" alphatest="on">
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
+	<screen name="MoviePlayer" position="0,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="Player" />
 	</screen>
 	<screen name="SecondInfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<widget source="session.CurrentService" render="Label" position="5,5" size="635,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;18" valign="top" halign="left">
 			<convert type="PliExtraInfo">All</convert>
 		</widget>
-<!--		<widget render="MaxTemp" source="global.CurrentTime" position="900,65" size="50,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19"/>-->
 		<eLabel name="snr" position="685,5" size="80,15" backgroundColor="transpBlack" halign="center" transparent="1" text="	SNR:" font="Regular;14" />
 		<widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,8" size="410,10" borderWidth="2" borderColor="uncccccc">
 			<convert type="FrontendInfo">SNR</convert>
@@ -380,7 +490,6 @@
 		<widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1246,615" size="20,20" zPosition="3" alphatest="on">
 		<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-<!--		<eLabel name="Tuner" position="1030,58" size="90,20" backgroundColor="transpBlack" foregroundColor="grey" halign="right" transparent="1" text="Tuner:" font="Regular;20" />-->
 		<widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S:" position="1030,90" size="90,20" font="Regular; 20" foregroundColor="grey" backgroundColor="transpBlack" transparent="1" >
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
@@ -447,37 +556,13 @@
 		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="Magic-HD-Common/icons/icon_stableupdate.png" position="5,587" size="32,32" zPosition="10" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,689" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,689" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,689" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,689" size="26,26" alphatest="on" />
-		<widget name="key_red" position="50,689" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_green" position="340,689" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_yellow" position="614,689" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_blue" position="875,689" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
 	</screen>
 <!-- ## DvD-Player ## -->
-	<screen name="DVDPlayer" position="4,30" size="1280,215" backgroundColor="transparent" flags="wfNoBorder">
-		<widget source="session.CurrentService" render="Label" position="240,0" size="780,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<eLabel backgroundColor="infobarBG" position="120,49" size="1040,14" zPosition="0"/>
-		<ePixmap pixmap="Magic-HD-Common/dvr/scale1024.png" position="128,54" size="1024,4" zPosition="1" />
-		<widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer1024.png:1012,0">
-			<convert type="ServicePosition">Gauge</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="40,13" size="200,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
-			<convert type="ServicePosition">Position</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="1025,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
-			<convert type="ServicePosition">Remaining</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="1145,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
-			<convert type="ServicePosition">Length</convert>
-		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1132,63" size="20,20" zPosition="3" alphatest="on">
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
+	<screen name="DVDPlayer" position="0,30" size="1280,215" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="Player" />
 		<widget name="chapterLabel" position="128,80" size="380,35" font="Regular;20" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3" />
 		<eLabel text="Audio:	" position="128,115" size="90,35" backgroundColor="secondBG" transparent="1" font="Regular;20" borderColor="black" borderWidth="2" valign="center" halign="left" />
 		<widget name="audioLabel" position="218,115" size="290,35" font="Regular;20" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3" />
@@ -501,26 +586,35 @@
 		<widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25" />
-		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
-		<widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_green" position="340,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_yellow" position="614,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="list" position="520,82" size="755,555" itemHeight="25" noWrap="1" serviceNumberFont="Regular;22" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="25" colorServiceDescription="blue" transparent="1" foregroundColorServiceNotAvail="#656565" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
-		<widget source="ServiceEvent" render="Label" position="520,645" size="625,25" font="Regular;22" foregroundColor="selectedFG" noWrap="1" zPosition="2" transparent="1" halign="left">
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<panel name="MenuBPanel" />
+		<panel name="InfoBPanel" />
+		<widget name="list" position="520,82" size="755,530" itemHeight="25" noWrap="1" serviceNumberFont="Regular;22" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="25" colorEventProgressbar="blue" colorEventProgressbarSelected="yellow" colorServiceDescription="blue" transparent="1" foregroundColorServiceNotAvail="#656565" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+		<widget source="ServiceEvent" render="Label" position="520,615" size="625,25" font="Regular;22" foregroundColor="selectedFG" noWrap="1" zPosition="2" transparent="1" halign="left">
 			<convert type="EventName">NextName</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="1145,645" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21" halign="right">
+		<widget source="ServiceEvent" render="Label" position="1145,615" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21" halign="right">
 			<convert type="EventTime">NextStartTime</convert>
 			<convert type="ClockToText" />
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="1215,645" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21">
+		<eLabel text="-" foregroundColor="selectedFG" backgroundColor="secondBG" font="Regular;22" halign="left" position="1208,615" size="220,26" transparent="1" zPosition="1" />
+		<widget source="ServiceEvent" render="Label" position="1215,615" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21">
 			<convert type="EventTime">NextEndTime</convert>
+			<convert type="ClockToText" />
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="520,645" size="625,25" font="Regular;22" foregroundColor="selectedFG" noWrap="1" zPosition="2" transparent="1" halign="left">
+			<convert type="EventName">ThirdName</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="1145,645" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21" halign="right">
+			<convert type="EventTime">ThirdStartTime</convert>
+			<convert type="ClockToText" />
+		</widget>
+  		<eLabel text="-" foregroundColor="selectedFG" backgroundColor="secondBG" font="Regular;22" halign="left" position="1208,645" size="220,26" transparent="1" zPosition="1" />
+		<widget source="ServiceEvent" render="Label" position="1215,645" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21">
+			<convert type="EventTime">ThirdEndTime</convert>
 			<convert type="ClockToText" />
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="5,350" size="510,25" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="center" valign="top" >
@@ -545,21 +639,21 @@
 			<convert type="ServiceOrbitalPosition">
 			</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="5,399" size="510,275" font="Regular;21" foregroundColor="grey" halign="center" valign="center" transparent="1" >
+		<widget source="ServiceEvent" render="Label" position="5,399" size="510,273" font="Regular;21" foregroundColor="grey" halign="center" valign="center" transparent="1" >
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
 	<!-- Simple channelselection -->
 	<screen name="SimpleChannelSelection" flags="wfNoBorder" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate2"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="305,682" size="26,26" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" alphatest="on" position="580,682" size="26,26" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" alphatest="on" position="840,682" size="26,26" />
-		<widget name="key_red" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
+		<panel name="RedBPanel" />
+		<panel name="GreenBPanel" />
+		<panel name="YellowBPanel" />
+		<panel name="BlueBPanel" />
+		<panel name="RedT1Panel" />
+		<panel name="GreenT1Panel" />
+		<panel name="YellowT1Panel" />
+		<panel name="BlueT1Panel" />
 		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;18" position="520,82" size="755,583" transparent="1" />
 	</screen>
 	<screen name="SlimChannelSelection" flags="wfNoBorder" position="0,0" size="590,720" backgroundColor="transparent" >
@@ -598,16 +692,12 @@
 	</screen>
 	<screen name="EPGSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate2"/>
-		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
-		<widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_green" position="340,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_yellow" position="614,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<ePixmap pixmap="skin_default/buttons/key_menu.png" position="1110,682" size="35,25" alphatest="on" />
+		<panel name="InfoBPanel" />
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<panel name="MenuBPanel" />
 		<widget name="list" position="520,82" size="755,583" itemHeight="25" font="Regular;22" transparent="1" foregroundColor="grey" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
 		<widget source="Event" render="Label" position="5,355" size="500,48" transparent="1" foregroundColor="secondFG" font="Regular;23" halign="center" valign="top">
 			<convert type="EventName">Name</convert>
@@ -624,21 +714,17 @@
 		<convert type="EventTime">EndTime</convert>
 		<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget source="Event" render="Label" position="5,428" size="500,245" transparent="1" font="Regular;22" dcolor="grey" >
+		<widget source="Event" render="Label" position="5,428" size="500,245" transparent="1" font="Regular;22" foregroundcolor="grey" >
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
 	<screen name="EventView" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
-		<widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_green" position="340,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_yellow" position="614,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<panel name="MenuBPanel" />
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
 		<widget name="channel" position="15,390" size="460,52" transparent="1" foregroundColor="selectedFG" font="Regular;24" halign="center" />
 		<widget name="datetime" position="15,463" size="460,30" transparent="1" font="Regular;22" halign="center" />
 		<widget name="duration" position="15,493" size="460,30" transparent="1" font="Regular;22" halign="center" />
@@ -663,7 +749,7 @@
 		<widget name="channel" position="15,390" size="460,52" transparent="1" foregroundColor="selectedFG" font="Regular;24" halign="center" />
 		<widget name="datetime" position="15,463" size="460,30" transparent="1" font="Regular;22" halign="center" />
 		<widget name="duration" position="15,493" size="460,30" transparent="1" font="Regular;22" halign="center" />
-		<ePixmap pixmap="skin_default/buttons/key_menu.png" position="1110,682" size="35,25" alphatest="on" />
+		<panel name="MenuBPanel" />
 		<widget source="session.Event_Now" render="Label" position="15,525" size="460,30" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="center">
 			<convert type="EventName">Genre</convert>
 		</widget>
@@ -698,16 +784,12 @@
 		<widget source="session.CurrentService" render="Label" position="365,90" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right">
 			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25" />
-		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
-		<widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_green" position="340,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_yellow" position="614,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<panel name="MenuBPanel" />
+		<panel name="InfoBPanel" />
 		<widget name="movie_sort" position="905,50" size="35,20" pixmaps="skin_default/icons/az.png,skin_default/icons/newtop.png,skin_default/icons/shuffle.png,skin_default/icons/za.png,skin_default/icons/oldtop.png" zPosition="10" transparent="1" alphatest="on"/>
 		<widget name="movie_off" position="960,50" size="35,20" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png" zPosition="10" transparent="1" alphatest="on"/>
 		<widget name="waitingtext" position="520,82" size="755,548" font="Regular;25" halign="center" valign="center" foregroundColor="grey" zPosition="4" />
@@ -786,7 +868,7 @@
 	<!-- ## Menus ## -->
 	<screen name="Menu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		 <widget source="menu" render="Listbox" position="520,82" size="755,575" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="40" enableWrapAround="1" >
+		 <widget source="menu" render="Listbox" position="520,82" size="755,575" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (20,5), size = (465,28), flags = RT_HALIGN_LEFT, text = 0	) ],
 				"fonts": [gFont("Regular",26)],
@@ -797,7 +879,7 @@
 	</screen>
 	<screen name="menu_mainmenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		 <widget source="menu" render="Listbox" position="520,82" size="755,575" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" itemHeight="40" enableWrapAround="1" >
+		 <widget source="menu" render="Listbox" position="520,82" size="755,575" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 26)],
@@ -808,7 +890,7 @@
 	</screen>
 	<screen name="menu_setup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		 <widget source="menu" render="Listbox" position="520,82" size="755,583" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="40" enableWrapAround="1" >
+		 <widget source="menu" render="Listbox" position="520,82" size="755,583" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 26)],
@@ -819,7 +901,7 @@
 	</screen>
 	<screen name="menu_system" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		 <widget source="menu" render="Listbox" position="520,82" size="755,573" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" itemHeight="40" enableWrapAround="1" >
+		 <widget source="menu" render="Listbox" position="520,82" size="755,573" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" >
 			<convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 26)],
@@ -830,15 +912,14 @@
 	</screen>
 	<screen name="menu_information" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		 <widget source="menu" render="Listbox" position="520,82" size="755,583" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
+		 <widget source="menu" render="Listbox" position="520,82" size="755,583" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
 			<convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 24)],
+			"fonts": [gFont("Regular", 26)],
 			"itemHeight": 38
 			}
 			</convert>
 		</widget>
-		<eLabel text="Skin Magic-HD	ViX-team skin by Rob van der Does" foregroundColor="grey" font="Regular;19" halign="center" position="5,590" size="500,55" transparent="1" zPosition="1" />
 	</screen>
 	<screen name="menu_scan" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -857,7 +938,7 @@
 			<convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 24)],
-			"itemHeight": 40
+			"itemHeight": 38
 			}
 			</convert>
 		</widget>
@@ -868,29 +949,27 @@
 			<convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 24)],
-			"itemHeight": 40
+			"itemHeight": 38
 			}
 			</convert>
 		</widget>
 	</screen>
 	<screen name="Setup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		 <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" position="50,682" size="220,30" foregroundColor="grey" font="Regular;22" halign="left" />
-		<widget source="key_green" render="Label" position="340,682" size="220,30" foregroundColor="grey" font="Regular;22" halign="left" />
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
 		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="520,500" size="1,1" zPosition="1" transparent="1" alphatest="on" />
 		<widget name="config" position="520,80" size="755,588" itemHeight="28" foregroundColor="grey" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
 		<widget name="description" position="5,370" size="510,250" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
 		<widget source="VKeyIcon" render="Pixmap" pixmap="Magic-HD-Common/buttons/key_text.png" position="1160,682" zPosition="1" size="35,25" transparent="1" alphatest="on" >
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget name="footnote" position="750,682" size="350,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="grey" />
+		<widget name="footnote" position="750,687" size="350,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="grey" />
 	</screen>
 <!-- About -->
 	<screen name="About" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1020,682" size="35,25" />
+		<panel name="InfoBPanel" />
 		<eLabel text="= Release notes" position="1050,682" size="220,26" font="Regular;22" halign="left" transparent="1" zPosition="1" foregroundColor="grey" />
 		<widget source="lab1" render="Label" position="10,455" size="500,25" font="Regular;24" transparent="0" zPosition="2" foregroundColor="secondFG" halign="center" />
 		<widget source="lab2" render="Label" position="10,480" size="500,20" font="Crs; 20" transparent="0" zPosition="2" foregroundColor="grey" halign="center" />
@@ -906,7 +985,6 @@
 		<widget source="hdd" render="Label" position="635,315" size="580,120" transparent="1" font="Regular;20" halign="center" foregroundColor="grey" />
 		<widget source="MountsHeader" render="Label" position="635,450" size="580,25" transparent="1" font="Regular;24" halign="center" foregroundColor="secondFG" />
 		<widget source="mounts" render="Label" position="635,480" size="580,170" transparent="1" font="Regular;20" halign="center" foregroundColor="grey" />
-		<eLabel text="Skin Magic-HD	ViX-team skin by Rob van der Does" foregroundColor="grey" font="Regular;19" halign="center" position="5,590" size="500,55" transparent="1" zPosition="1" />
 	</screen>
 	<screen name="AboutReleaseNotes" position="0,0" size="1280,720" flags="wfNoBorder"	>
 		<panel name="BasicTemplate"/>
@@ -916,14 +994,14 @@
 	<screen name="ServiceInfo" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="infolist" position="520,82" size="755,583" selectionDisabled="1" foregroundColor="grey" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="595,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
-		<widget name="red" position="50,682" size="220,26" foregroundColor="grey" font="Regular;22" halign="left" />
-		<widget name="green" position="340,682" size="220,26" foregroundColor="grey" font="Regular;22" halign="left" />
-		<widget name="yellow" position="624,682" size="220,26" foregroundColor="grey" font="Regular;22" halign="left" />
-		<widget name="blue" position="875,682" size="220,26" foregroundColor="grey" font="Regular;22" halign="left" />
+		<panel name="RedBPanel" />
+		<widget name="red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<panel name="GreenBPanel" />
+		<widget name="green" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<panel name="YellowBPanel" />
+		<widget name="yellow" position="614,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<panel name="BlueBPanel" />
+		<widget name="blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
 	</screen>
 	<screen name="SystemMemoryInfo" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -931,12 +1009,10 @@
 		<widget source="lab1" render="Label" position="10,455" size="500,30" font="Regular;24" transparent="0" zPosition="2" foregroundColor="secondFG" halign="center" />
 		<widget source="lab2" render="Label" position="10,480" size="500,30" font="Crs;19" transparent="0" zPosition="2" foregroundColor="grey" halign="center" />
 		<widget name="AboutScrollLabel" position="520,82" size="755,582" transparent="0" font="Regular;22" zPosition="1" scrollbarMode="showOnDemand" foregroundColor="grey" />
-		<eLabel text="Skin Magic-HD	ViX-team skin by Rob van der Does" foregroundColor="grey" font="Regular;19" halign="center" position="5,590" size="500,55" transparent="1" zPosition="1" />
 	</screen>
 	<screen name="SystemNetworkInfo" flags="wfNoBorder" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
+		<panel name="Red2Panel" />
 		<widget name="AboutScrollLabel" position="520,90" size="458,275" valign="left" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<widget source="LabelBSSID" render="Label" position="520,400" size="200,25" valign="left" font="Regular;22" transparent="1" foregroundColor="grey" />
 		<widget source="LabelESSID" render="Label" position="520,430" size="200,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
@@ -951,9 +1027,9 @@
 		<widget source="bitrate" render="Label" position="670,520" size="330,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
 		<widget source="enc" render="Label" position="670,550" size="330,25" valign="center" font="Regular;22" transparent="1" foregroundColor="grey" />
 		<widget source="IFtext" render="Label" position="520,600" size="120,25" zPosition="10" font="Regular;22" halign="right" transparent="1" foregroundColor="grey"/>
-		<widget source="IF" render="Label" position="640,600" size="400,25" zPosition="10" font="Regular;22" halign="left" transparent="1" foregroundColor="grey"/>
+		<widget source="IF" render="Label" position="645,600" size="400,25" zPosition="10" font="Regular;22" halign="left" transparent="1" foregroundColor="grey"/>
 		<widget source="Statustext" render="Label" position="520,630" size="115,25" zPosition="10" font="Regular;22" halign="right" transparent="1" foregroundColor="grey"/>
-		<widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="640,633" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
+		<widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="645,635" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
 	</screen>
 	<screen name="HarddiskSelection" flags="wfNoBorder" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
@@ -961,7 +1037,7 @@
 	</screen>
 	<screen name="HarddiskSetup" flags="wfNoBorder" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
+		<panel name="RedBPanel" />
 		<widget name="initializetext" position="50,682" size="400,26" zPosition="10" font="Regular;22" halign="left" transparent="1" />
 		<widget name="model" position="590,110" size="380,25" font="Regular;22" />
 		<widget name="capacity" position="590,140" size="380,25" font="Regular;22" />
@@ -974,89 +1050,84 @@
 	<!-- ## Input & Output Boxes ## -->
 	<screen name="SelectPath" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" position="50,682" size="220,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left" />
-		<widget source="key_green" render="Label" position="340,682" size="220,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left" />
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
 		<widget name="target" position="520,90" size="755,30" backgroundColor="background" transparent="1" font="Regular;23" />
 		<widget name="filelist" position="520,120" size="755,545" itemHeight="30" backgroundColor="background" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
 	</screen>
 	<screen name="RecordPathsSettings" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" position="50,682" size="176,24" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
-		<widget source="key_green" render="Label" position="340,682" size="176,24" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
 		<widget name="config" position="520,82" size="755,583" itemHeight="29" font="Regular;22" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
 	</screen>
-	<screen flags="wfNoBorder" name="clockDisplay" position="0,0" size="1280,720" >
+	<screen name="clockDisplay" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<widget name="okbutton" position="590,110" size="280,40" />
 		<widget name="theClock" position="590,160" size="280,50" />
 		<widget name="title" position="590,220" size="280,50" />
 	</screen>
-	<screen flags="wfNoBorder" name="ParentalControlChangePin" position="0,0" size="1280,720" >
+	<screen name="ParentalControlChangePin" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,82" size="755,583" enableWrapAround="1" transparent="1" />
 	</screen>
-	<screen flags="wfNoBorder" name="ParentalControlEditor" position="0,0" size="1280,720" >
+	<screen name="ParentalControlEditor" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<widget name="servicelist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" position="520,82" size="755,583" transparent="1" />
 		<eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="305,682" size="26,26" />
+		<panel name="RedBPanel" />
+		<panel name="GreenBPanel" />
 		<eLabel text="OK" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
 	</screen>
-	<screen flags="wfNoBorder" name="ParentalControlSetup" position="0,0" size="1280,720" >
+	<screen name="ParentalControlSetup" position="0,0" size="1280,720" flags="wfNoBorder"  >
 		<panel name="BasicTemplate"/>
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" position="520,82" size="755,583" font="Regular;20" transparent="1" />
 		<eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="305,682" size="26,26" />
+		<panel name="RedBPanel" />
+		<panel name="GreenBPanel" />
 		<eLabel text="OK" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
 	</screen>
 	<!-- VideoSetup (VideoMode Plugin) -->
 	<screen name="VideoSetup" flags="wfNoBorder" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="305,682" size="26,26" />
-		<widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-		<widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
+		<panel name="RedBPanel" />
+		<panel name="GreenBPanel" />
+		<panel name="RedT2Panel" />
+		<panel name="GreenT2Panel" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
 	</screen>
 	<!-- ##TextBox## -->
-	<screen flags="wfNoBorder" name="TextBox" position="0,0" size="1280,720" >
+	<screen name="TextBox" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="520,390" size="755,240" font="Regular;24" foregroundColor="grey" />
 		<eLabel text="'Exit' = Leave message" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="320,26" transparent="1" zPosition="1" />
 	</screen>
-	<screen name="MessageBox" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="MessageBox" title="Message" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="ErrorPixmap" pixmap="Magic-HD-Common/window/input_error.png" position="600,7" size="54,54" zPosition="4" alphatest="on" />
-		<widget name="QuestionPixmap" pixmap="Magic-HD-Common/window/input_question.png" position="600,7" size="54,54" zPosition="4" alphatest="on" />
-		<widget name="InfoPixmap" pixmap="Magic-HD-Common/window/input_info.png" position="60,7" size="54,54" zPosition="4" alphatest="on" />
-		<widget source="Title" foregroundColor="grey" render="Label" position="650,390" size="610,250" font="Regular;25" />
-		<widget name="text" position="520,82" size="755,260" font="Regular;22" foregroundColor="grey" />
-		<widget name="list" position="15,390" size="600,240" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" foregroundColor="grey" />
+		<widget name="text" position="620,80" size="675,588" font="Regular;22" foregroundColor="grey" />
+		<widget name="ErrorPixmap" pixmap="Magic-HD-Common/window/input_error.png" position="540,100" size="54,54" alphatest="on" />
+		<widget name="QuestionPixmap" pixmap="Magic-HD-Common/window/input_question.png" position="540,100" size="54,54" alphatest="on" />
+		<widget name="InfoPixmap" pixmap="Magic-HD-Common/window/input_info.png" position="540,100" size="54,54" alphatest="on" />
+		<widget name="list" position="5,390" size="600,240" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" foregroundColor="grey" />
 	</screen>
 	<screen name="MessageBoxSimple" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="text" position="650,390" size="610,240" font="Regular;22" foregroundColor="grey" />
-		<widget name="ErrorPixmap" pixmap="Magic-HD-Common/window/input_error.png" position="550,110" size="54,54" alphatest="on" />
-		<widget name="QuestionPixmap" pixmap="Magic-HD-Common/window/input_question.png" position="550,110" size="54,54" alphatest="on" />
-		<widget name="InfoPixmap" pixmap="Magic-HD-Common/window/input_info.png" position="550,110" size="54,54" alphatest="on" />
-		<widget name="list" position="15,390" size="600,240" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" foregroundColor="grey" />
+		<widget name="text" position="620,80" size="675,588" font="Regular;22" foregroundColor="grey" />
+		<widget name="ErrorPixmap" pixmap="Magic-HD-Common/window/input_error.png" position="540,100" size="54,54" alphatest="on" />
+		<widget name="QuestionPixmap" pixmap="Magic-HD-Common/window/input_question.png" position="540,100" size="54,54" alphatest="on" />
+		<widget name="InfoPixmap" pixmap="Magic-HD-Common/window/input_info.png" position="540,100" size="54,54" alphatest="on" />
+		<widget name="list" position="5,390" size="600,240" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" foregroundColor="grey" />
 	</screen>
 	<screen name="MessageBoxWizard" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="text" position="650,80" size="445,590" font="Regular;22" />
-		<widget name="ErrorPixmap" pixmap="Magic-HD-Common/window/input_error.png" position="550,110" size="54,54" alphatest="on" />
-		<widget name="QuestionPixmap" pixmap="Magic-HD-Common/window/input_question.png" position="550,110" size="54,54" alphatest="on" />
-		<widget name="InfoPixmap" pixmap="Magic-HD-Common/window/input_info.png" position="550,110" size="54,54" alphatest="on" />
-		<widget name="list" position="15,390" size="600,240" font="Regular;22" />
+		<widget name="text" position="620,80" size="675,588" font="Regular;22" foregroundColor="grey" />
+		<widget name="ErrorPixmap" pixmap="Magic-HD-Common/window/input_error.png" position="540,100" size="54,54" alphatest="on" />
+		<widget name="QuestionPixmap" pixmap="Magic-HD-Common/window/input_question.png" position="540,100" size="54,54" alphatest="on" />
+		<widget name="InfoPixmap" pixmap="Magic-HD-Common/window/input_info.png" position="540,100" size="54,54" alphatest="on" />
+		<widget name="list" position="5,390" size="600,240" font="Regular;22" />
 		<widget name="rc" pixmap="skin_default/rc.png" position="1105,140" zPosition="10" size="154,500" transparent="0" alphatest="blend" />
 	</screen>
-	<screen flags="wfNoBorder" name="TimeDateInput" position="0,0" size="1280,720" >
+	<screen name="TimeDateInput" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<widget name="cancel" alphatest="on" pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" />
 		<widget name="ok" alphatest="on" pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" />
@@ -1066,10 +1137,8 @@
 	</screen>
 	<screen name="LanguageSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_green" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
 		<widget source="languages" render="Listbox" position="520,82" size="755,583" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" >
 			<convert type="TemplatedMultiContent">
 			{"template": [
@@ -1117,6 +1186,19 @@
 		<widget name="number" position="0,-200" size="130,40" backgroundColor="transparent" transparent="1" font="Regular;36" borderColor="black" borderWidth="3" valign="center" halign="right" foregroundColor="grey" />
 		<widget name="servicename" position="135,-200" size="450,40" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="3" valign="center" halign="left" foregroundColor="grey" />
 	</screen>
+	<screen name="HistoryZapSelector" position="center,center" size="750,450" backgroundColor="transpBlack" flags="wfNoBorder" title="">
+		<widget source="menu" render="Listbox" position="0,10" size="750,442" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" backgroundColor="transpBlack" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (10, 0), size = (20, 34), flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+						MultiContentEntryText(pos = (40, 0), size = (700, 34), font = 1, flags = RT_HALIGN_LEFT, text = 2)
+					],
+				 "fonts": [gFont("Regular", 26), gFont("Regular", 26)],
+				 "itemHeight": 34
+				}
+			</convert>
+		</widget>
+	</screen>
 	<screen name="Subtitles" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="config" position="520,82" size="755,583" backgroundColor="darkgrey" zPosition="3" transparent="1" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" itemHeight="28" enableWrapAround="1" />
@@ -1126,41 +1208,7 @@
 		<widget name="number" position="200,-200" size="150,40" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="4" valign="center" halign="left" />
 	</screen>
 	<screen name="TimeshiftState" position="4,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
-		<widget source="session.CurrentService" render="Label" position="240,0" size="780,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<eLabel backgroundColor="infobarBG" position="120,49" size="1040,14" zPosition="0" />
-		<widget name="state" position="35,70" size="150,30" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" zPosition="5" halign="center" />
-<!--		<widget name="speed" position="185,70" size="80,15" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" zPosition="5" halign="center" />-->
-		<ePixmap pixmap="Magic-HD-Common/dvr/scale1024.png" position="128,54" size="1024,4" zPosition="1" />
-		<widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer1024.png:1012,0">
-		<convert type="ServicePosition">Gauge</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="40,13" size="200,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
-			<convert type="ServicePosition">Position</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="1025,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
-			<convert type="ServicePosition">Remaining</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="1145,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
-			<convert type="ServicePosition">Length</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_dolby_on.png" position="986,63" size="60,24" zPosition="2" alphatest="on">
-			<convert type="ServiceInfo">IsMultichannel</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_hd_on.png" position="1048,63" size="40,21" zPosition="4" alphatest="on">
-			<convert type="ServiceInfo">VideoWidth</convert>
-			<convert type="ValueRange">800,2000</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_format_on.png" position="1090,63" size="40,21" zPosition="2" alphatest="on">
-			<convert type="ServiceInfo">IsWidescreen</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1132,63" size="20,20" zPosition="3" alphatest="on">
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
+		<panel name="Player"/>
 	</screen>
 	<screen name="PTSTimeshiftState" position="center,40" zPosition="2" size="420,70" backgroundColor="transparent" flags="wfNoBorder">
 		<widget name="statusicon" position="12,5" size="20,21" pixmaps="Magic-HD-Common/icons/play.png,Magic-HD-Common/icons/pause.png,Magic-HD-Common/icons/stop.png,Magic-HD-Common/icons/forward.png,Magic-HD-Common/icons/backward.png,Magic-HD-Common/icons/slow.png" zPosition="5" alphatest="on" />
@@ -1178,45 +1226,41 @@
 		</widget>
 		<widget name="eventname" position="0,49" zPosition="4" size="420,20" font="Regular;20" halign="center" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" />
 	</screen>
-	<screen flags="wfNoBorder" name="TimeshiftLocationBox" position="0,0" size="1280,720" >
+	<screen name="TimeshiftLocationBox" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
-		<widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_green" position="340,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_yellow" position="614,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
 		<widget name="text" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,250" transparent="1" />
 		<widget name="textbook" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,350" size="755,250" transparent="1" />
 	</screen>
-	<screen name="PVRState" position="120,100" size="150,30" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
+	<screen name="PVRState" position="10,75" size="75,30" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
 <!--		<widget name="state" position="0,0" size="150,30" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" halign="center" />-->
-		<widget name="statusicon" position="0,0" size="20,21" pixmaps="Magic-HD-Common/icons/play.png,Magic-HD-Common/icons/pause.png,Magic-HD-Common/icons/stop.png,Magic-HD-Common/icons/forward.png,Magic-HD-Common/icons/backward.png,Magic-HD-Common/icons/slow.png" zPosition="5" alphatest="on" />
+		<widget name="statusicon" position="50,0" size="20,21" pixmaps="Magic-HD-Common/icons/play.png,Magic-HD-Common/icons/pause.png,Magic-HD-Common/icons/stop.png,Magic-HD-Common/icons/forward.png,Magic-HD-Common/icons/backward.png,Magic-HD-Common/icons/slow.png" zPosition="5" alphatest="on" />
 <!--		<widget name="speed" position="185,70" size="80,15" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" zPosition="5" halign="center" />-->
-		<widget name="speed" position="25,0" size="80,21" font="Regular; 20" halign="left" backgroundColor="transparent" foregroundColor="grey" borderWidth="2" borderColor="black" transparent="1" zPosition="5" />
+		<widget name="speed" position="0,0" size="50,21" font="Regular; 20" halign="left" backgroundColor="transparent" borderWidth="2" borderColor="black" transparent="1" zPosition="5" />
 	</screen>
 	<screen name="BouquetSelector" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="menu" position="520,82" size="755,583" itemHeight="35" font="Regular;25" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+		<widget name="menu" position="490,80" size="785,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 	<screen name="NumericalTextInputHelpDialog" position="center,450" size="454,164" backgroundColor="background" zPosition="2" flags="wfNoBorder">
 		<eLabel position="0,0" size="454,164" backgroundColor="yellowtransparent" zPosition="-1" />
-		<widget name="key1" position="2,2" size="150,40" font="TEXT;20" valign="center" halign="center" />
-		<widget name="key2" position="152,2" size="150,40" font="TEXT;20" valign="center" halign="center" />
-		<widget name="key3" position="302,2" size="150,40" font="TEXT;20" valign="center" halign="center" />
-		<widget name="key4" position="2,42" size="150,40" font="TEXT;20" valign="center" halign="center" />
-		<widget name="key5" position="152,42" size="150,40" font="TEXT;20" valign="center" halign="center" />
-		<widget name="key6" position="302,42" size="150,40" font="TEXT;20" valign="center" halign="center" />
-		<widget name="key7" position="2,82" size="150,40" font="TEXT;20" valign="center" halign="center" />
-		<widget name="key8" position="152,82" size="150,40" font="TEXT;20" valign="center" halign="center" />
-		<widget name="key9" position="302,82" size="150,40" font="TEXT;20" valign="center" halign="center" />
-		<widget name="help1" position="2,122" size="120,40" font="TEXT;20" valign="center" halign="center" />
-		<widget name="key0" position="122,122" size="210,40" font="TEXT;20" valign="center" halign="center" />
-		<widget name="help2" position="332,122" size="120,40" font="TEXT;20" valign="center" halign="center" />
+		<widget name="key1" position="2,2" size="150,40" font="TEXT;20" valign="center" halign="center" foregroundColor="grey" />
+		<widget name="key2" position="152,2" size="150,40" font="TEXT;20" valign="center" halign="center" foregroundColor="grey" />
+		<widget name="key3" position="302,2" size="150,40" font="TEXT;20" valign="center" halign="center" foregroundColor="grey" />
+		<widget name="key4" position="2,42" size="150,40" font="TEXT;20" valign="center" halign="center" foregroundColor="grey" />
+		<widget name="key5" position="152,42" size="150,40" font="TEXT;20" valign="center" halign="center" foregroundColor="grey" />
+		<widget name="key6" position="302,42" size="150,40" font="TEXT;20" valign="center" halign="center" foregroundColor="grey" />
+		<widget name="key7" position="2,82" size="150,40" font="TEXT;20" valign="center" halign="center" foregroundColor="grey" />
+		<widget name="key8" position="152,82" size="150,40" font="TEXT;20" valign="center" halign="center" foregroundColor="grey" />
+		<widget name="key9" position="302,82" size="150,40" font="TEXT;20" valign="center" halign="center" foregroundColor="grey" />
+		<widget name="help1" position="2,122" size="120,40" font="TEXT;20" valign="center" halign="center" foregroundColor="grey" />
+		<widget name="key0" position="122,122" size="210,40" font="TEXT;20" valign="center" halign="center" foregroundColor="grey" />
+		<widget name="help2" position="332,122" size="120,40" font="TEXT;20" valign="center" halign="center" foregroundColor="grey" />
 	</screen>
-	<screen name="VirtualKeyBoard" position="3,0" size="1280,720" zPosition="99" flags="wfNoBorder">
+	<screen name="VirtualKeyBoard" position="3,0" size="1280,720" zPosition="99" flags="wfNoBorder" title="Virtual KeyBoard" >
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="skin_default/vkey_text.png" position="650,275" size="542,52" zPosition="-4" alphatest="on" />
 		<widget name="header" position="652,239" size="500,26" transparent="1" noWrap="1" font="Regular;20" />
@@ -1235,101 +1279,13 @@
 	</screen>
 	<screen name="SleepTimerEdit" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<widget name="key_yellow" position="614,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="current_status" position="5,400" size="482,200" font="Regular;20" valign="center" />
 	</screen>
 	<!-- ## Service Selectors ## -->
-	<screen flags="wfNoBorder" name="ChannelSelectionRadio" position="0,0" size="1280,502" >
-		<ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
-		<ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
-		<widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
-		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
-			<convert type="ClockToText">Format:%-H:%M</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="100,423" size="26,26" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="390,423" size="26,26" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" alphatest="on" position="680,423" size="26,26" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" alphatest="on" position="970,423" size="26,26" />
-		<widget name="key_red" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,425" size="220,26" transparent="1" zPosition="1" />
-		<widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,425" size="220,26" transparent="1" zPosition="1" />
-		<widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,425" size="220,26" transparent="1" zPosition="1" />
-		<widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,425" size="220,26" transparent="1" zPosition="1" />
-		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" serviceInfoFont="Crs;18" serviceNameFont="Regular;18" serviceItemHeight="25" foregroundColorServiceNotAvail="#656565" serviceNumberFont="Regular;18" position="590,95" size="630,305" transparent="1" />
-		<widget source="session.Event_Now" render="Label" position="70,95" size="460,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="center" valign="center">
-		<convert type="EventName">Name</convert>
-		</widget>
-		<widget source="session.Event_Now" render="Label" position="70,137" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="right">
-		<convert type="EventTime">StartTime</convert>
-		<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="session.Event_Now" render="Progress" pixmap="Magic-HD-Common/window/progress.png" position="150,141" size="190,12" transparent="1" borderWidth="1" borderColor="grey">
-		<convert type="EventTime">Progress</convert>
-		</widget>
-		<widget source="session.Event_Now" render="Label" position="360,137" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19">
-		<convert type="EventTime">EndTime</convert>
-		<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="session.Event_Now" render="Label" position="15,163" size="515,240" transparent="1" foregroundColor="grey" font="Regular;18">
-		<convert type="EventName">ExtendedDescription</convert>
-		</widget>
-		</screen>
-	<screen name="RadioInfoBar" title="InfoBar" position="0,508" size="1280,220" backgroundColor="background" flags="wfNoBorder">
-		<ePixmap pixmap="Magic-HD-Common/border/up_shadow.png" position="0,-2" size="1280,60" zPosition="-1" alphatest="off" />
-		<widget source="session.CurrentService" render="Label" position="220,70" size="840,32" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;26" halign="center">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="50,125" size="140,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;28" valign="top" halign="right">
-			<convert type="ClockToText">ShortDate</convert>
-		</widget>
-		<widget source="session.Event_Now" render="Label" position="220,120" size="70,30" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="left">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="session.Event_Now" render="Label" position="305,120" size="570,30" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" noWrap="1" font="Regular;24" halign="left">
-			<convert type="EventName">Name</convert>
-		</widget>
-		<widget source="session.Event_Now" render="Label" position="940,120" size="120,30" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="right">
-			<convert type="EventTime">Remaining</convert>
-			<convert type="RemainingToText">InMinutes</convert>
-		</widget>
-		<widget source="session.Event_Next" render="Label" position="220,150" size="70,30" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="left">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="session.Event_Next" render="Label" position="305,150" size="570,30" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" noWrap="1" font="Regular;24" halign="left">
-			<convert type="EventName">Name</convert>
-		</widget>
-		<widget source="session.Event_Next" render="Label" position="940,150" size="120,30" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="right">
-			<convert type="EventTime">Duration</convert>
-			<convert type="ClockToText">InMinutes</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_dolby_on.png" position="1105,84" size="60,24" zPosition="2" alphatest="on">
-			<convert type="ServiceInfo">IsMultichannel</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.Event_Now" render="Progress" pixmap="Magic-HD-Common/infobar/pbar.png" position="220,105" size="840,8" transparent="1" zPosition="2" borderWidth="2" borderColor="un33333a">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<widget source="RdsDecoder" render="Pixmap" pixmap="skin_default/icons/rass_logo.png" position="60,60" size="100,60" zPosition="2" alphatest="on">
-			<convert type="RdsInfo">RasInteractiveAvailable</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="RdsDecoder" render="Label" position="0,5" size="1280,30" transparent="1" zPosition="5" foregroundColor="secondFG" font="LCD;30" valign="center" halign="center">
-			<convert type="RdsInfo">RadioText</convert>
-		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1175,84" size="20,20" zPosition="3" alphatest="on">
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
-	</screen>
-	<!-- ## Service Selectors ## -->
-	<screen flags="wfNoBorder" name="ChannelSelectionRadio" position="0,0" size="1280,502" >
+	<screen name="ChannelSelectionRadio" position="0,0" size="1280,502" flags="wfNoBorder" >
 		<ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
 		<ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
 		<widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
@@ -1419,7 +1375,7 @@
 		<widget name="RtpText" position="0,100" size="1250,90" backgroundColor="transparent" zPosition="1" transparent="1" foregroundColor="secondFG" font="LCD;40" valign="center" halign="center" borderColor="black" borderWidth="4" />
 		<widget name="RassLogo" position="0,0" size="0,0" />
 	</screen>
-	<screen flags="wfNoBorder" name="RassInteractive" position="0,0" size="1280,720" title="RassInteractive">
+	<screen name="RassInteractive" position="0,0" size="1280,720" title="RassInteractive" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<eLabel text="Index" position="615,95" size="60,25" font="Regular;21" foregroundColor="black" backgroundColor="transpWhite" />
 		<eLabel text="0" position="605,120" size="16,25" font="Regular;21" foregroundColor="black" backgroundColor="transpWhite" />
@@ -1445,16 +1401,12 @@
 	</screen>
 	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate2"/>
-		<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25" />
-		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
-		<widget name="key_red" position="50,682" size="220,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left" />
-		<widget name="key_green" position="340,682" size="220,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left" />
-		<widget name="key_yellow" position="614,682" size="220,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left" />
-		<widget name="key_blue" position="875,682" size="220,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left" />
+		<panel name="MenuBPanel" />
+		<panel name="InfoBPanel" />
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
 		<widget name="date" position="750,90" size="250,24" transparent="1" font="Regular;20" valign="center" halign="right" />
 		<widget name="list" position="590,165" size="600,500" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
 		<widget source="Event" render="Label" position="15,370" size="485,300" backgroundColor="background" transparent="1" foregroundColor="grey" font="Regular;20">
@@ -1474,6 +1426,16 @@
 		<panel name="BasicTemplate"/>
 		<widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
 	</screen>
+	<screen name="LocationBox" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate2"/>
+		<widget name="target" position="15,635" size="1230,27" backgroundColor="grey" foregroundColor="black" font="Regular;24" valign="right" />
+		<widget name="filelist" position="520,90" size="755,545" itemHeight="28" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+		<widget name="booklist" position="15,375" size="477,250" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+	</screen>
 	<!-- ## Timers ## -->
 	<screen name="TimerSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1483,10 +1445,11 @@
 		<panel name="BasicTemplate"/>
 		<widget name="cancel" pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
 		<widget name="ok" pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<widget name="config" position="520,82" size="755,583" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="config" position="520,80" size="755,400" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="canceltext" position="50,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
 		<widget name="oktext" position="340,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,400" size="1,1" transparent="1" zPosition="1" alphatest="on" />
+		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="520,500" size="1,1" transparent="1" zPosition="1" alphatest="on" />
+		<widget name="description" position="5,370" size="510,250" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
 	</screen>
 	<screen name="TimerEdit" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1499,49 +1462,71 @@
 	</screen>
 	<screen name="TimerEditList" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
-		<widget name="key_red" position="50,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-		<widget name="key_green" position="340,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-		<widget name="key_yellow" position="614,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-		<widget name="key_blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
-		<widget name="timerlist" position="520,82" size="755,578" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<panel name="InfoBPanel" />
+		<widget name="timerlist" position="490,85" size="785,550" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="50" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="description" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
 	</screen>
 	<screen name="TimerLog" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate2"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
-		<widget name="key_red" position="50,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-		<widget name="key_green" position="340,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-		<widget name="key_yellow" position="614,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-		<widget name="key_blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
 		<widget name="loglist" position="490,77" size="785,275" font="Regular;20" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="logentry" position="5,385" size="1270,285" font="Regular;22" foregroundColor="grey" />
 	</screen>
 	<screen name="TimerSanityConflict" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
-		<widget name="key_red" position="50,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-		<widget name="key_yellow" position="614,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-		<widget name="key_blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-		<widget name="timer2" position="490,80" size="785,585" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
+		<panel name="Red1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<widget name="list" position="490,82" size="785,200" scrollbarMode="showNever" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" />
+		<widget name="timer2" position="490,280" size="785,380" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="timer1" position="5,379" size="477,260" scrollbarMode="showNever" foregroundColor="grey" />
-<!--<widget name="list" position="520,82" size="755,295" scrollbarMode="showNever" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" />-->
+	</screen>
+	<screen name="CronTimers" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<widget name="lab1" position="35,480" size="150,30" font="Regular;20" valign="center" transparent="0" />
+		<widget name="labdisabled" position="210,480" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
+		<widget name="labactive" position="210,480" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
+		<widget name="lab2" position="35,550" size="150,26" font="Regular;20" valign="center" transparent="0" />
+		<widget name="labstop" position="210,550" size="250,26" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
+		<widget name="labrun" position="210,550" size="250,26" zPosition="1" font="Regular;20" valign="left" halign="center" backgroundColor="green" />
+		<widget name="key" position="520,82" size="755,25" font="Regular;20" halign="center" transparent="1" valign="center" backgroundColor="background" />
+		<widget source="list" render="Listbox" position="520,130" size="755,500" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" enableWrapAround="1" >
+			<convert type="StringList" />
+		</widget>
+		<eLabel text="'OK' = Show details" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="1055,682" size="240,26" transparent="1" zPosition="1" />
+	</screen>
+	<screen name="CronTimersConfig" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="TextBPanel" />
+		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey" />
+	</screen>
+	<screen name="SkinSelector" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
+		<panel name="InfoBPanel" />
+		<widget name="SkinList" position="520,90" size="300,570" itemHeight="28" font="Regular;22" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
+		<widget name="Preview" position="918,110" size="280,210" alphatest="on" />
+		<widget source="introduction" render="Label" position="525,682" size="640,30" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;22" valign="center" halign="center" />
 	</screen>
 	<screen name="PluginBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<widget name="red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="green" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="MenuBPanel" />
 		<widget name="list" position="520,82" size="755,576" font="Regular;30" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="48" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 	<screen name="PluginDownloadBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1556,20 +1541,21 @@
 		<widget name="slider" position="594,294" size="652,17" zPosition="2" transparent="1" />
 		<widget name="activityslider" position="49,609" size="1194,6" pixmap="Magic-HD-Common/window/slider100.png" transparent="1" />
 	</screen>
-	<screen flags="wfNoBorder" name="SoftwareUpdateChanges" position="0,0" size="1280,720" >
+	<screen name="SoftwareUpdateChanges" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
-		<widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_green" position="340,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_yellow" position="614,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
 		<widget name="text" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
+	</screen>
+	<screen name="SoftwareUpdateChoices" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<widget name="text" position="15,379" size="477,260" zPosition="2" font="Regular;22" foregroundColor="secondFG" />
+		<widget name="list" position="520,82" size="755,583" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="28" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 	<screen name="UpdatePluginMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" position="50,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
+		<panel name="Red2Panel" />
 		<widget source="menu" render="Listbox" position="590,110" size="600,500" zPosition="3" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" >
 			<convert type="TemplatedMultiContent">
 			{"template": [
@@ -1591,36 +1577,102 @@
 			</convert>
 		</widget>
 	</screen>
-	<screen name="SkinSelector" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="PluginManager" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" zPosition="1" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-		<widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
-		<widget name="SkinList" position="520,90" size="300,570" itemHeight="28" font="Regular;22" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
-		<widget name="Preview" position="918,110" size="280,210" alphatest="on" />
-		<widget source="introduction" render="Label" position="525,682" size="640,30" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;22" valign="center" halign="center" />
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
+		<panel name="Yellow2Panel" />
+		<panel name="Blue2Panel" />
+		<widget source="list" render="Listbox" position="520,82" size="755,550" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" >
+			<convert type="TemplatedMultiContent">
+				{"templates":
+				{"default": (55,[
+				MultiContentEntryText(pos = (0,1), size = (755,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (0,27), size = (755,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (690,0), size = (48,48), png = 5), # index 5 is the status pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (0,52), size = (755,2), png = 6), # index 6 is the div pixmap
+				]),
+				"category": (55,[
+				MultiContentEntryText(pos = (0,0), size = (755,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (0,27), size = (755,24), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (0,52), size = (755,2), png = 3), # index 3 is the div pixmap
+				])
+				},
+				"fonts": [gFont("Regular",22),gFont("Regular",20),gFont("Regular",20)],
+				}
+			</convert>
+		</widget>
+		<widget source="status" render="Label" position="15,400" size="447,200" foregroundColor="secondFG" transparent="1" font="Regular;22" halign="center" />
+	</screen>
+	<screen name="PluginManagerInfo" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
+		<widget source="list" render="Listbox" position="520,90" size="755,550" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryPixmapAlphaTest(pos = (18,14),size = (48,48),png = 2),# index 2 is the status pixmap
+						MultiContentEntryText(pos = (90,5),size = (665,26),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
+						MultiContentEntryText(pos = (90,33),size = (665,38),font=1,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the state
+					],
+				"fonts": [gFont("Regular",22),gFont("Regular",20)],
+				"itemHeight": 75
+				}
+			</convert>
+		</widget>
+		<widget source="status" render="Label" position="520,682" size="755,25" backgroundColor="background" transparent="1" font="Regular;22" foregroundColor="grey" halign="center" />
+	</screen>
+	<screen name="PluginManagerHelp" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate2"/>
+		<panel name="Red2Panel" />
+		<widget source="list" render="Listbox" position="520,90" size="755,555" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (80,5),size = (665,26),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
+						MultiContentEntryText(pos = (80,33),size = (665,38),font=1,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the state
+						MultiContentEntryPixmapAlphaTest(pos = (15,5),size = (48,48),png = 2),# index 2 is the status pixmap
+					],
+				"fonts": [gFont("Regular",22),gFont("Regular",20)],
+				"itemHeight": 75
+				}
+			</convert>
+		</widget>
+		<widget source="status" render="Label" position="15,400" size="447,250" foregroundColor="secondFG" transparent="1" font="Regular;22" halign="center" />
+	</screen>
+	<screen flags="wfNoBorder" name="PluginDetails" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="RedBPanel" />
+		<ePixmap alphatest="on" pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" />
+		<panel name="RedT2Panel" />
+		<panel name="GreenT2Panel" />
+		<eLabel text="Status:" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="right" position="290,630" size="140,24" transparent="1" zPosition="1" />
+		<widget name="statuspic" position="440,620" size=" 48,48" alphatest="on" />
+		<widget source="author" render="Label" position="520,90" size="755,30" zPosition="10" halign="center" font="Regular;26" backgroundColor="background" foregroundColor="grey" transparent="1" />
+		<widget name="screenshot" position="520,120" size="755,550" alphatest="on" />
+		 <widget name="detailtext" position="15,385" size="477,200" font="Regular;22" backgroundColor="background" halign="center" foregroundColor="grey" transparent="1" />
+	</screen>
+	<!-- ##NetWorkmanager## -->
+	<screen name="NetworkSetup" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
+		<widget name="menu" position="520,82" size="755,583" itemHeight="32" font="Regular;22" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
 	</screen>
 	<screen name="AdapterSetupConfiguration" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" position="50,682" size="220,26" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
+		<panel name="Red2Panel" />
 		<widget name="menulist" position="520,82" size="755,550" itemHeight="32" font="Regular;22" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
 		<widget source="description" render="Label" position="5,385" size="477,200" transparent="1" font="Regular;21" valign="center" halign="center" foregroundColor="secondFG" />
-		<widget source="IFtext" render="Label" position="590,645" size="166,25" transparent="1" zPosition="10" font="Regular;24" halign="right" foregroundColor="secondFG" />
-		<widget source="IF" render="Label" position="765,645" size="500,25" transparent="1" zPosition="10" font="Regular;24" halign="left" foregroundColor="secondFG" />
-		<widget source="Statustext" render="Label" position="316,645" size="200,26" zPosition="10" font="Regular;24" halign="right" transparent="1" foregroundColor="secondFG" />
+		<widget source="IFtext" render="Label" position="590,645" size="166,25" transparent="1" zPosition="10" font="Regular;24" halign="right" foregroundColor="grey" />
+		<widget source="IF" render="Label" position="765,645" size="500,25" transparent="1" zPosition="10" font="Regular;24" halign="left" foregroundColor="grey" />
+		<widget source="Statustext" render="Label" position="316,645" size="200,26" zPosition="10" font="Regular;24" halign="right" transparent="1" foregroundColor="grey" />
 		<widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="525,652" zPosition="10" size="15,16" transparent="1" alphatest="on" />
 	</screen>
 	<screen name="AdapterSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="1015,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" position="50,682" size="220,26" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
-		<widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-		<widget source="key_blue" render="Label" position="1045,682" size="220,26" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
+		<panel name="Blue2Panel" />
 		<widget name="config" position="520,82" size="755,290" itemHeight="32" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
 		<widget source="DNS1text" render="Label" position="835,450" size="190,25" transparent="1" zPosition="1" font="Regular;21" foregroundColor="grey" halign="left" />
 		<widget source="DNS2text" render="Label" position="835,480" size="190,25" transparent="1" zPosition="1" font="Regular;21" foregroundColor="grey" halign="left" />
@@ -1633,33 +1685,26 @@
 		<widget source="IP" render="Label" position="560,450" size="200,25" zPosition="1" foregroundColor="grey" font="Regular;20" />
 		<widget source="Mask" render="Label" position="560,480" size="200,25" zPosition="1" foregroundColor="grey" font="Regular;20" />
 		<widget source="Gateway" render="Label" position="560,510" size="200,25" zPosition="1" font="Regular;20" foregroundColor="grey" />
-		<widget source="Adaptertext" render="Label" position="520,600" size="270,25" transparent="1" zPosition="10" foregroundColor="secondFG" font="Regular;24" halign="right" />
-		<widget source="Adapter" render="Label" position="850,600" size="400,25" transparent="1" zPosition="10" foregroundColor="secondFG" font="Regular;24" halign="left" />
-		<widget source="introduction2" render="Label" position="550,682" size="477,26" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;21" halign="center" />
+		<widget source="Adaptertext" render="Label" position="520,630" size="270,25" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;24" halign="right" />
+		<widget source="Adapter" render="Label" position="800,630" size="400,25" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;24" halign="left" />
+		<widget source="introduction2" render="Label" position="5,600" size="477,24" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
 		<widget name="VKeyIcon" pixmap="skin_default/vkey_icon.png" position="60,410" size="35,25" transparent="1" zPosition="10" alphatest="on" />
 		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="50,410" size="1,1" transparent="1" zPosition="1" alphatest="on" />
 	</screen>
 	<screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		 <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="595,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" position="50,682" size="220,26" transparent="1" zPosition="2" font="Regular;22" valign="center" halign="left" foregroundColor="grey"/>
-		<widget source="key_green" render="Label" position="340,682" size="220,26" transparent="1" zPosition="2" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
-		<widget source="key_yellow" render="Label" position="624,682" size="220,26" transparent="1" zPosition="2" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
-		<widget source="key_blue" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
+		<panel name="Yellow2Panel" />
+		<panel name="Blue2Panel" />
 		<widget name="config" position="520,82" size="755,522" itemHeight="32" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
 		<widget name="introduction" position="522,635" size="755,26" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;21" halign="left" />
 	</screen>
-		<screen name="NetworkAdapterTest" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="NetworkAdapterTest" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate2"/>
-	 <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="595,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" position="50,682" size="220,26" transparent="1" zPosition="2" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
-		<widget source="key_green" render="Label" position="340,682" size="220,26" transparent="1" zPosition="2" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
-		<widget source="key_yellow" render="Label" position="624,682" size="220,26" transparent="1" zPosition="2" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
+		<panel name="Yellow2Panel" />
 		 <widget name="Adaptertext" position="420,460" size="250,23" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;21" halign="left" />
 		<widget name="Adapter" position="671,460" size="306,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;21" halign="center" />
 		<widget name="AdapterInfo_Text" position="1020,460" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;21" />
@@ -1692,22 +1737,17 @@
 	</screen>
 	<screen name="NetworkMountsMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" position="50,682" size="220,26" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
+		<panel name="Red2Panel" />
 		<widget name="menulist" position="520,82" size="755,550" itemHeight="32" font="Regular;22" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
 		<widget source="introduction" render="Label" position="5,385" size="477,200" transparent="1" font="Regular;21" valign="center" halign="center" foregroundColor="secondFG" />
 	</screen>
 	<screen name="NetworkBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="595,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" position="50,682" size="220,26" transparent="1" zPosition="2" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
-		<widget source="key_green" render="Label" position="340,682" size="220,26" transparent="1" zPosition="2" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
-		<widget source="key_yellow" render="Label" position="624,682" size="220,26" transparent="1" zPosition="2" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
-		<widget source="key_blue" render="Label" position="875,682" size="220,26" transparent="1" zPosition="2" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
-		<widget source="list" render="Listbox" position="520,82" size="755,583" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" >
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
+		<panel name="Yellow2Panel" />
+		<panel name="Blue2Panel" />
+		<widget source="list" render="Listbox" position="520,85" size="755,572" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" >
 			<convert type="TemplatedMultiContent">
 		{"template": [
 				MultiContentEntryPixmapAlphaTest(pos = (0,0),size = (48,48),png = 1),# index 1 is the expandable/expanded/verticalline icon
@@ -1727,10 +1767,8 @@
 	<!-- ##AutoMount## -->
 	<screen name="AutoMountView" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" position="50,682" size="220,26" transparent="1" zPosition="2" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
-		<widget source="key_yellow" render="Label" position="614,682" size="220,26" transparent="1" zPosition="2" font="Regular;22" valign="center" halign="left" foregroundColor="grey" />
+		<panel name="Red2Panel" />
+		<panel name="Yellow2Panel" />
 		<widget source="legend1" render="Label" position="520,82" size="130,72" transparent="1" zPosition="1" font="Regular;21" valign="center" halign="center" foregroundColor="grey" />
 		<widget source="legend2" render="Label" position="685,82" size="345,72" transparent="1" zPosition="1" font="Regular;21" valign="center" halign="center" foregroundColor="grey" />
 		<widget source="legend3" render="Label" position="1120,82" size="130,72" transparent="1" zPosition="1" font="Regular;21" valign="center" halign="center" foregroundColor="grey" />
@@ -1753,8 +1791,7 @@
 	</screen>
 	<screen name="AutoMountManager" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" position="50,682" size="220,26" zPosition="1" transparent="1" font="Regular;22" />
+		<panel name="Red2Panel" />
 		<widget source="introduction" render="Label" position="520,682" size="755,27" zPosition="1" transparent="1" font="Regular;22" halign="center" foregroundColor="grey" />
 		<widget source="config" render="Listbox" position="520,82" size="755,555" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" >
 			<convert type="TemplatedMultiContent">
@@ -1771,26 +1808,23 @@
 	</screen>
 	<screen name="AutoMountEdit" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" position="50,682" size="220,26" zPosition="1" transparent="1" backgroundColor="secondBG" foregroundColor="grey" font="Regular;24" />
-		<widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
 		<widget name="config" position="520,82" size="755,275" zPosition="3" transparent="1" scrollbarMode="showOnDemand" font="Regular;22" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" itemHeight="28" enableWrapAround="1"/>
 		<widget name="HelpWindow" position="590,390" size="1,1" zPosition="1" transparent="1" alphatest="on" />
 		<widget source="introduction" render="Label" position="620,682" size="655,27" zPosition="1" transparent="1" font="Regular;22" halign="center" foregroundColor="grey"/>
-<!--<widget name="VKeyIcon" pixmap="skin_default/vkey_icon.png" position="340,682" size="35,25" zPosition="10" transparent="1" alphatest="on" />-->
-		<eLabel text="'Text' = Virtual Keyboard" backgroundColor="secondBG" font="Regular;22" halign="left" position="305,682" size="300,26" transparent="1" zPosition="1" foregroundColor="grey" />
+		<widget name="VKeyIcon" pixmap="skin_default/vkey_icon.png" position="1160,682" size="35,25" zPosition="10" transparent="1" alphatest="on" />-->
 	</screen>
-	<screen flags="wfNoBorder" name="devicesMount" position="0,0" size="1280,720" >
+	<screen name="devicesMount" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="305,682" size="26,26" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" alphatest="on" position="580,682" size="26,26" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" alphatest="on" position="840,682" size="26,26" />
-		<widget name="key_red" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
+		<panel name="RedBPanel" />
+		<panel name="GreenBPanel" />
+		<panel name="YellowBPanel" />
+		<panel name="BlueBPanel" />
+		<panel name="RedT1Panel" />
+		<panel name="GreenT1Panel" />
+		<panel name="YellowT1Panel" />
+		<panel name="BlueT1Panel" />
 		<widget source="menu" render="Listbox" position="520,90" size="755,575" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{ "template": [	MultiContentEntryText(pos = (80,5),size = (990,100),flags = RT_HALIGN_LEFT,text = 0,border_width=1),
@@ -1799,10 +1833,10 @@
 		</widget>
 	</screen>
 	<!-- ## W-LAN ## -->
-	<screen flags="wfNoBorder" name="WlanStatus" position="0,0" size="1280,720" >
+	<screen name="WlanStatus" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
-		<widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
+		<panel name="RedBPanel" />
+		<panel name="RedT2Panel" />
 		<widget source="IF" render="Label" position="550,150" size="680,33" zPosition="1" halign="center" font="Regular;22" backgroundColor="background" transparent="1" />
 		<widget source="LabelBSSID" render="Label" position="590,205" size="250,35" valign="center" font="Regular;20" backgroundColor="background" transparent="1" />
 		<widget source="LabelESSID" render="Label" position="590,255" size="250,35" valign="center" font="Regular;20" backgroundColor="background" transparent="1" />
@@ -1819,12 +1853,12 @@
 		<widget source="Statustext" render="Label" position="830,565" size="350,28" font="Regular;20" halign="center" backgroundColor="un25062748" transparent="1" />
 		<widget name="statuspic" position="993,600" size="25,24" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" transparent="1" alphatest="on" />
 	</screen>
-	<screen flags="wfNoBorder" name="WlanScan" position="0,0" size="1280,720" >
+	<screen name="WlanScan" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="305,682" size="26,26" />
-		<widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-		<widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
+		<panel name="RedBPanel" />
+		<panel name="GreenBPanel" />
+		<panel name="RedT2Panel" />
+		<panel name="GreenT2Panel" />
 		<widget source="info" render="Label" position="520,83" size="755,33" zPosition="1" halign="center" font="Regular;24" backgroundColor="background" transparent="1" />
 		<widget source="list" render="Listbox" position="520,115" size="755,550" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -1841,31 +1875,25 @@
 			</convert>
 		</widget>
 	</screen>
-   <!-- ##Permanent clock## -->
-  <screen name="PermanentClockScreen" position="0,0" size="120,30" zPosition="-1" backgroundColor="transparent" title="%s" flags="wfNoBorder">
-    <widget source="global.CurrentTime" render="Label" position="1,1" size="120,30" backgroundColor="transparent" transparent="1" zPosition="0" foregroundColor="foreground" borderWidth="3" font="Regular;26" borderColor="black" valign="center" halign="center">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-  </screen>
-  <screen name="SubtitleDisplay" position="0,0" size="1280,720" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder" />
-  <!-- ## PiP ## -->
-  <screen name="PictureInPictureZapping" flags="wfNoBorder" backgroundColor="transparent" position="580,60" size="120,26" title="PiPZap" zPosition="-1">
-	  <eLabel text="PiP-Zap" position="0,0" size="120,26" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
-  </screen>
-  <screen name="PiPSetup" flags="wfNoBorder" backgroundColor="transparent" position="200,200" size="800,200" zPosition="-1" >
-    <widget name="text" position="0,0" size="800,200" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
-  </screen>
-<!-- ## IMDB Plugin ## -->
+	<screen name="PermanentClockScreen" position="0,0" size="120,30" zPosition="-1" backgroundColor="transparent" title="%s" flags="wfNoBorder">
+		<widget source="global.CurrentTime" render="Label" position="1,1" size="120,30" backgroundColor="transparent" transparent="1" zPosition="0" foregroundColor="grey" borderWidth="2" font="Regular;26" borderColor="black" valign="center" halign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+	</screen>
+	<!-- ## PiP ## -->
+	<screen name="PictureInPictureZapping" flags="wfNoBorder" backgroundColor="transparent" position="580,60" size="120,26" title="PiPZap" zPosition="-1">
+		<eLabel text="PiP-Zap" position="0,0" size="120,26" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
+	</screen>
+	<screen name="PiPSetup" flags="wfNoBorder" backgroundColor="transparent" position="200,200" size="800,200" zPosition="-1" title="PiPSetup" >
+		<widget name="text" position="0,0" size="800,200" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
+	</screen>
+	<!-- ## IMDB Plugin ## -->
 	<screen name="IMDB" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
-		<widget name="key_red" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_green" position="340,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_yellow" position="614,682" size="220,26"	foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<widget name="key_blue" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
 		<widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="149,380" size="210,21" zPosition="2" alphatest="blend" />
 		<widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" position="149,380" size="210,21" zPosition="3" transparent="1" />
 		<widget name="ratinglabel" position="50,410" size="400,24" foregroundColor="grey" transparent="1" font="Regular;20" halign="center" />
@@ -1879,12 +1907,9 @@
 	</screen>
 	<screen flags="wfNoBorder" name="IMDbSetup" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-		<widget source="key_red" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-		<widget source="key_green" render="Label" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
 		<widget source="help" render="Label" position="5,400" size="477,80" font="Regular;20" foregroundColor="secondFG" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" foregroundColor="grey" size="755,583" transparent="1" />
 	</screen>
-   <!-- ## End of Magic-HD-Light ViX ## -->
 </skin>
