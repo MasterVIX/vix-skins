@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.77 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.78 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -5258,7 +5258,7 @@ background
 	<screen flags="wfNoBorder" name="SortableMenu" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
 		<panel name="BlueBPanel" />
-		<eLabel text="Hide" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<eLabel text="Hide" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 		<widget name="menu" scrollbarMode="showOnDemand" position="520,80" size="755,588" font="Regular;22" transparent="1" foregroundColor="grey" itemHeight="28" enableWrapAround="1"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VPS_check_PDC_Screen" position="0,0" size="1280,720" >
@@ -5293,7 +5293,7 @@ background
 		<panel name="Red2Panel" />
 		<panel name="Green2Panel" />
 		<panel name="Blue2Panel" />
-		<widget name="file_list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
+		<widget name="file_list" position="490,80" size="785,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<widget source="status" render="Label" position="10,370" zPosition="1" size="477,200" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColor="secondFG" />
 	</screen>
 	<screen flags="wfNoBorder" name="UpgradeStatus" position="0,0" size="1280,720" >
@@ -5492,7 +5492,7 @@ background
 		<panel name="Blue2Panel" />
 		<widget name="label" position="15,385" size="290,280" transparent="1" font="Regular;20" />
 		<widget name="thn" position="15,99" size="290,280" alphatest="on" />
-		<widget name="filelist" position="500,82" size="760,583" itemHeight="28" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+		<widget name="filelist" position="490,80" size="785,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 	<screen name="Pic_Exif" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -5530,15 +5530,15 @@ background
 		<panel name="GreenBPanel" />
 		<panel name="YellowBPanel" />
 		<panel name="BlueBPanel" />
-		<widget name="buttonred" position="50,682" size="220,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left" />
-		<widget name="buttongreen" position="340,682" size="220,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left" />
-		<widget name="buttonyellow" position="614,682" size="220,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left" />
-		<widget name="buttonblue" position="875,682" size="220,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left" />
+		<widget name="buttonred" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="buttongreen" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="buttonyellow" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="buttonblue" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 		<widget name="pixmap" position="70,110" size="450,400" />
 		<eLabel position="590,110" size="600,28" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" text="Filelist" font="Regular;24" />
 		<eLabel position="590,140" size="600,2" backgroundColor="black" />
 		<eLabel position="590,142" size="600,2" backgroundColor="grey" />
-		<widget name="menu" position="590,150" size="600,207" backgroundColor="darkgrey" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+		<widget name="menu" position="590,150" size="600,207" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<eLabel position="590,380" size="600,28" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" text="SlideShowList" font="Regular;24" />
 		<eLabel position="590,410" size="600,2" backgroundColor="black" />
 		<eLabel position="590,412" size="600,2" backgroundColor="grey" />
@@ -5605,6 +5605,7 @@ background
 		<panel name="Green1Panel" />
 		<panel name="Yellow1Panel" />
 		<panel name="Blue1Panel" />
+		<panel name="MenuBPanel" />
 		<widget name="leftContentTitle" position="5,97" size="640,26" backgroundColor="#00aaaaaa" zPosition="5" foregroundColor="#00000000" font="Regular;22" halign="center" />
 		<widget name="filelist" position="5,125" size="640,325" backgroundColor="#00101214" scrollbarMode="showOnDemand" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/YampMusicPlayer/images/sel.png" />
 		<widget name="rightContentTitle" position="660,97" size="600,26" backgroundColor="#00aaaaaa" zPosition="5" foregroundColor="#00000000" font="Regular;22" halign="center" />
@@ -5645,12 +5646,12 @@ background
 		<eLabel text="Save" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<widget name="lyrics" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
-	<screen name="YampConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="YampConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="Yamp Configuration">
 		<panel name="BasicTemplate2"/>
 		<panel name="RedBPanel" />
 		<panel name="GreenBPanel" />
-		<eLabel text="Cancel" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<eLabel text="Save" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<eLabel text="Cancel" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<eLabel text="Save" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 	<screen name="YampSelectPath" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5869,28 +5870,6 @@ background
 		<panel name="Blue2Panel" />
 		<widget name="list" font="Regular;22" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,80" size="755,588" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<widget source="statusbar" render="Label" font="Regular;22" itemHeight="28" position="5,400" size="477,200" valign="center" halign="center" transparent="1" foregroundColor="secondFG" enableWrapAround="1" />
-	</screen>
-	<!-- ## ClearMEM ## -->
-	<screen name="SetupMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<panel name="Yellow1Panel" />
-		<panel name="Blue1Panel" />
-		<widget name="config" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-		<widget name="memory" position="5,400" size="500,150" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColor="grey" />
-		<widget name="slide" position="5,580" zPosition="2" borderWidth="2" size="480,8" />
-	</screen>
-	<screen name="ClearMemAutoScreen" position="830,130" size="400,80" backgroundColor="transparent" flags="wfNoBorder" title="ClearMem Status" >
-		<widget name="message_label" position="0,0" size="350,80" backgroundColor="transparent" transparent="1" font="Regular;34" foregroundColor="grey" borderColor="black" borderWidth="3" valign="center" halign="center" />
-	</screen>
-	<screen name="ClearMemInfoScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="ClearMem Info">
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<panel name="Blue1Panel" />
-		<widget name="memtext" font="Regular;18" position="520,82" size="230,583" transparent="1" foregroundColor="grey" halign="left" />
-		<widget name="memvalue" font="Regular;18" position="760,82" size="140,583" transparent="1" foregroundColor="grey" halign="right" />
 	</screen>
 	<!-- ## CacheFlush ## -->
 	<screen name="CacheFlushSetupMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="" >
@@ -6294,15 +6273,15 @@ background
 	<!-- ## DreamExplorer ## -->
 	<screen name="DreamExplorerII" title="Dream-Explorer" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="filelist" position="520,90" size="755,575" zPosition="4" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28"	transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="filelist" position="520,80" size="755,588" zPosition="4" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28"	transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<panel name="RedBPanel" />
 		<panel name="GreenBPanel" />
 		<panel name="YellowBPanel" />
 		<panel name="BlueBPanel" />
-		<eLabel text="Delete" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-		<eLabel text="Rename" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-		<eLabel text="Move/Copy" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
-		<eLabel text="Bookmarks" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
+		<eLabel text="Delete" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<eLabel text="Rename" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<eLabel text="Move/Copy" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<eLabel text="Bookmarks" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 		<panel name="MenuBPanel" />
 		<panel name="InfoBPanel" />
 	</screen>
@@ -6505,7 +6484,7 @@ background
 		<widget source="statusbar" render="Label" font="Regular;22" position="5,370" size="482,300" transparent="1" foregroundColor="grey" />
 		<widget source="info" render="Label" font="Regular;22" position="5,370" size="482,300" transparent="1" foregroundColor="grey" />
 	</screen>
-	<screen name="LiveStreamingLinksHeader" position="0,0" size="1280,720" flags="wfNoBorder" title="XXXXXXXXX">
+	<screen name="LiveStreamingLinksHeader" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
 		<widget name="menu" position="490,80" size="785,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28"	transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
