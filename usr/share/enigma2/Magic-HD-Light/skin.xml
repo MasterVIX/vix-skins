@@ -1,5 +1,5 @@
 <skin>
-<!--Skin: Magic-HD-Light ViX(Extreme-HD) Vs 2.02 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 6.75 but now in "Light version" (not supporting as many screens)-->
+<!--Skin: Magic-HD-Light ViX(Extreme-HD) Vs 2.03 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 6.76 but now in "Light version" (not supporting as many screens)-->
 <!--This skin is a Freeware. Everyone can modify and use it in other images.-->
 <!--BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!-->
 <!--Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are-->
@@ -1444,11 +1444,11 @@
 	</screen>
 	<screen name="TimerEntry" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="cancel" pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<widget name="ok" pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+		<widget name="cancel" pixmap="Magic-HD-Common/buttons/big-red.png" position="15,682" size="284,40" zPosition="-1" alphatest="blend" />
+		<widget name="ok" pixmap="Magic-HD-Common/buttons/big-green.png" position="305,682" size="284,40 " zPosition="-1" alphatest="blend" />
 		<widget name="config" position="520,80" size="755,400" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
-		<widget name="canceltext" position="50,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-		<widget name="oktext" position="340,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
+		<widget name="canceltext" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="oktext" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="520,500" size="1,1" transparent="1" zPosition="1" alphatest="on" />
 		<widget name="description" position="5,370" size="510,250" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
 	</screen>

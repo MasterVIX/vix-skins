@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.75 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.76 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -1126,19 +1126,19 @@
 		</widget>
 		<widget source="job_status" render="Label" position="590,312" size="480,30" font="Regular;23" />
 		<widget name="config" position="590,400" size="480,130" font="Regular;23" />
-		<widget source="cancelable" render="Pixmap" pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" zPosition="1" alphatest="on">
+		<widget source="cancelable" render="Pixmap" pixmap="Magic-HD-Common/buttons/big-red.png" position="15,682" size="284,40" zPosition="-1" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="cancelable" render="FixedLabel" text="Cancel" position="50,682" size="220,26" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="finished" render="Pixmap" pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on">
+		<widget source="finished" render="Pixmap" pixmap="Magic-HD-Common/buttons/big-green.png" position="305,682" size="284,40 " zPosition="-1" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="finished" render="FixedLabel" text="OK" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="backgroundable" render="Pixmap" pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" alphatest="on">
+		<widget source="backgroundable" render="Pixmap" pixmap="Magic-HD-Common/buttons/big-blue.png" position="890,682" size="284,40 " zPosition="-1" alphatest="blend" >
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="875,682" size="320,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" >
@@ -1193,10 +1193,10 @@
 	</screen>
 	<screen name="TimeDateInput" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
-		<widget name="cancel" alphatest="on" pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" />
-		<widget name="ok" alphatest="on" pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" />
-		<widget name="canceltext" position="50,682" zPosition="1" size="220,26" font="Regular;24" halign="left" backgroundColor="background" transparent="1" />
-		<widget name="oktext" position="340,682" zPosition="1" size="220,26" font="Regular;24" halign="left" backgroundColor="background" transparent="1" />
+		<widget name="cancel" pixmap="Magic-HD-Common/buttons/big-red.png" position="15,682" size="284,40" zPosition="-1" alphatest="blend" />
+		<widget name="ok" pixmap="Magic-HD-Common/buttons/big-green.png" position="305,682" size="284,40 " zPosition="-1" alphatest="blend" />
+		<widget name="canceltext" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="oktext" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,82" size="755,583" font="Regular;22" transparent="1" />
 	</screen>
 	<screen name="LanguageSelection" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1555,11 +1555,11 @@
 	</screen>
 	<screen name="TimerEntry" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="cancel" pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
-		<widget name="ok" pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+		<widget name="cancel" pixmap="Magic-HD-Common/buttons/big-red.png" position="15,682" size="284,40" zPosition="-1" alphatest="blend" />
+		<widget name="ok" pixmap="Magic-HD-Common/buttons/big-green.png" position="305,682" size="284,40 " zPosition="-1" alphatest="blend" />
 		<widget name="config" position="520,80" size="755,400" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
-		<widget name="canceltext" position="50,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-		<widget name="oktext" position="340,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
+		<widget name="canceltext" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="oktext" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="520,500" size="1,1" transparent="1" zPosition="1" alphatest="on" />
 		<widget name="description" position="5,370" size="510,250" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
 	</screen>
@@ -1856,7 +1856,7 @@
 	<screen name="PluginDetails" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel" />
-		<ePixmap alphatest="on" pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" />
+		<panel name="GreenBPanel" />
 		<panel name="RedT2Panel" />
 		<panel name="GreenT2Panel" />
 		<eLabel text="Status:" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="right" position="290,630" size="140,24" transparent="1" zPosition="1" />
@@ -4604,10 +4604,11 @@ background
 	<screen flags="wfNoBorder" name="CDInfo" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel" />
-		<ePixmap alphatest="on" pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" />
-		<ePixmap alphatest="on" pixmap="Magic-HD-Common/buttons/blue.png" position="840,682" size="26,26" />
+		<panel name="GreenBPanel" />
+		<panel name="YellowBPanel" />
 		<panel name="RedT2Panel" />
 		<panel name="GreenT2Panel" />
+		<panel name="YellowT2Panel" />
 		<panel name="BlueT2Panel" />
 		<widget name="config" position="520,90" size="600,400" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;24" backgroundColor="darkgrey" transparent="1" />
 		<widget source="info" render="Label" position="590,500" size="600,120" font="Regular;24" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
