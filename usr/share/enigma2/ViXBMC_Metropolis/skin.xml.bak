@@ -1362,31 +1362,58 @@
 		<widget name="timer1" position="5,385" size="500,285" scrollbarMode="showNever" selectionPixmap="ViXBMC_Metropolis/buttons_old/sel.png"/>
 		<widget name="list" position="520,82" size="755,295" scrollbarMode="showNever" selectionPixmap="ViXBMC_Metropolis/buttons_old/sel.png" foregroundColor="grey"/>
 	</screen>
-	
-<!-- ## AUTOTimers ## -->	
-
+	<!-- ## AUTOTimers ## -->
 	<screen name="AutoTimerEditor" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="Menu_Template"/>
 		<panel name="ClockTemplate2"/>
 		<ePixmap pixmap="ViXBMC_Metropolis/osd/backdrop-setup2-fs8.png" position="51,576" size="119,117" zPosition="2" alphatest="blend"/>
-		<widget name="config" position="600,20" size="660,515" itemHeight="30" transparent="1" foregroundColor="white" backgroundColor="background2" font="Ubuntu-Regular;24" scrollbarMode="showOnDemand" selectionPixmap="ViXBMC_Metropolis/buttons_old/sel.png" enableWrapAround="1" zPosition="10"/>
+		<widget name="config" position="600,20" size="660,515" itemHeight="35" transparent="1" foregroundColor="white" backgroundColor="background2" font="Ubuntu-Regular;26" scrollbarMode="showOnDemand" selectionPixmap="ViXBMC_Metropolis/osd/list_selected-845px-fs8.png" enableWrapAround="1" zPosition="10"/>
 		<panel name="MenuRed3Panel"/>
 		<panel name="MenuGreen3Panel"/>
 		<panel name="MenuYellow3Panel"/>
 		<panel name="MenuBlue3Panel"/>
-		<widget source="help" render="Label" position="820,685" size="200,70" foregroundColor="ivorywhite" transparent="1" font="Ubuntu-Regular;22"/>
+		<widget source="help" render="Label" position="214,620" size="700,60" zPosition="10" font="Ubuntu-Regular;22" halign="left" valign="center" transparent="1" foregroundColor="ivorywhite" backgroundColor="background2"/>
 	</screen>
-	
-		<screen name="AutoTimerOverview" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AutoTimerOverview" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="Menu_Template"/>
-		<widget name="entries" position="600,20" size="660,515" itemHeight="30"  selectionPixmap="ViXBMC_Metropolis/buttons_old/sel.png" colorDisabled="#c80000" foregroundColor="white" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand" zPosition="10" enableWrapAround="1"/>
-		<ePixmap pixmap="ViXBMC_Metropolis/buttons_old/key_menu.png" position="820,685" size="35,25" alphatest="blend"  zPosition="3"  transparent="1"/>
+		<widget name="entries" position="600,20" size="660,515" itemHeight="70" font="Ubuntu-Regular;26" selectionPixmap="ViXBMC_Metropolis/osd/list_selected-845px-fs8.png" colorDisabled="#c80000" foregroundColor="white" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand" zPosition="10" enableWrapAround="1"/>
+		<ePixmap pixmap="ViXBMC_Metropolis/buttons_old/key_menu.png" position="820,685" size="35,25" alphatest="blend" zPosition="3" transparent="1"/>
 		<eLabel text="Setup" position="870,682" size="150,25" foregroundColor="ivorywhite" backgroundColor="background2" transparent="1" zPosition="10" font="Ubuntu-Regular;22" halign="left"/>
 		<panel name="MenuGreen3Panel"/>
 		<panel name="MenuYellow3Panel"/>
 		<panel name="MenuBlue3Panel"/>
-	</screen>	
-	
+	</screen>
+	<screen name="AutoTimerImporter" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="Menu_Template"/>
+		<widget name="list" position="600,35" size="660,500" temHeight="70" font="Ubuntu-Regular;26" selectionPixmap="ViXBMC_Metropolis/osd/list_selected-845px-fs8.png" foregroundColor="white" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand" zPosition="10"/>
+		<panel name="MenuRed3Panel"/>
+		<panel name="MenuGreen3Panel"/>
+		<panel name="MenuYellow3Panel"/>
+		<panel name="MenuBlue3Panel"/>
+	</screen>
+	<screen name="AutoTimerFilterEditor" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="Menu_Template"/>
+		<widget name="config" position="600,35" size="660,500" temHeight="70" font="Ubuntu-Regular;26" selectionPixmap="ViXBMC_Metropolis/osd/list_selected-845px-fs8.png" foregroundColor="white" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand" zPosition="10"/>
+		<panel name="MenuRed3Panel"/>
+		<panel name="MenuGreen3Panel"/>
+		<panel name="MenuYellow3Panel"/>
+		<panel name="MenuBlue3Panel"/>
+	</screen>
+	<screen name="AutoTimerServiceEditor" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="Menu_Template"/>
+		<widget name="config" position="600,35" size="660,500" temHeight="70" font="Ubuntu-Regular;26" selectionPixmap="ViXBMC_Metropolis/osd/list_selected-845px-fs8.png" foregroundColor="white" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand" zPosition="10"/>
+		<panel name="MenuRed3Panel"/>
+		<panel name="MenuGreen3Panel"/>
+		<panel name="MenuYellow3Panel"/>
+		<panel name="MenuBlue3Panel"/>
+	</screen>
+	<screen name="AutoTimerSettings" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="Menu_Template"/>
+		<widget name="config" position="600,35" size="660,500" temHeight="70" font="Ubuntu-Regular;26" selectionPixmap="ViXBMC_Metropolis/osd/list_selected-845px-fs8.png" foregroundColor="white" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand" zPosition="10"/>
+	<widget source="help" render="Label" position="214,620" size="700,60" zPosition="10" font="Ubuntu-Regular;22" halign="left" valign="center" transparent="1" foregroundColor="ivorywhite" backgroundColor="background2"/>
+		<panel name="MenuRed3Panel"/>
+		<panel name="MenuGreen3Panel"/>
+	</screen>
 	<screen name="PluginBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="ClockTemplate2"/>
 		<ePixmap pixmap="ViXBMC_Metropolis/osd/menu-background2-fs8.png" position="590,0" size="690,560" zPosition="-1" alphatest="blend"/>
@@ -1855,6 +1882,63 @@
 		<widget name="SkinList" position="609,20" size="660,260" itemHeight="28" transparent="1" foregroundColor="white" backgroundColor="background2" font="Ubuntu-Regular;24" scrollbarMode="showOnDemand" selectionPixmap="ViXBMC_Metropolis/buttons_old/sel.png" enableWrapAround="1"/>
 		<widget name="Preview" position="609,287" size="461,156" alphatest="on" zPosition="4"/>
 		<panel name="MenuRed1Panel"/>
+	</screen>
+	
+		<!-- ## 1channel ## -->
+	<screen name="MyMenux" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel" backgroundColor="transparent">
+	<ePixmap pixmap="ViXBMC_Metropolis/osd/1ch-left-bg-fs8.png" position="46,65" size="635,586" zPosition="1" alphatest="blend"/>
+	<ePixmap pixmap="ViXBMC_Metropolis/osd/1ch-right-bg-fs8.png" position="704,65" size="521,586" zPosition="1" alphatest="blend"/>
+	<ePixmap pixmap="ViXBMC_Metropolis/osd/1ch-logo-fs8.png" position="791,112" size="327,235" zPosition="2" alphatest="blend"/>
+	<widget name="myMenu" position="61,88" size="609,545" itemHeight="50" font="Ubuntu-Regular;28" selectionPixmap="ViXBMC_Metropolis/osd/list_selected-845px-fs8.png" foregroundColor="white" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand" zPosition="10"/>
+	<widget source="Title" foregroundColor="white" render="Label" position="791,73" size="327,40" backgroundColor="background2" transparent="1" zPosition="4" font="Ubuntu-Regular;28" halign="center" valign="center"/>
+	<eLabel text="This plugin has thousands and thousands of movies and Tv Shows that you can stream instantly from the internet." position="725,402" size="468,153" font="Ubuntu-Regular; 26" foregroundColor="ivorywhite" backgroundColor="background2" halign="center"  transparent="1"  zPosition="10"/>
+<eLabel text="Please choose from the list on the left:" position="725,573" size="468,30" font="Ubuntu-Regular; 24" foregroundColor="ivorywhite" backgroundColor="background2" halign="center" Valign="center" transparent="1"  zPosition="10"/>
+	</screen>
+	
+		<screen name="MyMenu2" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel" backgroundColor="transparent">
+	<ePixmap pixmap="ViXBMC_Metropolis/osd/1ch-left-bg-fs8.png" position="46,65" size="635,586" zPosition="1" alphatest="blend"/>
+	<ePixmap pixmap="ViXBMC_Metropolis/osd/1ch-right-bg-fs8.png" position="704,65" size="521,586" zPosition="1" alphatest="blend"/>
+	<ePixmap pixmap="ViXBMC_Metropolis/osd/1ch-logo-fs8.png" position="791,112" size="327,235" zPosition="2" alphatest="blend"/>
+	<widget name="myMenu" position="61,88" size="609,545" itemHeight="50" font="Ubuntu-Regular;28" selectionPixmap="ViXBMC_Metropolis/osd/list_selected-845px-fs8.png" foregroundColor="white" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand" zPosition="10"/>
+	<widget source="Title" foregroundColor="white" render="Label" position="791,73" size="327,40" backgroundColor="background2" transparent="1" zPosition="4" font="Ubuntu-Regular;28" halign="center" valign="center"/>
+		<eLabel text="This plugin has thousands and thousands of movies and Tv Shows that you can stream instantly from the internet." position="725,402" size="468,153" font="Ubuntu-Regular; 26" foregroundColor="ivorywhite" backgroundColor="background2" halign="center"  transparent="1"  zPosition="10"/>
+<eLabel text="Please choose from the list on the left:" position="725,573" size="468,30" font="Ubuntu-Regular; 24" foregroundColor="ivorywhite" backgroundColor="background2" halign="center" Valign="center" transparent="1"  zPosition="10"/>
+	</screen>
+			<screen name="TvEpisode" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel" backgroundColor="transparent">
+	<ePixmap pixmap="ViXBMC_Metropolis/osd/1ch-left-bg-fs8.png" position="46,65" size="635,586" zPosition="1" alphatest="blend"/>
+	<ePixmap pixmap="ViXBMC_Metropolis/osd/1ch-right-bg-fs8.png" position="704,65" size="521,586" zPosition="1" alphatest="blend"/>
+	<ePixmap pixmap="ViXBMC_Metropolis/osd/1ch-logo-fs8.png" position="791,112" size="327,235" zPosition="2" alphatest="blend"/>
+	<widget name="myMenu" position="61,88" size="609,545" itemHeight="40" font="Ubuntu-Regular;28" selectionPixmap="ViXBMC_Metropolis/osd/list_selected-845px-fs8.png" foregroundColor="white" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand" zPosition="10"/>
+	<widget source="Title" foregroundColor="white" render="Label" position="791,73" size="327,40" backgroundColor="background2" transparent="1" zPosition="4" font="Ubuntu-Regular;28" halign="center" valign="center"/>
+		<eLabel text="This plugin has thousands and thousands of movies and Tv Shows that you can stream instantly from the internet." position="725,402" size="468,153" font="Ubuntu-Regular; 26" foregroundColor="ivorywhite" backgroundColor="background2" halign="center"  transparent="1"  zPosition="10"/>
+<eLabel text="Please choose from the list on the left:" position="725,573" size="468,30" font="Ubuntu-Regular; 24" foregroundColor="ivorywhite" backgroundColor="background2" halign="center" Valign="center" transparent="1"  zPosition="10"/>
+	</screen>
+				<screen name="MovieList" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel" backgroundColor="transparent">
+	<ePixmap pixmap="ViXBMC_Metropolis/osd/1ch-left-bg-fs8.png" position="46,65" size="635,586" zPosition="1" alphatest="blend"/>
+	<ePixmap pixmap="ViXBMC_Metropolis/osd/1ch-right-bg-fs8.png" position="704,65" size="521,586" zPosition="1" alphatest="blend"/>
+	<ePixmap pixmap="ViXBMC_Metropolis/osd/1ch-logo-fs8.png" position="791,112" size="327,235" zPosition="2" alphatest="blend"/>
+	<widget name="myMenu" position="61,88" size="609,545" itemHeight="40" font="Ubuntu-Regular;27" selectionPixmap="ViXBMC_Metropolis/osd/list_selected-845px-fs8.png" foregroundColor="white" backgroundColor="background2" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="10"/>
+	<widget source="Title" foregroundColor="white" render="Label" position="791,73" size="327,40" backgroundColor="background2" transparent="1" zPosition="4" font="Ubuntu-Regular;28" halign="center" valign="center"/>
+		<eLabel text="This plugin has thousands and thousands of movies and Tv Shows that you can stream instantly from the internet." position="725,402" size="468,153" font="Ubuntu-Regular; 26" foregroundColor="ivorywhite" backgroundColor="background2" halign="center"  transparent="1"  zPosition="10"/>
+<eLabel text="Please choose from the list on the left:" position="725,573" size="468,30" font="Ubuntu-Regular; 24" foregroundColor="ivorywhite" backgroundColor="background2" halign="center" Valign="center" transparent="1"  zPosition="10"/>
+	</screen>
+					<screen name="MovieSource" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel" backgroundColor="transparent">
+	<ePixmap pixmap="ViXBMC_Metropolis/osd/1ch-left-bg-fs8.png" position="46,65" size="635,586" zPosition="1" alphatest="blend"/>
+	<ePixmap pixmap="ViXBMC_Metropolis/osd/1ch-right-bg-fs8.png" position="704,65" size="521,586" zPosition="1" alphatest="blend"/>
+	<ePixmap pixmap="ViXBMC_Metropolis/osd/1ch-logo-fs8.png" position="791,112" size="327,235" zPosition="2" alphatest="blend"/>
+	<widget name="myMenu" position="61,88" size="609,545" itemHeight="40" font="Ubuntu-Regular;28" selectionPixmap="ViXBMC_Metropolis/osd/list_selected-845px-fs8.png" foregroundColor="white" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand" zPosition="10"/>
+	<widget source="Title" foregroundColor="white" render="Label" position="791,73" size="327,40" backgroundColor="background2" transparent="1" zPosition="4" font="Ubuntu-Regular;28" halign="center" valign="center"/>
+		<eLabel text="This plugin has thousands and thousands of movies and Tv Shows that you can stream instantly from the internet." position="725,402" size="468,153" font="Ubuntu-Regular; 26" foregroundColor="ivorywhite" backgroundColor="background2" halign="center"  transparent="1"  zPosition="10"/>
+<eLabel text="Please choose from the list on the left:" position="725,573" size="468,30" font="Ubuntu-Regular; 24" foregroundColor="ivorywhite" backgroundColor="background2" halign="center" Valign="center" transparent="1"  zPosition="10"/>
+	</screen>
+	<screen name="ShowHelp" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel" backgroundColor="transparent">
+	<ePixmap pixmap="ViXBMC_Metropolis/osd/1ch-left-bg-fs8.png" position="46,65" size="635,586" zPosition="1" alphatest="blend"/>
+	<ePixmap pixmap="ViXBMC_Metropolis/osd/1ch-right-bg-fs8.png" position="704,65" size="521,586" zPosition="1" alphatest="blend"/>
+	<ePixmap pixmap="ViXBMC_Metropolis/osd/1ch-logo-fs8.png" position="791,112" size="327,235" zPosition="2" alphatest="blend"/>
+	<widget name="myLabel" position="61,88" size="609,545"  itemHeight="28"   font="Ubuntu-Regular;26" selectionPixmap="ViXBMC_Metropolis/osd/list_selected-845px-fs8.png" foregroundColor="white" backgroundColor="background2" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="20"/>
+	<widget source="Title" foregroundColor="white" render="Label" position="791,73" size="327,40" backgroundColor="background2" transparent="1" zPosition="4" font="Ubuntu-Regular;28" halign="center" valign="center"/>
+	<eLabel text="This plugin has thousands and thousands of movies and Tv Shows that you can stream instantly from the internet." position="725,402" size="468,153" font="Ubuntu-Regular; 26" foregroundColor="ivorywhite" backgroundColor="background2" halign="center"  transparent="1"  zPosition="10"/>
+<eLabel text="Please choose from the list on the left:" position="725,573" size="468,30" font="Ubuntu-Regular; 24" foregroundColor="ivorywhite" backgroundColor="background2" halign="center" Valign="center" transparent="1"  zPosition="10"/>
 	</screen>
 	<!-- ## End of VIXBMC NIGHT SKIN ## -->
 </skin>
