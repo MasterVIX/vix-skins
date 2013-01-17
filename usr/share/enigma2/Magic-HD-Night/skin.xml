@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin: Magic-HD-ViX-Night Vs 3.93 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+  <!--  Skin: Magic-HD-ViX-Night Vs 3.94 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
   <!--  Mod by DeLaGrooV to Magic-HD-night -->
   <!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -299,6 +299,9 @@
 	<widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer1024.png:1012,0">
 		<convert type="ServicePosition">Gauge</convert>
 	</widget>
+    <widget source="session.CurrentService" render="Label" position="150,63" size="145,30" zPosition="2" backgroundColor="transparent" foregroundColor="foreground" font="Regular;20" borderColor="black" borderWidth="2" valign="center" halign="left">
+      <convert type="PliExtraInfo">ResolutionString</convert>
+    </widget>
 	<widget source="session.CurrentService" render="Label" position="40,13" size="200,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;20" borderColor="black" valign="center" halign="left">
 		<convert type="ServicePosition">Position</convert>
 	</widget>
@@ -324,6 +327,9 @@
 	<widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1132,63" size="20,20" zPosition="3" alphatest="on">
 		<convert type="ConditionalShowHide">Blink</convert>
 	</widget>
+  </screen>
+   <screen name="PVRState" position="44,93" size="100,30" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
+    <widget name="state" position="0,0" size="100,30" backgroundColor="transparent" borderWidth="2" font="Regular;20" borderColor="black" valign="center" halign="left" />
   </screen>
   <screen name="SecondInfoBar" title="Second InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="session.CurrentService" render="Label" position="50,20" size="600,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;18" valign="top" halign="left">
@@ -580,6 +586,10 @@
 	<widget source="session.CurrentService" render="Label" position="40,13" size="200,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;20" borderColor="black" valign="center" halign="left">
 		<convert type="ServicePosition">Position</convert>
 	</widget>
+    <widget source="session.CurrentService" render="Label" position="150,63" size="145,30" zPosition="2" backgroundColor="transparent" foregroundColor="foreground" font="Regular;20" borderColor="black" borderWidth="2" valign="center" halign="left">
+      <convert type="PliExtraInfo">ResolutionString</convert>
+    </widget>
+
 	<widget source="session.CurrentService" render="Label" position="1025,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;20" borderColor="black" valign="center" halign="left">
 		<convert type="ServicePosition">Remaining</convert>
 	</widget>
@@ -1404,9 +1414,6 @@
     <widget name="text" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,250" transparent="1" />
     <widget name="textbook" scrollbarMode="showOnDemand" font="Regular;22" position="520,350" size="755,250" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/vix2.png" position="60,638" size="300,34" alphatest="on" />
-  </screen>
-  <screen name="PVRState" position="40,100" size="150,30" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
-    <widget name="state" position="0,0" size="150,30" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" halign="center" />
   </screen>
   <screen name="BouquetSelector" title="Choose bouquet" position="0,0" size="1280,720" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
