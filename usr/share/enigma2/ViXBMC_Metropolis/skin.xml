@@ -544,7 +544,7 @@
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 		<widget name="statusicon" position="590,80" zPosition="10" size="100,25" alphatest="on" pixmaps="ViXBMC_HD-Common/images/pvrstate/pvr_playing.png,ViXBMC_HD-Common/images/pvrstate/pvr_paused.png,ViXBMC_HD-Common/images/pvrstate/pvr_stop.png,ViXBMC_HD-Common/images/pvrstate/pvr_fwd.png,ViXBMC_HD-Common/images/pvrstate/pvr_rwd.png,ViXBMC_HD-Common/images/pvrstate/pvr_slow.png"/>
-		<widget name="speed" position="710,80" size="80,25" font="Regular;20" halign="left" foregroundColor="white" backgroundColor="background2" transparent="1" zPosition="12" />
+		<widget name="speed" position="710,80" size="80,25" font="Regular;20" halign="left" foregroundColor="white" backgroundColor="background2" transparent="1" zPosition="12"/>
 	</screen>
 	<!-- ## DvD-Player ## -->
 	<screen name="DVDPlayer" position="4,30" size="1280,215" backgroundColor="transparent" flags="wfNoBorder">
@@ -741,7 +741,7 @@
 	<screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" zPosition="1">
 		<ePixmap pixmap="ViXBMC_Metropolis/osd/lower_InfoBar-semitrans-fs8.png" position="0,542" size="1280,179" zPosition="1"/>
 		<ePixmap pixmap="ViXBMC_Metropolis/osd/Top_InfoBar-sm-semi-trans-fs8.png" position="0,0" size="1280,85" zPosition="1"/>
-		<ePixmap pixmap="ViXBMC_Metropolis/osd/Navigation-fs8.png" position="18,667" size="839,50" alphatest="blend" zPosition="3"/>
+		<ePixmap pixmap="ViXBMC_Metropolis/osd/Navigation-with-primetime-fs8.png" position="18,667" size="1000,50" alphatest="blend" zPosition="3"/>
 		<ePixmap pixmap="ViXBMC_Metropolis/osd/picon_holder-fs8.png" position="43,553" size="123,127" backgrounColor="background2" alphatest="blend" zPosition="3"/>
 		<widget source="Service" render="Picon" position="55,610" size="101,61" transparent="0" zPosition="4" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
@@ -768,7 +768,7 @@
 		<ePixmap pixmap="ViXBMC_Metropolis/osd/background-fs8.png" position="0,0" size="1280,720" zPosition="-1"/>
 		<ePixmap pixmap="ViXBMC_Metropolis/osd/lower_InfoBar-lg-fs8.png" position="0,464" size="1280,256" zPosition="1"/>
 		<widget source="session.VideoPicture" render="Pig" position="18,487" size="257,172" zPosition="3" backgroundColor="transparent"/>
-		<ePixmap pixmap="ViXBMC_Metropolis/osd/Navigation-fs8.png" position="18,667" alphatest="blend" size="839,50" zPosition="3"/>
+		<ePixmap pixmap="ViXBMC_Metropolis/osd/Navigation-with-primetime-fs8.png" position="18,667" alphatest="blend" size="1000,50" zPosition="3"/>
 		<widget source="Event" render="Label" position="297,487" size="717,30" zPosition="3" halign="left" font="Copper-Bold; 28" backgroundColor="background2" transparent="1" noWrap="1" valign="center" foregroundColor="#EBD6EB">
 			<convert type="EventName">Name</convert>
 		</widget>Event
