@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.85 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.86 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -290,13 +290,13 @@
 	</screen>
 
 	<!--	## Volume ## -->
-	<screen name="Volume" position="92,40" zPosition="1" size="320,68" title="Volume" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="Volume" pixmap="Magic-HD-Common/infobar/volume_up.png" position="62,14" zPosition="1" size="240,34" transparent="1" />
-		<ePixmap pixmap="Magic-HD-Common/infobar/volume_background.png" position="0,0" size="320,68" alphatest="blend" />
-	</screen>
-	<screen name="Mute" title="Mute" position="45,30" size="90,80" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
-		<ePixmap pixmap="Magic-HD-Common/infobar/mute.png" position="0,0" size="90,80" alphatest="on" zPosition="0" />
-	</screen>
+  <screen name="Volume" title="Volume" position="45,245" size="35,230" backgroundColor="transpBlack" zPosition="1" flags="wfNoBorder">
+    <widget name="Volume" pixmap="Magic-HD-Common/infobar/volumeslider.png" position="5,5" size="25,200" orientation="orBottomToTop" transparent="1" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/infobar/vol_box.png" position="0,205" size="35,24" alphatest="on" zPosition="4" />
+  </screen>
+  <screen name="Mute" title="Mute" position="45,30" size="45,45" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
+    <ePixmap pixmap="Magic-HD-Common/infobar/mute-night.png" position="0,0" size="45,45" alphatest="on" zPosition="0" />
+  </screen>
 	<screen name="Dish" flags="wfNoBorder" position="86,100" size="130,220" title="Dish" zPosition="10" backgroundColor="transparent" >
 		<widget name="Dishpixmap" position="0,20" size="130,160" zPosition="1" pixmap="Magic-HD-Common/icons/dish.png" transparent="1" alphatest="on" />
 		<widget name="turnTime" position="5,0" size="120,20" zPosition="1" font="Regular;18" halign="right" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
@@ -699,7 +699,7 @@
 		<panel name="Yellow1Panel" />
 		<panel name="Blue1Panel" />
 		<panel name="MenuBPanel" />
-		<widget name="list" position="520,82" size="755,583" itemHeight="25" font="Regular;22" transparent="1" foregroundColor="grey" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
+		<widget name="list" position="520,82" size="755,583" itemHeight="25" font="Regular;22" transparent="1" foregroundColor="grey" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" enableWrapAround="1" />
 		<widget source="Event" render="Label" position="5,355" size="500,48" transparent="1" foregroundColor="secondFG" font="Regular;23" halign="center" valign="top">
 			<convert type="EventName">Name</convert>
 		</widget>
@@ -746,11 +746,12 @@
 	</screen>
 	<screen flags="wfNoBorder" name="EventViewSimple" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
+		<panel name="Green1Panel" />
+		<panel name="MenuBPanel" />
 		<widget name="epg_description" font="Regular;24" position="520,82" size="755,583" foregroundColor="grey" transparent="1" />
 		<widget name="channel" position="15,390" size="460,52" transparent="1" foregroundColor="selectedFG" font="Regular;24" halign="center" />
 		<widget name="datetime" position="15,463" size="460,30" transparent="1" font="Regular;22" halign="center" />
 		<widget name="duration" position="15,493" size="460,30" transparent="1" font="Regular;22" halign="center" />
-		<panel name="MenuBPanel" />
 		<widget source="session.Event_Now" render="Label" position="15,525" size="460,30" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="center">
 			<convert type="EventName">Genre</convert>
 		</widget>

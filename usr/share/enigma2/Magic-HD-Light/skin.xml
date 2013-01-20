@@ -1,5 +1,5 @@
 ﻿<skin>
-<!--Skin: Magic-HD-Light ViX(Extreme-HD) Vs 2.06 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 6.85 but now in "Light version" (not supporting as many screens)-->
+<!--Skin: Magic-HD-Light ViX(Extreme-HD) Vs 2.07 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 6.86 but now in "Light version" (not supporting as many screens)-->
 <!--This skin is a Freeware. Everyone can modify and use it in other images.-->
 <!--BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!-->
 <!--Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are-->
@@ -290,13 +290,13 @@
 	</screen>
 
 	<!--	## Volume ## -->
-	<screen name="Volume" position="92,40" zPosition="1" size="320,68" title="Volume" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="Volume" pixmap="Magic-HD-Common/infobar/volume_up.png" position="62,14" zPosition="1" size="240,34" transparent="1" />
-		<ePixmap pixmap="Magic-HD-Common/infobar/volume_background.png" position="0,0" size="320,68" alphatest="blend" />
-	</screen>
-	<screen name="Mute" title="Mute" position="45,30" size="90,80" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
-		<ePixmap pixmap="Magic-HD-Common/infobar/mute.png" position="0,0" size="90,80" alphatest="on" zPosition="0" />
-	</screen>
+  <screen name="Volume" title="Volume" position="45,245" size="35,230" backgroundColor="transpBlack" zPosition="1" flags="wfNoBorder">
+    <widget name="Volume" pixmap="Magic-HD-Common/infobar/volumeslider.png" position="5,5" size="25,200" orientation="orBottomToTop" transparent="1" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/infobar/vol_box.png" position="0,205" size="35,24" alphatest="on" zPosition="4" />
+  </screen>
+  <screen name="Mute" title="Mute" position="45,30" size="45,45" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
+    <ePixmap pixmap="Magic-HD-Common/infobar/mute-night.png" position="0,0" size="45,45" alphatest="on" zPosition="0" />
+  </screen>
 	<screen name="Dish" flags="wfNoBorder" position="86,100" size="130,220" title="Dish" zPosition="10" backgroundColor="transparent" >
 		<widget name="Dishpixmap" position="0,20" size="130,160" zPosition="1" pixmap="Magic-HD-Common/icons/dish.png" transparent="1" alphatest="on" />
 		<widget name="turnTime" position="5,0" size="120,20" zPosition="1" font="Regular;18" halign="right" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
