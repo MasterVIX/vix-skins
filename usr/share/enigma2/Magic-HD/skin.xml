@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.83 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.85 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -364,33 +364,33 @@
 		<widget source="session.CurrentService" render="Label" position="5,5" size="635,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;18" valign="top" halign="left">
 			<convert type="PliExtraInfo">All</convert>
 		</widget>
-		<eLabel name="snr" position="685,5" size="80,15" backgroundColor="transpBlack" halign="center" transparent="1" text="	SNR:" font="Regular;14" />
+		<eLabel name="snr" position="675,5" size="80,15" backgroundColor="transpBlack" halign="right" transparent="1" text="	Quality:" font="Regular;14" />
 		<widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,8" size="410,10" borderWidth="2" borderColor="uncccccc">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<widget source="session.FrontendStatus" render="Label" position="1174,5" size="80,15" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<eLabel name="agc" position="685,25" size="80,15" backgroundColor="transpBlack" halign="center" transparent="1" text="	AGC:" font="Regular;14" />
+		<eLabel name="agc" position="675,25" size="80,15" backgroundColor="transpBlack" halign="right" transparent="1" text="	Signal:" font="Regular;14" />
 		<widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,25" size="410,10" borderWidth="2" borderColor="uncccccc">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<widget source="session.FrontendStatus" render="Label" position="1174,25" size="80,15" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<eLabel name="ber" position="685,45" size="80,15" backgroundColor="transpBlack" halign="center" transparent="1" text="	BER:" font="Regular;14" />
+<!--		<eLabel name="ber" position="675,45" size="80,15" backgroundColor="transpBlack" halign="right" transparent="1" text="	BER:" font="Regular;14" />
 		<widget source="session.FrontendStatus" render="Progress" pixmap="Magic-HD-Common/infobar/bar.png" position="760,45" size="410,10" borderWidth="2" borderColor="grey">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
 		<widget source="session.FrontendStatus" render="Label" position="1174,45" size="80,15" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
 			<convert type="FrontendInfo">BER</convert>
-		</widget>
-		<eLabel name="lock" position="685,65" size="80,15" backgroundColor="darkgrey" halign="center" transparent="1" text="Lock:" zPosition="1" font="Regular;14" />
-		<widget source="session.FrontendStatus" render="Pixmap" pixmap="skin_default/icons/lock_on.png" position="760,60" size="38,25" alphatest="on">
+		</widget>-->
+		<eLabel name="lock" position="675,50" size="80,15" backgroundColor="darkgrey" halign="right" transparent="1" text="Lock:" zPosition="1" font="Regular;14" />
+		<widget source="session.FrontendStatus" render="Pixmap" pixmap="skin_default/icons/lock_on.png" position="760,45" size="38,25" alphatest="on">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendStatus" render="Pixmap" pixmap="skin_default/icons/lock_off.png" position="760,60" zPosition="1" size="38,25">
+		<widget source="session.FrontendStatus" render="Pixmap" pixmap="skin_default/icons/lock_off.png" position="760,45" zPosition="1" size="38,25">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
@@ -6848,3 +6848,4 @@ background
 	</screen>
 	<!-- ## End of Magic-HD-ViX ## -->
 </skin>
+
