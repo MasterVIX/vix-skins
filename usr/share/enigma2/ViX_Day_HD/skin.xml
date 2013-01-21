@@ -1,5 +1,5 @@
 <skin>
-	<!--  Skin: ViX-Day-HD Vs 2.114 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Day-HD Vs 2.115 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -1263,9 +1263,12 @@ self.autoResize()
 		<widget source="Title" render="Label" position="135,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 		<panel name="FullscreenPIGPanel" />
 		<widget name="list" position="20,130" size="660,540" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" zPosition="3" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
-		<widget name="now_button_sel" pixmap="ViX_Day_HD/epg_now.png" position="30,85" zPosition="1" size="463,34" alphatest="on" />
-		<widget name="next_button_sel" pixmap="ViX_Day_HD/epg_next.png" position="30,85" zPosition="1" size="463,34" alphatest="on" />
-		<widget name="more_button_sel" pixmap="ViX_Day_HD/epg_more.png" position="30,85" zPosition="1" size="463,34" alphatest="on" />
+		<widget name="now_button" pixmap="ViX_Night_HD/epg/now_next_more.png" position="30,85" zPosition="1" size="152,34" alphatest="on" />
+		<widget name="next_button" pixmap="ViX_Night_HD/epg/now_next_more.png" position="186,85" zPosition="1" size="152,34" alphatest="on" />
+		<widget name="more_button" pixmap="ViX_Night_HD/epg/now_next_more.png" position="342,85" zPosition="1" size="152,34" alphatest="on" />
+		<widget name="now_button_sel" pixmap="ViX_Night_HD/epg/now_next_more_on.png" position="30,85" zPosition="1" size="152,34" alphatest="on" />
+		<widget name="next_button_sel" pixmap="ViX_Night_HD/epg/now_next_more_on.png" position="186,85" zPosition="1" size="152,34" alphatest="on" />
+		<widget name="more_button_sel" pixmap="ViX_Night_HD/epg/now_next_more_on.png" position="342,85" zPosition="1" size="152,34" alphatest="on" />
 		<widget name="now_text" position="50,85" zPosition="2" size="120,34" text="NOW" font="Regular;20" halign="center" valign="center" foregroundColor="#00efefef" backgroundColor="#005c5c5c" transparent="1" />
 		<widget name="next_text" position="207,85" zPosition="2" size="120,34" text="NEXT" font="Regular;20" halign="center" valign="center" foregroundColor="#00efefef" backgroundColor="#005c5c5c" transparent="1" />
 		<widget name="more_text" position="361,85" zPosition="2" size="120,34" text="MORE" font="Regular;20" halign="center" valign="center" foregroundColor="#00efefef" backgroundColor="#005c5c5c" transparent="1" />
