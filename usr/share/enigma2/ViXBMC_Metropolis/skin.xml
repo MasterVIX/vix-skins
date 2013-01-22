@@ -754,8 +754,9 @@
 		<widget source="Event" render="Label" position="57,10" size="1204,60" font="Ubuntu-Light; 25" zPosition="3" backgroundColor="background2" foregroundColor="#EBE9EB" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget name="timeline_text" position="50,184" size="1202,40" foregroundColor="#ffffff" backgroundColor="#0F293D" zPosition="3"/>
-		<widget name="list" position="50,225" size="1202,287" scrollbarMode="showNever" transparent="1" zPosition="3" backgroundColor="transparent" ServiceBackgroundColor="#244C68" ServiceBackgroundColorSelected="#330000" ServiceBackgroundColorNow="greentransparent" ServiceBackgroundColorNowSelected="greentransparent" EntryBackgroundColor="#323232" EntryBackgroundColorSelected="#3A3C3B" EntryBackgroundColorNow="#330000" EntryBackgroundColorNowSelected="#330000" EntryFontAlignment="center" EntryForegroundColorSelected="selectedFG" EntryForegroundColorNowSelected="selectedFG" ServiceForegroundColorSelected="selectedFG" ServiceForegroundColorNowSelected="selectedFG" RecordBackgroundColor="redtransparent" RecordBackgroundColorSelected="redtransparent" RecordForegroundColorSelected="selectedFG" ZapBackgroundColor="transpWhite" ZapBackgroundColorSelected="transpWhite" ZapForegroundColorSelected="selectedFG"/>
+			<widget name="timeline_text" position="50,184" size="1202,40" foregroundColor="#ffffff" backgroundColor="#0F293D" zPosition="3"/>
+		<widget name="list" position="50,225" size="1202,287" backgroundColor="black" scrollbarMode="showNever" zPosition="2" transparent="0" EventNamePadding="15" ServiceNamePadding="15" EntryForegroundColor="#0084858a" EntryForegroundColorSelected="white" SelectedEventBorderWidth="2" SelectedEntryBorderColor="white"/>
+
 		<widget name="timeline0" position="50,225" zPosition="2" size="2,287" pixmap="ViXBMC_HD-Common/timeline.png"/>
 		<widget name="timeline1" position="50,225" zPosition="2" size="2,287" pixmap="ViXBMC_HD-Common/timeline.png"/>
 		<widget name="timeline2" position="50,225" zPosition="2" size="2,287" pixmap="ViXBMC_HD-Common/timeline.png"/>
@@ -777,8 +778,8 @@
 		</widget>
 		<panel name="ClockTemplate2"/>
 		<panel name="Start/End/Duration_Template2"/>
-		<widget name="timeline_text" position="40,24" size="1202,40" foregroundColor="#ffffff" backgroundColor="#0F293D" zPosition="3"/>
-		<widget name="list" position="40,68" size="1202,367" scrollbarMode="showNever" transparent="1" zPosition="2" backgroundColor="transparent" ServiceBackgroundColor="#244C68" ServiceBackgroundColorSelected="#330000" ServiceBackgroundColorNow="greentransparent" ServiceBackgroundColorNowSelected="greentransparent" EntryBackgroundColor="#323232" EntryBackgroundColorSelected="#3A3C3B" EntryBackgroundColorNow="#330000" EntryBackgroundColorNowSelected="#330000" EntryFontAlignment="center" EntryForegroundColorSelected="selectedFG" EntryForegroundColorNowSelected="selectedFG" ServiceForegroundColorSelected="selectedFG" ServiceForegroundColorNowSelected="white" RecordBackgroundColor="redtransparent" RecordBackgroundColorSelected="redtransparent" RecordForegroundColorSelected="selectedFG" ZapBackgroundColor="transpWhite" ZapBackgroundColorSelected="transpWhite" ZapForegroundColorSelected="selectedFG"/>
+		<widget name="timeline_text" position="40,14" size="1202,40" foregroundColor="#ffffff" backgroundColor="#0F293D" zPosition="3"/>
+		<widget name="list" position="40,68" size="1202,367" backgroundColor="black" scrollbarMode="showNever" zPosition="2" transparent="0" EventNamePadding="15" ServiceNamePadding="15" EntryForegroundColor="#0084858a" EntryForegroundColorSelected="white" SelectedEventBorderWidth="2" SelectedEntryBorderColor="white"/>
 		<widget name="timeline0" position="40,68" zPosition="2" size="2,367" pixmap="ViXBMC_HD-Common/timeline.png"/>
 		<widget name="timeline1" position="40,68" zPosition="2" size="2,367" pixmap="ViXBMC_HD-Common/timeline.png"/>
 		<widget name="timeline2" position="40,68" zPosition="2" size="2,367" pixmap="ViXBMC_HD-Common/timeline.png"/>
