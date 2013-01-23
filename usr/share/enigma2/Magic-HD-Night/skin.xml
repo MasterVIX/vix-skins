@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-	<!--  Skin: Magic-HD-ViX-Night Vs 3.95 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+	<!--  Skin: Magic-HD-ViX-Night Vs 3.96 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
 	<!--  Mod by DeLaGrooV to Magic-HD-night -->
 	<!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -2918,10 +2918,10 @@
 	<ePixmap pixmap="Magic-HD-Common/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
 	<ePixmap pixmap="Magic-HD-Common/buttons/yellow2.png" position="580,682" size="26,26" alphatest="on" />
 	<ePixmap pixmap="Magic-HD-Common/buttons/blue2.png" position="840,682" size="26,26" alphatest="on" />
-	<widget name="red" position="50,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;24" halign="left" />
-	<widget name="green" position="340,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;24" halign="left" />
-	<widget name="yellow" position="614,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;24" halign="left" />
-	<widget name="blue" position="875,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;24" halign="left" />
+	<widget name="key_red" position="50,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;24" halign="left" zPosition="1" />
+	<widget name="key_green" position="340,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;24" halign="left" zPosition="1" />
+	<widget name="key_yellow" position="614,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;24" halign="left" zPosition="1" />
+	<widget name="key_blue" position="875,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;24" halign="left" zPosition="1" />
 	<widget name="list" position="590,110" size="600,255" backgroundColor="background" transparent="1" />
 	<widget name="snr_db" position="640,460" size="200,24" backgroundColor="background" transparent="1" font="Regular;21" valign="center" halign="center" />
 	<eLabel position="550,460" size="80,24" backgroundColor="darkgrey" transparent="1" text="SNR:" font="Regular;21" />
@@ -6022,7 +6022,9 @@
 	<screen flags="wfNoBorder" name="CrossEPG_Setup" position="0,0" size="1280,720" title="CrossEPG Setup">
 	<panel name="BasicTemplate"/>
 	<ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
-	 <widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+	<ePixmap pixmap="Magic-HD-Common/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
+	<widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+	<widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 	<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1" />
 	<widget name="information" position="15,300" size="477,300" halign="center" valign="center" font="Regular;22" foregroundColor="#f47d19" />
 	<ePixmap pixmap="Magic-HD-Common/logos/vix2.png" position="60,638" size="300,34" alphatest="on" />
@@ -6030,9 +6032,7 @@
 	<screen flags="wfNoBorder" name="CrossEPG_Info" position="0,0" size="1280,720" title="CrossEPG Info">
 	<panel name="BasicTemplate"/>
 	<ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="Magic-HD-Common/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
 	<widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-	<widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 	<widget name="version" position="600,133" size="600,25" font="Regular;22" />
 	<widget name="create" position="600,163" size="600,25" font="Regular;22" />
 	<widget name="last_update" position="600,193" size="600,25" font="Regular;22" />
