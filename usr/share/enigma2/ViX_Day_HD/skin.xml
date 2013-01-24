@@ -1,5 +1,5 @@
 <skin>
-	<!--  Skin: ViX-Day-HD Vs 2.115 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Day-HD Vs 2.116 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -1263,12 +1263,12 @@ self.autoResize()
 		<widget source="Title" render="Label" position="135,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 		<panel name="FullscreenPIGPanel" />
 		<widget name="list" position="20,130" size="660,540" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H36x660.png" zPosition="3" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
-		<widget name="now_button" pixmap="ViX_Night_HD/epg/now_next_more.png" position="30,85" zPosition="1" size="152,34" alphatest="on" />
-		<widget name="next_button" pixmap="ViX_Night_HD/epg/now_next_more.png" position="186,85" zPosition="1" size="152,34" alphatest="on" />
-		<widget name="more_button" pixmap="ViX_Night_HD/epg/now_next_more.png" position="342,85" zPosition="1" size="152,34" alphatest="on" />
-		<widget name="now_button_sel" pixmap="ViX_Night_HD/epg/now_next_more_on.png" position="30,85" zPosition="1" size="152,34" alphatest="on" />
-		<widget name="next_button_sel" pixmap="ViX_Night_HD/epg/now_next_more_on.png" position="186,85" zPosition="1" size="152,34" alphatest="on" />
-		<widget name="more_button_sel" pixmap="ViX_Night_HD/epg/now_next_more_on.png" position="342,85" zPosition="1" size="152,34" alphatest="on" />
+		<widget name="now_button" pixmap="ViX_Day_HD/epg/now_next_more.png" position="30,85" zPosition="1" size="152,34" alphatest="on" />
+		<widget name="next_button" pixmap="ViX_Day_HD/epg/now_next_more.png" position="186,85" zPosition="1" size="152,34" alphatest="on" />
+		<widget name="more_button" pixmap="ViX_Day_HD/epg/now_next_more.png" position="342,85" zPosition="1" size="152,34" alphatest="on" />
+		<widget name="now_button_sel" pixmap="ViX_Day_HD/epg/now_next_more_on.png" position="30,85" zPosition="1" size="152,34" alphatest="on" />
+		<widget name="next_button_sel" pixmap="ViX_Day_HD/epg/now_next_more_on.png" position="186,85" zPosition="1" size="152,34" alphatest="on" />
+		<widget name="more_button_sel" pixmap="ViX_Day_HD/epg/now_next_more_on.png" position="342,85" zPosition="1" size="152,34" alphatest="on" />
 		<widget name="now_text" position="50,85" zPosition="2" size="120,34" text="NOW" font="Regular;20" halign="center" valign="center" foregroundColor="#00efefef" backgroundColor="#005c5c5c" transparent="1" />
 		<widget name="next_text" position="207,85" zPosition="2" size="120,34" text="NEXT" font="Regular;20" halign="center" valign="center" foregroundColor="#00efefef" backgroundColor="#005c5c5c" transparent="1" />
 		<widget name="more_text" position="361,85" zPosition="2" size="120,34" text="MORE" font="Regular;20" halign="center" valign="center" foregroundColor="#00efefef" backgroundColor="#005c5c5c" transparent="1" />
@@ -1286,15 +1286,15 @@ self.autoResize()
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
 		<widget name="lab1" position="0,70" size="1280,600" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
-		<widget name="timeline_text" position="20,70" size="1240,30" backgroundColor="black" foregroundColor="orange" transparent="1" zPosition="0" />
-		<widget name="list" position="20,95" size="1240,572" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" />
+		<widget name="timeline_text" position="0,70" size="1280,30" backgroundColor="black" foregroundColor="orange" transparent="1" zPosition="0" />
+		<widget name="list" position="0,95" size="1280,590" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" />
 <!--		<widget name="timeline0" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline1" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline2" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline3" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline4" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline5" position="20,95" zPosition="2" size="2,572" pixmap="ViX_HD_Common/timeline.png" />-->
-		<widget name="timeline_now" position="20,95" zPosition="3" size="19,572" pixmap="ViX_HD_Common/timeline-now.png" alphatest="on" />
+		<widget name="timeline_now" position="0,95" zPosition="3" size="19,590" pixmap="ViX_Day_HD/epg/timeline-now.png" alphatest="on" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/key_menu.png" position="20,686" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
@@ -1325,15 +1325,15 @@ self.autoResize()
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget name="lab1" position="0,292" size="1280,380" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
-		<widget name="timeline_text" position="20,290" size="1240,30" backgroundColor="black" foregroundColor="orange" transparent="1" zPosition="0" />
-		<widget name="list" position="20,317" size="1240,360" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" />
+		<widget name="timeline_text" position="0,290" size="1280,30" backgroundColor="black" foregroundColor="orange" transparent="1" zPosition="0" />
+		<widget name="list" position="0,317" size="1280,360" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" />
 <!--		<widget name="timeline0" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline1" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline2" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline3" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline4" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />
 		<widget name="timeline5" position="20,317" zPosition="2" size="2,360" pixmap="ViX_HD_Common/timeline.png" />-->
-		<widget name="timeline_now" position="20,317" zPosition="3" size="19,360" pixmap="ViX_HD_Common/timeline-now.png" alphatest="on" />
+		<widget name="timeline_now" position="0,317" zPosition="3" size="19,360" pixmap="ViX_Day_HD/epg/timeline-now-pig.png" alphatest="on" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/key_menu.png" position="20,686" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
