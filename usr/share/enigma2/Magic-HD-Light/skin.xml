@@ -1,5 +1,5 @@
 ﻿<skin>
-<!--Skin: Magic-HD-Light ViX(Extreme-HD) Vs 2.07 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 6.86 but now in "Light version" (not supporting as many screens)-->
+<!--Skin: Magic-HD-Light ViX(Extreme-HD) Vs 2.08 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 6.88 but now in "Light version" (not supporting as many screens)-->
 <!--This skin is a Freeware. Everyone can modify and use it in other images.-->
 <!--BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!-->
 <!--Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are-->
@@ -1912,5 +1912,419 @@
 		<panel name="Green2Panel" />
 		<widget source="help" render="Label" position="5,400" size="477,80" font="Regular;20" foregroundColor="secondFG" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" foregroundColor="grey" size="755,583" transparent="1" />
+	</screen>
+ <!-- ## Cross EPG ## -->
+	<screen flags="wfNoBorder" name="CrossEPG_Menu" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<widget source="list" render="Listbox" transparent="0" position="520,82" size="755,583" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
+			<convert type="TemplatedMultiContent">
+		{"template": [
+			MultiContentEntryText(pos = (5, 5), size = (440, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+			],
+			"fonts": [gFont("Regular", 22)],
+			"itemHeight": 32
+		}
+	</convert>
+		</widget>
+	</screen>
+	<screen flags="wfNoBorder" name="CrossEPG_Setup" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,80" size="755,588" transparent="1" itemHeight="28" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="information" position="15,370" size="477,250" halign="center" valign="center" font="Regular;22" foregroundColor="secondFG" />
+	</screen>
+	<screen flags="wfNoBorder" name="CrossEPG_Info" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<widget name="version" position="600,133" size="600,25" font="Regular;22" />
+		<widget name="create" position="600,163" size="600,25" font="Regular;22" />
+		<widget name="last_update" position="600,193" size="600,25" font="Regular;22" />
+		<widget name="headersdb_size" position="600,223" size="600,25" font="Regular;22" />
+		<widget name="descriptorsdb_size" position="600,253" size="600,25" font="Regular;22" />
+		<widget name="indexesdb_size" position="600,283" size="600,25" font="Regular;22" />
+		<widget name="aliasesdb_size" position="600,313" size="600,25" font="Regular;22" />
+		<widget name="total_size" position="600,343" size="600,25" font="Regular;22" />
+		<widget name="channels_count" position="600,373" size="600,25" font="Regular;22" />
+		<widget name="events_count" position="600,403" size="600,25" font="Regular;22" />
+		<widget name="hashes_count" position="600,433" size="600,25" font="Regular;22" />
+	</screen>
+	<screen flags="wfNoBorder" name="CrossEPG_Extra" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,80" size="755,588" transparent="1" itemHeight="28" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen flags="wfNoBorder" name="CrossEPG_Providers" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<widget source="list" render="Listbox" transparent="0" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,80" size="755,588" foregroundColor="grey" >
+		<convert type="TemplatedMultiContent">
+		{"template": [
+		MultiContentEntryText(pos = (12, 1), size = (680, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+		MultiContentEntryPixmapAlphaTest(pos = (700, 0), size = (40, 40), png = 1),
+		],
+		"fonts": [gFont("Regular", 22)],
+		"itemHeight": 28
+		}
+		 </convert>
+		</widget>
+	</screen>
+	<screen flags="wfNoBorder" name="CrossEPG_About" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<widget name="about" position="520,82" size="755,583" font="Regular;22" />
+		<widget name="rytec_pix" position="200,420" size="70,70" />
+		<widget name="krkadoni_pix" position="200,500" size="70,22" />
+	</screen>
+	<screen name="CrossEPG_Downloader" position="c-300,e-80" size="600,70" flags="wfNoBorder">
+		<widget name="background" position="0,0" size="600,80" zPosition="-1" />
+		<widget name="action" halign="center" valign="center" position="65,10" size="520,20" font="Regular;16" backgroundColor="#11000000"/>
+		<widget name="status" halign="center" valign="center" position="65,30" size="520,20" font="Regular;16" backgroundColor="#11000000"/>
+		<widget name="progress" position="65,55" size="520,5" borderWidth="1" backgroundColor="#11000000"/>
+	</screen>
+	<screen flags="wfNoBorder" name="CrossEPG_Ordering" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<widget source="list" render="Listbox" selectionPixmap="Magic-HD-Common/buttons/sel.png" transparent="0" position="520,82" size="503,526" scrollbarMode="showOnDemand" itemHeight="28" foregroundColor="grey" enableWrapAround="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+			MultiContentEntryText(pos = (12, 1), size = (440, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+			MultiContentEntryPixmapAlphaTest(pos = (438, 0), size = (40, 40), png = 1),
+			],
+			"fonts": [gFont("Regular", 22)],
+			"itemHeight": 28
+			}
+		</convert>
+	</widget>
+	</screen>
+<!-- ## ViX-specific screens ## -->
+	<screen flags="wfNoBorder" name="VIXMenu" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel" />
+		 <widget source="menu" render="Listbox" position="520,82" size="755,583" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (45,9), size = (535,30), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
+				],
+				"fonts": [gFont("Regular",24)],
+				"itemHeight": 40
+				}
+		</convert>
+		</widget>
+			<widget source="menu" render="Listbox" position="10,400" size="477,60" scrollbarMode="showNever" selectionDisabled="1" transparent="1" foregroundColor="secondFG" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (0,0),size = (450,60),flags = RT_HALIGN_CENTER|RT_VALIGN_BOTTOM|RT_WRAP,text = 2),# index 0 is the MenuText,
+				],
+				"fonts": [gFont("Regular",24)],
+				"itemHeight": 60
+				}
+			</convert>
+		</widget>
+	</screen>
+	<screen flags="wfNoBorder" name="VIXSetup" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
+	</screen>
+	<screen flags="wfNoBorder" name="VIXSwap" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<widget name="autostart_off" position="590,183" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+		<widget name="autostart_on" position="590,183" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+		<widget name="lab1" position="640,180" size="400,45" font="Regular;20" valign="center" transparent="0" />
+		<widget name="lab2" position="590,233" size="150,30" font="Regular;20" valign="center" transparent="0" />
+		<widget name="labplace" position="740,233" size="220,30" font="Regular;20" valign="center" />
+		<widget name="lab3" position="590,263" size="150,30" font="Regular;20" valign="center" transparent="0" />
+		<widget name="labsize" position="740,263" size="220,30" font="Regular;20" valign="center" />
+		<widget name="lab4" position="590,293" size="150,30" font="Regular;20" valign="center" transparent="0" />
+		<widget name="inactive" position="740,293" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
+		<widget name="active" position="740,293" size="100,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
+	</screen>
+<!-- ## ImageManager ## -->
+	<screen flags="wfNoBorder" name="VIXImageManager" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<panel name="MenuBPanel" />
+		<widget name="lab1" position="520,82" size="755,50" font="Regular;22" zPosition="2" transparent="0" halign="center" foregroundColor="grey" />
+		<widget name="list" position="520,145" size="755,520" font="Regular;22" transparent="0" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" itemHeight="28" enableWrapAround="1" />
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(28)
+			</applet>
+		<widget name="backupstatus" position="15,400" size="477,75" font="Regular;22" zPosition="5" halign="center" valign="center" foregroundColor="secondFG" />
+		<eLabel text="'Help' = Download image" position="15,600" size="417,26" backgroundColor="secondBG" foregroundColor="grey" font="Regular;22" halign="left" transparent="1" zPosition="1" />
+	</screen>
+	<screen flags="wfNoBorder" name="ImageManagerDownload" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<widget name="lab1" position="520,82" size="755,50" font="Regular;20" zPosition="2" transparent="0" halign="center"/>
+		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,140" size="755,510" transparent="1" />
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(25)
+		</applet>
+	</screen>
+<!-- ## BackUpManager ## -->
+	<screen flags="wfNoBorder" name="VIXBackupManager" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<panel name="MenuBPanel" />
+		<panel name="InfoBPanel" />
+		<widget name="lab1" position="520,82" size="755,50" font="Regular;22" zPosition="2" transparent="0" foregroundColor="grey" halign="center" itemHeight="28" />
+		<widget name="list" position="520,145" size="755,520" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" />
+		<widget name="backupstatus" position="15,435" size="450,70" font="Regular;22" zPosition="5" foregroundColor="secondFG" />
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(25)
+		</applet>
+	</screen>
+	<screen flags="wfNoBorder" name="VIXBackupManagerMenu" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey" itemHeight="28" enableWrapAround="1" />
+		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+		<panel name="TextBPanel" />
+	</screen>
+	<screen flags="wfNoBorder" name="VIXBackupManagerLogView" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<widget name="list" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey" />
+	</screen>
+	<screen name="BackupSelection" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
+		<panel name="Yellow2Panel" />
+		<widget name="checkList" position="520,82" size="755,583" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="XtraPluginsSelection" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
+		<panel name="Yellow2Panel" />
+		<widget name="checkList" position="520,82" size="755,583" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" itemHeight="28" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen flags="wfNoBorder" name="VIXIPKInstaller" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<widget name="lab1" position="520,82" size="755,25" font="Regular;20" zPosition="2" transparent="0" halign="center" />
+		<widget name="list" position="520,110" size="755,555" transparent="0" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" foregroundColor="grey" itemHeight="28" enableWrapAround="1" />
+		<applet type="onLayoutFinish">
+	self["list"].instance.setItemHeight(28)
+		</applet>
+	</screen>
+	<screen flags="wfNoBorder" name="VIXDevicesPanel" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<widget source="list" render="Listbox" position="520,82" size="755,530" ransparent="0" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" >
+			<convert type="TemplatedMultiContent">
+	{"template": [
+		 MultiContentEntryText(pos = (90, 0), size = (675, 30), font=0, text = 0),
+		 MultiContentEntryText(pos = (110, 30), size = (675, 50), font=1, flags = RT_VALIGN_TOP, text = 1),
+		 MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
+		],
+		"fonts": [gFont("Regular", 22),gFont("Regular", 20)],
+		"itemHeight": 85
+	}
+		</convert>
+		</widget>
+		<widget name="lab1" zPosition="2" position="520,612" size="755,60" font="Regular;24" halign="center" transparent="0" />
+	</screen>
+	<screen flags="wfNoBorder" name="VIXDevicePanelConf" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<widget name="Linconn" position="490,627" size="785,40" font="Regular;18" halign="center" valign="center" />
+		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;20" position="490,80" size="785,550" itemHeight="28"	transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen flags="wfNoBorder" name="VIXPartitionPanelConf" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+	 <widget source="list" render="Listbox" position="490,80" size="785,510" transparent="0" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				 MultiContentEntryText(pos = (90, 0), size = (675, 30), font=0, text = 0),
+				 MultiContentEntryText(pos = (110, 30), size = (675, 50), font=1, flags = RT_VALIGN_TOP, text = 1),
+				 MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
+				],
+				"fonts": [gFont("Regular", 20),gFont("Regular", 20)],
+				"itemHeight": 85
+				}
+			</convert>
+		</widget>
+		<widget name="lab1" zPosition="2" position="520,592" size="755,70" font="Regular;24" halign="center" transparent="0" />
+	</screen>
+	<screen name="QuickEPG" title="InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+		<ePixmap alphatest="off" pixmap="Magic-HD-Common/infobar/hd.png" position="0,500" size="1280,220" zPosition="-1" />
+		<widget source="Event" render="Label" position="50,240" size="1180,300" font="Regular;21" borderColor="black" borderWidth="4" foregroundColor="secondFG" transparent="1" backgroundColor="background" valign="bottom" halign="center" zPosition="2">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<widget source="Service" render="Picon" position="45,555" size="100,60" alphatest="blend" transparent="1" zPosition="2">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget name="list" position="180,625" size="890,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+		<widget source="Service" render="Label" position="255,575" size="990,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" valign="center" halign="left" >
+		<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="20,645" size="120,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;24" valign="center" halign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="20,620" size="120,20" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;20" valign="center" halign="center">
+			<convert type="ClockToText">ShortDate</convert>
+		</widget>
+		<widget source="Event" render="Progress" pixmap="Magic-HD-Common/infobar/pbar.png" position="180,613" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
+		<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget source="Event" render="Label" position="920,620" size="160,30" backgroundColor="secondBG" transparent="1" zPosition="10" foregroundColor="foreground" font="Regular;24" halign="center">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
+		</widget>
+	</screen>
+	<screen name="VIXEPGBouquetSelector" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="BasicTemplate"/>
+		<widget name="menu" font="Regular;22" position="520,82" size="755,583" transparent="1" />
+	</screen>
+	<screen name="GraphicalEPG" position="center,center" size="1280,720" backgroundColor="background" >
+		<widget source="Title" foregroundColor="grey" render="Label" position="5,5" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+		<widget source="global.CurrentTime" render="Label" position="1015,5" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
+			<convert type="ClockToText">Full</convert>
+		</widget>
+		<widget name="timeline_text" position="5,60" size="1270,30" foregroundColor="#00e5b243" backgroundColor="background" transparent="1" />
+		<widget name="lab1" position="0,55" size="1280,485" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
+		<widget name="list" position="5,90" size="1270,475" scrollbarMode="showNever" transparent="1"
+		ServiceBackgroundColor="bluetransparent"	ServiceBackgroundColorSelected="black" ServiceBackgroundColorNow="greentransparent" ServiceBackgroundColorNowSelected="greentransparent"
+		EntryBackgroundColor="bluetransparent"		EntryBackgroundColorSelected="black"	 EntryBackgroundColorNow="redtransparent"			EntryBackgroundColorNowSelected="black"
+		EntryFontAlignment="center"								EntryForegroundColorSelected="selectedFG"																						EntryForegroundColorNowSelected="selectedFG"
+																							ServiceForegroundColorSelected="selectedFG"																					ServiceForegroundColorNowSelected="selectedFG"
+		RecordBackgroundColor="yellowtransparent" RecordBackgroundColorSelected="yellowtransparent"																		RecordForegroundColorSelected="selectedFG"
+		ZapBackgroundColor="transpWhite"					ZapBackgroundColorSelected="transpWhite"																						ZapForegroundColorSelected="selectedFG" />
+		<widget name="timeline_now" position="5,90" zPosition="2" size="19,455" pixmap="Magic-HD-Common/window/timeline-now.png" alphatest="on" />
+		<widget source="Event" render="Label" position="5,555" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="background" shadowColor="#000000" halign="right" transparent="1">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText" />
+		</widget>
+		<widget source="Event" render="Label" position="105,555" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="background" shadowColor="#000000" halign="left" transparent="1">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format:- %H:%M</convert>
+		</widget>
+		<widget source="Event" render="Label" position="205,555" size="1070,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="background" transparent="1" halign="left">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="Event" render="Label" position="5,585" zPosition="1" size="1270,73" halign="left" valign="center" font="Regular;22" foregroundColor="foreground" backgroundColor="background" shadowColor="#000000" transparent="1">
+			<convert type="EventName">ExtendedDescription</convert>
+		</widget>
+		<widget source="Event" render="Label" position="5,660" size="1170,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;19" halign="center" >
+			<convert type="EventName">Genre</convert>
+		</widget>
+		<widget source="Event" render="Label" position="1175,660" size="100,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;19" halign="right" >
+			<convert type="EventName">SmallRating</convert>
+		</widget>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<panel name="MenuBPanel" />
+		<panel name="InfoBPanel" />
+		</screen>
+	<screen name="GraphicalEPGPIG" position="center,center" size="1280,720" flags="wfNoBorder">
+		<widget source="Title" foregroundColor="grey" render="Label" position="5,5" size="400,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+		<widget source="global.CurrentTime" render="Label" position="1015,5" size="250,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
+		 <convert type="ClockToText">Full</convert>
+		</widget>
+		<widget source="session.VideoPicture" render="Pig" position="0,60" size="398,221" backgroundColor="transparent" zPosition="1" />
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<panel name="MenuBPanel" />
+		<panel name="InfoBPanel" />
+		<widget source="session.CurrentService" render="Label" position="5,62" size="393,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="Event" render="Label" position="415,40" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" shadowColor="#000000" halign="right" transparent="1">
+		 <convert type="EventTime">StartTime</convert>
+		 <convert type="ClockToText" />
+		</widget>
+		<widget source="Event" render="Label" position="523,40" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" shadowColor="#000000" halign="left" transparent="1">
+	 <convert type="EventTime">EndTime</convert>
+	 <convert type="ClockToText">Format:- %H:%M</convert>
+		</widget>
+		<widget source="Event" render="Label" position="630,40" size="640,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" halign="left">
+		 <convert type="EventName">Name</convert>
+		</widget>
+	 <widget source="Event" render="Label" position="410,70" zPosition="1" size="865,190" font="Regular;22" halign="left" valign="top" foregroundColor="#00dddddd" backgroundColor="#000000" shadowColor="#000000" transparent="1" >
+		<convert type="EventName">ExtendedDescription</convert>
+		</widget>
+		<widget source="Event" render="Label" position="410,262" size="760,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18" halign="left">
+			<convert type="EventName">Genre</convert>
+		</widget>
+		<widget source="Event" render="Label" position="1175,262" size="100,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18" halign="right">
+			<convert type="EventName">SmallRating</convert>
+		</widget>
+		<widget name="lab1" position="5,313" size="1275,365" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
+		<widget name="timeline_text" position="5,286" size="1275,30" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
+		<widget name="list" position="5,313" size="1275,365" scrollbarMode="showNever" transparent="1"
+		ServiceBackgroundColor="bluetransparent"	ServiceBackgroundColorSelected="black" ServiceBackgroundColorNow="greentransparent" ServiceBackgroundColorNowSelected="greentransparent"
+		EntryBackgroundColor="bluetransparent"		EntryBackgroundColorSelected="black"	 EntryBackgroundColorNow="redtransparent"			EntryBackgroundColorNowSelected="redtransparent"
+		EntryFontAlignment="center"								EntryForegroundColorSelected="selectedFG"																						EntryForegroundColorNowSelected="selectedFG"
+																							ServiceForegroundColorSelected="selectedFG"																					ServiceForegroundColorNowSelected="selectedFG"
+		RecordBackgroundColor="yellowtransparent" RecordBackgroundColorSelected="yellowtransparent"																		RecordForegroundColorSelected="selectedFG"
+		ZapBackgroundColor="transpWhite"					ZapBackgroundColorSelected="transpWhite"																						ZapForegroundColorSelected="selectedFG" />
+		<widget name="timeline_now" position="5,313" zPosition="2" size="19,365" pixmap="Magic-HD-Common/window/timeline-now.png" alphatest="on" />
+	</screen>
+	<screen flags="wfNoBorder" name="LogManager" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<widget name="list" position="520,82" size="755,583" transparent="0" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="30" enableWrapAround="1" />
+		<applet type="onLayoutFinish">
+						self["list"].instance.setItemHeight(25)
+		</applet>
+	<widget name="LogsSize" position="10,450" size="503,50" font="Regular;22" foregroundColor="secondFG" halign="center" valign="center" transparent="0" />
+		<ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+	</screen>
+	<screen flags="wfNoBorder" name="LogManagerViewLog" position="0,0" size="1280,720" >
+		<ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
+		<ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
+		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Format:%-H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget name="list" font="Regular;16" position="10,82" size="1260,555" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeight="30" enableWrapAround="1" />
+		<ePixmap pixmap="Magic-HD-Common/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+	</screen>
+	<screen flags="wfNoBorder" name="LogManagerFb" position="0,0" size="1280,720" >
+		<panel name="BasicTemplate"/>
+		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" itemHeight="30" enableWrapAround="1" />
 	</screen>
 </skin>
