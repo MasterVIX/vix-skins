@@ -1,5 +1,5 @@
 <skin>
-	<!--  Skin: ViX-Night-HD Vs 1.17 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Night-HD Vs 1.18 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -1340,9 +1340,33 @@ self.autoResize()
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
 	</screen>
-	<screen name="EventView" position="center,e-260" size="980,250" backgroundColor="transparent" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-1" size="980,250" pixmap="ViX_Night_HD/event-info-bg.png" />
-		<widget name="channel" position="50,8" size="400,30" font="Boldit;30" valign="center" halign="left" noWrap="1" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" />
+	<screen name="GraphicalInfoBarEPG" position="0,e-200" size="1280,200" backgroundColor="black" transparent="0" flags="wfNoBorder" >
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-top-small.png" position="0,0" size="1280,50" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1160,7" size="100,28" font="Regular;24" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="910,27" size="350,25" font="Regular;18" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget source="Title" render="Label" position="20,10" size="850,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
+		<widget name="lab1" position="0,50" size="1280,115" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
+		<widget name="timeline_text" position="0,50" size="1280,30" backgroundColor="black" foregroundColor="orange" transparent="1" zPosition="0" />
+		<widget name="list" position="0,75" size="1280,85" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no"/>
+		<widget name="timeline_now" position="0,75" zPosition="3" size="19,85" pixmap="ViX_Night_HD/epg/timeline-now.png" alphatest="on" />
+		<ePixmap pixmap="ViX_HD_Common/buttons/key_menu.png" position="20,166" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
+		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="90,166" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
+		<widget name="key_red" position="130,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
+		<ePixmap pixmap="ViX_HD_Common/buttons/green.png" position="380,166" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
+		<widget name="key_green" position="420,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
+		<ePixmap pixmap="ViX_HD_Common/buttons/yellow.png" position="670,166" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
+		<widget name="key_yellow" position="710,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
+		<ePixmap pixmap="ViX_HD_Common/buttons/blue.png" position="960,166" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
+		<widget name="key_blue" position="1000,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,160" size="1280,40" zPosition="-1" />
+	</screen>
+	<screen name="EventView" position="center,20" size="980,250" backgroundColor="transparent" flags="wfNoBorder" zPosition="1" >
+		<ePixmap position="0,0" zPosition="-1" size="980,250" pixmap="ViX_Night_HD/event-info-bg.png" alphatest="blend" />
+		<widget name="channel" position="50,8" size="400,30" font="Boldit;30" valign="center" halign="left" noWrap="1" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" zPosition="1" />
 		<ePixmap pixmap="ViX_Night_HD/icons/clock.png" position="820,12" zPosition="1" size="20,20" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="838,14" zPosition="1" size="59,20" font="Regular;21" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" valign="top" halign="right" transparent="1" noWrap="1">
 			<convert type="ClockToText">Format:%H:%M</convert>
@@ -1350,8 +1374,8 @@ self.autoResize()
 		<widget source="global.CurrentTime" render="Label" position="898,17" zPosition="1" size="35,18" font="Regular;17" backgroundColor="infobar-bkgrnd" foregroundColor="infobar-frgrnd" valign="top" transparent="1" noWrap="1">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
-		<widget name="datetime" position="510,14" size="150,22" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
-		<widget name="duration" position="660,14" size="150,22" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
+		<widget name="datetime" position="510,14" size="250,22" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
+		<widget name="duration" position="760,14" size="150,22" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
 		<widget name="epg_description" position="54,50" size="870,140" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" />
 		<ePixmap pixmap="ViX_HD_Common/buttons/red.png" position="100,213" size="25,25" alphatest="blend" zPosition="3" />
 		<widget name="key_red" position="140,213" size="130,25" font="Regular;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" halign="left" transparent="1" zPosition="1" />
@@ -1372,9 +1396,16 @@ self.autoResize()
 		<widget source="global.CurrentTime" render="Label" position="898,17" zPosition="1" size="35,18" font="Regular;17" backgroundColor="infobar-bkgrnd" foregroundColor="infobar-frgrnd" valign="top" transparent="1" noWrap="1">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
-		<widget name="datetime" position="510,14" size="150,22" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
-		<widget name="duration" position="660,14" size="150,22" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
-		<widget name="epg_description" position="54,50" size="870,140" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" />
+		<widget name="datetime" position="510,14" size="250,22" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
+		<widget name="duration" position="760,14" size="150,22" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
+		<widget name="epg_description" position="55,50" size="870,140" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" />
+	</screen>
+	<screen name="InfoBarEventView" position="0,0" size="1280,250" backgroundColor="infobar_sunken" flags="wfNoBorder" zPosition="1" >
+		<ePixmap pixmap="ViX_Night_HD/fs-bg-top-small.png" position="0,0" size="1280,50" zPosition="-1" />
+		<widget name="channel"  position="20,10" size="850,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
+		<widget name="datetime" position="810,18" size="250,26" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
+		<widget name="duration" position="1060,18" size="150,26" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
+		<widget name="epg_description" position="10,50" size="1260,140" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" />
 	</screen>
 	<screen name="EventViewContextMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -1386,10 +1417,6 @@ self.autoResize()
 				}
 			</convert>
 		</widget>
-	</screen>
-	<screen name="VIXEPGBouquetSelector" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MenuPanel" />
-		<widget name="menu" position="10,107" size="503,512" itemHeight="30" selectionPixmap="ViX_HD_Common/buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
 	</screen>
 	<screen name="HarddiskSelection" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
