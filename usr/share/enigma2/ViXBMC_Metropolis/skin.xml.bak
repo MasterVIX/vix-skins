@@ -465,18 +465,18 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<ePixmap pixmap="ViXBMC_Metropolis/icons/icon_rec_off.png" position="498,695" size="31,17" zPosition="0" alphatest="blend"/>
-		<widget source="session.RecordState" render="Pixmap" pixmap="ViXBMC_Metropolis/icons/icon_rec.png" position="498,695" size="31,17" zPosition="3" alphatest="blend">
+		<ePixmap pixmap="ViXBMC_Metropolis/icons/icon_rec_off.png" position="655,695" size="31,17" zPosition="0" alphatest="blend"/>
+		<widget source="session.RecordState" render="Pixmap" pixmap="ViXBMC_Metropolis/icons/icon_rec.png" position="655,695" size="31,17" zPosition="3" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="ViXBMC_Metropolis/icons/icon_update_off.png" position="545,695" size="20,20" zPosition="0" alphatest="blend"/>
-		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="ViXBMC_Metropolis/icons/icon_stableupdate.png" position="545,695" size="20,20" zPosition="3" alphatest="blend">
+		<ePixmap pixmap="ViXBMC_Metropolis/icons/icon_update_off.png" position="698,695" size="20,20" zPosition="0" alphatest="blend"/>
+		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="ViXBMC_Metropolis/icons/icon_stableupdate.png" position="698,695" size="20,20" zPosition="3" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="ViXBMC_Metropolis/icons/icon_unstableupdate.png" position="545,695" size="20,20" zPosition="3" alphatest="blend">
+		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="ViXBMC_Metropolis/icons/icon_unstableupdate.png" position="698,695" size="20,20" zPosition="3" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ViXBMC_Metropolis/icons/ico_crypt_on.png" position="575,695" size="40,21" zPosition="3" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViXBMC_Metropolis/icons/ico_crypt_on.png" position="735,695" size="40,21" zPosition="3" alphatest="on">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -484,8 +484,10 @@
 		<widget name="key_red" position="83,693" size="120,22" backgroundColor="background2" transparent="1" zPosition="3" font="aeon_title_cy;22" valign="center" halign="left"/>
 		<ePixmap pixmap="ViXBMC_Metropolis/buttons/green.png" position="177,695" size="18,18" alphatest="on" zPosition="3"/>
 		<widget name="key_green" position="204,693" size="120,22" backgroundColor="background2" transparent="1" zPosition="3" font="aeon_title_cy;22" valign="center" halign="left"/>
-		<ePixmap pixmap="ViXBMC_Metropolis/buttons/yellow.png" position="338,695" size="18,18" alphatest="on" zPosition="3"/>
-		<widget name="key_yellow" position="365,693" size="120,22" backgroundColor="background2" transparent="1" zPosition="3" font="aeon_title_cy;22" valign="center" halign="left"/>
+		<ePixmap pixmap="ViXBMC_Metropolis/buttons/yellow.png" position="308,695" size="18,18" alphatest="on" zPosition="3"/>
+		<widget name="key_yellow" position="335,693" size="120,22" backgroundColor="background2" transparent="1" zPosition="3" font="aeon_title_cy;22" valign="center" halign="left"/>
+		<ePixmap pixmap="ViXBMC_Metropolis/buttons/blue.png" position="448,695" size="18,18" alphatest="on" zPosition="3"/>
+		<widget name="key_blue" position="480,693" size="140,22" backgroundColor="background2" transparent="1" zPosition="3" font="aeon_title_cy;22" valign="center" halign="left"/>
 	</screen>
 	<screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar2" backgroundColor="transparent">
 		<panel name="ClockTemplate2"/>
@@ -755,7 +757,7 @@
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget name="timeline_text" position="50,184" size="1202,40" foregroundColor="#ffffff" backgroundColor="#0F293D" zPosition="3"/>
-		<widget name="list" position="50,225" size="1202,287" scrollbarMode="showNever" transparent="1" zPosition="3" backgroundColor="transparent" ServiceBackgroundColor="#244C68" ServiceBackgroundColorSelected="#330000" ServiceBackgroundColorNow="greentransparent" ServiceBackgroundColorNowSelected="greentransparent" EntryBackgroundColor="#323232" EntryBackgroundColorSelected="#3A3C3B" EntryBackgroundColorNow="#330000" EntryBackgroundColorNowSelected="#330000" EntryFontAlignment="center" EntryForegroundColorSelected="selectedFG" EntryForegroundColorNowSelected="selectedFG" ServiceForegroundColorSelected="selectedFG" ServiceForegroundColorNowSelected="selectedFG" RecordBackgroundColor="redtransparent" RecordBackgroundColorSelected="redtransparent" RecordForegroundColorSelected="selectedFG" ZapBackgroundColor="transpWhite" ZapBackgroundColorSelected="transpWhite" ZapForegroundColorSelected="selectedFG"/>
+		<widget name="list" position="50,225" size="1202,287" backgroundColor="black" scrollbarMode="showNever" zPosition="2" transparent="0" EventNamePadding="15" ServiceNamePadding="15" EntryForegroundColor="#0084858a" EntryForegroundColorSelected="white" SelectedEventBorderWidth="2" SelectedEntryBorderColor="white"/>
 		<widget name="timeline0" position="50,225" zPosition="2" size="2,287" pixmap="ViXBMC_HD-Common/timeline.png"/>
 		<widget name="timeline1" position="50,225" zPosition="2" size="2,287" pixmap="ViXBMC_HD-Common/timeline.png"/>
 		<widget name="timeline2" position="50,225" zPosition="2" size="2,287" pixmap="ViXBMC_HD-Common/timeline.png"/>
@@ -777,8 +779,8 @@
 		</widget>
 		<panel name="ClockTemplate2"/>
 		<panel name="Start/End/Duration_Template2"/>
-		<widget name="timeline_text" position="40,24" size="1202,40" foregroundColor="#ffffff" backgroundColor="#0F293D" zPosition="3"/>
-		<widget name="list" position="40,68" size="1202,367" scrollbarMode="showNever" transparent="1" zPosition="2" backgroundColor="transparent" ServiceBackgroundColor="#244C68" ServiceBackgroundColorSelected="#330000" ServiceBackgroundColorNow="greentransparent" ServiceBackgroundColorNowSelected="greentransparent" EntryBackgroundColor="#323232" EntryBackgroundColorSelected="#3A3C3B" EntryBackgroundColorNow="#330000" EntryBackgroundColorNowSelected="#330000" EntryFontAlignment="center" EntryForegroundColorSelected="selectedFG" EntryForegroundColorNowSelected="selectedFG" ServiceForegroundColorSelected="selectedFG" ServiceForegroundColorNowSelected="white" RecordBackgroundColor="redtransparent" RecordBackgroundColorSelected="redtransparent" RecordForegroundColorSelected="selectedFG" ZapBackgroundColor="transpWhite" ZapBackgroundColorSelected="transpWhite" ZapForegroundColorSelected="selectedFG"/>
+		<widget name="timeline_text" position="40,14" size="1202,40" foregroundColor="#ffffff" backgroundColor="#0F293D" zPosition="3"/>
+		<widget name="list" position="40,68" size="1202,367" backgroundColor="black" scrollbarMode="showNever" zPosition="2" transparent="0" EventNamePadding="15" ServiceNamePadding="15" EntryForegroundColor="#0084858a" EntryForegroundColorSelected="white" SelectedEventBorderWidth="2" SelectedEntryBorderColor="white"/>
 		<widget name="timeline0" position="40,68" zPosition="2" size="2,367" pixmap="ViXBMC_HD-Common/timeline.png"/>
 		<widget name="timeline1" position="40,68" zPosition="2" size="2,367" pixmap="ViXBMC_HD-Common/timeline.png"/>
 		<widget name="timeline2" position="40,68" zPosition="2" size="2,367" pixmap="ViXBMC_HD-Common/timeline.png"/>
