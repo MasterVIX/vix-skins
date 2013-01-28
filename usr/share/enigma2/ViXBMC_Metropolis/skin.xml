@@ -14,7 +14,6 @@
 		<font name="LCD" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/lcd.ttf" scale="100"/>
 		<font name="Console" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/tuxtxt.ttf" scale="100"/>
 		<font name="Fixed" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/andale.ttf" scale="100"/>
-
 		<font filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/Roboto-Black.ttf" name="Bold" scale="95"/>
 		<font filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/Roboto-BlackItalic.ttf" name="Boldit" scale="95"/>
 		<font name="Regular" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/nmsbd.ttf" scale="100"/>
@@ -25,6 +24,7 @@
 		<font name="Roboto-Light" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/Roboto-Light.ttf" scale="105"/>
 		<font name="Ubuntu-Light" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/Ubuntu-L.ttf" scale="105"/>
 		<font name="Ubuntu-Regular" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/Ubuntu-R.ttf" scale="105"/>
+		<font name="Ubuntu-Medium" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/Ubuntu-M.ttf" scale="105"/>
 		<font name="Rototo-Condensed" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/Roboto-Condensed.ttf" scale="105"/>
 		<font name="aeon_title_cy" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/aeon_title_cy.ttf" scale="105"/>
 		<font filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/scoutcond.ttf" name="scoutcond" scale="105"/>
@@ -443,15 +443,16 @@
 		<widget name="UnhandledKeyPixmap" pixmap="ViXBMC_Metropolis/icons/unhandled-key.png" position="0,0" size="98,88" alphatest="on"/>
 	</screen>
 	<!--  ## InfoBars ## -->
-	<screen name="InfoBarEventView" position="0,0" size="1280,250" backgroundColor="infobar_sunken" flags="wfNoBorder" zPosition="1">
-		<ePixmap pixmap="ViXBMC_Metropolis/fs-bg-top-small.png" position="0,0" size="1280,50" zPosition="-1"/>
-		<widget name="channel" position="20,10" size="850,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1"/>
-		<widget name="datetime" position="810,18" size="250,26" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left"/>
-		<widget name="duration" position="1060,18" size="150,26" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left"/>
-		<widget name="epg_description" position="10,50" size="1260,140" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1"/>
+	<screen name="InfoBarEventView" position="0,0" size="1280,230" backgroundColor="transparent" flags="wfNoBorder" zPosition="1">
+		<ePixmap pixmap="ViXBMC_Metropolis/InfoBarEventView-bg.png" position="0,0" size="1280,230" zPosition="-1"/>
+	
+		<widget name="channel" position="30,10" size="850,43" font="Ubuntu-Medium;32" transparent="1" foregroundColor="#CCD8F7" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="2"/>
+		<widget name="datetime" position="810,18" size="250,26" font="Ubuntu-Medium;26" foregroundColor="#CCD8F7" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" zPosition="2"/>
+		<widget name="duration" position="1060,18" size="150,26" font="Ubuntu-Medium;26" foregroundColor="#CCD8F7" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" zPosition="2"/>
+		<widget name="epg_description" position="30,75" size="1225,144" font="Ubuntu-Regular;29" foregroundColor="#999999" backgroundColor="infobar_sunken" transparent="1" zPosition="2"/>
 	</screen>
 	<screen name="GraphicalInfoBarEPG" position="0,e-200" size="1280,200" backgroundColor="black" transparent="0" flags="wfNoBorder">
-		<ePixmap pixmap="ViXBMC_Metropolis/fs-bg-top-small.png" position="0,0" size="1280,50" zPosition="-1"/>
+		<ePixmap pixmap="ViXBMC_Metropolis/fs-bg-top-small-2.png" position="0,0" size="1280,50" zPosition="-1"/>
 		<widget source="global.CurrentTime" render="Label" position="1160,7" size="100,28" font="Regular;24" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
