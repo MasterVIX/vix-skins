@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-	<!--  Skin: Magic-HD-ViX-Night Vs 3.98 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+	<!--  Skin: Magic-HD-ViX-Night Vs 3.99 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
 	<!--  Mod by DeLaGrooV to Magic-HD-night -->
 	<!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -771,6 +771,14 @@
 	<panel name="BasicTemplate"/>
 	<widget name="menu" scrollbarMode="showOnDemand" font="Regular;22" position="520,90" size="755,575" transparent="1" />
 	</screen>
+	<screen name="InfoBarEventView" position="0,0" size="1280,210" backgroundColor="transpBlack" flags="wfNoBorder" zPosition="1" >
+	<ePixmap pixmap="Magic-HD-Common/border/top3_bg.png" position="0,0" size="1280,50" zPosition="-1" />
+	<widget name="epg_description" font="Regular;21" position="10,65" size="1260,130" foregroundColor="grey" backgroundColor="transpBlack" transparent="1" />
+	<widget name="channel" position="15,15" size="850,50" transparent="1" foregroundColor="secondFG" font="Regular;24" />
+	<widget name="datetime" position="850,15" size="250,30" transparent="1" font="Regular;22" halign="left" />
+	<widget name="duration" position="1100,15" size="150,30" transparent="1" font="Regular;22" halign="left" />
+	</screen>
+
 	<!-- Audio selection -->
 	<screen flags="wfNoBorder" name="AudioSelection" position="0,0" size="1280,720" title="Audio">
 	<panel name="BasicTemplate"/>
@@ -6706,7 +6714,7 @@
 		</applet>
 	<ePixmap pixmap="Magic-HD-Common/logos/vix2.png" position="60,638" size="300,34" alphatest="on" />
 	</screen>
- <screen name="QuickEPG" title="InfoBar" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="QuickEPG" title="InfoBar" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 	<ePixmap alphatest="off" pixmap="Magic-HD-Common/infobar/hd.png" position="0,520" size="1280,220" zPosition="-1" />
 	<eLabel position="149,309" size="982,222" zPosition="1" backgroundColor="grey" />
 	<widget source="Event" render="Label" position="150,310" size="980,220" font="Regular;21" foregroundColor="white" backgroundColor="transpBlack" valign="center" halign="center" zPosition="11">
@@ -6970,7 +6978,29 @@
 	<widget name="timeline5" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
 	<widget name="timeline_now" position="0,313" zPosition="2" size="19,365" pixmap="Magic-HD-Common/window/timeline-now.png" alphatest="on" />
 	</screen>
-  
+	<screen name="GraphicalInfoBarEPG" position="0,520" size="1280,200" backgroundColor="background" transparent="0" flags="wfNoBorder" >
+	<widget source="global.CurrentTime" render="Label" position="1100,5" size="150,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
+		<convert type="ClockToText">Format:%-H:%M</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="950,25" size="300,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
+		<convert type="ClockToText">Date</convert>
+	</widget>
+	<widget source="Title" render="Label" position="20,10" size="850,43" font="Regular;24" transparent="1" backgroundColor="secondBG" zPosition="1" />
+	<widget name="lab1" position="0,50" size="1280,115" font="Regular;22" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
+	<widget name="timeline_text" position="0,50" size="1280,30" backgroundColor="black" foregroundColor="orange" transparent="1" zPosition="0" />
+	<widget name="list" position="0,75" size="1280,85" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no"/>
+	<widget name="timeline_now" position="0,75" zPosition="3" size="19,85" pixmap="skin_default/timeline.png" alphatest="on" />
+	<ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,165" size="26,26" alphatest="on" />
+	<ePixmap pixmap="Magic-HD-Common/buttons/green2.png" position="305,165" size="26,26" alphatest="on" />
+	<ePixmap pixmap="Magic-HD-Common/buttons/yellow2.png" position="580,165" size="26,26" alphatest="on" />
+	<ePixmap pixmap="Magic-HD-Common/buttons/blue2.png" position="840,165" size="26,26" alphatest="on" />
+	<widget name="key_red" position="50,165" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+	<widget name="key_green" position="340,165" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+	<widget name="key_yellow" position="614,165" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+	<widget name="key_blue" position="875,165" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+	<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,165" size="35,25" />
+	</screen>
+	
 	<!-- ## TempFanControl ##-->
 	<screen flags="wfNoBorder" name="TempFanControl" position="0,0" size="1280,720" title="">
 	<panel name="BasicTemplate"/>
