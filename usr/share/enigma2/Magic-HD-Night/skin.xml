@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-	<!--  Skin: Magic-HD-ViX-Night Vs 4.03 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+	<!--  Skin: Magic-HD-ViX-Night Vs 4.04 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
 	<!--  Mod by DeLaGrooV to Magic-HD-night -->
 	<!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -5991,17 +5991,17 @@
 	<widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 	<widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 	<widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-<widget source="list" render="Listbox" transparent="0" position="590,110" size="600,510" scrollbarMode="showOnDemand">
-  <convert type="TemplatedMultiContent">
-	{"template": [
-	MultiContentEntryText(pos = (12, 1), size = (440, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-	MultiContentEntryPixmapAlphaTest(pos = (455, 0), size = (40, 40), png = 1),
-	],
-	"fonts": [gFont("Regular", 18)],
-	"itemHeight": 30
-	}
-			</convert>
-</widget>
+	<widget source="list" render="Listbox" transparent="0" position="590,110" size="600,510" scrollbarMode="showOnDemand">
+		<convert type="TemplatedMultiContent">
+			{"template": [
+			MultiContentEntryText(pos = (12, 1), size = (440, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+			MultiContentEntryPixmapAlphaTest(pos = (455, 0), size = (40, 40), png = 1),
+			],
+			"fonts": [gFont("Regular", 18)],
+			"itemHeight": 30
+			}
+		</convert>
+	</widget>
 	<ePixmap pixmap="Magic-HD-Common/logos/vix2.png" position="60,638" size="300,34" alphatest="on" />
 	</screen>
 	<screen flags="wfNoBorder" name="CrossEPG_About" position="0,0" size="1280,720" title="About CrossEPG">
@@ -6013,7 +6013,7 @@
 	<widget name="krkadoni_pix" position="785,600" size="70,22" />
 	<ePixmap pixmap="Magic-HD-Common/logos/vix2.png" position="60,638" size="300,34" alphatest="on" />
 	</screen>
-	<screen flags="wfNoBorder" name="CrossEPG_Ordering" position="0,0" size="1280,720" title="CrossEPG Ordering">
+	<screen flags="wfNoBorder" name="CrossEPG_Ordering" position="0,0" size="1280,720" >
 	<panel name="BasicTemplate"/>
 	<ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
 	<ePixmap pixmap="Magic-HD-Common/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
@@ -6023,8 +6023,17 @@
 	<widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 	<widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 	<widget name="key_blue" position="875,682"	size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-	<widget name="list" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	<ePixmap pixmap="Magic-HD-Common/logos/vix2.png" position="60,638" size="300,34" alphatest="on" />
+	<widget source="list" render="Listbox" transparent="0" position="590,110" size="600,510" scrollbarMode="showOnDemand" >
+		<convert type="TemplatedMultiContent">
+				{"template": [
+			MultiContentEntryText(pos = (12, 1), size = (460, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+			MultiContentEntryPixmapAlphaTest(pos = (438, 0), size = (40, 40), png = 1),
+			],
+			"fonts": [gFont("Regular", 18)],
+			"itemHeight": 30
+			}
+		</convert>
+	</widget>
 	</screen>
 	<!-- ## AtmoLight ## -->
 	<screen flags="wfNoBorder" name="AtmoLightAbout" position="0,0" size="1280,720" title="About AtmoLight">
@@ -6949,29 +6958,6 @@
 	 <widget source="key_red" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
 	<widget source="key_green" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
 	<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	<ePixmap pixmap="Magic-HD-Common/logos/vix2.png" position="60,638" size="300,34" alphatest="on" />
-	</screen>
-	<screen flags="wfNoBorder" name="CrossEPG_Ordering" position="0,0" size="1280,720" title="CrossEPG - Providers">
-	<panel name="BasicTemplate"/>
-	<ePixmap pixmap="Magic-HD-Common/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="Magic-HD-Common/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="Magic-HD-Common/buttons/yellow2.png" position="580,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="Magic-HD-Common/buttons/blue2.png" position="840,682" size="26,26" alphatest="on" />
-	<widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-	<widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-	<widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-	<widget name="key_blue" position="875,682"	size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-	<widget name="list" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1" >
-		<convert type="TemplatedMultiContent">
-							   {"template": [
-							   MultiContentEntryText(pos = (12, 1), size = (440, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
-							   MultiContentEntryPixmapAlphaTest(pos = (438, 0), size = (40, 40), png = 1),
-							   ],
-							   "fonts": [gFont("Regular", 18)],
-							   "itemHeight": 30
-							   }
-		</convert>
-	</widget>
 	<ePixmap pixmap="Magic-HD-Common/logos/vix2.png" position="60,638" size="300,34" alphatest="on" />
 	</screen>
 	<screen flags="wfNoBorder" name="LogManager" position="0,0" size="1280,720" title="Log Manager">
