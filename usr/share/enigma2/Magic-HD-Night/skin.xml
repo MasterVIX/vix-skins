@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-	<!--  Skin: Magic-HD-ViX-Night Vs 4.01 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+	<!--  Skin: Magic-HD-ViX-Night Vs 4.02 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
 	<!--  Mod by DeLaGrooV to Magic-HD-night -->
 	<!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -826,90 +826,6 @@
 	<screen name="Menu" title="Main menu" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
 	<widget source="menu" render="Listbox" position="590,82" size="685,575" transparent="1" scrollbarMode="showOnDemand">
-		<convert type="TemplatedMultiContent">
-			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 24)],
-			"itemHeight": 40
-			}
-		</convert>
-	</widget>
-	<ePixmap pixmap="Magic-HD-Common/logos/vix2.png" position="60,638" size="300,34" alphatest="on" />
-	</screen>
-	<screen name="menu_mainmenu" title="Main menu" position="0,0" size="1280,720" flags="wfNoBorder">
-	<panel name="BasicTemplate"/>
-	<widget source="menu" render="Listbox" position="590,82" size="685,575" transparent="1" scrollbarMode="showOnDemand">
-		<convert type="TemplatedMultiContent">
-			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 24)],
-			"itemHeight": 40
-			}
-		</convert>
-	</widget>
-	<ePixmap pixmap="Magic-HD-Common/logos/vix2.png" position="60,638" size="300,34" alphatest="on" />
-	</screen>
-	<screen name="menu_setup" title="Setup menu" position="0,0" size="1280,720" flags="wfNoBorder">
-	<panel name="BasicTemplate"/>
-	<widget source="menu" render="Listbox" position="590,82" size="685,575" transparent="1" scrollbarMode="showOnDemand">
-		<convert type="TemplatedMultiContent">
-			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 24)],
-			"itemHeight": 40
-			}
-		</convert>
-	</widget>
-	<ePixmap pixmap="Magic-HD-Common/logos/vix2.png" position="60,638" size="300,34" alphatest="on" />
-	</screen>
-	<screen name="menu_system" title="System menu" position="0,0" size="1280,720" flags="wfNoBorder">
-	<panel name="BasicTemplate"/>
-	<widget source="menu" render="Listbox" position="590,82" size="685,570" transparent="1" scrollbarMode="showOnDemand">
-		<convert type="TemplatedMultiContent">
-			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 24)],
-			"itemHeight": 40
-			}
-		</convert>
-	</widget>
-	<ePixmap pixmap="Magic-HD-Common/logos/vix2.png" position="60,638" size="300,34" alphatest="on" />
-	</screen>
-	<screen name="menu_information" title="Information menu" position="0,0" size="1280,720" flags="wfNoBorder">
-	<panel name="BasicTemplate"/>
-	<widget source="menu" render="Listbox" position="590,87" size="685,577" transparent="1" scrollbarMode="showOnDemand">
-		<convert type="TemplatedMultiContent">
-			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 24)],
-			"itemHeight": 40
-			}
-		</convert>
-	</widget>
-	<ePixmap pixmap="Magic-HD-Common/logos/vix2.png" position="60,638" size="300,34" alphatest="on" />
-	</screen>
-	<screen name="menu_scan" title="Scan menu" position="0,0" size="1280,720" flags="wfNoBorder">
-	<panel name="BasicTemplate"/>
-	<widget source="menu" render="Listbox" position="590,82" size="685,580" transparent="1" scrollbarMode="showOnDemand">
-		<convert type="TemplatedMultiContent">
-			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 24)],
-			"itemHeight": 40
-			}
-		</convert>
-	</widget>
-	<ePixmap pixmap="Magic-HD-Common/logos/vix2.png" position="60,638" size="300,34" alphatest="on" />
-	</screen>
-	<screen name="menu_harddisk" title="HDD menu" position="0,0" size="1280,720" flags="wfNoBorder">
-	<panel name="BasicTemplate"/>
-	<widget source="menu" render="Listbox" position="590,82" size="685,580" transparent="1" scrollbarMode="showOnDemand">
-		<convert type="TemplatedMultiContent">
-			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
-			"fonts": [gFont("Regular", 24)],
-			"itemHeight": 40
-			}
-		</convert>
-	</widget>
-	<ePixmap pixmap="Magic-HD-Common/logos/vix2.png" position="60,638" size="300,34" alphatest="on" />
-	</screen>
-	<screen name="menu_shutdown" title="Shutdown menu" position="0,0" size="1280,720" flags="wfNoBorder">
-	<panel name="BasicTemplate"/>
-	<widget source="menu" render="Listbox" position="590,82" size="685,580" transparent="1" scrollbarMode="showOnDemand">
 		<convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (45, 9), size = (535, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 24)],
