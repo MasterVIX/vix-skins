@@ -14,7 +14,8 @@
 		<font name="LCD" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/lcd.ttf" scale="100"/>
 		<font name="Console" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/tuxtxt.ttf" scale="100"/>
 		<font name="Fixed" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/andale.ttf" scale="100"/>
-		<!--    <font name="Regular" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/hd.ttf" scale="100" />-->
+		<font filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/Roboto-Black.ttf" name="Bold" scale="95"/>
+		<font filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/Roboto-BlackItalic.ttf" name="Boldit" scale="95"/>
 		<font name="Regular" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/nmsbd.ttf" scale="100"/>
 		<font name="TEXT" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/nmsbd.ttf" scale="100"/>
 		<font name="Copper-Bold" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/COPRGTB.ttf" scale="105"/>
@@ -23,6 +24,7 @@
 		<font name="Roboto-Light" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/Roboto-Light.ttf" scale="105"/>
 		<font name="Ubuntu-Light" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/Ubuntu-L.ttf" scale="105"/>
 		<font name="Ubuntu-Regular" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/Ubuntu-R.ttf" scale="105"/>
+		<font name="Ubuntu-Medium" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/Ubuntu-M.ttf" scale="105"/>
 		<font name="Rototo-Condensed" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/Roboto-Condensed.ttf" scale="105"/>
 		<font name="aeon_title_cy" filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/aeon_title_cy.ttf" scale="105"/>
 		<font filename="/usr/share/enigma2/ViXBMC_Metropolis/fonts/scoutcond.ttf" name="scoutcond" scale="105"/>
@@ -30,6 +32,17 @@
 	</fonts>
 	<!--  ## Colors ## -->
 	<colors>
+		<color name="fullscreen-topbar-frgrnd" value="#00b3b3b3"/>
+		<color name="fullscreen-topbar-bkgrnd" value="#00151515"/>
+		<color name="fullscreen-buttons-bkgrnd" value="#00151515"/>
+		<color name="infobar-frgrnd" value="#00b3b3b3"/>
+		<color name="infobar-frgrnd-on" value="#004c7d3f"/>
+		<color name="infobar-bkgrnd" value="#12151515"/>
+		<color name="infobar_sunken" value="#12191919"/>
+		<color name="infobar_sunken_frgnd_dark" value="#00666666"/>
+		<color name="infobar_collab_back" value="#12131313"/>
+		<color name="infobar_service_frgrnd" value="#00385896"/>
+		<color name="infobar_tuner_rec" value="#00a66666"/>
 		<color name="lightblue" value="#003B96C9"/>
 		<color name="orange" value="#00C58E07"/>
 		<color name="softwhite" value="#00FFCCFF"/>
@@ -430,6 +443,38 @@
 		<widget name="UnhandledKeyPixmap" pixmap="ViXBMC_Metropolis/icons/unhandled-key.png" position="0,0" size="98,88" alphatest="on"/>
 	</screen>
 	<!--  ## InfoBars ## -->
+	<screen name="InfoBarEventView" position="0,0" size="1280,230" backgroundColor="transparent" flags="wfNoBorder" zPosition="1">
+		<ePixmap pixmap="ViXBMC_Metropolis/InfoBarEventView-bg.png" position="0,0" size="1280,230" zPosition="-1"/>
+	
+		<widget name="channel" position="30,10" size="850,43" font="Ubuntu-Medium;32" transparent="1" foregroundColor="#CCD8F7" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="2"/>
+		<widget name="datetime" position="810,18" size="250,26" font="Ubuntu-Medium;26" foregroundColor="#CCD8F7" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" zPosition="2"/>
+		<widget name="duration" position="1060,18" size="150,26" font="Ubuntu-Medium;26" foregroundColor="#CCD8F7" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" zPosition="2"/>
+		<widget name="epg_description" position="30,75" size="1225,144" font="Ubuntu-Regular;29" foregroundColor="#999999" backgroundColor="infobar_sunken" transparent="1" zPosition="2"/>
+	</screen>
+	<screen name="GraphicalInfoBarEPG" position="0,e-200" size="1280,200" backgroundColor="black" transparent="0" flags="wfNoBorder">
+		<ePixmap pixmap="ViXBMC_Metropolis/fs-bg-top-small-2.png" position="0,0" size="1280,50" zPosition="-1"/>
+		<widget source="global.CurrentTime" render="Label" position="1160,7" size="100,28" font="Regular;24" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="910,27" size="350,25" font="Regular;18" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget source="Title" render="Label" position="20,10" size="850,43" font="Boldit;32" transparent="1" foregroundColor="#CDD8F7" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1"/>
+		<widget name="lab1" position="0,50" size="1280,115" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>
+		<widget name="timeline_text" position="0,50" size="1280,30" backgroundColor="black" foregroundColor="#CDD8F7" transparent="1" zPosition="0"/>
+		<widget name="list" position="0,75" size="1280,85" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no" EventNamePadding="15" ServiceNamePadding="15"/>
+		<widget name="timeline_now" position="0,75" zPosition="3" size="19,85" pixmap="ViX_Night_HD/epg/timeline-now.png" alphatest="on"/>
+		<ePixmap pixmap="ViXBMC_Metropolis/buttons_old/key_menu.png" position="20,166" size="35,25" alphatest="blend" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="ViXBMC_Metropolis/buttons_old/red.png" position="90,166" size="25,25" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_red" position="130,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd"/>
+		<ePixmap pixmap="ViXBMC_Metropolis/buttons_old/green.png" position="380,166" size="25,25" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_green" position="420,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd"/>
+		<ePixmap pixmap="ViXBMC_Metropolis/buttons_old/yellow.png" position="670,166" size="25,25" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_yellow" position="710,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd"/>
+		<ePixmap pixmap="ViXBMC_Metropolis/buttons_old/blue.png" position="960,166" size="25,25" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_blue" position="1000,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd"/>
+		<ePixmap pixmap="ViXBMC_Metropolis/fs-bg-bot.png" position="0,160" size="1280,40" zPosition="-1"/>
+	</screen>
 	<screen name="InfoBar" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
 		<panel name="ClockTemplate2"/>
 		<ePixmap pixmap="ViXBMC_Metropolis/osd/lower_InfoBar-semitrans-fs8.png" position="0,542" size="1280,179" zPosition="1"/>
@@ -779,7 +824,7 @@
 		</widget>
 		<panel name="ClockTemplate2"/>
 		<panel name="Start/End/Duration_Template2"/>
-		<widget name="timeline_text" position="40,14" size="1202,40" foregroundColor="#ffffff" backgroundColor="#0F293D" zPosition="3"/>
+		<widget name="timeline_text" position="40,14" size="1202,40" foregroundColor="#CDD8F7" backgroundColor="#0F293D" zPosition="3"/>
 		<widget name="list" position="40,68" size="1202,367" backgroundColor="black" scrollbarMode="showNever" zPosition="2" transparent="0" EventNamePadding="15" ServiceNamePadding="15" EntryForegroundColor="#0084858a" EntryForegroundColorSelected="white" SelectedEventBorderWidth="2" SelectedEntryBorderColor="white"/>
 		<widget name="timeline0" position="40,68" zPosition="2" size="2,367" pixmap="ViXBMC_HD-Common/timeline.png"/>
 		<widget name="timeline1" position="40,68" zPosition="2" size="2,367" pixmap="ViXBMC_HD-Common/timeline.png"/>
