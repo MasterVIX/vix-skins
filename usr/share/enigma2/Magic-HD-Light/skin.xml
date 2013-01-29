@@ -1,5 +1,5 @@
 ﻿<skin>
-<!--Skin: Magic-HD-Light ViX(Extreme-HD) Vs 2.09 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 6.93 but now in "Light version" (not supporting as many screens)-->
+<!--Skin: Magic-HD-Light ViX(Extreme-HD) Vs 2.10 by Rob van der Does @www.world-of-satellite.com, based on Magic-HD-ViX Vs 6.94 but now in "Light version" (not supporting as many screens)-->
 <!--This skin is a Freeware. Everyone can modify and use it in other images.-->
 <!--BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!-->
 <!--Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are-->
@@ -722,10 +722,14 @@
 	<screen name="EventView" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="MenuBPanel" />
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<panel name="Yellow1Panel" />
-		<panel name="Blue1Panel" />
+		<widget name="red"  pixmap="Magic-HD-Common/buttons/big-red.png" position="15,682" size="284,40" zPosition="-1" alphatest="blend" />
+		<widget name="key_red" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="green"  pixmap="Magic-HD-Common/buttons/big-green.png" position="305,682" size="284,40 " zPosition="-1" alphatest="blend" />
+		<widget name="key_green" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="yellow"  pixmap="Magic-HD-Common/buttons/big-yellow.png" position="595,682" size="284,40 " zPosition="-1" alphatest="blend" />
+		<widget name="key_yellow" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="blue"  pixmap="Magic-HD-Common/buttons/big-blue.png" position="890,682" size="284,40 " zPosition="-1" alphatest="blend" />
+		<widget name="key_blue" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 		<widget name="channel" position="15,390" size="460,52" transparent="1" foregroundColor="selectedFG" font="Regular;24" halign="center" />
 		<widget name="datetime" position="15,463" size="460,30" transparent="1" font="Regular;22" halign="center" />
 		<widget name="duration" position="15,493" size="460,30" transparent="1" font="Regular;22" halign="center" />
