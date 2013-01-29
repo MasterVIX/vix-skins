@@ -1,5 +1,5 @@
 <skin>
-	<!--  Skin: ViX-Night-HD Vs 1.22 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Night-HD Vs 1.23 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -1320,8 +1320,8 @@ self.autoResize()
 		<widget name="key_blue" position="1000,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
 		<ePixmap pixmap="ViX_Night_HD/fs-bg-bot.png" position="0,160" size="1280,40" zPosition="-1" />
 	</screen>
-	<screen name="EventView" position="center,,e-260" size="980,250" backgroundColor="transparent" flags="wfNoBorder" zPosition="1" >
-		<ePixmap position="0,0" zPosition="-1" size="980,250" pixmap="ViX_Night_HD/event-info-bg.png" alphatest="blend" />
+	<screen name="EventView" position="center,e-260" size="980,250" backgroundColor="transparent" flags="wfNoBorder" zPosition="1" >
+		<ePixmap position="0,0" zPosition="-1" size="980,250" pixmap="ViX_Night_HD/event-info-bg.png" alphatest="on" />
 		<widget name="channel" position="50,8" size="400,30" font="Boldit;30" valign="center" halign="left" noWrap="1" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" zPosition="1" />
 		<ePixmap pixmap="ViX_Night_HD/icons/clock.png" position="820,12" zPosition="1" size="20,20" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="838,14" zPosition="1" size="59,20" font="Regular;21" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" valign="top" halign="right" transparent="1" noWrap="1">
@@ -2166,7 +2166,7 @@ self.autoResize()
 		</widget>
 	</screen>
 	<screen name="Volume" position="e-330,10" zPosition="1" size="320,68" title="Volume" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="ViX_Night_HD/volume_background.png" position="0,0" size="320,68" alphatest="blend" />
+		<ePixmap pixmap="ViX_Night_HD/volume_background.png" position="0,0" size="320,68" alphatest="on" />
 		<widget name="Volume" pixmap="ViX_Night_HD/volume_up.png" position="62,14" zPosition="1" size="240,34" transparent="1" />
 	</screen>
 	<screen name="WebIfConfigScreen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
