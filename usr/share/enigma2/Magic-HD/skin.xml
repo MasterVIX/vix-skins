@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.95 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.96 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -744,11 +744,11 @@
 			<convert type="EventName">NameNext</convert>
 		</widget>
 	</screen>
-	<screen flags="wfNoBorder" name="EventViewContextMenu" position="0,0" size="1280,720" >
+	<screen name="EventViewContextMenu" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" foregroundColor="grey" transparent="1" itemHeight="28" enableWrapAround="1"/>
 	</screen>
-	<screen flags="wfNoBorder" name="EventViewSimple" position="0,0" size="1280,720" >
+	<screen name="EventViewSimple" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<panel name="MenuBPanel" />
 		<widget name="epg_description" font="Regular;24" position="520,82" size="755,583" foregroundColor="grey" transparent="1" />
@@ -767,10 +767,10 @@
 	</screen>
 	<screen name="InfoBarEventView" position="0,0" size="1280,500" backgroundColor="transparent" flags="wfNoBorder" >
 		<ePixmap pixmap="Magic-HD-Common/infobar/hd.png" position="0,0" size="1280,50" zPosition="-1" />
-		<widget name="epg_description" font="Regular;24" position="10,65" size="1260,480" borderColor="black" borderWidth="4" foregroundColor="grey" backgroundColor="background" transparent="1" valign="top" halign="center" zPosition="2" />
-		<widget name="channel" position="10,5" size="850,50" borderColor="black" borderWidth="4" foregroundColor="secondFG" transparent="1" backgroundColor="background" halign="center" font="Regular;28" />
-		<widget name="datetime" position="850,10" size="250,30" borderColor="black" borderWidth="4" transparent="1" font="Regular;24" halign="left" />
-		<widget name="duration" position="1100,10" size="150,30" borderColor="black" borderWidth="4" transparent="1" font="Regular;24" halign="left" />
+		<widget name="epg_description" font="Regular;28" position="10,65" size="1260,480" borderColor="black" borderWidth="3" foregroundColor="grey" backgroundColor="background" transparent="1" valign="top" halign="center" zPosition="2" />
+		<widget name="channel" position="10,5" size="850,50" borderColor="black" borderWidth="3" foregroundColor="secondFG" transparent="1" backgroundColor="background" halign="center" font="Regular;30" />
+		<widget name="datetime" position="850,10" size="250,30" borderColor="black" borderWidth="3" transparent="1" font="Regular;26" halign="left" />
+		<widget name="duration" position="1100,10" size="150,30" borderColor="black" borderWidth="3" transparent="1" font="Regular;26" halign="left" />
 	</screen>
 	<screen name="MovieSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate2"/>
