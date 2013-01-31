@@ -92,7 +92,7 @@
 		<alias name="TextNormal" font="Regular" size="20" height="24" />
 	</fonts>
 
-<!-- template -->
+	<!-- template -->
 	<screen name="FullscreenTopPanel">
 		<ePixmap pixmap="ViX-Night-HD/fs-bg-top.png" position="0,0" size="1280,70" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1160,10" size="100,28" font="Regular;26" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
@@ -148,7 +148,7 @@
 
 	<screen name="MenuPanel">
 		<widget source="Title" render="Label" position="10,70" size="540,38" font="Bold;26" foregroundColor="menu-title-frgrnd" backgroundColor="menu-title-bkgrnd" transparent="1" />
-		<ePixmap pixmap="vixnight/menu/bg.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
+		<ePixmap pixmap="ViX-Night-HD/menu/bg.png" position="0,0" size="540,720" alphatest="on" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="200,8" size="300,28" font="Regular;24" foregroundColor="menu-title-frgrnd" backgroundColor="menu-time-bkgrnd" halign="right" transparent="1">
 			<convert type="ClockToText">Full</convert>
 		</widget>
@@ -232,49 +232,49 @@
 
 <!-- InfoBar's -->
 	<screen name="InfoBar" flags="wfNoBorder" position="center,e-158" size="974,148" title="InfoBar" backgroundColor="transparent">
-		<ePixmap position="0,0" size="974,148" pixmap="vixnight/1stinfobar.png" alphatest="on" zPosition="-1"/>
+		<ePixmap position="0,0" size="974,148" pixmap="ViX-Night-HD/1stinfobar.png" alphatest="on" zPosition="-1"/>
 		<widget source="session.CurrentService" render="Label" position="44,6" size="625,34" font="Boldit;30" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" valign="top" halign="left" noWrap="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_update_off.png" position="689,12" size="20,20" zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_update_off.png" position="689,12" size="20,20" zPosition="0" alphatest="blend" />
 		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="ViX-Common/icons/icon_stableupdate.png" position="689,12" size="20,20" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="ViX-Common/icons/icon_unstableupdate.png" position="689,12" size="20,20" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_rec_off.png" position="713,13" size="31,17" zPosition="0" alphatest="blend" />
-		<widget source="session.RecordState" render="Pixmap" pixmap="vixnight/icons/icon_rec.png" position="713,13" size="31,17" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_rec_off.png" position="713,13" size="31,17" zPosition="0" alphatest="blend" />
+		<widget source="session.RecordState" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_rec.png" position="713,13" size="31,17" zPosition="1" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="vixnight/icons/ico_hbbtv_off.png" position="747,12" size="46,17" zPosition="0" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/ico_hbbtv_on.png" position="747,12" size="46,17" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/ico_hbbtv_off.png" position="747,12" size="46,17" zPosition="0" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/ico_hbbtv_on.png" position="747,12" size="46,17" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_hd_off.png" position="797,11" size="29,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_hd_on.png" position="797,11" size="29,20" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_hd_off.png" position="797,11" size="29,20" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_hd_on.png" position="797,11" size="29,20" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_format_off.png" position="830,14" zPosition="0" size="28,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_format.png" position="830,14" size="28,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_format_off.png" position="830,14" zPosition="0" size="28,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_format.png" position="830,14" size="28,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_dolby_off.png" position="864,14" zPosition="0" size="25,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_dolby.png" position="864,14" size="25,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_dolby_off.png" position="864,14" zPosition="0" size="25,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_dolby.png" position="864,14" size="25,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_crypt_off.png" position="894,14" zPosition="0" size="11,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_crypt.png" position="894,14" size="11,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_crypt_off.png" position="894,14" zPosition="0" size="11,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_crypt.png" position="894,14" size="11,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_txt_off.png" position="910,14" zPosition="0" size="18,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_txt.png" position="910,14" size="18,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_txt_off.png" position="910,14" zPosition="0" size="18,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_txt.png" position="910,14" size="18,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -291,7 +291,7 @@
 		<widget source="session.CurrentService" render="Picon" position="44,46" size="100,60" transparent="0" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Progress" position="153,40" size="647,35" pixmap="vixnight/infobareventprogress.png" backgroundColor="infobar_sunken" transparent="1" zPosition="0" alphatest="blend" >
+		<widget source="session.Event_Now" render="Progress" position="153,40" size="647,35" pixmap="ViX-Night-HD/infobareventprogress.png" backgroundColor="infobar_sunken" transparent="1" zPosition="0" alphatest="blend" >
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="175,40" size="70,35" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" noWrap="1" valign="center">
@@ -367,7 +367,7 @@
 		<widget name="key_blue" position="665,118" size="150,25" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="infobar_collab_back" halign="left" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="SecondInfoBar" flags="wfNoBorder" position="center,e-360" size="974,350" backgroundColor="transparent">
-		<ePixmap position="0,0" size="974,350" pixmap="vixnight/2ndinfobareventinfo.png" alphatest="on" zPosition="-1"/>
+		<ePixmap position="0,0" size="974,350" pixmap="ViX-Night-HD/2ndinfobareventinfo.png" alphatest="on" zPosition="-1"/>
 		<widget name="channel" position="25,15" size="925,140" font="Regular;22" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar_sunken" transparent="1" valign="top" zPosition="2" />
 		<widget name="epg_description" position="25,40" size="925,125" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" valign="top" zPosition="2" />
 		<widget source="session.CurrentService" render="Label" position="44,165" size="625,34" font="Boldit;30" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" valign="top" halign="left" noWrap="1">
@@ -380,49 +380,49 @@
 		<widget source="session.CurrentService" render="Label" position="495,172" size="60,20" font="Bold;17" foregroundColor="infobar-frgrnd-on" backgroundColor="infobar-bkgrnd" transparent="1" halign="center" >
 			<convert type="PliExtraInfo">OrbitalPosition</convert>
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_update_off.png" position="559,171" size="20,20" zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_update_off.png" position="559,171" size="20,20" zPosition="0" alphatest="blend" />
 		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="ViX-Common/icons/icon_stableupdate.png" position="559,171" size="20,20" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="ViX-Common/icons/icon_unstableupdate.png" position="559,171" size="20,20" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_rec_off.png" position="583,172" size="31,17" zPosition="0" alphatest="blend" />
-		<widget source="session.RecordState" render="Pixmap" pixmap="vixnight/icons/icon_rec.png" position="583,172" size="31,17" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_rec_off.png" position="583,172" size="31,17" zPosition="0" alphatest="blend" />
+		<widget source="session.RecordState" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_rec.png" position="583,172" size="31,17" zPosition="1" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="vixnight/icons/ico_hbbtv_off.png" position="617,171" size="46,17" zPosition="0" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/ico_hbbtv_on.png" position="617,171" size="46,17" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/ico_hbbtv_off.png" position="617,171" size="46,17" zPosition="0" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/ico_hbbtv_on.png" position="617,171" size="46,17" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_hd_off.png" position="667,170" size="29,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_hd_on.png" position="667,170" size="29,20" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_hd_off.png" position="667,170" size="29,20" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_hd_on.png" position="667,170" size="29,20" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_format_off.png" position="700,173" zPosition="0" size="28,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_format.png" position="700,173" size="28,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_format_off.png" position="700,173" zPosition="0" size="28,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_format.png" position="700,173" size="28,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_dolby_off.png" position="734,173" zPosition="0" size="25,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_dolby.png" position="734,173" size="25,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_dolby_off.png" position="734,173" zPosition="0" size="25,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_dolby.png" position="734,173" size="25,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_crypt_off.png" position="764,173" zPosition="0" size="11,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_crypt.png" position="764,173" size="11,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_crypt_off.png" position="764,173" zPosition="0" size="11,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_crypt.png" position="764,173" size="11,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_txt_off.png" position="780,173" zPosition="0" size="18,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_txt.png" position="780,173" size="18,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_txt_off.png" position="780,173" zPosition="0" size="18,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_txt.png" position="780,173" size="18,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/clock.png" position="820,169" zPosition="1" size="20,20" alphatest="blend" />
+		<ePixmap pixmap="ViX-Night-HD/icons/clock.png" position="820,169" zPosition="1" size="20,20" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="838,170" zPosition="1" size="59,20" font="Regular;21" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="right" valign="top">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
@@ -471,7 +471,7 @@
 		<widget source="session.CurrentService" render="Label" position="400,197" size="390,36" font="Regular;17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" halign="right">
 			<convert type="PliExtraInfo">TransponderInfo2line</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Progress" position="153,242" size="647,35" pixmap="vixnight/infobareventprogress.png" backgroundColor="infobar_sunken" transparent="1" zPosition="0" >
+		<widget source="session.Event_Now" render="Progress" position="153,242" size="647,35" pixmap="ViX-Night-HD/infobareventprogress.png" backgroundColor="infobar_sunken" transparent="1" zPosition="0" >
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="175,242" size="70,35" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" valign="center" transparent="1" noWrap="1">
@@ -555,7 +555,7 @@
 		<widget name="key_blue" position="665,320" size="150,25" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="infobar_collab_back" halign="left" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="MoviePlayer" flags="wfNoBorder" position="center,e-200" size="750,190" title="InfoBar" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-1" size="750,190" pixmap="vixnight/movie_infobar-bg.png" />
+		<ePixmap position="0,0" zPosition="-1" size="750,190" pixmap="ViX-Night-HD/movie_infobar-bg.png" />
 		<widget source="session.CurrentService" render="Label" position="45,12" size="650,34" font="Boldit;30" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" valign="top" halign="left" noWrap="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -564,47 +564,47 @@
 		<widget source="global.CurrentTime" render="Label" position="420,44" zPosition="1" size="170,20" font="Regular;21" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="right" valign="top">
 			<convert type="ClockToText">Format:%a %d/%m/%y</convert>
 		</widget>
-		<ePixmap pixmap="vixnight/icons/clock.png" position="600,44" zPosition="1" size="20,20" alphatest="blend" />
+		<ePixmap pixmap="ViX-Night-HD/icons/clock.png" position="600,44" zPosition="1" size="20,20" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="618,44" zPosition="1" size="59,20" font="Regular;21" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="right" valign="top">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="678,47" zPosition="1" size="35,18" font="Regular;17" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_update_off.png" position="209,46" size="20,20" zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_update_off.png" position="209,46" size="20,20" zPosition="0" alphatest="blend" />
 		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="ViX-Common/icons/icon_stableupdate.png" position="209,46" size="20,20" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="ViX-Common/icons/icon_unstableupdate.png" position="209,46" size="20,20" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_rec_off.png" position="239,46" size="31,20" zPosition="0" alphatest="blend" />
-		<widget source="session.RecordState" render="Pixmap" pixmap="vixnight/icons/icon_rec.png" position="239,46" size="31,20" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_rec_off.png" position="239,46" size="31,20" zPosition="0" alphatest="blend" />
+		<widget source="session.RecordState" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_rec.png" position="239,46" size="31,20" zPosition="1" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_hd_off.png" position="272,45" size="29,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_hd_on.png" position="272,45" size="29,20" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_hd_off.png" position="272,45" size="29,20" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_hd_on.png" position="272,45" size="29,20" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_format_off.png" position="305,48" zPosition="0" size="28,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_format.png" position="305,48" size="28,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_format_off.png" position="305,48" zPosition="0" size="28,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_format.png" position="305,48" size="28,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_dolby_off.png" position="339,48" zPosition="0" size="25,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_dolby.png" position="339,48" size="25,15" zPosition="1" alphatest="on">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_dolby_off.png" position="339,48" zPosition="0" size="25,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_dolby.png" position="339,48" size="25,15" zPosition="1" alphatest="on">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_crypt_off.png" position="369,48" zPosition="0" size="11,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_crypt.png" position="369,48" size="11,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_crypt_off.png" position="369,48" zPosition="0" size="11,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_crypt.png" position="369,48" size="11,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_txt_off.png" position="385,48" zPosition="0" size="18,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_txt.png" position="385,48" size="18,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_txt_off.png" position="385,48" zPosition="0" size="18,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_txt.png" position="385,48" size="18,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -630,51 +630,51 @@
 		<widget name="key_blue" position="525,150" size="130,25" font="Regular;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" transparent="1" zPosition="1" />
 	</screen>
 	<screen name="RadioInfoBar" flags="wfNoBorder" position="center,e-172" size="843,162" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-1" size="843,162" pixmap="vixnight/radio-infobar-bg.png" />
+		<ePixmap position="0,0" zPosition="-1" size="843,162" pixmap="ViX-Night-HD/radio-infobar-bg.png" />
 		<widget source="session.CurrentService" render="Label" position="44,8" size="520,34" font="Boldit;30" backgroundColor="infobar-frgrnd-on" foregroundColor="infobar_service_frgrnd" transparent="1" valign="top" halign="left" noWrap="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="345,14" size="60,20" font="Bold;17" backgroundColor="infobar-bkgrnd" foregroundColor="infobar-frgrnd" transparent="1" halign="center">
 			<convert type="ServiceOrbitalPosition" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_update_off.png" position="409,12" size="20,20" zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_update_off.png" position="409,12" size="20,20" zPosition="0" alphatest="blend" />
 		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="ViX-Common/icons/icon_stableupdate.png" position="409,12" size="20,20" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="ViX-Common/icons/icon_unstableupdate.png" position="409,12" size="20,20" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_rec_off.png" position="433,13" size="31,17" zPosition="0" alphatest="blend" />
-		<widget source="session.RecordState" render="Pixmap" pixmap="vixnight/icons/icon_rec.png" position="433,13" size="31,17" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_rec_off.png" position="433,13" size="31,17" zPosition="0" alphatest="blend" />
+		<widget source="session.RecordState" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_rec.png" position="433,13" size="31,17" zPosition="1" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_hd_off.png" position="467,11" size="29,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_hd_on.png" position="467,11" size="29,20" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_hd_off.png" position="467,11" size="29,20" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_hd_on.png" position="467,11" size="29,20" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_format_off.png" position="500,14" zPosition="0" size="28,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_format.png" position="500,14" size="28,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_format_off.png" position="500,14" zPosition="0" size="28,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_format.png" position="500,14" size="28,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_dolby_off.png" position="534,14" zPosition="0" size="25,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_dolby.png" position="534,14" size="25,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_dolby_off.png" position="534,14" zPosition="0" size="25,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_dolby.png" position="534,14" size="25,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_crypt_off.png" position="564,14" zPosition="0" size="11,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_crypt.png" position="564,14" size="11,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_crypt_off.png" position="564,14" zPosition="0" size="11,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_crypt.png" position="564,14" size="11,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_txt_off.png" position="580,14" zPosition="0" size="18,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_txt.png" position="580,14" size="18,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_txt_off.png" position="580,14" zPosition="0" size="18,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_txt.png" position="580,14" size="18,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/clock.png" position="590,12" zPosition="1" size="20,20" alphatest="blend" />
+		<ePixmap pixmap="ViX-Night-HD/icons/clock.png" position="590,12" zPosition="1" size="20,20" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="608,14" zPosition="1" size="59,20" font="Regular;21" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" halign="right" valign="top">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
@@ -688,7 +688,7 @@
 		<widget source="session.CurrentService" render="Picon" position="44,90" size="100,60" transparent="0" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<ePixmap pixmap="vixnight/statusbar_bkgrd.png" position="686,50" size="100,10" zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="ViX-Night-HD/statusbar_bkgrd.png" position="686,50" size="100,10" zPosition="0" alphatest="blend" />
 		<widget source="session.Event_Now" render="Progress" position="687,50" size="98,10" pixmap="ViX-Common/progress_small.png" backgroundColor="infobar-bkgrnd" transparent="1" zPosition="1" >
 			<convert type="EventTime">Progress</convert>
 		</widget>
@@ -772,52 +772,52 @@
 		</widget>
 	</screen>
 	<screen name="QuickEPG" flags="wfNoBorder" position="center,e-305" size="974,295" title="InfoBar" backgroundColor="transparent">
-		<ePixmap position="0,0" size="974,295" pixmap="vixnight/quickepg-infobbar.png" alphatest="on" zPosition="-1"/>
+		<ePixmap position="0,0" size="974,295" pixmap="ViX-Night-HD/quickepg-infobbar.png" alphatest="on" zPosition="-1"/>
 		<widget source="Event" render="Label" position="25,15" size="935,135" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" valign="top" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget source="Service" render="Label" position="44,153" size="625,34" font="Boldit;30" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" valign="top" halign="left" noWrap="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_update_off.png" position="689,159" size="20,20" zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_update_off.png" position="689,159" size="20,20" zPosition="0" alphatest="blend" />
 		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="ViX-Common/icons/icon_stableupdate.png" position="689,159" size="20,20" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="ViX-Common/icons/icon_unstableupdate.png" position="689,159" size="20,20" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_rec_off.png" position="713,160" size="31,162" zPosition="0" alphatest="blend" />
-		<widget source="session.RecordState" render="Pixmap" pixmap="vixnight/icons/icon_rec.png" position="715,160" size="31,162" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_rec_off.png" position="713,160" size="31,162" zPosition="0" alphatest="blend" />
+		<widget source="session.RecordState" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_rec.png" position="715,160" size="31,162" zPosition="1" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="vixnight/icons/ico_hbbtv_off.png" position="747,159" size="46,162" zPosition="0" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/ico_hbbtv_on.png" position="749,159" size="46,162" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/ico_hbbtv_off.png" position="747,159" size="46,162" zPosition="0" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/ico_hbbtv_on.png" position="749,159" size="46,162" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_hd_off.png" position="797,158" size="29,20" zPosition="1" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_hd_on.png" position="797,158" size="29,20" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_hd_off.png" position="797,158" size="29,20" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_hd_on.png" position="797,158" size="29,20" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_format_off.png" position="830,161" zPosition="0" size="28,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_format.png" position="830,161" size="28,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_format_off.png" position="830,161" zPosition="0" size="28,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_format.png" position="830,161" size="28,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_dolby_off.png" position="864,161" zPosition="0" size="25,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_dolby.png" position="864,161" size="25,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_dolby_off.png" position="864,161" zPosition="0" size="25,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_dolby.png" position="864,161" size="25,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_crypt_off.png" position="894,161" zPosition="0" size="11,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_crypt.png" position="894,161" size="11,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_crypt_off.png" position="894,161" zPosition="0" size="11,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_crypt.png" position="894,161" size="11,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="vixnight/icons/icon_txt_off.png" position="910,161" zPosition="0" size="18,15" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_txt.png" position="910,161" size="18,15" zPosition="1" alphatest="blend">
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_txt_off.png" position="910,161" zPosition="0" size="18,15" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_txt.png" position="910,161" size="18,15" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -834,7 +834,7 @@
 		<widget source="Service" render="Picon" position="44,193" size="100,60" transparent="0" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="Event" render="Progress" position="152,187" size="647,35" pixmap="vixnight/infobareventprogress.png" backgroundColor="infobar_sunken" transparent="1" zPosition="0" >
+		<widget source="Event" render="Progress" position="152,187" size="647,35" pixmap="ViX-Night-HD/infobareventprogress.png" backgroundColor="infobar_sunken" transparent="1" zPosition="0" >
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget name="list" position="176,191" size="600,60" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" />
@@ -920,7 +920,7 @@
 		<ePixmap pixmap="ViX-Common/buttons/key_menu.png" position="20,686" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
 	</screen>
 	<screen name="PVRState" position="92,50" zPosition="2" size="88,88" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
-		<ePixmap position="0,0" zPosition="1" size="88,88" pixmap="vixnight/pvr-bg.png" />
+		<ePixmap position="0,0" zPosition="1" size="88,88" pixmap="ViX-Night-HD/pvr-bg.png" />
 		<widget name="statusicon" position="18,12" zPosition="3" size="50,50" alphatest="on" pixmaps="ViX-Common/icons/play_large.png,ViX-Common/icons/pause_large.png,ViX-Common/icons/stop_large.png,ViX-Common/icons/forward_large.png,ViX-Common/icons/backward_large.png,ViX-Common/icons/slow_large.png" />
 		<widget name="speed" position="0,60" size="80,15" font="Regular;17" halign="right" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
 	</screen>
@@ -1173,7 +1173,7 @@ self.autoResize()
 		<widget name="posGoto" position="57,180" size="70,20" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" borderWidth="1" borderColor="black" transparent="1" />
 	</screen>
 	<screen name="UnhandledKey" flags="wfNoBorder" position="1162,20" size="98,88" zPosition="100" backgroundColor="transparent">
-		<widget name="UnhandledKeyPixmap" pixmap="vixnight/unhandled-key.png" position="0,0" size="98,88" alphatest="off" />
+		<widget name="UnhandledKeyPixmap" pixmap="ViX-Night-HD/unhandled-key.png" position="0,0" size="98,88" alphatest="off" />
 	</screen>
 
 <!-- EPG Screens -->
@@ -1204,12 +1204,12 @@ self.autoResize()
 		<widget source="Title" render="Label" position="135,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 		<panel name="FullscreenPIGPanel" />
 		<widget name="list" position="20,130" size="660,540" selectionPixmap="ViX-Common/buttons/FocusBar_H36x660.png" zPosition="3" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
-		<widget name="now_button" pixmap="vixnight/epg/now_next_more.png" position="30,85" zPosition="1" size="152,34" alphatest="on" />
-		<widget name="next_button" pixmap="vixnight/epg/now_next_more.png" position="186,85" zPosition="1" size="152,34" alphatest="on" />
-		<widget name="more_button" pixmap="vixnight/epg/now_next_more.png" position="342,85" zPosition="1" size="152,34" alphatest="on" />
-		<widget name="now_button_sel" pixmap="vixnight/epg/now_next_more_on.png" position="30,85" zPosition="1" size="152,34" alphatest="on" />
-		<widget name="next_button_sel" pixmap="vixnight/epg/now_next_more_on.png" position="186,85" zPosition="1" size="152,34" alphatest="on" />
-		<widget name="more_button_sel" pixmap="vixnight/epg/now_next_more_on.png" position="342,85" zPosition="1" size="152,34" alphatest="on" />
+		<widget name="now_button" pixmap="ViX-Night-HD/epg/now_next_more.png" position="30,85" zPosition="1" size="152,34" alphatest="on" />
+		<widget name="next_button" pixmap="ViX-Night-HD/epg/now_next_more.png" position="186,85" zPosition="1" size="152,34" alphatest="on" />
+		<widget name="more_button" pixmap="ViX-Night-HD/epg/now_next_more.png" position="342,85" zPosition="1" size="152,34" alphatest="on" />
+		<widget name="now_button_sel" pixmap="ViX-Night-HD/epg/now_next_more_on.png" position="30,85" zPosition="1" size="152,34" alphatest="on" />
+		<widget name="next_button_sel" pixmap="ViX-Night-HD/epg/now_next_more_on.png" position="186,85" zPosition="1" size="152,34" alphatest="on" />
+		<widget name="more_button_sel" pixmap="ViX-Night-HD/epg/now_next_more_on.png" position="342,85" zPosition="1" size="152,34" alphatest="on" />
 		<widget name="now_text" position="50,85" zPosition="2" size="120,34" text="NOW" font="Regular;20" halign="center" valign="center" foregroundColor="#00efefef" backgroundColor="#005c5c5c" transparent="1" />
 		<widget name="next_text" position="207,85" zPosition="2" size="120,34" text="NEXT" font="Regular;20" halign="center" valign="center" foregroundColor="#00efefef" backgroundColor="#005c5c5c" transparent="1" />
 		<widget name="more_text" position="361,85" zPosition="2" size="120,34" text="MORE" font="Regular;20" halign="center" valign="center" foregroundColor="#00efefef" backgroundColor="#005c5c5c" transparent="1" />
@@ -1235,7 +1235,7 @@ self.autoResize()
 		<widget name="timeline3" position="20,95" zPosition="2" size="2,572" pixmap="ViX-Common/timeline.png" />
 		<widget name="timeline4" position="20,95" zPosition="2" size="2,572" pixmap="ViX-Common/timeline.png" />
 		<widget name="timeline5" position="20,95" zPosition="2" size="2,572" pixmap="ViX-Common/timeline.png" />-->
-		<widget name="timeline_now" position="0,95" zPosition="3" size="19,590" pixmap="vixnight/epg/timeline-now.png" alphatest="on" />
+		<widget name="timeline_now" position="0,95" zPosition="3" size="19,590" pixmap="ViX-Night-HD/epg/timeline-now.png" alphatest="on" />
 		<ePixmap pixmap="ViX-Common/buttons/key_menu.png" position="20,686" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
@@ -1274,7 +1274,7 @@ self.autoResize()
 		<widget name="timeline3" position="20,317" zPosition="2" size="2,360" pixmap="ViX-Common/timeline.png" />
 		<widget name="timeline4" position="20,317" zPosition="2" size="2,360" pixmap="ViX-Common/timeline.png" />
 		<widget name="timeline5" position="20,317" zPosition="2" size="2,360" pixmap="ViX-Common/timeline.png" />-->
-		<widget name="timeline_now" position="0,317" zPosition="3" size="19,360" pixmap="vixnight/epg/timeline-now-pig.png" alphatest="on" />
+		<widget name="timeline_now" position="0,317" zPosition="3" size="19,360" pixmap="ViX-Night-HD/epg/timeline-now-pig.png" alphatest="on" />
 		<ePixmap pixmap="ViX-Common/buttons/key_menu.png" position="20,686" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
@@ -1282,7 +1282,7 @@ self.autoResize()
 		<panel name="FullscreenBlue1Panel" />
 	</screen>
 	<screen name="GraphicalInfoBarEPG" position="0,e-200" size="1280,200" backgroundColor="black" transparent="0" flags="wfNoBorder" >
-		<ePixmap pixmap="vixnight/fs-bg-top-small.png" position="0,0" size="1280,50" zPosition="-1" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-top-small.png" position="0,0" size="1280,50" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1160,7" size="100,28" font="Regular;24" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1293,7 +1293,7 @@ self.autoResize()
 		<widget name="lab1" position="0,50" size="1280,115" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
 		<widget name="timeline_text" position="0,50" size="1280,30" backgroundColor="black" foregroundColor="orange" transparent="1" zPosition="0" />
 		<widget name="list" position="0,75" size="1280,85" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no"/>
-		<widget name="timeline_now" position="0,75" zPosition="3" size="19,85" pixmap="vixnight/epg/timeline-now.png" alphatest="on" />
+		<widget name="timeline_now" position="0,75" zPosition="3" size="19,85" pixmap="ViX-Night-HD/epg/timeline-now.png" alphatest="on" />
 		<ePixmap pixmap="ViX-Common/buttons/key_menu.png" position="20,166" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
 		<ePixmap pixmap="ViX-Common/buttons/red.png" position="90,166" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
 		<widget name="key_red" position="130,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
@@ -1303,12 +1303,12 @@ self.autoResize()
 		<widget name="key_yellow" position="710,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
 		<ePixmap pixmap="ViX-Common/buttons/blue.png" position="960,166" size="25,25" alphatest="blend" transparent="1" zPosition="1" />
 		<widget name="key_blue" position="1000,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
-		<ePixmap pixmap="vixnight/fs-bg-bot.png" position="0,160" size="1280,40" zPosition="-1" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-bot.png" position="0,160" size="1280,40" zPosition="-1" />
 	</screen>
 	<screen name="EventView" position="center,e-260" size="980,250" backgroundColor="transparent" flags="wfNoBorder" zPosition="1" >
-		<ePixmap position="0,0" zPosition="-1" size="980,250" pixmap="vixnight/event-info-bg.png" alphatest="on" />
+		<ePixmap position="0,0" zPosition="-1" size="980,250" pixmap="ViX-Night-HD/event-info-bg.png" alphatest="on" />
 		<widget name="channel" position="50,8" size="400,30" font="Boldit;30" valign="center" halign="left" noWrap="1" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" zPosition="1" />
-		<ePixmap pixmap="vixnight/icons/clock.png" position="820,12" zPosition="1" size="20,20" alphatest="blend" />
+		<ePixmap pixmap="ViX-Night-HD/icons/clock.png" position="820,12" zPosition="1" size="20,20" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="838,14" zPosition="1" size="59,20" font="Regular;21" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" valign="top" halign="right" transparent="1" noWrap="1">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
@@ -1328,9 +1328,9 @@ self.autoResize()
 		<widget name="key_blue" position="740,213" size="130,25" font="Regular;20" foregroundColor="infobar-frgrnd" backgroundColor="infobar_collab_back" halign="left" transparent="1" zPosition="1" />
 	</screen>
 	<screen name="EventViewSimple" position="center,e-260" size="980,250" backgroundColor="transparent" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-1" size="980,250" pixmap="vixnight/event-info-bg.png" />
+		<ePixmap position="0,0" zPosition="-1" size="980,250" pixmap="ViX-Night-HD/event-info-bg.png" />
 		<widget name="channel" position="50,8" size="400,30" font="Boldit;30" valign="center" halign="left" noWrap="1" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" />
-		<ePixmap pixmap="vixnight/icons/clock.png" position="820,12" zPosition="1" size="20,20" alphatest="blend" />
+		<ePixmap pixmap="ViX-Night-HD/icons/clock.png" position="820,12" zPosition="1" size="20,20" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="838,14" zPosition="1" size="59,20" font="Regular;21" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" valign="top" halign="right" transparent="1" noWrap="1">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
@@ -1342,7 +1342,7 @@ self.autoResize()
 		<widget name="epg_description" position="55,50" size="870,140" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" />
 	</screen>
 	<screen name="InfoBarEventView" position="0,0" size="1280,250" backgroundColor="infobar_sunken" flags="wfNoBorder" zPosition="1" >
-		<ePixmap pixmap="vixnight/fs-bg-top-small.png" position="0,0" size="1280,50" zPosition="-1" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-top-small.png" position="0,0" size="1280,50" zPosition="-1" />
 		<widget name="channel"  position="20,10" size="850,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 		<widget name="datetime" position="810,18" size="250,26" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
 		<widget name="duration" position="1060,18" size="150,26" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
@@ -1516,7 +1516,7 @@ self.autoResize()
 		<widget name="list" position="10,107" size="503,536" itemHeight="25" font="Regular;22" selectionPixmap="ViX-Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	</screen>
 	<screen name="Mute" position="92,40" zPosition="10" size="90,80" backgroundColor="transparent" title="Mute" flags="wfNoBorder">
-		<ePixmap position="0,0" size="90,80" pixmap="vixnight/mute.png" transparent="1" alphatest="on" />
+		<ePixmap position="0,0" size="90,80" pixmap="ViX-Night-HD/mute.png" transparent="1" alphatest="on" />
 	</screen>
 	<screen name="NameserverSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -2148,7 +2148,7 @@ self.autoResize()
 		<widget name="eventname" position="60,49" zPosition="4" size="320,20" font="Regular;18" halign="center" backgroundColor="transpBlack" />
 	</screen>
 	<screen name="TimeshiftState" position="90,50" zPosition="2" size="216,74" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
-		<ePixmap position="0,0" zPosition="1" size="216,74" pixmap="vixnight/pts-bg.png" />
+		<ePixmap position="0,0" zPosition="1" size="216,74" pixmap="ViX-Night-HD/pts-bg.png" />
 		<widget name="statusicon" position="20,15" size="20,20" zPosition="3" alphatest="on" pixmaps="ViX-Common/icons/play.png,ViX-Common/icons/pause.png,ViX-Common/icons/stop.png,ViX-Common/icons/forward.png,ViX-Common/icons/backward.png,ViX-Common/icons/slow.png" />
 		<widget name="speed" position="45,18" size="80,18" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
 		<widget name="state" position="0,0" size="0,0" />
@@ -2164,8 +2164,8 @@ self.autoResize()
 		</widget>
 	</screen>
 	<screen name="Volume" position="e-330,10" zPosition="1" size="320,68" title="Volume" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="vixnight/volume_background.png" position="0,0" size="320,68" alphatest="on" />
-		<widget name="Volume" pixmap="vixnight/volume_up.png" position="62,14" zPosition="1" size="240,34" transparent="1" />
+		<ePixmap pixmap="ViX-Night-HD/volume_background.png" position="0,0" size="320,68" alphatest="on" />
+		<widget name="Volume" pixmap="ViX-Night-HD/volume_up.png" position="62,14" zPosition="1" size="240,34" transparent="1" />
 	</screen>
 	<screen name="WebIfConfigScreen" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -2181,7 +2181,7 @@ self.autoResize()
 	</screen>
 	<!-- Wizzard's -->
 	<screen name="StartWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
-		<ePixmap pixmap="vixnight/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2200,10 +2200,10 @@ self.autoResize()
 		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
 		<ePixmap pixmap="ViX-Common/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
-		<ePixmap pixmap="vixnight/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="NetworkWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-		<ePixmap pixmap="vixnight/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2226,10 +2226,10 @@ self.autoResize()
 		<widget name="HelpWindow" pixmap="ViX-Common/buttons/vkey_icon.png" position="125,170" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 		<ePixmap pixmap="ViX-Common/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
-		<ePixmap pixmap="vixnight/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="LanguageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-		<ePixmap pixmap="vixnight/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2252,10 +2252,10 @@ self.autoResize()
 		<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
-		<ePixmap pixmap="vixnight/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="ImageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-		<ePixmap pixmap="vixnight/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2273,10 +2273,10 @@ self.autoResize()
 		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="ViX-Common/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
-		<ePixmap pixmap="vixnight/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="DefaultWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-		<ePixmap pixmap="vixnight/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2294,10 +2294,10 @@ self.autoResize()
 		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="ViX-Common/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
-		<ePixmap pixmap="vixnight/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="VideoWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-		<ePixmap pixmap="vixnight/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2317,10 +2317,10 @@ self.autoResize()
 		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="ViX-Common/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
-		<ePixmap pixmap="vixnight/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="DreamPackageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-		<ePixmap pixmap="vixnight/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2338,10 +2338,10 @@ self.autoResize()
 		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="ViX-Common/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
-		<ePixmap pixmap="vixnight/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="TutorialWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-		<ePixmap pixmap="vixnight/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2356,10 +2356,10 @@ self.autoResize()
 		<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
 		<widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
 		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
-		<ePixmap pixmap="vixnight/fs-bg-bot-wizzard.png" position="0,680" size="1280,40" zPosition="-1" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-bot-wizzard.png" position="0,680" size="1280,40" zPosition="-1" />
 	</screen>
 	<screen name="CleanupWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-		<ePixmap pixmap="vixnight/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2379,12 +2379,12 @@ self.autoResize()
 		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="ViX-Common/buttons/red.png" position="90,686" size="25,25" alphatest="blend" transparent="1" />
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
-		<ePixmap pixmap="vixnight/fs-bg-bot-wizzard.png" position="0,680" size="1280,40" zPosition="-1" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-bot-wizzard.png" position="0,680" size="1280,40" zPosition="-1" />
 	</screen>
 	<screen name="CleanupWizardConfiguration" position="209,48" size="865,623" flags="wfNoBorder" backgroundColor="black" >
 		<ePixmap pixmap="ViX-Common/Bg_EPG_list.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<widget source="Title" render="Label" position="90,50" size="600,32" font="Italic;32" foregroundColor="#005d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
-		<ePixmap pixmap="vixnight/icons/clock.png" position="750,55" zPosition="1" size="20,20" alphatest="blend" />
+		<ePixmap pixmap="ViX-Night-HD/icons/clock.png" position="750,55" zPosition="1" size="20,20" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="770,57" zPosition="1" size="50,20" font="Regular;20" foregroundColor="foreground" backgroundColor="#27d9dee2" halign="right" transparent="1">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
@@ -2399,7 +2399,7 @@ self.autoResize()
 		<widget source="status" render="Label" position="160,525" size="540,60" zPosition="10" foregroundColor="#003c3c3c" backgroundColor="#27aeaeae" font="Regular;20" halign="center" valign="center" transparent="1" />
 	</screen>
 	<screen name="DefaultSatLists" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<ePixmap pixmap="vixnight/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2417,10 +2417,10 @@ self.autoResize()
 		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="ViX-Common/buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" />
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
-		<ePixmap pixmap="vixnight/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="MessageBoxWizard" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="black" >
-		<ePixmap pixmap="vixnight/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2433,7 +2433,7 @@ self.autoResize()
 		<widget name="InfoPixmap" pixmap="ViX-Common/icons/input_info.png" position="100,140" size="53,53" alphatest="blend" />
 		<widget name="list" position="150,400" size="730,220" transparent="1" backgroundColor="black" />
 		<widget name="rc" pixmap="skin_default/rc.png" position="950,140" zPosition="10" size="154,500" transparent="0" alphatest="blend" />
-		<ePixmap pixmap="vixnight/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="ViX-Night-HD/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<!-- Software Manger Screens -->
 	<screen name="UpdatePluginMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -2796,8 +2796,8 @@ self.autoResize()
 		<widget name="config" position="10,196" size="540,228" scrollbarMode="showOnDemand" />
 	</screen>
 	<screen name="DVDPlayer" flags="wfNoBorder" position="center,e-200" size="750,190" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-1" size="750,190" pixmap="vixnight/movie_infobar-bg.png" />
-		<ePixmap pixmap="vixnight/icons/clock.png" position="580,12" zPosition="1" size="20,20" alphatest="blend" />
+		<ePixmap position="0,0" zPosition="-1" size="750,190" pixmap="ViX-Night-HD/movie_infobar-bg.png" />
+		<ePixmap pixmap="ViX-Night-HD/icons/clock.png" position="580,12" zPosition="1" size="20,20" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="598,14" zPosition="1" size="59,20" font="Regular;21" foregroundColor="infobar-frgrnd" halign="right" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
@@ -2809,9 +2809,9 @@ self.autoResize()
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget name="chapterLabel" position="110,32" size="360,20" font="Regular;18" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" />
-		<ePixmap pixmap="vixnight/icons/icon_dolby.png" position="480,52" zPosition="1" size="26,16" alphatest="on" />
+		<ePixmap pixmap="ViX-Night-HD/icons/icon_dolby.png" position="480,52" zPosition="1" size="26,16" alphatest="on" />
 		<widget name="audioLabel" position="510,50" size="130,22" font="Regular;18" backgroundColor="infobar_sunken" transparent="1" foregroundColor="infobar-frgrnd" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="vixnight/icons/icon_txt.png" position="330,52" zPosition="1" size="26,16" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ViX-Night-HD/icons/icon_txt.png" position="330,52" zPosition="1" size="26,16" alphatest="blend">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -2893,7 +2893,7 @@ self.autoResize()
 	<screen name="easyCIconfigMenu" position="209,48" size="865,623" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="ViX-Common/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<widget source="Title" render="Label" position="90,50" size="600,32" font="Italic;32" foregroundColor="#005d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
-		<ePixmap pixmap="vixnight/icons/clock.png" position="750,55" zPosition="1" size="20,20" alphatest="blend" />
+		<ePixmap pixmap="ViX-Night-HD/icons/clock.png" position="750,55" zPosition="1" size="20,20" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="770,57" zPosition="1" size="50,20" font="Regular;20" foregroundColor="foreground" halign="right" transparent="1">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
@@ -3118,15 +3118,15 @@ self.autoResize()
 		<widget name="polarisation" position="385,455" size="95,22" font="Regular;21" backgroundColor="window-bg" transparent="0" />
 		<widget name="status_bar" position="25,600" size="458,24" foregroundColor="window-fg" backgroundColor="window-bg" zPosition="1" transparent="0" font="Regular;21" />
 	</screen>
-	<screen name="VideoEnhancementSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MenuPanel" />
-		<widget name="config" position="10,132" size="503,450" itemHeight="25" selectionPixmap="ViX-Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" scrollbarMode="showOnDemand" />
-		<eLabel text=" " position="10,592" size="503,2" font="Italic;32" foregroundColor="#005d5d5d" backgroundColor="#005c5c5c" />
-		<widget source="introduction" render="Label" position="10,595" size="503,30" zPosition="10" font="Regular;16" halign="center" valign="center" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" />
-		<panel name="MenuRed2Panel" />
-		<panel name="MenuGreen2Panel" />
-		<panel name="MenuYellow2Panel" />
-		<panel name="MenuBlue2Panel" />
+	<screen name="VideoEnhancementSetup" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder" >
+		<panel name="FullscreenTopPanel" />
+		<panel name="FullscreenTitlePanel" />
+		<panel name="FullscreenPIGPanel" />
+		<widget name="config" position="10,82" size="670,575" selectionPixmap="ViX-Common/buttons/FocusBar_H25x670.png" foregroundColor="window-fg" backgroundColor="black" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand" />
+		<widget name="description" position="695,440" size="575,200" font="Regular;18" halign="center" valign="center" transparent="0" zPosition="1" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<widget name="footnote" position="800,686" size="300,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" halign="left" transparent="1" valign="top" />
 	</screen>
 	<screen name="VideoEnhancementPreview" position="center,360" size="560,170" >
 		<ePixmap pixmap="ViX-Common/buttons/red.png" position="0,10" size="25,25" alphatest="blend" />
@@ -4103,8 +4103,8 @@ self.autoResize()
 		<ePixmap pixmap="ViX-Common/buttons/button_off.png" position="630,300" size="25,25" alphatest="blend" />
 	</screen>
 	<screen name="RemotePlayer" flags="wfNoBorder" position="center,e-200" size="750,190" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-1" size="750,190" pixmap="vixnight/movie_infobar-bg.png" />
-		<ePixmap pixmap="vixnight/icons/clock.png" position="580,22" zPosition="1" size="20,20" alphatest="blend" />
+		<ePixmap position="0,0" zPosition="-1" size="750,190" pixmap="ViX-Night-HD/movie_infobar-bg.png" />
+		<ePixmap pixmap="ViX-Night-HD/icons/clock.png" position="580,22" zPosition="1" size="20,20" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="598,24" zPosition="1" size="59,20" font="Regular;21" foregroundColor="fullscreen-topbar-frgrnd" halign="right" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>

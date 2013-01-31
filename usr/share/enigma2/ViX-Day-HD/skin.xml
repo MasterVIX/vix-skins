@@ -1,5 +1,5 @@
 <skin>
-	<!--  Skin: ViX-Day-HD Vs 2.124 by AndyBlac @ www.world-of-satellite.com  -->
+	<!--  Skin: ViX-Day-HD Vs 2.125 by AndyBlac @ www.world-of-satellite.com  -->
 	<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -92,7 +92,7 @@
 		<alias name="TextNormal" font="Regular" size="20" height="24" />
 	</fonts>
 
-<!-- template -->
+	<!-- template -->
 	<screen name="FullscreenTopPanel">
 		<ePixmap pixmap="ViX-Day-HD/fs-bg-top.png" position="0,0" size="1280,70" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1160,10" size="100,28" font="Regular;26" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
@@ -3118,15 +3118,15 @@ self.autoResize()
 		<widget name="polarisation" position="385,455" size="95,22" font="Regular;21" backgroundColor="window-bg" transparent="0" />
 		<widget name="status_bar" position="25,600" size="458,24" foregroundColor="window-fg" backgroundColor="window-bg" zPosition="1" transparent="0" font="Regular;21" />
 	</screen>
-	<screen name="VideoEnhancementSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MenuPanel" />
-		<widget name="config" position="10,132" size="503,450" itemHeight="25" selectionPixmap="ViX-Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" scrollbarMode="showOnDemand" />
-		<eLabel text=" " position="10,592" size="503,2" font="Italic;32" foregroundColor="#005d5d5d" backgroundColor="#005c5c5c" />
-		<widget source="introduction" render="Label" position="10,595" size="503,30" zPosition="10" font="Regular;16" halign="center" valign="center" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" />
-		<panel name="MenuRed2Panel" />
-		<panel name="MenuGreen2Panel" />
-		<panel name="MenuYellow2Panel" />
-		<panel name="MenuBlue2Panel" />
+	<screen name="VideoEnhancementSetup" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder" >
+		<panel name="FullscreenTopPanel" />
+		<panel name="FullscreenTitlePanel" />
+		<panel name="FullscreenPIGPanel" />
+		<widget name="config" position="10,82" size="670,575" selectionPixmap="ViX-Common/buttons/FocusBar_H25x670.png" foregroundColor="window-fg" backgroundColor="black" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand" />
+		<widget name="description" position="695,440" size="575,200" font="Regular;18" halign="center" valign="center" transparent="0" zPosition="1" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
+		<widget name="footnote" position="800,686" size="300,20" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" halign="left" transparent="1" valign="top" />
 	</screen>
 	<screen name="VideoEnhancementPreview" position="center,360" size="560,170" >
 		<ePixmap pixmap="ViX-Common/buttons/red.png" position="0,10" size="25,25" alphatest="blend" />
