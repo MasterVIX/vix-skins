@@ -1,4 +1,4 @@
-vix-magic-skins
+vix-skins
 ===============
 
 OpenViX Day/Night Skins
