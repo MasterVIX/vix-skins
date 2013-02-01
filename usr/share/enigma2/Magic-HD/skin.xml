@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX Vs 6.97 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD-ViX Vs 6.98 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin, but don't tell it's yours, or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -5331,10 +5331,13 @@ background
 		<widget name="list" font="Regular;22" position="520,82" size="755,220" selectionPixmap="Magic-HD-Common/buttons/sel.png" transparent="1" foregroundColor="grey" />
 	</screen>
 	<!-- ## PiP ## -->
-	<screen name="PictureInPictureZapping" flags="wfNoBorder" backgroundColor="transparent" position="580,60" size="120,26" title="PiPZap" zPosition="-1">
+	<screen name="PictureInPicture" position="400,60" zPosition="-1" size="240,192" flags="wfNoBorder">
+		<widget name="video" position="0,0" size="240,192" backgroundColor="transparent" />
+	</screen>
+	<screen name="PictureInPictureZapping" position="580,60" size="120,26" flags="wfNoBorder" backgroundColor="transparent" zPosition="-1" title="PiPZap" >
 		<eLabel text="PiP-Zap" position="0,0" size="120,26" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
 	</screen>
-	<screen name="PiPSetup" flags="wfNoBorder" backgroundColor="transparent" position="200,200" size="800,200" zPosition="-1" title="PiPSetup" >
+	<screen name="PiPSetup" position="center,center" size="800,200" flags="wfNoBorder" backgroundColor="transparent" zPosition="-1" title="PiPSetup" >
 		<widget name="text" position="0,0" size="800,200" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
 	</screen>
 	<screen name="PipServiceRelationSetup" position="0,0" size="1280,720" flags="wfNoBorder" >
