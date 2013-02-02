@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-	<!--  Skin: Magic-HD-ViX-Night Vs 4.07 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
+	<!--  Skin: Magic-HD-ViX-Night Vs 4.08 based on Magic-HD Vs 2.72 by Rob van der Does @www.world-of-satellite.com  -->
 	<!--  Mod by DeLaGrooV to Magic-HD-night -->
 	<!--  This skin is Freeware. Everyone can modify and use it in other images.  -->
 	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
@@ -44,6 +44,8 @@
 	<color name="transparent" value="#ff000000" />
 	<color name="transpBlack" value="#54111112" />
 	<color name="transpWhite" value="#70f0f0f0" />
+	<color name="transpBlue" value="#401C252D" />
+	<color name="transpBG" value="#150e1018" />
 	<color name="un0" value="#00000000" />
 	<color name="un111112" value="#00111112" />
 	<color name="un16081226" value="#16081226" />
@@ -774,9 +776,9 @@
 	<panel name="BasicTemplate"/>
 	<widget name="menu" scrollbarMode="showOnDemand" font="Regular;22" position="520,90" size="755,575" transparent="1" />
 	</screen>
-	<screen name="InfoBarEventView" position="0,0" size="1280,210" backgroundColor="transpBlack" flags="wfNoBorder" zPosition="1" >
-	<ePixmap pixmap="Magic-HD-Common/border/top3_bg.png" position="0,0" size="1280,50" zPosition="-1" />
-	<widget name="epg_description" font="Regular;21" position="10,65" size="1260,130" foregroundColor="white" backgroundColor="transparent" transparent="1" />
+	<screen name="InfoBarEventView" position="0,0" size="1280,210" backgroundColor="transpBlue" flags="wfNoBorder" zPosition="1" >
+	<eLabel position="0,0" size="1280,50" zPosition="-1" backgroundColor="transpBG" />
+	<widget name="epg_description" font="Regular;21" position="10,65" size="1260,130" foregroundColor="white" backgroundColor="transpBlue" transparent="1" />
 	<widget name="channel" position="15,15" size="850,50" transparent="1" foregroundColor="secondFG" font="Regular;24" />
 	<widget name="datetime" position="850,15" size="250,30" transparent="1" font="Regular;22" halign="left" />
 	<widget name="duration" position="1100,15" size="150,30" transparent="1" font="Regular;22" halign="left" />
@@ -6905,7 +6907,7 @@
 	<widget name="timeline5" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
 	<widget name="timeline_now" position="0,313" zPosition="2" size="19,365" pixmap="Magic-HD-Common/window/timeline-now.png" alphatest="on" />
 	</screen>
-	<screen name="GraphicalInfoBarEPG" position="0,520" size="1280,200" backgroundColor="background" transparent="0" flags="wfNoBorder" >
+	<screen name="GraphicalInfoBarEPG" position="0,520" size="1280,200" backgroundColor="transpBG" transparent="0" flags="wfNoBorder" >
 	<widget source="global.CurrentTime" render="Label" position="1100,5" size="150,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
 		<convert type="ClockToText">Format:%-H:%M</convert>
 	</widget>
