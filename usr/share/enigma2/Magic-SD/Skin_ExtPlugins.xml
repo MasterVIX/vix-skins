@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Default-ViX PlugIn addition Vs 1.04 	-->
+	<!--	Skin: Default-ViX PlugIn addition Vs 1.05 	-->
 	<!--	This skin is part of the default ViX-skin; the same license applies.	-->
 
 	<screen name="Red1Panel">
@@ -260,5 +260,13 @@
 		<widget name="chNum"   position="0,0"   size="40,20"  zPosition="1" font="Regular;18" halign="right" transparent="1" />
 		<widget name="chName"  position="50,0"  size="160,20" zPosition="1" font="Regular;18" halign="left"  transparent="1" />
 		<widget name="timelen" position="210,0" size="60,20"  zPosition="1" font="Regular;18" halign="right" transparent="1" />
+	</screen>
+<!-- ## Transcoding ##-->
+	<screen name="TranscodingSetup" position="center,center" size="560,460" title="Transcoding Setup">
+		<panel name="BasicTemplate" />
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
+		<widget name="config" position="10,50" size="540,250" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="30" enableWrapAround="1" zPosition="1" />
+		<widget source="text" render="Label" position="10,300" size="540,120" zPosition="1" font="Enigma;18" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
 	</screen>
 </skin>
