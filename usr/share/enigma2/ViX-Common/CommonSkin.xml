@@ -836,19 +836,19 @@
 		<widget source="lab1" render="Label" position="30,133" size="458,25" font="Boldit;24" transparent="0" zPosition="2" />
 		<widget source="lab2" render="Label" position="30,158" size="458,25" font="Italic;19" transparent="0" zPosition="2" />
 		<widget source="lab3" render="Label" position="30,183" size="458,25" font="Italic;19" transparent="0" zPosition="1" />
-		<widget name="AboutScrollLabel" position="30,225" size="458,325" font="Regular;20" transparent="0" zPosition="1" scrollbarMode="showOnDemand"/>
+		<widget name="AboutScrollLabel" position="30,225" size="458,325" font="Regular;20" transparent="0" zPosition="1" />
 		<ePixmap pixmap="ViX-Common/buttons/key_info.png" position="10,663" size="35,25" alphatest="blend" transparent="1" />
 	</screen>
 	<screen name="SystemMemoryInfo" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<widget source="lab1" render="Label" position="30,133" size="458,25" font="Boldit;24" transparent="0" zPosition="2" />
 		<widget source="lab2" render="Label" position="30,158" size="458,25" font="Italic;19" transparent="0" zPosition="2" />
-		<widget name="AboutScrollLabel" position="30,225" size="458,400" font="Regular;20" transparent="0" zPosition="1" scrollbarMode="showOnDemand"/>
+		<widget name="AboutScrollLabel" position="30,225" size="458,400" font="Regular;20" transparent="0" zPosition="1" />
 	</screen>
 	<screen name="SystemNetworkInfo" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="AboutScrollLabel" position="30,133" size="458,225" font="Regular;20" transparent="0" zPosition="1" scrollbarMode="showOnDemand"/>
-		<widget source="LabelBSSID" render="Label" position="30,360" size="200,25" valign="left" font="Regular;20" transparent="0" />
+		<widget name="AboutScrollLabel" position="30,133" size="458,225" font="Regular;20" transparent="0" zPosition="1" />
+		<widget source="LabelBSSID" render="Label" position="30,360" size="200,25" valign="center" font="Regular;20" transparent="0" />
 		<widget source="LabelESSID" render="Label" position="30,400" size="200,25" valign="center" font="Regular;20" transparent="0" />
 		<widget source="LabelQuality" render="Label" position="30,440" size="200,25" valign="center" font="Regular;20" transparent="0" />
 		<widget source="LabelSignal" render="Label" position="30,480" size="200,25" valign="center" font="Regular;20" transparent="0" />
@@ -1183,7 +1183,7 @@ self.autoResize()
 		<panel name="FullscreenBlue1Panel" />
 	</screen>
 	<screen name="GraphicalInfoBarEPG" position="0,e-200" size="1280,200" backgroundColor="black" transparent="0" flags="wfNoBorder" >
-		<ePixmap pixmap="screens/screen/fs-bg-top-wizzard.png" position="0,0" size="1280,50" zPosition="-1" />
+		<ePixmap pixmap="screens/screen/screens/fs-bg-top-wizzard.png" position="0,0" size="1280,50" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1160,7" size="100,28" font="Regular;24" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1243,7 +1243,7 @@ self.autoResize()
 		<widget name="epg_description" position="55,50" size="870,140" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" />
 	</screen>
 	<screen name="InfoBarEventView" position="0,0" size="1280,250" backgroundColor="infobar_sunken" flags="wfNoBorder" zPosition="1" >
-		<ePixmap pixmap="screens/screen/fs-bg-top-wizzard.png" position="0,0" size="1280,50" zPosition="-1" />
+		<ePixmap pixmap="screens/screen/screens/fs-bg-top-wizzard.png" position="0,0" size="1280,50" zPosition="-1" />
 		<widget name="channel"  position="20,10" size="850,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 		<widget name="datetime" position="810,18" size="250,26" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
 		<widget name="duration" position="1060,18" size="150,26" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
@@ -1608,6 +1608,13 @@ self.autoResize()
 		<widget name="config" position="10,107" size="503,526" selectionPixmap="ViX-Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" />
 		<panel name="MenuRed2Panel" />
 		<panel name="MenuGreen2Panel" />
+	</screen>
+	<screen name="AutoDiseqc" position="c-250,c-100" size="500,250" title=" ">
+		<widget source="statusbar" render="Label" position="10,5" zPosition="10" size="e-10,60" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+		<widget source="tunerstatusbar" render="Label" position="10,60" zPosition="10" size="e-10,30" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+		<widget name="config" position="10,100" size="e-10,100" scrollbarMode="showOnDemand" />
+		<ePixmap pixmap="skin_default/buttons/red.png" position="c-140,e-45" size="140,40" alphatest="on" />
+		<widget source="key_red" render="Label" position="c-140,e-45" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
 	</screen>
 	<screen name="NumberZap" position="center,center" size="434,109" backgroundColor="transparent" flags="wfNoBorder">
 		<widget name="number" position="0,0" size="434,50" backgroundColor="transparent" transparent="1" font="Regular;48" borderColor="black" borderWidth="2" valign="center" halign="center" />
@@ -2082,7 +2089,7 @@ self.autoResize()
 	</screen>
 	<!-- Wizzard's -->
 	<screen name="StartWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
-		<ePixmap pixmap="fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2104,7 +2111,7 @@ self.autoResize()
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="NetworkWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-		<ePixmap pixmap="fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2130,7 +2137,7 @@ self.autoResize()
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="LanguageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-		<ePixmap pixmap="fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2156,7 +2163,7 @@ self.autoResize()
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="ImageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-		<ePixmap pixmap="fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2177,7 +2184,7 @@ self.autoResize()
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="DefaultWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-		<ePixmap pixmap="fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2198,7 +2205,7 @@ self.autoResize()
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="VideoWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-		<ePixmap pixmap="fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2221,7 +2228,7 @@ self.autoResize()
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="DreamPackageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-		<ePixmap pixmap="fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2242,7 +2249,7 @@ self.autoResize()
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="TutorialWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-		<ePixmap pixmap="fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2260,7 +2267,7 @@ self.autoResize()
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,680" size="1280,40" zPosition="-1" />
 	</screen>
 	<screen name="CleanupWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black" >
-		<ePixmap pixmap="fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2300,7 +2307,7 @@ self.autoResize()
 		<widget source="status" render="Label" position="160,525" size="540,60" zPosition="10" foregroundColor="#003c3c3c" backgroundColor="#27aeaeae" font="Regular;20" halign="center" valign="center" transparent="1" />
 	</screen>
 	<screen name="DefaultSatLists" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<ePixmap pixmap="fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2321,7 +2328,7 @@ self.autoResize()
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="MessageBoxWizard" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="black" >
-		<ePixmap pixmap="fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2334,6 +2341,17 @@ self.autoResize()
 		<widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="100,140" size="53,53" alphatest="blend" />
 		<widget name="list" position="150,400" size="730,220" transparent="1" backgroundColor="black" />
 		<widget name="rc" pixmap="skin_default/rc.png" position="950,140" zPosition="10" size="154,500" transparent="0" alphatest="blend" />
+		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
+	</screen>
+	<screen name="InstallWizardIpkgUpdater" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
+		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="880,67" size="350,25" font="Regular;20" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget source="statusbar" render="Label"  position="150,140" size="730,250" font="Regular;22" foregroundColor="window-fg" backgroundColor="black" transparent="1" />
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<!-- Software Manger Screens -->
