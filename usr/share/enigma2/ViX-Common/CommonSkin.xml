@@ -1183,7 +1183,7 @@ self.autoResize()
 		<panel name="FullscreenBlue1Panel" />
 	</screen>
 	<screen name="GraphicalInfoBarEPG" position="0,e-200" size="1280,200" backgroundColor="black" transparent="0" flags="wfNoBorder" >
-		<ePixmap pixmap="screens/screen/screens/fs-bg-top-wizzard.png" position="0,0" size="1280,50" zPosition="-1" />
+		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,50" zPosition="-1" />
 		<widget source="global.CurrentTime" render="Label" position="1160,7" size="100,28" font="Regular;24" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1243,7 +1243,7 @@ self.autoResize()
 		<widget name="epg_description" position="55,50" size="870,140" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" />
 	</screen>
 	<screen name="InfoBarEventView" position="0,0" size="1280,250" backgroundColor="infobar_sunken" flags="wfNoBorder" zPosition="1" >
-		<ePixmap pixmap="screens/screen/screens/fs-bg-top-wizzard.png" position="0,0" size="1280,50" zPosition="-1" />
+		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,50" zPosition="-1" />
 		<widget name="channel"  position="20,10" size="850,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 		<widget name="datetime" position="810,18" size="250,26" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
 		<widget name="duration" position="1060,18" size="150,26" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="infobar-bkgrnd" transparent="1" noWrap="1" valign="top" halign="left" />
