@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.03	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.04	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -353,31 +353,6 @@
 		<widget name="daemon0" alphatest="on" pixmap="skin_default/buttons/button_green_off.png" position="760,605" size="15,16" zPosition="10" transparent="1"/>
 		<widget name="daemon1" alphatest="on" pixmap="skin_default/buttons/button_green.png" position="760,605" size="15,16" zPosition="10" transparent="1"/>
 	</screen>
-<!-- ## TempFanControl ##-->
-	<screen name="TempFanControl" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel" />
-		<panel name="GreenBPanel" />
-		<widget source="red" render="Label" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<widget source="green" render="Label" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,120" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-			<widget source="SensorTempText0" render="Label" position="520,210" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" transparent="1" foregroundColor="grey" />
-			<widget source="SensorTemp0" render="Label" position="610,210" zPosition="1" size="100,20" font="Regular;20" halign="right" foregroundColor="grey" >
-				<convert type="SensorToText"></convert>
-			</widget>
-			<widget source="SensorTempText1" render="Label" position="520,230" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" transparent="1" foregroundColor="grey" />
-			<widget source="SensorTemp1" render="Label" position="610,230" zPosition="1" size="100,20" font="Regular;20" halign="right" foregroundColor="grey" >
-				<convert type="SensorToText"></convert>
-			</widget>
-			<widget source="SensorFanText0" render="Label" position="800,210" zPosition="1" size="120,40" font="Regular;20" halign="left" valign="top" transparent="1" foregroundColor="grey"  />
-			<widget source="SensorFan0" render="Label" position="920,210" zPosition="1" size="150,20" font="Regular;20" halign="right" foregroundColor="grey" >
-				<convert type="SensorToText"></convert>
-			</widget>
-			<widget source="SensorFanText1" render="Label" position="800,230" zPosition="1" size="120,40" font="Regular;20" halign="left" valign="top"	transparent="1" foregroundColor="grey" />
-			<widget source="SensorFan1" render="Label" position="920,230" zPosition="1" size="150,20" font="Regular;20" halign="right" foregroundColor="grey" >
-				<convert type="SensorToText"></convert>
-			</widget>
-	</screen>
 <!-- ## FanControl 2 ##-->
 	<screen flags="wfNoBorder" name="FanControl2SpezialSetup" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
@@ -468,142 +443,6 @@
 		<widget name="lab2" position="450,620" size="250,30" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
 		<widget name="labstop" position="700,620" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
 		<widget name="labrun" position="700,620" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
-	</screen>
-	<!-- ## CCCam Info ##-->
-	<screen flags="wfNoBorder" name="EcmInfoScreen" position="0,0" size="755,25" backgroundColor="transpBlack" zPosition="-1">
-		<widget name="irdeto" position="0,0" size="15,25" font="Regular;16" text="I" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
-		<widget name="seca" position="15,0" size="15,25" font="Regular;16" text="S" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
-		<widget name="nagra" position="30,0" size="15,25" font="Regular;16" text="N" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
-		<widget name="via" position="45,0" size="15,25" font="Regular;16" text="V" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
-		<widget name="conax" position="60,0" size="30,25" font="Regular;16" text="CO" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
-		<widget name="betacrypt" position="90,0" size="25,25" font="Regular;16" text="BC" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
-		<widget name="crypto" position="115,0" size="35,25" font="Regular;16" text="CW" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
-		<widget name="dreamcrypt" position="150,0" size="25,25" font="Regular;16" text="DC" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
-		<widget name="nds" position="175,0" size="40,25" font="Regular;16" text="NDS" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
-		<widget name="ecmInfo" position="225,0" size="530,25" font="Regular;16" valign="center" transparent="1" borderColor="black" borderWidth="2" noWrap="1" />
-	</screen>
-	<screen flags="wfNoBorder" name="CCcamInfoMain" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" position="520,82" font="Regular;24" size="755,583" transparent="1" itemHeight="30" foregroundColor="grey" enableWrapAround="1" />
-		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30" />
-		<eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" foregroundColor="grey" zPosition="1" />
-	</screen>
-	<screen flags="wfNoBorder" name="CCcamInfoEcmInfoSelection" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" position="520,82" size="755,583" font="Regular;22" transparent="1" itemHeight="30" foregroundColor="grey" enableWrapAround="1" />
-		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30" />
-		<eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1" />
-	</screen>
-	<screen flags="wfNoBorder" name="CCcamInfoInfoScreen" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<widget name="text" position="520,82" size="755,583" font="Regular;22" transparent="1" itemHeight="30" foregroundColor="grey" enableWrapAround="1" />
-		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30" />
-		<eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1" />
-	</screen>
-	<screen flags="wfNoBorder" name="CCcamInfoConfigMenu" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" position="520,82" size="755,583" font="Regular;22" transparent="1" itemHeight="30" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen flags="wfNoBorder" name="CCcamInfoSubMenu" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<widget name="list" position="520,82" size="755,583" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" transparent="1" itemHeight="30" foregroundColor="grey" enableWrapAround="1" />
-		<widget name="info" position="15,400" size="477,240" font="Regular;22" transparent="1" foregroundColor="secondFG" />
-		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30" />
-		<eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1" />
-		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26" />
-		<eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-	</screen>
-	<screen flags="wfNoBorder" name="CCcamInfoServerMenu" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<widget name="list" position="520,82" size="755,290" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" transparent="1" itemHeight="30" foregroundColor="grey" enableWrapAround="1" />
-		<widget name="info" position="520,373" size="755,290" font="Regular;22" foregroundColor="grey" transparent="1" />
-		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30" />
-		<eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1" />
-		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26" />
-		<eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-	</screen>
-	<screen flags="wfNoBorder" name="CCcamShareViewMenu" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" position="520,82" size="755,583" foregroundColor="grey" transparent="1" itemHeight="30" enableWrapAround="1" />
-		<widget name="uphops" position="20,400" size="450,25" halign="left" font="Regular;20" />
-		<widget name="providers" position="20,440" size="450,25" halign="left" font="Regular;20" />
-		<widget name="title" position="20,480" size="450,25" halign="left" font="Fixed;16" />
-		<widget name="reshare" position="20,520" size="450,25" halign="left" font="Regular;20" />
-		<widget name="cards" position="20,560" size="450,25" halign="left" font="Regular;20" />
-		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30" />
-		<eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1" />
-		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26" />
-		<eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-	</screen>
-	<screen name="CCcamInfoRemoteBoxMenu" flags="wfNoBorder" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel" />
-		<panel name="GreenBPanel" />
-		<panel name="YellowBPanel" />
-		<panel name="BlueBPanel" />
-		<panel name="RedT1Panel" />
-		<panel name="GreenT1Panel" />
-		<panel name="YellowT1Panel" />
-		<panel name="BlueT1Panel" />
-		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" position="520,90" size="755,575" font="Regular;22" transparent="1" itemHeight="30" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen flags="wfNoBorder" name="CCcamInfoShareInfo" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel" />
-		<panel name="GreenBPanel" />
-		<panel name="YellowBPanel" />
-		<panel name="BlueBPanel" />
-		<panel name="RedT1Panel" />
-		<panel name="GreenT1Panel" />
-		<panel name="YellowT1Panel" />
-		<panel name="BlueT1Panel" />
-		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-	</screen>
-	<screen flags="wfNoBorder" name="CCcamInfoConfigSwitcher" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel" />
-		<panel name="GreenBPanel" />
-		<panel name="YellowBPanel" />
-		<panel name="BlueBPanel" />
-		<panel name="RedT1Panel" />
-		<panel name="GreenT1Panel" />
-		<panel name="YellowT1Panel" />
-		<panel name="BlueT1Panel" />
-		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" position="520,82" size="755,583" font="Regular;22" transparent="1" itemHeight="30" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen flags="wfNoBorder" name="EcmInfoConfigMenu" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" position="520,90" size="755,575" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30" />
-		<eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1" />
-		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26" />
-		<eLabel text="Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-	</screen>
-	<screen flags="wfNoBorder" name="CCcamInfoMenuConfig" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel" />
-		<panel name="GreenBPanel" />
-		<panel name="YellowBPanel" />
-		<panel name="RedT1Panel" />
-		<panel name="GreenT1Panel" />
-		<panel name="YellowT1Panel" />
-		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" position="520,90" size="755,575" transparent="1" itemHeight="30" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	 <!-- ## Oscam Info ##-->
-	<screen flags="wfNoBorder" name="OscamInfoMenu" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<widget name="mainmenu" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	</screen>
-	<screen flags="wfNoBorder" name="oscECMInfo" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<widget name="output" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	</screen>
-	<screen flags="wfNoBorder" name="OscamInfoConfigScreen" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<panel name="Red2Panel" />
-		<panel name="Green2Panel" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-		<widget name="status" render="Label" position="15,400" zPosition="1" size="477,200" font="Regular;16" halign="center" valign="center" transparent="1" foregroundColor="secondFG" />
 	</screen>
 	<!-- ## RSS ## -->
 	<screen flags="wfNoBorder" name="rss_reader" position="0,0" size="1280,720" >
@@ -1580,29 +1419,6 @@ background
 		<panel name="Green1Panel" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" position="520,82" size="755,300" transparent="1" />
 		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="520,500" size="1,1" zPosition="1" transparent="1" alphatest="on" />
-	</screen>
-	<!-- ## RemoteControlSetup ## -->
-	<screen flags="wfNoBorder" name="RemoteControlSetup" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel" />
-		<panel name="GreenBPanel" />
-		<widget name="cancel" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="ok" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="config" font="Regular;22" position="520,90" size="755,575" selectionPixmap="buttons/sel.png" transparent="1" itemHeight="28" enableWrapAround="1" />
-	</screen>
-	<screen flags="wfNoBorder" name="RemoteControlCode" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<panel name="Red2Panel" />
-		<panel name="Green2Panel" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	</screen>
-	<screen flags="wfNoBorder" name="RCSetupScreen" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel" />
-		<panel name="GreenBPanel" />
-		<widget name="cancel" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="ok" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-		<widget name="config" font="Regular;22" position="520,90" size="755,575" selectionPixmap="buttons/sel.png" transparent="1" itemHeight="28" enableWrapAround="1" />
 	</screen>
 	<!-- ## CleanupWizard ## -->
 	<screen flags="wfNoBorder" name="CleanupWizardConfiguration" position="0,0" size="1280,720" >
