@@ -787,7 +787,6 @@
 	<screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" zPosition="1">
 		<ePixmap pixmap="ViXBMC_Metropolis/osd/lower_InfoBar-semitrans-fs8.png" position="0,542" size="1280,179" zPosition="1"/>
 		<ePixmap pixmap="ViXBMC_Metropolis/osd/Top_InfoBar-sm-semi-trans-fs8.png" position="0,0" size="1280,85" zPosition="1"/>
-		<ePixmap pixmap="ViXBMC_Metropolis/osd/Navigation-with-primetime-fs8.png" position="18,667" size="1000,50" alphatest="blend" zPosition="3"/>
 		<ePixmap pixmap="ViXBMC_Metropolis/osd/picon_holder-fs8.png" position="43,553" size="123,127" backgrounColor="background2" alphatest="blend" zPosition="3"/>
 		<widget source="Service" render="Picon" position="55,610" size="101,61" transparent="0" zPosition="4" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
@@ -809,12 +808,26 @@
 		<widget name="timeline4" position="50,225" zPosition="2" size="2,287" pixmap="ViXBMC_HD-Common/timeline.png"/>
 		<widget name="timeline5" position="50,225" zPosition="2" size="2,287" pixmap="ViXBMC_HD-Common/timeline.png"/>
 		<widget name="timeline_now" position="45,225" zPosition="3" size="19,287" pixmap="ViXBMC_HD-Common/timeline-now.png" alphatest="on"/>
+		
+		<ePixmap pixmap="ViXBMC_Metropolis/markus625/epg_day_jump.png" position="111,677" size="73,23" zPosition="2" alphatest="blend" backgroundColor="background2" transparent="1"/>
+		<widget name="jump" position="202,674" size="180,24" zPosition="2" font="Ubuntu-Regular;20" foregroundColor="#999999" halign="left" transparent="1" valign="top"/>
+	
+		
+			<ePixmap pixmap="ViXBMC_Metropolis/markus625/arrow-lt.png" position="387,675" size="15,24" zPosition="3" alphatest="blend"/>
+		<ePixmap pixmap="ViXBMC_Metropolis/markus625/arrow-rt.png" position="842,675" size="15,24" zPosition="3" alphatest="blend"/>
+			<widget source="Title" render="Label" position="385,673" size="470,40" backgroundColor="background2" transparent="1" zPosition="2" font="Ubuntu-Regular;26" valign="center" halign="center"/>
+			
+				<ePixmap pixmap="ViXBMC_Metropolis/buttons/green.png" position="875,679" size="18,18" alphatest="blend" transparent="1" zPosition="2"/>
+		<widget name="key_green" position="909,676" size="240,25" zPosition="2" font="Ubuntu-Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="#999999"/>		
+				
+		
+		
 	</screen>
 	<screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
 		<ePixmap pixmap="ViXBMC_Metropolis/osd/background-fs8.png" position="0,0" size="1280,720" zPosition="-1"/>
 		<ePixmap pixmap="ViXBMC_Metropolis/osd/lower_InfoBar-lg-fs8.png" position="0,464" size="1280,256" zPosition="1"/>
 		<widget source="session.VideoPicture" render="Pig" position="18,487" size="257,172" zPosition="3" backgroundColor="transparent"/>
-		<ePixmap pixmap="ViXBMC_Metropolis/osd/Navigation-with-primetime-fs8.png" position="18,667" alphatest="blend" size="1000,50" zPosition="3"/>
+
 		<widget source="Event" render="Label" position="297,487" size="717,30" zPosition="3" halign="left" font="Copper-Bold; 28" backgroundColor="background2" transparent="1" noWrap="1" valign="center" foregroundColor="#EBD6EB">
 			<convert type="EventName">Name</convert>
 		</widget>Event
@@ -832,6 +845,17 @@
 		<widget name="timeline4" position="40,68" zPosition="2" size="2,367" pixmap="ViXBMC_HD-Common/timeline.png"/>
 		<widget name="timeline5" position="40,68" zPosition="2" size="2,367" pixmap="ViXBMC_HD-Common/timeline.png"/>
 		<widget name="timeline_now" position="35,68" zPosition="3" size="19,367" pixmap="ViXBMC_HD-Common/timeline-now.png" alphatest="on"/>
+		<ePixmap pixmap="ViXBMC_Metropolis/markus625/epg_day_jump.png" position="111,677" size="73,23" zPosition="2" alphatest="blend" backgroundColor="background2" transparent="1"/>
+		<widget name="jump" position="202,674" size="180,24" zPosition="2" font="Ubuntu-Regular;20" foregroundColor="#999999" halign="left" transparent="1" valign="top"/>
+	
+		
+			<ePixmap pixmap="ViXBMC_Metropolis/markus625/arrow-lt.png" position="387,675" size="15,24" zPosition="3" alphatest="blend"/>
+		<ePixmap pixmap="ViXBMC_Metropolis/markus625/arrow-rt.png" position="842,675" size="15,24" zPosition="3" alphatest="blend"/>
+			<widget source="Title" render="Label" position="385,673" size="470,40" backgroundColor="background2" transparent="1" zPosition="2" font="Ubuntu-Regular;26" valign="center" halign="center"/>
+			
+				<ePixmap pixmap="ViXBMC_Metropolis/buttons/green.png" position="875,679" size="18,18" alphatest="blend" transparent="1" zPosition="2"/>
+		<widget name="key_green" position="909,676" size="240,25" zPosition="2" font="Ubuntu-Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="#999999"/>		
+		
 	</screen>
 	<screen flags="wfNoBorder" name="EventViewContextMenu" position="0,0" size="1280,720">
 		<ePixmap pixmap="ViXBMC_Metropolis/border/top2_bg.png" position="0,0" size="1280,75"/>
