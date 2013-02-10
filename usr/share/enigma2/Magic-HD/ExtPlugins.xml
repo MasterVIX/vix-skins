@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.04	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.05	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -1098,22 +1098,6 @@
 		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26" />
 		<eLabel text="Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
 		<ePixmap pixmap="logos/vix.png" position="25,650" size="300,25" alphatest="on" />
-	</screen>
-<!-- ## Seekbar ##-->
-	<screen name="Seekbar" position="center,center" size="560,60" title="Seekbar" backgroundColor="transparent" flags="wfNoBorder" >
-		<widget name="cursor" position="0,0" size="8,18" pixmap="skin_default/position_arrow.png" alphatest="on" />
-		<widget source="session.CurrentService" render="PositionGauge" position="150,30" size="270,10" zPosition="2" pointer="skin_default/position_pointer.png:540,0" transparent="1" foregroundColor="#20224f">
-			<convert type="ServicePosition">Gauge</convert>
-		</widget>
-		<widget name="time" position="40,15" size="100,35" font="Regular;30" halign="right" backgroundColor="#4e5a74" transparent="1" borderColor="black" borderWidth="3" />
-		<widget source="session.CurrentService" render="Label" position="430,15" size="90,35" font="Regular;30" halign="left" backgroundColor="#4e5a74" transparent="1" borderColor="black" borderWidth="3">
-			<convert type="ServicePosition">Length</convert>
-		</widget>
-	</screen>
-	 <screen name="MinuteInput" title="MinuteInput" position="center,center" size="540,35" backgroundColor="transparent" flags="wfNoBorder" >
-		<eLabel text="Jump" position="0,-200" size="220,35" backgroundColor="transparent" font="Regular;34" halign="right" borderColor="black" borderWidth="3" transparent="1" zPosition="1" />
-		<widget name="minutes" position="230,-200" size="80,35" font="Regular;34" halign="center" borderColor="black" borderWidth="3" transparent="1" zPosition="1" />
-		<eLabel text="minutes" position="320,-200" size="220,35" backgroundColor="transparent" font="Regular;34" halign="left" borderColor="black" borderWidth="3" transparent="1" zPosition="1" />
 	</screen>
 	<!-- ## CutListEditor ## -->
 	<screen name="CutListEditor" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2368,86 +2352,6 @@ background
 		<panel name="BasicTemplate"/>
 		<widget name="streamlist" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
-	<!-- ## 1channel ## -->
-	<screen name="MyMenux" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
-		<panel name="BasicTemplate"/>
-		<widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen name="MyMenu2" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
-		<panel name="BasicTemplate"/>
-		<widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen name="TvEpisode" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
-		<panel name="BasicTemplate"/>
-		<widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen name="MovieList" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
-		<panel name="BasicTemplate"/>
-		<widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen name="MovieSource" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
-		<panel name="BasicTemplate"/>
-		<widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen name="ShowHelp" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
-		<panel name="BasicTemplate"/>
-		<widget name="myLabel" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen name="SpinnerSelectionBox" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="BasicTemplate"/>
-		<widget name="bild" position="100,400" zPosition="1" size="300,200" transparent="1" />
-		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<!-- ## RTE-Player ## -->
-	<screen name="ShowHelp" position="0,0" size="1280,720" flags="wfNoBorder" title="RTE Player">
-		<panel name="BasicTemplate"/>
-		<widget name="myLabel" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;20" itemHeight="22" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen name="RTEMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="RTE Player - Main Menu">
-		<panel name="BasicTemplate"/>
-		<widget name="RTEMenu" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen name="latestMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="RTE Player - Latest">
-		<panel name="BasicTemplate"/>
-		<widget name="latestMenu" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen name="popularMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="RTE Player - Popular">
-		<panel name="BasicTemplate"/>
-		<widget name="popularMenu" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen name="dateMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="RTE Player - Choose Date">
-		<panel name="BasicTemplate"/>
-		<widget name="dateMenu" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen name="dateMenu2" position="0,0" size="1280,720" flags="wfNoBorder" title="RTE Player - Programmes">
-		<panel name="BasicTemplate"/>
-		<widget name="dateMenu2" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen name="categoriesMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="RTE Player - Categories">
-		<panel name="BasicTemplate"/>
-		<widget name="categoriesMenu" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen name="categorySectionsMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="RTE Player - Programmes">
-		<panel name="BasicTemplate"/>
-		<widget name="categorySectionsMenu" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen name="atozMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="RTE Player - A to Z">
-		<panel name="BasicTemplate"/>
-		<widget name="atozMenu" position="700,80" size="100,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen name="programmeListMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="RTE Player - programmeListMenu">
-		<panel name="BasicTemplate"/>
-		<widget name="programmeListMenu" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<!-- ##BBC iPlayer## -->
-	<screen name="BBCiMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="BBC iPlayer">
-		<panel name="BasicTemplate"/>
-		<widget name="BBCiMenu" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen name="bbcStream" position="0,0" size="1280,720" flags="wfNoBorder" title="BBC iPlayer">
-		<panel name="BasicTemplate"/>
-		<widget name="bbc1" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
 	<!-- ## Formel1 ## -->
 	<screen name="Formel1Preview" position="0,0" size="1280,720" flags="wfNoBorder" title="Formel1 2011 V 0.8">
 		<panel name="BasicTemplate"/>
@@ -2974,6 +2878,54 @@ background
 		<widget name="timelen" position="850,2" size="80,18"	zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black" />
 		<widget name="recName" position="950,2" size="250,18"	zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="grey" backgroundColor="black" />
 	</screen>
+	<!-- ## OnDemand players ## -->
+	<screen name="OnDemand_Screen" position="0,0" size="1280,720" flags="wfNoBorder" title="OnDemand">
+		<panel name="BasicTemplate"/>
+		<panel name="MenuBPanel" />
+		<panel name="InfoBPanel" />
+		<widget name="PlayerList" render="Listbox" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="50" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="OnDemandHelp" position="0,0" size="1280,720" flags="wfNoBorder" title="OnDemand Help">
+		<panel name="BasicTemplate"/>
+		<widget name="myLabel" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;24" itemHeight="35" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="OnDemandScreenSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="OnDemand Configuration">
+		<panel name="BasicTemplate"/>
+		<widget name="config" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="35" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<!-- ## RTE-Player ## -->
+	<screen name="RTEMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="RTE Player - Main Menu">
+		<panel name="BasicTemplate"/>
+		<widget name="RTEMenu" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="StreamsMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<widget name="latestMenu" position="520,85" size="755,570" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="30" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="StreamsThumb" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<widget name="list" position="490,90" size="785,520" scrollbarMode="showOnDemand" font="Regular;21" itemHeight="130" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="thumbnail" position="5,379" size="477,264" zPosition="2" font="Regular;21" itemHeight="130" foregroundColor="secondFG" valign="center" halign="center" />
+	</screen>
+	<!-- ##BBC iPlayer## -->
+	<screen name="BBCiMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="BBC iPlayer">
+		<panel name="BasicTemplate"/>
+		<widget name="BBCiMenu" position="520,85" size="755,570" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="30" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="bbcStreamUrl" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<widget name="bbcStreamUrl" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="30" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<!-- ## ITV-Player ## -->
+	<screen name="ITVplayer" position="0,0" size="1280,720" flags="wfNoBorder" title="ITV Player">
+		<panel name="BasicTemplate"/>
+		<widget name="myMenu" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="30" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<!-- ## 3-Player ## -->
+	<screen name="threeMainMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="3Player - Main Menu">
+		<panel name="BasicTemplate"/>
+		<widget name="threeMainMenu" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="30" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
 	<!-- ## Uitzending Gemist ## -->
 	<screen name="OpenUg" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75" />
@@ -2997,6 +2949,39 @@ background
 		<panel name="BasicTemplate"/>
 		<widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
+
+	<!-- ## 1channel ## -->
+	<screen name="MyMenux" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
+		<panel name="BasicTemplate"/>
+		<widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="MyMenu2" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
+		<panel name="BasicTemplate"/>
+		<widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="TvEpisode" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
+		<panel name="BasicTemplate"/>
+		<widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="MovieList" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
+		<panel name="BasicTemplate"/>
+		<widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="MovieSource" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
+		<panel name="BasicTemplate"/>
+		<widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="ShowHelp" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
+		<panel name="BasicTemplate"/>
+		<widget name="myLabel" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="SpinnerSelectionBox" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="BasicTemplate"/>
+		<widget name="bild" position="100,400" zPosition="1" size="300,200" transparent="1" />
+		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+
+
 	<!-- ## FlashExpander ## -->
 	<screen  name="FlashExpander" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
