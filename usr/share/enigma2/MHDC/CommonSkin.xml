@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.07 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.08 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -872,11 +872,11 @@
 	<panel name="BasicTemplate"/>
 	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
 	<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/yellow2.png" position="595,682" size="26,26" alphatest="on" />
+	<ePixmap pixmap="MHDC/buttons/yellow2.png" position="580,682" size="26,26" alphatest="on" />
 	<ePixmap pixmap="MHDC/buttons/blue2.png" position="840,682" size="26,26" alphatest="on" />
 	<widget name="red" position="50,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
 	<widget name="green" position="340,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-	<widget name="yellow" position="624,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
+	<widget name="yellow" position="614,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
 	<widget name="blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
 	<widget name="infolist" position="520,82" size="755,583" selectionDisabled="1" />
 	<panel name="VixLogo"/>
@@ -1263,14 +1263,7 @@
   </screen>
   <screen flags="wfNoBorder" name="TimeshiftLocationBox" position="0,0" size="1280,720" title="TimeshiftLocationBox">
 	<panel name="BasicTemplate"/>
-	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/yellow2.png" position="580,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/blue2.png" position="840,682" size="26,26" alphatest="on" />
-	<widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-	<widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-	<widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-	<widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+	<panel name="RGYB_Template"/>
 	<widget name="text" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,250" transparent="1" />
 	<widget name="textbook" scrollbarMode="showOnDemand" font="Regular;22" position="520,350" size="755,250" transparent="1" />
 	<panel name="VixLogo"/>
@@ -1293,10 +1286,7 @@
   </screen>
   <screen flags="wfNoBorder" name="MovieBrowserConfiguration" position="0,0" size="1280,720" title="MovieList Config">
 	<panel name="BasicTemplate"/>
-	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
-	<widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-	<widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+	<panel name="RG_Template"/>
 	<widget name="config" scrollbarMode="showOnDemand" font="Regular;18" position="520,82" size="755,583" transparent="1" />
 	<panel name="VixLogo"/>
   </screen>
@@ -1341,10 +1331,7 @@
   </screen>
   <screen name="SleepTimerEdit" title="Sleep Timer" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
-	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
-	<widget name="key_red" position="50,682" size="220,26" font="Regular;20" valign="center" />
-	<widget name="key_green" position="340,682" size="220,26" font="Regular;20" valign="center" />
+	<panel name="RG_Template"/>
 	<widget name="current_status" position="15,400" size="400,30" font="Regular;20" valign="center" />
 	<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="25" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	<panel name="VixLogo"/>
@@ -1352,8 +1339,7 @@
 	<!-- ## Service Selectors ## -->
   <screen name="UserDialog" title="UserDialog" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
-	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
-	<widget source="key_red" render="Label" position="50,682" size="220,26" backgroundColor="background" zPosition="1" transparent="1" font="Regular;22" />
+	<panel name="RedTemplate 2"/>
 	<widget name="config" position="520,90" size="755,295" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" />
 	<widget source="introduction" render="Label" position="566,572" size="660,27" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;24" halign="center" />
 	<widget name="HelpWindow" position="588,400" size="1,1" zPosition="1" transparent="1" alphatest="on" />
@@ -1362,6 +1348,7 @@
 	<panel name="VixLogo"/>
   </screen>
   <screen flags="wfNoBorder" name="ChannelSelectionRadio" position="0,0" size="1280,502" title="Channel Selection">
+	<panel name="RGYB_Template"/> 
 	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
 	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
 	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
@@ -1372,14 +1359,6 @@
 		<convert type="ClockToText">Date</convert>
 	</widget>	 
 	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-	<ePixmap pixmap="MHDC/buttons/red2.png" alphatest="on" position="100,423" size="26,26" />
-	<ePixmap pixmap="MHDC/buttons/green2.png" alphatest="on" position="390,423" size="26,26" />
-	<ePixmap pixmap="MHDC/buttons/yellow2.png" alphatest="on" position="680,423" size="26,26" />
-	<ePixmap pixmap="MHDC/buttons/blue2.png" alphatest="on" position="970,423" size="26,26" />
-	<widget name="key_red" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,425" size="220,26" transparent="1" zPosition="1" />
-	<widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,425" size="220,26" transparent="1" zPosition="1" />
-	<widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,425" size="220,26" transparent="1" zPosition="1" />
-	<widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,425" size="220,26" transparent="1" zPosition="1" />
 	<widget name="list" scrollbarMode="showOnDemand" serviceInfoFont="Regular;18" serviceNameFont="Regular;18" serviceItemHeight="25" foregroundColorServiceNotAvail="#656565" serviceNumberFont="Regular;18" position="590,95" size="630,305" transparent="1" />
 	<widget source="session.Event_Now" render="Label" position="70,95" size="460,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="center" valign="center">
 		<convert type="EventName">Name</convert>
@@ -1497,58 +1476,6 @@
 	<widget name="more_button_sel" pixmap="MHDC/border/epg_next_on.png" position="960,110" zPosition="3" size="180,40" alphatest="blend" />
 	<widget name="more_text" position="960,110" size="180,40" backgroundColor="background" zPosition="4" transparent="1" text="More" font="Regular;20" valign="center" halign="center" />
   </screen>
-  <screen name="GraphMultiEPG" title="Electronic Program Guide" position="0,0" size="1280,720" flags="wfNoBorder">
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
-	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
-	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-	<widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
-		<convert type="ClockToText">Full</convert>
-	</widget>
-	<widget source="session.VideoPicture" backgroundColor="transparent" position="10,85" render="Pig" size="477,270" zPosition="1" />
-	<widget source="Event" render="Label" position="520,90" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
-		<convert type="EventTime">StartTime</convert>
-		<convert type="ClockToText">Format:%A</convert>
-	</widget>
-	<widget source="Event" render="Label" position="670,90" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right">
-		<convert type="EventTime">StartTime</convert>
-		<convert type="ClockToText" />
-	</widget>
-	<widget source="Event" render="Label" position="750,90" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left">
-		<convert type="EventTime">EndTime</convert>
-		<convert type="ClockToText">Format:- %H:%M</convert>
-	</widget>
-	<widget source="Event" render="Label" position="830,90" size="380,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
-		<convert type="EventName">Name</convert>
-	</widget>
-	<widget source="Event" render="Label" position="520,115" size="755,205" backgroundColor="background" transparent="1" font="Regular;20">
-		<convert type="EventName">ExtendedDescription</convert>
-	</widget>
-	<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1090,335" size="35,25" />
-	<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1145,335" size="35,25" />
-	<ePixmap pixmap="MHDC/buttons/red2.png" position="520,335" size="20,20" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/green2.png" position="710,335" size="20,20" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/blue2.png" position="900,335" size="20,20" alphatest="on" />
-	<widget name="key_red" position="549,335" size="110,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-	<widget name="key_green" position="737,335" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-	<widget name="key_blue" position="927,335" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-	<widget name="timeline_text" position="30,382" size="1230,28" foregroundColor="une5b243" backgroundColor="un0" transparent="1" />
-	<widget name="list" position="30,410" size="1230,300" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EntryBorderColor="#cccccc" />
-	<widget name="timeline0" pixmap="MHDC/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
-	<widget name="timeline1" pixmap="MHDC/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
-	<widget name="timeline2" pixmap="MHDC/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
-	<widget name="timeline3" pixmap="MHDC/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
-	<widget name="timeline4" pixmap="MHDC/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
-	<widget name="timeline5" pixmap="MHDC/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
-	<widget name="timeline_now" pixmap="MHDC/window/timeline-now.png" position="4,407" size="19,310" zPosition="2" alphatest="on" />
-  </screen>
-  <screen name="GraphMultiEpgSetup" title="Electronic Program Guide Setup" position="0,0" size="1280,720" flags="wfNoBorder">
-	<panel name="BasicTemplate"/>
-	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
-	<widget name="canceltext" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-	<widget name="oktext" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-	<widget name="config" position="520,90" size="755,575" />
-  </screen>
   <screen flags="wfNoBorder" name="SelectBouquet" position="0,0" size="1280,720" title="Choose bouquet">
 	<panel name="BasicTemplate"/>
 	<widget name="menu" scrollbarMode="showOnDemand" font="Regular;22" position="520,90" size="755,575" transparent="1" />
@@ -1556,20 +1483,16 @@
   </screen>
   <screen name="LocationBox" title="Location Box" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
+	<panel name="RGYB_Template"/>
 	<widget name="target" position="15,635" size="1230,27" backgroundColor="grey" foregroundColor="black" font="Regular;24" valign="right" />
 	<widget name="filelist" position="520,90" size="755,545" itemHeight="28" selectionDisabled="1" scrollbarMode="showOnDemand" />
 	<widget name="booklist" position="15,375" size="477,250" itemHeight="28" scrollbarMode="showOnDemand" />
-	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/yellow2.png" position="580,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/blue2.png" position="840,682" size="26,26" alphatest="on" />
-	<widget name="key_red" position="50,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-	<widget name="key_green" position="340,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-	<widget name="key_yellow" position="614,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-	<widget name="key_blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
   </screen>
   <screen name="MovieSelection" title="MovieSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
+	<panel name="MenuTemplate"/>
+	<panel name="InfoTemplate"/>
+	<panel name="RGYB_Template"/>
 	<widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="white" borderWidth="1" noWrap="1" font="Regular;20" borderColor="black" valign="center" halign="center">
 		<convert type="ServiceName">Name</convert>
 	</widget>
@@ -1582,16 +1505,6 @@
 	<widget source="session.CurrentService" render="Label" position="365,335" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="white" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right">
 		<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 	</widget>
-	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/yellow2.png" position="580,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/blue2.png" position="840,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25" />
-	<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
-	<widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-	<widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-	<widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-	<widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 	<widget name="movie_sort" position="1195,684" size="35,25" pixmaps="skin_default/icons/az.png,skin_default/icons/newtop.png,skin_default/icons/shuffle.png,skin_default/icons/za.png,skin_default/icons/oldtop.png" zPosition="1" transparent="1" alphatest="on"/>
 	<widget name="movie_off" position="1235,684" size="35,25" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png" zPosition="1" transparent="1" alphatest="on"/>
 	<widget name="chosenletter" position="520,87" size="755,581" foregroundColor="yellow" font="Regular;28" halign="center" valign="center" transparent="1" zPosition="4" />
@@ -1675,40 +1588,22 @@
   </screen>
   <screen name="TimerEditList" title="Timer Overview" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
-	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/yellow2.png" position="580,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/blue2.png" position="840,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
-	<widget name="key_red" position="50,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-	<widget name="key_green" position="340,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-	<widget name="key_yellow" position="614,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-	<widget name="key_blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-	<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />
+	<panel name="InfoTemplate"/>
+	<panel name="RGYB_Template"/>
 	<widget name="timerlist" position="520,82" size="755,578" font="Regular;19" scrollbarMode="showOnDemand" />
 	<panel name="VixLogo"/>
   </screen>
   <screen name="TimerLog" title="Timer log" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
-	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/yellow2.png" position="580,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/blue2.png" position="840,682" size="26,26" alphatest="on" />
-	<widget name="key_red" position="50,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-	<widget name="key_green" position="340,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-	<widget name="key_yellow" position="614,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-	<widget name="key_blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
+	<panel name="RGYB_Template"/>
 	<widget name="loglist" position="520,90" size="755,275" font="Regular;18" scrollbarMode="showOnDemand" />
 	<widget name="logentry" position="15,385" size="1230,285" font="Regular;18" />
   </screen>
   <screen name="TimerSanityConflict" title="Timer sanity error" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
-	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/yellow2.png" position="580,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/blue2.png" position="840,682" size="26,26" alphatest="on" />
-	<widget name="key_red" position="50,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-	<widget name="key_yellow" position="614,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-	<widget name="key_blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
+	<panel name="RedTemplate"/>
+	<panel name="YellowTemplate"/>
+	<panel name="BlueTemplate"/>
 	<widget name="list" position="520,82" size="755,295" scrollbarMode="showNever" />
 	<widget name="timer1" position="15,385" size="500,285" scrollbarMode="showNever" selectionDisabled="1" />
 	<widget name="timer2" position="520,385" size="755,285" scrollbarMode="showNever" />
@@ -1716,36 +1611,21 @@
 	<!-- ## Setup ## -->
   <screen name="WebIfConfigScreen" title="Main Setup" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
-	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/yellow2.png" position="580,682" size="26,26" alphatest="on" />
-	<widget source="key_red" render="Label" position="50,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;22" halign="left" />
-	<widget source="key_green" render="Label" position="340,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;22" halign="left" />
-	<widget source="key_yellow" render="Label" position="614,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;22" halign="left" />
+	<panel name="RGY_Template 2"/>
 	<widget name="config" position="520,82" size="755,583" font="Regular;22" backgroundColor="darkgrey" transparent="1" scrollbarMode="showOnDemand" />
 	<panel name="VixLogo"/>
   </screen>
   <screen name="WebIfInterfaceConfigScreen" title="Edit Interface" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
-	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/blue2.png" position="840,682" size="26,26" alphatest="on" />
-	<widget source="key_red" render="Label" position="50,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;22" halign="left" />
-	<widget source="key_green" render="Label" position="340,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;22" halign="left" />
-	<widget source="key_blue" render="Label" position="875,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;22" halign="left" />
+	<panel name="RedTemplate 2"/>
+	<panel name="GreenTemplate 2"/>
+	<panel name="BlueTemplate 2"/>
 	<widget name="config" position="520,82" size="755,583" backgroundColor="darkgrey" transparent="1" scrollbarMode="showOnDemand" />
 	<panel name="VixLogo"/>
   </screen>
   <screen name="WebIfInterfaceListConfigScreen" title="List of configured Interfaces" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
-	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/yellow2.png" position="580,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/blue2.png" position="840,682" size="26,26" alphatest="on" />
-	<widget source="key_red" render="Label" position="50,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;22" halign="left" />
-	<widget source="key_green" render="Label" position="340,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;22" halign="left" />
-	<widget source="key_yellow" render="Label" position="614,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;22" halign="left" />
-	<widget source="key_blue" render="Label" position="875,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;22" halign="left" />
+	<panel name="RGYB_Template 2"/>
 	<widget source="address" render="Label" position="590,120" size="120,50" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;20" halign="left" />
 	<widget source="port" render="Label" position="670,120" size="50,50" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;20" halign="left" />
 	<widget source="ssl" render="Label" position="720,120" size="50,50" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;20" halign="left" />
