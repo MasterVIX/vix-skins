@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.00 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.01 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -1717,7 +1717,24 @@
 		<widget name="config" position="520,82" size="755,275" zPosition="3" transparent="1" scrollbarMode="showOnDemand" font="Regular;22" selectionPixmap="buttons/sel.png" foregroundColor="grey" itemHeight="28" enableWrapAround="1"/>
 		<widget name="HelpWindow" position="590,390" size="1,1" zPosition="1" transparent="1" alphatest="on" />
 		<widget source="introduction" render="Label" position="620,682" size="655,27" zPosition="1" transparent="1" font="Regular;22" halign="center" foregroundColor="grey"/>
-		<widget name="VKeyIcon" pixmap="vkey_icon.png" position="1160,682" size="35,25" zPosition="10" transparent="1" alphatest="on" />-->
+		<widget name="VKeyIcon" pixmap="vkey_icon.png" position="1160,682" size="35,25" zPosition="10" transparent="1" alphatest="on" />
+	</screen>
+	<screen name="UserManager" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel" />
+		<panel name="Yellow2Panel" />
+		<widget source="config" render="Listbox" position="520,80" size="555,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" transparent="1" foregroundColor="grey" enableWrapAround="1" >
+		<convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (80, 5), size = (400, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+							MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (48, 48), png = 3), # index 4 is the status pixmap
+						],
+					"fonts": [gFont("Regular",20)],
+					"itemHeight": 55
+					}
+				</convert>
+			</widget>
+		<widget source="introduction" render="Label" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
 	</screen>
 	<screen name="devicesMount" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
