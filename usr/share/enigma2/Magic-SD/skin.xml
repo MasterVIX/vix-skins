@@ -2166,11 +2166,11 @@ self.autoResize()
 		<widget source="list" render="Listbox" position="10,55" size="540,395" transparent="0" scrollbarMode="showOnDemand" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (90, 0), size = (368, 30), font=0, text = 0),
-				MultiContentEntryText(pos = (110, 30), size = (348, 50), font=1, flags = RT_VALIGN_TOP, text = 1),
+				MultiContentEntryText(pos = (85, 0), size = (455, 30), font=0, text = 0),
+				MultiContentEntryText(pos = (90, 30), size = (450, 50), font=1, flags = RT_VALIGN_TOP, text = 1),
 				MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
 				],
-				"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
+				"fonts": [gFont("Regular", 18),gFont("Regular", 16)],
 				"itemHeight": 85
 				}
 			</convert>
@@ -2180,10 +2180,8 @@ self.autoResize()
 		<panel name="BasicTemplate" />
 		<panel name="Red1Panel" />
 		<panel name="Green1Panel" />
-		<panel name="MenuBPanel" />
-		<panel name="InfoBPanel" />
-		<widget name="config" position="3,80" scrollbarMode="showOnDemand" size="540,260" source="menu" transparent="10" itemHeight="20" enableWrapAround="1" zPosition="1" />
-		<widget name="Linconn" position="3,360" size="540,60" zPosition="10" font="Enigma;16" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
+		<widget name="config" source="menu" position="3,80" size="554,260" font="Enigma;16" scrollbarMode="showOnDemand" transparent="10" itemHeight="30" enableWrapAround="1" zPosition="1" />
+		<widget name="Linconn" position="3,360" size="554,60" zPosition="10" font="Enigma;16" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
 	</screen>
 	<screen name="VIXSoftcamManager" position="center,center" size="560,460" title="Softcam Setup">
 		<panel name="BasicTemplate" />
