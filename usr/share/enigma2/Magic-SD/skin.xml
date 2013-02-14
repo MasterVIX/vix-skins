@@ -1,5 +1,5 @@
 ﻿<skin>
-  <!--  Skin: Magic-SD-ViX Vs 2.09 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
+  <!--  Skin: Magic-SD-ViX Vs 2.10 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -601,11 +601,11 @@
 		<panel name="Green1Panel" />
 		<panel name="Yellow1Panel" />
 		<panel name="Blue1Panel" />
-		<widget font="Enigma;20" name="text" position="5,38" size="550,28"/>
-		<widget font="Enigma;20" name="target" position="5,68" size="550,28" valign="center"/>
-		<widget name="filelist" position="5,100" scrollbarMode="showOnDemand" selectionDisabled="1" size="550,200" zPosition="1" enableWrapAround="1" />
-		<widget font="Enigma;20" name="textbook" position="5,310" size="550,28"/>
-		<widget name="booklist" position="5,340" scrollbarMode="showOnDemand" size="550,95" zPosition="2"/>
+		<widget name="text" position="5,38" size="550,28" font="Enigma;20" />
+		<widget name="target" position="5,68" size="550,28" valign="center" font="Enigma;20" />
+		<widget name="filelist" position="5,100" size="550,200" zPosition="1" scrollbarMode="showOnDemand" selectionDisabled="1" enableWrapAround="1" />
+		<widget name="textbook" position="5,310" size="550,28" font="Enigma;20" />
+		<widget name="booklist" position="5,340" size="550,65" scrollbarMode="showOnDemand" zPosition="2"/>
 	</screen>
 	<screen name="FileBrowser" position="center,center" size="560,460" title="DVD file browser" >
 		<panel name="BasicTemplate" />
@@ -2489,4 +2489,76 @@ self.autoResize()
 		</convert>
 	</widget>
 	</screen>
+	<!-- ## CCCam Info ##-->
+	<screen name="CCcamInfoMain" position="center,center" size="560,460" title="CCcam Info">
+		<panel name="BasicTemplate" />
+		<widget name="menu" position="10,5" size="540,400" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1" />
+	</screen>
+	<screen name="CCcamInfoEcmInfoSelection" position="center,center" size="560,460" title="CCcam Info">
+		<panel name="BasicTemplate" />
+		<widget name="list" position="10,5" size="540,400" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1" />
+	</screen>
+	<screen name="CCcamInfoInfoScreen" position="center,center" size="560,460" title="CCcam Info">
+		<panel name="BasicTemplate" />
+		<widget name="text" position="10,5" size="540,400" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1" />
+	</screen>
+	<screen name="CCcamShareViewMenu" position="center,center" size="560,460" title="CCcam Info">
+		<panel name="BasicTemplate" />
+		<widget name="list" position="5,5" size="550,300" scrollbarMode="showOnDemand" transparent="1" font="Enigma;18" itemHeight="25" enableWrapAround="1" zPosition="1" />
+		<widget name="uphops" position="10,340" size="250,25" font="Regular;18" />
+		<widget name="cards" position="265,340" size="250,25" halign="right" font="Regular;18" />
+		<widget name="providers" position="10,370" size="250,25" font="Regular;18" />
+		<widget name="reshare" position="265,370" size="250,25" halign="right" font="Regular;18" />
+		<widget name="title" position="0,400" size="540,20" halign="center" font="Regular;20" foregroundColor="secondFG"/>
+	</screen>
+	<screen name="CCcamInfoSubMenu" position="center,center" size="560,460" title="CCcam Info">
+		<panel name="BasicTemplate" />
+		<widget name="list" position="10,5" size="540,355" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1" />
+		<widget name="info" position="10,360" size="540,65" zPosition="1" font="Enigma;18" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
+	</screen>
+	<screen name="CCcamInfoServerMenu" position="center,center" size="560,460" title="CCcam Info">
+		<panel name="BasicTemplate" />
+		<widget name="list" position="10,5" size="540,355" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1" />
+		<widget name="info" position="10,360" size="540,65" zPosition="1" font="Enigma;18" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
+	</screen>
+	<screen name="CCcamInfoConfigMenu" position="center,center" size="560,460" title="CCcam Info">
+		<panel name="BasicTemplate" />
+		<widget name="config" position="10,5" size="540,400" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1" />
+	</screen>
+	<screen name="CCcamInfoRemoteBoxMenu" position="center,center" size="560,460" title="CCcam Info">
+		<panel name="BasicTemplate" />
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<widget name="list" position="10,45" size="540,360" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1" />
+	</screen>
+	<screen name="CCcamInfoShareInfo" position="center,center" size="560,460" title="CCcam Info">
+		<panel name="BasicTemplate" />
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<widget name="list" position="10,45" size="540,375" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="75" enableWrapAround="1" zPosition="1" />
+	</screen>
+	<screen name="CCcamInfoConfigSwitcher" position="center,center" size="560,460" title="CCcam Info">
+		<panel name="BasicTemplate" />
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<widget name="list" position="10,45" size="540,360" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1" />
+	</screen>
+	<screen name="CCcamInfoMenuConfig" position="center,center" size="560,460" title="CCcam Info">
+		<panel name="BasicTemplate" />
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<widget name="list" position="10,45" size="540,375" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1" />
+	</screen>
+
+
+
+
 </skin>
