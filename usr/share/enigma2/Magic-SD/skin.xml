@@ -1,5 +1,5 @@
 ﻿<skin>
-  <!--  Skin: Magic-SD-ViX Vs 2.12 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
+  <!--  Skin: Magic-SD-ViX Vs 2.13 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -1046,7 +1046,7 @@ self.autoResize()
 	</screen>
 	<screen name="EventViewContextMenu" position="center,center" size="560,460" title="Event view menu" >
 		<panel name="BasicTemplate" />
-		<widget name="menu" position="10,10" size="540,350" scrollbarMode="showOnDemand" />
+		<widget name="menu" position="10,10" size="540,350" scrollbarMode="showOnDemand" font="Enigma;20" itemHeight="25" />
 	</screen>
 	<screen name="EventView" position="center,center" size="560,460" title="Event view">
 		<panel name="BasicTemplate" />
@@ -1059,6 +1059,13 @@ self.autoResize()
 		<widget name="key_yellow" position="280,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1" />
 		<widget name="key_blue" position="420,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#18188b" transparent="1" />
 		<widget name="epg_description" position="10,50" size="540,330" font="Regular;22" />
+		<widget name="datetime" position="10,395" size="130,25" font="Regular;22" />
+		<widget name="duration" position="140,395" size="100,25" font="Regular;22" />
+		<widget name="channel" position="240,395" size="305,25" font="Regular;22" halign="right" />
+	</screen>
+	<screen name="EventViewSimple" position="center,center" size="560,460" title="Event view">
+		<panel name="BasicTemplate" />
+		<widget name="epg_description" position="10,5" size="540,375" font="Regular;22" />
 		<widget name="datetime" position="10,395" size="130,25" font="Regular;22" />
 		<widget name="duration" position="140,395" size="100,25" font="Regular;22" />
 		<widget name="channel" position="240,395" size="305,25" font="Regular;22" halign="right" />
