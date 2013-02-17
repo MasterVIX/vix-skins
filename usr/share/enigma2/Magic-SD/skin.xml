@@ -1,5 +1,5 @@
 ﻿<skin>
-  <!--  Skin: Magic-SD-ViX Vs 2.13 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
+  <!--  Skin: Magic-SD-ViX Vs 2.14 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -319,10 +319,12 @@
 	<screen name="Mute" position="center,50" zPosition="10" size="45,45" flags="wfNoBorder" title="Mute">
 		<ePixmap pixmap="infobar/mute.png" position="0,0" size="45,45"/>
 	</screen>
-	<screen name="MoviePlayer" position="60,40" size="600,102" backgroundColor="transpBlack" flags="wfNoBorder" title="MoviePlayer">
+XXXX
+
+	<screen name="MoviePlayer" position="60,40" size="600,102" backgroundColor="transparent" flags="wfNoBorder" title="MoviePlayer">
 		<eLabel backgroundColor="infobarBG" position="6,44" size="588,14" zPosition="0"/>
 		<ePixmap alphatest="on" pixmap="dvr/scale.png" position="8,45" size="584,12" zPosition="1"/>
-		<widget pointer="dvr/position_pointer.png:572,0" position="8,45" render="PositionGauge" size="584,12" source="session.CurrentService" transparent="1" zPosition="4">
+		<widget pointer="skin_default/position_pointer.png:572,0" position="8,45" render="PositionGauge" size="584,12" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;22" foregroundColor="foreground" halign="center" noWrap="1" position="88,3" render="Label" size="424,36" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
@@ -334,7 +336,13 @@
 		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="right" noWrap="1" position="512,5" render="Label" size="80,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
 			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
+		<widget name="statusicon" position="0,65" size="60,100" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on" />
+		<widget name="speed" position="45,80" size="80,15" font="Regular; 17" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" transparent="1" zPosition="5" />
+		<widget name="state" position="5,240" size="150,30" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" halign="center" />
+
 	</screen>
+
+
 
 	<screen name="QuickEPG" position="0,355" size="720,220" flags="wfNoBorder" title="InfoBar">
 		<ePixmap name="ValiOSD" pixmap="infobar/infobar-hd.png" position="0,0" size="720,220" alphatest="off" zPosition="1"/>
@@ -575,8 +583,8 @@
 		<widget name="statuspic" pixmaps="buttons/button_greennw.png,buttons/button_greennw_off.png" position="120,380" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
 	</screen>
 	<screen name="TimeshiftState" position="50,310" size="150,60" zPosition="2" backgroundColor="transparent" flags="wfNoBorder" >
-		<widget font="Enigma;24" halign="center" name="state" position="0,0" size="150,30" backgroundColor="transparent" borderColor="black" borderWidth="2" />
-		<widget font="Enigma;24" halign="center" position="0,30" render="Label" size="150,30" source="session.CurrentService" backgroundColor="transparent" borderColor="black" borderWidth="2">
+		<widget name="state" position="0,0" size="150,30" font="Enigma;24" halign="center" backgroundColor="transparent" borderColor="black" borderWidth="2" />
+		<widget render="Label" source="session.CurrentService" position="0,30" size="150,30" font="Enigma;24" halign="center" backgroundColor="transparent" borderColor="black" borderWidth="2">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 	</screen>
@@ -1681,9 +1689,9 @@ self.autoResize()
 		<widget name="Goto" position="5,184" size="50,17" zPosition="1" font="Regular;17" halign="left" transparent="1" />
 		<widget name="posGoto" position="57,180" size="70,20" zPosition="1" font="Regular;20" halign="left" transparent="1" />
 	</screen>
-	<screen name="Seekbar" position="center,40" size="560,55" flags="wfNoBorder">
+	<screen name="Seekbar" position="center,center" size="560,60" backgroundColor="transparent" flags="wfNoBorder">
 		<widget name="cursor" position="0,15" size="8,18" pixmap="position_arrow.png" alphatest="on" />
-		<widget source="session.CurrentService" render="PositionGauge" position="145,30" size="270,10" zPosition="2" pointer="position_pointer.png:540,0" transparent="1" foregroundColor="#20224f">
+		<widget source="session.CurrentService" render="PositionGauge" position="145,30" size="270,10" zPosition="2" pointer="skin_default/position_pointer.png:540,0" transparent="1" foregroundColor="#20224f">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<widget name="time" position="50,25" size="100,20" font="Regular;20" halign="left" backgroundColor="#4e5a74" transparent="1" />
