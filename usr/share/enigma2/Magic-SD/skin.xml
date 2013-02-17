@@ -1,5 +1,5 @@
 ﻿<skin>
-  <!--  Skin: Magic-SD-ViX Vs 2.15 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
+  <!--  Skin: Magic-SD-ViX Vs 2.16 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15 -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are  -->
@@ -319,7 +319,7 @@
 	<screen name="Mute" position="center,50" zPosition="10" size="45,45" flags="wfNoBorder" title="Mute">
 		<ePixmap pixmap="infobar/mute.png" position="0,0" size="45,45"/>
 	</screen>
-	<screen name="MoviePlayer" position="60,40" size="600,102" backgroundColor="transparent" flags="wfNoBorder" title="MoviePlayer">
+	<screen name="MoviePlayer" position="60,40" size="600,500" backgroundColor="transparent" flags="wfNoBorder" title="MoviePlayer">
 		<eLabel backgroundColor="infobarBG" position="6,44" size="588,14" zPosition="0"/>
 		<ePixmap alphatest="on" pixmap="dvr/scale.png" position="8,45" size="584,12" zPosition="1"/>
 		<widget pointer="skin_default/position_pointer.png:572,0" position="8,45" render="PositionGauge" size="584,12" source="session.CurrentService" transparent="1" zPosition="4">
@@ -335,7 +335,7 @@
 			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
 		<widget name="statusicon" position="0,65" size="60,100" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on" />
-		<widget name="speed" position="45,80" size="80,15" font="Regular; 17" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" transparent="1" zPosition="5" />
+		<widget name="speed" position="45,80" size="100,30" font="Regular; 27" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" transparent="1" zPosition="5" />
 <!--		<widget name="state" position="5,240" size="150,30" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" halign="center" />-->
 	</screen>
 	<screen name="QuickEPG" position="0,355" size="720,220" flags="wfNoBorder" title="InfoBar">
@@ -581,8 +581,10 @@
 		<widget render="Label" source="session.CurrentService" position="0,30" size="150,30" font="Enigma;24" halign="center" backgroundColor="transparent" borderColor="black" borderWidth="2">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
+		<widget name="statusicon" position="0,65" size="60,100" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on" />
+		<widget name="speed" position="45,80" size="80,15" font="Regular; 17" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" transparent="1" zPosition="5" />
 	</screen>
-	<screen name="PVRState" position="60,102" size="80,34" zPosition="2" backgroundColor="transparent" flags="wfNoBorder" >
+  <screen name="PVRState" position="60,102" size="80,34" backgroundColor="transparent" flags="wfNoBorder" zPosition="2">
 		<widget font="Enigma;24" halign="left" name="state" position="0,0" size="80,34" backgroundColor="transparent" borderColor="black" borderWidth="2" />
 	</screen>
 	<screen name="PluginBrowser" position="center,center" size="560,460" title="Plugin browser" >
@@ -1683,13 +1685,13 @@ self.autoResize()
 		<widget name="Goto" position="5,184" size="50,17" zPosition="1" font="Regular;17" halign="left" transparent="1" />
 		<widget name="posGoto" position="57,180" size="70,20" zPosition="1" font="Regular;20" halign="left" transparent="1" />
 	</screen>
-	<screen name="Seekbar" position="center,center" size="560,60" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="Seekbar" position="center,center" size="560,60" backgroundColor="transBlack" flags="wfNoBorder">
 		<widget name="cursor" position="0,15" size="8,18" pixmap="position_arrow.png" alphatest="on" />
 		<widget source="session.CurrentService" render="PositionGauge" position="145,30" size="270,10" zPosition="2" pointer="skin_default/position_pointer.png:540,0" transparent="1" foregroundColor="#20224f">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget name="time" position="50,25" size="100,20" font="Regular;20" halign="left" backgroundColor="#4e5a74" transparent="1" />
-		<widget source="session.CurrentService" render="Label" position="420,25" size="90,24" font="Regular;20" halign="right" backgroundColor="#4e5a74" transparent="1">
+		<widget name="time" position="50,25" size="100,20" font="Regular;25" halign="left" backgroundColor="#4e5a74" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="420,25" size="90,24" font="Regular;25" halign="right" backgroundColor="#4e5a74" transparent="1">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 	</screen>
@@ -1925,8 +1927,8 @@ self.autoResize()
 		<panel name="Green1Panel" />
 		<ePixmap pixmap="buttons/key_text.png" position="320,366" zPosition="4" size="35,25" alphatest="on" transparent="1" />
 	</screen>
-	<screen name="PTSTimeshiftState" position="center,40" zPosition="2" size="420,70" backgroundColor="transpBlack" flags="wfNoBorder">
-		<widget name="state" position="10,3" size="80,27" font="Regular;20" halign="center" backgroundColor="transpBlack" />
+	<screen name="PTSTimeshiftState" position="center,50" zPosition="2" size="420,120" backgroundColor="transpBlack" flags="wfNoBorder">
+		<widget name="state" position="10,3" size="80,27" font="Regular;25" halign="center" backgroundColor="transpBlack" />
 		<widget source="session.CurrentService" render="Label" position="95,5" size="200,27" font="Regular;20" halign="left" foregroundColor="white" backgroundColor="transpBlack">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
@@ -1939,8 +1941,8 @@ self.autoResize()
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<widget name="eventname" position="60,49" zPosition="4" size="320,20" font="Regular;18" halign="center" backgroundColor="transpBlack" />
-		<widget name="statusicon" position="12,45" size="20,20" zPosition="5" alphatest="on" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" />
-		<widget name="speed" position="35,47" size="80,15" font="Regular; 17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="5" />
+		<widget name="statusicon" position="12,55" size="60,60" zPosition="5" alphatest="on" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" />
+		<widget name="speed" position="75,70" size="80,30" font="Regular;28" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="5" />
 	</screen>
 	<screen name="UpdatePlugin" position="center,center" size="560,460">
 		<panel name="BasicTemplate" />
