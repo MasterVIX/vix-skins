@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-SD-ViX Vs 2.17 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
+	<!--	Skin: Magic-SD-ViX Vs 2.18 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -7,8 +7,8 @@
 	<output id="0">
 		<resolution bpp="32" xres="720" yres="576"/>
 	</output>
-	<include filename="Magic-SD/Skin_Common.xml"/>
-	<include filename="/Magic-SD/Skin_ExtPlugins.xml"/>
+<!--	<include filename="Magic-SD/Skin_Common.xml"/>-->
+<!--	<include filename="/Magic-SD/Skin_ExtPlugins.xml"/>-->
 
 	<fonts>
 		<font filename="nmsbd.ttf" name="Regular" scale="90"/>
@@ -95,6 +95,195 @@
 		</borderset>
 	</windowstyle>
 
+	<!-- templates -->
+	<screen name="Red1Panel">
+		<ePixmap pixmap="buttons/red.png" position="0,0" size="140,40" alphatest="on"/>
+		<widget name="key_red" font="Regular;20" halign="center" position="-2,1" size="140,40" transparent="1" valign="center" zPosition="10"/>
+	</screen>
+
+	<screen name="Green1Panel">
+		<ePixmap pixmap="buttons/green.png" position="140,0" size="140,40" alphatest="on"/>
+		<widget name="key_green" font="Regular;20" halign="center" position="140,0" size="140,40" transparent="1" valign="center" zPosition="10"/>
+	</screen>
+
+	<screen name="Yellow1Panel">
+		<ePixmap pixmap="buttons/yellow.png" position="280,0" size="140,40" alphatest="on"/>
+		<widget name="key_yellow" font="Regular;20" halign="center" position="280,1" size="140,40" transparent="1" valign="center" zPosition="10"/>
+	</screen>
+
+	<screen name="Blue1Panel">
+		<ePixmap pixmap="buttons/blue.png" position="420,0" size="140,40" alphatest="on"/>
+		<widget name="key_blue" font="Regular;20" halign="center" position="420,0" size="140,40" transparent="1" valign="center" zPosition="10"/>
+	</screen>
+
+	<screen name="Red2Panel">
+		<ePixmap pixmap="buttons/red.png" position="0,0" size="140,40" alphatest="on"/>
+		<widget source="key_red" render="Label" font="Regular;20" halign="center" position="-2,1" size="140,40" transparent="1" valign="center" zPosition="10"/>
+	</screen>
+
+	<screen name="Green2Panel">
+		<ePixmap pixmap="buttons/green.png" position="140,0" size="140,40" alphatest="on"/>
+		<widget source="key_green" render="Label" font="Regular;20" halign="center" position="140,0" size="140,40" transparent="1" valign="center" zPosition="10"/>
+	</screen>
+
+	<screen name="Yellow2Panel">
+		<ePixmap pixmap="buttons/yellow.png" position="280,0" size="140,40" alphatest="on"/>
+		<widget source="key_yellow" render="Label" font="Regular;20" halign="center" position="280,1" size="140,40" transparent="1" valign="center" zPosition="10"/>
+	</screen>
+
+	<screen name="Blue2Panel">
+		<ePixmap pixmap="buttons/blue.png" position="420,0" size="140,40" alphatest="on"/>
+		<widget source="key_blue" render="Label" font="Regular;20" halign="center" position="420,0" size="140,40" transparent="1" valign="center" zPosition="10"/>
+	</screen>
+
+	<screen name="RedBPanel">
+		<ePixmap pixmap="buttons/red.png" position="0,0" size="140,40" alphatest="on"/>
+	</screen>
+
+	<screen name="GreenBPanel">
+		<ePixmap pixmap="buttons/green.png" position="140,0" size="140,40" alphatest="on"/>
+	</screen>
+
+	<screen name="YelloBPanel">
+		<ePixmap pixmap="buttons/yellow.png" position="280,0" size="140,40" alphatest="on"/>
+	</screen>
+
+	<screen name="BlueBPanel">
+		<ePixmap pixmap="buttons/blue.png" position="420,0" size="140,40" alphatest="on"/>
+	</screen>
+
+	<screen name="MenuBPanel">
+		<ePixmap pixmap="buttons/key_menu.png" position="350,435" size="35,25" zPosition="4" alphatest="on" transparent="1"/>
+	</screen>
+
+	<screen name="InfoBPanel">
+		<ePixmap pixmap="buttons/key_info.png" position="390,435" size="35,25" zPosition="4" alphatest="on" transparent="1"/>
+	</screen>
+
+	<screen name="TextBPanel">
+		<ePixmap pixmap="buttons/key_text.png" position="390,435" size="35,25" zPosition="4" alphatest="on" transparent="1"/>
+	</screen>
+
+
+	<screen name="BasicTemplate">
+		<eLabel backgroundColor="background" position="0,0" size="560,460" zPosition="-1"/>
+		<widget source="title" render="Label" position="10,5" size="280,35" valign="center" font="Enigma;30" halign="center"/>
+		<eLabel backgroundColor="darkgrey" position="0,430" size="560,2" zPosition="1"/>
+		<widget source="global.CurrentTime" render="Label" position="500,435" size="55,22" font="Enigma;18" halign="right" transparent="1" valign="center" zPosition="3">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<ePixmap pixmap="logos/vix.png" position="2,435" size="210,25" alphatest="on"/>
+	</screen>
+
+	<screen name="BasicTemplate2">
+		<eLabel backgroundColor="background" position="0,0" size="560,460" zPosition="-1"/>
+		<eLabel backgroundColor="darkgrey" position="0,430" size="560,2" zPosition="1"/>
+		<widget source="global.CurrentTime" render="Label" position="500,435" size="55,22" font="Enigma;18" halign="right" transparent="1" valign="center" zPosition="3">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<ePixmap pixmap="logos/vix.png" position="2,435" size="210,25" alphatest="on"/>
+	</screen>
+
+	<screen name="PlayerTemplate" position="60,40" size="600,500" backgroundColor="transparent" flags="wfNoBorder" title="MoviePlayer">
+		<eLabel backgroundColor="infobarBG" position="6,44" size="588,14" zPosition="0"/>
+		<ePixmap alphatest="on" pixmap="dvr/scale.png" position="8,45" size="584,12" zPosition="1"/>
+		<widget pointer="skin_default/position_pointer.png:572,0" position="8,45" render="PositionGauge" size="584,12" source="session.CurrentService" transparent="1" zPosition="4">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;22" foregroundColor="foreground" halign="center" noWrap="1" position="88,3" render="Label" size="424,36" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="left" noWrap="1" position="8,5" render="Label" size="80,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
+			<convert type="ServicePosition">Position,ShowHours</convert>
+		</widget>
+		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="right" noWrap="1" position="512,5" render="Label" size="80,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
+			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+		</widget>
+		<widget name="statusicon" position="0,65" size="60,100" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on"/>
+		<widget name="speed" position="45,80" size="100,30" font="Regular; 27" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" transparent="1" zPosition="5"/>
+<!--		<widget name="state" position="5,240" size="150,30" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" halign="center"/>-->
+	</screen>
+
+	<screen name="PinInputTemplate" >
+		<widget name="service" position="10,10" size="480,25" font="Regular;20"/>
+		<widget name="text" position="10,40" size="480,25" font="Regular;20" halign="center"/>
+		<widget name="tries" position="10,70" size="480,25" font="Regular;20" halign="center"/>
+		<widget name="input" position="10,110" size="480,40" font="Regular;50" halign="center"/>
+	</screen>
+
+	<screen name="MessageBoxTemplate">
+		<widget name="text" position="65,8" size="520,0" font="Regular;22"/>
+		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="5,5" size="53,53" alphatest="on"/>
+		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="5,5" size="53,53" alphatest="on"/>
+		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="5,5" size="53,53" alphatest="on"/>
+		<widget name="list" position="100,100" size="480,375"/>
+		<applet type="onLayoutFinish">
+# this should be factored out into some helper code, but currently demonstrates applets.
+from enigma import eSize, ePoint
+
+orgwidth = self.instance.size().width()
+orgpos = self.instance.position()
+textsize = self[&quot;text&quot;].getSize()
+
+# y size still must be fixed in font stuff...
+textsize = (textsize[0] + 50, textsize[1] + 50)
+offset = 0
+if self.type == self.TYPE_YESNO:
+	offset = 60
+wsizex = textsize[0] + 60
+wsizey = textsize[1] + offset
+if (280 &gt; wsizex):
+	wsizex = 280
+wsize = (wsizex, wsizey)
+
+
+# resize
+self.instance.resize(eSize(*wsize))
+
+# resize label
+self[&quot;text&quot;].instance.resize(eSize(*textsize))
+
+# move list
+listsize = (wsizex, 50)
+self[&quot;list&quot;].instance.move(ePoint(0, textsize[1]))
+self[&quot;list&quot;].instance.resize(eSize(*listsize))
+
+# center window
+newwidth = wsize[0]
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
+		</applet>
+	</screen>
+
+	<!-- Extra margin for wizard, never know how bad the TV is... -->
+	<screen name="WizardMarginsTemplate">
+		<panel position="left" size="10%,*"/>
+		<panel position="right" size="8%,*"/>
+		<panel position="top" size="8%,*"/>
+		<panel position="bottom" size="10%,*"/>
+	</screen>
+
+	<!-- Start Wizard -->
+	<screen name="RemoteControlTemplate">
+		<panel position="right" size="154,*">
+			<panel position="top" size="*,50"/>
+			<widget name="rc" pixmaps="rc.png,rcold.png" position="top" zPosition="10" size="154,500" alphatest="on"/>
+			<widget name="arrowdown" pixmap="arrowdown.png" position="0,0" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+			<widget name="arrowdown2" pixmap="arrowdown.png" position="0,0" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+			<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+			<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+		</panel>
+	</screen>
+
+	<screen name="WizardPictureLangTemplate">
+		<panel position="left" size="110,*">
+			<panel position="top" size="*,50"/>
+			<ePixmap pixmap="buttons/button_red.png" position="left" zPosition="0" size="15,16" alphatest="on"/>
+			<widget name="languagetext" position="fill" font="Regular;18"/>
+		</panel>
+	</screen>
+	<!-- End of templates -->
+
+	<!-- InfoBars -->
 	<screen name="InfoBar" position="0,325" size="720,276" flags="wfNoBorder" title="InfoBar">
 		<ePixmap name="ValiOSD" pixmap="infobar/infobar.png" position="0,0" size="720,156" alphatest="off" zPosition="1"/>
 		<eLabel backgroundColor="infobarBG" position="0,156" size="720,110" zPosition="2"/>
@@ -548,9 +737,9 @@
 		<widget name="statuspic" pixmaps="buttons/button_greennw.png,buttons/button_greennw_off.png" position="120,380" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
 	</screen>
 	<screen name="TimeshiftState" position="center,40" zPosition="2" size="420,170" backgroundColor="transparent" flags="wfNoBorder">
-<!--		<widget name="state" position="0,0" size="180,27" font="Regular;25" halign="center" borderWidth="2" borderColor="black" backgroundColor="transparent"/>-->
-		<widget name="statusicon" position="12,5" size="20,21" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on"/>
-		<widget name="speed" position="35,7" size="80,21" font="Regular; 20" halign="left" backgroundColor="transparent" borderWidth="2" borderColor="black" transparent="1" zPosition="5"/>
+		<widget name="state" position="0,0" size="180,27" font="Regular;25" halign="center" borderWidth="2" borderColor="black" backgroundColor="transparent"/>
+<!--		<widget name="statusicon" position="12,5" size="20,21" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on"/>
+		<widget name="speed" position="35,7" size="80,21" font="Regular; 20" halign="left" backgroundColor="transparent" borderWidth="2" borderColor="black" transparent="1" zPosition="5"/>-->
 		<widget source="session.CurrentService" render="Label" position="95,5" size="200,27" font="Regular;25" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" >
 			<convert type="ServicePosition">Position</convert>
 		</widget>
@@ -563,9 +752,9 @@
 		</widget>
 	</screen>
 	<screen name="PTSTimeshiftState" position="center,40" zPosition="2" size="420,70" backgroundColor="transparent" flags="wfNoBorder">
-<!--		<widget name="state" position="10,3" size="180,27" font="Regular;25" halign="center" borderWidth="2" borderColor="black" backgroundColor="transparent"/>-->
-		<widget name="statusicon" position="12,5" size="20,21" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on"/>
-		<widget name="speed" position="35,7" size="80,21" font="Regular; 20" halign="left" backgroundColor="transparent" borderWidth="2" borderColor="black" transparent="1" zPosition="5"/>
+		<widget name="state" position="10,3" size="180,27" font="Regular;25" halign="center" borderWidth="2" borderColor="black" backgroundColor="transparent"/>
+<!--		<widget name="statusicon" position="12,5" size="20,21" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on"/>
+		<widget name="speed" position="35,7" size="80,21" font="Regular; 20" halign="left" backgroundColor="transparent" borderWidth="2" borderColor="black" transparent="1" zPosition="5"/>-->
 		<widget source="session.CurrentService" render="Label" position="95,5" size="200,27" font="Regular;25" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" >
 			<convert type="ServicePosition">Position</convert>
 		</widget>
@@ -582,7 +771,7 @@
 		<widget font="Enigma;24" halign="left" name="state" position="0,0" size="80,34" backgroundColor="transparent" borderColor="black" borderWidth="2"/>
 	</screen>
 	<screen name="PluginBrowser" position="center,center" size="560,460" title="Plugin browser" >
-		<panel name="BasicTemplate"/>
+		<panel name="BasicTemplate2"/>
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
 		<panel name="MenuBPanel"/>
@@ -985,15 +1174,12 @@ self.autoResize()
 		<widget name="timeline_text" position="10,40" size="700,25" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1"/>
 		<widget name="lab1" position="25,65" size="665,378" font="Regular;24" halign="center" valign="center" backgroundColor="#000000" transparent="0" zPosition="2"/>
 		<widget name="list" position="10,65" size="700,378" scrollbarMode="showNever" transparent="1"
-
 		ServiceBackgroundColor="bluetransparent"	ServiceBackgroundColorSelected="black" ServiceBackgroundColorNow="greentransparent" ServiceBackgroundColorNowSelected="greentransparent"
 		EntryBackgroundColor="bluetransparent"		EntryBackgroundColorSelected="black"	 EntryBackgroundColorNow="redtransparent"			EntryBackgroundColorNowSelected="black"
 		EntryFontAlignment="center"								EntryForegroundColorSelected="selectedFG"																						EntryForegroundColorNowSelected="selectedFG"
 																							ServiceForegroundColorSelected="selectedFG"																					ServiceForegroundColorNowSelected="selectedFG"
 		RecordBackgroundColor="yellowtransparent" RecordBackgroundColorSelected="yellowtransparent"																		RecordForegroundColorSelected="selectedFG"
 		ZapBackgroundColor="transpWhite"					ZapBackgroundColorSelected="transpWhite"																						ZapForegroundColorSelected="selectedFG"/>
-
-
 		<widget name="timeline_now" position="10,65" zPosition="2" size="19, 378" pixmap="epg/timeline-now.png" alphatest="on"/>
 		<widget source="Event" render="Label" position="10,439" size="70,24" font="Regular;22" foregroundColor="#00e5b243" backgroundColor="#000000" halign="right" transparent="1">
 			<convert type="EventTime">StartTime</convert>
@@ -1062,11 +1248,11 @@ self.autoResize()
 		<widget name="key_blue" position="545, 539" size="125, 26" font="Regular;18" foregroundColor="#1E28B6" backgroundColor="#000000" halign="left" valign="top" transparent="1"/>
 	</screen>
 	<screen name="EventViewContextMenu" position="center,center" size="560,460" title="Event view menu" >
-		<panel name="BasicTemplate"/>
+		<panel name="BasicTemplate2"/>
 		<widget name="menu" position="10,10" size="540,350" scrollbarMode="showOnDemand" font="Enigma;20" itemHeight="25"/>
 	</screen>
 	<screen name="EventView" position="center,center" size="560,460" title="Event view">
-		<panel name="BasicTemplate"/>
+		<panel name="BasicTemplate2"/>
 		<widget name="red"  pixmap="buttons/red.png" position="0,0" size="140,40" alphatest="on"/>
 		<widget name="green"  pixmap="buttons/green.png" position="140,0" size="140,40" alphatest="on"/>
 		<widget name="yellow"  pixmap="buttons/yellow.png" position="280,0" size="140,40" alphatest="on"/>
@@ -1082,7 +1268,7 @@ self.autoResize()
 		<widget name="channel" position="240,395" size="305,25" font="Regular;22" halign="right"/>
 	</screen>
 	<screen name="EventViewSimple" position="center,center" size="560,460" title="Event view">
-		<panel name="BasicTemplate"/>
+		<panel name="BasicTemplate2"/>
 		<widget name="epg_description" position="10,5" size="540,375" font="Regular;22"/>
 		<widget name="datetime" position="10,395" size="130,25" font="Regular;22"/>
 		<widget name="duration" position="140,395" size="100,25" font="Regular;22"/>
@@ -1152,8 +1338,8 @@ self.autoResize()
 		<panel name="Yellow2Panel"/>
 		<panel name="Blue2Panel"/>
 		<widget name="config" position="3,55" scrollbarMode="showOnDemand" size="540,300" source="menu" transparent="10" itemHeight="20" enableWrapAround="1" zPosition="1"/>
-		<widget name="description" position="3,360" size="540,60" zPosition="10" font="Enigma;20" halign="center" valign="center" transparent="0" foregroundColor="secondFG"/>
-		<widget name="footnote" position="215,435" size="260,19" zPosition="20" font="Regular;18" transparent="1"/>
+		<widget name="description" position="3,360" size="554,60" zPosition="1" font="Enigma;16" halign="center" valign="center" transparent="0" foregroundColor="secondFG"/>
+		<widget name="footnote" position="215,435" size="260,19" zPosition="2" font="Regular;18" transparent="1"/>
 		<widget name="HelpWindow" pixmap="Magic-SD/icons/vkey_icon.png" position="170,300" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
 	</screen>
 		<screen name="VideoEnhancementPreview" position="center,center" size="560,200" title="VideoEnhancementPreview">
@@ -1397,7 +1583,7 @@ self.autoResize()
 		<panel name="PinInputTemplate"/>
 	</screen>
 	<screen name="PositionerSetup" position="center,center" size="560,460" title="Positioner setup">
-		<panel name="BasicTemplate"/>
+		<panel name="BasicTemplate2"/>
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
 		<panel name="Yellow1Panel"/>
@@ -1423,7 +1609,7 @@ self.autoResize()
 		<widget name="status_bar" position="5,400" size="500,24" foregroundColor="grey" zPosition="4" transparent="1" font="Regular;21"/>
 	</screen>
 	<screen name="Satfinder" position="center,center" size="560,460" title="Satfinder">
-		<panel name="BasicTemplate"/>
+		<panel name="BasicTemplate2"/>
 		<widget name="introduction" position="0,0" size="0,0" font="Regular;23"/>
 		<ePixmap pixmap="icons/dish_scan.png" position="5,25" zPosition="0" size="119,110" transparent="1" alphatest="on"/>
 		<widget source="Frontend" render="Label" position="190,10" zPosition="2" size="260,20" font="Regular;19" halign="center" valign="center" transparent="1">
@@ -1643,7 +1829,7 @@ self.autoResize()
 	<!-- VirtualKeyBoard -->
 	<screen name="VirtualKeyBoard" position="center,center" size="560,460" zPosition="99" title="Virtual keyboard">
 		<panel name="BasicTemplate2"/>
-		<ePixmap pixmap="vkey_text.png" position="9,45" zPosition="-4" size="542,52" alphatest="on"/>
+		<ePixmap pixmap="Magic-SD/icons/vkey_text.png" position="9,45" zPosition="-4" size="542,52" alphatest="on"/>
 		<widget source="country" render="Pixmap" position="490,0" size="60,40" alphatest="on" borderWidth="2" borderColor="yellow" >
 			<convert type="ValueToPixmap">LanguageCode</convert>
 		</widget>
@@ -2068,7 +2254,7 @@ self.autoResize()
 		</widget>
 		</screen>
 	<screen name="VIXBackupManager" position="center,center" size="560,460">
-		<panel name="BasicTemplate2/>
+		<panel name="BasicTemplate2"/>
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
 		<panel name="Yellow1Panel"/>
@@ -2504,11 +2690,11 @@ self.autoResize()
 	</screen>
 	<!-- ## CCCam Info ##-->
 	<screen name="CCcamInfoMain" position="center,center" size="560,460" title="CCcam Info">
-		<panel name="BasicTemplate"/>
+		<panel name="BasicTemplate2"/>
 		<widget name="menu" position="10,5" size="540,400" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1"/>
 	</screen>
 	<screen name="CCcamInfoEcmInfoSelection" position="center,center" size="560,460" title="CCcam Info">
-		<panel name="BasicTemplate"/>
+		<panel name="BasicTemplate2"/>
 		<widget name="list" position="10,5" size="540,400" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1"/>
 	</screen>
 	<screen name="CCcamInfoInfoScreen" position="center,center" size="560,460" title="CCcam Info">
@@ -2570,4 +2756,314 @@ self.autoResize()
 		<panel name="Blue1Panel"/>
 		<widget name="list" position="10,45" size="540,375" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1"/>
 	</screen>
+
+<!--  ## PlugIns ##  -->
+	<screen name="PermanentClockScreen" position="0,0" size="120,30" zPosition="-1" backgroundColor="transparent" title="%s" flags="wfNoBorder">
+		<widget source="global.CurrentTime" render="Label" position="1,1" size="120,30" backgroundColor="transparent" transparent="1" zPosition="0" foregroundColor="grey" borderWidth="2" font="Regular;26" borderColor="black" valign="center" halign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+	</screen>
+	<!-- ##CubicStreamer## -->
+	<screen name="MainWindow" position="center,center" size="560,460" title="Main menu">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<panel name="Yellow1Panel"/>
+		<panel name="Blue1Panel"/>
+		<widget name="menu" position="10,50" size="540,350" scrollbarMode="showOnDemand" itemHeight="50" font="Regular;28"/>
+	</screen>
+	<!--Mytube-->
+	<screen name="MyTubePlayerMainScreen" flags="wfNoBorder" position="0,0" size="720,576" title="MyTubePlayerMainScreen..." >
+		<widget name="config" zPosition="2" position="60,60" size="600,50" scrollbarMode="showNever" transparent="1"/>
+		<widget source="feedlist" render="Listbox" position="49,110" size="628,385" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="black">
+			<convert type="TemplatedMultiContent">
+			{"templates":
+				{"default": (77,[
+						MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (100, 75), png = 4), # index 4 is the thumbnail
+						MultiContentEntryText(pos = (100, 1), size = (500, 24), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 1 is the Title
+						MultiContentEntryText(pos = (100, 24), size = (300, 20), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 5), # index 5 is the Published Date
+						MultiContentEntryText(pos = (100, 46), size = (300, 20), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 6), # index 6 is the Views Count
+						MultiContentEntryText(pos = (400, 24), size = (200, 20), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 7), # index 7 is the duration
+						MultiContentEntryText(pos = (400, 46), size = (200, 20), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 8), # index 8 is the ratingcount
+					]),
+				"state": (77,[
+						MultiContentEntryText(pos = (10, 1), size = (560, 28), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
+						MultiContentEntryText(pos = (10, 22), size = (560, 46), font=3, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 2 is the description
+					])
+				},
+				"fonts": [gFont("Enigma", 20),gFont("Enigma", 16),gFont("Enigma", 24),gFont("Enigma", 18)],
+				"itemHeight": 77
+			}
+			</convert>
+		</widget>
+		<ePixmap position="90,500" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<panel name="Yellow1Panel"/>
+		<panel name="Blue1Panel"/>
+		<panel name="MenuBPanel"/>
+		<panel name="InfoBPanel"/>
+		<widget name="VKeyIcon" pixmap="Magic-SD/icons/vkey_icon.png" position="620,495" zPosition="10" size="60,48" transparent="1" alphatest="on"/>
+		<widget name="thumbnail" position="0,0" size="100,75" alphatest="on"/>
+		<widget name="HelpWindow" position="160,255" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+	</screen>
+	<screen name="MyTubeVideoInfoScreen" flags="wfNoBorder" position="0,0" size="720,576" title="MyTubePlayerMainScreen..." >
+		<widget name="title" position="60,50" size="600,50" zPosition="5" valign="center" halign="left" font="Enigma;22" foregroundColor="white" borderColor="black" borderWidth="2"/>
+		<widget name="starsbg" pixmap="~/starsbar_empty.png" position="560,220" zPosition="5" size="100,20" transparent="1" alphatest="on"/>
+		<widget name="stars" pixmap="~/starsbar_filled.png" position="560,220" zPosition="6" size="100,20" transparent="1"/>
+		<widget source="infolist" render="Listbox" position="50,110" size="620,110" zPosition="6" scrollbarMode="showNever" selectionDisabled="1" backgroundColor="black">
+			<convert type="TemplatedMultiContent">
+			{"templates":
+				{"default": (110,[
+						MultiContentEntryPixmapAlphaTest(pos = (0, 4), size = (130, 98), png = 0), # index 0 is the thumbnail
+						MultiContentEntryPixmapAlphaTest(pos = (130, 4), size = (130, 98), png = 1), # index 0 is the thumbnail
+						MultiContentEntryPixmapAlphaTest(pos = (260, 4), size = (130, 98), png = 2), # index 0 is the thumbnail
+						MultiContentEntryPixmapAlphaTest(pos = (390, 4), size = (130, 98), png = 3), # index 0 is the thumbnail
+					]),
+				"state": (110,[
+						MultiContentEntryText(pos = (10, 40), size = (550, 38), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
+					])
+				},
+				"fonts": [gFont("Enigma", 26)],
+				"itemHeight": 110
+			}
+			</convert>
+		</widget>
+		<widget name="author" position="60,220" size="300,24" zPosition="10" font="Enigma;20" halign="left" valign="top"/>
+		<widget name="duration" position="370,220" size="190,24" zPosition="10" font="Enigma;20" halign="left" valign="top"/>
+		<widget name="published" position="60,245" size="300,24" zPosition="10" font="Enigma;20" halign="left" valign="top"/>
+		<widget name="views" position="370,245" size="200,24" zPosition="10" font="Enigma;20" halign="left" valign="top"/>
+		<widget name="tags" position="60,270" size="600,24" zPosition="10" font="Enigma;20" halign="left" valign="top"/>
+		<widget name="detailtext" position="60,300" size="610,200" zPosition="10" font="Enigma;20" halign="left" valign="top"/>
+		<ePixmap position="100,500" size="100,40" zPosition="0" pixmap="~/plugin.png" alphatest="on"/>
+		<ePixmap position="220,500" zPosition="4" size="140,40" pixmap="buttons/key-red" alphatest="on"/>
+		<widget name="key_red" position="220,500" zPosition="5" size="140,40" valign="center" halign="center" font="Enigma;21" foregroundColor="white" transparent="1" borderColor="black" borderWidth="2"/>
+		<widget name="thumbnail" position="0,0" size="130,98" alphatest="on"/> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
+	</screen>
+	<screen name="MyTubeVideoHelpScreen" flags="wfNoBorder" position="0,0" size="720,576" title="MyTubePlayerMainScreen..." >
+		<widget name="title" position="60,50" size="600,50" zPosition="5" valign="center" halign="left" font="Enigma;21" transparent="1" foregroundColor="white" borderColor="black" borderWidth="2"/>
+		<widget name="detailtext" position="60,120" size="610,370" zPosition="10" font="Enigma;21" transparent="1" halign="left" valign="top"/>
+		<ePixmap position="100,500" size="100,40" zPosition="0" pixmap="~/plugin.png" alphatest="on" transparent="1"/>
+		<ePixmap position="220,500" zPosition="4" size="140,40" pixmap="buttons/key-red.png" transparent="1" alphatest="on"/>
+		<widget name="key_red" position="220,500" zPosition="5" size="140,40" valign="center" halign="center" font="Enigma;21" transparent="1" foregroundColor="white" borderColor="black" borderWidth="2"/>
+	</screen>
+	<screen name="MyTubePlayer" flags="wfNoBorder" backgroundColor="transparent" position="60,40" size="600,102" title="MoviePlayer">
+		<eLabel backgroundColor="infobarBG" position="6,44" size="588,14" zPosition="0"/>
+		<ePixmap alphatest="on" pixmap="dvr/scale.png" position="8,45" size="584,12" zPosition="1"/>
+		<widget pointer="dvr/position_pointer.png:572,0" position="8,45" render="PositionGauge" size="584,12" source="session.CurrentService" transparent="1" zPosition="4">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;22" foregroundColor="foreground" halign="center" noWrap="1" position="88,3" render="Label" size="424,36" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="left" noWrap="1" position="8,5" render="Label" size="80,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
+			<convert type="ServicePosition">Position,ShowHours</convert>
+		</widget>
+		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="right" noWrap="1" position="512,5" render="Label" size="80,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
+			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+		</widget>
+	</screen>
+	<screen name="MyTubeSuggestionsListScreen" position="60,93" zPosition="6" size="610,160" flags="wfNoBorder" >
+		<widget source="suggestionslist" render="Listbox" position="10,5" zPosition="7" size="580,150" scrollbarMode="showOnDemand" transparent="0" backgroundColor="black" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (0, 0), size = (340, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+						MultiContentEntryText(pos = (350, 0), size = (180, 25), font=1, flags = RT_HALIGN_RIGHT, text = 1), # index 1 are the results
+					],
+				"fonts": [gFont("Enigma", 20),gFont("Enigma", 16)],
+				"itemHeight": 25
+				}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="MyTubeHistoryScreen" position="60,93" zPosition="6" size="610,160" flags="wfNoBorder" >
+		<widget source="historylist" render="Listbox" position="10,5" zPosition="7" size="580,150" scrollbarMode="showOnDemand" backgroundColor="black" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (0, 0), size = (340, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+					],
+				"fonts": [gFont("Enigma", 20)],
+				"itemHeight": 25
+				}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="MyTubeTasksScreen" flags="wfNoBorder" position="0,0" size="720,576" title="MyTubePlayerMainScreen..." >
+		<widget name="title" position="60,50" size="600,50" zPosition="5" valign="center" halign="left" font="Regular;21" transparent="1" foregroundColor="white" borderColor="black" borderWidth="2"/>
+		<widget source="tasklist" render="Listbox" position="60,120" size="610,370" zPosition="7" scrollbarMode="showOnDemand" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (0, 0), size = (200, 25), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the name
+						MultiContentEntryText(pos = (210, 0), size = (150, 25), font=1, flags = RT_HALIGN_RIGHT, text = 2), # index 2 is the state
+						MultiContentEntryProgress(pos = (370, 0), size = (100, 25), percent = -3), # index 3 should be progress
+						MultiContentEntryText(pos = (480, 0), size = (100, 25), font=1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 is the percentage
+					],
+				"fonts": [gFont("Enigma", 20),gFont("Enigma", 16)],
+				"itemHeight": 25
+				}
+			</convert>
+		</widget>
+		<ePixmap position="100,500" size="100,40" zPosition="0" pixmap="~/plugin.png" alphatest="on" transparent="1"/>
+		<ePixmap position="220,500" zPosition="4" size="140,40" pixmap="buttons/red.png" transparent="1" alphatest="on"/>
+		<widget name="key_red" position="220,500" zPosition="5" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" borderColor="black" borderWidth="2"/>
+	</screen>
+<!-- ## RemoteTimer ##-->
+	<screen name="RemoteTimerScreen" position="center,center" size="560,460" title="Remote-Timer digest">
+		<panel name="BasicTemplate2"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<panel name="Yellow1Panel"/>
+		<panel name="Blue1Panel"/>
+		<widget name="timerlist" position="10,50" size="540,350" scrollbarMode="showOnDemand" transparent="1" font="Enigma;22" itemHeight="50" enableWrapAround="1" zPosition="1"/>
+		<widget name="text" position="10,405" size="540,25" foregroundColor="secondFG" transparent="1" valign="center" halign="center" font="Regular;20"/>
+	</screen>
+	<screen name="RemoteTimerSetup" position="center,center" size="560,460" title="Settings">
+		<panel name="BasicTemplate2"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<widget name="config" position="10,50" size="540,300" scrollbarMode="showOnDemand" transparent="1" itemHeight="30" font="Enigma;22" enableWrapAround="1" zPosition="1"/>
+		<widget name="HelpWindow" pixmap="Magic-SD/icons/vkey_icon.png" position="170,300" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
+	</screen>
+<!-- ## IMDB ##-->
+	<screen name="IMDB" position="center,center" size="560,460" title="nternet Movie Database Details Plugin">
+		<panel name="BasicTemplate2"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<panel name="Yellow1Panel"/>
+		<panel name="Blue1Panel"/>
+		<panel name="MenuBPanel"/>
+		<widget name="titellabel" position="10,50" size="580,350" font="Regular;18"/>
+		<widget name="detailslabel" position="105,100" size="485,140" font="Regular;18"/>
+		<widget name="castlabel" position="10,245" size="540,155" font="Regular;18"/>
+		<widget name="extralabel" position="10,50" size="540,350" font="Regular;18"/>
+		<widget name="ratinglabel" position="300,72" size="250,20" halign="center" font="Regular;18" foregroundColor="#f0b400"/>
+		<widget name="statusbar" position="10,414" size="540,16" font="Regular;16" foregroundColor="#cccccc"/>
+		<widget name="poster" position="4,100" size="96,140" alphatest="on"/>
+		<widget name="menu" position="10,125" size="540,275" zPosition="3" scrollbarMode="showOnDemand"/>
+		<widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="300,50" zPosition="0" size="210,21" transparent="1" alphatest="on"/>
+		<widget name="stars" position="300,50" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" transparent="1"/>
+	</screen>
+<!--	<screen name="IMDbSetup" position="center,center" size="560,460" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel"/>
+		<panel name="Green2Panel"/>
+		<widget name="config" position="10,45" size="540,310" scrollbarMode="showOnDemand" transparent="10" font="Enigma;22" itemHeight="30" enableWrapAround="1" zPosition="1"/>
+		<widget source="help" render="Label" position="10,360" size="540,60" zPosition="1" font="Enigma;20" halign="center" valign="center" transparent="0" foregroundColor="secondFG"/>
+		<widget name="HelpWindow" pixmap="Magic-SD/icons/vkey_icon.png" position="170,150" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
+	</screen>-->
+<!-- ## RecordInfoNar ##-->
+	<screen name="RecInfoBar" title="Records Info" flags="wfNoBorder" position="50,50" size="300,20" backgroundColor="infobarBG" zPosition="5" >
+		<widget name="chNum"   position="0,0"   size="40,20"  zPosition="1" font="Regular;18" halign="right" transparent="1"/>
+		<widget name="chName"  position="50,0"  size="160,20" zPosition="1" font="Regular;18" halign="left"  transparent="1"/>
+		<widget name="timelen" position="210,0" size="60,20"  zPosition="1" font="Regular;18" halign="right" transparent="1"/>
+	</screen>
+<!-- ## Transcoding ##-->
+	<screen name="TranscodingSetup" position="center,center" size="560,460" title="Transcoding Setup">
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel"/>
+		<panel name="Green2Panel"/>
+		<widget name="config" position="10,50" size="540,200" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="30" enableWrapAround="1" zPosition="1"/>
+		<widget source="text" render="Label" position="5,300" size="550,80" zPosition="1" font="Enigma;18" halign="center" valign="center" transparent="0" foregroundColor="secondFG"/>
+	</screen>
+	<screen name="FPGAUpgrade" position="center,center" size="560,460" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel"/>
+		<panel name="Green2Panel"/>
+		<widget name="file_list" position="10,45" size="540,300" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="20" enableWrapAround="1" zPosition="1"/>
+		<widget source="status" render="Label" position="10,360" size="540,60" zPosition="1" font="Enigma;20" halign="center" valign="center" transparent="0" foregroundColor="secondFG"/>
+	</screen>
+	<!-- ## RemoteControlSetup ## -->
+	<screen name="RemoteControlSetup" position="center,center" size="560,460" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="RedBPanel"/>
+		<panel name="GreenBPanel"/>
+		<widget name="cancel" font="Regular;20" halign="center" position="-2,1" size="140,40" transparent="1" valign="center" zPosition="10"/>
+		<widget name="ok" font="Regular;20" halign="center" position="140,0" size="140,40" transparent="1" valign="center" zPosition="10"/>
+		<widget name="config" position="10,45" size="540,350" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1"/>
+	</screen>
+	<screen name="RemoteControlCode" position="center,center" size="560,460" title="">
+		<panel name="BasicTemplate2"/>
+		<panel name="Red2Panel"/>
+		<panel name="Green2Panel"/>
+		<widget name="config" position="10,45" size="540,350" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1"/>
+	</screen>
+	<screen name="RCSetupScreen" position="center,center" size="560,460" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="RedBPanel"/>
+		<panel name="GreenBPanel"/>
+		<widget name="cancel" font="Regular;20" halign="center" position="-2,1" size="140,40" transparent="1" valign="center" zPosition="10"/>
+		<widget name="ok" font="Regular;20" halign="center" position="140,0" size="140,40" transparent="1" valign="center" zPosition="10"/>
+		<widget name="config" position="10,45" size="540,300" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1"/>
+	</screen>
+	<screen name="HdmiCECSetupScreen" position="center,center" size="560,460" title="">
+		<panel name="BasicTemplate" />
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
+		<panel name="Yellow2Panel" />
+		<panel name="Blue2Panel" />
+		<widget name="config" position="10,45" size="540,225" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1" />
+		<widget source="current_address" render="Label" position="10,300" size="540,55" zPosition="1" font="Enigma;20" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
+		<widget source="fixed_address" render="Label" position="10,360" size="540,60" zPosition="1" font="Enigma;20" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
+	</screen>
+<!-- ## TempFanControl ##-->
+	<screen name="TempFanControl" position="center,center" size="560,460" title="">
+		<panel name="BasicTemplate2"/>
+		<panel name="RedBPanel"/>
+		<panel name="GreenBPanel"/>
+		<widget source="red" render="Label" font="Regular;20" halign="center" position="-2,1" size="140,40" transparent="1" valign="center" zPosition="10"/>
+		<widget source="green" render="Label" font="Regular;20" halign="center" position="140,0" size="140,40" transparent="1" valign="center" zPosition="10"/>
+		<widget name="config" position="10,50" size="540,100" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1"/>
+			<widget source="SensorTempText0" render="Label" position="20,170" zPosition="1" size="90,40" font="Regular;20" halign="right" transparent="1"/>
+			<widget source="SensorTemp0" render="Label" position="115,170" zPosition="1" size="100,20" font="Regular;20" halign="left" foregroundColor="grey" >
+				<convert type="SensorToText"></convert>
+			</widget>
+			<widget source="SensorTempText1" render="Label" position="20,220" zPosition="1" size="90,40" font="Regular;20" halign="right" valign="top" transparent="1"/>
+			<widget source="SensorTemp1" render="Label" position="115,220" zPosition="1" size="100,20" font="Regular;20" halign="left" >
+				<convert type="SensorToText"></convert>
+			</widget>
+			<widget source="SensorFanText0" render="Label" position="250,170" zPosition="1" size="120,40" font="Regular;20" halign="right" valign="top" transparent="1"/>
+			<widget source="SensorFan0" render="Label" position="375,170" zPosition="1" size="150,20" font="Regular;20" halign="left" >
+				<convert type="SensorToText"></convert>
+			</widget>
+			<widget source="SensorFanText1" render="Label" position="250,220" zPosition="1" size="120,40" font="Regular;20" halign="right" valign="top"	transparent="1"/>
+			<widget source="SensorFan1" render="Label" position="375,220" zPosition="1" size="150,20" font="Regular;20" halign="left" >
+				<convert type="SensorToText"></convert>
+			</widget>
+	</screen>
+	<!-- ##Picture-Player## -->
+	<screen name="picshow" position="center,center" size="560,460" title="">
+		<panel name="BasicTemplate2"/>
+		<panel name="Red2Panel"/>
+		<panel name="Green2Panel"/>
+		<panel name="Yellow2Panel"/>
+		<panel name="Blue2Panel"/>
+		<widget name="filelist" position="10,45" size="350,160" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="20" enableWrapAround="1" zPosition="1"/>
+		<widget source="label" render="Label" position="10,210" size="540,180" font="Regular;19" backgroundColor="#25062748" transparent="1" />
+		<widget name="thn" position="360,50" size="180,160" alphatest="on"/>
+	</screen>
+	<screen name="Pic_Exif" position="center,center" size="560,460" title="">
+		<panel name="BasicTemplate2"/>
+		<panel name="Red2Panel"/>
+		<widget source="menu" render="Listbox" position="10,45" size="540,300" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1" >
+				<convert type="TemplatedMultiContent">
+				{
+					"template": [  MultiContentEntryText(pos = (5, 5), size = (250, 30), flags = RT_HALIGN_LEFT, text = 0), MultiContentEntryText(pos = (260, 5), size = (290, 30), flags = RT_HALIGN_LEFT, text = 1)],
+					"fonts": [gFont("Regular", 20)],
+					"itemHeight": 30
+				}
+				</convert>
+			</widget>
+	</screen>
+<!-- OperaBrowser VU+-->
+	<screen name="OperaBrowser" position="0,0" size="720,576" backgroundColor="transparent" flags="wfNoBorder" title="Opera Browser">
+		<widget name="topArea" zPosition="-1" position="0,0" size="720,60" font="Regular;20" valign="center" halign="center" backgroundColor="#000000"/>
+		<widget name="menuitemFile" position="30,20" size="150,30" font="Regular;20" valign="center" halign="center" backgroundColor="#000000" foregroundColors="#9f1313,#a08500"/>
+		<widget name="menuitemTool" position="180,20" size="150,30" font="Regular;20" valign="center" halign="center" backgroundColor="#000000" foregroundColors="#9f1313,#a08500"/>
+		<widget name="menuitemHelp" position="330,20" size="150,30" font="Regular;20" valign="center" halign="center" backgroundColor="#000000" foregroundColors="#9f1313,#a08500"/>
+		<widget name="menulist" position="50,60" size="200,150" backgroundColor="#000000" zPosition="10" scrollbarMode="showOnDemand"/>
+		<widget name="submenulist" position="252,60" size="200,150" backgroundColor="#000000" zPosition="10" scrollbarMode="showOnDemand"/>
+		<widget name="bottomArea" position="0,496" size="720,80" font="Regular;20" valign="center" halign="center" backgroundColor="#000000"/>
+	</screen>
+
+
 </skin>

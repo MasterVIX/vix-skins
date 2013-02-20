@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD Common Vs 7.00 	-->
+	<!--	Skin: Magic-HD Common Vs 7.01 	-->
 	<!--	This skin is part of the skin Magic-HD; the same license applies.	-->
 
 	<!-- templates -->
@@ -43,7 +43,7 @@
 		<widget source="session.CurrentService" render="Label" position="5,80" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<ePixmap pixmap="logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+		<ePixmap pixmap="Magic-HD/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
 	</screen>
 
 	<screen name="BasicTemplate2">
@@ -72,7 +72,7 @@
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<ePixmap pixmap="logos/vix.png" position="25,650" size="300,25" alphatest="on" />
+		<ePixmap pixmap="Magic-HD/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
 	</screen>
 
 	<screen name="RedBPanel">
@@ -180,10 +180,10 @@
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<eLabel backgroundColor="infobarBG" position="120,49" size="1040,14" zPosition="0"/>
-		<widget name="statusicon" position="5,54" size="20,20" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on" />
+		<widget name="statusicon" position="5,54" size="20,20" pixmaps="Magic-HD/icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on" />
 		<widget name="speed" position="30,54" size="80,15" font="Regular; 17" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" transparent="1" zPosition="5" />
-		<ePixmap pixmap="dvr/scale1024.png" position="128,54" size="1024,4" zPosition="1" />
-		<widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="/usr/share/enigma2/Magic-HD/dvr/position_pointer1024.png:1012,0">
+		<ePixmap pixmap="Magic-HD/dvr/scale1024.png" position="128,54" size="1024,4" zPosition="1" />
+		<widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="Magic-HD/dvr/position_pointer1024.png:1012,0">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="40,13" size="200,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
