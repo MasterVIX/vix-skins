@@ -521,9 +521,9 @@
 		<widget source="session.CurrentService" render="Label" position="90,120" size="200,24" font="Italic;18" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" halign="left" valign="center">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<ePixmap position="90,100" size="563,18" pixmap="icons/Mediaplayerbar_gray.png" alphatest="blend" />
-		<ePixmap position="85,100" size="5,18" pixmap="icons/Mediaplayerbar_purple.png" alphatest="blend" />
-		<widget source="session.CurrentService" render="PositionGauge" position="89,93" size="563,25" zPosition="2" pointer="icons/Mediaplayerbar_purple.png:563,0" transparent="1">
+		<ePixmap position="90,100" size="563,18" pixmap="infobar/Mediaplayerbar_gray.png" alphatest="blend" />
+		<ePixmap position="85,100" size="5,18" pixmap="infobar/Mediaplayerbar_purple.png" alphatest="blend" />
+		<widget source="session.CurrentService" render="PositionGauge" position="89,93" size="563,25" zPosition="2" pointer="infobar/Mediaplayerbar_purple.png:563,0" transparent="1">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="455,120" size="200,20" font="Regular;18" halign="right" valign="center" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1">
@@ -815,8 +815,8 @@
 		<widget name="year" position="854,575" size="150,22" font="Regular;20" valign="top" transparent="1" />
 		<widget name="genretext" position="774,600" size="74,22" font="Regular;20" valign="top" transparent="1" />
 		<widget name="genre" position="854,600" size="150,22" font="Regular;20" valign="top" transparent="1" />
-		<ePixmap pixmap="icons/Mediaplayerbar_gray.png" zPosition="2" position="650,635" size="563,18" alphatest="blend" />
-		<widget name="PositionGauge" position="650,633" size="963,18" pointer="icons/Mediaplayerbar_purple.png:563,0" seek_pointer="icons/Mediaplayerbar_purple.png:563,0" zPosition="3" transparent="1" />
+		<ePixmap pixmap="infobar/Mediaplayerbar_gray.png" zPosition="2" position="650,635" size="563,18" alphatest="blend" />
+		<widget name="PositionGauge" position="650,633" size="963,18" pointer="infobar/Mediaplayerbar_purple.png:563,0" seek_pointer="infobar/Mediaplayerbar_purple.png:563,0" zPosition="3" transparent="1" />
 		<widget name="repeat" position="1190,620" size="23,20" pixmaps="icons/ico_noreplay.png,icons/ico_replay.png" transparent="1" alphatest="blend" />
 		<widget source="session.CurrentService" render="Label" position="650,654" size="120,18" foregroundColor="#009f40ca" font="Italic;18" halign="left" valign="center" transparent="1">
 			<convert type="ServicePosition">Position</convert>
@@ -2734,8 +2734,8 @@ self.autoResize()
 		<widget source="session.CurrentService" render="Label" position="80,115" size="100,24" font="Italic;18" halign="left" valign="center" foregroundColor="infobar_service_frgrnd" backgroundColor="infobar_sunken" transparent="1">
 			<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
-		<ePixmap position="80,90" size="563,18" pixmap="icons/Mediaplayerbar_gray.png" alphatest="blend" />
-		<widget source="session.CurrentService" render="PositionGauge" position="80,83" size="563,25" zPosition="2" pointer="icons/Mediaplayerbar_purple.png:563,0" transparent="1">
+		<ePixmap position="80,90" size="563,18" pixmap="infobar/Mediaplayerbar_gray.png" alphatest="blend" />
+		<widget source="session.CurrentService" render="PositionGauge" position="80,83" size="563,25" zPosition="2" pointer="infobar/Mediaplayerbar_purple.png:563,0" transparent="1">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="540,115" size="95,20" font="Regular;18" halign="right" valign="center" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1">
