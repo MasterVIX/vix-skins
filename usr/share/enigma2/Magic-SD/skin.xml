@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-SD-ViX Vs 2.20 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
+	<!--	Skin: Magic-SD-ViX Vs 2.21 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -1440,7 +1440,7 @@ self.autoResize()
 		<panel name="Green1Panel"/>
 		<panel name="Yellow1Panel"/>
 		<panel name="Blue1Panel"/>
-		<widget name="waitingtext" position="0,45" size="560,395" zPosition="4" font="Regular;22" halign="center" valign="center"/>
+		<widget name="waitingtext" position="5,45" size="550,415" zPosition="4" font="Regular;22" halign="center" valign="center"/>
 		<widget name="chosenletter" position="0,45" size="560,395" foregroundColor="yellow" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4"/>
 		<widget name="list" position="10,40" size="540,375" zPosition="2" scrollbarMode="showOnDemand"/>
 		<widget name="DescriptionBorder" pixmap="Magic-SD/window/border_eventinfo.png" position="0,316" zPosition="1" size="560,103" transparent="1" alphatest="on"/>
@@ -1462,14 +1462,14 @@ self.autoResize()
 		</widget>-->
 		<widget name="movie_sort" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png" position="10,430" zPosition="10" size="35,20" transparent="1" alphatest="on"/>
 		<widget name="movie_off" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png" position="50,430" zPosition="10" size="35,20" transparent="1" alphatest="on"/>
-		<widget name="freeDiskSpace" position="10,425" size="540,20" font="Regular;19" valign="center" halign="right"/>
+		<widget name="freeDiskSpace" position="10,430" size="540,20" font="Regular;19" valign="center" halign="right"/>
 	</screen>
 	<screen name="MovieSelectionSlim" position="center,center" size="560,460" title="Select a movie">
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
 		<panel name="Yellow1Panel"/>
 		<panel name="Blue1Panel"/>
-		<widget name="waitingtext" position="0,45" size="560,395" zPosition="4" font="Regular;22" halign="center" valign="center"/>
+		<widget name="waitingtext" position="5,45" size="550,415" zPosition="4" font="Regular;22" halign="center" valign="center"/>
 		<widget name="chosenletter" position="0,45" size="560,395" foregroundColor="yellow" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4"/>
 		<widget name="list" position="10,40" size="540,375" zPosition="2" scrollbarMode="showOnDemand"/>
 		<widget name="DescriptionBorder" pixmap="Magic-SD/window/border_eventinfo.png" position="0,316" zPosition="1" size="560,103" transparent="1" alphatest="on"/>
@@ -1486,6 +1486,11 @@ self.autoResize()
 		<widget name="movie_sort" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png" position="10,430" zPosition="10" size="35,20" transparent="1" alphatest="on"/>
 		<widget name="movie_off" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png" position="50,430" zPosition="10" size="35,20" transparent="1" alphatest="on"/>
 		<widget name="freeDiskSpace" position="10,425" size="540,20" font="Regular;19" valign="center" halign="right"/>
+	</screen>
+	<screen name="MovieListTags" position="center,center" size="560,460" title="">
+		<panel name="BasicTemplate"/>
+		<widget name="list" position="10,45" size="540,300" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1"/>
+		<widget name="text" position="10,360" size="540,60" zPosition="1" font="Enigma;20" halign="center" valign="center" transparent="0" foregroundColor="secondFG"/>
 	</screen>
 	<screen name="NameserverSetup" position="center,center" size="560,460" title="Nameserver setup" >
 		<panel name="BasicTemplate"/>
