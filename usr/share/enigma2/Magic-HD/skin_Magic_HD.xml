@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.06 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.07 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -440,6 +440,12 @@
 	</screen>
 	<screen name="MovieSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate2"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<panel name="MenuBPanel" />
+		<panel name="InfoBPanel" />
 		<ePixmap pixmap="dvr/scale2.png" position="5,110" size="477,12" zPosition="1" alphatest="on" />
 		<eLabel backgroundColor="infobarBG" position="5,111" size="477,14" zPosition="0" />
 		<widget source="session.CurrentService" render="PositionGauge" position="5,110" size="477,12" transparent="1" zPosition="5" pointer="Magic-HD/dvr/position_pointer2.png:477,0">
@@ -462,12 +468,6 @@
 		<widget source="session.CurrentService" render="Label" position="365,90" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right">
 			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<panel name="Yellow1Panel" />
-		<panel name="Blue1Panel" />
-		<panel name="MenuBPanel" />
-		<panel name="InfoBPanel" />
 		<widget name="movie_sort" position="905,50" size="35,20" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png" zPosition="10" transparent="1" alphatest="on"/>
 		<widget name="movie_off" position="960,50" size="35,20" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png" zPosition="10" transparent="1" alphatest="on"/>
 		<widget name="waitingtext" position="520,82" size="755,548" font="Regular;25" halign="center" valign="center" foregroundColor="grey" zPosition="4" />
