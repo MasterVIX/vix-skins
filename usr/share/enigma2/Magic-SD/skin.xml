@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-SD-ViX Vs 2.22 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
+	<!--	Skin: Magic-SD-ViX Vs 2.24 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -187,7 +187,7 @@
 	<screen name="PlayerTemplate" position="60,40" size="600,500" backgroundColor="transparent" flags="wfNoBorder" title="MoviePlayer">
 		<eLabel backgroundColor="infobarBG" position="6,44" size="588,14" zPosition="0"/>
 		<ePixmap alphatest="on" pixmap="dvr/scale.png" position="8,45" size="584,12" zPosition="1"/>
-		<widget pointer="skin_default/position_pointer.png:572,0" position="8,45" render="PositionGauge" size="584,12" source="session.CurrentService" transparent="1" zPosition="4">
+		<widget pointer="Magic-SD/dvr/position_pointer.png:572,0" position="8,45" render="PositionGauge" size="584,12" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;22" foregroundColor="foreground" halign="center" noWrap="1" position="88,3" render="Label" size="424,36" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
@@ -1262,14 +1262,14 @@ self.autoResize()
 		<widget name="key_yellow" position="280,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1"/>
 		<widget name="key_blue" position="420,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#18188b" transparent="1"/>
 		<panel name="InfoBPanel"/>
-		<widget name="epg_description" position="10,50" size="540,330" font="Regular;22"/>
+		<widget name="FullDescription" position="10,50" size="540,330" font="Regular;22"/>
 		<widget name="datetime" position="10,395" size="130,25" font="Regular;22"/>
 		<widget name="duration" position="140,395" size="100,25" font="Regular;22"/>
 		<widget name="channel" position="240,395" size="305,25" font="Regular;22" halign="right"/>
 	</screen>
 	<screen name="EventViewSimple" position="center,center" size="560,460" title="Event view">
 		<panel name="BasicTemplate2"/>
-		<widget name="epg_description" position="10,5" size="540,375" font="Regular;22"/>
+		<widget name="FullDescription" position="10,5" size="540,375" font="Regular;22"/>
 		<widget name="datetime" position="10,395" size="130,25" font="Regular;22"/>
 		<widget name="duration" position="140,395" size="100,25" font="Regular;22"/>
 		<widget name="channel" position="240,395" size="305,25" font="Regular;22" halign="right"/>
@@ -1278,7 +1278,7 @@ self.autoResize()
 		<widget name="datetime" position="10,10" size="150,25" font="Regular;22"/>
 		<widget name="duration" position="165,10" size="100,25" font="Regular;22"/>
 		<widget name="channel" position="275,10" size="380,25" font="Regular;22" halign="right"/>
-		<widget name="epg_description" position="10,45" size="640,200" font="Regular;22"/>
+		<widget name="FullDescription" position="10,45" size="640,200" font="Regular;22"/>
 	</screen>
 	<screen name="GraphMultiEPG" position="center,center" size="560,460" flags="wfNoBorder" title="Electronic Program Guide">
 		<ePixmap pixmap="buttons/red.png" position="0,0" size="140,40" alphatest="on"/>
@@ -1913,7 +1913,7 @@ self.autoResize()
 	</screen>
 	<screen name="Seekbar" position="center,center" size="560,60" backgroundColor="transBlack" flags="wfNoBorder">
 		<widget name="cursor" position="0,15" size="8,18" pixmap="Magic-SD/dvr/position_arrow.png" alphatest="on"/>
-		<widget source="session.CurrentService" render="PositionGauge" position="145,30" size="270,10" zPosition="2" pointer="skin_default/position_pointer.png:540,0" transparent="1" foregroundColor="#20224f">
+		<widget source="session.CurrentService" render="PositionGauge" position="145,30" size="270,10" zPosition="2" pointer="Magic-SD/dvr/position_pointer.png:540,0" transparent="1" foregroundColor="#20224f">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<widget name="time" position="50,25" size="100,20" font="Regular;25" halign="left" backgroundColor="#4e5a74" transparent="1"/>
