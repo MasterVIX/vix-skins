@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.08 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.09 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -559,7 +559,7 @@
 		<panel name="BasicTemplate"/>
 		<panel name="Red2Panel" />
 		<panel name="Green2Panel" />
-		<widget name="HelpWindow" pixmap="vkey_icon.png" position="520,500" size="1,1" zPosition="1" transparent="1" alphatest="on" />
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="520,500" size="1,1" zPosition="1" transparent="1" alphatest="on" />
 		<widget name="config" position="520,80" size="755,588" itemHeight="28" foregroundColor="grey" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" enableWrapAround="1" />
 		<widget name="description" position="5,370" size="510,250" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
 		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="1160,682" zPosition="1" size="35,25" transparent="1" alphatest="on" >
@@ -982,7 +982,7 @@
 	</screen>
 	<screen name="VirtualKeyBoard" position="3,0" size="1280,720" zPosition="99" flags="wfNoBorder" title="Virtual KeyBoard" >
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="vkey_text.png" position="650,275" size="542,52" zPosition="-4" alphatest="on" />
+		<ePixmap pixmap="buttons/vkey_text.png" position="650,275" size="542,52" zPosition="-4" alphatest="on" />
 		<widget name="header" position="652,239" size="500,26" transparent="1" noWrap="1" font="Regular;20" />
 		<widget name="text" position="652,274" size="536,34" transparent="1" noWrap="1" font="Regular;24" valign="center" halign="right" />
 		<widget name="list" position="647,380" size="540,225" selectionDisabled="1" transparent="1" />
@@ -1168,7 +1168,7 @@
 		<widget name="config" position="520,80" size="755,400" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="canceltext" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 		<widget name="oktext" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<widget name="HelpWindow" pixmap="vkey_icon.png" position="520,500" size="1,1" transparent="1" zPosition="1" alphatest="on" />
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="520,500" size="1,1" transparent="1" zPosition="1" alphatest="on" />
 		<widget name="description" position="5,370" size="510,250" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
 	</screen>
 	<screen name="TimerEdit" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1548,8 +1548,8 @@
 		<widget source="Adaptertext" render="Label" position="520,630" size="270,25" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;24" halign="right" />
 		<widget source="Adapter" render="Label" position="800,630" size="400,25" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;24" halign="left" />
 		<widget source="introduction2" render="Label" position="5,600" size="477,24" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
-		<widget name="VKeyIcon" pixmap="vkey_icon.png" position="60,410" size="35,25" transparent="1" zPosition="10" alphatest="on" />
-		<widget name="HelpWindow" pixmap="vkey_icon.png" position="50,410" size="1,1" transparent="1" zPosition="1" alphatest="on" />
+		<widget name="VKeyIcon" pixmap="buttons/vkey_icon.png" position="60,410" size="35,25" transparent="1" zPosition="10" alphatest="on" />
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="50,410" size="1,1" transparent="1" zPosition="1" alphatest="on" />
 	</screen>
 	<screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1627,7 +1627,7 @@
 	<screen name="UserDialog" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
 		<panel name="Red2Panel" />
-		<widget name="HelpWindow" pixmap="vkey_icon.png" position="15,400" size="1,1" transparent="1" zPosition="1" alphatest="on" />
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="15,400" size="1,1" transparent="1" zPosition="1" alphatest="on" />
 		<widget name="VKeyIcon" pixmap="buttons/key_text.png" position="1160,682" zPosition="1" size="35,25" transparent="1" alphatest="on" />
 		<widget name="config" position="490,80" size="785,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<widget source="introduction" render="Label" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
@@ -1709,7 +1709,7 @@
 		<widget name="config" position="520,82" size="755,275" zPosition="3" transparent="1" scrollbarMode="showOnDemand" font="Regular;22" selectionPixmap="Magic-HD/buttons/sel.png" foregroundColor="grey" itemHeight="28" enableWrapAround="1"/>
 		<widget name="HelpWindow" position="590,390" size="1,1" zPosition="1" transparent="1" alphatest="on" />
 		<widget source="introduction" render="Label" position="620,682" size="655,27" zPosition="1" transparent="1" font="Regular;22" halign="center" foregroundColor="grey"/>
-		<widget name="VKeyIcon" pixmap="vkey_icon.png" position="1160,682" size="35,25" zPosition="10" transparent="1" alphatest="on" />
+		<widget name="VKeyIcon" pixmap="buttons/vkey_icon.png" position="1160,682" size="35,25" zPosition="10" transparent="1" alphatest="on" />
 	</screen>
 	<screen name="UserManager" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
@@ -1816,7 +1816,7 @@
 	<screen name="NetworkInadynSetup" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel" />
-		<widget name="HelpWindow" pixmap="vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 		<panel name="TextBPanel" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" position="520,82" size="755,435" transparent="1" />
 	</screen>
@@ -1911,7 +1911,7 @@
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel" />
 		<panel name="Green1Panel" />
-		<widget name="HelpWindow" pixmap="vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 		<panel name="TextBPanel" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
 	</screen>
@@ -1975,7 +1975,7 @@
 		<panel name="Red1Panel" />
 		<panel name="Green1Panel" />
 		<panel name="TextBPanel" />
-		<widget name="HelpWindow" pixmap="vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
 	</screen>
 	<screen name="NetworkuShareLog" position="0,0" size="1280,720" flags="wfNoBorder" >
@@ -2878,7 +2878,7 @@
 		<widget name="config" position="490,80" size="785,550" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="description" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
 		<widget name="footnote" position="750,657" size="350,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="grey" />
-		<widget name="HelpWindow" pixmap="vkey_icon.png" position="520,500" size="1,1" transparent="1" zPosition="1" alphatest="on" />
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="520,500" size="1,1" transparent="1" zPosition="1" alphatest="on" />
 	</screen>
 	<screen name="TranscodingSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="Transcoding Setup">
 		<panel name="BasicTemplate"/>
@@ -3203,7 +3203,7 @@
 		<panel name="Yellow1Panel" />
 		<panel name="Blue1Panel" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey" itemHeight="28" enableWrapAround="1" />
-		<widget name="HelpWindow" pixmap="vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 		<panel name="TextBPanel" />
 	</screen>
 	<screen flags="wfNoBorder" name="VIXBackupManagerLogView" position="0,0" size="1280,720" >

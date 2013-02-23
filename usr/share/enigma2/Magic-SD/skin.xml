@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-SD-ViX Vs 2.24 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
+	<!--	Skin: Magic-SD-ViX Vs 2.25 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -656,7 +656,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" position="3,45" size="554,300" source="menu" scrollbarMode="showOnDemand" transparent="1" font="Enigma;16" itemHeight="20" enableWrapAround="1" zPosition="1"/>
 		<widget name="description" position="3,360" size="554,65" zPosition="10" font="Enigma;16" halign="center" valign="center" transparent="0" foregroundColor="secondFG"/>
 		<widget name="footnote" position="215,435" size="260,19" zPosition="20" font="Regular;18" transparent="1"/>
-		<widget name="HelpWindow" pixmap="Magic-SD/icons/vkey_icon.png" position="170,300" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="170,300" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="450,435" size="35,25" zPosition="1" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -851,8 +851,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<panel name="Green2Panel"/>
 		<widget name="config" position="10,45" size="540,300" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="35" enableWrapAround="1" zPosition="1"/>
 		<widget source="introduction" render="Label" position="10,360" size="540,60" zPosition="1" font="Enigma;20" halign="center" valign="center" transparent="0" foregroundColor="secondFG"/>
-		<widget name="HelpWindow" pixmap="Magic-SD/icons/vkey_icon.png" position="170,300" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
-		<widget name="VKeyIcon" pixmap="Magic-SD/icons/vkey_icon.png" position="390,425" size="60,45" zPosition="1" transparent="1" alphatest="on" />
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="170,300" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
+		<widget name="VKeyIcon" pixmap="buttons/vkey_icon.png" position="390,425" size="60,45" zPosition="1" transparent="1" alphatest="on" />
 	</screen>
 	<screen name="UserManager" position="center,center" size="560,460" title="">
 		<panel name="BasicTemplate2"/>
@@ -875,7 +875,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<panel name="BasicTemplate2"/>
 		<panel name="Red2Panel"/>
 		<widget name="HelpWindow" position="170,250" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
-		<widget name="VKeyIcon" pixmap="Magic-SD/icons/vkey_icon.png" position="390,425" size="60,45" zPosition="1" transparent="1" alphatest="on"/>
+		<widget name="VKeyIcon" pixmap="buttons/vkey_icon.png" position="390,425" size="60,45" zPosition="1" transparent="1" alphatest="on"/>
 		<widget name="config" position="10,45" size="540,300" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="35" enableWrapAround="1" zPosition="1"/>
 		<widget source="introduction" render="Label" position="10,360" size="540,60" zPosition="1" font="Enigma;20" halign="center" valign="center" transparent="0" foregroundColor="secondFG"/>
 	</screen>
@@ -958,7 +958,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="VKeyIcon" render="Pixmap" pixmap="Magic-SD/buttons/key_text.png" position="10,380" zPosition="10" size="35,25" transparent="1" alphatest="on" >
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget name="HelpWindow" pixmap="Magic-SD/icons/vkey_icon.png" position="160,315" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="160,315" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 	</screen>
 	<screen name="AdapterSetupConfiguration" position="center,center" size="560,460" title="Network configuration..." >
 		<panel name="BasicTemplate2"/>
@@ -1340,7 +1340,7 @@ self.autoResize()
 		<widget name="config" position="3,55" scrollbarMode="showOnDemand" size="540,300" source="menu" transparent="10" itemHeight="20" enableWrapAround="1" zPosition="1"/>
 		<widget name="description" position="3,360" size="554,60" zPosition="1" font="Enigma;16" halign="center" valign="center" transparent="0" foregroundColor="secondFG"/>
 		<widget name="footnote" position="215,435" size="260,19" zPosition="2" font="Regular;18" transparent="1"/>
-		<widget name="HelpWindow" pixmap="Magic-SD/icons/vkey_icon.png" position="170,300" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="170,300" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
 	</screen>
 		<screen name="VideoEnhancementPreview" position="center,center" size="560,200" title="VideoEnhancementPreview">
 		<panel name="Red2Panel"/>
@@ -1790,7 +1790,7 @@ self.autoResize()
 		<widget name="oktext" position="140,0" zPosition="2" size="140,40" halign="center" valign="center" font="Regular;21" backgroundColor="#1f771f" transparent="1"/>
 		<widget name="config" position="10,45" size="540,300" scrollbarMode="showOnDemand" itemHeight="25" font="Enigma;22"/>
 		<widget name="description" position="10,360" size="540,50" font="Regular;18" halign="center" valign="center" foregroundColor="secondFG"/>
-		<widget name="HelpWindow" pixmap="Magic-SD/icons/vkey_icon.png" position="170,300" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="170,300" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
 	</screen>
 	<!-- Timer log -->
 	<screen name="TimerLog" position="center,center" size="560,460" title="Timer log">
@@ -1853,7 +1853,7 @@ self.autoResize()
 	<!-- VirtualKeyBoard -->
 	<screen name="VirtualKeyBoard" position="center,center" size="560,460" zPosition="99" title="Virtual keyboard">
 		<panel name="BasicTemplate2"/>
-		<ePixmap pixmap="Magic-SD/icons/vkey_text.png" position="9,45" zPosition="-4" size="542,52" alphatest="on"/>
+		<ePixmap pixmap="buttons/vkey_text.png" position="9,45" zPosition="-4" size="542,52" alphatest="on"/>
 		<widget source="country" render="Pixmap" position="490,0" size="60,40" alphatest="on" borderWidth="2" borderColor="yellow" >
 			<convert type="ValueToPixmap">LanguageCode</convert>
 		</widget>
@@ -2038,7 +2038,7 @@ self.autoResize()
 	<screen name="InadynSetup" position="center,center" size="560,460">
 		<panel name="BasicTemplate2"/>
 		<widget name="config" position="10,10" size="540,240" scrollbarMode="showOnDemand"/>
-		<widget name="HelpWindow" pixmap="Magic-SD/icons/vkey_icon.png" position="170,300" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="170,300" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
 		<panel name="Red1Panel"/>
 		<ePixmap pixmap="buttons/key_text.png" position="300,313" zPosition="4" size="35,25" alphatest="on" transparent="1"/>
 	</screen>
@@ -2097,7 +2097,7 @@ self.autoResize()
 	<screen name="uShareSetup" position="center,center" size="560,460">
 		<panel name="BasicTemplate2"/>
 		<widget name="config" position="10,10" size="420,240" scrollbarMode="showOnDemand"/>
-		<widget name="HelpWindow" pixmap="Magic-SD/icons/vkey_icon.png" position="440,390" size="440,350" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="440,390" size="440,350" transparent="1" alphatest="on"/>
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
 		<ePixmap pixmap="buttons/key_text.png" position="320,366" zPosition="4" size="35,25" alphatest="on" transparent="1"/>
@@ -2148,7 +2148,7 @@ self.autoResize()
 	<screen name="MiniDLNASetup" position="center,center" size="560,460">
 		<panel name="BasicTemplate"/>
 		<widget name="config" position="10,10" size="420,240" scrollbarMode="showOnDemand"/>
-		<widget name="HelpWindow" pixmap="Magic-SD/icons/vkey_icon.png" position="440,390" size="440,350" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="440,390" size="440,350" transparent="1" alphatest="on"/>
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
 		<ePixmap pixmap="buttons/key_text.png" position="320,366" zPosition="4" size="35,25" alphatest="on" transparent="1"/>
@@ -2320,7 +2320,7 @@ self.autoResize()
 		<widget source="Title" render="Label" position="3,48" size="490,26" font="Enigma;22" transparent="1" zPosition="1"/>
 		<widget name="config" position="3,80" scrollbarMode="showOnDemand" size="540,260" source="menu" transparent="10" itemHeight="20" enableWrapAround="1" zPosition="1"/>
 		<widget name="footnote" position="215,435" size="260,19" zPosition="20" font="Regular;18" transparent="1"/>
-		<widget name="HelpWindow" pixmap="Magic-SD/icons/vkey_icon.png" position="170,300" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="170,300" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
 	</screen>
 	<screen name="VIXImageManager" position="center,center" size="560,460">
 		<panel name="BasicTemplate2"/>
@@ -2827,7 +2827,7 @@ self.autoResize()
 		<panel name="Blue1Panel"/>
 		<panel name="MenuBPanel"/>
 		<panel name="InfoBPanel"/>
-		<widget name="VKeyIcon" pixmap="Magic-SD/icons/vkey_icon.png" position="620,495" zPosition="10" size="60,48" transparent="1" alphatest="on"/>
+		<widget name="VKeyIcon" pixmap="buttons/vkey_icon.png" position="620,495" zPosition="10" size="60,48" transparent="1" alphatest="on"/>
 		<widget name="thumbnail" position="0,0" size="100,75" alphatest="on"/>
 		<widget name="HelpWindow" position="160,255" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 	</screen>
@@ -2946,7 +2946,7 @@ self.autoResize()
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
 		<widget name="config" position="10,50" size="540,300" scrollbarMode="showOnDemand" transparent="1" itemHeight="30" font="Enigma;22" enableWrapAround="1" zPosition="1"/>
-		<widget name="HelpWindow" pixmap="Magic-SD/icons/vkey_icon.png" position="170,300" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="170,300" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
 	</screen>
 <!-- ## IMDB ##-->
 	<screen name="IMDB" position="center,center" size="560,460" title="nternet Movie Database Details Plugin">
@@ -2973,7 +2973,7 @@ self.autoResize()
 		<panel name="Green2Panel"/>
 		<widget name="config" position="10,45" size="540,310" scrollbarMode="showOnDemand" transparent="10" font="Enigma;22" itemHeight="30" enableWrapAround="1" zPosition="1"/>
 		<widget source="help" render="Label" position="10,360" size="540,60" zPosition="1" font="Enigma;20" halign="center" valign="center" transparent="0" foregroundColor="secondFG"/>
-		<widget name="HelpWindow" pixmap="Magic-SD/icons/vkey_icon.png" position="170,150" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="170,150" zPosition="1" size="440,350" transparent="1" alphatest="on"/>
 	</screen>-->
 <!-- ## RecordInfoNar ##-->
 	<screen name="RecInfoBar" title="Records Info" flags="wfNoBorder" position="50,50" size="300,20" backgroundColor="infobarBG" zPosition="5" >
