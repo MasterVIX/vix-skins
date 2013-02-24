@@ -235,3 +235,170 @@
 	<widget name="currentfavname" zPosition="5" transparent="1" halign="left" position="5,450" size="484,40" font="Regular;22" foregroundColor="yellow" />
 	<panel name="VixLogo"/>
   </screen>
+  <screen name="BPBrowser" title="Browser" position="0,0" size="1280,720" flags="wfNoBorder">
+	<panel name="BasicTemplate"/>
+	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
+	<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
+	<ePixmap pixmap="MHDC/buttons/yellow2.png" position="580,682" size="26,26" alphatest="on" />
+	<ePixmap pixmap="MHDC/buttons/blue2.png" position="840,682" size="26,26" alphatest="on" />
+	<widget name="key_red" position="50,682" size="220,26" backgroundColor="un9f1313" transparent="1" zPosition="2" font="Regular;18" />
+	<widget name="key_green" position="340,682" size="220,26" backgroundColor="un1f771f" transparent="1" zPosition="2" font="Regular;18" />
+	<widget name="key_yellow" position="614,682" size="220,26" backgroundColor="una08500" transparent="1" zPosition="2" font="Regular;18" />
+	<widget name="key_blue" position="875,682" size="220,26" backgroundColor="un18188b" transparent="1" zPosition="2" font="Regular;18" />
+	<widget source="menu" render="Listbox" position="590,137" size="600,460" scrollbarMode="showOnDemand">
+		<convert type="TemplatedMultiContent">
+					{"template": [	MultiContentEntryText(pos = (50,4),size = (900,30),flags = RT_HALIGN_LEFT,text = 0),
+							MultiContentEntryPixmapAlphaTest(pos = (12,5),size = (25,25),png = 1),MultiContentEntryPixmapAlphaTest(pos = (2,2),size = (10,10),png = 2)],
+							"fonts": [gFont("Regular",20)],
+							"itemHeight": 30 }
+		</convert>
+	</widget>
+	<widget name="label" position="590,96" size="600,40" font="Regular;18" />
+	<panel name="VixLogo"/>
+  </screen>
+  <screen name="IconList4Lines2Button" title=" " position="240,125" size="800,470">
+	<widget source="menu" render="Listbox" position="0,0" size="790,460" selectionDisabled="1" scrollbarMode="showOnDemand">
+		<convert type="TemplatedMultiContent">
+					{ "template": [	 MultiContentEntryText(pos = (80,5),size = (680,110),flags = RT_HALIGN_LEFT,text = 0,border_width=1),MultiContentEntryPixmapAlphaTest(pos = (5,15),size = (64,64),png = 1)],"fonts": [gFont("Regular",20)],"itemHeight": 115 }
+		</convert>
+	</widget>
+	<widget name="PixmapGreen" pixmap="MHDC/buttons/green-big.png" position="40,390" size="200,40" alphatest="on" />
+	<widget name="NameGreen" position="40,390" size="200,40" backgroundColor="un1f771f" transparent="1" zPosition="2" font="Regular;20" valign="center" halign="center" />
+	<widget name="PixmapBlue" pixmap="MHDC/buttons/blue-big.png" position="320,390" size="200,40" alphatest="on" />
+	<widget name="NameBlue" position="320,390" size="200,40" backgroundColor="un1f771f" transparent="1" zPosition="2" font="Regular;20" valign="center" halign="center" />
+  </screen>
+  <screen name="browser_favo" title="Favourites" position="0,0" size="1280,720" flags="wfNoBorder">
+	<panel name="BasicTemplate"/>
+	<widget source="menu" render="Listbox" position="520,118" size="755,553" scrollbarMode="showOnDemand">
+		<convert type="TemplatedMultiContent">
+					{ "template": [ MultiContentEntryPixmapAlphaTest(pos = (5,5),size = (64,64),png = 0),
+					MultiContentEntryText(pos = (80,5),size = (430,35),flags = RT_HALIGN_CENTER,text = 1,border_width=1),
+					MultiContentEntryText(pos = (80,40),size = (430,35),flags = RT_VALIGN_CENTER|RT_HALIGN_LEFT,text = 2,font=1)],"fonts": [gFont("Replacement",26),gFont("Regular",15)],"itemHeight": 70 }
+		</convert>
+	</widget>
+	<widget name="label" position="520,82" size="755,30" font="Regular;22" halign="center" />
+	<panel name="VixLogo"/>
+  </screen>
+  <screen name="IconList4Lines2Button" title=" " position="240,125" size="800,470">
+	<widget source="menu" render="Listbox" position="0,0" size="790,460" selectionDisabled="1" scrollbarMode="showOnDemand">
+		<convert type="TemplatedMultiContent">
+					{ "template": [	 MultiContentEntryText(pos = (80,5),size = (680,110),flags = RT_HALIGN_LEFT,text = 0,border_width=1),MultiContentEntryPixmapAlphaTest(pos = (5,15),size = (64,64),png = 1)],"fonts": [gFont("Regular",20)],"itemHeight": 115 }
+		</convert>
+	</widget>
+	<widget name="PixmapGreen" pixmap="MHDC/buttons/green-big.png" position="40,390" size="200,40" alphatest="on" />
+	<widget name="NameGreen" position="40,390" size="200,40" backgroundColor="un1f771f" transparent="1" zPosition="2" font="Regular;20" valign="center" halign="center" />
+	<widget name="PixmapBlue" pixmap="MHDC/buttons/blue-big.png" position="320,390" size="200,40" alphatest="on" />
+	<widget name="NameBlue" position="320,390" size="200,40" backgroundColor="un1f771f" transparent="1" zPosition="2" font="Regular;20" valign="center" halign="center" />
+  </screen>
+  <screen name="IconList2Label2Button" title=" " position="410,160" size="460,400">
+	<widget name="stat0" position="10,5" size="440,25" noWrap="1" font="Regular;20" />
+	<widget name="stat1" position="10,30" size="440,25" noWrap="1" font="Regular;20" />
+	<eLabel position="0,55" size="460,3" backgroundColor="darkgrey" />
+	<eLabel position="0,340" size="460,3" backgroundColor="darkgrey" />
+	<widget source="menu" render="Listbox" position="0,65" size="460,275" transparent="1" scrollbarMode="showOnDemand">
+		<convert type="TemplatedMultiContent">
+					{"template": [	MultiContentEntryText(pos = (50,4),size = (390,30),flags = RT_HALIGN_LEFT,text = 0),
+							MultiContentEntryPixmapAlphaTest(pos = (5,5),size = (40,30),png = 1)],
+							"fonts": [gFont("Regular",20)],
+							"itemHeight": 30 }
+		</convert>
+	</widget>
+	<widget name="PixmapGreen" pixmap="MHDC/buttons/key-green.png" position="30,355" size="140,40" alphatest="on" />
+	<widget name="NameGreen" position="30,355" size="140,40" backgroundColor="un1f771f" transparent="1" zPosition="2" font="Regular;20" valign="center" halign="center" />
+	<widget name="PixmapBlue" pixmap="MHDC/buttons/key-blue.png" position="290,355" size="140,40" alphatest="on" />
+	<widget name="NameBlue" position="290,355" size="140,40" backgroundColor="un1f771f" transparent="1" zPosition="2" font="Regular;20" valign="center" halign="center" />
+  </screen>
+  <screen name="List2Button" title=" " position="360,120" size="560,480">
+	<widget source="menu" render="Listbox" position="5,5" size="550,430" selectionDisabled="1" scrollbarMode="showOnDemand">
+		<convert type="StringList" />
+	</widget>
+	<widget name="PixmapYellow" pixmap="MHDC/buttons/yellow-big.png" position="50,440" size="200,40" alphatest="on" />
+	<widget name="NameYellow" position="50,440" size="200,40" backgroundColor="yellow" transparent="1" zPosition="2" font="Regular;20" valign="center" halign="center" />
+	<widget name="PixmapBlue" pixmap="MHDC/buttons/blue-big.png" position="310,440" size="200,40" alphatest="on" />
+	<widget name="NameBlue" position="310,440" size="200,40" backgroundColor="blue" transparent="1" zPosition="2" font="Regular;20" valign="center" halign="center" />
+  </screen>
+  <screen name="Config2Button" title=" " position="390,210" size="500,300">
+	<widget name="config" position="0,0" size="500,250" scrollbarMode="showOnDemand" />
+	<widget name="PixmapGreen" pixmap="MHDC/buttons/green-big.png" position="30,260" size="200,40" alphatest="on" />
+	<widget name="NameGreen" position="30,260" size="200,40" backgroundColor="green" transparent="1" zPosition="2" font="Regular;20" valign="center" halign="center" />
+	<widget name="PixmapBlue" pixmap="MHDC/buttons/blue-big.png" position="270,260" size="200,40" alphatest="on" />
+	<widget name="NameBlue" position="270,260" size="200,40" backgroundColor="blue" transparent="1" zPosition="2" font="Regular;20" valign="center" halign="center" />
+  </screen>
+  <screen name="Window3Line3Button" title="" position="295,200" size="590,320">
+	<widget source="menu" render="Listbox" position="0,2" size="590,240" scrollbarMode="showOnDemand">
+		<convert type="TemplatedMultiContent">
+					{"template": [	MultiContentEntryText(pos = (5,4),size = (553,70),flags = RT_HALIGN_LEFT,text = 0,border_width=1)],"fonts": [gFont("Regular",20)],"itemHeight": 80 }
+		</convert>
+	</widget>
+	<eLabel position="0,250" size="590,3" backgroundColor="darkgrey" />
+	<ePixmap pixmap="MHDC/buttons/red-big.png" position="0,270" size="200,40" alphatest="on" />
+	<widget name="key_red" position="0,270" size="200,40" backgroundColor="un9f1313" transparent="1" zPosition="2" font="Regular;20" valign="center" halign="center" />
+	<ePixmap pixmap="MHDC/buttons/yellow-big.png" position="195,270" size="200,40" alphatest="on" />
+	<widget name="key_yellow" position="195,270" size="200,40" backgroundColor="una08500" transparent="1" zPosition="2" font="Regular;20" valign="center" halign="center" />
+	<ePixmap pixmap="MHDC/buttons/blue-big.png" position="390,270" size="200,40" alphatest="on" />
+	<widget name="key_blue" position="390,270" size="200,40" backgroundColor="una08500" transparent="1" zPosition="2" font="Regular;20" valign="center" halign="center" />
+  </screen>
+  <screen name="Main_Menu" title="" position="0,0" size="1280,720" flags="wfNoBorder">
+	<panel name="BasicTemplate"/>
+	<widget source="menu" render="Listbox" position="520,90" size="755,575" scrollbarMode="showOnDemand">
+		<convert type="StringList" />
+	</widget>
+	<panel name="VixLogo"/>
+  </screen>
+	<!-- ## VLC Player ## -->
+  <screen flags="wfNoBorder" name="VlcServerConfigScreen" position="0,0" size="1280,720" title="Edit VLC Server">
+	<panel name="BasicTemplate"/>
+	<ePixmap pixmap="MHDC/buttons/red2.png" alphatest="on" position="15,682" size="26,26" />
+	<ePixmap pixmap="MHDC/buttons/green2.png" alphatest="on" position="305,682" size="26,26" />
+	<ePixmap pixmap="MHDC/buttons/yellow2.png" alphatest="on" position="580,682" size="26,26" />
+	<ePixmap pixmap="MHDC/buttons/blue2.png" alphatest="on" position="840,682" size="26,26" />
+	<widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular;20" valign="center" halign="left" />
+	<widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular;20" valign="center" halign="left" />
+	<widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular;20" valign="center" halign="left" />
+	<widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular;20" valign="center" halign="left" />
+	<widget name="config" position="590,110" size="670,520" itemHeight="28" scrollbarMode="showOnDemand" />
+	<panel name="VixLogo"/>
+  </screen>
+  <screen flags="wfNoBorder" name="VlcServerListScreen" position="0,0" size="1280,720" title="Select a VLC-Server Profile">
+	<panel name="BasicTemplate"/>
+	<ePixmap pixmap="MHDC/buttons/red2.png" alphatest="on" position="15,682" size="26,26" />
+	<ePixmap pixmap="MHDC/buttons/green2.png" alphatest="on" position="305,682" size="26,26" />
+	<ePixmap pixmap="MHDC/buttons/yellow2.png" alphatest="on" position="580,682" size="26,26" />
+	<ePixmap pixmap="MHDC/buttons/blue2.png" alphatest="on" position="840,682" size="26,26" />
+	<widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular;20" valign="center" halign="left" />
+	<widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular;20" valign="center" halign="left" />
+	<widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular;20" valign="center" halign="left" />
+	<widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular;20" valign="center" halign="left" />
+	<widget name="serverlabel" position="590,110" size="600,36" font="Regular;18" />
+	<widget name="serverlist" position="590,146" size="600,308" itemHeight="28" scrollbarMode="showOnDemand" />
+	<panel name="VixLogo"/>
+  </screen>
+  <screen flags="wfNoBorder" name="VlcMediaListScreen" position="0,0" size="1280,720" title="Select a VLC-Server Profile">
+	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
+	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
+	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
+	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
+	<widget source="global.CurrentTime" render="Label" position="1100,8" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
+		<convert type="ClockToText">Format:%-H:%M</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="950,28" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
+		<convert type="ClockToText">Date</convert>
+	</widget>
+	<ePixmap pixmap="MHDC/buttons/red2.png" alphatest="on" position="15,682" size="26,26" />
+	<ePixmap pixmap="MHDC/buttons/green2.png" alphatest="on" position="305,682" size="26,26" />
+	<ePixmap pixmap="MHDC/buttons/yellow2.png" alphatest="on" position="580,682" size="26,26" />
+	<ePixmap pixmap="MHDC/buttons/blue2.png" alphatest="on" position="840,682" size="26,26" />
+	<widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular;20" valign="center" halign="left" />
+	<widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular;20" valign="center" halign="left" />
+	<widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular;20" valign="center" halign="left" />
+	<widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="5" font="Regular;20" valign="center" halign="left" />
+	<widget name="filelist_button_sel" pixmap="MHDC/buttons/key-blue.png" position="70,110" size="140,40" zPosition="1" alphatest="on" />
+	<widget name="playlist_button_sel" pixmap="MHDC/buttons/key-blue.png" position="590,110" size="140,40" zPosition="1" alphatest="on" />
+	<widget name="filelist_text" position="70,110" size="140,40" backgroundColor="un254177" transparent="1" zPosition="2" foregroundColor="secondFG" font="Regular;18" valign="center" halign="center" />
+	<widget name="playlist_text" position="590,110" size="140,40" backgroundColor="un254177" transparent="1" zPosition="2" foregroundColor="secondFG" font="Regular;18" valign="center" halign="center" />
+	<widget name="filelist" position="70,150" size="520,460" itemHeight="28" scrollbarMode="showOnDemand" />
+	<widget name="playlist" position="590,150" size="600,460" itemHeight="28" scrollbarMode="showOnDemand" />
+	<panel name="VixLogo"/>
+  </screen>
+
+
