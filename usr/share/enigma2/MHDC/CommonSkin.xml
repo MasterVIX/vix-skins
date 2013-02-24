@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.13 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.14 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -4721,11 +4721,11 @@
 	<!-- ## Seekbar ##-->
   <screen name="Seekbar" position="center,center" size="560,60" title="Seekbar" backgroundColor="transparent" flags="wfNoBorder">
 	<widget name="cursor" position="0,0" size="8,18" pixmap="position_arrow.png" alphatest="on" />
-	<widget source="session.CurrentService" render="PositionGauge" position="150,30" size="270,10" zPosition="2" pointer="position_pointer.png:540,0" transparent="1" foregroundColor="un20224f">
+	<widget source="session.CurrentService" render="PositionGauge" position="150,30" size="270,10" zPosition="2" pointer="MHDC/dvr/position_pointer.png:540,0" transparent="1" foregroundColor="un20224f">
 		<convert type="ServicePosition">Gauge</convert>
 	</widget>
-	<widget name="time" position="40,15" size="100,35" font="Regular;30" halign="right" backgroundColor="un4e5a74" transparent="1" borderColor="black" borderWidth="3" />
-	<widget source="session.CurrentService" render="Label" position="430,15" size="90,35" font="Regular;30" halign="left" backgroundColor="un4e5a74" transparent="1" borderColor="black" borderWidth="3">
+	<widget name="time" position="40,15" size="100,35" font="Regular;24" halign="right" backgroundColor="un4e5a74" transparent="1" borderColor="black" borderWidth="1" />
+	<widget source="session.CurrentService" render="Label" position="430,15" size="90,35" font="Regular;24" halign="left" backgroundColor="un4e5a74" transparent="1" borderColor="black" borderWidth="1">
 		<convert type="ServicePosition">Length</convert>
 	</widget>
   </screen>
