@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.19 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.20 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -3964,11 +3964,21 @@
 	<panel name="GreenTemplate 2"/>
 	<panel name="YellowTemplate 2"/>
 	<panel name="BlueTemplate 2"/>
-	<widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;22" position="520,85" size="740,578" transparent="1" />
+	<widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;22" position="520,85" size="760,578" transparent="1" />
 	<panel name="VixLogo"/>
   </screen>
-  <screen flags="wfNoBorder" name="ForecaPreview" position="0,0" size="1280,720" title="Forecast">
-	<panel name="BasicTemplate"/>
+  <screen flags="wfNoBorder" name="ForecaPreview" position="0,0" size="1280,720" title="Forecast">  <!-- Don't use basic-template-title needs zpostion=3 -->
+	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
+	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
+	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
+	<widget source="Titel" render="Label" position="15,15" zPosition="3" size="968,55" font="Regular;24" valign="center" halign="center" transparent="1" foregroundColor="unffffff" />
+	<widget source="global.CurrentTime" render="Label" position="1100,8" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
+		<convert type="ClockToText">Format:%-H:%M</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="950,28" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
+		<convert type="ClockToText">Date</convert>
+	</widget>
+	<widget source="session.VideoPicture" backgroundColor="transparent" position="10,85" render="Pig" size="477,270" zPosition="1" />
 	<panel name="RGYB_Template 2"/>
 	<ePixmap pixmap="buttons/key_menu.png" alphatest="blend" position="80,450" size="35,25" />
 	<ePixmap pixmap="buttons/key_info.png" alphatest="blend" position="80,500" size="35,25" />
@@ -3976,7 +3986,7 @@
 	<widget source="key_ok" render="Label" position="140,400" size="220,26" backgroundColor="background" zPosition="1" transparent="1" font="Regular;22" halign="left" />
 	<widget source="key_menu" render="Label" position="140,450" size="220,26" backgroundColor="background" zPosition="1" transparent="1" font="Regular;22" halign="left" />
 	<widget source="key_info" render="Label" position="140,500" size="220,26" backgroundColor="background" zPosition="1" transparent="1" font="Regular;22" halign="left" />
-	<widget source="Titel2" render="Label" position="570,15" zPosition="2" size="250,55" font="Regular;24" valign="center" halign="left" transparent="1" foregroundColor="green" />
+	<widget source="Titel2" render="Label" position="15,15" zPosition="2" size="968,55" font="Regular;24" valign="center" halign="center" transparent="1" foregroundColor="green" />
 	<widget name="MainList" scrollbarMode="showOnDemand" font="Regular;20" position="520,100" size="760,545" transparent="1" />
 	<panel name="VixLogo"/>
   </screen>
