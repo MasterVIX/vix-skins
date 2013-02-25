@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.17 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.18 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -1313,8 +1313,13 @@
 	<widget name="list" position="647,380" size="540,225" selectionDisabled="1" transparent="1" />
 	<panel name="VixLogo"/>
   </screen>
-  <screen name="Dish" title="Dish" backgroundColor="transparent" flags="wfNoBorder" position="50,50" size="130,160" zPosition="100">
-	<widget name="Dishpixmap" pixmap="icons/dish.png" alphatest="off" position="0,0" size="130,160" />
+  <screen name="Dish" flags="wfNoBorder" position="86,100" size="130,220" title="Dish" zPosition="10" backgroundColor="transparent" >
+	<widget name="Dishpixmap" position="0,20" size="130,160" zPosition="1" pixmap="icons/dish.png" transparent="1" alphatest="on" />
+	<widget name="turnTime" position="5,0" size="120,20" zPosition="1" font="Regular;18" halign="right" foregroundColor="white"  borderWidth="1" borderColor="black" transparent="1" />
+	<widget name="From" position="5,184" size="45,16" zPosition="1" font="Regular;16" halign="left" foregroundColor="white"  borderWidth="1" borderColor="black" transparent="1" text="From:" />
+	<widget name="posFrom" position="55,180" size="70,20" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" borderWidth="1" borderColor="black" transparent="1" />
+	<widget name="Goto" position="5,204" size="45,16" zPosition="1" font="Regular;16" halign="left" foregroundColor="white" borderWidth="1" borderColor="black" transparent="1" text="Goto:" />
+	<widget name="posGoto" position="55,200" size="70,20" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" borderWidth="1" borderColor="black" transparent="1" />
   </screen>
   <screen name="UnhandledKey" title="UnhandledKey" position="1000,20" size="34,45" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
 	<widget name="UnhandledKeyPixmap" pixmap="icons/unhandled-key-night.png" position="0,0" size="34,45" alphatest="on" />
