@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.20 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.21 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -22,6 +22,19 @@
 	<widget source="session.CurrentService" render="Label" position="10,85" size="477,20" zPosition="4" borderWidth="1" borderColor="black" foregroundColor="white" backgroundColor="transparent" transparent="1" font="Regular;18" noWrap="1" valign="center" halign="center">
 		<convert type="ServiceName">Name</convert>
 	</widget>
+  </screen>
+  
+  <screen name="BasicTemplateNoVp">
+	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
+	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
+	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
+	<widget source="global.CurrentTime" render="Label" position="1100,8" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
+		<convert type="ClockToText">Format:%-H:%M</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="950,28" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
+		<convert type="ClockToText">Date</convert>
+	</widget>	
+	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
   </screen>
 
   <screen name="VixLogo">
@@ -1671,40 +1684,6 @@
 	<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1" />
 	<panel name="VixLogo"/>
   </screen>
-	<!-- AFileBrowser -->
-  <screen name="FilebrowserScreen" title="Filebrowser" position="0,0" size="1280,720" flags="wfNoBorder">
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
-	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
-	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-	<widget source="session.VideoPicture" render="Pig" position="0,0" size="5,5" backgroundColor="transparent" zPosition="1" />
-	<widget source="global.CurrentTime" render="Label" position="1100,8" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
-		<convert type="ClockToText">Format:%-H:%M</convert>
-	</widget>
-	<widget source="global.CurrentTime" render="Label" position="950,28" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
-		<convert type="ClockToText">Date</convert>
-	</widget>
-	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/yellow2.png" position="580,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/blue2.png" position="840,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25" />
-	<widget name="red" position="50,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;24" halign="left" />
-	<widget name="green" position="340,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;24" halign="left" />
-	<widget name="yellow" position="614,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;24" halign="left" />
-	<widget name="blue" position="875,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;24" halign="left" />
-	<widget name="list_left" position="15,90" size="555,570" backgroundColor="darkgrey" transparent="1" font="Regular;26" scrollbarMode="showOnDemand" />
-	<widget name="list_right" position="570,90" size="620,570" backgroundColor="darkgrey" transparent="1" font="Regular;26" scrollbarMode="showOnDemand" />
-  </screen>
-  <screen name="FilebrowserConfigScreen" title="FilebrowserConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder">
-	<panel name="BasicTemplate"/>
-	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
-	<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
-	<widget name="buttonred" position="50,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;24" halign="left" />
-	<widget name="buttongreen" position="340,682" size="220,26" backgroundColor="background" transparent="1" font="Regular;24" halign="left" />
-	<widget name="config" position="520,82" size="755,583" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" />
-	<panel name="VixLogo"/>
-  </screen>
   <screen name="FileBrowser" title="DVD File Browser" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
 	<panel name="RedTemplate 2"/>
@@ -2570,17 +2549,7 @@
 	<widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
   </screen>
   <screen name="LanguageWizard" title="Language Wizard" position="0,0" size="1280,720" flags="wfNoBorder">
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
-	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
-	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-	<widget source="global.CurrentTime" render="Label" position="1100,8" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
-		<convert type="ClockToText">Format:%-H:%M</convert>
-	</widget>
-	<widget source="global.CurrentTime" render="Label" position="950,28" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
-		<convert type="ClockToText">Date</convert>
-	</widget>
-	<widget source="session.VideoPicture" render="Pig" position="70,112" size="432,243" backgroundColor="transparent" zPosition="1" />
+	<panel name="BasicTemplateNoVp"/>
 	<widget source="languages" render="Listbox" position="520,82" size="400,583" scrollbarMode="showOnDemand">
 		<convert type="TemplatedMultiContent">
 				{"template": [
@@ -2598,7 +2567,6 @@
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
 	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
-	<widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
 	<panel name="VixLogo"/>
   </screen>
   <screen name="HelpMenu" title="Help" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2630,7 +2598,7 @@
 	<panel name="VixLogo"/>
   </screen>
   <screen name="ImageWizard" title="Welcome" position="0,0" size="1280,720" flags="wfNoBorder">
-	<panel name="BasicTemplate"/>
+	<panel name="BasicTemplateNoVp"/>
 	<widget name="text" position="727,102" size="340,330" font="Regular;22" />
 	<widget source="list" render="Listbox" position="576,441" size="490,180" scrollbarMode="showOnDemand">
 		<convert type="StringList" />
@@ -2644,40 +2612,20 @@
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
 	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
-	<widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
 	<panel name="VixLogo"/>
   </screen>
   <screen name="TutorialWizard" title="Welcome" position="0,0" size="1280,720" flags="wfNoBorder">
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
-	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
-	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-	<widget source="global.CurrentTime" render="Label" position="1100,8" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
-		<convert type="ClockToText">Format:%-H:%M</convert>
-	</widget>
-	<widget source="global.CurrentTime" render="Label" position="950,28" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
-		<convert type="ClockToText">Date</convert>
-	</widget>	 
+ 	<panel name="BasicTemplateNoVp"/>
 	<widget name="rc" position="130,105" size="154,500" zPosition="10" pixmaps="rc.png,rcold.png" alphatest="on" />
 	<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
 	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
 	<widget name="text" position="740,120" size="480,240" backgroundColor="background" transparent="1" font="Regular;23" />
 	<widget name="list" position="550,380" size="660,150" zPosition="1" />
-	<widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
 	<panel name="VixLogo"/>
   </screen>
   <screen name="StartWizard" title="Welcome" position="0,0" size="1280,720" flags="wfNoBorder">
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
-	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
-	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-	<widget source="global.CurrentTime" render="Label" position="1100,8" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
-		<convert type="ClockToText">Format:%-H:%M</convert>
-	</widget>
-	<widget source="global.CurrentTime" render="Label" position="950,28" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
-		<convert type="ClockToText">Date</convert>
-	</widget>	 
+	<panel name="BasicTemplateNoVp"/>
 	<widget name="rc" position="170,105" size="154,500" zPosition="10" pixmaps="rc.png,rcold.png" alphatest="on" />
 	<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
@@ -2691,22 +2639,11 @@
 		<convert type="StringList" />
 	</widget>
 	<widget name="config" position="590,360" size="600,200" zPosition="2" transparent="1" scrollbarMode="showOnDemand" />
-	<widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
 	<panel name="VixLogo"/>
   </screen>
 	<!-- ##NETCaster## -->
   <screen name="NETcasterScreenBrowser" title="Netcaster" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
-	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
-	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-	<widget source="global.CurrentTime" render="Label" position="1100,8" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
-		<convert type="ClockToText">Format:%-H:%M</convert>
-	</widget>
-	<widget source="global.CurrentTime" render="Label" position="950,28" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
-		<convert type="ClockToText">Date</convert>
-	</widget>
-	<widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
+	<panel name="BasicTemplateNoVp"/>
 	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on" />
 	<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
 	<ePixmap pixmap="MHDC/buttons/yellow2.png" position="580,682" size="26,26" alphatest="on" />
@@ -2720,17 +2657,7 @@
 	<panel name="VixLogo"/>
   </screen>
   <screen name="NETcasterScreenHelp" title="NETcaster Help" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
-	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
-	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-	<widget source="global.CurrentTime" render="Label" position="1100,8" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
-		<convert type="ClockToText">Format:%-H:%M</convert>
-	</widget>
-	<widget source="global.CurrentTime" render="Label" position="950,28" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
-		<convert type="ClockToText">Date</convert>
-	</widget>
-	<widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
+	<panel name="BasicTemplateNoVp"/>
 	<widget name="help" position="590,110" size="670,520" backgroundColor="darkgrey" transparent="1" font="Regular;22" />
 	<panel name="VixLogo"/>
   </screen>
@@ -2749,18 +2676,9 @@
   </screen>
 	<!-- ##SHOUTcast## -->
   <screen name="SHOUTcastWidget" title="Shoutcast" position="0,0" size="1280,720" transparent="0" backgroundColor="background" flags="wfNoBorder">
+	<panel name="BasicTemplateNoVp"/>
 	<panel name="RGYB_Template 2"/>
 	<panel name="MenuTemplate"/>
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
-	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
-	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-	<widget source="global.CurrentTime" render="Label" position="1100,8" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
-		<convert type="ClockToText">Format:%-H:%M</convert>
-	</widget>
-	<widget source="global.CurrentTime" render="Label" position="950,28" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
-		<convert type="ClockToText">Date</convert>
-	</widget>	 
 	<widget name="headertext" position="320,16" size="400,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" />
 	<widget name="statustext" position="15,595" size="650,75" backgroundColor="background" zPosition="1" transparent="0" font="Regular;17" valign="center" halign="center" />
 	<widget name="list" position="15,82" size="650,510" backgroundColor="background" zPosition="2" transparent="0" scrollbarMode="showOnDemand" />
@@ -2770,89 +2688,44 @@
 	<widget name="console" position="1104,181" size="160,480" backgroundColor="background" transparent="1" font="Regular;20" />
   </screen>
   <screen name="SHOUTcastSetup" title="SHOUTcast Setup" position="0,0" size="1280,720" transparent="0" backgroundColor="background" flags="wfNoBorder">
+	<panel name="BasicTemplateNoVp"/>
  	<panel name="RG_Template 2"/>
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
-	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
-	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-	<widget source="global.CurrentTime" render="Label" position="1100,8" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
-		<convert type="ClockToText">Format:%-H:%M</convert>
-	</widget>
-	<widget source="global.CurrentTime" render="Label" position="950,28" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
-		<convert type="ClockToText">Date</convert>
-	</widget>	 
 	<widget name="config" position="520,90" size="755,575" transparent="1" scrollbarMode="showOnDemand" />
 	<panel name="VixLogo"/>
   </screen>
   <screen name="SHOUTcastStreamripperRecordingPath" title="Select record path for streamripper" position="0,0" size="1280,720" transparent="0" backgroundColor="background" flags="wfNoBorder">
+	<panel name="BasicTemplateNoVp"/>
 	<panel name="RG_Template 2"/>
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
-	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
-	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-	<widget source="global.CurrentTime" render="Label" position="1100,8" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
-		<convert type="ClockToText">Format:%-H:%M</convert>
-	</widget>
-	<widget source="global.CurrentTime" render="Label" position="950,28" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
-		<convert type="ClockToText">Date</convert>
-	</widget>	 
 	<widget name="target" position="590,115" size="600,28" backgroundColor="background" transparent="1" font="Regular;24" />
 	<widget name="filelist" position="590,165" size="600,450" itemHeight="30" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
 	<panel name="VixLogo"/>
   </screen>
-	<!-- ##Merlin## -->
+	<!-- ##Merlin## -->  
   <screen name="iDreamAddToDatabase" title="Add music files to iDream database" position="0,0" size="1280,720" flags="wfNoBorder">
+	<panel name="BasicTemplateNoVp"/>
  	<panel name="RG_Template 2"/>
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
-	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
-	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-	<widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
-		<convert type="ClockToText">Full</convert>
-	</widget>
-	<widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
 	<widget source="Title" render="Label" position="590,110" size="600,43" backgroundColor="background" transparent="1" font="Regular;25" />
 	<widget name="output" position="590,160" size="600,450" backgroundColor="background" transparent="1" font="Regular;22" />
 	<panel name="VixLogo"/>
   </screen>
   <screen name="iDreamMerlin" title="iDream" position="0,0" size="1280,720" flags="wfNoBorder">
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
-	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
-	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-	<widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
-		<convert type="ClockToText">Full</convert>
-	</widget>
-	<widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
+	<panel name="BasicTemplateNoVp"/>
 	<panel name="RGYB_Template 2"/>
-	<ePixmap pixmap="buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25" />
+	<panel name="InfoTemplate"/>
 	<widget source="Title" render="Label" position="590,110" size="600,43" backgroundColor="background" transparent="1" font="Regular;25" />
 	<widget name="headertext" position="590,155" size="600,28" backgroundColor="background" transparent="1" font="Regular;23" />
 	<widget name="list" position="590,185" size="600,400" itemHeight="30" backgroundColor="background" zPosition="3" transparent="1" scrollbarMode="showOnDemand" />
 	<panel name="VixLogo"/>
   </screen>
   <screen name="MerlinMusicPlayerFileList" title="Merlin Music Player" position="0,0" size="1280,720" flags="wfNoBorder">
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
-	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
-	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-	<widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
-		<convert type="ClockToText">Full</convert>
-	</widget>
-	<widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
+	<panel name="BasicTemplateNoVp"/>
 	<widget source="Title" render="Label" position="590,110" size="600,43" backgroundColor="background" transparent="1" font="Regular;25" />
 	<widget name="headertext" position="590,155" size="600,28" backgroundColor="background" transparent="1" font="Regular;23" />
 	<widget name="list" position="590,185" size="600,400" itemHeight="30" backgroundColor="background" zPosition="3" transparent="1" scrollbarMode="showOnDemand" />
 	<panel name="VixLogo"/>
   </screen>
   <screen name="MerlinMusicPlayerLyrics" title="Merlin Music Player" position="0,0" size="1280,720" flags="wfNoBorder">
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
-	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
-	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-	<widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
-		<convert type="ClockToText">Full</convert>
-	</widget>
+	<panel name="BasicTemplateNoVp"/>
 	<widget source="Title" render="Label" position="590,110" size="800,43" backgroundColor="background" transparent="1" font="Regular;25" />
 	<widget name="headertext" position="590,155" size="600,28" backgroundColor="background" zPosition="1" transparent="1" foregroundColor="yellow" font="Regular;24" />
 	<widget name="resulttext" position="590,185" size="600,25" backgroundColor="background" zPosition="1" transparent="1" font="Regular;20" />
@@ -2860,15 +2733,8 @@
 	<panel name="VixLogo"/>
   </screen>
   <screen name="MerlinMusicPlayerScreen" title="Merlin Music Player" position="0,0" size="1280,720" flags="wfNoBorder">
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
-	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
-	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-	<widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
-		<convert type="ClockToText">Full</convert>
-	</widget>
-	<widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
-	<widget source="Title" render="Label" position="70,47" size="800,43" backgroundColor="background" transparent="1" font="Regular;25" />
+	<panel name="BasicTemplateNoVp"/>
+	<panel name="InfoTemplate"/>
 	<widget name="coverArt" pixmap="MHDC/dvr/no_coverArt.png" position="80,120" size="250,250" transparent="1" alphatest="blend" />
 	<widget name="title" position=" 80,390" size="545,32" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;25" />
 	<widget source="session.CurrentService" render="Label" position="625,390" size="120,32" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;26" halign="right">
@@ -2887,11 +2753,10 @@
 	<widget source="session.CurrentService" render="Label" position="645,600" size="100,22" backgroundColor="background" transparent="1" font="Regular;20" halign="right">
 		<convert type="ServicePosition">Remaining</convert>
 	</widget>
-	<ePixmap pixmap="buttons/key_menu.png" alphatest="on" position="950,635" size="35,25" />
 	<eLabel position=" 80,638" size="60,25" backgroundColor="background" transparent="1" text="next" foregroundColor="yellow" font="Regular;18" />
 	<widget name="nextTitle" position="150,638" size="680,26" backgroundColor="background" transparent="1" foregroundColor="grey" font="Regular;20" />
-	<ePixmap pixmap="MHDC/dvr/dvr.png" position="943,459" size="324,60" transparent="1" zPosition="1" alphatest="on" />
-	<widget name="dvrStatus" position="853,440" size="324,60" transparent="1" pixmaps="MHDC/dvr/dvr_pl.png,MHDC/dvr/dvr_pau.png" alphatest="on" />
+	<ePixmap pixmap="MHDC/dvr/dvr.png" position="858,445" size="150,20" transparent="1" zPosition="1" alphatest="on" />
+	<widget name="dvrStatus" position="853,440" size="160,39" transparent="1" pixmaps="MHDC/dvr/dvr_pl.png,MHDC/dvr/dvr_pau.png" alphatest="on" />
 	<widget name="shuffle" position="630,120" size="50,25" pixmaps="MHDC/dvr/placeholder1.png,MHDC/dvr/shuffle.png" alphatest="on" />
 	<widget name="repeat" position="700,120" size="50,25" pixmaps="MHDC/dvr/placeholder1.png,MHDC/dvr/repeat.png" alphatest="on" />
 	<widget name="PositionGauge" position="0,0" size="0,0" />
@@ -2902,36 +2767,15 @@
 	<widget name="display" position="200,315" size="1280,24" zPosition="1" transparent="1" foregroundColor="secondFG" font="Regular;20" />
   </screen>
   <screen name="MerlinMusicPlayerSetup" title="Merlin Music Player Setup" position="0,0" size="1280,720" flags="wfNoBorder">
+	<panel name="BasicTemplateNoVp"/>
  	<panel name="RG_Template 2"/>
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
-	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
-	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-	<widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
-		<convert type="ClockToText">Full</convert>
-	</widget>
-	<widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
 	<eLabel position="800,120" size="430,244" backgroundColor="white" zPosition="2" />
 	<ePixmap pixmap="MHDC/dvr/wallpaper.png" position="802,122" size="426,240" zPosition="3" />
-	<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" backgroundColor="background" transparent="1" font="Regular;26" halign="right">
-		<convert type="ClockToText">Default</convert>
-	</widget>
-	<widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" backgroundColor="background" transparent="1" font="Regular;20" halign="right">
-		<convert type="ClockToText">Date</convert>
-	</widget>
-	<widget source="Title" render="Label" position="70,47" size="800,43" backgroundColor="background" transparent="1" font="Regular;25" />
 	<widget name="config" position="70,120" size="700,450" itemHeight="30" transparent="1" scrollbarMode="showOnDemand" />
 	<panel name="VixLogo"/>
   </screen>
   <screen name="MerlinMusicPlayerSongList" title="Songlist" position="0,0" size="1280,720" flags="wfNoBorder">
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
-	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
-	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
-	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
-	<widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
-		<convert type="ClockToText">Full</convert>
-	</widget>
-	<widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
+	<panel name="BasicTemplateNoVp"/>
 	<eLabel position="800,120" size="430,244" backgroundColor="white" zPosition="2" />
 	<ePixmap pixmap="MHDC/dvr/wallpaper.png" position="802,122" size="426,240" zPosition="3" />
 	<widget source="global.CurrentTime" render="Label" position="1120,37" size="100,28" backgroundColor="background" transparent="1" font="Regular;26" halign="right">
@@ -2940,7 +2784,6 @@
 	<widget source="global.CurrentTime" render="Label" position="870,67" size="350,25" backgroundColor="background" transparent="1" font="Regular;20" halign="right">
 		<convert type="ClockToText">Date</convert>
 	</widget>
-	<widget source="Title" render="Label" position="70,47" size="800,43" backgroundColor="background" transparent="1" font="Regular;25" />
 	<widget name="headertext" position="70,115" size="700,28" backgroundColor="background" transparent="1" font="Regular;23" />
 	<eLabel position="70,155" size="700,2" backgroundColor="grey" />
 	<widget name="list" position="70,165" size="700,450" itemHeight="30" backgroundColor="background" zPosition="3" transparent="1" scrollbarMode="showOnDemand" />
@@ -2973,7 +2816,7 @@
 	<widget name="list" position="520,90" size="755,575" itemHeight="28" scrollbarMode="showOnDemand" />
 	<panel name="VixLogo"/>
   </screen>
-  <screen name="DreamExplorerII" title="Dream-Explorer" position="0,0" size="1280,720" flags="wfNoBorder">
+  <!--<screen name="DreamExplorerII" title="Dream-Explorer" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
 	<panel name="MenuTemplate"/>
 	<panel name="InfoTemplate"/>
@@ -2987,7 +2830,7 @@
 	<eLabel text="Move/Copy" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
 	<eLabel text="Bookmarks" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
 	<panel name="VixLogo"/>
-  </screen>
+  </screen>-->
   <screen name="vEditor" title="File-Explorer" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
 	<widget name="filedata" position="520,90" size="755,575" zPosition="4" />
