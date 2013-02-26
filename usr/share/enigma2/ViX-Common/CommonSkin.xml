@@ -847,19 +847,7 @@
 	</screen>
 	<screen name="SystemNetworkInfo" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="AboutScrollLabel" position="30,133" size="458,225" font="Regular;20" transparent="0" zPosition="1" />
-		<widget source="LabelBSSID" render="Label" position="30,360" size="200,25" valign="center" font="Regular;20" transparent="0" />
-		<widget source="LabelESSID" render="Label" position="30,400" size="200,25" valign="center" font="Regular;20" transparent="0" />
-		<widget source="LabelQuality" render="Label" position="30,440" size="200,25" valign="center" font="Regular;20" transparent="0" />
-		<widget source="LabelSignal" render="Label" position="30,480" size="200,25" valign="center" font="Regular;20" transparent="0" />
-		<widget source="LabelBitrate" render="Label" position="30,520" size="200,25" valign="center" font="Regular;20" transparent="0" />
-		<widget source="LabelEnc" render="Label" position="30,560" size="200,25" valign="center" font="Regular;20" transparent="0" />
-		<widget source="BSSID" render="Label" position="200,360" size="310,25" valign="center" font="Regular;20" transparent="0" />
-		<widget source="ESSID" render="Label" position="200,400" size="310,25" valign="center" font="Regular;20" transparent="0" />
-		<widget source="quality" render="Label" position="200,440" size="310,25" valign="center" font="Regular;20" transparent="0" />
-		<widget source="signal" render="Label" position="200,480" size="310,25" valign="center" font="Regular;20" transparent="0" />
-		<widget source="bitrate" render="Label" position="200,520" size="310,25" valign="center" font="Regular;20" transparent="0" />
-		<widget source="enc" render="Label" position="200,560" size="310,25" valign="center" font="Regular;20" transparent="0" />
+		<widget name="AboutScrollLabel" position="30,133" size="458,425" font="Regular;20" transparent="0" zPosition="1" />
 		<ePixmap pixmap="div-h.png" position="10,590" zPosition="1" size="507,2" />
 		<widget source="IFtext" render="Label" position="30,595" size="120,21" zPosition="10" font="Regular;20" halign="left" transparent="0" />
 		<widget source="IF" render="Label" position="130,595" size="380,21" zPosition="10" font="Regular;20" halign="left" transparent="0" />
@@ -2290,7 +2278,8 @@ self.autoResize()
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
 	<screen name="MessageBoxWizard" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="black" >
-		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
+		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="0" />
+		<panel name="FullscreenTitlePanel" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
 		</widget>
