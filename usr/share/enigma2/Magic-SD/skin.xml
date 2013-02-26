@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-SD-ViX Vs 2.26 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
+	<!--	Skin: Magic-SD-ViX Vs 2.27 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -736,37 +736,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="Statustext" render="Label" position="10,375" size="115,21" zPosition="10" font="Regular;20" halign="left" transparent="1"/>
 		<widget name="statuspic" pixmaps="buttons/button_greennw.png,buttons/button_greennw_off.png" position="120,380" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
 	</screen>
-	<screen name="TimeshiftState" position="center,40" zPosition="2" size="420,170" backgroundColor="transparent" flags="wfNoBorder">
-		<widget name="state" position="0,0" size="180,27" font="Regular;25" halign="center" borderWidth="2" borderColor="black" backgroundColor="transparent"/>
-<!--		<widget name="statusicon" position="12,5" size="20,21" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on"/>
-		<widget name="speed" position="35,7" size="80,21" font="Regular; 20" halign="left" backgroundColor="transparent" borderWidth="2" borderColor="black" transparent="1" zPosition="5"/>-->
-		<widget source="session.CurrentService" render="Label" position="95,5" size="200,27" font="Regular;25" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" >
-			<convert type="ServicePosition">Position</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="280,5" size="120,27" font="Regular;25" halign="right" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black">
-			<convert type="ServicePosition">Length</convert>
-		</widget>
-		<ePixmap position="15,33" size="390,15" zPosition="1" pixmap="Magic-SD/dvr/slider_back.png" alphatest="on"/>
-		<widget source="session.CurrentService" render="Progress" position="15,33" size="390,15" zPosition="2" pixmap="Magic-SD/dvr/slider.png" transparent="1">
-			<convert type="ServicePosition">Position</convert>
-		</widget>
-	</screen>
-	<screen name="PTSTimeshiftState" position="center,40" zPosition="2" size="420,70" backgroundColor="transparent" flags="wfNoBorder">
-		<widget name="state" position="10,3" size="180,27" font="Regular;25" halign="center" borderWidth="2" borderColor="black" backgroundColor="transparent"/>
-<!--		<widget name="statusicon" position="12,5" size="20,21" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on"/>
-		<widget name="speed" position="35,7" size="80,21" font="Regular; 20" halign="left" backgroundColor="transparent" borderWidth="2" borderColor="black" transparent="1" zPosition="5"/>-->
-		<widget source="session.CurrentService" render="Label" position="95,5" size="200,27" font="Regular;25" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" >
-			<convert type="ServicePosition">Position</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="280,5" size="120,27" font="Regular;25" halign="right" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black">
-			<convert type="ServicePosition">Length</convert>
-		</widget>
-		<widget name="PTSSeekPointer" position="0,30" zPosition="3" size="19,20" pixmap="dvr/position-pointer.png" alphatest="on"/>
-		<ePixmap position="15,33" size="390,15" zPosition="1" pixmap="Magic-SD/dvr/slider_back.png" alphatest="on"/>
-		<widget source="session.CurrentService" render="Progress" position="15,33" size="390,15" zPosition="2" pixmap="Magic-SD/dvr/slider.png" transparent="1">
-			<convert type="ServicePosition">Position</convert>
-		</widget>
-	</screen>
 	<screen name="PVRState" position="60,102" size="80,34" backgroundColor="transparent" flags="wfNoBorder" zPosition="2">
 		<widget font="Enigma;24" halign="left" name="state" position="0,0" size="80,34" backgroundColor="transparent" borderColor="black" borderWidth="2"/>
 	</screen>
@@ -1440,8 +1409,8 @@ self.autoResize()
 		<panel name="Green1Panel"/>
 		<panel name="Yellow1Panel"/>
 		<panel name="Blue1Panel"/>
-		<widget name="waitingtext" position="0,45" size="560,415" zPosition="4" font="Regular;22" halign="center" valign="center"/>
-		<widget name="chosenletter" position="0,45" size="560,395" foregroundColor="yellow" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4"/>
+		<widget name="waitingtext" position="0,40" size="560,415" zPosition="4" font="Regular;22" halign="center" valign="center"/>
+		<widget name="chosenletter" position="0,40" size="560,395" foregroundColor="yellow" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4"/>
 		<widget name="list" position="10,40" size="540,275" zPosition="2" scrollbarMode="showOnDemand"/>
 		<widget name="DescriptionBorder" pixmap="Magic-SD/window/border_eventinfo.png" position="0,316" zPosition="1" size="560,103" transparent="1" alphatest="on"/>
 		<widget source="Service" render="Label" position="495,318" zPosition="1" size="60,20" font="Regular;17" foregroundColor="secondFG" halign="right">
@@ -1463,9 +1432,9 @@ self.autoResize()
 		<panel name="Green1Panel"/>
 		<panel name="Yellow1Panel"/>
 		<panel name="Blue1Panel"/>
-		<widget name="waitingtext" position="2,45" size="556,415" zPosition="4" font="Regular;22" halign="center" valign="center"/>
-		<widget name="chosenletter" position="0,45" size="560,395" foregroundColor="yellow" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4"/>
-		<widget name="list" position="10,40" size="540,375" zPosition="2" scrollbarMode="showOnDemand"/>
+		<widget name="waitingtext" position="0,40" size="560,415" zPosition="4" font="Regular;22" halign="center" valign="center"/>
+		<widget name="chosenletter" position="0,40" size="560,395" foregroundColor="yellow" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4"/>
+		<widget name="list" position="10,40" size="540,275" zPosition="2" scrollbarMode="showOnDemand"/>
 		<widget name="DescriptionBorder" pixmap="Magic-SD/window/border_eventinfo.png" position="0,316" zPosition="1" size="560,103" transparent="1" alphatest="on"/>
 		<widget source="Service" render="Label" position="495,318" zPosition="1" size="60,20" font="Regular;17" foregroundColor="secondFG" halign="right">
 			<convert type="ServiceTime">Duration</convert>
