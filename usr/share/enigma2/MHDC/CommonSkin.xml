@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.22 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.23 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -715,7 +715,7 @@
 	<widget name="channel" position="15,400" size="460,50" transparent="1" foregroundColor="secondFG" font="Regular;21" halign="center" />
 	<widget name="datetime" position="15,458" size="460,30" transparent="1" font="Regular;21" halign="center" />
 	<widget name="duration" position="15,488" size="460,30" transparent="1" font="Regular;21" halign="center" />
-	<widget name="epg_description" position="520,90" size="755,570" transparent="1" font="Regular;21" foregroundColor="grey" />
+	<widget name="FullDescription" position="520,90" size="755,570" transparent="1" font="Regular;21" foregroundColor="grey" />
 	<widget source="session.Event_Now" render="Label" position="15,525" size="460,30" transparent="1" foregroundColor="blue" font="Regular;21" halign="center">
 		<convert type="EventName">Genre</convert>
 	</widget>
@@ -729,7 +729,7 @@
   <screen flags="wfNoBorder" name="EventViewSimple" position="0,0" size="1280,720" title="Programme Info">
 	<panel name="BasicTemplate"/>
 	<panel name="MenuTemplate"/>
-	<widget name="epg_description" font="Regular;21" position="520,90" size="755,570" foregroundColor="grey" transparent="1" />
+	<widget name="FullDescription" font="Regular;21" position="520,90" size="755,570" foregroundColor="grey" transparent="1" />
 	<widget name="channel" position="15,400" size="460,50" transparent="1" foregroundColor="secondFG" font="Regular;21" halign="center" />
 	<widget name="datetime" position="15,458" size="460,30" transparent="1" font="Regular;21" halign="center" />
 	<widget name="duration" position="15,488" size="460,30" transparent="1" font="Regular;21" halign="center" />
@@ -749,8 +749,8 @@
   </screen>
   <screen name="InfoBarEventView" position="0,0" size="1280,210" backgroundColor="transpBlue" flags="wfNoBorder" zPosition="1" >
 	<eLabel position="0,0" size="1280,50" zPosition="-1" backgroundColor="transpBG" />
-	<widget name="epg_description" font="Regular;21" position="10,65" size="1260,130" foregroundColor="white" backgroundColor="transpBlue" transparent="1" />
-	<widget name="channel" position="15,15" size="850,50" transparent="1" foregroundColor="secondFG" font="Regular;24" />
+	<widget name="FullDescription" font="Regular;21" position="10,50" size="1260,140" foregroundColor="white" backgroundColor="transpBlue" transparent="1" />
+	<widget source="Title" render="Label" position="15,15" size="850,50" transparent="1" foregroundColor="secondFG" font="Regular;24" />
 	<widget name="datetime" position="850,15" size="250,30" transparent="1" font="Regular;22" halign="left" />
 	<widget name="duration" position="1100,15" size="150,30" transparent="1" font="Regular;22" halign="left" />
   </screen>
@@ -1273,6 +1273,49 @@
 	<widget source="session.RecordState" render="Pixmap" pixmap="buttons/rec.png" position="1132,63" size="20,20" zPosition="3" alphatest="on">
 		<convert type="ConditionalShowHide">Blink</convert>
 	</widget>
+  </screen>
+  <screen name="PTSTimeshiftState" position="4,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
+	<!--<widget source="session.CurrentService" render="Label" position="240,0" size="780,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="1" font="Regular;24" borderColor="black" valign="center" halign="center">
+		<convert type="ServiceName">Name</convert>
+	</widget>-->
+	<eLabel backgroundColor="infobarBG" position="120,49" size="1040,14" zPosition="0" />
+	<widget name="state" position="35,70" size="150,30" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" zPosition="5" halign="center" />
+	<!--<widget name="speed" position="185,70" size="80,15" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" zPosition="5" halign="center" />-->
+	<ePixmap pixmap="MHDC/dvr/scale1024.png" position="128,54" size="1024,4" zPosition="1" />
+	<widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="MHDC/dvr/position_pointer1024.png:1012,0">
+	<convert type="ServicePosition">Gauge</convert>
+	</widget>
+	<widget source="session.CurrentService" render="Label" position="40,13" size="200,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;20" borderColor="black" valign="center" halign="left">
+		<convert type="ServicePosition">Position</convert>
+	</widget>
+	<widget source="session.CurrentService" render="Label" position="1025,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;20" borderColor="black" valign="center" halign="left">
+		<convert type="ServicePosition">Remaining</convert>
+	</widget>
+	<widget source="session.CurrentService" render="Label" position="1145,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;20" borderColor="black" valign="center" halign="left">
+		<convert type="ServicePosition">Length</convert>
+	</widget>
+	<widget source="session.CurrentService" render="Pixmap" pixmap="MHDC/infobar/ico_dolby_on.png" position="986,63" size="60,24" zPosition="2" alphatest="on">
+		<convert type="ServiceInfo">IsMultichannel</convert>
+		<convert type="ConditionalShowHide" />
+	</widget>
+	<widget source="session.CurrentService" render="Pixmap" pixmap="MHDC/infobar/ico_hd_on.png" position="1048,63" size="40,21" zPosition="4" alphatest="on">
+		<convert type="ServiceInfo">VideoWidth</convert>
+		<convert type="ValueRange">800,2000</convert>
+		<convert type="ConditionalShowHide" />
+	</widget>
+	<widget source="session.CurrentService" render="Pixmap" pixmap="MHDC/infobar/ico_format_on.png" position="1090,63" size="40,21" zPosition="2" alphatest="on">
+		<convert type="ServiceInfo">IsWidescreen</convert>
+		<convert type="ConditionalShowHide" />
+	</widget>
+	<widget source="session.RecordState" render="Pixmap" pixmap="buttons/rec.png" position="1132,63" size="20,20" zPosition="3" alphatest="on">
+		<convert type="ConditionalShowHide">Blink</convert>
+	</widget>
+	<widget name="PTSSeekBack" position="128,54" size="1024,4" zPosition="1" />
+	<widget name="PTSSeekPointer" position="0,40" zPosition="5" size="19,20" pixmap="position_pointer2.png" alphatest="blend" />
+	<widget source="session.CurrentService" render="Progress" position="128,54" size="1024,4" zPosition="2" transparent="1">
+		<convert type="ServicePosition">Position</convert>
+	</widget>
+	<widget name="eventname" position="240,0" size="780,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="1" font="Regular;22" borderColor="black" valign="center" halign="center" />
   </screen>
   <screen flags="wfNoBorder" name="TimeshiftLocationBox" position="0,0" size="1280,720" title="TimeshiftLocationBox">
 	<panel name="BasicTemplate"/>
