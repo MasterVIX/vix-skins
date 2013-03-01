@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.24 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.25 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -758,6 +758,7 @@
 	<!-- Audio selection -->
   <screen flags="wfNoBorder" name="AudioSelection" position="0,0" size="1280,720" title="Audio">
 	<panel name="BasicTemplate"/>
+	<panel name="MenuTemplate"/>
 	<widget name="config" position="620,85" size="525,150" scrollbarMode="showOnDemand" />
 	<widget source="key_red" render="Pixmap" pixmap="buttons/key_red.png" position="570,85" size="35,25" alphatest="on">
 		<convert type="ConditionalShowHide" />
@@ -771,7 +772,7 @@
 	<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" position="570,160" size="35,25" alphatest="on">
 		<convert type="ConditionalShowHide" />
 	</widget>
-	<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="700,400" size="465,200" zPosition="3" transparent="1">
+	<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="620,385" size="475,200" zPosition="3" transparent="1">
 		<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (25, [ 
