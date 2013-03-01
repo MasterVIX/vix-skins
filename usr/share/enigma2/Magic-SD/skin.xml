@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-SD-ViX Vs 2.27 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
+	<!--	Skin: Magic-SD-ViX Vs 2.29 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -184,20 +184,23 @@
 		<ePixmap pixmap="logos/vix.png" position="2,435" size="210,25" alphatest="on"/>
 	</screen>
 
-	<screen name="PlayerTemplate" position="60,40" size="600,500" backgroundColor="transparent" flags="wfNoBorder" title="MoviePlayer">
+	<screen name="PlayerTemplate" position="60,40" size="650,500" backgroundColor="transparent" flags="wfNoBorder" title="MoviePlayer">
 		<eLabel backgroundColor="infobarBG" position="6,44" size="588,14" zPosition="0"/>
 		<ePixmap alphatest="on" pixmap="dvr/scale.png" position="8,45" size="584,12" zPosition="1"/>
 		<widget pointer="dvr/position_pointer.png:572,0" position="8,45" render="PositionGauge" size="584,12" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;22" foregroundColor="foreground" halign="center" noWrap="1" position="88,3" render="Label" size="424,36" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
+		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;22" foregroundColor="foreground" halign="center" noWrap="1" position="88,3" render="Label" size="300,36" source="session.CurrentService" transparent="1" zPosition="2">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="left" noWrap="1" position="8,5" render="Label" size="80,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
-			<convert type="ServicePosition">Position,ShowHours</convert>
+			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="right" noWrap="1" position="512,5" render="Label" size="80,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
-			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="left" noWrap="1" position="480,5" render="Label" size="80,32" source="session.CurrentService" transparent="1" zPosition="2">
+			<convert type="ServicePosition">Remaining</convert>
+		</widget>
+		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="right" noWrap="1" position="570,5" render="Label" size="80,32" source="session.CurrentService" transparent="1" zPosition="2">
+			<convert type="ServicePosition">Length</convert>
 		</widget>
 		<widget name="statusicon" position="0,65" size="60,100" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on"/>
 		<widget name="speed" position="45,80" size="100,30" font="Regular; 27" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" transparent="1" zPosition="5"/>
@@ -508,7 +511,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<screen name="Mute" position="center,50" zPosition="10" size="45,45" flags="wfNoBorder" title="Mute">
 		<ePixmap pixmap="infobar/mute.png" position="0,0" size="45,45"/>
 	</screen>
-	<screen name="MoviePlayer" position="60,40" size="600,500" backgroundColor="transparent" flags="wfNoBorder" title="MoviePlayer">
+	<screen name="MoviePlayer" position="60,40" size="650,500" backgroundColor="transparent" flags="wfNoBorder" title="MoviePlayer">
 		<panel name="PlayerTemplate"/>
 	</screen>
 	<screen name="QuickEPG" position="0,355" size="720,220" flags="wfNoBorder" title="InfoBar">
@@ -671,10 +674,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="About" position="center,center" size="560,460" title="About" >
 		<panel name="BasicTemplate2"/>
-		<widget source="lab1" render="Label" position="10,0" size="490,25" font="Regular; 22" transparent="0" zPosition="2"/>
-		<widget source="lab2" render="Label" position="10,25" size="490,20" font="Regular; 18" transparent="0" zPosition="2"/>
-		<widget source="lab3" render="Label" position="10,45" size="490,20" font="Regular; 18" transparent="0" zPosition="1"/>
-		<widget name="AboutScrollLabel" font="Enigma;18" position="10,70" size="490,310" scrollbarMode="showOnDemand"/>
+		<widget source="lab1" render="Label" position="10,0" size="540,25" font="Regular; 20" transparent="0" zPosition="2" halign="center"/>
+		<widget source="lab2" render="Label" position="10,25" size="540,20" font="Regular; 16" transparent="0" zPosition="2" halign="center"/>
+		<widget source="lab3" render="Label" position="10,45" size="540,20" font="Regular; 16" transparent="0" zPosition="1" halign="center"/>
+		<widget name="AboutScrollLabel" font="Enigma;16" position="10,70" size="540,350"/>
 		<panel name="InfoBPanel"/>
 	</screen>
 		<screen name="Devices" position="center,center" size="560,460" title="Systeminfo" >
@@ -718,18 +721,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<screen name="SystemNetworkInfo" position="center,center" size="560,460" >
 		<panel name="BasicTemplate2"/>
 		<widget name="AboutScrollLabel" position="10,50" size="458,275" valign="left" font="Regular;20" transparent="1" foregroundColor="#FFFFFF"/>
-		<widget source="LabelBSSID" render="Label" position="10,130" size="200,25" valign="left" font="Regular;20" transparent="1" foregroundColor="#FFFFFF"/>
-		<widget source="LabelESSID" render="Label" position="10,160" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF"/>
-		<widget source="LabelQuality" render="Label" position="10,190" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF"/>
-		<widget source="LabelSignal" render="Label" position="10,220" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF"/>
-		<widget source="LabelBitrate" render="Label" position="10,250" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF"/>
-		<widget source="LabelEnc" render="Label" position="10,280" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF"/>
-		<widget source="BSSID" render="Label" position="161,130" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF"/>
-		<widget source="ESSID" render="Label" position="161,160" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF"/>
-		<widget source="quality" render="Label" position="161,190" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF"/>
-		<widget source="signal" render="Label" position="161,220" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF"/>
-		<widget source="bitrate" render="Label" position="161,250" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF"/>
-		<widget source="enc" render="Label" position="161,280" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF"/>
 		<ePixmap pixmap="Magic-SD/window/div-h.png" position="0,350" zPosition="1" size="560,2"/>
 		<widget source="IFtext" render="Label" position="10,355" size="120,21" zPosition="10" font="Regular;20" halign="left" transparent="1"/>
 		<widget source="IF" render="Label" position="120,355" size="400,21" zPosition="10" font="Regular;20" halign="left" transparent="1"/>
@@ -738,6 +729,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="PVRState" position="60,102" size="80,34" backgroundColor="transparent" flags="wfNoBorder" zPosition="2">
 		<widget font="Enigma;24" halign="left" name="state" position="0,0" size="80,34" backgroundColor="transparent" borderColor="black" borderWidth="2"/>
+	</screen>
+	<screen name="PTSTimeshiftState" position="center,40" zPosition="2" size="650,500" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="PlayerTemplate"/>
+	<widget name="PTSSeekBack" position="8,45" size="600,4" zPosition="1" />
+	<widget name="PTSSeekPointer" position="0,35" zPosition="5" size="19,20" pixmap="position_pointer2.png" alphatest="blend" />
+	</screen>
+	<screen name="TimeshiftState" position="center,40" zPosition="2" size="650,500" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="PlayerTemplate"/>
 	</screen>
 	<screen name="PluginBrowser" position="center,center" size="560,460" title="Plugin browser" >
 		<panel name="BasicTemplate2"/>
@@ -942,7 +941,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</screen>
 	<screen name="AudioSelection" position="center,center" size="560,460" title="Audio">
 		<panel name="BasicTemplate2"/>
-		<widget name="config" position="50,10" size="500,110" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="50,10" size="500,150" scrollbarMode="showOnDemand"/>
 		<widget source="key_red" render="Pixmap" pixmap="buttons/key_red.png" position="10,10" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -955,8 +954,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" position="10,85" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="Magic-SD/window/div-h.png" position="10,112" zPosition="10" size="560,2"/>
-		<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="10,120" size="465,200" zPosition="3" transparent="1" >
+		<ePixmap pixmap="Magic-SD/window/div-h.png" position="10,162" zPosition="10" size="560,2"/>
+		<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="10,175" size="465,200" zPosition="3" transparent="1" >
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (25, [ 
