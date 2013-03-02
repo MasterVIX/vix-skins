@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.23 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.25 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -758,7 +758,8 @@
 	<!-- Audio selection -->
   <screen flags="wfNoBorder" name="AudioSelection" position="0,0" size="1280,720" title="Audio">
 	<panel name="BasicTemplate"/>
-	<widget name="config" position="620,85" size="425,110" scrollbarMode="showOnDemand" />
+	<panel name="MenuTemplate"/>
+	<widget name="config" position="620,85" size="525,150" scrollbarMode="showOnDemand" />
 	<widget source="key_red" render="Pixmap" pixmap="buttons/key_red.png" position="570,85" size="35,25" alphatest="on">
 		<convert type="ConditionalShowHide" />
 	</widget>
@@ -771,7 +772,7 @@
 	<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" position="570,160" size="35,25" alphatest="on">
 		<convert type="ConditionalShowHide" />
 	</widget>
-	<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="700,400" size="465,200" zPosition="3" transparent="1">
+	<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="620,385" size="475,200" zPosition="3" transparent="1">
 		<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (25, [ 
@@ -1044,7 +1045,7 @@
 	<eLabel text="'Exit' = Leave message" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
 	<panel name="VixLogo"/>
   </screen>
-  <screen name="MessageBox" position="0,0" size="1280,720" flags="wfNoBorder">
+  <!--<screen name="MessageBox" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
 	<widget name="text" position="640,110" size="610,340" font="Regular;22" />
 	<widget name="ErrorPixmap" pixmap="MHDC/window/input_error.png" position="550,110" size="54,54" alphatest="on" />
@@ -1053,7 +1054,7 @@
 	<widget name="list" position="15,390" size="500,240" font="Regular;22" />
 	<panel name="VixLogo"/>
   </screen>
-  <!--<screen name="MessageBoxSimple" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="MessageBoxSimple" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
 	<widget name="text" position="640,110" size="610,340" font="Regular;22" />
 	<widget name="ErrorPixmap" pixmap="MHDC/window/input_error.png" position="550,110" size="54,54" alphatest="on" />
