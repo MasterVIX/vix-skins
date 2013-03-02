@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-SD-ViX Vs 2.29 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
+	<!--	Skin: Magic-SD-ViX Vs 2.30 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -2840,20 +2840,7 @@ self.autoResize()
 		<widget name="key_red" position="220,500" zPosition="5" size="140,40" valign="center" halign="center" font="Enigma;21" transparent="1" foregroundColor="white" borderColor="black" borderWidth="2"/>
 	</screen>
 	<screen name="MyTubePlayer" flags="wfNoBorder" backgroundColor="transparent" position="60,40" size="600,102" title="MoviePlayer">
-		<eLabel backgroundColor="infobarBG" position="6,44" size="588,14" zPosition="0"/>
-		<ePixmap alphatest="on" pixmap="dvr/scale.png" position="8,45" size="584,12" zPosition="1"/>
-		<widget pointer="dvr/position_pointer.png:572,0" position="8,45" render="PositionGauge" size="584,12" source="session.CurrentService" transparent="1" zPosition="4">
-			<convert type="ServicePosition">Gauge</convert>
-		</widget>
-		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;22" foregroundColor="foreground" halign="center" noWrap="1" position="88,3" render="Label" size="424,36" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="left" noWrap="1" position="8,5" render="Label" size="80,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
-			<convert type="ServicePosition">Position,ShowHours</convert>
-		</widget>
-		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="right" noWrap="1" position="512,5" render="Label" size="80,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
-			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
-		</widget>
+		<panel name="PlayerTemplate"/>
 	</screen>
 	<screen name="MyTubeSuggestionsListScreen" position="60,93" zPosition="6" size="610,160" flags="wfNoBorder" >
 		<widget source="suggestionslist" render="Listbox" position="10,5" zPosition="7" size="580,150" scrollbarMode="showOnDemand" transparent="0" backgroundColor="black" >
