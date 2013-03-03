@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.10	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.11	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -79,7 +79,7 @@
 		</widget>
 	</screen>
 	<screen name="MyTubePlayer" position="0,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="Player" />
+		<panel name="PlayerPanel" />
 	</screen>
 	<screen name="MyTubeSettingsScreen" flags="wfNoBorder" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
@@ -2903,6 +2903,12 @@ background
 		<widget name="recName" position="950,2" size="250,18"	zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="grey" backgroundColor="black" />
 	</screen>
 	<!-- ## OnDemand players ## -->
+	<screen name="OnDemand_About" position="0,0" size="1280,720" flags="wfNoBorder" title="OnDemand - About">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<widget name="about" position="490,80" size="785,588" font="Regular;22" transparent="1" foregroundColor="grey" />
+		<widget name="oealogo" position="5,379" size="477,264" zPosition="2" valign="center" halign="center" alphatest="blend" />
+	</screen>
 	<screen name="OnDemand_Screen" position="0,0" size="1280,720" flags="wfNoBorder" title="OnDemand">
 		<panel name="BasicTemplate"/>
 		<panel name="MenuBPanel" />
@@ -2949,6 +2955,11 @@ background
 	<screen name="threeMainMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="3Player - Main Menu">
 		<panel name="BasicTemplate"/>
 		<widget name="threeMainMenu" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="30" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<!-- ## 4OD-Player ## -->
+	<screen name="fourODMainMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="FourOD-Player - Main Menu">
+		<panel name="BasicTemplate"/>
+		<widget name="fourODMainMenu" position="520,85" size="755,570" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="30" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 	<!-- ## Uitzending Gemist ## -->
 	<screen name="OpenUg" position="0,0" size="1280,720" flags="wfNoBorder" >

@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-SD-ViX Vs 2.30 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
+	<!--	Skin: Magic-SD-ViX Vs 2.31 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -679,6 +679,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="lab3" render="Label" position="10,45" size="540,20" font="Regular; 16" transparent="0" zPosition="1" halign="center"/>
 		<widget name="AboutScrollLabel" font="Enigma;16" position="10,70" size="540,350"/>
 		<panel name="InfoBPanel"/>
+	</screen>
+	<screen name="TranslationInfo" position="center,center" size="560,460" title="Translation">
+		<panel name="BasicTemplate"/>
+		<widget source="TranslatorName" render="Label" position="10,45" size="540,65" transparent="1" font="Enigma;20" zPosition="1"/>
+		<widget source="TranslationInfo" render="Label" position="10,120" size="540,250" zPosition="1" font="Enigma;20" halign="center" valign="center" transparent="0" foregroundColor="secondFG"/>
 	</screen>
 		<screen name="Devices" position="center,center" size="560,460" title="Systeminfo" >
 		<panel name="BasicTemplate2"/>
@@ -1680,21 +1685,6 @@ self.autoResize()
 		<widget name="Preview" position="280,50" size="270,200" alphatest="on"/>
 		<widget source="introduction" render="Label" position="0,400" size="560,30" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="secondFG" transparent="1"/>
 	</screen>
-<!-- ##Still in use??## -->
-<!--	<screen name="SleepTimerEdit" position="center,center" size="560,460" title="Sleep Timer">
-		<ePixmap pixmap="sleeptimer.png" position="400,0" size="90,125" alphatest="on"/>
-		<ePixmap pixmap="buttons/red.png" position="0,0" size="140,40" zPosition="1" alphatest="on"/>
-		<widget name="key_red" render="Label" position="0,0" zPosition="2" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1"/>
-		<ePixmap pixmap="buttons/green.png" position="140,0" size="140,40" zPosition="1" alphatest="on"/>
-		<widget name="key_green" render="Label" position="140,0" zPosition="2" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1"/>
-		<widget name="current_status" position="10,60" size="400,80" valign="center" font="Regular;20"/>
-		<widget name="config" position="10,130" size="540,170"/>
-		<eLabel backgroundColor="darkgrey" position="0,430" size="560,2" zPosition="1"/>
-		<widget source="global.CurrentTime" render="Label" position="500,435" size="55,22" font="Enigma;18" halign="right" transparent="1" valign="center" zPosition="3">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<ePixmap pixmap="logos/vix.png" position="2,435" size="210,25" alphatest="on"/>
-	</screen>-->
 	<screen name="Standby" flags="wfNoBorder" position="fill" title="Standby"/>
 	<!-- it's the same screen... -->
 	<screen name="StartWizard" position="fill" title="Welcome..." flags="wfNoBorder">

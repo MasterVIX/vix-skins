@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.10 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.11 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -24,7 +24,7 @@
 		<widget name="UnhandledKeyPixmap" pixmap="icons/unhandled-key.png" position="0,0" size="98,88" alphatest="on" />
 	</screen>
 	<screen name="MoviePlayer" position="0,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="Player" />
+		<panel name="PlayerPanel" />
 	</screen>
 	<screen name="SecondInfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<widget source="session.CurrentService" render="Label" position="5,5" size="635,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;18" valign="top" halign="left">
@@ -229,7 +229,7 @@
 	</screen>
 <!-- ## DvD-Player ## -->
 	<screen name="DVDPlayer" position="0,30" size="1280,215" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="Player" />
+		<panel name="PlayerPanel" />
 		<widget name="chapterLabel" position="128,80" size="380,35" font="Regular;20" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3" />
 		<eLabel text="Audio:	" position="128,115" size="90,35" backgroundColor="secondBG" transparent="1" font="Regular;20" borderColor="black" borderWidth="2" valign="center" halign="left" />
 		<widget name="audioLabel" position="218,115" size="290,35" font="Regular;20" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3" />
@@ -578,6 +578,12 @@
 		<widget name="AboutScrollLabel" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey" />
 		<eLabel text="Skin Magic-HD	ViX-team skin by Rob van der Does" foregroundColor="grey" font="Regular;19" halign="center" position="5,590" size="500,55" transparent="1" zPosition="1" />
 	</screen>
+	<screen name="TranslationInfo" position="0,0" size="1280,720" flags="wfNoBorder" title="Translation">
+		<panel name="BasicTemplate"/>
+		<widget source="TranslatorName" render="Label" position="490,80" size="785,100" font="Regular;22" transparent="1" foregroundColor="grey" />
+		<widget source="TranslationInfo" render="Label" position="490,200" size="785,300" font="Regular;22" transparent="1" foregroundColor="grey" />
+		<widget name="text" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+	</screen>
 	<screen name="Devices" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget source="TunerHeader" render="Label" position="635,125" size="580,25" font="Regular;24" halign="center" transparent="0" zPosition="1" foregroundColor="secondFG" />
@@ -916,10 +922,10 @@
 		<widget name="number" position="200,-200" size="150,40" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="4" valign="center" halign="left" />
 	</screen>
 	<screen name="TimeshiftState" position="4,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="Player"/>
+		<panel name="PlayerPanel"/>
 	</screen>
 	<screen name="PTSTimeshiftState" position="4,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="Player"/>
+		<panel name="PlayerPanel"/>
 	<widget name="PTSSeekBack" position="128,54" size="1024,4" zPosition="1" />
 	<widget name="PTSSeekPointer" position="0,40" zPosition="5" size="19,20" pixmap="position_pointer2.png" alphatest="blend" />
 	</screen>
@@ -973,13 +979,6 @@
 		<widget source="session.CurrentService" render="Label" position="70,24" size="400,34" backgroundColor="transpBlack" font="Regular;22">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-	</screen>
-	<screen name="SleepTimerEdit" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-		<widget name="current_status" position="5,400" size="482,200" font="Regular;20" valign="center" />
 	</screen>
 	<!-- ## Service Selectors ## -->
 	<screen name="ChannelSelectionRadio" position="0,0" size="1280,502" flags="wfNoBorder" >
@@ -1926,7 +1925,7 @@
 		<widget source="message" render="Label" position="70,15" size="600,25" zPosition="3" font="Regular;22" halign="left" noWrap="1" transparent="1" foregroundColor="foreground" backgroundColor="secondBG"/>
 	</screen>
 	<screen	name="DLNAStreamPlayer"	position="4,30"	size="1280,100"	backgroundColor="transparent"	flags="wfNoBorder">
-		<panel name="Player" />
+		<panel name="PlayerPanel" />
 		<widget	name="sidebar"	position="362,20"	size="10,20"	font="Regular;18"	halign="center"	valign="center"	backgroundColor="#4e5a74"	transparent="1"	/>
 	</screen>
 	<screen name="SelectDirectoryWindow" position="0,0" size="1280,720" flags="wfNoBorder" >
