@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.11	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.12	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -2915,6 +2915,19 @@ background
 		<panel name="InfoBPanel" />
 		<widget name="PlayerList" render="Listbox" position="520,90" size="600,540" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="60" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
+	<screen name="StreamsThumb" position="0,0" size="1280,720" flags="wfNoBorder" title="" >
+		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75" />
+		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2" />
+		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Format:%-H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget name="list" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="150" position="5,79" size="1255,592" noWrap="1" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<ePixmap pixmap="Magic-HD/logos/vix.png" position="25,685" size="300,25" alphatest="on" />
+	</screen>
 	<screen name="OnDemandHelp" position="0,0" size="1280,720" flags="wfNoBorder" title="OnDemand Help">
 		<panel name="BasicTemplate"/>
 		<widget name="myLabel" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;24" itemHeight="35" transparent="1" foregroundColor="grey" enableWrapAround="1" />
@@ -2931,11 +2944,6 @@ background
 	<screen name="StreamsMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
 		<widget name="latestMenu" position="520,85" size="755,570" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="30" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen name="StreamsThumb" position="0,0" size="1280,720" flags="wfNoBorder" title="">
-		<panel name="BasicTemplate"/>
-		<widget name="list" position="490,90" size="785,520" scrollbarMode="showOnDemand" font="Regular;21" itemHeight="130" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-		<widget name="thumbnail" position="5,379" size="477,264" zPosition="2" font="Regular;21" itemHeight="130" foregroundColor="secondFG" valign="center" halign="center" />
 	</screen>
 	<!-- ##BBC iPlayer## -->
 	<screen name="BBCiMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="BBC iPlayer">
@@ -2962,7 +2970,7 @@ background
 		<widget name="fourODMainMenu" position="520,85" size="755,570" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="30" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 	<!-- ## Uitzending Gemist ## -->
-	<screen name="OpenUg" position="0,0" size="1280,720" flags="wfNoBorder" >
+	<screen name="OpenUg" position="0,0" size="1280,720" flags="wfNoBorder" title="" >
 		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75" />
 		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2" />
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
