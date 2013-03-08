@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-SD-ViX Vs 2.32 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
+	<!--	Skin: Magic-SD-ViX Vs 2.33 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -1413,13 +1413,11 @@ self.autoResize()
 		<panel name="Green1Panel"/>
 		<panel name="Yellow1Panel"/>
 		<panel name="Blue1Panel"/>
-		<widget name="waitingtext" position="0,40" size="560,415" zPosition="4" font="Regular;22" halign="center" valign="center"/>
-		<widget name="chosenletter" position="0,40" size="560,395" foregroundColor="yellow" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4"/>
-		<widget name="list" position="10,40" size="540,275" zPosition="2" scrollbarMode="showOnDemand"/>
-		<ePixmap pixmap="Magic-SD/window/border_eventinfo.png" position="0,317" zPosition="2" size="560,115" transparent="1" alphatest="on"/>
-		<widget source="Service" render="Label" position="0,340" zPosition="1" size="560,73" font="Regular;18" halign="center" valign="center">
-			<convert type="EventName">FullDescription</convert>
-		</widget>
+		<widget name="waitingtext" position="0,40" size="560,415" zPosition="5" font="Regular;22" halign="center" valign="center"/>
+		<widget name="chosenletter" position="0,40" size="560,395" foregroundColor="yellow" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="5"/>
+		<widget name="list" position="0,40" size="560,378" zPosition="3" scrollbarMode="showOnDemand"/>
+		<ePixmap pixmap="Magic-SD/window/border_eventinfo.png" position="0,316" zPosition="2" size="560,105" transparent="1" alphatest="on"/>
+		<widget name="DescriptionBorder" position="0,314" size="560,105" zPosition="1" />
 		<widget source="Service" render="Label" position="495,318" zPosition="1" size="60,20" font="Regular;17" foregroundColor="secondFG" halign="right">
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>
@@ -1439,13 +1437,11 @@ self.autoResize()
 		<panel name="Green1Panel"/>
 		<panel name="Yellow1Panel"/>
 		<panel name="Blue1Panel"/>
-		<widget name="waitingtext" position="0,40" size="560,415" zPosition="4" font="Regular;22" halign="center" valign="center"/>
-		<widget name="chosenletter" position="0,40" size="560,395" foregroundColor="yellow" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4"/>
-		<widget name="list" position="10,40" size="540,275" zPosition="2" scrollbarMode="showOnDemand"/>
-		<ePixmap pixmap="Magic-SD/window/border_eventinfo.png" position="0,317" zPosition="2" size="560,115" transparent="1" alphatest="on"/>
-		<widget source="Service" render="Label" position="0,340" zPosition="1" size="560,73" font="Regular;18" halign="center" valign="center">
-			<convert type="EventName">FullDescription</convert>
-		</widget>
+		<widget name="waitingtext" position="0,40" size="560,415" zPosition="5" font="Regular;22" halign="center" valign="center"/>
+		<widget name="chosenletter" position="0,40" size="560,395" foregroundColor="yellow" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="5"/>
+		<widget name="list" position="0,40" size="560,378" zPosition="3" scrollbarMode="showOnDemand"/>
+		<ePixmap pixmap="Magic-SD/window/border_eventinfo.png" position="0,316" zPosition="2" size="560,105" transparent="1" alphatest="on"/>
+		<widget name="DescriptionBorder" position="0,314" size="560,105" zPosition="1" />
 		<widget source="Service" render="Label" position="495,318" zPosition="1" size="60,20" font="Regular;17" foregroundColor="secondFG" halign="right">
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>
