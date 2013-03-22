@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.26 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.27 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -1196,7 +1196,7 @@
 	<widget name="config" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1" />
 	<panel name="VixLogo"/>
   </screen>
-  <screen name="ChoiceBox" title="Input" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="ChoiceBox" title="Input" position="0,0" size="1280,720" zPosition="10" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
 	<widget name="text" position="15,379" size="477,260" zPosition="2" font="Regular;24" foregroundColor="unf47d19" />
 	<widget name="list" position="520,82" size="755,577" font="Regular;26" scrollbarMode="showOnDemand" />
@@ -1517,7 +1517,8 @@
 	<panel name="MenuTemplate"/>
 	<panel name="InfoTemplate"/>
 	<widget name="date" position="750,85" size="250,24" transparent="1" font="Regular;20" valign="center" halign="center" />
-	<widget name="list" position="520,165" size="755,500" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" />
+	<widget name="bouquetlist" position="520,165" size="755,500" itemHeight="30" foregroundColor="white" backgroundColor="background" foregroundColorSelected="selectedFG" backgroundColorSelected="selectedBG" borderColor="background" scrollbarMode="showNever" zPosition="4" transparent="0" />
+	<widget name="list" position="520,165" size="755,500" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	<widget source="Event" render="Label" position="15,380" size="477,290" backgroundColor="background" transparent="1" foregroundColor="grey" font="Regular;19">
 		<convert type="EventName">ExtendedDescription</convert>
 	</widget>
@@ -5985,7 +5986,8 @@
 	</widget>-->
 	<widget name="timeline_text" position="5,60" size="1270,30" foregroundColor="#00e5b243" backgroundColor="background" transparent="1" />
 	<widget name="lab1" position="0,55" size="1280,505" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
-	<widget name="list" position="5,90" size="1270,475" scrollbarMode="showNever"  backgroundColor="black" transparent="1" /> 
+	<widget name="list" position="5,90" size="1270,475" scrollbarMode="showNever" backgroundColor="black" transparent="1" />
+	<widget name="bouquetlist" position="5,90" size="1270,475" foregroundColorSelected="white" scrollbarMode="showNever" zPosition="2" transparent="0" />
 	<widget name="timeline0" position="0,140" zPosition="1" size="0,0" pixmap="timeline.png" />
 	<widget name="timeline1" position="0,140" zPosition="1" size="0,0" pixmap="timeline.png" />
 	<widget name="timeline2" position="0,140" zPosition="1" size="0,0" pixmap="timeline.png" />
@@ -6043,6 +6045,7 @@
 	</widget>
 	<widget name="lab1" position="5,313" size="1275,365" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
 	<widget name="timeline_text" position="5,286" size="1275,30" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
+	<widget name="bouquetlist" position="5,313" size="1275,365" foregroundColorSelected="yellow" scrollbarMode="showNever" zPosition="4" transparent="0" />
 	<widget name="list" position="5,313" size="1275,365" scrollbarMode="showNever" backgroundColor="black" transparent="1" /> 
 	<widget name="timeline0" position="0,320" zPosition="1" size="0,0" pixmap="timeline.png" />
 	<widget name="timeline1" position="0,320" zPosition="1" size="0,0" pixmap="timeline.png" />
@@ -6062,6 +6065,7 @@
 	<widget source="Title" render="Label" position="20,10" size="850,43" font="Regular;24" transparent="1" backgroundColor="secondBG" zPosition="1" />
 	<widget name="lab1" position="0,50" size="1280,115" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
 	<widget name="timeline_text" position="0,50" size="1280,30" backgroundColor="black" foregroundColor="orange" transparent="1" zPosition="0" />
+	<widget name="bouquetlist" position="0,75" size="1280,85" backgroundColor="black" foregroundColorSelected="yellow" scrollbarMode="showNever" zPosition="4" transparent="0" />
 	<widget name="list" position="0,75" size="1280,85" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no"/>
 	<widget name="timeline_now" position="0,75" zPosition="3" size="19,85" pixmap="MHDC/window/timeline-now.png" alphatest="on" />
 	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,167" size="26,26" alphatest="blend" />
