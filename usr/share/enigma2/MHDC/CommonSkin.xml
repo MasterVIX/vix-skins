@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.27 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.28 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -5987,7 +5987,7 @@
 	<widget name="timeline_text" position="5,60" size="1270,30" foregroundColor="#00e5b243" backgroundColor="background" transparent="1" />
 	<widget name="lab1" position="0,55" size="1280,505" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
 	<widget name="list" position="5,90" size="1270,475" scrollbarMode="showNever" backgroundColor="black" transparent="1" />
-	<widget name="bouquetlist" position="5,90" size="1270,475" foregroundColorSelected="white" scrollbarMode="showNever" zPosition="2" transparent="0" />
+	<widget name="bouquetlist" position="5,90" size="1270,475" foregroundColorSelected="white" backgroundColor="background" scrollbarMode="showNever" zPosition="4" transparent="0" />
 	<widget name="timeline0" position="0,140" zPosition="1" size="0,0" pixmap="timeline.png" />
 	<widget name="timeline1" position="0,140" zPosition="1" size="0,0" pixmap="timeline.png" />
 	<widget name="timeline2" position="0,140" zPosition="1" size="0,0" pixmap="timeline.png" />
@@ -6026,9 +6026,6 @@
 	<widget source="session.CurrentService" render="Label" position="5,60" size="393,20" zPosition="4" borderWidth="1" borderColor="black" foregroundColor="white" backgroundColor="transparent" transparent="1" font="Regular;18" noWrap="1" valign="center" halign="center">
 		<convert type="ServiceName">Name</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="5,62" size="393,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="white" borderWidth="1" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
-		<convert type="ServiceName">Name</convert>
-	</widget>
 	<widget source="Event" render="Label" position="415,60" size="100,30" font="Regular;22" foregroundColor="#00e5b243" backgroundColor="#000000" shadowColor="#000000" halign="right" transparent="1">
 	 <convert type="EventTime">StartTime</convert>
 	 <convert type="ClockToText" />
@@ -6045,7 +6042,7 @@
 	</widget>
 	<widget name="lab1" position="5,313" size="1275,365" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
 	<widget name="timeline_text" position="5,286" size="1275,30" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
-	<widget name="bouquetlist" position="5,313" size="1275,365" foregroundColorSelected="yellow" scrollbarMode="showNever" zPosition="4" transparent="0" />
+	<widget name="bouquetlist" position="410,60" size="865,218" foregroundColorSelected="white" backgroundColor="background" scrollbarMode="showNever" zPosition="4" transparent="0" />
 	<widget name="list" position="5,313" size="1275,365" scrollbarMode="showNever" backgroundColor="black" transparent="1" /> 
 	<widget name="timeline0" position="0,320" zPosition="1" size="0,0" pixmap="timeline.png" />
 	<widget name="timeline1" position="0,320" zPosition="1" size="0,0" pixmap="timeline.png" />
