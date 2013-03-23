@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.29 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.30 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -5987,14 +5987,14 @@
 	<widget name="timeline_text" position="5,60" size="1270,30" foregroundColor="#00e5b243" backgroundColor="background" transparent="1" />
 	<widget name="lab1" position="0,55" size="1280,505" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
 	<widget name="list" position="5,90" size="1270,475" scrollbarMode="showNever" backgroundColor="black" transparent="1" />
-	<widget name="bouquetlist" position="5,90" size="1270,475" foregroundColor="white" backgroundColor="background" foregroundColorSelected="yellow" backgroundColorSelected="#001C252D" borderColor="background" scrollbarMode="showNever" zPosition="4" transparent="0" />
+	<widget name="bouquetlist" position="5,90" size="1270,477" itemHeight="28" foregroundColor="white" backgroundColor="background" foregroundColorSelected="yellow" backgroundColorSelected="#001C252D" borderColor="background" scrollbarMode="showNever" zPosition="4" transparent="0" />
 	<widget name="timeline0" position="0,140" zPosition="1" size="0,0" pixmap="timeline.png" />
 	<widget name="timeline1" position="0,140" zPosition="1" size="0,0" pixmap="timeline.png" />
 	<widget name="timeline2" position="0,140" zPosition="1" size="0,0" pixmap="timeline.png" />
 	<widget name="timeline3" position="0,140" zPosition="1" size="0,0" pixmap="timeline.png" />
 	<widget name="timeline4" position="0,140" zPosition="1" size="0,0" pixmap="timeline.png" />
 	<widget name="timeline5" position="0,140" zPosition="1" size="0,0" pixmap="timeline.png" />
-	<widget name="timeline_now" position="0,90" zPosition="2" size="19,480" pixmap="MHDC/window/timeline-now.png" alphatest="on" />
+	<widget name="timeline_now" position="0,90" zPosition="2" size="19,475" pixmap="MHDC/window/timeline-now.png" alphatest="on" />
 	<widget source="Event" render="Label" position="5,575" size="100,30" font="Regular;22" foregroundColor="#00e5b243" backgroundColor="background" shadowColor="#000000" halign="right" transparent="1">
 		<convert type="EventTime">StartTime</convert>
 		<convert type="ClockToText" />
@@ -6062,7 +6062,7 @@
 	<widget source="Title" render="Label" position="20,10" size="850,43" font="Regular;24" transparent="1" backgroundColor="secondBG" zPosition="1" />
 	<widget name="lab1" position="0,50" size="1280,115" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
 	<widget name="timeline_text" position="0,50" size="1280,30" backgroundColor="black" foregroundColor="orange" transparent="1" zPosition="0" />
-	<widget name="bouquetlist" position="0,75" size="1280,85" backgroundColor="black" foregroundColorSelected="yellow" scrollbarMode="showNever" zPosition="4" transparent="0" />
+	<widget name="bouquetlist" position="0,75" size="1280,85" itemHeight="28" backgroundColor="black" foregroundColorSelected="yellow" scrollbarMode="showNever" zPosition="4" transparent="0" />
 	<widget name="list" position="0,75" size="1280,85" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no"/>
 	<widget name="timeline_now" position="0,75" zPosition="3" size="19,85" pixmap="MHDC/window/timeline-now.png" alphatest="on" />
 	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,167" size="26,26" alphatest="blend" />
