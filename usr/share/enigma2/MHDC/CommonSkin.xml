@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.30 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.31 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -1202,6 +1202,10 @@
 	<widget name="list" position="520,82" size="755,577" font="Regular;26" scrollbarMode="showOnDemand" />
 	<panel name="VixLogo"/>
   </screen>
+  <screen name="RecordTimerQuestion" position="center,center" size="225,60" zPosition="5" flags="wfNoBorder" >
+	<widget name="text" position="0,0" size="0,0" font="Regular;20" />
+	<widget name="list" position="0,5" size="225,50" enableWrapAround="1" />
+  </screen>
   <screen name="SubtitleDisplay" position="0,0" size="1280,720" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder" />
   <screen name="Scart" position="0,0" size="1280,720" backgroundColor="transparent" />
   <screen name="Standby" title="Standby" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" />
@@ -1517,7 +1521,7 @@
 	<panel name="MenuTemplate"/>
 	<panel name="InfoTemplate"/>
 	<widget name="date" position="750,85" size="250,24" transparent="1" font="Regular;20" valign="center" halign="center" />
-	<widget name="bouquetlist" position="520,165" size="755,500" itemHeight="30" foregroundColor="white" backgroundColor="background" foregroundColorSelected="selectedFG" backgroundColorSelected="#001C252D" borderColor="background" scrollbarMode="showNever" zPosition="4" transparent="0" />
+	<widget name="bouquetlist" position="520,165" size="755,500" itemHeight="31" foregroundColor="white" backgroundColor="background" foregroundColorSelected="selectedFG" backgroundColorSelected="#001C252D" borderColor="background" scrollbarMode="showNever" zPosition="4" transparent="0" />
 	<widget name="list" position="520,165" size="755,500" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	<widget source="Event" render="Label" position="15,380" size="477,290" backgroundColor="background" transparent="1" foregroundColor="grey" font="Regular;19">
 		<convert type="EventName">ExtendedDescription</convert>
