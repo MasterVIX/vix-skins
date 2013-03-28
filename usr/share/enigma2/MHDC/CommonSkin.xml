@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.31 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.32 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -687,7 +687,8 @@
 	<panel name="RGYB_Template"/>
 	<panel name="MenuTemplate"/>
 	<panel name="InfoTemplate"/>
-	<widget name="list" position="520,90" size="755,570" itemHeight="30" font="Regular;22" transparent="1" scrollbarMode="showOnDemand" />
+	<widget name="list" position="520,90" size="755,570" itemHeight="30" font="Regular;22" transparent="0" scrollbarMode="showOnDemand" />
+	<widget name="number" position="520,90" size="755,570" zPosition="5" backgroundColor="background" transparent="0" font="Regular;36" borderColor="black" borderWidth="1" valign="center" halign="center" />
 	<widget source="Event" render="Label" position="10,355" size="477,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="white" font="Regular;22" valign="center" halign="center">
 		<convert type="EventName">Name</convert>
 	</widget>
