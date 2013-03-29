@@ -1,4 +1,4 @@
-<!--  Skin: ViX-Day-HD Vs 3.01 by AndyBlac @ www.world-of-satellite.com  -->
+<!--  Skin: ViX-Day-HD Vs 3.02 by AndyBlac @ www.world-of-satellite.com  -->
 <!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -1024,7 +1024,7 @@
 		<panel name="MenuYellow1Panel" />
 		<panel name="MenuBlue1Panel" />
 	</screen>
-	<screen name="ChannelSelectionRadio" position="center,100" size="660,400" flags="wfBorder" backgroundColor="window-bg" transparent="0">
+	<screen name="ChannelSelectionRadio" position="center,100" size="660,400" backgroundColor="window-bg" transparent="0">
 		<widget name="list" position="0,0" size="660,324" zPosition="3" scrollbarMode="showOnDemand" foregroundColor="window-fg" backgroundColor="window-bg" selectionPixmap="ViX-Common/buttons/FocusBar_H36x660.png" foregroundColorEvent="darkgrey" foregroundColorEventSelected="menu-title-frgrnd" foregroundColorServiceNotAvail="#2c2c2c" serviceItemHeight="36" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Regular;21" transparent="0" />
 		<ePixmap pixmap="ViX-Common/buttons/red.png" position="0,345" size="24,24" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="ViX-Common/buttons/green.png" position="0,375" size="24,24" alphatest="blend" transparent="1" />
@@ -1848,16 +1848,19 @@ self.autoResize()
 		<panel name="MenuGreen1Panel" />
 	</screen>
 	<screen name="Scart" position="0,0" size="1280,720" backgroundColor="transparent" />
-	<screen name="ServiceInfo" position="250,125" size="780,510" flags="wfBorder" backgroundColor="window-bg">
-		<widget name="infolist" position="40,0" size="700,460" itemHeight="36" selectionDisabled="1" transparent="0" />
-		<ePixmap pixmap="ViX-Common/buttons/red.png" position="0,480" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="ViX-Common/buttons/green.png" position="200,480" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="ViX-Common/buttons/yellow.png" position="395,480" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="ViX-Common/buttons/blue.png" position="590,480" size="25,25" alphatest="blend" />
-		<widget name="red" position="26,480" size="150,20" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="window-bg" transparent="1" />
-		<widget name="green" position="228,480" size="150,20" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="window-bg" transparent="1" />
-		<widget name="yellow" position="423,480" size="150,20" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="window-bg" transparent="1" />
-		<widget name="blue" position="618,480" size="150,20" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="window-bg" transparent="1" />
+	<screen name="ServiceInfoSimple" position="center,center" size="650,300" title="Service info">
+		<widget name="infolist" position="0,0" size="650,300" selectionDisabled="1" />
+	</screen>
+	<screen name="ServiceInfo" position="center,center" size="780,350" title="Service info">
+		<panel name="ServiceInfoSimple"/>
+		<ePixmap pixmap="ViX-Common/buttons/red.png" position="0,325" size="25,25" alphatest="blend" />
+		<ePixmap pixmap="ViX-Common/buttons/green.png" position="200,325" size="25,25" alphatest="blend" />
+		<ePixmap pixmap="ViX-Common/buttons/yellow.png" position="395,325" size="25,25" alphatest="blend" />
+		<ePixmap pixmap="ViX-Common/buttons/blue.png" position="590,325" size="25,25" alphatest="blend" />
+		<widget name="red" position="26,325" size="150,20" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="window-bg" transparent="1" />
+		<widget name="green" position="228,325" size="150,20" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="window-bg" transparent="1" />
+		<widget name="yellow" position="423,325" size="150,20" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="window-bg" transparent="1" />
+		<widget name="blue" position="618,325" size="150,20" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="window-bg" transparent="1" />
 	</screen>
 	<screen name="ServiceScan" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
@@ -2009,7 +2012,7 @@ self.autoResize()
 		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="15,440" zPosition="1" size="541,720" transparent="1" alphatest="on" />
 		<widget name="description" position="10,595" size="503,50" font="Regular;18" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
 	</screen>
-	<screen name="TimerLog" position="209,100" size="845,520" flags="wfBorder" backgroundColor="window-bg">
+	<screen name="TimerLog" position="209,100" size="845,520" backgroundColor="window-bg">
 		<widget name="loglist" position="50,0" size="740,300" selectionPixmap="ViX-Common/buttons/FocusBar_H25x740.png" scrollbarMode="showOnDemand" />
 		<widget name="logentry" position="50,320" size="740,150" font="Regular;20" backgroundColor="window-bg" transparent="0" />
 		<ePixmap pixmap="ViX-Common/buttons/red.png" position="45,488" size="25,25" alphatest="blend" />
@@ -3021,7 +3024,7 @@ self.autoResize()
 		<eLabel text=" " position="0,130" size="560,2" font="Italic;32" foregroundColor="#005d5d5d" backgroundColor="#005c5c5c" />
 		<widget source="introduction" render="Label" position="0,140" size="550,25" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" />
 	</screen>
-	<screen name="MyTubePlayerMainScreen" flags="wfBorder" position="280,70" size="720,576" >
+	<screen name="MyTubePlayerMainScreen" position="280,70" size="720,576" >
 <!--		<ePixmap position="0,0" zPosition="-1" size="720,576" pixmap="~/mytubemain_bg.png" alphatest="on" transparent="1" backgroundColor="transparent" />-->
 		<widget name="config" zPosition="2" position="60,60" size="600,50" scrollbarMode="showNever" transparent="1" />
 		<widget source="feedlist" render="Listbox" position="49,110" size="628,385" zPosition="1" scrollbarMode="showOnDemand" transparent="1" >
@@ -3060,7 +3063,7 @@ self.autoResize()
 		<widget name="HelpWindow" position="340,325" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 		<eLabel text="'Text' = Virtual Keyboard" font="Regular;22" halign="left" position="190,545" size="300,26" transparent="1" zPosition="1" />
 	</screen>
-	<screen name="MyTubeVideoInfoScreen" flags="wfBorder" position="center,center" size="720,576" >
+	<screen name="MyTubeVideoInfoScreen" position="center,center" size="720,576" >
 		<ePixmap position="0,0" zPosition="-1" size="720,576" pixmap="~/mytubemain_bg.png" alphatest="on" transparent="1" backgroundColor="transparent" />
 		<widget name="title" position="60,50" size="600,50" zPosition="5" valign="center" halign="left" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
 		<widget name="starsbg" pixmap="~/starsbar_empty.png" position="560,220" zPosition="5" size="100,20" transparent="1" alphatest="on" />
@@ -3094,7 +3097,7 @@ self.autoResize()
 		<widget name="key_red" position="220,500" zPosition="5" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
 		<widget name="thumbnail" position="0,0" size="130,98" alphatest="on" />
 	</screen>
-	<screen name="MyTubeVideoHelpScreen" flags="wfBorder" position="center,center" size="720,576" >
+	<screen name="MyTubeVideoHelpScreen" position="center,center" size="720,576" >
 		<ePixmap position="0,0" zPosition="-1" size="720,576" pixmap="~/mytubemain_bg.png" alphatest="on" transparent="1" backgroundColor="transparent" />
 		<widget name="title" position="60,50" size="600,50" zPosition="5" valign="center" halign="left" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
 		<widget name="detailtext" position="60,120" size="610,370" zPosition="10" font="Regular;21" foregroundColor="white" backgroundColor="#001c3c5c" transparent="1" halign="left" valign="top" />
@@ -3122,7 +3125,7 @@ self.autoResize()
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 	</screen>
-	<screen name="MyTubeSuggestionsListScreen" position="340,163" zPosition="6" size="610,160" flags="wfBorder">
+	<screen name="MyTubeSuggestionsListScreen" position="340,163" zPosition="6" size="610,160">
 		<ePixmap position="0,0" zPosition="-1" size="610,160" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MyTube/suggestions_bg.png" alphatest="on" transparent="1" backgroundColor="transparent" />
 		<widget source="suggestionslist" render="Listbox" position="10,5" zPosition="7" size="580,150" scrollbarMode="showOnDemand" transparent="1" foregroundColor="window-fg" backgroundColor="#001c3c5c">
 			<convert type="TemplatedMultiContent">
@@ -3136,7 +3139,7 @@ self.autoResize()
 			</convert>
 		</widget>
 	</screen>
-	<screen name="MyTubeHistoryScreen" position="340,163" zPosition="6" size="610,160" flags="wfBorder">
+	<screen name="MyTubeHistoryScreen" position="340,163" zPosition="6" size="610,160">
 		<ePixmap position="0,0" zPosition="-1" size="610,160" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MyTube/suggestions_bg.png" alphatest="on" transparent="1" backgroundColor="transparent" />
 		<widget source="historylist" render="Listbox" position="10,5" zPosition="7" size="580,150" scrollbarMode="showOnDemand" transparent="1" foregroundColor="window-fg" backgroundColor="#001c3c5c">
 			<convert type="TemplatedMultiContent">
@@ -3977,7 +3980,7 @@ self.autoResize()
 		<panel name="MenuYellow1Panel" />
 		<panel name="MenuBlue1Panel" />
 	</screen>
-	<screen name="RemoteTimerEntry" position="256,140" size="765,440" flags="wfBorder" backgroundColor="window-bg" transparent="0">
+	<screen name="RemoteTimerEntry" position="256,140" size="765,440" backgroundColor="window-bg" transparent="0">
 		<widget name="config" position="10,0" selectionPixmap="ViX-Common/buttons/FocusBar_H25x740.png" transparent="1" backgroundColor="window-bg" size="740,280" scrollbarMode="showOnDemand" />
 		<widget name="canceltext" position="73,301" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="window-bg" transparent="0" />
 		<widget name="oktext" position="268,301" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="window-bg" transparent="0" />
