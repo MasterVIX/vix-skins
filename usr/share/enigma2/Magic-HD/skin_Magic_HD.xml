@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.12 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.13 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -894,6 +894,10 @@
 		<widget name="text" position="15,379" size="477,260" zPosition="2" font="Regular;22" foregroundColor="secondFG" />
 		<widget name="list" position="520,82" size="755,583" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" itemHeight="28" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
+	<screen name="RecordTimerQuestion" position="center,center" size="225,60" zPosition="5" flags="wfNoBorder" > <!--Delagroov-->
+		<widget name="text" position="0,0" size="0,0" font="Regular;20" />
+		<widget name="list" position="0,5" size="225,50" selectionPixmap="Magic-HD/buttons/sel.png" enableWrapAround="1" />
+	</screen>
 	<screen name="Scart" position="0,0" size="1280,720" backgroundColor="transparent" />
 	<screen name="Standby" title="Standby" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="black" />
 	<screen name="NumberZap" position="center,center" size="600,40" backgroundColor="transparent" flags="wfNoBorder">
@@ -1105,6 +1109,7 @@
 		<panel name="Blue1Panel" />
 		<widget name="date" position="750,90" size="250,24" transparent="1" font="Regular;20" valign="center" halign="right" />
 		<widget name="list" position="590,165" size="600,500" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" />
+		<widget name="bouquetlist" position="590,165" size="600,500" itemHeight="31" foregroundColor="white" backgroundColor="background" foregroundColorSelected="selectedFG" selectionPixmap="Magic-HD/buttons/sel.png" backgroundColorSelected="#001C252D" borderColor="background" scrollbarMode="showNever" zPosition="4" transparent="0" />
 		<widget source="Event" render="Label" position="15,370" size="485,300" backgroundColor="background" transparent="1" foregroundColor="grey" font="Regular;20">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
@@ -3304,11 +3309,12 @@
 		<widget name="key_yellow" position="595,163" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 		<widget name="key_blue" position="890,163" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 		<ePixmap pixmap="buttons/key_menu.png" alphatest="on" position="1185,167"	size="35,25" />
-	<widget source="Title" render="Label" position="20,10" size="850,43" font="Regular;24" transparent="1" backgroundColor="secondBG" foregroundColor="foreground" borderColor="black" borderWidth="3" zPosition="1" />
-	<widget name="lab1" position="0,50" size="1280,115" font="Regular;22" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
-	<widget name="timeline_text" position="0,50" size="1280,30" backgroundColor="black" foregroundColor="orange" transparent="1" zPosition="0" />
-	<widget name="list" position="0,75" size="1280,85" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no"/>
-	<widget name="timeline_now" position="0,75" zPosition="3" size="19,85" pixmap="epg/timeline-now.png" alphatest="on" />
+		<widget source="Title" render="Label" position="20,10" size="850,43" font="Regular;24" transparent="1" backgroundColor="secondBG" foregroundColor="foreground" borderColor="black" borderWidth="3" zPosition="1" />
+		<widget name="lab1" position="0,50" size="1280,115" font="Regular;22" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
+		<widget name="timeline_text" position="0,50" size="1280,30" backgroundColor="black" foregroundColor="orange" transparent="1" zPosition="0" />
+		<widget name="list" position="0,75" size="1280,85" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no"/>
+		<widget name="bouquetlist" position="0,75" size="1280,85" itemHeight="28" backgroundColor="black" foregroundColorSelected="yellow" scrollbarMode="showNever" zPosition="4" transparent="0" /><!--Delagroov-->
+		<widget name="timeline_now" position="0,75" zPosition="3" size="19,85" pixmap="epg/timeline-now.png" alphatest="on" />
 	</screen>
 	<screen name="VIXEPGBouquetSelector" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
@@ -3322,6 +3328,7 @@
 		<widget name="timeline_text" position="5,60" size="1270,30" foregroundColor="#00e5b243" backgroundColor="background" transparent="1" />
 		<widget name="lab1" position="0,55" size="1280,485" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
 		<widget name="list" position="5,90" size="1270,475" scrollbarMode="showNever" transparent="1" ServiceBackgroundColor="bluetransparent" ServiceBackgroundColorSelected="black" ServiceBackgroundColorNow="greentransparent" ServiceBackgroundColorNowSelected="greentransparent" EntryBackgroundColor="bluetransparent" EntryBackgroundColorSelected="black" EntryBackgroundColorNow="redtransparent" EntryBackgroundColorNowSelected="black" EntryFontAlignment="center" EntryForegroundColorSelected="selectedFG" EntryForegroundColorNowSelected="selectedFG" ServiceForegroundColorSelected="selectedFG" ServiceForegroundColorNowSelected="selectedFG" RecordBackgroundColor="yellowtransparent" RecordBackgroundColorSelected="yellowtransparent" RecordForegroundColorSelected="selectedFG" ZapBackgroundColor="transpWhite" ZapBackgroundColorSelected="transpWhite" ZapForegroundColorSelected="selectedFG" />
+		<widget name="bouquetlist" position="5,90" size="1270,477" itemHeight="28" foregroundColor="white" backgroundColor="background" foregroundColorSelected="yellow" backgroundColorSelected="#001C252D" borderColor="background" scrollbarMode="showNever" zPosition="4" transparent="0" /><!--Delagroov-->
 		<widget name="timeline_now" position="5,90" zPosition="2" size="19,455" pixmap="window/timeline-now.png" alphatest="on" />
 		<widget source="Event" render="Label" position="5,555" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="background" shadowColor="#000000" halign="right" transparent="1">
 			<convert type="EventTime">StartTime</convert>
@@ -3388,6 +3395,7 @@
 		<widget name="lab1" position="5,313" size="1275,365" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
 		<widget name="timeline_text" position="5,286" size="1275,30" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
 		<widget name="list" position="5,313" size="1275,365" scrollbarMode="showNever" transparent="1" ServiceBackgroundColor="bluetransparent" ServiceBackgroundColorSelected="black" ServiceBackgroundColorNow="greentransparent" ServiceBackgroundColorNowSelected="greentransparent" EntryBackgroundColor="bluetransparent" EntryBackgroundColorSelected="black" EntryBackgroundColorNow="redtransparent" EntryBackgroundColorNowSelected="redtransparent" EntryFontAlignment="center" EntryForegroundColorSelected="selectedFG" EntryForegroundColorNowSelected="selectedFG" ServiceForegroundColorSelected="selectedFG" ServiceForegroundColorNowSelected="selectedFG" RecordBackgroundColor="yellowtransparent" RecordBackgroundColorSelected="yellowtransparent" RecordForegroundColorSelected="selectedFG" ZapBackgroundColor="transpWhite" ZapBackgroundColorSelected="transpWhite" ZapForegroundColorSelected="selectedFG" />
+		<widget name="bouquetlist" position="410,70" size="865,190" foregroundColor="white" backgroundColor="background" foregroundColorSelected="yellow" backgroundColorSelected="#001C252D" borderColor="background" scrollbarMode="showNever" zPosition="4" transparent="0" /><!--Delagroov-->
 		<widget name="timeline_now" position="5,313" zPosition="2" size="19,365" pixmap="window/timeline-now.png" alphatest="on" />
 	</screen>
 	<screen flags="wfNoBorder" name="LogManager" position="0,0" size="1280,720" >
