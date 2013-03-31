@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.13 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.14 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -366,6 +366,7 @@
 		<panel name="Blue1Panel" />
 		<panel name="MenuBPanel" />
 		<widget name="list" position="520,82" size="755,583" itemHeight="25" font="Regular;22" transparent="1" foregroundColor="grey" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" enableWrapAround="1" />
+		<widget name="number" position="520,82" size="755,583" zPosition="5" backgroundColor="background" transparent="0" font="Regular;36" borderColor="black" borderWidth="1" valign="center" halign="center" /><!--Delagroov-->
 		<widget source="Event" render="Label" position="5,355" size="500,48" transparent="1" foregroundColor="secondFG" font="Regular;23" halign="center" valign="top">
 			<convert type="EventName">Name</convert>
 		</widget>
@@ -1109,7 +1110,7 @@
 		<panel name="Blue1Panel" />
 		<widget name="date" position="750,90" size="250,24" transparent="1" font="Regular;20" valign="center" halign="right" />
 		<widget name="list" position="590,165" size="600,500" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" />
-		<widget name="bouquetlist" position="590,165" size="600,500" itemHeight="31" foregroundColor="white" backgroundColor="background" foregroundColorSelected="selectedFG" selectionPixmap="Magic-HD/buttons/sel.png" backgroundColorSelected="#001C252D" borderColor="background" scrollbarMode="showNever" zPosition="4" transparent="0" />
+		<widget name="bouquetlist" position="590,165" size="600,500" itemHeight="31" foregroundColor="white" backgroundColor="background" foregroundColorSelected="selectedFG" selectionPixmap="Magic-HD/buttons/sel.png" backgroundColorSelected="#001C252D" borderColor="background" scrollbarMode="showNever" zPosition="4" transparent="0" /><!--Delagroov-->
 		<widget source="Event" render="Label" position="15,370" size="485,300" backgroundColor="background" transparent="1" foregroundColor="grey" font="Regular;20">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
