@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.32 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.33 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -705,7 +705,7 @@
 		<convert type="ClockToText">Format:- %H:%M</convert>
 	</widget>
 	<widget source="Event" render="Label" position="10,445" size="490,210" backgroundColor="background" transparent="1" font="Regular;20" foregroundColor="grey">
-		<convert type="EventName">ExtendedDescription</convert>
+		<convert type="EventName">FullDescription</convert>
 	</widget>
   </screen>
   <screen name="EventView" title="Eventview" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1525,7 +1525,7 @@
 	<widget name="bouquetlist" position="520,165" size="755,500" itemHeight="31" foregroundColor="white" backgroundColor="background" foregroundColorSelected="selectedFG" backgroundColorSelected="#001C252D" borderColor="background" scrollbarMode="showNever" zPosition="4" transparent="0" />
 	<widget name="list" position="520,165" size="755,500" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 	<widget source="Event" render="Label" position="15,380" size="477,290" backgroundColor="background" transparent="1" foregroundColor="grey" font="Regular;19">
-		<convert type="EventName">ExtendedDescription</convert>
+		<convert type="EventName">FullDescription</convert>
 	</widget>
 	<widget name="now_button" pixmap="MHDC/border/epg_off.png" position="590,110" zPosition="2" size="180,40" alphatest="blend" />
 	<widget name="now_button_sel" pixmap="MHDC/border/epg_now_on.png" position="590,110" zPosition="3" size="180,40" alphatest="blend" />
