@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.17	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.18	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -2018,7 +2018,7 @@ background
 		<ePixmap pixmap="Magic-HD/logos/vix.png" position="25,650" size="300,25" alphatest="on" />
 	</screen>
 	<!-- ## Multi Quick Button ## -->
-	<screen flags="wfNoBorder" name="MultiQuickButton" position="0,0" size="1280,720" >
+	<screen name="MultiQuickButton" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel" />
 		<panel name="GreenBPanel" />
@@ -2028,23 +2028,54 @@ background
 		<panel name="GreenT1Panel" />
 		<panel name="YellowT1Panel" />
 		<panel name="BlueT1Panel" />
-		<ePixmap pixmap="Magic-HD/buttons/key_0.png" zPosition="2" position="90,410" size="35,25" alphatest="on" />
-		<ePixmap pixmap="Magic-HD/buttons/key_1.png" zPosition="2" position="90,460" size="35,25" alphatest="on" />
-		<ePixmap pixmap="Magic-HD/buttons/key_2.png" zPosition="2" position="90,510" size="35,25" alphatest="on" />
-		<ePixmap pixmap="Magic-HD/buttons/key_3.png" zPosition="2" position="90,560" size="35,25" alphatest="on" />
+		<ePixmap pixmap="buttons/key_0.png" zPosition="2" position="90,410" size="35,25" alphatest="on" />
+		<ePixmap pixmap="buttons/key_1.png" zPosition="2" position="90,460" size="35,25" alphatest="on" />
+		<ePixmap pixmap="buttons/key_2.png" zPosition="2" position="90,510" size="35,25" alphatest="on" />
+		<ePixmap pixmap="buttons/key_3.png" zPosition="2" position="90,560" size="35,25" alphatest="on" />
+		<ePixmap pixmap="buttons/key_4.png" zPosition="2" position="90,610" size="35,25" alphatest="on" />
 		<widget name="key_0" position="130,400" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1" foregroundColor="grey" />
 		<widget name="key_1" position="130,450" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1" foregroundColor="grey" />
 		<widget name="key_2" position="130,500" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1" foregroundColor="grey" />
 		<widget name="key_3" position="130,550" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1" foregroundColor="grey" />
+		<widget name="key_4" position="130,600" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1" foregroundColor="grey" />
 		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="520,80" size="755,588" transparent="1" foregroundColor="grey" font="Regular;20" itemHeight="28" enableWrapAround="1" />
 	</screen>
-	<screen flags="wfNoBorder" name="QuickButton" position="0,0" size="1280,720" >
+	<screen name="QuickButton" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel" />
 		<panel name="Green1Panel" />
 		<panel name="Yellow1Panel" />
 		<panel name="Blue1Panel" />
 		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="MultiQuickButtonChannelConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="BasicTemplate"/>
+		<panel name="RedBPanel" />
+		<panel name="GreenBPanel" />
+		<widget name="buttonred" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="buttongreen" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="config" position="520,82" size="745,583" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28"  transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="MultiQuickButtonMacro" position="0,0" size="1280,720" flags="wfNoBorder" title="MultiQuickButton macro configuration">
+		<panel name="BasicTemplate"/>
+		<panel name="RedBPanel" />
+		<panel name="GreenBPanel" />
+		<panel name="YellowBPanel" />
+		<panel name="BlueBPanel" />
+		<widget name="buttonred" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="buttongreen" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="buttonyellow" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="buttonblue" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget source="menu" render="Listbox" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" transparent="1" foregroundColor="grey" font="Regular;20" enableWrapAround="1">
+			<convert type="TemplatedMultiContent" transparent="0">
+				{"template": [
+						MultiContentEntryText(pos = (52, 2), size = (500, 20), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+					],
+				"fonts": [gFont("Regular", 22)],
+				"itemHeight": 26
+				}
+			</convert>
+		</widget>
 	</screen>
 	<!-- ## ET-Portal ## -->
 	<screen name="EtPortalSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder" >
