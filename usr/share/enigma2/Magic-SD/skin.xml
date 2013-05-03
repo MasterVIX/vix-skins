@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-SD-ViX Vs 2.34 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
+	<!--	Skin: Magic-SD-ViX Vs 2.35 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -736,13 +736,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<screen name="PVRState" position="60,102" size="80,34" backgroundColor="transparent" flags="wfNoBorder" zPosition="2">
 		<widget font="Enigma;24" halign="left" name="state" position="0,0" size="80,34" backgroundColor="transparent" borderColor="black" borderWidth="2"/>
 	</screen>
-	<screen name="PTSTimeshiftState" position="center,40" zPosition="2" size="650,500" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="TimeshiftState" position="center,40" zPosition="2" size="650,500" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="PlayerTemplate"/>
 	<widget name="PTSSeekBack" position="8,45" size="600,4" zPosition="1" />
 	<widget name="PTSSeekPointer" position="0,35" zPosition="5" size="19,20" pixmap="position_pointer2.png" alphatest="blend" />
-	</screen>
-	<screen name="TimeshiftState" position="center,40" zPosition="2" size="650,500" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="PlayerTemplate"/>
 	</screen>
 	<screen name="PluginBrowser" position="center,center" size="560,460" title="Plugin browser" >
 		<panel name="BasicTemplate2"/>
