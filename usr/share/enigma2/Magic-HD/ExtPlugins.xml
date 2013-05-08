@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.18	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.19	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -1338,18 +1338,18 @@ background
 		<panel name="YellowT1Panel" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="520,90" size="755,575" transparent="1" />
 	</screen>
-	<screen flags="wfNoBorder" name="RemotePlayer" position="0,0" size="1280,720" >
+	<screen name="RemotePlayer" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<widget name="ServiceName" position="590,110" size="600,72" backgroundColor="background" transparent="1" zPosition="2" foregroundColor="foreground" font="Crs;24" valign="center" halign="center" />
 		<widget name="DateTime" position="590,190" size="600,52" backgroundColor="background" transparent="1" zPosition="2" foregroundColor="foreground" font="Regular;20" valign="top" halign="left" />
 		<widget name="IP" position="590,250" size="600,52" backgroundColor="background" transparent="1" zPosition="2" foregroundColor="foreground" font="Regular;20" valign="top" halign="right" />
 	</screen>
-	<screen flags="wfNoBorder" name="RemoteTimerBouquetList" position="0,0" size="1280,720" >
+	<screen name="RemoteTimerBouquetList" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="520,82" size="755,583" zPosition="1" font="Regular;26" halign="center" valign="center" />
 		<widget name="bouquetlist" position="520,82" size="755,575" font="Regular;26" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" zPosition="2" />
 	</screen>
-	<screen flags="wfNoBorder" name="RemoteTimer" position="0,0" size="1280,720" >
+	<screen name="RemoteTimer" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel" />
 		<panel name="GreenBPanel" />
@@ -1362,7 +1362,7 @@ background
 		<widget name="timerlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="50" position="490,85" size="785,550" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="text" position="5,379" size="477,260" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
 	</screen>
-	<screen flags="wfNoBorder" name="RemoteTimerEPGList" position="0,0" size="1280,720" >
+	<screen name="RemoteTimerEPGList" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel" />
 		<panel name="GreenBPanel" />
@@ -1375,7 +1375,7 @@ background
 		<widget name="text" position="520,90" size="755,575" zPosition="3" font="Regular;20" valign="center" halign="center" />
 		<widget name="epglist" position="520,90" size="755,570" zPosition="5" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" />
 	</screen>
-	<screen flags="wfNoBorder" name="RemoteTimerChannelList" position="0,0" size="1280,720" >
+	<screen name="RemoteTimerChannelList" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel" />
 		<panel name="GreenBPanel" />
@@ -1388,7 +1388,7 @@ background
 		<widget name="text" position="520,90" size="755,575" zPosition="1" font="Regular;26" valign="center" halign="center" />
 		<widget name="channellist" position="520,90" size="755,575" font="Regular;26" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" />
 	</screen>
-	<screen flags="wfNoBorder" name="RemoteTimerEventView" position="0,0" size="1280,720" >
+	<screen name="RemoteTimerEventView" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel" />
 		<panel name="GreenBPanel" />
@@ -1403,7 +1403,7 @@ background
 		<widget name="duration" position="590,540" size="600,30" font="Regular;22" />
 		<widget name="channel" position="590,570" size="600,30" font="Regular;22" />
 	</screen>
-	<screen flags="wfNoBorder" name="RemoteTimerEntry" position="0,0" size="1280,720" >
+	<screen name="RemoteTimerEntry" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel" />
 		<panel name="GreenBPanel" />
@@ -1412,7 +1412,7 @@ background
 		<widget name="config" position="590,110" size="600,420" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" />
 	</screen>
 <!-- ## RemoteTimer ##-->
- <screen flags="wfNoBorder" name="RemoteTimerScreen" position="0,0" size="1280,720" >
+ <screen name="RemoteTimerScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="Remote-Timer digest" >
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel" />
 		<panel name="Green1Panel" />
@@ -1421,7 +1421,7 @@ background
 		<widget name="timerlist" position="490,85" size="785,550" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="50" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="text" position="5,379" size="477,260" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
 	</screen>
-	<screen name="RemoteTimerSetup" flags="wfNoBorder" position="0,0" size="1280,720" >
+	<screen name="RemoteTimerSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="Remote-Timer settings">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel" />
 		<panel name="Green1Panel" />
@@ -1429,7 +1429,7 @@ background
 		<widget name="HelpWindow" pixmap="Magic-HD/icons/vkey_icon.png" position="520,500" size="1,1" zPosition="1" transparent="1" alphatest="on" />
 	</screen>
 	<!-- ## CleanupWizard ## -->
-	<screen flags="wfNoBorder" name="CleanupWizardConfiguration" position="0,0" size="1280,720" >
+	<screen name="CleanupWizardConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel" />
 		<panel name="GreenBPanel" />
@@ -1438,7 +1438,7 @@ background
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" position="590,110" size="600,448" transparent="1" />
 		<widget source="status" render="Label" position="590,560" size="600,64" zPosition="1" font="Regular;24" halign="center" transparent="1" />
 	</screen>
-	<screen flags="wfNoBorder" name="CleanupWizard" position="0,0" size="1280,720" >
+	<screen name="CleanupWizard" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel" />
 		<widget name="languagetext" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
@@ -1460,7 +1460,7 @@ background
 		<widget name="arrowup2" position="-100,-100" size=" 37,70" pixmap="Magic-HD/arrowup.png" zPosition="11" alphatest="on" />
 	</screen>
 	<!-- ## ACDInfo ## -->
-	<screen flags="wfNoBorder" name="CDInfo" position="0,0" size="1280,720" >
+	<screen name="CDInfo" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel" />
 		<panel name="GreenBPanel" />
