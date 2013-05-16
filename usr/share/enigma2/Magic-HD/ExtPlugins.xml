@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.19	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.20	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -3376,5 +3376,55 @@ background
 		<widget name="menulist" position="520,80" size="755,560" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="35" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="VidPic" position="0,77" size="482,588" zPosition="1" alphatest="on" />
 		<widget name="menuname" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+	</screen>
+	<!-- ##DiSEqC Tester## -->
+	<screen name="DiseqcTesterNimSelection" position="0,0" size="1280,720" flags="wfNoBorder" title="Choose Tuner">
+		<panel name="BasicTemplate"/>
+		<panel name="RedBPanel" />
+		<eLabel text="Cancel" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
+		<panel name="GreenBPanel" />
+		<eLabel text="OK" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget source="nimlist" render="Listbox" position="490,80" size="785,588" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" transparent="1" foregroundColor="grey" enableWrapAround="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (10, 5), size = (750, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
+						MultiContentEntryText(pos = (50, 30), size = (700, 30), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
+					],
+				 "fonts": [gFont("Regular", 20), gFont("Regular", 15)],
+				 "itemHeight": 70
+				}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="DiseqcTester" position="0,0" size="1280,720" flags="wfNoBorder" title="DiSEqC Tester">
+		<panel name="BasicTemplate"/>
+		<panel name="RedBPanel" />
+		<eLabel text="Cancel" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<panel name="GreenBPanel" />
+		<eLabel text="OK" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget source="progress_list" render="Listbox" position="490,80" size="785,450" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" transparent="1" foregroundColor="grey" enableWrapAround="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (10, 0), size = (600, 25), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the index name,
+						MultiContentEntryText(pos = (620, 0), size = (150, 25), flags = RT_HALIGN_RIGHT, text = 2) # index 2 is the status,
+					],
+				 "fonts": [gFont("Regular", 20)],
+				 "itemHeight": 25
+				}
+			</convert>
+		</widget>
+		<eLabel name="overall_progress" text="Overall progress:" position="20,377" size="480,22" font="Regular;22" halign="center" transparent="1" foregroundColor="grey"/>
+		<widget source="overall_progress" render="Progress" position="20,405" size="480,20" borderWidth="2" backgroundColor="#254f7497" />
+		<eLabel name="overall_progress" text="Progress:" position="20,430" size="480,22" font="Regular;22" halign="center" transparent="1" foregroundColor="grey"/>
+		<widget source="sub_progress" render="Progress" position="20,457" size="480,20" borderWidth="2" backgroundColor="#254f7497" />
+		<eLabel name="" text="Failed:" position="120,490" size="140,22" font="Regular;22" halign="left" transparent="1" foregroundColor="grey"/>
+		<widget source="failed_counter" render="Label" position="280,490" size="100,20" font="Regular;22" foregroundColor="grey"/>
+		<eLabel name="" text="Succeeded:" position="120,525" size="140,22" font="Regular;22" halign="left" foregroundColor="grey"/>
+		<widget source="succeeded_counter" render="Label" position="280,525" size="100,20" font="Regular;22" foregroundColor="grey"/>
+		<eLabel name="" text="With errors:" position="120,560" size="140,22" font="Regular;22" halign="left" foregroundColor="grey"/>
+		<widget source="witherrors_counter" render="Label" position="280,560" size="100,20" font="Regular;22" foregroundColor="grey"/>
+		<eLabel name="" text="Not tested:" position="120,595" size="140,22" font="Regular;22" halign="left" foregroundColor="grey"/>
+		<widget source="untestable_counter" render="Label" position="280,595" size="100,20" font="Regular;22" foregroundColor="grey"/>
+		<widget source="CmdText" render="Label" position="490,530" size="477,100" font="Regular;22" foregroundColor="grey" />
 	</screen>
 </skin>
