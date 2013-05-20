@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.21	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.23	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -2798,114 +2798,6 @@ background
 		<panel name="BasicTemplate"/>
 		<widget name="text" font="Regular;22" itemHeight="28" position="520,182" size="755,483" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
-	<!-- ## AutoBouquetsMaker ## -->
-	<screen name="AutoBouquetsMaker_Menu" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="BasicTemplate"/>
-		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" >
-			<convert type="TemplatedMultiContent">
-			{"template": [	MultiContentEntryText(pos = (0,0), size = (755,583), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1) ],
-					"fonts": [gFont("Regular", 22)],
-					"itemHeight": 28
-				}
-			</convert>
-		</widget>
-	</screen>
-	<screen name="AutoBouquetsMaker_ProvidersSetup" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-		<widget name="description" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
-		<widget name="pleasewait" position="520,82" size="755,583" font="Regular;26" transparent="1" halign="center" valign="center" foregroundColor="grey" />
-	</screen>
-	<screen name="AutoBouquetsMaker_Setup" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-		<widget name="description" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
-		<widget name="pleasewait" position="520,82" size="755,583" font="Regular;26" transparent="1" halign="center" valign="center" foregroundColor="grey" />
-		<widget name="text" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
-	</screen>
-	<screen name="AutoBouquetsMaker_Ordering" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<panel name="Yellow1Panel" />
-		<panel name="Blue1Panel" />
-		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" >
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (10, 1), size = (440, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
-					],
-					"fonts": [gFont("Regular", 22)],
-					"itemHeight": 28
-				}
-			</convert>
-		</widget>
-		<widget name="pleasewait" position="520,82" size="755,583" font="Regular;26" transparent="1" halign="center" valign="center" foregroundColor="grey" />
-	</screen>
-	<screen name="AutoBouquetsMaker_Providers" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" >
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
-					MultiContentEntryText(pos = (450, 0), size = (120, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
-					],
-					"fonts": [gFont("Regular", 22)],
-					"itemHeight": 28
-				}
-			</convert>
-		</widget>
-		<widget name="pleasewait" position="520,82" size="755,583" font="Regular;26" transparent="1" halign="center" valign="center" foregroundColor="grey" />
-	</screen>
-	<screen name="AutoBouquetsMaker_HideSections" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" >
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
-					MultiContentEntryText(pos = (47, 0), size = (400, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
-					MultiContentEntryText(pos = (450, 0), size = (120, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
-					],
-					"fonts": [gFont("Regular", 22)],
-					"itemHeight": 28
-				}
-			</convert>
-		</widget>
-	</screen>
-	<screen name="AutoBouquetsMaker_KeepBouquets" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="520,82" size="755,588" transparent="1" foregroundColor="grey" enableWrapAround="1" >
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
-					MultiContentEntryText(pos = (47, 0), size = (400, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
-					MultiContentEntryText(pos = (450, 0), size = (120, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
-					],
-					"fonts": [gFont("Regular", 22)],
-					"itemHeight": 28
-				}
-			</convert>
-		</widget>
-	</screen>
-	<screen name="AutoBouquetsMaker_Log" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="BasicTemplate"/>
-		<widget name="list" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen name="AutoBouquetsMaker_About" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel" />
-		<widget name="about" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="28" position="520,82" size="755,430" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-		<widget name="oealogo" position="520,515" size="177,130" alphatest="on" zPosition="4" />
-	</screen>
 	<!-- ## AddStreamURL ## -->
 	<screen name="LiveStreamingLinks" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
@@ -3425,7 +3317,6 @@ background
 		<widget source="witherrors_counter" render="Label" position="280,560" size="100,20" font="Regular;22" foregroundColor="grey"/>
 		<eLabel name="" text="Not tested:" position="120,595" size="140,22" font="Regular;22" halign="left" foregroundColor="grey"/>
 		<widget source="untestable_counter" render="Label" position="280,595" size="100,20" font="Regular;22" foregroundColor="grey"/>-->
-
 		<ePixmap pixmap="icons/dish_scan.png" position="5,25" zPosition="0" size="119,110" transparent="1" alphatest="on" />
 		<widget source="Frontend" render="Label" position="190,10" zPosition="2" size="260,20" font="Regular;19" halign="center" valign="center" transparent="1">
 			<convert type="FrontendInfo">SNRdB</convert>
@@ -3460,7 +3351,42 @@ background
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
-
 		<widget source="CmdText" render="Label" position="490,530" size="785,100" font="Regular;22" foregroundColor="grey" />
+	</screen>
+	<!-- ##Flash Gordon## -->
+	<screen name="FlashGordon" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="RedBPanel" />
+		<widget name="buttonred" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<panel name="GreenBPanel" />
+		<widget name="buttongreen" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<panel name="YellowBPanel" />
+		<widget name="buttonyellow" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<panel name="BlueBPanel" />
+		<widget name="buttonblue" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+	</screen>
+	<screen name="FlashGordonConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="RedBPanel" />
+		<widget name="buttonred" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<panel name="GreenBPanel" />
+		<widget name="buttongreen" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<panel name="YellowBPanel" />
+		<widget name="buttonyellow" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<panel name="BlueBPanel" />
+		<widget name="buttonblue" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="config" position="490,80" size="785,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="FlashGordonChecking" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="RedBPanel" />
+		<widget name="buttonred" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<panel name="GreenBPanel" />
+		<widget name="buttongreen" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<panel name="YellowBPanel" />
+		<widget name="buttonyellow" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<panel name="BlueBPanel" />
+		<widget name="buttonblue" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="menu" position="490,80" size="785,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 </skin>
