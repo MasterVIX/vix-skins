@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.24	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.25	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -3431,12 +3431,12 @@ background
 		<widget name="target" position="490,630" size="477,30" zPosition="2" font="Regular;22" foregroundColor="secondFG" />
 		<widget name="mountlist" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" />
 	</screen>
-	<screen name="tsdownloader" position="0,0" size="1280,720" flags="wfNoBorder" title="Downloading...">
+	<screen name="tsdownloader" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="Magic-HD/buttons/key_ok.png" alphatest="on" position="1190,682" size="35,26" />
-		<widget name="info" position="490,80" size="785,550" font="Regular;22" transparent="1" foregroundColor="grey" />
-		<widget name="progress" position="490,630" size="580,30" transparent="1" borderWidth="1" zPosition="4"/>
-		<widget name="info2" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+		<widget name="info2" position="520,85" size="750,200" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+		<widget name="info" position="520,300" size="750,30" font="Regular;22" transparent="1" foregroundColor="grey" halign="center"/>
+		<widget name="progress" position="520,340" size="750,20" transparent="1" borderWidth="2" zPosition="4"/>
 	</screen>
 	<screen name="ImageDownLoaderFilesScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="Screenshot Files">
 		<panel name="BasicTemplate"/>
