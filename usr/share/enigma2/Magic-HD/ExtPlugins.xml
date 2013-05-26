@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.23	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.24	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -3388,5 +3388,98 @@ background
 		<panel name="BlueBPanel" />
 		<widget name="buttonblue" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 		<widget name="menu" position="490,80" size="785,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<!-- ##SDG ImageDownLoader## -->
+	<screen name="s4fFeedsServersScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="Image Feeds List">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Yellow1Panel" />
+		<eLabel text="Cancel" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<ePixmap pixmap="Magic-HD/buttons/key_ok.png" alphatest="on" position="1190,682" size="35,26" />
+		<widget name="list" position="490,80" size="785,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="35" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="tspace" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+	</screen>
+	<screen name="idServerModels" position="0,0" size="1280,720" flags="wfNoBorder" title="Choose model">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<eLabel text="Cancel" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<ePixmap pixmap="Magic-HD/buttons/key_ok.png" alphatest="on" position="1190,682" size="35,26" />
+		<widget name="list" position="520,85" size="755,490" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="tspace" position="490,615" zPosition="4" size="785,30" font="Regular;22" foregroundColor="#ffffff" transparent="1" halign="left" />
+		<widget name="fspace" position="490,650" zPosition="4" size="785,30" font="Regular;22" foregroundColor="#ffffff" transparent="1" halign="left" />
+		<widget name="info" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+	</screen>
+	<screen name="idDownloaderImages" position="0,0" size="1280,720" flags="wfNoBorder" title="Images Downloader">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<eLabel text="Cancel" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<ePixmap pixmap="Magic-HD/buttons/key_ok.png" alphatest="on" position="1190,682" size="35,26" />
+		<widget name="menu" position="490,80" size="785,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="info" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+	</screen>
+	<screen name="TSFpanelImageDownLoaderDownloadLocation" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<ePixmap pixmap="Magic-HD/buttons/key_ok.png" alphatest="on" position="1190,682" size="35,26" />
+		<widget name="filelist" position="490,80" size="785,550" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="target" position="490,630" size="477,30" zPosition="2" font="Regular;22" foregroundColor="secondFG" />
+		<widget name="mountlist" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" />
+	</screen>
+	<screen name="tsdownloader" position="0,0" size="1280,720" flags="wfNoBorder" title="Downloading...">
+		<panel name="BasicTemplate"/>
+		<ePixmap pixmap="Magic-HD/buttons/key_ok.png" alphatest="on" position="1190,682" size="35,26" />
+		<widget name="info" position="490,80" size="785,550" font="Regular;22" transparent="1" foregroundColor="grey" />
+		<widget name="progress" position="490,630" size="580,30" transparent="1" borderWidth="1" zPosition="4"/>
+		<widget name="info2" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+	</screen>
+	<screen name="ImageDownLoaderFilesScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="Screenshot Files">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<eLabel text="Cancel" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="menu" position="490,80" size="785,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="info" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+	</screen>
+	<screen name="TSFpanelImageDownLoader" position="0,0" size="1280,720" flags="wfNoBorder" title="ImageDownLoader">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<eLabel text="Cancel" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget source="menu" render="Listbox" position="490,80" size="785,200" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" transparent="1" foregroundColor="grey" enableWrapAround="1" >
+				<convert type="TemplatedMultiContent">
+						{"template": [
+						MultiContentEntryText(pos = (10, 10), size = (770, 30), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
+						],
+						"fonts": [gFont("Regular", 22)],
+						"itemHeight": 40
+						}
+				</convert>
+		</widget>
+		<widget source="menu" render="Listbox" position="490,290" size="785,150" zPosition="5" scrollbarMode="showNever" selectionDisabled="1" transparent="1" foregroundColor="yellow" >
+				<convert type="TemplatedMultiContent">
+						{"template": [
+						MultiContentEntryText(pos = (10, 0), size = (770, 150), flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP, text = 2), # index 0 is the MenuText,
+						],
+						"fonts": [gFont("Regular", 22)],
+						"itemHeight": 150
+						}
+				</convert>
+		</widget>
+		<widget source="downloadtext" render="Label" position="490,550" size="477,60" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+		<widget source="targettext" render="Label" position="5,379" size="477,50" zPosition="2" font="Regular;22" valign="bottom" halign="center" />
+		<widget name="target" position="5,430" size="477,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="top" halign="center" />
+		<widget source="swaptext" render="Label" position="5,500" size="477,50" zPosition="2" font="Regular;22" valign="bottom" halign="center" />
+		<widget name="swapsize" position="5,550" size="477,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="top" halign="center" />
+	</screen>
+	<screen name="Mytexte" position="0,0" size="1280,720" flags="wfNoBorder" title="Images Server Updates">
+		<panel name="BasicTemplate"/>
+		<widget name="text" position="490,80" size="785,584" font="Regular;22" transparent="1" foregroundColor="grey" />
 	</screen>
 </skin>
