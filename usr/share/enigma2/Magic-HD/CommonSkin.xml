@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD Common Vs 7.06 	-->
+	<!--	Skin: Magic-HD Common Vs 7.07 	-->
 	<!--	This skin is part of the skin Magic-HD; the same license applies.	-->
 
 	<!-- templates -->
@@ -30,8 +30,8 @@
 	</screen>
 
 	<screen name="BasicTemplate">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75" />
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2" />
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75" />
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2" />
 		<widget source="Title" render="Label" foregroundColor="grey"	position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -47,8 +47,8 @@
 	</screen>
 
 	<screen name="BasicTemplate2">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75" />
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2" />
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75" />
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2" />
 		<widget source="Title" render="Label" foregroundColor="grey"	position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -63,8 +63,8 @@
 	</screen>
 
 	<screen name="BasicTemplate3">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75" />
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2" />
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75" />
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2" />
 		<widget source="Title" render="Label" foregroundColor="grey"	position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -76,7 +76,7 @@
 	</screen>
 
 	<screen name="RedBPanel">
-		<ePixmap pixmap="buttons/big-red.png" position="15,682" size="284,40 " zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="Magic-HD/buttons/big-red.png" position="15,682" size="284,40 " zPosition="0" alphatest="blend" />
 	</screen>
 
 	<screen name="RedT1Panel">
@@ -88,7 +88,7 @@
 	</screen>
 
 	<screen name="GreenBPanel">
-		<ePixmap pixmap="buttons/big-green.png" position="305,682" size="284,40 " zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="Magic-HD/buttons/big-green.png" position="305,682" size="284,40 " zPosition="0" alphatest="blend" />
 	</screen>
 
 	<screen name="GreenT1Panel">
@@ -100,7 +100,7 @@
 	</screen>
 
 	<screen name="YellowBPanel">
-		<ePixmap pixmap="buttons/big-yellow.png" position="595,682" size="284,40 " zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="Magic-HD/buttons/big-yellow.png" position="595,682" size="284,40 " zPosition="0" alphatest="blend" />
 	</screen>
 
 	<screen name="YellowT1Panel">
@@ -112,7 +112,7 @@
 	</screen>
 
 	<screen name="BlueBPanel">
-		<ePixmap pixmap="buttons/big-blue.png" position="890,682" size="284,40 " zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="Magic-HD/buttons/big-blue.png" position="890,682" size="284,40 " zPosition="0" alphatest="blend" />
 	</screen>
 
 	<screen name="BlueT1Panel">
@@ -124,54 +124,54 @@
 	</screen>
 
 	<screen name="MenuBPanel">
-		<ePixmap pixmap="buttons/key_menu.png" alphatest="on" position="1175,687"	size="35,25" />
+		<ePixmap pixmap="Magic-HD/buttons/key_menu.png" alphatest="on" position="1175,687"	size="35,25" />
 	</screen>
 
 	<screen name="InfoBPanel">
-		<ePixmap pixmap="buttons/key_info.png" alphatest="on" position="1215,687" size="35,25" />
+		<ePixmap pixmap="Magic-HD/buttons/key_info.png" alphatest="on" position="1215,687" size="35,25" />
 	</screen>
 
 	<screen name="TextBPanel">
-		<ePixmap pixmap="buttons/key_text.png" alphatest="on" position="1250,687" size="35,25" />
+		<ePixmap pixmap="Magic-HD/buttons/key_text.png" alphatest="on" position="1250,687" size="35,25" />
 	</screen>
 
 	<screen name="Red1Panel">
-		<ePixmap pixmap="buttons/big-red.png" position="15,682" size="284,40" zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="Magic-HD/buttons/big-red.png" position="15,682" size="284,40" zPosition="0" alphatest="blend" />
 		<widget name="key_red" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 	</screen>
 
 	<screen name="Green1Panel">
-		<ePixmap pixmap="buttons/big-green.png" position="305,682" size="284,40 " zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="Magic-HD/buttons/big-green.png" position="305,682" size="284,40 " zPosition="0" alphatest="blend" />
 		<widget name="key_green" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 	</screen>
 
 	<screen name="Yellow1Panel">
-		<ePixmap pixmap="buttons/big-yellow.png" position="595,682" size="284,40 " zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="Magic-HD/buttons/big-yellow.png" position="595,682" size="284,40 " zPosition="0" alphatest="blend" />
 		<widget name="key_yellow" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 	</screen>
 
 	<screen name="Blue1Panel">
-		<ePixmap pixmap="buttons/big-blue.png" position="890,682" size="284,40 " zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="Magic-HD/buttons/big-blue.png" position="890,682" size="284,40 " zPosition="0" alphatest="blend" />
 		<widget name="key_blue" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 	</screen>
 
 	<screen name="Red2Panel">
-		<ePixmap pixmap="buttons/big-red.png" position="15,682" size="284,40 " zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="Magic-HD/buttons/big-red.png" position="15,682" size="284,40 " zPosition="0" alphatest="blend" />
 		<widget source="key_red" render="Label" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" transparent="1" zPosition="1" />
 	</screen>
 
 	<screen name="Green2Panel">
-		<ePixmap pixmap="buttons/big-green.png" position="305,682" size="284,40 " zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="Magic-HD/buttons/big-green.png" position="305,682" size="284,40 " zPosition="0" alphatest="blend" />
 		<widget source="key_green" render="Label" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" transparent="1" zPosition="1" />
 	</screen>
 
 	<screen name="Yellow2Panel">
-		<ePixmap pixmap="buttons/big-yellow.png" position="595,682" size="284,40 " zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="Magic-HD/buttons/big-yellow.png" position="595,682" size="284,40 " zPosition="0" alphatest="blend" />
 		<widget source="key_yellow" render="Label" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" transparent="1" zPosition="1" />
 	</screen>
 
 	<screen name="Blue2Panel">
-		<ePixmap pixmap="buttons/big-blue.png" position="890,682" size="284,40 " zPosition="0" alphatest="blend" />
+		<ePixmap pixmap="Magic-HD/buttons/big-blue.png" position="890,682" size="284,40 " zPosition="0" alphatest="blend" />
 		<widget source="key_blue" render="Label" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" transparent="1" zPosition="1" />
 	</screen>
 
@@ -195,20 +195,20 @@
 		<widget source="session.CurrentService" render="Label" position="1145,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_dolby_on.png" position="986,63" size="60,24" zPosition="2" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD/infobar/ico_dolby_on.png" position="986,63" size="60,24" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_hd_on.png" position="1048,63" size="40,21" zPosition="4" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD/infobar/ico_hd_on.png" position="1048,63" size="40,21" zPosition="4" alphatest="on">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">800,2000</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_format_on.png" position="1090,63" size="40,21" zPosition="2" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD/infobar/ico_format_on.png" position="1090,63" size="40,21" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="buttons/rec.png" position="1132,63" size="20,20" zPosition="3" alphatest="on">
+		<widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD/buttons/rec.png" position="1132,63" size="20,20" zPosition="3" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>
@@ -216,7 +216,7 @@
 
 	<!--	## InfoBars ## -->
 	<screen name="InfoBar" position="0,510" size="1280,400" backgroundColor="transparent" flags="wfNoBorder">
-		<ePixmap alphatest="off" pixmap="infobar/hd.png" position="0,-7" size="1280,220" zPosition="-1" />
+		<ePixmap pixmap="Magic-HD/infobar/hd.png" position="0,-7" size="1280,220" zPosition="-1" alphatest="off"/>
 		<widget source="session.CurrentService" render="PiconBg" position="44,44" size="102,62" transparent="0" alphatest="blend" zPosition="1" />
 		<widget source="session.CurrentService" render="Picon" position="45,45" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
@@ -259,15 +259,14 @@
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Progress" pixmap="infobar/pbar.png" position="180,103" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
+		<widget source="session.Event_Now" render="Progress" pixmap="Magic-HD/infobar/pbar.png" position="180,103" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="icons/icon_stableupdate.png" position="5,45" size="32,32" zPosition="10" alphatest="blend" >
+		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="Magic-HD/icons/icon_stableupdate.png" position="5,45" size="32,32" zPosition="10" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="icons/icon_unstableupdate.png" position="5,45" size="32,32" zPosition="10" alphatest="blend" >
+		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="Magic-HD/icons/icon_unstableupdate.png" position="5,45" size="32,32" zPosition="10" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>
-
 </skin>
