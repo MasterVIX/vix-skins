@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.25 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.26 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -2400,22 +2400,22 @@ self.autoResize()
 		<panel name="Blue1Panel" />
 		<panel name="InfoBPanel" />
 		<widget name="list" position="590,110" size="600,255" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-		<widget name="snr_db" position="640,460" size="200,24" foregroundColor="grey" transparent="1" font="Regular;21" valign="center" halign="center" />
-		<eLabel position="550,460" size="80,24" transparent="1" text="SNR:" font="Regular;21" foregroundColor="grey" />
+		<widget name="snr_db" position="640,430" size="200,24" foregroundColor="grey" transparent="1" font="Regular;21" valign="center" halign="center" />
+		<eLabel text="SNR:" position="550,460" size="80,24" transparent="1" font="Regular;21" foregroundColor="grey" />
 		<widget name="snr_bar" position="640,460" size="200,20" foregroundColor="grey" transparent="1" borderWidth="1" />
 		<widget name="snr_percentage" position="850,460" size="80,24" foregroundColor="grey" transparent="1" font="Regular;21" />
-		<eLabel position="550,490" size="80,24" foregroundColor="grey" transparent="1" text="BER:" font="Regular;21" />
+		<eLabel text="BER:" position="550,490" size="80,24" foregroundColor="grey" transparent="1"  font="Regular;21" />
 		<widget name="ber_bar" position="640,490" size="200,20" foregroundColor="grey" transparent="1" borderWidth="1" />
 		<widget name="ber_value" position="850,490" size="80,24" foregroundColor="grey" transparent="1" font="Regular;21" />
-		<eLabel position="550,520" size="80,24" foregroundColor="grey" transparent="1" text="Lock:" font="Regular;21" />
+		<eLabel text="Lock:" position="550,520" size="80,24" foregroundColor="grey" transparent="1" font="Regular;21" />
 		<widget name="lock_state" position="640,520" size="200,24" foregroundColor="grey" transparent="1" font="Regular;21" />
-		<eLabel position="960,460" size="150,24" foregroundColor="grey" transparent="1" text="Frequency:" font="Regular;21" />
+		<eLabel text="Frequency:" position="960,460" size="150,24" foregroundColor="grey" transparent="1" font="Regular;21" />
 		<widget name="frequency_value" position="1110,460" size="100,24" foregroundColor="grey" transparent="1" font="Regular;21" />
-		<eLabel position="960,490" size="150,24" foregroundColor="grey" transparent="1" text="Symbolrate:" font="Regular;21" />
+		<eLabel text="Symbolrate:" position="960,490" size="150,24" foregroundColor="grey" transparent="1" font="Regular;21" />
 		<widget name="symbolrate_value" position="1110,490" size="100,24" foregroundColor="grey" transparent="1" font="Regular;21" />
-		<eLabel position="960,520" size="150,24" foregroundColor="grey" transparent="1" text="FEC:" font="Regular;21" />
+		<eLabel text="FEC:" position="960,520" size="150,24" foregroundColor="grey" transparent="1" font="Regular;21" />
 		<widget name="fec_value" position="1110,520" size="100,24" foregroundColor="grey" transparent="1" font="Regular;21" />
-		<eLabel position="960,550" size="150,24" foregroundColor="grey" transparent="1" text="Polarisation:" font="Regular;21" />
+		<eLabel text="Polarisation:" position="960,550" size="150,24" foregroundColor="grey" transparent="1" font="Regular;21" />
 		<widget name="polarisation" position="1110,550" size="300,24" foregroundColor="grey" transparent="1" font="Regular;21" />
 		<widget name="status_bar" position="500,580" size="500,24" foregroundColor="grey" zPosition="4" transparent="1" font="Regular;21" />
 	</screen>
@@ -3364,7 +3364,7 @@ self.autoResize()
 		<panel name="InfoBPanel" />
 		</screen>
 	<screen name="GraphicalEPGPIG" position="center,center" size="1280,720" flags="wfNoBorder">
-		<widget source="Title" foregroundColor="grey" render="Label" position="5,5" size="400,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+		<widget source="Title" foregroundColor="grey" render="Label" position="5,5" size="300,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
 		<widget source="global.CurrentTime" render="Label" position="1015,5" size="250,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
 		 <convert type="ClockToText">Full</convert>
 		</widget>
@@ -3378,18 +3378,18 @@ self.autoResize()
 		<widget source="session.CurrentService" render="Label" position="5,62" size="393,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="Event" render="Label" position="415,40" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" shadowColor="#000000" halign="right" transparent="1">
+		<widget source="Event" render="Label" position="315,5" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" shadowColor="#000000" halign="right" transparent="1">
 		 <convert type="EventTime">StartTime</convert>
 		 <convert type="ClockToText" />
 		</widget>
-		<widget source="Event" render="Label" position="523,40" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" shadowColor="#000000" halign="left" transparent="1">
+		<widget source="Event" render="Label" position="423,5" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" shadowColor="#000000" halign="left" transparent="1">
 	 <convert type="EventTime">EndTime</convert>
 	 <convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget source="Event" render="Label" position="630,40" size="640,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" halign="left">
+		<widget source="Event" render="Label" position="530,5" size="480,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" halign="left">
 		 <convert type="EventName">Name</convert>
 		</widget>
-	 <widget source="Event" render="Label" position="410,70" zPosition="1" size="865,190" font="Regular;22" halign="left" valign="top" foregroundColor="#00dddddd" backgroundColor="#000000" shadowColor="#000000" transparent="1" >
+	 <widget source="Event" render="Label" position="410,37" zPosition="1" size="865,224" font="Regular;22" halign="left" valign="top" foregroundColor="#00dddddd" backgroundColor="#000000" shadowColor="#000000" transparent="1" >
 		<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget source="Event" render="Label" position="410,262" size="760,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18" halign="left">
