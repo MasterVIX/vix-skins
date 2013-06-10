@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.29	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.31	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -2084,15 +2084,6 @@ background
 		<panel name="Green2Panel" />
 		<widget name="config" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
-	<!-- ## WEB-Media ## -->
-	<screen name="ConfWebmed" position="0,0" size="1280,720" flags="wfNoBorder" title="WebMedia configuration" >
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,175" size="755,483" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-		<widget name="statusbar" position="520,82" size="755,23" font="Regular;22" foregroundColor="grey" />
-		<widget name="status" position="520,110" size="755,60" font="Regular;22" foregroundColor="grey" />
-	</screen>
 	<!-- ## Yamp ## -->
 	<screen name="YampScreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75" />
@@ -3353,42 +3344,6 @@ background
 		</widget>
 		<widget source="CmdText" render="Label" position="490,530" size="785,100" font="Regular;22" foregroundColor="grey" />
 	</screen>
-	<!-- ##Flash Gordon## -->
-	<screen name="FlashGordon" position="0,0" size="1280,720" flags="wfNoBorder" title="">
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel" />
-		<widget name="buttonred" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<panel name="GreenBPanel" />
-		<widget name="buttongreen" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<panel name="YellowBPanel" />
-		<widget name="buttonyellow" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<panel name="BlueBPanel" />
-		<widget name="buttonblue" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-	</screen>
-	<screen name="FlashGordonConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" title="">
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel" />
-		<widget name="buttonred" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<panel name="GreenBPanel" />
-		<widget name="buttongreen" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<panel name="YellowBPanel" />
-		<widget name="buttonyellow" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<panel name="BlueBPanel" />
-		<widget name="buttonblue" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<widget name="config" position="490,80" size="785,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
-	<screen name="FlashGordonChecking" position="0,0" size="1280,720" flags="wfNoBorder" title="">
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel" />
-		<widget name="buttonred" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<panel name="GreenBPanel" />
-		<widget name="buttongreen" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<panel name="YellowBPanel" />
-		<widget name="buttonyellow" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<panel name="BlueBPanel" />
-		<widget name="buttonblue" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<widget name="menu" position="490,80" size="785,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-	</screen>
 	<!-- ##SDG ImageDownLoader## -->
 	<screen name="s4fFeedsServersScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="Image Feeds List">
 		<panel name="BasicTemplate"/>
@@ -3498,6 +3453,18 @@ background
 			<widget name="pname" position="490,80" size="785,60" zPosition="0" font="Regular;22" transparent="1" halign="center" foregroundColor="secondFG" />
 			<widget name="pinfo" position="490,145" size="785,60" zPosition="0" font="Regular;22" transparent="1" />
 			<widget name="head" position="10,370" size="1250,25" backgroundColor="secondBG" zPosition="5" foregroundColor="secondFG" font="Regular;23" halign="center"/>
-			<widget name="dllist" position="10,395" size="1250,250" backgroundColor="secondBG" scrollbarMode="showOnDemand" transparent="0" selectionPixmap="buttons/sel.png"/>
+			<widget name="dllist" position="10,395" size="1250,250" backgroundColor="secondBG" font="Regular;16" scrollbarMode="showOnDemand" transparent="0" selectionPixmap="buttons/sel.png"/>
+	</screen>
+	<!-- ##IPTV-List-Updater## -->
+	<screen name="IPTVUpdater" position="0,0" size="1280,720" flags="wfNoBorder" title="IPTV Updater">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<widget name="label1" position="490,80" size="785,30" font="Regular;22" transparent="1" foregroundColor="secondFG"  valign="center" halign="center"/>
+		<widget name="IPTVList" position="490,110" size="785,500" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="label2" position="490,620" size="785,30" font="Regular;22" transparent="1" foregroundColor="secondFG"  valign="bottom" halign="center"/>
+		<widget name="Preview" position="100,379" size="270,200" zPosition="2" transparent="0" alphatest="on" />
 	</screen>
 </skin>
