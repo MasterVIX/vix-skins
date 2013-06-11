@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.28 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.29 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -533,16 +533,16 @@
 	<screen name="AudioSelection" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		 <widget name="config" position="620,85" size="425,200" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" foregroundColor="grey" />
-		<widget source="key_red" render="Pixmap" pixmap="Magic-HD/buttons/key_red.png" position="570,85" size="35,25" alphatest="on">
+		<widget source="key_red" render="Pixmap" pixmap="buttons/key_red.png" position="570,85" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="key_green" render="Pixmap" pixmap="Magic-HD/buttons/key_green.png" position="570,110" size="35,25" alphatest="on">
+		<widget source="key_green" render="Pixmap" pixmap="buttons/key_green.png" position="570,110" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="key_yellow" render="Pixmap" pixmap="Magic-HD/buttons/key_yellow.png" position="570,135" size="35,25" alphatest="on">
+		<widget source="key_yellow" render="Pixmap" pixmap="buttons/key_yellow.png" position="570,135" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="key_blue" render="Pixmap" pixmap="Magic-HD/buttons/key_blue.png" position="570,160" size="35,25" alphatest="on">
+		<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" position="570,160" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="600,400" size="500,200" zPosition="3" foregroundColor="grey" transparent="1" >
@@ -589,7 +589,7 @@
 		<panel name="BasicTemplate"/>
 		<panel name="Red2Panel" />
 		<panel name="Green2Panel" />
-		<widget name="HelpWindow" pixmap="Magic-HD/buttons/vkey_icon.png" position="520,500" size="1,1" zPosition="1" transparent="1" alphatest="on" />
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="520,500" size="1,1" zPosition="1" transparent="1" alphatest="on" />
 		<widget name="config" position="520,80" size="755,588" itemHeight="28" foregroundColor="grey" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" enableWrapAround="1" />
 		<widget name="description" position="5,370" size="510,250" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
 		<widget source="VKeyIcon" render="Pixmap" pixmap="Magic-HD/buttons/key_text.png" position="1160,682" zPosition="1" size="35,25" transparent="1" alphatest="on" >
@@ -1155,7 +1155,7 @@ self.autoResize()
 		<widget name="config" position="520,80" size="755,400" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" foregroundColor="grey" enableWrapAround="1" />
 		<widget name="canceltext" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 		<widget name="oktext" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<widget name="HelpWindow" pixmap="Magic-HD/buttons/vkey_icon.png" position="520,500" size="1,1" transparent="1" zPosition="1" alphatest="on" />
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="520,500" size="1,1" transparent="1" zPosition="1" alphatest="on" />
 		<widget name="description" position="5,370" size="510,250" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0" foregroundColor="secondFG" />
 	</screen>
 	<screen name="TimerEdit" position="0,0" size="1280,720" flags="wfNoBorder">
