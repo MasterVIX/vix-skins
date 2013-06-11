@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.29 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.30 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -73,9 +73,7 @@
 		<widget source="session.Event_Now" render="Label" position="5,147" size="100,22" font="Regular;20" halign="left" foregroundColor="secondFG" backgroundColor="secondBG" transparent="1" zPosition="1">
 					<convert type="EventName">SmallRating</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="5,173" size="625,415" font="Regular; 20" zPosition="1" transparent="1">
-					<convert type="EventName">ExtendedDescription</convert>
-		</widget>
+		<widget name="epg_description" position="5,173" size="625,415" font="Regular; 20" zPosition="1" transparent="1"/>
 		<widget source="session.Event_Next" render="Label" position="650,120" size="620,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="selectedFG" noWrap="1" font="Regular;22" halign="left">
 					<convert type="EventName">NameNext</convert>
 		</widget>
