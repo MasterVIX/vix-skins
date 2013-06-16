@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.31	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.32	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -3456,15 +3456,39 @@ background
 			<widget name="dllist" position="10,395" size="1250,250" backgroundColor="secondBG" font="Regular;16" scrollbarMode="showOnDemand" transparent="0" selectionPixmap="buttons/sel.png"/>
 	</screen>
 	<!-- ##IPTV-List-Updater## -->
-	<screen name="IPTVUpdater" position="0,0" size="1280,720" flags="wfNoBorder" title="IPTV Updater">
+	<screen name="IPTVMain" position="0,0" size="1280,720" flags="wfNoBorder" title="IPTV Updater">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel" />
 		<panel name="Green1Panel" />
 		<panel name="Yellow1Panel" />
 		<panel name="Blue1Panel" />
-		<widget name="label1" position="490,80" size="785,30" font="Regular;22" transparent="1" foregroundColor="secondFG"  valign="center" halign="center"/>
+		<widget name="text1" position="490,80" size="785,30" font="Regular;22" transparent="1" foregroundColor="secondFG"  valign="center" halign="center"/>
 		<widget name="IPTVList" position="490,110" size="785,500" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-		<widget name="label2" position="490,620" size="785,30" font="Regular;22" transparent="1" foregroundColor="secondFG"  valign="bottom" halign="center"/>
-		<widget name="Preview" position="100,379" size="270,200" zPosition="2" transparent="0" alphatest="on" />
+		<widget name="text2" position="490,620" size="785,30" font="Regular;22" transparent="1" foregroundColor="secondFG"  valign="bottom" halign="center"/>
+		<widget name="country" position="100,379" size="270,200" zPosition="2" transparent="0" alphatest="on" />
+	</screen>
+	<screen name="IPTVStart" position="0,0" size="1280,720" flags="wfNoBorder" title="Welcome to IPTV List Updater">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<widget name="title" position="520,90" size="755,30" font="Regular;22" transparent="1" foregroundColor="grey" valign="center" halign="center" />
+		<widget name="maintain" position="520,130" size="755,30" font="Regular;22" transparent="1" foregroundColor="grey" valign="center" halign="center" />
+		<widget name="link1" position="520,180" size="755,30" font="Regular;22" transparent="1" foregroundColor="grey" valign="center" halign="center" />
+		<widget name="link2" position="520,230" size="755,30" font="Regular;22" transparent="1" foregroundColor="grey" valign="center" halign="center" />
+		<widget name="description" position="520,350" size="755,30" font="Regular;22" transparent="1" foregroundColor="grey" valign="center" halign="center" />
+		<widget name="thanks" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+	</screen>
+	<screen name="Changelog" position="0,0" size="1280,720" flags="wfNoBorder" title="Changelog IPTV List Updater">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<widget name="title" position="520,90" size="755,30" font="Regular;22" transparent="1" foregroundColor="grey" valign="center" halign="center" />
+		<widget name="text" position="490,110" size="785,554" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="FAQ" position="0,0" size="1280,720" flags="wfNoBorder" title="Changelog IPTV List Updater">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<widget name="text" position="490,80" size="785,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 </skin>
