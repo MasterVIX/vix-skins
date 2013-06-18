@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.30 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.31 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -2949,7 +2949,7 @@ self.autoResize()
 		<widget name="ok" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
 		<widget name="config" font="Regular;22" position="520,90" size="755,575" selectionPixmap="Magic-HD/buttons/sel.png" transparent="1" itemHeight="28" enableWrapAround="1" />
 	</screen>
-<!-- ## TempFanControl ##-->
+<!-- ## FanControl ##-->
 	<screen name="TempFanControl" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel" />
@@ -2973,6 +2973,12 @@ self.autoResize()
 			<widget source="SensorFan1" render="Label" position="920,230" zPosition="1" size="150,20" font="Regular;20" halign="right" foregroundColor="grey" >
 				<convert type="SensorToText"></convert>
 			</widget>
+	</screen>
+	<screen name="FanSetupConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" title="Standbymode FanSetup settings">
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
+		<widget name="config" font="Regular;22" position="520,90" size="755,575" selectionPixmap="Magic-HD/buttons/sel.png" transparent="1" itemHeight="28" enableWrapAround="1" />
 	</screen>
 	<!-- ## IMDB Plugin ## -->
 	<screen name="IMDB" position="0,0" size="1280,720" flags="wfNoBorder">
