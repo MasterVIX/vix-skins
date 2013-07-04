@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.32	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.33	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -3490,5 +3490,25 @@ background
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel" />
 		<widget name="text" position="490,80" size="785,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<!-- ##LCD4linux## -->
+	<screen name="LCDdisplayConfig" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<widget name="config" position="490,80" size="785,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget source="introduction" render="Label" position="5,379" size="477,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+		<widget source="LibUSB" render="Label" position="5,500" size="477,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+		<widget source="Version" render="Label" position="5,550" size="477,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="left" />
+	</screen>
+	<!-- ##Transcoding## -->
+	<screen name="TranscodingSetup_ext" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
+		<widget name="config" position="490,80" size="785,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget source="text" render="Label" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
 	</screen>
 </skin>
