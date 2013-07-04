@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.39 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.40 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -24,6 +24,24 @@
 	</widget>
   </screen>
   
+  <screen name="BasicTemplate2">
+	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
+	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
+	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
+	<widget source="global.CurrentTime" render="Label" position="1100,8" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
+		<convert type="ClockToText">Format:%-H:%M</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="950,28" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
+		<convert type="ClockToText">Date</convert>
+	</widget>	
+	<widget source="Title" render="Label" position="135,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
+	<eLabel position="9,84" size="479,272" zPosition="1" backgroundColor="selectedBG" />
+	<widget source="session.VideoPicture" backgroundColor="transparent" position="10,85" render="Pig" size="477,270" zPosition="3" />
+	<widget source="session.CurrentService" render="Label" position="10,85" size="477,20" zPosition="4" borderWidth="1" borderColor="black" foregroundColor="white" backgroundColor="transparent" transparent="1" font="Regular;18" noWrap="1" valign="center" halign="center">
+		<convert type="ServiceName">Name</convert>
+	</widget>
+  </screen>
+
   <screen name="BasicTemplateNoVp">
 	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
 	<eLabel position="0,0" size="1280,75" backgroundColor="background" zPosition="-1" />
@@ -617,10 +635,14 @@
   </screen>
 	<!-- ## Channel, EPG, EventInfo ## -->
   <screen name="ChannelSelection" title="Channel Selection" position="0,0" size="1280,720" flags="wfNoBorder">
-	<panel name="BasicTemplate"/>
+	<panel name="BasicTemplate2"/>
 	<panel name="RGYB_Template"/>
 	<panel name="MenuTemplate"/>
 	<panel name="InfoTemplate"/>
+	<widget source="ServiceEvent" render="PiconBg" position="14,6" size="102,62" alphatest="blend" zPosition="1" />
+	<widget source="ServiceEvent" render="Picon" position="15,8" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
+		<convert type="ServiceName">Reference</convert>
+	</widget>
 	<widget name="list" backgroundColor="background" position="520,90" size="755,570" itemHeight="30" serviceNumberFont="Regular;22" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="30" colorEventProgressbar="blue" colorEventProgressbarSelected="blue" colorServiceDescription="#DBB96E" colorEventProgressbarBorderSelected="grey" transparent="1" foregroundColorServiceNotAvail="#00656565" scrollbarMode="showOnDemand" />
 	<widget source="ServiceEvent" render="Label" position="10,367" size="425,25" transparent="1" foregroundColor="secondFG" font="Regular;20" halign="left" valign="center">
 		<convert type="EventName">NowName</convert>
@@ -681,10 +703,14 @@
 	</widget>
   </screen>
   <screen name="EPGSelection" title="EPG Selection" position="0,0" size="1280,720" flags="wfNoBorder">
-	<panel name="BasicTemplate"/>
+	<panel name="BasicTemplate2"/>
 	<panel name="RGYB_Template"/>
 	<panel name="MenuTemplate"/>
 	<panel name="InfoTemplate"/>
+	<widget source="Service" render="PiconBg" position="14,6" size="102,62" alphatest="blend" zPosition="1" />
+	<widget source="Service" render="Picon" position="15,8" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
+		<convert type="ServiceName">Reference</convert>
+	</widget>
 	<widget name="list" position="520,90" size="755,570" itemHeight="30" font="Regular;22" transparent="0" scrollbarMode="showOnDemand" />
 	<widget name="number" position="520,90" size="755,570" zPosition="5" backgroundColor="background" transparent="0" font="Regular;36" borderColor="black" borderWidth="1" valign="center" halign="center" />
 	<widget source="Event" render="Label" position="10,355" size="477,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="white" font="Regular;22" valign="center" halign="center">
@@ -1522,10 +1548,14 @@
 	<panel name="VixLogo"/>
   </screen>
   <screen name="EPGSelectionMulti" title="EPG Selection" position="0,0" size="1280,720" flags="wfNoBorder">
-	<panel name="BasicTemplate"/>
+	<panel name="BasicTemplate2"/>
 	<panel name="RGYB_Template"/>
 	<panel name="MenuTemplate"/>
 	<panel name="InfoTemplate"/>
+	<widget source="Service" render="PiconBg" position="14,6" size="102,62" alphatest="blend" zPosition="1" />
+	<widget source="Service" render="Picon" position="15,8" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
+		<convert type="ServiceName">Reference</convert>
+	</widget>
 	<widget name="date" position="750,85" size="250,24" transparent="1" font="Regular;20" valign="center" halign="center" />
 	<widget name="bouquetlist" position="520,165" size="755,500" itemHeight="31" foregroundColor="white" backgroundColor="background" foregroundColorSelected="selectedFG" backgroundColorSelected="#001C252D" borderColor="background" scrollbarMode="showNever" zPosition="4" transparent="0" />
 	<widget name="list" position="520,165" size="755,500" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
@@ -5837,8 +5867,8 @@
 	<widget source="Event" render="Label" position="150,310" size="980,220" font="Regular;21" foregroundColor="white" backgroundColor="transpBlack" valign="center" halign="center" zPosition="11">
 		<convert type="EventName">FullDescription</convert>
 	</widget>
-	<widget source="session.CurrentService" render="PiconBg" position="44,634" size="102,62" transparent="0" alphatest="blend" zPosition="1" />
-	<widget source="session.CurrentService" render="Picon" position="45,636" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
+	<widget source="Service" render="PiconBg" position="44,634" size="102,62" transparent="0" alphatest="blend" zPosition="1" />
+	<widget source="Service" render="Picon" position="45,636" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
 		<convert type="ServiceName">Reference</convert>
 	</widget>
 	<widget source="session.CurrentService" render="Label" position="305,565" size="500,17" backgroundColor="secondBG" transparent="1" noWrap="1" font="Regular; 14" halign="left">
@@ -5943,7 +5973,7 @@
 		<convert type="ConditionalShowHide">Blink</convert>
 	</widget>
 	<widget name="list" position="220,640" size="635,62" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="left" />
-	<widget source="Service" render="Label" position="305,585" size="500,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" valign="center" halign="left" >
+	<widget source="session.CurrentService" render="Label" position="221,585" size="500,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" valign="center" halign="left" >
 	<convert type="ServiceName">Name</convert>
 	</widget>
 	<widget source="global.CurrentTime" render="Label" position="49,589" size="62,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="white" font="Regular;22" valign="bottom" halign="right">
