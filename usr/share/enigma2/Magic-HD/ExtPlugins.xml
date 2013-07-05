@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.33	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.34	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -3498,10 +3498,11 @@ background
 		<panel name="Green1Panel" />
 		<panel name="Yellow1Panel" />
 		<panel name="Blue1Panel" />
-		<widget name="config" position="490,80" size="785,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-		<widget source="introduction" render="Label" position="5,379" size="477,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+		<widget name="config" position="490,80" size="785,560" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget source="Version" render="Label" position="5,379" size="477,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
 		<widget source="LibUSB" render="Label" position="5,500" size="477,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
-		<widget source="Version" render="Label" position="5,550" size="477,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="left" />
+		<widget source="introduction" render="Label" position="520,642" size="477,22" zPosition="2" font="Regular;22" foregroundColor="secondFG" halign="center" />
+	 <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="5,400" size="1,1" transparent="1" zPosition="1" alphatest="on" />
 	</screen>
 	<!-- ##Transcoding## -->
 	<screen name="TranscodingSetup_ext" position="0,0" size="1280,720" flags="wfNoBorder" title="">
