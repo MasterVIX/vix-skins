@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.41 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.42 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -733,10 +733,14 @@
 	</widget>
   </screen>
   <screen name="EventView" title="Eventview" position="0,0" size="1280,720" flags="wfNoBorder">
-	<panel name="BasicTemplate"/>
+	<panel name="BasicTemplate2"/>
 	<panel name="RGYB_Template"/>
 	<panel name="MenuTemplate"/>
 	<panel name="InfoTemplate"/>
+	<widget source="Service" render="PiconBg" position="14,6" size="102,62" alphatest="blend" zPosition="1" />
+	<widget source="Service" render="Picon" position="15,8" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
+		<convert type="ServiceName">Reference</convert>
+	</widget>
 	<widget name="channel" position="15,400" size="460,50" transparent="1" foregroundColor="secondFG" font="Regular;21" halign="center" />
 	<widget name="datetime" position="15,458" size="460,30" transparent="1" font="Regular;21" halign="center" />
 	<widget name="duration" position="15,488" size="460,30" transparent="1" font="Regular;21" halign="center" />
