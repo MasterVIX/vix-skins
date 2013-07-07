@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.42 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.43 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -34,7 +34,7 @@
 	<widget source="global.CurrentTime" render="Label" position="950,28" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
 		<convert type="ClockToText">Date</convert>
 	</widget>	
-	<widget source="Title" render="Label" position="135,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
+	<widget source="Title" render="Label" position="145,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
 	<eLabel position="9,84" size="479,272" zPosition="1" backgroundColor="selectedBG" />
 	<widget source="session.VideoPicture" backgroundColor="transparent" position="10,85" render="Pig" size="477,270" zPosition="3" />
 	<widget source="session.CurrentService" render="Label" position="10,85" size="477,20" zPosition="4" borderWidth="1" borderColor="black" foregroundColor="white" backgroundColor="transparent" transparent="1" font="Regular;18" noWrap="1" valign="center" halign="center">
@@ -639,8 +639,8 @@
 	<panel name="RGYB_Template"/>
 	<panel name="MenuTemplate"/>
 	<panel name="InfoTemplate"/>
-	<widget source="ServiceEvent" render="PiconBg" position="14,6" size="102,62" alphatest="blend" zPosition="1" />
-	<widget source="ServiceEvent" render="Picon" position="15,8" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
+	<widget source="ServiceEvent" render="PiconBg" position="14,4" size="102,62" alphatest="blend" zPosition="1" />
+	<widget source="ServiceEvent" render="Picon" position="15,6" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
 		<convert type="ServiceName">Reference</convert>
 	</widget>
 	<widget name="list" backgroundColor="background" position="520,90" size="755,570" itemHeight="30" serviceNumberFont="Regular;22" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="30" colorEventProgressbar="blue" colorEventProgressbarSelected="blue" colorServiceDescription="#DBB96E" colorEventProgressbarBorderSelected="grey" transparent="1" foregroundColorServiceNotAvail="#00656565" scrollbarMode="showOnDemand" />
@@ -707,8 +707,8 @@
 	<panel name="RGYB_Template"/>
 	<panel name="MenuTemplate"/>
 	<panel name="InfoTemplate"/>
-	<widget source="Service" render="PiconBg" position="14,6" size="102,62" alphatest="blend" zPosition="1" />
-	<widget source="Service" render="Picon" position="15,8" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
+	<widget source="Service" render="PiconBg" position="14,4" size="102,62" alphatest="blend" zPosition="1" />
+	<widget source="Service" render="Picon" position="15,6" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
 		<convert type="ServiceName">Reference</convert>
 	</widget>
 	<widget name="list" position="520,90" size="755,570" itemHeight="30" font="Regular;22" transparent="0" scrollbarMode="showOnDemand" />
@@ -737,8 +737,8 @@
 	<panel name="RGYB_Template"/>
 	<panel name="MenuTemplate"/>
 	<panel name="InfoTemplate"/>
-	<widget source="Service" render="PiconBg" position="14,6" size="102,62" alphatest="blend" zPosition="1" />
-	<widget source="Service" render="Picon" position="15,8" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
+	<widget source="Service" render="PiconBg" position="14,4" size="102,62" alphatest="blend" zPosition="1" />
+	<widget source="Service" render="Picon" position="15,6" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
 		<convert type="ServiceName">Reference</convert>
 	</widget>
 	<widget name="channel" position="15,400" size="460,50" transparent="1" foregroundColor="secondFG" font="Regular;21" halign="center" />
@@ -1556,8 +1556,8 @@
 	<panel name="RGYB_Template"/>
 	<panel name="MenuTemplate"/>
 	<panel name="InfoTemplate"/>
-	<widget source="Service" render="PiconBg" position="14,6" size="102,62" alphatest="blend" zPosition="1" />
-	<widget source="Service" render="Picon" position="15,8" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
+	<widget source="Service" render="PiconBg" position="14,4" size="102,62" alphatest="blend" zPosition="1" />
+	<widget source="Service" render="Picon" position="15,6" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
 		<convert type="ServiceName">Reference</convert>
 	</widget>
 	<widget name="date" position="750,85" size="250,24" transparent="1" font="Regular;20" valign="center" halign="center" />
