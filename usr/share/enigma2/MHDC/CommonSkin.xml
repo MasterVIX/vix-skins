@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.43 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.44 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -867,37 +867,25 @@
   </screen>
   <screen name="Devices" title="Systeminfo" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
-	<widget source="TunerHeader" render="Label" position="635,125" size="580,25" font="Regular; 24" halign="center" transparent="0" zPosition="1" />
-	<widget source="nims" render="Label" position="635,160" size="580,100" backgroundColor="background" transparent="1" font="Regular;20" halign="center" />
-	<widget source="HDDHeader" render="Label" position="635,360" size="580,25" backgroundColor="background" transparent="1" font="Regular;24" halign="center" />
-	<widget source="hdd" render="Label" position="635,400" size="580,100" backgroundColor="background" transparent="1" font="Regular;20" halign="center" />
-	<widget source="MountsHeader" render="Label" position="635,510" size="580,25" backgroundColor="background" transparent="1" font="Regular;24" halign="center" />
-	<widget source="mounts" render="Label" position="635,550" size="580,100" backgroundColor="background" transparent="1" font="Regular;20" halign="center" />
+	<widget source="TunerHeader" render="Label" position="610,125" size="580,25" font="Regular; 22" transparent="0" zPosition="1" />
+	<widget source="nims" render="Label" position="610,160" size="580,100" foregroundColor="grey" transparent="1" font="Regular;20"/>
+	<widget source="HDDHeader" render="Label" position="610,360" size="580,25" transparent="1" font="Regular;22" />
+	<widget source="hdd" render="Label" position="610,400" size="610,100" foregroundColor="grey" transparent="1" font="Regular;20" />
+	<widget source="MountsHeader" render="Label" position="610,510" size="580,25" transparent="1" font="Regular;22" />
+	<widget source="mounts" render="Label" position="610,550" size="580,100" foregroundColor="grey" transparent="1" font="Regular;20" />
 	<panel name="VixLogo"/>
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
 	<widget source="lab1" render="Label" position="520,90" size="755,30" font="Regular;24" transparent="0" zPosition="1" foregroundColor="secondFG" />
 	<widget source="lab2" render="Label" position="520,120" size="755,30" font="Regular;22" transparent="0" zPosition="1" foregroundColor="grey" />
-	<widget name="AboutScrollLabel" render="Label" position="520,160" size="755,325" transparent="0" font="Regular;20" zPosition="1" scrollbarMode="showOnDemand" />
+	<widget name="AboutScrollLabel" render="Label" position="520,160" size="755,425" transparent="0" font="Regular;20" zPosition="1" scrollbarMode="showOnDemand" />
 	<panel name="VixLogo"/>
   </screen>
   <screen name="SystemNetworkInfo" flags="wfNoBorder" position="0,0" size="1280,720" >
 	<panel name="BasicTemplate"/>
 	<panel name="RedTemplate 2"/>
-	<widget name="AboutScrollLabel" position="520,90" size="458,175" valign="left" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
-	<widget source="LabelBSSID" render="Label" position="520,170" size="200,25" valign="left" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
-	<widget source="LabelESSID" render="Label" position="520,200" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
-	<widget source="LabelQuality" render="Label" position="520,230" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
-	<widget source="LabelSignal" render="Label" position="520,260" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
-	<widget source="LabelBitrate" render="Label" position="520,290" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
-	<widget source="LabelEnc" render="Label" position="520,320" size="200,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
-	<widget source="BSSID" render="Label" position="670,170" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
-	<widget source="ESSID" render="Label" position="670,200" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
-	<widget source="quality" render="Label" position="670,230" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
-	<widget source="signal" render="Label" position="670,260" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
-	<widget source="bitrate" render="Label" position="670,290" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
-	<widget source="enc" render="Label" position="670,320" size="330,25" valign="center" font="Regular;20" transparent="1" foregroundColor="#FFFFFF" />
+	<widget name="AboutScrollLabel" position="520,90" size="755,275" valign="left" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1" />
 	<widget source="IFtext" render="Label" position="520,400" size="120,21" zPosition="10" font="Regular;20" halign="left" transparent="1" />
 	<widget source="IF" render="Label" position="630,400" size="400,21" zPosition="10" font="Regular;20" halign="left" transparent="1" />
 	<widget source="Statustext" render="Label" position="520,450" size="115,21" zPosition="10" font="Regular;20" halign="left" transparent="1"/>
@@ -914,7 +902,7 @@
   <screen name="ServiceInfo" title="Serviceinfo" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
 	<panel name="RGYB_Template"/>
-	<widget name="infolist" position="520,82" size="755,583" selectionDisabled="1" />
+	<widget name="infolist" position="520,82" size="755,583" selectionDisabled="0" />
 	<panel name="VixLogo"/>
   </screen>
   <screen name="HarddiskSelection" title="HDD Select" flags="wfNoBorder" position="0,0" size="1280,720">
