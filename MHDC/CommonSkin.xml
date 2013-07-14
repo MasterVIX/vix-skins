@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.45 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.46 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -54,6 +54,19 @@
 	</widget>	
 	<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
   </screen>
+  
+  <screen name="BasicTemplateNoVp2">
+	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,70" size="1280,2" />
+	<ePixmap pixmap="MHDC/border/bottom_bg.png" position="0,675" size="1280,2" />
+	<widget source="global.CurrentTime" render="Label" position="1100,8" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
+		<convert type="ClockToText">Format:%-H:%M</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="950,28" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
+		<convert type="ClockToText">Date</convert>
+	</widget>	
+	<widget source="Title" render="Label" position="145,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
+  </screen>
+
 
   <screen name="VixLogo">
 	<ePixmap pixmap="MHDC/logos/vix2.png" position="60,638" size="300,34" alphatest="blend" />
@@ -675,43 +688,47 @@
 	<panel name="RGYB_Template"/>
 	<widget name="list" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1" />
   </screen>
-  <screen flags="wfNoBorder" name="SlimChannelSelection" position="0,0" size="1280,720" title="Channel Selection">
-	<panel name="BasicTemplateNoVp"/>
+  <screen flags="wfNoBorder" name="SlimChannelSelection" position="0,0" size="1280,720" backgroundColor="transpBG" title="Channel Selection">
+	<panel name="BasicTemplateNoVp2"/>
 	<panel name="RGYB_Template 2"/>
-	<widget name="list" scrollbarMode="showOnDemand"  backgroundColor="transpBlue" colorEventProgressbar="blue" colorEventProgressbarSelected="blue" colorEventProgressbarBorderSelected="grey" serviceNumberFont="Regular;22" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" itemHeight="30" serviceItemHeight="30" position="15,90" size="630,570" transparent="1" />
-    <widget source="ServiceEvent" render="Label" position="660,90" size="70,30" halign="left" font="Regular;21" foregroundColor="white" backgroundColor="background" transparent="1" noWrap="1" zPosition="6">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="ServiceEvent" render="Label" position="660,370" size="70,30" halign="left" font="Regular;21" foregroundColor="white" backgroundColor="background" transparent="1" noWrap="1" zPosition="6">
-      <convert type="EventTime">NextStartTime</convert>
-      <convert type="ClockToText">
-      </convert>
-    </widget>
-    <widget source="ServiceEvent" render="Label" position="660,650" size="70,30" halign="left" font="Regular;21" foregroundColor="white" backgroundColor="background" transparent="1" noWrap="1" zPosition="6">
-      <convert type="EventTime">ThirdStartTime</convert>
-      <convert type="ClockToText">
-      </convert>
-    </widget>
-    <widget source="ServiceEvent" render="Label" position="1167,91" size="85,28" font="Regular; 18" foregroundColor="white" backgroundColor="background" halign="right" transparent="1" noWrap="1" valign="center">
-      <convert type="EventTime">Remaining</convert>
-      <convert type="RemainingToText">InMinutes</convert>
-    </widget>
-    <widget source="ServiceEvent" render="Label" position="730,90" size="435,30" halign="left" Valign="top" backgroundColor="background" font="Regular; 22" foregroundColor="white" transparent="1" zPosition="6" noWrap="1">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget source="ServiceEvent" render="Label" position="685,118" size="567,232" font="Regular; 20" backgroundColor="background" foregroundColor="grey" transparent="1" zPosition="6">
-      <convert type="EventName">FullDescription</convert>
-    </widget>
-    <widget source="ServiceEvent" render="Label" position="730,370" size="522,30" halign="left" Valign="top" backgroundColor="background" font="Regular; 22" foregroundColor="white" transparent="1" zPosition="6" noWrap="1">
-      <convert type="EventName">NextName</convert>
-    </widget>
-    <widget source="ServiceEvent" render="Label" position="685,404" size="567,232" font="Regular; 20" backgroundColor="background" foregroundColor="grey" transparent="1" zPosition="6">
-      <convert type="EventName">NextDescription</convert>
-    </widget>
-    <widget source="ServiceEvent" render="Label" position="730,650" size="522,30" halign="left" backgroundColor="background" font="Regular; 22" foregroundColor="white" transparent="1" zPosition="6" noWrap="1">
-      <convert type="EventName">ThirdName</convert>
-    </widget>
+	<widget source="ServiceEvent" render="PiconBg" position="14,4" size="102,62" alphatest="blend" zPosition="1" />
+	<widget source="ServiceEvent" render="Picon" position="15,6" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
+		<convert type="ServiceName">Reference</convert>
+	</widget>
+	<widget name="list" scrollbarMode="showOnDemand" backgroundColor="transpBG" colorEventProgressbar="blue" colorEventProgressbarSelected="blue" colorEventProgressbarBorderSelected="grey" serviceNumberFont="Regular;22" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" itemHeight="30" serviceItemHeight="30" position="15,90" size="630,570" transparent="1" />
+	<widget source="ServiceEvent" render="Label" position="660,90" size="70,30" halign="left" font="Regular;21" foregroundColor="white" backgroundColor="background" transparent="1" noWrap="1" zPosition="6">
+		<convert type="EventTime">StartTime</convert>
+		<convert type="ClockToText">Default</convert>
+	</widget>
+	<widget source="ServiceEvent" render="Label" position="660,370" size="70,30" halign="left" font="Regular;21" foregroundColor="white" backgroundColor="background" transparent="1" noWrap="1" zPosition="6">
+		<convert type="EventTime">NextStartTime</convert>
+		<convert type="ClockToText">
+		</convert>
+	</widget>
+	<widget source="ServiceEvent" render="Label" position="660,650" size="70,30" halign="left" font="Regular;21" foregroundColor="white" backgroundColor="background" transparent="1" noWrap="1" zPosition="6">
+		<convert type="EventTime">ThirdStartTime</convert>
+		<convert type="ClockToText">
+		</convert>
+	</widget>
+	<widget source="ServiceEvent" render="Label" position="1167,91" size="85,28" font="Regular; 18" foregroundColor="white" backgroundColor="background" halign="right" transparent="1" noWrap="1" valign="center">
+		<convert type="EventTime">Remaining</convert>
+		<convert type="RemainingToText">InMinutes</convert>
+	</widget>
+	<widget source="ServiceEvent" render="Label" position="730,90" size="435,30" halign="left" Valign="top" backgroundColor="background" font="Regular; 22" foregroundColor="white" transparent="1" zPosition="6" noWrap="1">
+		<convert type="EventName">Name</convert>
+	</widget>
+	<widget source="ServiceEvent" render="Label" position="685,118" size="567,232" font="Regular; 20" backgroundColor="background" foregroundColor="grey" transparent="1" zPosition="6">
+		<convert type="EventName">FullDescription</convert>
+	</widget>
+	<widget source="ServiceEvent" render="Label" position="730,370" size="522,30" halign="left" Valign="top" backgroundColor="background" font="Regular; 22" foregroundColor="white" transparent="1" zPosition="6" noWrap="1">
+		<convert type="EventName">NextName</convert>
+	</widget>
+	<widget source="ServiceEvent" render="Label" position="685,404" size="567,232" font="Regular; 20" backgroundColor="background" foregroundColor="grey" transparent="1" zPosition="6">
+		<convert type="EventName">NextDescription</convert>
+	</widget>
+	<widget source="ServiceEvent" render="Label" position="730,650" size="522,30" halign="left" backgroundColor="background" font="Regular; 22" foregroundColor="white" transparent="1" zPosition="6" noWrap="1">
+		<convert type="EventName">ThirdName</convert>
+	</widget>
   </screen>
   <screen name="EPGSelection" title="EPG Selection" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate2"/>
