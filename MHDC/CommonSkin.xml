@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.48 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.49 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -371,7 +371,7 @@
   <screen name="PVRState" position="44,93" size="100,30" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
 	<widget name="state" position="0,0" size="100,30" backgroundColor="transparent" borderWidth="2" font="Regular;20" borderColor="black" valign="center" halign="left" />
   </screen>
-  <screen name="SecondInfoBar" title="Second InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="SecondInfoBar" title="Second InfoBar" position="0,0" size="1280,720" backgroundColor="transpBG" flags="wfNoBorder">
 	<widget source="session.CurrentService" render="Label" position="50,20" size="600,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;18" valign="top" halign="left">
 		<convert type="PliExtraInfo">All</convert>
 	</widget>
@@ -405,7 +405,7 @@
 		<convert type="FrontendInfo">LOCK</convert>
 		<convert type="ConditionalShowHide">Invert</convert>
 	</widget>
-	<eLabel position="0,0" size="1280,720" backgroundColor="transpBlack" zPosition="-50" />
+	<eLabel position="0,0" size="1280,720" backgroundColor="transpBG" zPosition="-50" />
 	<widget source="session.Event_Now" render="Label" position="15,120" size="540,26" font="Regular;22" foregroundColor="secondFG" halign="left" backgroundColor="background" transparent="1">
 		<convert type="EventName">NameNow</convert>
 	</widget>
@@ -687,19 +687,19 @@
 		<convert type="EventTime">Remaining</convert>
 		<convert type="RemainingToText">InMinutes</convert>
 	</widget>
-	<widget source="ServiceEvent" render="Label" position="730,90" size="435,30" halign="left" Valign="top" backgroundColor="background" font="Regular; 22" foregroundColor="white" transparent="1" zPosition="6" noWrap="1">
+	<widget source="ServiceEvent" render="Label" position="730,90" size="435,30" halign="left" Valign="top" backgroundColor="background" font="Regular; 22" foregroundColor="yellowsoft" transparent="1" zPosition="6" noWrap="1">
 		<convert type="EventName">Name</convert>
 	</widget>
 	<widget source="ServiceEvent" render="Label" position="685,118" size="567,232" font="Regular; 20" backgroundColor="background" foregroundColor="grey" transparent="1" zPosition="6">
 		<convert type="EventName">FullDescription</convert>
 	</widget>
-	<widget source="ServiceEvent" render="Label" position="730,370" size="522,30" halign="left" Valign="top" backgroundColor="background" font="Regular; 22" foregroundColor="white" transparent="1" zPosition="6" noWrap="1">
+	<widget source="ServiceEvent" render="Label" position="730,370" size="522,30" halign="left" Valign="top" backgroundColor="background" font="Regular; 22" foregroundColor="yellowsoft" transparent="1" zPosition="6" noWrap="1">
 		<convert type="EventName">NextName</convert>
 	</widget>
 	<widget source="ServiceEvent" render="Label" position="685,404" size="567,232" font="Regular; 20" backgroundColor="background" foregroundColor="grey" transparent="1" zPosition="6">
 		<convert type="EventName">NextDescription</convert>
 	</widget>
-	<widget source="ServiceEvent" render="Label" position="730,650" size="522,30" halign="left" backgroundColor="background" font="Regular; 22" foregroundColor="white" transparent="1" zPosition="6" noWrap="1">
+	<widget source="ServiceEvent" render="Label" position="730,650" size="522,30" halign="left" backgroundColor="background" font="Regular; 22" foregroundColor="yellowsoft" transparent="1" zPosition="6" noWrap="1">
 		<convert type="EventName">ThirdName</convert>
 	</widget>
   </screen>
@@ -1639,14 +1639,14 @@
 		<convert type="MovieInfo">ShortDescription</convert>
 	</widget>
 	<widget name="freeDiskSpace" position="10,520" size="533,20" font="Regular; 18" backgroundColor="background" valign="center" halign="right" transparent="1" />
-	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,653" size="24,24" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="MHDC/buttons/green2.png" position="15,680" size="24,24" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="MHDC/buttons/yellow2.png" position="240,653" size="24,24" alphatest="blend" transparent="1" />
-	<ePixmap pixmap="MHDC/buttons/blue2.png" position="240,680" size="24,24" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="MHDC/buttons/red2.png" position="15,657" size="24,24" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="MHDC/buttons/green2.png" position="15,684" size="24,24" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="MHDC/buttons/yellow2.png" position="240,657" size="24,24" alphatest="blend" transparent="1" />
+	<ePixmap pixmap="MHDC/buttons/blue2.png" position="240,684" size="24,24" alphatest="blend" transparent="1" />
 	<widget name="key_red" position="50,657" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="background" foregroundColor="foreground" />
 	<widget name="key_green" position="50,684" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="background" foregroundColor="foreground" />
-	<widget name="key_yellow" position="265,657" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="background" foregroundColor="foreground" />
-	<widget name="key_blue" position="265,684" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="background" foregroundColor="foreground" />
+	<widget name="key_yellow" position="275,657" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="background" foregroundColor="foreground" />
+	<widget name="key_blue" position="275,684" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" backgroundColor="background" foregroundColor="foreground" />
 	<ePixmap pixmap="buttons/key_menu.png" alphatest="blend" position="450,684" size="35,25" />
   </screen>
 	<!-- ## Timers ## -->
@@ -5857,7 +5857,7 @@
   <screen name="QuickEPG" title="InfoBar" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 	<ePixmap alphatest="off" pixmap="MHDC/infobar/hd.png" position="0,520" size="1280,220" zPosition="-1" />
 	<eLabel position="149,309" size="982,222" zPosition="1" backgroundColor="grey" />
-	<widget source="Event" render="Label" position="150,310" size="980,220" font="Regular;21" foregroundColor="white" backgroundColor="transpBlack" valign="center" halign="center" zPosition="11">
+	<widget source="Event" render="Label" position="150,310" size="980,220" font="Regular;21" foregroundColor="white" backgroundColor="transpBlue" valign="center" halign="center" zPosition="11">
 		<convert type="EventName">FullDescription</convert>
 	</widget>
 	<widget source="Service" render="PiconBg" position="44,634" size="102,62" transparent="0" alphatest="blend" zPosition="1" />
