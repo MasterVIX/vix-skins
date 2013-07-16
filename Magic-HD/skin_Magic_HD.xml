@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.31 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.32 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -74,7 +74,7 @@
 					<convert type="EventName">SmallRating</convert>
 		</widget>
 		<widget name="epg_description" position="5,173" size="625,415" font="Regular; 20" zPosition="1" transparent="1"/>
-		<widget source="session.Event_Next" render="Label" position="650,120" size="620,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="selectedFG" noWrap="1" font="Regular;22" halign="left">
+		<widget source="session.Event_Next" render="Label" position="650,120" size="620,24" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="selectedFG" noWrap="1" font="Regular;22" halign="left">
 					<convert type="EventName">NameNext</convert>
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="750,147" size="525,22" font="Regular;20" halign="left" foregroundColor="secondFG" backgroundColor="secondBG" transparent="1" zPosition="1">
@@ -3437,5 +3437,63 @@ self.autoResize()
 	<screen flags="wfNoBorder" name="LogManagerFb" position="0,0" size="1280,720" >
 		<panel name="BasicTemplate"/>
 		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" itemHeight="30" enableWrapAround="1" />
+	</screen>
+<!-- ## WakeOnLan SetUp ## -->
+	<screen name="WOLSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
+		<panel name="Blue2Panel" />
+		<widget name="config" position="490,80" size="785,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="introduction" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+	</screen>
+	<!-- ##LCD4linux## -->
+	<screen name="LCDdisplayConfig" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75" />
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2" />
+		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Format:%-H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1" />
+		<widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<panel name="MenuBPanel" />
+		<widget name="config" position="600,80" size="665,504" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget source="introduction" render="Label" position="520,600" size="755,22" zPosition="2" font="Regular;22" foregroundColor="secondFG" halign="center" />
+		<widget source="LibUSB" render="Label" position="529,630" size="75,20" zPosition="2" font="Regular;20" foregroundColor="secondFG" valign="center" halign="center" />
+<!--		<widget source="Version" render="Label" position="520,650" size="477,20" zPosition="2" font="Regular;20" foregroundColor="secondFG" valign="center" halign="right" />-->
+			<widget name="LCD1" position="0,350" size="600,480" zPosition="5" transparent="1" alphatest="on" />
+			<widget name="LCD2" position="0,350" size="600,480" zPosition="5" transparent="1" alphatest="on" />
+			<widget name="LCD3" position="0,350" size="600,480" zPosition="5" transparent="1" alphatest="on" />
+			<widget source="LCD1text" render="Label" position="520,655" size="477,20" zPosition="5" font="Regular;18" halign="right" foregroundColor="secondFG" transparent="1" />
+			<widget source="LCD3text" render="Label" position="520,655" size="477,20" zPosition="5" font="Regular;18" halign="right" foregroundColor="secondFG" transparent="1" />
+			<widget source="LCD3text" render="Label" position="520,655" size="477,20" zPosition="5" font="Regular;18" halign="right" foregroundColor="secondFG" transparent="1" />
+<!--	 <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="5,400" size="1,1" transparent="1" zPosition="1" alphatest="on" />-->
+	</screen>
+	<screen name="LCDdisplayMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="LCD4linux - Config" >
+		<panel name="BasicTemplate"/>
+		<widget name="menu" position="520,80" size="755,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<screen name="XXXLCDdisplayFile" position="0,0" size="1280,720" flags="wfNoBorder" title="Select File/Dir...">
+		<panel name="BasicTemplate"/>
+		<widget source="LCDfile" render="Label" position="490,80" size="785,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget source="File" render="Label" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+	</screen>
+	<!-- ##Transcoding## -->
+	<screen name="TranscodingSetup_ext" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
+		<widget name="config" position="490,80" size="785,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget source="text" render="Label" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
 	</screen>
 </skin>
