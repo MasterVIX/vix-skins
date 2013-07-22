@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.33 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.35 by Rob van der Does @www.world-of-satellite.com,  based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -497,7 +497,7 @@
 			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
 		<widget name="movie_sort" position="905,50" size="35,20" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png" zPosition="10" transparent="1" alphatest="on"/>
-		<widget name="movie_off" position="960,50" size="35,20" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" zPosition="10" transparent="1" alphatest="on"/>
+		<widget name="movie_off" position="960,50" size="35,20" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png" zPosition="10" transparent="1" alphatest="on"/>
 		<widget name="waitingtext" position="520,82" size="755,548" font="Regular;25" halign="center" valign="center" foregroundColor="grey" zPosition="4" />
 		<widget name="chosenletter" position="520,82" size="755,548" foregroundColor="yellow" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4" />
 		<widget name="list" position="520,82" size="755,548" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" foregroundColor="grey" enableWrapAround="1" />
@@ -2865,22 +2865,7 @@ self.autoResize()
 		<widget name="footnote" position="750,657" size="350,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="grey" />
 		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="520,500" size="1,1" transparent="1" zPosition="1" alphatest="on" />
 	</screen>
-	<screen name="TranscodingSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="Transcoding Setup">
-		<panel name="BasicTemplate"/>
-		<panel name="Red2Panel" />
-		<panel name="Green2Panel" />
-		<widget name="config" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-		<widget source="text" render="Label" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
-	</screen>
-	<screen flags="wfNoBorder" name="FPGAUpgrade" position="0,0" size="1280,720" >
-		<panel name="BasicTemplate"/>
-		<panel name="Red2Panel" />
-		<panel name="Green2Panel" />
-		<panel name="Blue2Panel" />
-		<widget name="file_list" position="490,80" size="785,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
-		<widget source="status" render="Label" position="10,370" zPosition="1" size="477,200" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColor="secondFG" />
-	</screen>
-	<screen flags="wfNoBorder" name="OpenWebifConfig" position="0,0" size="1280,720" >
+	<screen name="OpenWebifConfig" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel" />
 		<panel name="Green1Panel" />

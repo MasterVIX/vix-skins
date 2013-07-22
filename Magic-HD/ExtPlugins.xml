@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.36	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.37	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -1815,7 +1815,7 @@ background
 		<panel name="Green2Panel" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1" />
 	</screen>
-	<screen flags="wfNoBorder" name="UpgradeStatus" position="0,0" size="1280,720" >
+	<screen name="UpgradeStatus" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
 		<widget name="name" position="600,100" size="530,30" font="Regular;20" zPosition="1" halign="center" />
 		<widget name="slider" position="600,130" size="530,15" />
@@ -1844,13 +1844,18 @@ background
 	</screen>
 	<screen name="FirmwareUpgrade" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
-		<widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
-			<convert type="ServiceName">Name</convert>
-		</widget>
 		<panel name="Red2Panel" />
 		<panel name="Green2Panel" />
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" position="520,82" size="755,520" transparent="1" />
 		<widget source="status" render="Label" position="520,602" zPosition="1" size="740,60" font="Regular;22" halign="center" valign="center" backgroundColor="#a08500" transparent="1" />
+	</screen>
+	<screen name="FPGAUpgrade" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel" />
+		<panel name="Green2Panel" />
+		<panel name="Blue2Panel" />
+		<widget name="file_list" position="490,80" size="785,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget source="status" render="Label" position="10,370" zPosition="1" size="477,200" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColor="secondFG" />
 	</screen>
 	<screen name="HdmiCECSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="BasicTemplate"/>
