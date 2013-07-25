@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.50 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.51 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -851,7 +851,7 @@
 	<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="1160,682" zPosition="1" size="35,25" transparent="1" alphatest="on" >
 		<convert type="ConditionalShowHide" />
 	</widget>
-	<widget name="footnote" position="750,682" size="350,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="foreground" />
+	<widget name="footnote" position="750,682" size="350,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="greenlight" />
 	<panel name="VixLogo"/>
   </screen>
   <screen name="AboutOE" title="About" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2052,7 +2052,7 @@
 	<widget source="Gateway" render="Label" position="560,510" size="200,25" zPosition="1" font="Regular;20" />
 	<widget source="Adaptertext" render="Label" position="400,590" size="270,25" transparent="1" zPosition="10" foregroundColor="foreground" font="Regular;21" halign="right" />
 	<widget source="Adapter" render="Label" position="680,590" size="400,25" transparent="1" zPosition="10" foregroundColor="foreground" font="Regular;21" halign="left" />
-	<widget source="introduction2" render="Label" position="340,630" size="400,27" transparent="1" zPosition="10" foregroundColor="foreground" font="Regular;21" valign="center" halign="center" />
+	<widget source="introduction2" render="Label" position="340,630" size="400,27" transparent="1" zPosition="10" foregroundColor="greenlight" font="Regular;21" valign="center" halign="center" />
 	<!--<widget name="VKeyIcon" pixmap="vkey_icon.png" position="60,410" size="35,25" transparent="1" zPosition="10" alphatest="on" />
 	<eLabel text="'Text' = Virtual Keyboard" backgroundColor="secondBG" font="Regular;22" halign="left" position="305,682" size="290,26" transparent="1" zPosition="1" />-->
 	<widget name="HelpWindow" pixmap="vkey_icon.png" position="50,410" size="1,1" transparent="1" zPosition="1" alphatest="on" />
@@ -2404,7 +2404,7 @@
 	<panel name="BasicTemplate"/>
 	<panel name="RG_Template 2"/>
 	<widget name="config" position="520,82" size="755,555" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" itemHeight="28" font="Regular;22" />
-	<widget name="introduction" position="520,640" size="755,27" backgroundColor="grey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" foregroundColor="white" font="Regular;24" halign="center" />
+	<widget name="introduction" position="520,640" size="755,27" backgroundColor="grey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" foregroundColor="greenlight" font="Regular;24" halign="center" />
 	<panel name="VixLogo"/>
   </screen>
   <screen name="ScanSimple" title="Service scan" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2412,7 +2412,7 @@
 	<panel name="RG_Template 2"/>
 	<widget name="header" position="590,120" size="600,28" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;24" />
 	<widget name="config" position="590,180" size="600,350" transparent="1" scrollbarMode="showOnDemand" itemHeight="32" font="Regular;24" />
-	<widget name="footer" position="590,600" size="600,27" backgroundColor="grey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" foregroundColor="white" font="Regular;24" halign="center" />
+	<widget name="footer" position="590,600" size="600,27" backgroundColor="grey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" foregroundColor="greenlight" font="Regular;24" halign="center" />
 	<panel name="VixLogo"/>
   </screen>
   <screen name="ServiceScan" title="Service scan" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -3987,7 +3987,7 @@
 	<widget source="key_yellow" render="Label" position="614,682" size="220,26" backgroundColor="un8c5900" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="left" />
 	<widget source="key_blue" render="Label" position="875,682" size="220,26" backgroundColor="un254177" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
 	<widget name="config" position="520,82" size="740,583" itemHeight="32" font="Regular;23" scrollbarMode="showOnDemand" />
-	<widget source="help" render="Label" position="5,300" size="477,300" font="Regular;24" valign="center" halign="center" foregroundColor="unf47d19" />
+	<widget source="help" render="Label" position="5,300" size="477,300" font="Regular;24" valign="center" halign="center" foregroundColor="greenlight" />
 	<panel name="VixLogo"/>
   </screen>
   <screen name="epgrefresh" title="EPG Refresh" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4018,7 +4018,7 @@
 	<widget source="key_red" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
 	<widget source="key_green" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
 	<widget name="config" position="520,82" size="740,583" scrollbarMode="showOnDemand" />
-	<widget source="help" render="Label" position="15,400" size="477,100" font="Regular;21" foregroundColor="unf47d19" />
+	<widget source="help" render="Label" position="15,400" size="477,100" font="Regular;21" foregroundColor="greenlight" />
 	<panel name="VixLogo"/>
   </screen>
 	<!-- ## EPG importer ## -->
@@ -4119,7 +4119,7 @@
 	<widget source="key_green" render="Label" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 	<widget source="Title" render="Label" position="520,82" size="755,43" backgroundColor="background" transparent="1" font="Regular;26" />
 	<widget name="config" position="520,125" size="755,540" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" background="background" />
-	<widget source="help" render="Label" position="5,385" size="477,270" foregroundColor="unf47d19" transparent="1" font="Regular;20" />
+	<widget source="help" render="Label" position="5,385" size="477,270" foregroundColor="greenlight" transparent="1" font="Regular;20" />
   </screen>
   <screen name="AutoTimerEditor" title="Edit AutoTimer" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
@@ -4133,7 +4133,7 @@
 	<widget source="key_blue" render="Label" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 	<widget source="Title" render="Label" position="520,82" size="755,43" backgroundColor="background" transparent="1" font="Regular;26" />
 	<widget name="config" position="520,125" size="755,540" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" />
-	<widget source="help" render="Label" position="5,385" size="477,270" foregroundColor="unf47d19" transparent="1" font="Regular;20" />
+	<widget source="help" render="Label" position="5,385" size="477,270" foregroundColor="greenlight" transparent="1" font="Regular;20" />
   </screen>
   <screen name="AutoTimerFilterEditor" title="Edit AutoTimer Filters" position="0,0" size="1280,720" flags="wfNoBorder">
 	<panel name="BasicTemplate"/>
@@ -5157,7 +5157,7 @@
 	<widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 	<widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 	<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	<widget name="information" position="15,300" size="477,300" halign="center" valign="center" font="Regular;22" foregroundColor="#f47d19" />
+	<widget name="information" position="15,300" size="477,300" halign="center" valign="center" font="Regular;22" foregroundColor="greenlight" />
 	<panel name="VixLogo"/>
   </screen>
   <screen flags="wfNoBorder" name="CrossEPG_Info" position="0,0" size="1280,720" title="CrossEPG Info">
@@ -5502,7 +5502,7 @@
 	<applet type="onLayoutFinish">
 		self["list"].instance.setItemHeight(25)
 	</applet>
-	<widget name="backupstatus" position="15,400" size="477,75" font="Regular;20" zPosition="5" halign="center" valign="center" foregroundColor="#f47d19" />
+	<widget name="backupstatus" position="15,400" size="477,75" font="Regular;20" zPosition="5" halign="center" valign="center" foregroundColor="greenlight" />
 	<eLabel text="'Help' = Download image" position="15,600" size="417,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
 	<panel name="VixLogo"/>
   </screen>
@@ -5532,7 +5532,7 @@
 	<ePixmap pixmap="buttons/key_info.png" position="1150,682" size="35,25" alphatest="on" />
 	<widget name="lab1" position="520,82" size="755,50" font="Regular; 22" zPosition="2" transparent="0" halign="center"/>
 	<widget name="list" position="520,145" size="755,520" scrollbarMode="showOnDemand" />
-	<widget name="backupstatus" position="15,435" size="450,70" font="Regular;22" zPosition="5" foregroundColor="#f47d19" />
+	<widget name="backupstatus" position="15,435" size="450,70" font="Regular;22" zPosition="5" foregroundColor="greenlight" />
 	<applet type="onLayoutFinish">
 		self["list"].instance.setItemHeight(25)
 	</applet>
@@ -5994,7 +5994,7 @@
 	<widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 	<widget name="config" font="Regular;18" position="520,82" size="755,580" transparent="1" />
 	<widget source="status" render="Label" position="10,400" size="500,100" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0" />
-	<widget name="footnote" position="780,682" size="240,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="foreground" />
+	<widget name="footnote" position="780,682" size="240,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="greenlight" />
 	<panel name="VixLogo"/>
   </screen>
   <screen flags="wfNoBorder" name="VIXEPGBouquetSelector" position="0,0" size="1280,720" title="Choose Bouquet">
@@ -6213,7 +6213,7 @@
 	<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="on" />
 	<widget source="key_red" render="Label" position="50,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
 	<widget source="key_green" render="Label" position="340,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
-	<widget source="help" render="Label" font="Regular;22" position="5,375" size="477,250" transparent="1" foregroundColor="#f47d19" />
+	<widget source="help" render="Label" font="Regular;22" position="5,375" size="477,250" transparent="1" foregroundColor="greenlight" />
 	<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1" />
 	<panel name="VixLogo"/>
   </screen>
@@ -6238,7 +6238,7 @@
 	<widget source="key_green" render="Label" position="340,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
 	<widget source="key_blue" render="Label" position="875,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
 	<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	<widget source="help" render="Label" font="Regular;22" position="5,375" size="477,250" transparent="1" foregroundColor="#f47d19" />
+	<widget source="help" render="Label" font="Regular;22" position="5,375" size="477,250" transparent="1" foregroundColor="greenlight" />
 	<panel name="VixLogo"/>
   </screen>
   <screen flags="wfNoBorder" name="VPS_Screen_Info" position="0,0" size="1280,720" title="VPS-Plugin Information">
@@ -6270,7 +6270,7 @@
 	<widget source="key_green" render="Label" position="340,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
 	<widget source="key_blue" render="Label" position="875,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
 	<widget name="file_list" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1" />
-	<widget source="status" render="Label" position="10,370" zPosition="1" size="477,200" font="Regular;18" halign="center" valign="center" transparent="1" foregroundColor="#f47d19" />
+	<widget source="status" render="Label" position="10,370" zPosition="1" size="477,200" font="Regular;18" halign="center" valign="center" transparent="1" foregroundColor="greenlight" />
 	<panel name="VixLogo"/>
   </screen>
   <screen flags="wfNoBorder" name="UpgradeStatus" position="0,0" size="1280,720" title="FPGA Upgrade status">
@@ -6339,7 +6339,7 @@
 	<widget source="key_green" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
 	<widget source="key_yellow" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
 	<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="740,583" transparent="1" />
-	<widget source="help" render="Label" position="5,400" size="477,200" font="Regular;21" foregroundColor="#f47d19" />
+	<widget source="help" render="Label" position="5,400" size="477,200" font="Regular;21" foregroundColor="greenlight" />
 	<panel name="VixLogo"/>
   </screen>
   <screen flags="wfNoBorder" name="RemoteControlCode" position="0,0" size="1280,720" title="Remote Control System Code Setting">
