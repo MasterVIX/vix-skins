@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.37	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.38	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -3495,5 +3495,41 @@ background
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel" />
 		<widget name="text" position="490,80" size="785,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<!-- ##AutoBouquets E2## -->
+	<screen name="AutoBouquets" position="0,0" size="1280,720" flags="wfNoBorder" title="AutoBouquets E2 for 28.2E">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<panel name="Yellow1Panel" />
+		<panel name="Blue1Panel" />
+		<panel name="MenuBPanel" />
+		<panel name="InfoBPanel" />
+		<widget name="area" position="600,130" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
+		<widget name="areavalue" position="750,130" size="205,30" font="Regular;22" zPosition="2" />
+		<widget name="hd" position="600,170" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
+		<widget name="hdcheck" position="750,170" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
+		<widget name="num" position="780,170" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
+		<widget name="numcheck" position="930,170" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
+		<widget name="nit" position="600,210" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
+		<widget name="nitcheck" position="750,210" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
+		<widget name="placeh" position="780,210" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
+		<widget name="placehcheck" position="930,210" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
+		<widget name="parental" position="600,250" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
+		<widget name="parentalcheck" position="750,250" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
+		<widget name="def" position="780,250" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
+		<widget name="defcheck" position="930,250" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
+		<widget name="ordering" position="600,290" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
+		<widget name="orderingcheck" position="750,290" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
+		<widget name="fta" position="780,290" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
+		<widget name="ftacheck" position="930,290" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
+		<widget name="status" position="600,330" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
+		<widget name="status2" position="750,330" size="205,30" font="Regular;22" zPosition="5" />
+	</screen>
+	<screen name="AutoBouquetsMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel" />
+		<panel name="Green1Panel" />
+		<widget name="config" position="520,80" size="755,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
 	</screen>
 </skin>
