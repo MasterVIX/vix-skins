@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.52 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.53 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -5350,10 +5350,10 @@
 				}
 	</convert>
 	</widget>
-		<widget source="menu" render="Listbox" position="10,400" size="477,60" scrollbarMode="showNever" selectionDisabled="1" transparent="1" foregroundColor="#f47d19" >
+		<widget source="menu" render="Listbox" position="10,385" size="477,60" scrollbarMode="showNever" selectionDisabled="1" transparent="1" foregroundColor="greenlight" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (0,0),size = (450,60),flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM|RT_WRAP,text = 2),# index 0 is the MenuText,
+				MultiContentEntryText(pos = (0,0),size = (450,60),flags = RT_HALIGN_LEFT|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
 				],
 				"fonts": [gFont("Regular",20)],
 				"itemHeight": 60
@@ -5502,7 +5502,7 @@
 	<applet type="onLayoutFinish">
 		self["list"].instance.setItemHeight(25)
 	</applet>
-	<widget name="backupstatus" position="15,400" size="477,75" font="Regular;20" zPosition="5" halign="center" valign="center" foregroundColor="greenlight" />
+	<widget name="backupstatus" position="15,385" size="480,250" font="Regular;20" zPosition="5" foregroundColor="greenlight" />
 	<eLabel text="'Help' = Download image" position="15,600" size="417,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
 	<panel name="VixLogo"/>
   </screen>
@@ -5532,7 +5532,7 @@
 	<ePixmap pixmap="buttons/key_info.png" position="1150,682" size="35,25" alphatest="on" />
 	<widget name="lab1" position="520,82" size="755,50" font="Regular; 22" zPosition="2" transparent="0" halign="center"/>
 	<widget name="list" position="520,145" size="755,520" scrollbarMode="showOnDemand" />
-	<widget name="backupstatus" position="15,435" size="450,70" font="Regular;22" zPosition="5" foregroundColor="greenlight" />
+	<widget name="backupstatus" position="15,385" size="480,250" font="Regular;20" zPosition="5" foregroundColor="greenlight" />
 	<applet type="onLayoutFinish">
 		self["list"].instance.setItemHeight(25)
 	</applet>
@@ -6158,7 +6158,7 @@
 	<applet type="onLayoutFinish">
 			self["list"].instance.setItemHeight(25)
 	</applet>
-	<widget name="LogsSize" position="10,450" size="503,50" font="Regular;22" foregroundColor="secondFG" halign="center" valign="center" transparent="0" />
+	<widget name="LogsSize" position="10,385" size="503,50" font="Regular;22" foregroundColor="greenlight" halign="center" valign="center" transparent="0" />
 	<panel name="VixLogo"/>
   </screen>
   <screen flags="wfNoBorder" name="LogManagerViewLog" position="0,0" size="1280,720" title="Log Manager View Log">
