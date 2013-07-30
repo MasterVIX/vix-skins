@@ -1,4 +1,4 @@
-<!--  Skin: ViX-Day-HD Vs 3.06 by AndyBlac @ www.world-of-satellite.com  -->
+<!--  Skin: ViX-Day-HD Vs 3.07 by AndyBlac @ www.world-of-satellite.com  -->
 <!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -974,11 +974,7 @@
 	</screen>
 	<screen name="ChannelSelection" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
-		<widget source="ServiceEvent" render="PiconBg" position="18,8" size="102,62"  zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd"  />
-		<widget source="ServiceEvent" render="Picon" position="20,10" size="100,60" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd" >
-			<convert type="ServiceName">Reference</convert>
-		</widget>
-		<widget source="Title" render="Label" position="135,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
+		<widget source="Title" render="Label" position="18,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 		<panel name="FullscreenPIGPanel" />
 		<widget name="list" position="10,82" size="660,590" selectionPixmap="ViX-Common/buttons/FocusBar_H36x660.png" backgroundColor="black" foregroundColorEvent="event-frgrnd" foregroundColorEventSelected="#00202020" foregroundColorServiceNotAvail="verydarkgrey" serviceItemHeight="36" serviceNumberFont="Regular;25" serviceNameFont="Regular;25" serviceInfoFont="Bold;22" transparent="0" zPosition="3" scrollbarMode="showOnDemand" />
 		<widget source="ServiceEvent" render="Label" position="695,410" size="400,25" font="Bold;24" foregroundColor="orange" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
