@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.55 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.56 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -3375,48 +3375,48 @@
 	<panel name="VixLogo"/>
   </screen>
 	<!-- ## RSS ## -->
-  <screen flags="wfNoBorder" name="FeedScreenList" position="0,0" size="1280,720" >
+  <screen flags="wfNoBorder" name="FeedScreenList" position="0,0" size="1280,720" title="PLi RSS reader">
 	<panel name="BasicTemplate"/>
 	<widget name="menu" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1" />
 	<ePixmap pixmap="buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25" />
 	<eLabel text="OK = Choose" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
 	<panel name="VixLogo"/>
   </screen>
-  <screen flags="wfNoBorder" name="FeedScreenContent" position="0,0" size="1280,720" >
+  <screen flags="wfNoBorder" name="FeedScreenContent" position="0,0" size="1280,720" title="PLi RSS reader Content">
 	<panel name="BasicTemplate"/>
 	<widget name="menu" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1" />
 	<eLabel text="OK = Choose" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
 	<eLabel text="Exit = Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
 	<panel name="VixLogo"/>
   </screen>
-  <screen flags="wfNoBorder" name="FeedScreenItemviewer" position="0,0" size="1280,720" >
+  <screen flags="wfNoBorder" name="FeedScreenItemviewer" position="0,0" size="1280,720" title="PLi RSS ItemViewer">
 	<panel name="BasicTemplate"/>
 	<widget name="text" position="520,90" size="755,575" font="Regular;22" transparent="1" />
 	<eLabel text="Exit = Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
 	<panel name="VixLogo"/>
   </screen>
-  <screen flags="wfNoBorder" name="FeedreaderMenuMain" position="0,0" size="1280,720" >
+  <screen flags="wfNoBorder" name="FeedreaderMenuMain" position="0,0" size="1280,720" title="PLi RSS reader Menu Main">
 	<panel name="BasicTemplate"/>
 	<widget name="menu" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1" />
 	<eLabel text="OK = Save" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
 	<eLabel text="Exit = Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
 	<panel name="VixLogo"/>
   </screen>
-  <screen flags="wfNoBorder" name="WizzardAddFeed" position="0,0" size="1280,720" >
+  <screen flags="wfNoBorder" name="WizzardAddFeed" position="0,0" size="1280,720" title="PLi RSS reader Add Feed">
 	<panel name="BasicTemplate"/>
 	<widget name="menu" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1" />
 	<eLabel text="OK = Save" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
 	<eLabel text="Exit = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
 	<panel name="VixLogo"/>
   </screen>
-  <screen flags="wfNoBorder" name="WizzardDeleteFeed" position="0,0" size="1280,720" >
+  <screen flags="wfNoBorder" name="WizzardDeleteFeed" position="0,0" size="1280,720" title="PLi RSS reader Delete Feed">
 	<panel name="BasicTemplate"/>
 	<widget name="menu" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1" />
 	<eLabel text="OK = Save" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
 	<eLabel text="Exit = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
 	<panel name="VixLogo"/>
   </screen>
-  <screen flags="wfNoBorder" name="rss_reader" position="0,0" size="1280,720" >
+  <screen flags="wfNoBorder" name="rss_reader" position="0,0" size="1280,720" title="RSS Reader">
 	<panel name="BasicTemplate"/>
 	<widget source="menu" render="Listbox" position="520,90" size="755,575" zPosition="3" scrollbarMode="showOnDemand" transparent="1">
 		<convert type="TemplatedMultiContent">
