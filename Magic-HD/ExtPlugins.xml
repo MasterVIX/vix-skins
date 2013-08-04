@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.40	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.41	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -3535,5 +3535,21 @@ background
 		<panel name="Red1Panel" />
 		<panel name="Green1Panel" />
 		<widget name="config" position="520,80" size="755,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	</screen>
+	<!-- ##FastScan## -->
+	<screen name="FastScanScreen" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="BasicTemplate"/>
+		<panel name="RedBPanel" />
+		<eLabel text="Cancel" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<panel name="GreenBPanel" />
+		<eLabel text="OK" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="520,82" size="755,555" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+		<widget name="introduction" font="Regular;22" position="10,400" size="477,100" halign="center" selectionDisabled="1" foregroundColor="secondFG" transparent="1" />
+	</screen>
+	<screen  name="FastScanStatus" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="BasicTemplate"/>
+		<widget name="frontend" pixmap="icons/scan-s.png" position="590,110" size="64,64" transparent="1" alphatest="on" />
+		<widget name="scan_state" position="660,110" zPosition="2" size="400,30" font="Regular;18" />
+		<widget name="scan_progress" position="660,145" size="400,15" pixmap="progress_big.png" borderWidth="2" borderColor="black" />
 	</screen>
 </skin>
