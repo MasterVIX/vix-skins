@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.39	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.40	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -445,7 +445,7 @@
 		<widget name="labrun" position="700,620" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
 	</screen>
 	<!-- ## RSS ## -->
-	<screen flags="wfNoBorder" name="rss_reader" position="0,0" size="1280,720" >
+	<screen name="rss_reader" position="0,0" size="1280,720" title="PLi RSS reader" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget source="menu" render="Listbox" position="520,90" size="755,575" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -3505,8 +3505,12 @@ background
 		<panel name="Blue1Panel" />
 		<panel name="MenuBPanel" />
 		<panel name="InfoBPanel" />
-		<widget name="area" position="600,130" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
-		<widget name="areavalue" position="750,130" size="205,30" font="Regular;22" zPosition="2" />
+		<widget name="area" position="600,82" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
+		<widget name="areavalue" position="750,82" size="205,30" font="Regular;22" zPosition="2" />
+			<widget name="otherx" position="600,130" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
+			<widget name="otherextra" position="750,130" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
+			<widget name="scriptc" position="780,130" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
+			<widget name="scriptcheck" position="930,130" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
 		<widget name="hd" position="600,170" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
 		<widget name="hdcheck" position="750,170" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
 		<widget name="num" position="780,170" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0" />
