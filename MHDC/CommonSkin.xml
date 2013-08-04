@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.57 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.58 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -375,21 +375,21 @@
 		<widget source="session.CurrentService" render="Label" position="50,20" size="600,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;18" valign="top" halign="left">
 			<convert type="PliExtraInfo">All</convert>
 		</widget>
-		<eLabel name="snr" position="685,5" size="80,15" backgroundColor="transpBlack" halign="center" transparent="1" text="  SNR:" font="Regular;14"/>
+		<eLabel name="snr" position="685,5" size="80,15" backgroundColor="transpBlack" halign="center" transparent="1" text="SNR:" font="Regular;14"/>
 		<widget source="session.FrontendStatus" render="Progress" pixmap="MHDC/infobar/bar.png" position="760,8" size="410,10" borderWidth="2" borderColor="uncccccc">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<widget source="session.FrontendStatus" render="Label" position="1174,5" size="80,15" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<eLabel name="agc" position="685,25" size="80,15" backgroundColor="transpBlack" halign="center" transparent="1" text="	AGC:" font="Regular;14"/>
+		<eLabel name="agc" position="685,25" size="80,15" backgroundColor="transpBlack" halign="center" transparent="1" text="AGC:" font="Regular;14"/>
 		<widget source="session.FrontendStatus" render="Progress" pixmap="MHDC/infobar/bar.png" position="760,25" size="410,10" borderWidth="2" borderColor="uncccccc">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<widget source="session.FrontendStatus" render="Label" position="1174,25" size="80,15" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<eLabel name="ber" position="685,45" size="80,15" backgroundColor="transpBlack" halign="center" transparent="1" text="	BER:" font="Regular;14"/>
+		<eLabel name="ber" position="685,45" size="80,15" backgroundColor="transpBlack" halign="center" transparent="1" text="BER:" font="Regular;14"/>
 		<widget source="session.FrontendStatus" render="Progress" pixmap="MHDC/infobar/bar.png" position="760,45" size="410,10" borderWidth="2" borderColor="grey">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
@@ -797,18 +797,18 @@
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (25, [ 
-						MultiContentEntryText(pos = (0, 0),	  size = (35, 25),	font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
-						MultiContentEntryText(pos = (40, 0),  size = (60, 25),	font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
-						MultiContentEntryText(pos = (110, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-						MultiContentEntryText(pos = (240, 0), size = (200, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
-						MultiContentEntryText(pos = (450, 4), size = (15, 25),	font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+						MultiContentEntryText(pos = (0, 0), size = (35, 25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # key,
+						MultiContentEntryText(pos = (40, 0), size = (60, 25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # number,
+						MultiContentEntryText(pos = (110, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
+						MultiContentEntryText(pos = (240, 0), size = (200, 25), font = 0, flags = RT_HALIGN_LEFT, text = 4), # language,
+						MultiContentEntryText(pos = (450, 4), size = (15, 25), font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 					], True, "showNever"),
 					"notselected": (25, [ 
-						MultiContentEntryText(pos = (0, 0),	  size = (35, 25),	font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
-						MultiContentEntryText(pos = (40, 0),  size = (60, 25),	font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
-						MultiContentEntryText(pos = (110, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-						MultiContentEntryText(pos = (240, 0), size = (200, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
-						MultiContentEntryText(pos = (450, 4), size = (15, 25),	font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+						MultiContentEntryText(pos = (0, 0), size = (35, 25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # key,
+						MultiContentEntryText(pos = (40, 0), size = (60, 25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # number,
+						MultiContentEntryText(pos = (110, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
+						MultiContentEntryText(pos = (240, 0), size = (200, 25), font = 0, flags = RT_HALIGN_LEFT, text = 4), # language,
+						MultiContentEntryText(pos = (450, 4), size = (15, 25), font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 					], False, "showNever")
 					},
 				"fonts": [gFont("Regular", 20), gFont("Regular", 16)],
@@ -1385,8 +1385,8 @@
 	</screen>
 	<screen name="Dish" flags="wfNoBorder" position="86,100" size="130,220" zPosition="10" backgroundColor="transparent">
 		<widget name="Dishpixmap" position="0,20" size="130,160" zPosition="1" pixmap="icons/dish.png" transparent="1" alphatest="on"/>
-		<widget name="turnTime" position="5,0" size="120,20" zPosition="1" font="Regular;18" halign="right" foregroundColor="white"  borderWidth="1" borderColor="black" transparent="1"/>
-		<widget name="From" position="5,184" size="45,16" zPosition="1" font="Regular;16" halign="left" foregroundColor="white"  borderWidth="1" borderColor="black" transparent="1" text="From:"/>
+		<widget name="turnTime" position="5,0" size="120,20" zPosition="1" font="Regular;18" halign="right" foregroundColor="white" borderWidth="1" borderColor="black" transparent="1"/>
+		<widget name="From" position="5,184" size="45,16" zPosition="1" font="Regular;16" halign="left" foregroundColor="white" borderWidth="1" borderColor="black" transparent="1" text="From:"/>
 		<widget name="posFrom" position="55,180" size="70,20" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" borderWidth="1" borderColor="black" transparent="1"/>
 		<widget name="Goto" position="5,204" size="45,16" zPosition="1" font="Regular;16" halign="left" foregroundColor="white" borderWidth="1" borderColor="black" transparent="1" text="Goto:"/>
 		<widget name="posGoto" position="55,200" size="70,20" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" borderWidth="1" borderColor="black" transparent="1"/>
@@ -4811,10 +4811,10 @@
 		<widget name="buttonred" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="buttongreen" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="buttonyellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
-		<widget name="buttonblue" position="875,682"  size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
+		<widget name="buttonblue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="moviename" position="520,82" size="745,50" halign="center" font="Regular;25"/>
-		<widget name="cTaglist" position="520,140" size="220,520"  scrollbarMode="showOnDemand"/>
-		<widget name="aTaglist" position="750,140" size="515,520"  scrollbarMode="showOnDemand"/>
+		<widget name="cTaglist" position="520,140" size="220,520" scrollbarMode="showOnDemand"/>
+		<widget name="aTaglist" position="750,140" size="515,520" scrollbarMode="showOnDemand"/>
 		<panel name="VixLogo"/>
 	</screen>
 	<!-- ## Classic NetRadio ## -->
@@ -4885,7 +4885,7 @@
 		<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on"/>
 		<ePixmap pixmap="MHDC/buttons/blue2.png" position="840,682" size="26,26" alphatest="on"/>
 		<eLabel text="Exit" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
-		<widget name="ButtonBluetext" position="875,682"  size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
+		<widget name="ButtonBluetext" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="stationmenu" scrollbarMode="showOnDemand" font="Regular;26" position="15,82" size="1250,583" transparent="1"/>
 	</screen>
 	<screen flags="wfNoBorder" name="ConfigListScreen" position="0,0" size="1280,720" title="Add to Favorites">
@@ -4893,7 +4893,7 @@
 		<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on"/>
 		<ePixmap pixmap="MHDC/buttons/blue2.png" position="840,682" size="26,26" alphatest="on"/>
 		<eLabel text="Exit" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
-		<widget name="ButtonBluetext" position="875,682"  size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
+		<widget name="ButtonBluetext" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="stationmenu" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
 		<panel name="VixLogo"/>
 	</screen>
@@ -4931,7 +4931,7 @@
 		<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="on"/>
 		<widget name="buttonred" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="buttongreen" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
-		<widget name="label" position="85,460" size="200,40"  valign="center" halign="center" zPosition="1" foregroundColor="#f47d19" font="Regular;18"/>
+		<widget name="label" position="85,460" size="200,40" valign="center" halign="center" zPosition="1" foregroundColor="#f47d19" font="Regular;18"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
 		<panel name="VixLogo"/>
 	</screen>
@@ -5434,7 +5434,7 @@
 		<widget name="alias" position="610,333" size="150,30" font="Regular;20" valign="center" transparent="1"/>
 		<widget name="labalias" position="860,333" size="310,30" font="Regular;20" valign="center" backgroundColor="background"/>
 		<widget name="sinactive" position="610,383" zPosition="1" pixmap="icons/lock_off.png" size="32,32"	 alphatest="on"/>
-		<widget name="sactive" position="610,383" zPosition="2" pixmap="icons/lock_on.png" size="32,32"  alphatest="on"/>
+		<widget name="sactive" position="610,383" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on"/>
 		<widget name="system" position="650,383" size="100,30" font="Regular;20" valign="center" transparent="1"/>
 		<widget name="labsys" position="860,383" size="310,30" font="Regular;20" valign="center" backgroundColor="background"/>
 		<panel name="VixLogo"/>
@@ -5503,11 +5503,11 @@
 		<widget name="sharedir" position="630,340" size="150,30" font="Regular;20" valign="center" transparent="1"/>
 		<widget name="labsharedir" position="790,340" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
 		<widget name="web" position="580,405" size="230,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="webinactive" position="850,405" zPosition="1" pixmap="icons/lock_off.png" size="32,32"  alphatest="on"/>
+		<widget name="webinactive" position="850,405" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on"/>
 		<widget name="webactive" position="850,405" zPosition="2" pixmap="icons/lock_on.png" size="32,32"	alphatest="on"/>
 		<widget name="telnet" position="580,455" size="230,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="telnetinactive" position="850,455" zPosition="1" pixmap="icons/lock_off.png" size="32,32"  alphatest="on"/>
-		<widget name="telnetactive" position="850,455" zPosition="2" pixmap="icons/lock_on.png" size="32,32"  alphatest="on"/>
+		<widget name="telnetinactive" position="850,455" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on"/>
+		<widget name="telnetactive" position="850,455" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on"/>
 		<widget name="xbox" position="580,510" size="230,30" font="Regular;20" valign="center" transparent="1"/>
 		<widget name="xboxinactive" position="850,510" zPosition="1" pixmap="icons/lock_off.png" size="32,32"	alphatest="on"/>
 		<widget name="xboxactive" position="850,510" zPosition="2" pixmap="icons/lock_on.png" size="32,32"	 alphatest="on"/>
@@ -6129,8 +6129,8 @@
 		<widget source="key_yellow" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1"/>
 		<widget source="key_blue" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1"/>
 		<widget pixmaps="epg_now.png,epg_next.png,epg_more.png" size="320,25" alphatest="on" position="530,90" zPosition="1" name="tabbar"/>
-		<widget source="plugins" render="Label" valign="center" transparent="1" size="108,22" backgroundColor="#25062748" position="530,90" zPosition="2"  halign="center" font="Regular;18"/>
-		<widget source="extensions" render="Label" valign="center" transparent="1" size="108,22" backgroundColor="#25062748" position="636,90" zPosition="2"  halign="center" font="Regular;18"/>
+		<widget source="plugins" render="Label" valign="center" transparent="1" size="108,22" backgroundColor="#25062748" position="530,90" zPosition="2" halign="center" font="Regular;18"/>
+		<widget source="extensions" render="Label" valign="center" transparent="1" size="108,22" backgroundColor="#25062748" position="636,90" zPosition="2" halign="center" font="Regular;18"/>
 		<widget source="eventinfo" render="Label" valign="center" transparent="1" size="108,22" backgroundColor="#25062748" position="741,90" zPosition="2"	 halign="center" font="Regular;18"/>
 		<widget name="list" scrollbarMode="showOnDemand" font="Regular;22" position="520,108" size="740,540" transparent="1"/>
 		<panel name="VixLogo"/>
@@ -6200,10 +6200,10 @@
 		<widget name="chTuner" position="25,14" size="20,30" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="blue" backgroundColor="black"/>
 		<widget name="chProv" position="50,14" size="250,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="yellow" backgroundColor="black"/>
 		<widget name="chBouq" position="300,14" size="250,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="yellow" backgroundColor="black"/>
-		<widget name="chNum" position="550,14"	size="50,18"  zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black"/>
+		<widget name="chNum" position="550,14" size="50,18" zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black"/>
 		<widget name="chName" position="605,14" size="250,18" zPosition="1" font="Regular;18" halign="left"	 transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black"/>
-		<widget name="timelen" position="850,14" size="80,18"  zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black"/>
-		<widget name="recName" position="950,14" size="250,18"	zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="grey" backgroundColor="black"/>
+		<widget name="timelen" position="850,14" size="80,18" zPosition="1" font="Regular;18" halign="right" transparent="1" noWrap="1" foregroundColor="white" backgroundColor="black"/>
+		<widget name="recName" position="950,14" size="250,18" zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="grey" backgroundColor="black"/>
 	</screen>
 	<screen name="TranscodingSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="Transcoding Setup">
 		<panel name="BasicTemplate"/>
