@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.58 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.59 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -1218,9 +1218,9 @@
 	<screen name="RemoveTimerQuestion" position="center,center" size="503,130" zPosition="5" flags="wfNoBorder">
 		<widget name="text" position="0,0" size="0,0" font="Regular;20"/>
 		<widget name="list" position="10,10" size="220,50" enableWrapAround="1"/>
-	<applet type="onLayoutFinish">
-		self.autoResize()
-	</applet>
+			<applet type="onLayoutFinish">
+				self.autoResize()
+			</applet>
 	</screen>
 	<screen name="SubtitleDisplay" position="0,0" size="1280,720" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder"/>
 	<screen name="Scart" position="0,0" size="1280,720" backgroundColor="transparent"/>
@@ -1772,7 +1772,7 @@
 		<panel name="VixLogo"/>
 	</screen>
 	<!-- ##Softwaremanager## -->
-	<screen flags="wfNoBorder" position="0,0" size="1280,720" title="SoftwareManager setup">
+	<screen name="SoftwareManagerSetup" flags="wfNoBorder" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template 2"/>
 		<panel name="MenuTemplate"/>
@@ -5257,9 +5257,9 @@
 		<widget name="list" position="775,271" size="240,150" transparent="0" scrollbarMode="showOnDemand"/>
 		<widget name="lab1" position="590,271" size="170,20" font="Regular; 22" halign="left" zPosition="2" transparent="0"/>
 		<widget name="activecam" position="775,90" size="240,150" font="Regular; 20" halign="left" zPosition="2" transparent="0" noWrap="1"/>
-	<applet type="onLayoutFinish">
-		self["list"].instance.setItemHeight(25)
-	</applet>
+			<applet type="onLayoutFinish">
+				self["list"].instance.setItemHeight(25)
+			</applet>
 		<panel name="VixLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VIXSoftcamLog" position="0,0" size="1280,720">
@@ -5282,24 +5282,24 @@
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="buttons/key_menu.png" alphatest="on" position="1110,682"	size="35,25"/>
 		<widget name="connect" position="770,220" size="64,64" zPosition="2"
-	pixmaps="/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy1.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy2.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy3.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy4.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy5.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy6.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy7.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy8.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy10.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy11.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy12.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy13.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy14.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy15.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy17.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy18.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy19.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy20.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy21.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy22.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy23.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy24.png"
-	transparent="1" alphatest="blend"/>
+		pixmaps="/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy1.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy2.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy3.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy4.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy5.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy6.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy7.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy8.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy10.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy11.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy12.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy13.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy14.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy15.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy17.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy18.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy19.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy20.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy21.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy22.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy23.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy24.png"
+		transparent="1" alphatest="blend"/>
 		<widget name="lab1" position="560,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
 		<panel name="VixLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VIXStartCam" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="connect" position="770,220" size="64,64" zPosition="2"
-	pixmaps="/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy1.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy2.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy3.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy4.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy5.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy6.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy7.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy8.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy10.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy11.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy12.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy13.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy14.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy15.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy17.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy18.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy19.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy20.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy21.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy22.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy23.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy24.png"
-	transparent="1" alphatest="blend"/>
+		pixmaps="/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy1.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy2.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy3.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy4.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy5.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy6.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy7.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy8.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy10.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy11.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy12.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy13.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy14.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy15.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy17.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy18.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy19.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy20.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy21.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy22.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy23.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy24.png"
+		transparent="1" alphatest="blend"/>
 		<widget name="lab1" position="560,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
 		<panel name="VixLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VIXStopCam" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="connect" position="770,220" size="64,64" zPosition="2"
-	pixmaps="/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy1.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy2.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy3.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy4.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy5.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy6.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy7.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy8.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy10.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy11.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy12.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy13.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy14.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy15.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy17.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy18.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy19.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy20.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy21.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy22.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy23.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy24.png"
-	transparent="1" alphatest="blend"/>
+		pixmaps="/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy1.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy2.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy3.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy4.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy5.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy6.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy7.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy8.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy10.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy11.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy12.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy13.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy14.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy15.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy17.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy18.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy19.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy20.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy21.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy22.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy23.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/ViX/images/busy24.png"
+		transparent="1" alphatest="blend"/>
 		<widget name="lab1" position="560,133" halign="center" size="503,60" zPosition="1" font="Regular;20" valign="top" transparent="0"/>
 		<panel name="VixLogo"/>
 	</screen>
@@ -5316,10 +5316,10 @@
 		<widget name="key_blue" position="875,682"	size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<ePixmap pixmap="buttons/key_menu.png" position="1110,682" size="35,25" alphatest="on"/>
 		<widget name="lab1" position="520,82" size="755,50" font="Regular; 20" zPosition="2" transparent="0" halign="center"/>
-		<widget name="list" position="520,135" size="755,530" font="Regular;24" transparent="0" scrollbarMode="showOnDemand"/>
-	<applet type="onLayoutFinish">
-		self["list"].instance.setItemHeight(25)
-	</applet>
+		<widget name="list" position="520,140" size="755,525" font="Regular;20" foregroundColor="grey" transparent="0" scrollbarMode="showOnDemand"/>
+			<applet type="onLayoutFinish">
+				self["list"].instance.setItemHeight(25)
+			</applet>
 		<widget name="backupstatus" position="15,385" size="480,250" font="Regular;20" zPosition="5" foregroundColor="greenlight"/>
 		<eLabel text="'Help' = Download image" position="15,600" size="417,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1"/>
 		<panel name="VixLogo"/>
@@ -5348,12 +5348,12 @@
 		<widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<ePixmap pixmap="buttons/key_menu.png" position="1110,682" size="35,25" alphatest="on"/>
 		<ePixmap pixmap="buttons/key_info.png" position="1150,682" size="35,25" alphatest="on"/>
-		<widget name="lab1" position="520,82" size="755,50" font="Regular; 22" zPosition="2" transparent="0" halign="center"/>
-		<widget name="list" position="520,145" size="755,520" scrollbarMode="showOnDemand"/>
+		<widget name="lab1" position="520,82" size="755,50" font="Regular; 20" zPosition="2" transparent="0" halign="center"/>
+		<widget name="list" position="520,140" size="755,525" font="Regular;20" foregroundColor="grey" scrollbarMode="showOnDemand"/>
+			<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(25)
+			</applet>
 		<widget name="backupstatus" position="15,385" size="480,250" font="Regular;20" zPosition="5" foregroundColor="greenlight"/>
-	<applet type="onLayoutFinish">
-		self["list"].instance.setItemHeight(25)
-	</applet>
 		<panel name="VixLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VIXBackupManagerMenu" position="0,0" size="1280,720">
@@ -5598,9 +5598,9 @@
 		<widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="lab1" position="590,110" size="600,25" font="Regular; 20" zPosition="2" transparent="0" halign="center"/>
 		<widget name="list" position="590,140" size="600,450" transparent="0" scrollbarMode="showOnDemand"/>
-	<applet type="onLayoutFinish">
-		self["list"].instance.setItemHeight(25)
-	</applet>
+			<applet type="onLayoutFinish">
+				self["list"].instance.setItemHeight(25)
+			</applet>
 		<panel name="VixLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="VIXDevicesPanel" position="0,0" size="1280,720">
@@ -5667,9 +5667,9 @@
 		<widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
 		<widget name="lab1" position="15,450" size="477,70" font="Regular; 20" zPosition="2" transparent="0" halign="center"/>
 		<widget name="list" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-	<applet type="onLayoutFinish">
-		self["list"].instance.setItemHeight(25)
-	</applet>
+			<applet type="onLayoutFinish">
+				self["list"].instance.setItemHeight(25)
+			</applet>
 		<panel name="VixLogo"/>
 	</screen>
 	<screen name="QuickEPG" title="InfoBar" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -5973,9 +5973,9 @@
 		<widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="key_blue" position="875,682"	size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="list" position="520,82" size="755,583" transparent="0" scrollbarMode="showOnDemand"/>
-	<applet type="onLayoutFinish">
-			self["list"].instance.setItemHeight(25)
-	</applet>
+			<applet type="onLayoutFinish">
+					self["list"].instance.setItemHeight(25)
+			</applet>
 		<widget name="LogsSize" position="10,385" size="503,50" font="Regular;22" foregroundColor="greenlight" halign="center" valign="center" transparent="0"/>
 		<panel name="VixLogo"/>
 	</screen>
@@ -6098,9 +6098,9 @@
 		<widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="lab1" position="520,82" size="755,50" font="Regular; 20" zPosition="2" transparent="0" halign="center"/>
 		<widget name="list" scrollbarMode="showOnDemand" font="Regular;22" position="520,140" size="755,510" transparent="1"/>
-	<applet type="onLayoutFinish">
-		self["list"].instance.setItemHeight(25)
-	</applet>
+			<applet type="onLayoutFinish">
+				self["list"].instance.setItemHeight(25)
+			</applet>
 		<panel name="VixLogo"/>
 	</screen>
 	<screen flags="wfNoBorder" name="HdmiCECSetupScreen" position="0,0" size="1280,720">
