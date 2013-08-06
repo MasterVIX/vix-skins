@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.42 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.43 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -782,6 +782,11 @@
 	</screen>
 	<screen name="MessageBox" title="Message" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
+		<panel name="RedBPanel"/>
+		<eLabel text="Cancel" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
+		<panel name="GreenBPanel"/>
+		<eLabel text="OK" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
+
 		<widget name="text" position="620,80" size="650,588" font="Regular;22" foregroundColor="grey"/>
 		<widget name="ErrorPixmap" pixmap="Magic-HD/icons/input_error.png" position="540,100" size="54,54" alphatest="on"/>
 		<widget name="QuestionPixmap" pixmap="Magic-HD/icons/input_question.png" position="540,100" size="54,54" alphatest="on"/>
@@ -1542,7 +1547,9 @@ self.autoResize()
 		<panel name="Red2Panel"/>
 		<panel name="Green2Panel"/>
 		<panel name="Yellow2Panel"/>
-		 <widget name="Adaptertext" position="420,460" size="250,23" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;21" halign="left"/>
+		<panel name="BlueBPanel"/>
+		<widget name="EditSettings_Text" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="Adaptertext" position="420,460" size="250,23" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;21" halign="left"/>
 		<widget name="Adapter" position="671,460" size="306,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;21" halign="center"/>
 		<widget name="AdapterInfo_Text" position="1020,460" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;21"/>
 		<widget name="AdapterInfo" position="1020,460" size="200,23" transparent="1" zPosition="1"/>
@@ -1567,8 +1574,6 @@ self.autoResize()
 		<widget name="DNSInfo" position="1020,600" size="200,23" transparent="1" zPosition="1"/>
 		<widget name="DNSInfo_Text" position="1020,600" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;21"/>
 		<widget name="DNSInfo_Check" position="978,596" size="38,31" zPosition="2" pixmaps="icons/lock_on.png,icons/lock_error.png" alphatest="on"/>
-		<widget name="EditSettingsButton" position="840,682" size="26,26" transparent="1" zPosition="1" pixmaps="buttons/grey.png,buttons/blue.png" alphatest="on"/>
-		<widget name="EditSettings_Text" position="875,682" size="200,26" transparent="1" zPosition="2" foregroundColors="#000000,#8c8c93,#1cff1c" font="Regular;21"/>
 		<widget name="InfoText" position="520,82" size="755,350" zPosition="25" font="Regular;21"/>
 		<widget name="InfoTextBorder" position="520,82" size="755,350"/>
 	</screen>
@@ -2286,7 +2291,7 @@ self.autoResize()
 						MultiContentEntryText(pos = (10,40),size = (700,250),font = 1,flags = RT_HALIGN_LEFT,text = 2),# index 2 is a description of the nim settings,
 					],
 				 "fonts": [gFont("Regular",22),gFont("Regular",20)],
-				 "itemHeight": 200
+				 "itemHeight": 194
 				}
 			</convert>
 		</widget>
