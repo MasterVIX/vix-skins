@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.45	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.46	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -3419,5 +3419,19 @@ background
 		<widget name="frontend" pixmap="icons/scan-s.png" position="590,110" size="64,64" transparent="1" alphatest="on"/>
 		<widget name="scan_state" position="660,110" zPosition="2" size="400,30" font="Regular;18"/>
 		<widget name="scan_progress" position="660,145" size="400,15" pixmap="progress_big.png" borderWidth="2" borderColor="black"/>
+	</screen>
+	<!-- ##LCN Scanner## -->
+	<screen name="LCNScannerPlugin" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<panel name="Yellow1Panel"/>
+		<widget name="log" position="520,80" size="755,550" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+			<widget name="progress" position="520,630" size="755,20" borderWidth="1" />
+	</screen>
+	<screen name="LCNScannerAbout" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel"/>
+		<widget name="about" position="520,82" size="755,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 </skin>
