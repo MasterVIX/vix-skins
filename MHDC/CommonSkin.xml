@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.62 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.63 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -1712,6 +1712,12 @@
 		<widget name="ifacelist" position="520,180" size="755,485" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
 		<panel name="VixLogo"/>
 	</screen>
+	<screen name="OpenWebifConfig" title="OpenWebif Setup" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="RG_Template"/>
+		<widget name="lab1" position="520,82" halign="center" size="755,60" zPosition="1" font="Regular;24" valign="top" transparent="1"/>
+		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,150" size="755,510" transparent="1"/>
+	</screen>
 	<screen name="PluginBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template"/>
@@ -3008,6 +3014,7 @@
 	<screen name="picshow" position="0,0" size="1280,720" flags="wfNoBorder">
  		<panel name="RGYB_Template 2"/>
 		<panel name="BasicTemplateNoVp"/>
+		<panel name="MenuTemplate"/>
 		<widget name="label" position="15,385" size="290,280" transparent="1" font="Regular;20"/>
 		<widget name="thn" position="15,99" size="290,280" alphatest="on"/>
 		<widget name="filelist" position="520,82" size="760,583" itemHeight="28" zPosition="3" scrollbarMode="showOnDemand"/>
@@ -3261,6 +3268,7 @@
 	<screen flags="wfNoBorder" name="MultiQuickButton" position="0,0" size="1280,720" title="Multi QuickButton Panel">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
+		<panel name="InfoTemplate"/>
 		<ePixmap pixmap="buttons/key_0.png" zPosition="2" position="90,410" size="35,25" alphatest="on"/>
 		<ePixmap pixmap="buttons/key_1.png" zPosition="2" position="90,460" size="35,25" alphatest="on"/>
 		<ePixmap pixmap="buttons/key_2.png" zPosition="2" position="90,510" size="35,25" alphatest="on"/>
