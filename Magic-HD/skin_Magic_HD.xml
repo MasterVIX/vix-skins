@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.49 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.50 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -546,26 +546,26 @@
 		<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" position="570,160" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="600,400" size="500,200" zPosition="3" foregroundColor="grey" transparent="1">
+		<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="490,400" size="650,200" zPosition="3" foregroundColor="grey" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (25, [
 						MultiContentEntryText(pos = (0,0), size = (35,25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # key,
 						MultiContentEntryText(pos = (40,0), size = (60,25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # number,
-						MultiContentEntryText(pos = (110,0), size = (120,25), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
-						MultiContentEntryText(pos = (240,0), size = (200,25), font = 0, flags = RT_HALIGN_LEFT, text = 4), # language,
-						MultiContentEntryText(pos = (450,4), size = (15,25), font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+						MultiContentEntryText(pos = (110,0), size = (220,25), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
+						MultiContentEntryText(pos = (400,0), size = (200,25), font = 0, flags = RT_HALIGN_LEFT, text = 4), # language,
+						MultiContentEntryText(pos = (610,4), size = (15,25), font = 0, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 					], True, "showNever"),
 					"notselected": (25, [
 						MultiContentEntryText(pos = (0,0), size = (35,25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # key,
 						MultiContentEntryText(pos = (40,0), size = (60,25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # number,
-						MultiContentEntryText(pos = (110,0), size = (120,25), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
-						MultiContentEntryText(pos = (240,0), size = (200,25), font = 0, flags = RT_HALIGN_LEFT, text = 4), # language,
-						MultiContentEntryText(pos = (450,4), size = (15,25),	font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+						MultiContentEntryText(pos = (110,0), size = (220,25), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
+						MultiContentEntryText(pos = (400,0), size = (200,25), font = 0, flags = RT_HALIGN_LEFT, text = 4), # language,
+						MultiContentEntryText(pos = (610,4), size = (15,25),	font = 0, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 					], False, "showNever")
 					},
 				"fonts": [gFont("Regular",20), gFont("Regular",16)],
-				"itemHeight": 25
+				"itemHeight": 30
 				}
 			</convert>
 		</widget>
