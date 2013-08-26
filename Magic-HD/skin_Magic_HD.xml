@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.50 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.51 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -722,6 +722,13 @@
 		<panel name="GreenT2Panel"/>
 		<widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
 	</screen>
+	<screen name="FileBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel"/>
+		<panel name="Green2Panel"/>
+		<widget name="filelist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" position="520,82" size="755,520" transparent="1"/>
+		<widget source="status" render="Label" position="520,602" zPosition="1" size="740,60" font="Regular;22" halign="center" valign="center" backgroundColor="#a08500" transparent="1"/>
+	</screen>
 	<!-- ##Change Passwordd## -->
 	<screen name="ChangePasswdScreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -797,7 +804,6 @@
 		<eLabel text="Cancel" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
 		<panel name="GreenBPanel"/>
 		<eLabel text="OK" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
-
 		<widget name="text" position="620,80" size="650,588" font="Regular;22" foregroundColor="grey"/>
 		<widget name="ErrorPixmap" pixmap="Magic-HD/icons/input_error.png" position="540,100" size="54,54" alphatest="on"/>
 		<widget name="QuestionPixmap" pixmap="Magic-HD/icons/input_question.png" position="540,100" size="54,54" alphatest="on"/>
@@ -905,11 +911,6 @@
 	<screen name="Console" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="520,82" size="755,583" font="Console;22" foregroundColor="grey"/>
-	</screen>
-	<screen name="InputBox" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<widget name="text" position="590,110" size="600,30" font="Regular;22" halign="center" transparent="1"/>
-		<widget name="input" position="590,150" size="600,30" font="Regular;22" halign="center" transparent="1"/>
 	</screen>
 	<screen name="EcmExtraWindow" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1350,18 +1351,6 @@ self.autoResize()
 		<widget name="SkinList" position="520,90" size="300,570" itemHeight="28" font="Regular;22" scrollbarMode="showOnDemand" foregroundColor="grey" selectionPixmap="Magic-HD/buttons/sel.png" enableWrapAround="1"/>
 		<widget name="Preview" position="918,110" size="280,210" alphatest="on"/>
 		<widget source="introduction" render="Label" position="525,682" size="640,30" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;22" valign="center" halign="center"/>
-	</screen>
-	<screen name="PluginBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel"/>
-		<panel name="Green1Panel"/>
-		<panel name="MenuBPanel"/>
-		<widget name="list" position="520,82" size="755,576" font="Regular;30" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" itemHeight="48" foregroundColor="grey" enableWrapAround="1"/>
-	</screen>
-	<screen name="PluginDownloadBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<widget name="text" position="520,82" size="755,500" zPosition="-1" transparent="1" font="Regular;25" valign="center" halign="center" foregroundColor="grey"/>
-		<widget name="list" position="520,82" size="755,576" zPosition="3" transparent="0" scrollbarMode="showOnDemand" font="Regular;25" itemHeight="48" selectionPixmap="Magic-HD/buttons/sel.png" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 	<screen name="UpdatePlugin" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
