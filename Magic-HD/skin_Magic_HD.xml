@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.52 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.53 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -622,6 +622,7 @@
 <!-- About -->
 	<screen name="AboutOE" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
+		<panel name="Green1Panel"/>
 		<panel name="InfoBPanel"/>
 		<eLabel text="Release notes = " position="980,687" size="220,26" font="Regular;22" halign="right" transparent="1" zPosition="1" foregroundColor="grey"/>
 		<widget source="lab1" render="Label" position="10,455" size="500,25" font="Regular;24" transparent="0" zPosition="2" foregroundColor="secondFG" halign="center"/>
@@ -1125,7 +1126,7 @@ self.autoResize()
 			<convert type="RdsInfo">RasInteractiveAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="RdsDecoder" render="Label" position="0,5" size="1280,30" transparent="1" zPosition="5" foregroundColor="secondFG" font="LCD;30" valign="center" halign="center">
+		<widget source="RdsDecoder" render="Label" position="0,5" size="1280,70" transparent="1" zPosition="5" foregroundColor="secondFG" font="LCD;30" valign="center" halign="center">
 			<convert type="RdsInfo">RadioText</convert>
 		</widget>
 		<widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD/buttons/rec.png" position="1175,84" size="20,20" zPosition="3" alphatest="on">
