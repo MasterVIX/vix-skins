@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.65 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.66 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -618,25 +618,25 @@
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget name="list" backgroundColor="background" position="520,90" size="755,570" itemHeight="30" serviceNumberFont="Regular;22" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="30" colorEventProgressbar="blue" colorEventProgressbarSelected="blue" colorServiceDescription="#DBB96E" colorEventProgressbarBorderSelected="white" transparent="1" foregroundColorServiceNotAvail="#00656565" scrollbarMode="showOnDemand"/>
-		<widget source="ServiceEvent" render="Label" position="10,367" size="425,25" transparent="1" foregroundColor="secondFG" font="Regular;20" halign="left" valign="center">
+		<widget source="ServiceEvent" render="Label" position="10,385" size="425,25" transparent="1" foregroundColor="secondFG" font="Regular;20" halign="left">
 			<convert type="EventName">NowName</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="20,415" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="right">
+		<widget source="ServiceEvent" render="Label" position="20,360" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;18" halign="right">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="275,415" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19">
+		<widget source="ServiceEvent" render="Label" position="275,360" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;18">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
-		<widget source="ServiceEvent" render="Progress" pixmap="MHDC/window/progress.png" position="85,420" size="190,12" transparent="1" borderWidth="1" borderColor="grey">
+		<widget source="ServiceEvent" render="Progress" pixmap="MHDC/window/progress.png" position="85,365" size="190,12" transparent="1" borderWidth="1" borderColor="grey">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="405,415" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="white" font="Regular;19" halign="left">
+		<widget source="ServiceEvent" render="Label" position="405,360" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="white" font="Regular;18" halign="left">
 			<convert type="ServiceOrbitalPosition">
 			</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="10,445" size="490,185" transparent="1" backgroundColor="background" foregroundColor="grey" font="Regular;20">
+		<widget source="ServiceEvent" render="Label" position="10,410" size="490,230" transparent="1" backgroundColor="background" foregroundColor="grey" font="Regular;20">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="10,645" size="425,25" font="Regular;20" foregroundColor="secondFG" transparent="1" valign="center" halign="left">
@@ -705,22 +705,22 @@
 		</widget>
 		<widget name="list" position="520,90" size="755,570" itemHeight="30" font="Regular;22" transparent="0" scrollbarMode="showOnDemand"/>
 		<widget name="number" position="520,90" size="755,570" zPosition="5" backgroundColor="background" transparent="0" font="Regular;36" borderColor="black" borderWidth="1" valign="center" halign="center"/>
-		<widget source="Event" render="Label" position="10,355" size="477,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="white" font="Regular;22" valign="center" halign="center">
+		<widget source="Event" render="Label" position="10,385" size="477,25" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="yellow" font="Regular;20" valign="center">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="Event" render="Label" position="20,410" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;21">
+		<widget source="Event" render="Label" position="30,360" size="150,25" backgroundColor="background" transparent="1" foregroundColor="white" font="Regular;19">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">ShortDate</convert>
 		</widget>
-		<widget source="Event" render="Label" position="170,410" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;21" halign="right">
+		<widget source="Event" render="Label" position="180,360" size="80,25" backgroundColor="background" transparent="1" foregroundColor="white" font="Regular;19" halign="right">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
-		<widget source="Event" render="Label" position="250,410" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;21" halign="left">
+		<widget source="Event" render="Label" position="260,360" size="80,25" backgroundColor="background" transparent="1" foregroundColor="white" font="Regular;19" halign="left">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget source="Event" render="Label" position="10,445" size="490,210" backgroundColor="background" transparent="1" font="Regular;20" foregroundColor="grey">
+		<widget source="Event" render="Label" position="10,410" size="490,250" backgroundColor="background" transparent="1" font="Regular;20" foregroundColor="grey">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
@@ -1344,7 +1344,7 @@
 	</screen>
 	<screen name="ChannelContextMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="menu" position="520,82" size="755,583" itemHeight="28" scrollbarMode="showOnDemand"/>
+		<widget name="menu" position="520,82" size="755,583" itemHeight="30" scrollbarMode="showOnDemand"/>
 		<panel name="VixLogo"/>
 	</screen>
 	<screen name="MovieContextMenu" position="0,0" size="1280,720" flags="wfNoBorder">
