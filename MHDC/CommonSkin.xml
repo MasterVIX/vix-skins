@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.64 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.65 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -16,7 +16,7 @@
 		<widget source="global.CurrentTime" render="Label" position="950,28" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
 			<convert type="ClockToText">Date</convert>
 		</widget>	
-		<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center"/>
+		<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;26" halign="left" valign="center"/>
 		<eLabel position="9,84" size="479,272" zPosition="1" backgroundColor="selectedBG"/>
 		<widget source="session.VideoPicture" backgroundColor="transparent" position="10,85" render="Pig" size="477,270" zPosition="3"/>
 		<widget source="session.CurrentService" render="Label" position="10,85" size="477,20" zPosition="4" borderWidth="1" borderColor="black" foregroundColor="white" backgroundColor="transparent" transparent="1" font="Regular;18" noWrap="1" valign="center" halign="center">
@@ -34,7 +34,7 @@
 		<widget source="global.CurrentTime" render="Label" position="950,28" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
 			<convert type="ClockToText">Date</convert>
 		</widget>	
-		<widget source="Title" render="Label" position="145,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center"/>
+		<widget source="Title" render="Label" position="145,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;26" halign="left" valign="center"/>
 		<eLabel position="9,84" size="479,272" zPosition="1" backgroundColor="selectedBG"/>
 		<widget source="session.VideoPicture" backgroundColor="transparent" position="10,85" render="Pig" size="477,270" zPosition="3"/>
 		<widget source="session.CurrentService" render="Label" position="10,85" size="477,20" zPosition="4" borderWidth="1" borderColor="black" foregroundColor="white" backgroundColor="transparent" transparent="1" font="Regular;18" noWrap="1" valign="center" halign="center">
@@ -52,7 +52,7 @@
 		<widget source="global.CurrentTime" render="Label" position="950,28" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
 			<convert type="ClockToText">Date</convert>
 		</widget>	
-		<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center"/>
+		<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;26" halign="left" valign="center"/>
 	</screen>
 
 	<screen name="BasicTemplateNoVp2">
@@ -64,7 +64,7 @@
 		<widget source="global.CurrentTime" render="Label" position="950,28" size="300,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
 			<convert type="ClockToText">Date</convert>
 		</widget>	
-		<widget source="Title" render="Label" position="145,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center"/>
+		<widget source="Title" render="Label" position="145,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;26" halign="left" valign="center"/>
 	</screen>
 
 
@@ -617,7 +617,7 @@
 		<widget source="ServiceEvent" render="Picon" position="15,6" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget name="list" backgroundColor="background" position="520,90" size="755,570" itemHeight="30" serviceNumberFont="Regular;22" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="30" colorEventProgressbar="blue" colorEventProgressbarSelected="blue" colorServiceDescription="#DBB96E" colorEventProgressbarBorderSelected="grey" transparent="1" foregroundColorServiceNotAvail="#00656565" scrollbarMode="showOnDemand"/>
+		<widget name="list" backgroundColor="background" position="520,90" size="755,570" itemHeight="30" serviceNumberFont="Regular;22" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="30" colorEventProgressbar="blue" colorEventProgressbarSelected="blue" colorServiceDescription="#DBB96E" colorEventProgressbarBorderSelected="white" transparent="1" foregroundColorServiceNotAvail="#00656565" scrollbarMode="showOnDemand"/>
 		<widget source="ServiceEvent" render="Label" position="10,367" size="425,25" transparent="1" foregroundColor="secondFG" font="Regular;20" halign="left" valign="center">
 			<convert type="EventName">NowName</convert>
 		</widget>
@@ -1541,7 +1541,7 @@
 		<widget name="date" position="750,85" size="250,24" transparent="1" font="Regular;20" valign="center" halign="center"/>
 		<widget name="bouquetlist" position="520,165" size="755,500" itemHeight="31" foregroundColor="white" backgroundColor="background" foregroundColorSelected="selectedFG" backgroundColorSelected="#001C252D" borderColor="background" scrollbarMode="showNever" zPosition="4" transparent="0"/>
 		<widget name="list" position="520,165" size="755,500" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1"/>
-		<widget source="Event" render="Label" position="15,380" size="477,290" backgroundColor="background" transparent="1" foregroundColor="grey" font="Regular;19">
+		<widget source="Event" render="Label" position="15,380" size="477,288" backgroundColor="background" transparent="1" foregroundColor="grey" font="Regular;19">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget name="now_button" pixmap="MHDC/border/epg_off.png" position="590,110" zPosition="2" size="180,40" alphatest="blend"/>
@@ -1722,7 +1722,6 @@
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template"/>
 		<panel name="MenuTemplate"/>
-		<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center"/>
 		<widget name="list" position="520,82" size="755,550" font="Regular;26" scrollbarMode="showOnDemand"/>
 		<panel name="VixLogo"/>
 	</screen>
