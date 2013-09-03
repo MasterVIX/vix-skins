@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.66 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.67 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -629,7 +629,7 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
-		<widget source="ServiceEvent" render="Progress" pixmap="MHDC/window/progress.png" position="85,365" size="190,12" transparent="1" borderWidth="1" borderColor="grey">
+		<widget source="ServiceEvent" render="Progress" pixmap="MHDC/window/progress.png" position="85,367" size="190,8" transparent="1" borderWidth="1" borderColor="grey">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="405,360" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="white" font="Regular;18" halign="left">
@@ -708,19 +708,19 @@
 		<widget source="Event" render="Label" position="10,385" size="477,25" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="yellow" font="Regular;20" valign="center">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="Event" render="Label" position="30,360" size="150,25" backgroundColor="background" transparent="1" foregroundColor="white" font="Regular;19">
+		<widget source="Event" render="Label" position="35,360" size="150,25" backgroundColor="background" transparent="1" foregroundColor="white" font="Regular;19">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">ShortDate</convert>
 		</widget>
-		<widget source="Event" render="Label" position="180,360" size="80,25" backgroundColor="background" transparent="1" foregroundColor="white" font="Regular;19" halign="right">
+		<widget source="Event" render="Label" position="180,360" size="80,25" backgroundColor="background" transparent="1" foregroundColor="white" font="Regular;18" halign="right">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
-		<widget source="Event" render="Label" position="260,360" size="80,25" backgroundColor="background" transparent="1" foregroundColor="white" font="Regular;19" halign="left">
+		<widget source="Event" render="Label" position="260,360" size="80,25" backgroundColor="background" transparent="1" foregroundColor="white" font="Regular;18" halign="left">
 			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText">Format:- %H:%M</convert>
+			<convert type="ClockToText">Format: - %H:%M</convert>
 		</widget>
-		<widget source="Event" render="Label" position="10,410" size="490,250" backgroundColor="background" transparent="1" font="Regular;20" foregroundColor="grey">
+		<widget source="Event" render="Label" position="10,410" size="490,255" backgroundColor="background" transparent="1" font="Regular;20" foregroundColor="grey">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
