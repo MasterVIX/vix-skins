@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.67 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.69 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -4805,9 +4805,9 @@
 	</screen>
 	<screen flags="wfNoBorder" name="ImageManagerDownload" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
-		<panel name="RGYB_Template"/>
-		<widget name="lab1" position="520,82" size="755,50" font="Regular; 20" zPosition="2" transparent="0" halign="center"/>
-		<widget name="list" scrollbarMode="showOnDemand" font="Regular;22" position="520,140" size="755,510" transparent="1"/>
+		<panel name="RG_Template"/>
+		<widget name="lab1" position="520,82" size="755,50" font="Regular; 21" zPosition="2" transparent="0" valign="center" halign="center"/>
+		<widget name="list" scrollbarMode="showOnDemand" font="Regular;20" foregroundColor="grey" position="520,140" size="755,525" transparent="1"/>
 			<applet type="onLayoutFinish">
 				self["list"].instance.setItemHeight(25)
 			</applet>
