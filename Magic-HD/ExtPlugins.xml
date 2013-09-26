@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.53	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.54	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -2721,7 +2721,7 @@ background
 		<widget name="recName" position="950,2" size="250,18"	zPosition="1" font="Regular;18" halign="left" transparent="1" noWrap="1" foregroundColor="grey" backgroundColor="black"/>
 	</screen>
 	<!-- ## OnDemand players ## -->
-	<screen name="OnDemand_About" position="0,0" size="1280,720" flags="wfNoBorder" title="OnDemand - About">
+	<screen name="OnDemand_About" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
 		<widget name="about" position="490,80" size="785,588" font="Regular;22" transparent="1" foregroundColor="grey"/>
@@ -2747,11 +2747,63 @@ background
 		<widget name="list" position="5,79" size="1255,592" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="150" noWrap="1" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<ePixmap pixmap="Magic-HD/logos/vix.png" position="25,685" size="300,25" alphatest="on"/>
 	</screen>
-	<screen name="OnDemandHelp" position="0,0" size="1280,720" flags="wfNoBorder" title="OnDemand Help">
+	<screen name="GenresThumb" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Format:%-H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget name="lab1" position="5,79" size="1255,500" font="Regular;26" halign="center" valign="center" transparent="0" zPosition="5"/>
+		<widget name="list" position="5,79" size="1255,592" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="150" noWrap="1" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<ePixmap pixmap="Magic-HD/logos/vix.png" position="25,685" size="300,25" alphatest="on"/>
+	</screen>
+	<screen name="FavoritesThumb" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Format:%-H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<panel name="Yellow2Panel"/>
+		<widget name="lab1" position="5,79" size="1255,500" font="Regular;26" halign="center" valign="center" transparent="0" zPosition="5"/>
+		<widget name="list" position="5,79" size="1255,592" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="150" noWrap="1" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<ePixmap pixmap="Magic-HD/logos/vix.png" position="25,685" size="300,25" alphatest="on"/>
+	</screen>
+	<screen name="GenresThumb" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Format:%-H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<panel name="Green2Panel"/>
+		<widget name="lab1" position="5,79" size="1255,500" font="Regular;26" halign="center" valign="center" transparent="0" zPosition="5"/>
+		<widget name="list" position="5,79" size="1255,592" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="150" noWrap="1" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<ePixmap pixmap="Magic-HD/logos/vix.png" position="25,685" size="300,25" alphatest="on"/>
+	</screen>
+	<screen name="iRadioMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<widget name="iRadioMenu" position="520,80" size="555,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+	<screen name="GenresMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<widget name="genreMenu" position="520,80" size="555,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+	<screen name="OnDemandHelp" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
 		<widget name="myLabel" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;24" itemHeight="35" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
-	<screen name="OnDemandScreenSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="OnDemand Configuration">
+	<screen name="OnDemandScreenSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
 		<widget name="config" position="520,85" size="755,570" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="35" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
@@ -3488,4 +3540,10 @@ background
 		<panel name="BasicTemplate"/>
 		<widget name="donate" position="520,80" size="755,584" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" />
 	</screen>
+	<!-- ##AutoResolution# -->
+		<screen name="ResolutionLabel" position="5,5" size="300,55" flags="wfNoBorder" >
+			<widget name="content" position="0,0" size="300,24" font="Regular;22" />
+			<widget name="restxt" position="0,27" size="300,24" font="Regular;22" />
+		</screen>
+
 </skin>
