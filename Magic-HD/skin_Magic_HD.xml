@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.58 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.59 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -300,7 +300,7 @@
 			<convert type="EventTime">ThirdStartTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
-  		<eLabel text="-" foregroundColor="selectedFG" backgroundColor="secondBG" font="Regular;22" halign="left" position="1208,645" size="220,26" transparent="1" zPosition="1"/>
+		<eLabel text="-" foregroundColor="selectedFG" backgroundColor="secondBG" font="Regular;22" halign="left" position="1208,645" size="220,26" transparent="1" zPosition="1"/>
 		<widget source="ServiceEvent" render="Label" position="1215,645" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21">
 			<convert type="EventTime">ThirdEndTime</convert>
 			<convert type="ClockToText"/>
@@ -673,7 +673,7 @@
 	<screen name="SystemNetworkInfo" flags="wfNoBorder" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="Red2Panel"/>
-		<widget name="AboutScrollLabel" position="520,90" size="458,275" valign="left" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<widget name="AboutScrollLabel" position="520,90" size="458,475" valign="left" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<widget source="IFtext" render="Label" position="520,600" size="120,25" zPosition="10" font="Regular;22" halign="right" transparent="1" foregroundColor="grey"/>
 		<widget source="IF" render="Label" position="645,600" size="400,25" zPosition="10" font="Regular;22" halign="left" transparent="1" foregroundColor="grey"/>
 		<widget source="Statustext" render="Label" position="520,630" size="115,25" zPosition="10" font="Regular;22" halign="right" transparent="1" foregroundColor="grey"/>
