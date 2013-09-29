@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.59 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.60 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -996,15 +996,6 @@ self.autoResize()
 	<widget name="PTSSeekBack" position="128,54" size="1024,4" zPosition="1"/>
 	<widget name="PTSSeekPointer" position="128,40" zPosition="5" size="19,20" pixmap="position_pointer2.png" alphatest="blend"/>
 	</screen>
-	<screen name="TimeshiftLocationBox" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel"/>
-		<panel name="Green1Panel"/>
-		<panel name="Yellow1Panel"/>
-		<panel name="Blue1Panel"/>
-		<widget name="text" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" position="520,82" size="755,250" transparent="1"/>
-		<widget name="textbook" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" position="520,350" size="755,250" transparent="1"/>
-	</screen>
 	<screen name="PVRState" position="10,75" size="75,30" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
 <!--		<widget name="state" position="0,0" size="150,30" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" halign="center"/>-->
 		<widget name="statusicon" position="50,0" size="20,21" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on"/>
@@ -1164,13 +1155,15 @@ self.autoResize()
 	</screen>
 	<screen name="LocationBox" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate2"/>
-		<widget name="target" position="15,635" size="1230,27" backgroundColor="grey" foregroundColor="black" font="Regular;24" valign="right"/>
-		<widget name="filelist" position="520,90" size="755,545" itemHeight="28" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png"/>
-		<widget name="booklist" position="15,375" size="477,250" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png"/>
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
 		<panel name="Yellow1Panel"/>
 		<panel name="Blue1Panel"/>
+		<widget name="text" position="520,82" size="755,35" font="Regular;26" halign="center" transparent="1"/>
+		<widget name="target" position="520,115" size="755,25" font="Regular;23" halign="center" transparent="1"/>
+		<widget name="filelist" position="490,145" size="785,505" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<widget name="textbook" position="5,379" size="477,25" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
+		<widget name="booklist" position="5,406" size="477,244" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" zPosition="2" font="Regular;22" foregroundColor="grey" valign="center" halign="center"/>
 	</screen>
 	<!-- ## Timers ## -->
 	<screen name="TimerSelection" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1552,7 +1545,9 @@ self.autoResize()
 		<widget source="Adaptertext" render="Label" position="520,630" size="270,25" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;24" halign="right"/>
 		<widget source="Adapter" render="Label" position="800,630" size="400,25" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;24" halign="left"/>
 		<widget source="introduction2" render="Label" position="5,600" size="477,24" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
-		<widget name="VKeyIcon" pixmap="buttons/vkey_icon.png" position="60,410" size="35,25" transparent="1" zPosition="10" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="1250,687" size="35,25" transparent="1" zPosition="10" alphatest="on">
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="50,410" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 	</screen>
 	<screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1713,7 +1708,7 @@ self.autoResize()
 		<widget name="config" position="520,82" size="755,275" zPosition="3" transparent="1" scrollbarMode="showOnDemand" font="Regular;22" selectionPixmap="Magic-HD/buttons/sel.png" foregroundColor="grey" itemHeight="28" enableWrapAround="1"/>
 		<widget name="HelpWindow" position="590,390" size="1,1" zPosition="1" transparent="1" alphatest="on"/>
 		<widget source="introduction" render="Label" position="620,682" size="655,27" zPosition="1" transparent="1" font="Regular;22" halign="center" foregroundColor="grey"/>
-		<widget name="VKeyIcon" pixmap="buttons/vkey_icon.png" position="1160,682" size="35,25" zPosition="10" transparent="1" alphatest="on"/>
+		<widget name="VKeyIcon" pixmap="buttons/key_text.png" position="1160,682" size="35,25" zPosition="10" transparent="1" alphatest="on"/>
 	</screen>
 	<screen name="UserManager" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
@@ -2544,6 +2539,9 @@ self.autoResize()
 		<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on"/>
 		<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on"/>
 		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="Magic-HD-Common/buttons/key_text.png" position="1250,687" size="35,25" zPosition="1" transparent="1" alphatest="on">
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget name="HelpWindow" pixmap="buttons/key_text.png" position="125,170" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 	</screen>
 	<screen name="DefaultSatLists" position="0,0" size="1280,720" flags="wfNoBorder">

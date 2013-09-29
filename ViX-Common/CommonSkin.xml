@@ -1,4 +1,4 @@
-<!--  Skin: ViX-Day-HD Vs 3.10 by AndyBlac @ www.world-of-satellite.com  -->
+<!--  Skin: ViX-Day-HD Vs 3.11 by AndyBlac @ www.world-of-satellite.com  -->
 <!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -908,7 +908,9 @@
 		<widget source="Adapter" render="Label" position="180,560" size="235,21" zPosition="10" backgroundColor="window-bg" font="Regular;19" transparent="0" />
 		<ePixmap pixmap="div-h.png" position="10,610" zPosition="1" size="503,2" />
 		<widget source="introduction2" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
-		<widget name="VKeyIcon" pixmap="buttons/key_text.png" position="280,663" zPosition="1" size="35,25" transparent="1" alphatest="on" />
+		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="280,663" zPosition="1" size="35,25" transparent="1" alphatest="on">
+			<convert type="ConditionalShowHide" />
+		</widget>
 		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="100,399" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 		<panel name="MenuRed2Panel" />
 		<panel name="MenuGreen2Panel" />
