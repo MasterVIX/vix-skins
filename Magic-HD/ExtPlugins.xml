@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.54	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.55	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -2757,17 +2757,11 @@ background
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
+		<panel name="Green2Panel"/>
 		<widget name="lab1" position="5,79" size="1255,500" font="Regular;26" halign="center" valign="center" transparent="0" zPosition="5"/>
 		<widget name="list" position="5,79" size="1255,592" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="150" noWrap="1" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<ePixmap pixmap="Magic-HD/logos/vix.png" position="25,685" size="300,25" alphatest="on"/>
 	</screen>
-	<screen name="FavoritesThumb" position="0,0" size="1280,720" flags="wfNoBorder" title="">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
-		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
-		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
-			<convert type="ClockToText">Format:%-H:%M</convert>
-		</widget>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
@@ -2775,29 +2769,6 @@ background
 		<widget name="lab1" position="5,79" size="1255,500" font="Regular;26" halign="center" valign="center" transparent="0" zPosition="5"/>
 		<widget name="list" position="5,79" size="1255,592" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="150" noWrap="1" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<ePixmap pixmap="Magic-HD/logos/vix.png" position="25,685" size="300,25" alphatest="on"/>
-	</screen>
-	<screen name="GenresThumb" position="0,0" size="1280,720" flags="wfNoBorder" title="">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
-		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
-		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
-			<convert type="ClockToText">Format:%-H:%M</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<panel name="Green2Panel"/>
-		<widget name="lab1" position="5,79" size="1255,500" font="Regular;26" halign="center" valign="center" transparent="0" zPosition="5"/>
-		<widget name="list" position="5,79" size="1255,592" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="150" noWrap="1" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-		<ePixmap pixmap="Magic-HD/logos/vix.png" position="25,685" size="300,25" alphatest="on"/>
-	</screen>
-	<screen name="iRadioMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
-		<panel name="BasicTemplate"/>
-		<widget name="iRadioMenu" position="520,80" size="555,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-	</screen>
-	<screen name="GenresMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
-		<panel name="BasicTemplate"/>
-		<widget name="genreMenu" position="520,80" size="555,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 	<screen name="OnDemandHelp" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
@@ -2845,6 +2816,30 @@ background
 		<panel name="BasicTemplate"/>
 		<widget name="iViewMenu" position="520,85" size="755,570" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="30" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
+	<!-- ## Radio Player ## -->
+	<screen name="iRadioMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<widget name="iRadioMenu" position="520,80" size="555,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+	<screen name="shoutGenresMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<widget name="shoutGenresMenu" position="520,80" size="555,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+	<screen name="shoutSubGenresMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<widget name="shoutSubGenresMenu" position="520,80" size="555,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+	<screen name="GenresMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<widget name="genreMenu" position="520,80" size="555,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+	<screen name="FavoritesThumb" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Format:%-H:%M</convert>
+		</widget>
 	<!-- ## Uitzending Gemist ## -->
 	<screen name="OpenUg" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
