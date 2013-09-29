@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.55	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.56	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -2762,14 +2762,6 @@ background
 		<widget name="list" position="5,79" size="1255,592" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="150" noWrap="1" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<ePixmap pixmap="Magic-HD/logos/vix.png" position="25,685" size="300,25" alphatest="on"/>
 	</screen>
-		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<panel name="Yellow2Panel"/>
-		<widget name="lab1" position="5,79" size="1255,500" font="Regular;26" halign="center" valign="center" transparent="0" zPosition="5"/>
-		<widget name="list" position="5,79" size="1255,592" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="150" noWrap="1" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-		<ePixmap pixmap="Magic-HD/logos/vix.png" position="25,685" size="300,25" alphatest="on"/>
-	</screen>
 	<screen name="OnDemandHelp" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
 		<widget name="myLabel" position="520,80" size="755,588" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;24" itemHeight="35" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
@@ -2840,6 +2832,14 @@ background
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
 		</widget>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<panel name="Yellow2Panel"/>
+		<widget name="lab1" position="5,79" size="1255,500" font="Regular;26" halign="center" valign="center" transparent="0" zPosition="5"/>
+		<widget name="list" position="5,79" size="1255,592" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="150" noWrap="1" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<ePixmap pixmap="Magic-HD/logos/vix.png" position="25,685" size="300,25" alphatest="on"/>
+	</screen>
 	<!-- ## Uitzending Gemist ## -->
 	<screen name="OpenUg" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
@@ -3540,5 +3540,4 @@ background
 			<widget name="content" position="0,0" size="300,24" font="Regular;22" />
 			<widget name="restxt" position="0,27" size="300,24" font="Regular;22" />
 		</screen>
-
 </skin>
