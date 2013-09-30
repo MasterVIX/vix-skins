@@ -1,4 +1,4 @@
-<!--  Skin: ViX-Day-HD Vs 3.12 by AndyBlac @ www.world-of-satellite.com  -->
+<!--  Skin: ViX-Common Vs 3.2 by AndyBlac @ www.world-of-satellite.com  -->
 <!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -1738,7 +1738,7 @@ self.autoResize()
 	</screen>
 	<screen name="Satfinder" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
-		<widget name="introduction" position="40,663" size="250,25" font="Regular;23" alphatest="blend" transparent="1"/>
+		<widget name="introduction" position="40,663" size="250,25" font="Regular;23" alphatest="blend" transparent="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd1" />
 		<ePixmap pixmap="icons/dish_scan.png" position="40,143" zPosition="0" size="119,110" transparent="1" alphatest="on" />
 		<widget source="Frontend" render="Label" position="235,133" zPosition="2" size="195,20" font="Regular;19" backgroundColor="window-bg" halign="center" valign="center" transparent="0">
 			<convert type="FrontendInfo">SNRdB</convert>
