@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.76 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.77 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -1369,13 +1369,6 @@
 		</widget>
 		<widget name="eventname" position="240,0" size="780,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="1" font="Regular;22" borderColor="black" valign="center" halign="center"/>
 	</screen>
-	<screen flags="wfNoBorder" name="TimeshiftLocationBox" position="0,0" size="1280,720">
-		<panel name="BasicTemplate"/>
-		<panel name="RGYB_Template"/>
-		<widget name="text" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,250" transparent="1"/>
-		<widget name="textbook" scrollbarMode="showOnDemand" font="Regular;22" position="520,350" size="755,250" transparent="1"/>
-		<panel name="VixLogo"/>
-	</screen>
 	<screen name="BouquetSelector" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="menu" scrollbarMode="showOnDemand" font="Regular;22" position="520,90" size="755,570"	 itemHeight="30" transparent="1"/>
@@ -1601,10 +1594,13 @@
 	</screen>
 	<screen name="LocationBox" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
+		<panel name="MenuTemplate"/>
 		<panel name="RGYB_Template"/>
-		<widget name="target" position="15,635" size="1230,27" backgroundColor="grey" foregroundColor="black" font="Regular;24" valign="right"/>
-		<widget name="filelist" position="520,90" size="755,545" itemHeight="28" selectionDisabled="1" scrollbarMode="showOnDemand"/>
-		<widget name="booklist" position="15,375" size="477,250" itemHeight="28" scrollbarMode="showOnDemand"/>
+		<widget name="text" position="520,82" size="755,30" font="Regular;22" halign="center" transparent="1"/>
+		<widget name="target" position="520,112" size="755,25" font="Regular;20" halign="center" transparent="1"/>
+		<widget name="filelist" position="520,145" size="755,505" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<widget name="textbook" position="10,378" size="477,25" zPosition="2" font="Regular;22" foregroundColor="yellow" valign="center" halign="center"/>
+		<widget name="booklist" position="10,406" size="477,244" scrollbarMode="showOnDemand" zPosition="2" font="Regular;20" foregroundColor="white" valign="center" halign="left"/>
 	</screen>
 	<screen name="MovieSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
