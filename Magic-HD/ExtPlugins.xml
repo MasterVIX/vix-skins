@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.57	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.58	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -3536,4 +3536,30 @@ background
 			<widget name="content" position="0,0" size="300,24" font="Regular;22" />
 			<widget name="restxt" position="0,27" size="300,24" font="Regular;22" />
 		</screen>
+	<!-- ##History ZAP# -->
+	<screen name="SetupZapSelectorScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="RedBPanel"/>
+		<widget name="cancel" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<panel name="GreenBPanel"/>
+		<widget name="ok" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<panel name="BlueBPanel"/>
+		<widget name="clear" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="config" position="520,80" size="755,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+
+<!--SetupZapSelectorScreen(
+		<screen position="center,center" size="510,200" >
+		<widget name="config" position="5,5" size="500,150" />
+		<ePixmap pixmap="skin_default/buttons/green.png" position="180,160" zPosition="0" size="140,40" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/red.png" position="5,160" zPosition="0" size="140,40" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/blue.png" position="360,160" zPosition="0" size="140,40" alphatest="on" />
+
+		<widget name="clear" position="360,160" size="140,40" valign="center" halign="center" zPosition="1" font="Regular;17" transparent="1" backgroundColor="blue" />
+		<widget name="ok" position="180,160" size="140,40" valign="center" halign="center" zPosition="1" font="Regular;17" transparent="1" backgroundColor="green" />
+		<widget name="cancel" position="5,160" size="140,40" valign="center" halign="center" zPosition="1" font="Regular;17" transparent="1" backgroundColor="red" />
+	</screen>-->
+
+
+
 </skin>

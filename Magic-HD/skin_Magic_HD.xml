@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.61 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.62 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -970,15 +970,19 @@ self.autoResize()
 		<widget name="number" position="0,-200" size="130,40" backgroundColor="transparent" transparent="1" font="Regular;36" borderColor="black" borderWidth="3" valign="center" halign="right" foregroundColor="grey"/>
 		<widget name="servicename" position="135,-200" size="450,40" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="3" valign="center" halign="left" foregroundColor="grey"/>
 	</screen>
-	<screen name="HistoryZapSelector" position="center,center" size="750,450" backgroundColor="transpBlack" flags="wfNoBorder" title="">
-		<widget source="menu" render="Listbox" position="0,10" size="750,442" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" backgroundColor="transpBlack" transparent="1">
+	<screen name="HistoryZapSelector" position="center,center" size="800,450" backgroundColor="transpBlack" flags="wfNoBorder">
+		<widget source="menu" render="Listbox" position="0,10" size="800,442" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" backgroundColor="transpBlack" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (10,0), size = (20,34), flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-						MultiContentEntryText(pos = (40,0), size = (700,34), font = 1, flags = RT_HALIGN_LEFT, text = 2)
+						MultiContentEntryText(pos = (60, 10), size = (10, 20), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+						MultiContentEntryText(pos = (80, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x00ffffff),
+						MultiContentEntryText(pos = (350, 5), size = (270, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x00ffc000),
+						MultiContentEntryText(pos = (80, 25), size = (180, 17), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x00999999),
+						MultiContentEntryText(pos = (270, 25), size = (510, 17), font = 3, flags = RT_HALIGN_LEFT, text = 4, color = 0x00999999, color_sel = 0x00999999),
+						MultiContentEntryPixmap(pos=(0, 6), size=(50, 30), png=6)
 					],
-				 "fonts": [gFont("Regular", 26), gFont("Regular", 26)],
-				 "itemHeight": 34
+				 "fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17), gFont("Regular", 16)],
+				 "itemHeight": 42
 				}
 			</convert>
 		</widget>
