@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.77 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.78 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -1267,15 +1267,19 @@
 		<widget name="number" position="0,-200" size="150,60" backgroundColor="transparent" transparent="1" font="Regular;36" borderColor="black" borderWidth="3" valign="center" halign="center"/>
 		<widget name="servicename" position="134,-200" size="450,60" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="3" valign="center" halign="center"/>
 	</screen>
-	<screen name="HistoryZapSelector" position="center,center" size="350,240" backgroundColor="transpBlack" title="History zap...">
-			<widget source="menu" render="Listbox" position="0,10" size="350,220" backgroundColor="transpBlack" scrollbarMode="showOnDemand">
+	<screen name="HistoryZapSelector" position="center,center" size="800,440" backgroundColor="transpBlack" flags="wfNoBorder">
+			<widget source="menu" render="Listbox" position="0,10" size="800,422" backgroundColor="transpBlack" scrollbarMode="showNever">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (10, 0), size = (20, 22), flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-						MultiContentEntryText(pos = (40, 0), size = (290, 22), font = 1, flags = RT_HALIGN_LEFT, text = 2)
+						MultiContentEntryText(pos = (60, 0), size = (10, 21), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+						MultiContentEntryText(pos = (80, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2, color = 0x00ffffff, color_sel = 0x00ffffff),
+						MultiContentEntryText(pos = (350, 5), size = (270, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x00ffc000),
+						MultiContentEntryText(pos = (80, 25), size = (180, 17), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x00999999),
+						MultiContentEntryText(pos = (270, 25), size = (510, 17), font = 3, flags = RT_HALIGN_LEFT, text = 4, color = 0x00999999, color_sel = 0x00999999),
+						MultiContentEntryPixmapAlphaBlend(pos=(0, 6), size=(50, 30), png=6, flags = BT_SCALE)
 					],
-				 "fonts": [gFont("Regular", 22), gFont("Regular", 20)],
-				 "itemHeight": 22
+				 "fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17), gFont("Regular", 16)],
+				 "itemHeight": 42
 				}
 			</convert>
 			</widget>
