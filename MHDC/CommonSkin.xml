@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.78 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.79 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -1267,22 +1267,30 @@
 		<widget name="number" position="0,-200" size="150,60" backgroundColor="transparent" transparent="1" font="Regular;36" borderColor="black" borderWidth="3" valign="center" halign="center"/>
 		<widget name="servicename" position="134,-200" size="450,60" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="3" valign="center" halign="center"/>
 	</screen>
-	<screen name="HistoryZapSelector" position="center,center" size="800,440" backgroundColor="transpBlack" flags="wfNoBorder">
-			<widget source="menu" render="Listbox" position="0,10" size="800,422" backgroundColor="transpBlack" scrollbarMode="showNever">
+	<screen name="HistoryZapSelector" position="center,e-550" size="800,475" zPosition="1" flags="wfNoBorder" backgroundColor="transpBlue">
+		<eLabel position="0,40" size="800,1" backgroundColor="grey" zPosition="2"/>
+		<widget source="Title" render="Label" position="25,5" size="850,40" transparent="1" foregroundColor="secondFG" font="Regular;24"/>
+		<widget source="global.CurrentTime" render="Label" position="630,10" size="150,40" backgroundColor="secondBG" transparent="1" font="Regular;24" halign="right">
+			<convert type="ClockToText">Format:%-H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="500,16" size="190,40" backgroundColor="secondBG" foregroundColor="grey" noWrap="1" transparent="1" zPosition="1" font="Regular;16" halign="right">
+			<convert type="ClockToText">Format:%a %e %B %Y</convert>
+		</widget>
+		<widget source="menu" render="Listbox" position="0,45" size="800,422" transparent="0" backgroundColor="transpBlue" scrollbarMode="showNever">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (60, 0), size = (10, 21), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 						MultiContentEntryText(pos = (80, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2, color = 0x00ffffff, color_sel = 0x00ffffff),
 						MultiContentEntryText(pos = (350, 5), size = (270, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x00ffc000),
 						MultiContentEntryText(pos = (80, 25), size = (180, 17), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x00999999),
-						MultiContentEntryText(pos = (270, 25), size = (510, 17), font = 3, flags = RT_HALIGN_LEFT, text = 4, color = 0x00999999, color_sel = 0x00999999),
+						MultiContentEntryText(pos = (270, 25), size = (520, 17), font = 3, flags = RT_HALIGN_LEFT, text = 4, color = 0x00999999, color_sel = 0x00999999),
 						MultiContentEntryPixmapAlphaBlend(pos=(0, 6), size=(50, 30), png=6, flags = BT_SCALE)
 					],
 				 "fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17), gFont("Regular", 16)],
 				 "itemHeight": 42
 				}
 			</convert>
-			</widget>
+		</widget>
 	</screen>
 	<screen name="Subtitles" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
