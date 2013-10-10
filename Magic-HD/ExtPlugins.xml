@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.58	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.59	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -2857,6 +2857,10 @@ background
 		<widget name="info" font="Regular;22" itemHeight="28" position="5,400" size="477,200" transparent="1" foregroundColor="grey" halign="center" valign="center"/>
 	</screen>
 	<screen name="DaysBackScreen" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+	<screen name="UgDaysBackScreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
