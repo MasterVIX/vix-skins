@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.65 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.66 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -1043,16 +1043,8 @@ self.autoResize()
 		</widget>
 	</screen>
 	<!-- ## Service Selectors ## -->
-	<screen name="ChannelSelectionRadio" position="0,0" size="1280,502" flags="wfNoBorder">
-		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
-		<widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" halign="left" transparent="1" valign="center" zPosition="1"/>
-		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
-			<convert type="ClockToText">Format:%-H:%M</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
+	<screen name="ChannelSelectionRadio" position="0,0" size="1280,552" flags="wfNoBorder">
+		<panel name="BasicTemplate3"/>
 		<ePixmap pixmap="Magic-HD/buttons/red.png" alphatest="on" position="100,423" size="26,26"/>
 		<ePixmap pixmap="Magic-HD/buttons/green.png" alphatest="on" position="390,423" size="26,26"/>
 		<ePixmap pixmap="Magic-HD/buttons/yellow.png" alphatest="on" position="680,423" size="26,26"/>
@@ -1061,7 +1053,7 @@ self.autoResize()
 		<widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,425" size="220,26" transparent="1" zPosition="1"/>
 		<widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,425" size="220,26" transparent="1" zPosition="1"/>
 		<widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,425" size="220,26" transparent="1" zPosition="1"/>
-		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" serviceInfoFont="Crs;18" serviceNameFont="Regular;18" serviceItemHeight="25" foregroundColorServiceNotAvail="#656565" serviceNumberFont="Regular;18" position="590,95" size="630,305" transparent="1"/>
+		<widget name="list" position="520,82" size="755,350" itemHeight="25" noWrap="1" serviceNumberFont="Regular;22" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="25" colorEventProgressbar="blue" colorEventProgressbarSelected="yellow" colorServiceDescription="blue" transparent="1" foregroundColorServiceNotAvail="#656565" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png"/>
 		<widget source="session.Event_Now" render="Label" position="70,95" size="460,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="center" valign="center">
 		<convert type="EventName">Name</convert>
 		</widget>
@@ -2341,11 +2333,11 @@ self.autoResize()
 	</screen>
 	<screen name="ServiceScan" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="network" position="590,82" size="660,45" foregroundColor="grey" transparent="1" font="Regular;20"/>
-		<widget name="transponder" position="590,130" size="660,22" foregroundColor="grey" transparent="1" font="Regular;20"/>
-		<widget name="scan_state" position="590,155" size="660,22" foregroundColor="grey" transparent="1" font="Regular;20"/>
-		<widget name="pass" position="590,180" size="660,22" foregroundColor="grey" transparent="1" font="Regular;20"/>
-		<widget name="scan_progress" position="590,210" size="660,20" borderWidth="3" borderColor="black"/>
+		<widget name="network" position="490,82" size="785,45" foregroundColor="grey" transparent="1" font="Regular;20"/>
+		<widget name="transponder" position="490,130" size="785,22" foregroundColor="grey" transparent="1" font="Regular;20"/>
+		<widget name="scan_state" position="490,155" size="785,22" foregroundColor="grey" transparent="1" font="Regular;20"/>
+		<widget name="pass" position="490,180" size="785,22" foregroundColor="grey" transparent="1" font="Regular;20"/>
+		<widget name="scan_progress" position="490,210" size="785,20" borderWidth="3" borderColor="black"/>
 		<widget name="servicelist" position="590,260" size="660,404" selectionDisabled="1" transparent="1" foregroundColor="grey" itemHeight="28" enableWrapAround="1"/>
 		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-s.png" position="200,450" size="64,64" transparent="1" alphatest="blend">
 			<convert type="FrontendInfo">TYPE</convert>
