@@ -3520,4 +3520,47 @@ background
 		<widget name="config" position="490,80" size="785,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="plugin" position="5,379" size="477,264" zPosition="2" alphatest="blend"/>
 	</screen>
+	<screen name="allMovieList" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<widget name="list" position="490,80" size="785,560" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+	<screen name="filterSeasonList" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<widget name="list" position="520,80" size="755,560" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+	<screen name="filterList" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<widget name="list" position="520,80" size="755,560" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+	<screen name="searchYouTube" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<widget name="list" position="225,379" size="1050,250" scrollbarMode="showOnDemand" transparent="1" font="Regular;16" foregroundColor="grey" enableWrapAround="1"/>
+		<widget name="poster1" position="5,379" size="215,120" alphatest="blend" zPosition="1" />
+		<widget name="poster2" position="5,505" size="215,120" alphatest="blend" zPosition="1" />
+	</screen>
+	<!-- ##WikiPedia# -->
+	<screen name="searchWikipedia" position="0,0" size="1280,720" flags="wfNoBorder" title="Wikipedia - Search for Movie, Director or Actor">
+		<panel name="BasicTemplate"/>
+		<widget name="list" position="520,80" size="755,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+	<screen name="wikiSearch_en" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<widget name="list" position="10,379" size="1260,245" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;20" itemHeight="25" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+	<screen name="wikiSearch_es" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<widget name="list" position="10,379" size="1260,245" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;20" itemHeight="25" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+	<screen name="wikiSearch" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<widget name="list" position="10,379" size="1260,245" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;20" itemHeight="25" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+	<screen name="wikiConfig" position="0,0" size="1280,720" flags="wfNoBorder" title="Wikipedia Setup">
+		<panel name="BasicTemplate"/>
+		<panel name="RedBPanel"/>
+		<eLabel text="Cancel" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
+		<panel name="GreenBPanel"/>
+		<eLabel text="Save" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
+		<widget name="config" position="520,80" size="755,584" scrollbarMode="showNever" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
 </skin>
