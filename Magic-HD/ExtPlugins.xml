@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.60	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.61	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -3538,6 +3538,32 @@ background
 		<widget name="poster1" position="5,379" size="215,120" alphatest="blend" zPosition="1" />
 		<widget name="poster2" position="5,505" size="215,120" alphatest="blend" zPosition="1" />
 	</screen>
+
+	<screen name="infoScreenMovieBrowser" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+<widget name="yellowbutton" position="600,180" size="18,18" alphatest="blend" zPosition="3" />
+<widget name="greenbutton" position="600,201" size="18,18" alphatest="blend" zPosition="3" />
+<widget name="redbutton" position="600,222" size="18,18" alphatest="blend" zPosition="3" />
+<widget name="bluebutton" position="600,243" size="18,18" alphatest="blend" zPosition="3" />
+<widget name="label" position="600,178" size="415,420" font="Regular;18" transparent="1" zPosition="2" />
+<widget name="logo" position="150,450" size="84,84" alphatest="blend" zPosition="1"/>
+<widget name="donatetext" position="543,150" size="425,360" font="Regular;18" halign="center" valign="center" transparent="1" zPosition="2" />
+<widget name="donate" position="620,570" size="125,46" alphatest="blend" zPosition="1"/>
+	</screen>
+<!--infoScreenMovieBrowser
+<screen position="center,center" size="512,512" flags="wfNoBorder" title=" " >
+<ePixmap position="0,0" size="515,512" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MovieBrowser/pic/setup/help.png" alphatest="on" transparent="0" zPosition="0" />
+
+<widget name="yellowbutton" position="100,50" size="18,18" alphatest="blend" zPosition="3" />
+<widget name="greenbutton" position="100,71" size="18,18" alphatest="blend" zPosition="3" />
+<widget name="redbutton" position="100,92" size="18,18" alphatest="blend" zPosition="3" />
+<widget name="bluebutton" position="100,113" size="18,18" alphatest="blend" zPosition="3" />
+<widget name="label" position="100,48" size="415,420" font="{font};18" transparent="1" zPosition="2" />
+<widget name="logo" position="214,42" size="84,84" alphatest="blend" zPosition="1"/>
+<widget name="donatetext" position="43,120" size="425,360" font="{font};18" halign="center" valign="center" transparent="1" zPosition="2" />
+<widget name="donate" position="193,266" size="125,46" alphatest="blend" zPosition="1"/>
+</screen>-->
+
 	<!-- ##WikiPedia# -->
 	<screen name="searchWikipedia" position="0,0" size="1280,720" flags="wfNoBorder" title="Wikipedia - Search for Movie, Director or Actor">
 		<panel name="BasicTemplate"/>
@@ -3545,15 +3571,15 @@ background
 	</screen>
 	<screen name="wikiSearch_en" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
-		<widget name="list" position="10,379" size="1260,245" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;20" itemHeight="25" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<widget name="list" position="10,379" size="1260,247" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;20" itemHeight="25" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 	<screen name="wikiSearch_es" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
-		<widget name="list" position="10,379" size="1260,245" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;20" itemHeight="25" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<widget name="list" position="10,379" size="1260,247" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;20" itemHeight="25" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 	<screen name="wikiSearch" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
-		<widget name="list" position="10,379" size="1260,245" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;20" itemHeight="25" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<widget name="list" position="10,379" size="1260,247" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;20" itemHeight="25" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 	<screen name="wikiConfig" position="0,0" size="1280,720" flags="wfNoBorder" title="Wikipedia Setup">
 		<panel name="BasicTemplate"/>
