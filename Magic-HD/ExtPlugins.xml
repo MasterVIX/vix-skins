@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.59	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.60	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -2864,36 +2864,6 @@ background
 		<panel name="BasicTemplate"/>
 		<widget name="menu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
-	<!-- ## 1channel ## -->
-	<screen name="MyMenux" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
-		<panel name="BasicTemplate"/>
-		<widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-	</screen>
-	<screen name="MyMenu2" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
-		<panel name="BasicTemplate"/>
-		<widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-	</screen>
-	<screen name="TvEpisode" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
-		<panel name="BasicTemplate"/>
-		<widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-	</screen>
-	<screen name="MovieList" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
-		<panel name="BasicTemplate"/>
-		<widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-	</screen>
-	<screen name="MovieSource" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
-		<panel name="BasicTemplate"/>
-		<widget name="myMenu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-	</screen>
-	<screen name="ShowHelp" position="0,0" size="1280,720" flags="wfNoBorder" title="1channel">
-		<panel name="BasicTemplate"/>
-		<widget name="myLabel" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-	</screen>
-	<screen name="SpinnerSelectionBox" position="0,0" size="1280,720" flags="wfNoBorder" title="Spinner selector">
-		<panel name="BasicTemplate"/>
-		<widget name="bild" position="100,400" zPosition="1" size="300,200" transparent="1"/>
-		<widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-	</screen>
 	<!-- ## FlashExpander ## -->
 	<screen  name="FlashExpander" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3540,30 +3510,14 @@ background
 			<widget name="content" position="0,0" size="300,24" font="Regular;22" />
 			<widget name="restxt" position="0,27" size="300,24" font="Regular;22" />
 		</screen>
-	<!-- ##History ZAP# -->
-	<screen name="SetupZapSelectorScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+	<!-- ##Movie Browser# -->
+	<screen name="movieBrowserConfig" position="0,0" size="1280,720" flags="wfNoBorder" title="Movie Browser Setup">
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel"/>
-		<widget name="cancel" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<eLabel text="Cancel" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
 		<panel name="GreenBPanel"/>
-		<widget name="ok" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<panel name="BlueBPanel"/>
-		<widget name="clear" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<widget name="config" position="520,80" size="755,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<eLabel text="Save" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
+		<widget name="config" position="490,80" size="785,584" scrollbarMode="showOnDemand" selectionPixmap="buttons/sel.png" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<widget name="plugin" position="5,379" size="477,264" zPosition="2" alphatest="blend"/>
 	</screen>
-
-<!--SetupZapSelectorScreen(
-		<screen position="center,center" size="510,200" >
-		<widget name="config" position="5,5" size="500,150" />
-		<ePixmap pixmap="skin_default/buttons/green.png" position="180,160" zPosition="0" size="140,40" alphatest="on" />
-		<ePixmap pixmap="skin_default/buttons/red.png" position="5,160" zPosition="0" size="140,40" alphatest="on" />
-		<ePixmap pixmap="skin_default/buttons/blue.png" position="360,160" zPosition="0" size="140,40" alphatest="on" />
-
-		<widget name="clear" position="360,160" size="140,40" valign="center" halign="center" zPosition="1" font="Regular;17" transparent="1" backgroundColor="blue" />
-		<widget name="ok" position="180,160" size="140,40" valign="center" halign="center" zPosition="1" font="Regular;17" transparent="1" backgroundColor="green" />
-		<widget name="cancel" position="5,160" size="140,40" valign="center" halign="center" zPosition="1" font="Regular;17" transparent="1" backgroundColor="red" />
-	</screen>-->
-
-
-
 </skin>
