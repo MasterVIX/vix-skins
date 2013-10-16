@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.67 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.68 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -1641,7 +1641,7 @@ self.autoResize()
 		<panel name="Green2Panel"/>
 		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
 		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
-		<widget source="list" render="Listbox" position="520,82" size="755,520" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png">
+		<widget source="list" render="Listbox" position="520,82" size="755,520" zPosition="10" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (85,6),size = (440,28),font=0,flags = RT_HALIGN_LEFT|RT_VALIGN_TOP,text = 1),# index 1 is the interfacename
@@ -3224,7 +3224,7 @@ self.autoResize()
 		<panel name="Green1Panel"/>
 		<panel name="Yellow1Panel"/>
 		<panel name="Blue1Panel"/>
-		<widget source="list" render="Listbox" position="520,82" size="755,530" ransparent="0" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png">
+		<widget source="list" render="Listbox" position="520,82" size="755,530" ransparent="0" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 	{"template": [
 		 MultiContentEntryText(pos = (90,0), size = (675,30), font=0, text = 0),
