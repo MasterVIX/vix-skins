@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.64	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.65	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -3484,7 +3484,6 @@ background
 	<!-- ##EPG Translator# -->
 	<screen name="translatorMain" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
-		<panel name="GreenBPanel"/>
 		<panel name="YellowBPanel"/>
 		<widget name="label2" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 		<panel name="BlueBPanel"/>
@@ -3496,9 +3495,9 @@ background
 	</screen>
 	<screen name="translatorConfig" position="0,0" size="1280,720" flags="wfNoBorder" title="PG Translator Setup">
 		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel"/>
+		<panel name="RedBPanel"/>
 		<eLabel text="Cancel" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<panel name="Green1Panel"/>
+		<panel name="GreenBPanel"/>
 		<eLabel text="Save" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 		<widget name="config" position="529,80" size="755,574" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
