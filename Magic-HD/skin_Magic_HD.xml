@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.70 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.71 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -1231,33 +1231,12 @@ self.autoResize()
 		</widget>
 		<eLabel text="'OK' = Show details" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="1055,650" size="240,26" transparent="1" zPosition="1"/>
 	</screen>
-	<!-- ## Setup ## -->
-	<screen name="WebIfConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="OpenWebifConfig" position="0,0" size="1280,720" flags="wfNoBorder" title="OpenWebif Configuration">
 		<panel name="BasicTemplate"/>
-		<panel name="Red2Panel"/>
-		<panel name="Green2Panel"/>
-		<panel name="Yellow2Panel"/>
-		<widget name="config" position="520,82" size="755,583" font="Regular;22" backgroundColor="darkgrey" transparent="1" scrollbarMode="showOnDemand"/>
-	</screen>
-	<screen name="WebIfInterfaceConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="Red2Panel"/>
-		<panel name="Green2Panel"/>
-		<panel name="Blue2Panel"/>
-		<widget name="config" position="520,82" size="755,583" backgroundColor="darkgrey" transparent="1" scrollbarMode="showOnDemand"/>
-	</screen>
-	<screen name="WebIfInterfaceListConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="Red2Panel"/>
-		<panel name="Green2Panel"/>
-		<panel name="Yellow2Panel"/>
-		<panel name="Blue2Panel"/>
-		<widget source="address" render="Label" position="590,120" size="120,50" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;20" halign="left"/>
-		<widget source="port" render="Label" position="670,120" size="50,50" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;20" halign="left"/>
-		<widget source="ssl" render="Label" position="720,120" size="50,50" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;20" halign="left"/>
-		<widget source="auth" render="Label" position="780,120" size="200,50" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;20" halign="left"/>
-		<widget source="disabled" render="Label" position="950,120" size="180,50" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" font="Regular;20" halign="left"/>
-		<widget name="ifacelist" position="520,180" size="755,485" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<widget name="lab1" position="520,82" size="755,60" zPosition="1" font="Regular;26" halign="center" valign="top" transparent="1"/>
+		<widget name="config" position="520,150" size="740,510" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 	<screen name="PluginBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2883,13 +2862,6 @@ self.autoResize()
 		<widget name="description" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
 		<widget name="footnote" position="750,657" size="350,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="grey"/>
 		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="520,500" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-	</screen>
-	<screen name="OpenWebifConfig" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel"/>
-		<panel name="Green1Panel"/>
-		<widget name="lab1" position="520,82" halign="center" size="755,60" zPosition="1" font="Regular;24" valign="top" transparent="1"/>
-		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,150" size="740,510" transparent="1"/>
 	</screen>
 	<!-- ##Picture-Player## -->
 	<screen name="picshow" position="0,0" size="1280,720" flags="wfNoBorder">
