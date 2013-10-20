@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.82 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.83 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -185,7 +185,7 @@
 	<!--  ## InfoBars ## -->
 	<screen name="InfoBar" title="InfoBar" position="0,510" size="1280,400" backgroundColor="transparent" flags="wfNoBorder">
 		<ePixmap alphatest="off" pixmap="MHDC/infobar/hd.png" position="0,0" size="1280,220" zPosition="-1"/>
-		<widget source="session.CurrentService" render="PiconBg" position="43,125" size="104,63" transparent="0" alphatest="blend" zPosition="1"/>
+		<widget source="session.CurrentService" render="PiconBg" position="43,125" size="104,62" transparent="0" alphatest="blend" zPosition="1"/>
 		<widget source="session.CurrentService" render="Picon" position="45,126" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -450,7 +450,7 @@
 		<widget source="session.Event_Next" render="Label" position="650,187" size="610,325" font="Regular; 20" zPosition="1" backgroundColor="background" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<widget source="session.CurrentService" render="PiconBg" position="43,635" size="104,63" transparent="0" alphatest="blend" zPosition="1"/>
+		<widget source="session.CurrentService" render="PiconBg" position="43,635" size="104,62" transparent="0" alphatest="blend" zPosition="1"/>
 		<widget source="session.CurrentService" render="Picon" position="45,636" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -653,7 +653,7 @@
 		<panel name="RGYB_Template"/>
 		<panel name="MenuTemplate"/>
 		<panel name="InfoTemplate"/>
-		<widget source="ServiceEvent" render="PiconBg" position="13,5" size="104,63" alphatest="blend" zPosition="1"/>
+		<widget source="ServiceEvent" render="PiconBg" position="13,5" size="104,62" alphatest="blend" zPosition="1"/>
 		<widget source="ServiceEvent" render="Picon" position="15,6" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -694,7 +694,7 @@
 		<panel name="RGYB_Template 2"/>
 		<panel name="MenuTemplate"/>
 		<panel name="InfoTemplate"/>
-		<widget source="ServiceEvent" render="PiconBg" position="13,5" size="104,63" alphatest="blend" zPosition="1"/>
+		<widget source="ServiceEvent" render="PiconBg" position="13,5" size="104,62" alphatest="blend" zPosition="1"/>
 		<widget source="ServiceEvent" render="Picon" position="15,6" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -739,7 +739,7 @@
 		<panel name="RGYB_Template"/>
 		<panel name="MenuTemplate"/>
 		<panel name="InfoTemplate"/>
-		<widget source="Service" render="PiconBg" position="13,5" size="104,63" alphatest="blend" zPosition="1"/>
+		<widget source="Service" render="PiconBg" position="13,5" size="104,62" alphatest="blend" zPosition="1"/>
 		<widget source="Service" render="Picon" position="15,6" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -769,7 +769,7 @@
 		<panel name="RGYB_Template"/>
 		<panel name="MenuTemplate"/>
 		<panel name="InfoTemplate"/>
-		<widget source="Service" render="PiconBg" position="13,5" size="104,63" alphatest="blend" zPosition="1"/>
+		<widget source="Service" render="PiconBg" position="13,5" size="104,62" alphatest="blend" zPosition="1"/>
 		<widget source="Service" render="Picon" position="15,6" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -1502,7 +1502,7 @@
 	<screen name="RadioInfoBar" position="0,500" size="1280,170" backgroundColor="transpBG" zPosition="-1" flags="wfNoBorder">
 		<eLabel position="0,0" size="1280,50" backgroundColor="transpBlue" zPosition="-1"/>
 		<!--Use of Picon crashes so commented out for the moment!!!!!-->
-		<!--<widget source="session.CurrentService" render="PiconBg" position="43,105" size="104,63" transparent="0" alphatest="blend" zPosition="1"/>
+		<!--<widget source="session.CurrentService" render="PiconBg" position="43,105" size="104,62" transparent="0" alphatest="blend" zPosition="1"/>
 		<widget source="session.CurrentService" render="Picon" position="45,106" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>-->   
@@ -1584,7 +1584,7 @@
 		<panel name="RGYB_Template"/>
 		<panel name="MenuTemplate"/>
 		<panel name="InfoTemplate"/>
-		<widget source="Service" render="PiconBg" position="13,5" size="104,63" alphatest="blend" zPosition="1"/>
+		<widget source="Service" render="PiconBg" position="13,5" size="104,62" alphatest="blend" zPosition="1"/>
 		<widget source="Service" render="Picon" position="15,6" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -5156,7 +5156,7 @@
 		<widget source="Event" render="Label" position="150,310" size="980,220" font="Regular;21" foregroundColor="white" backgroundColor="transpBlue" valign="center" halign="center" zPosition="11">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget source="Service" render="PiconBg" position="43,635" size="104,63" transparent="0" alphatest="blend" zPosition="1"/>
+		<widget source="Service" render="PiconBg" position="43,635" size="104,62" transparent="0" alphatest="blend" zPosition="1"/>
 		<widget source="Service" render="Picon" position="45,636" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
