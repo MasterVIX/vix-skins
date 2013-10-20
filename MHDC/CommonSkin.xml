@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.83 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.84 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -1016,6 +1016,11 @@
 		<panel name="RG_Template 2"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
 		<panel name="VixLogo"/>
+	</screen>
+	<!-- ##Resolution label## -->
+	<screen name="AutoVideoModeLabel" position="900,50" size="330,55" backgroundColor="transpBG" flags="wfNoBorder" >
+		<widget name="content" position="5,5" size="320,22" font="Regular;20" transparent="1" />
+		<widget name="restxt" position="5,26" size="320,22" font="Regular;20" transparent="1" />
 	</screen>
 	<!-- ##Change Passwordd## -->
 	<screen flags="wfNoBorder" name="ChangePasswdScreen" position="0,0" size="1280,720">
@@ -4767,9 +4772,7 @@
 	</screen>
 	<screen flags="wfNoBorder" name="VIXSwap" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
-		<panel name="GreenTemplate"/>
-		<panel name="YellowTemplate"/>
-		<panel name="BlueTemplate"/>
+		<panel name="RGYB_Template"/>
 		<widget name="autostart_off" position="590,183" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on"/>
 		<widget name="autostart_on" position="590,183" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on"/>
 		<widget name="lab1" position="640,180" size="400,45" font="Regular;20" valign="center" transparent="0"/>
