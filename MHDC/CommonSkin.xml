@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.85 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.86 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -1017,10 +1017,15 @@
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
 		<panel name="VixLogo"/>
 	</screen>
-	<!-- ##Resolution label## -->
-	<screen name="AutoVideoModeLabel" position="900,50" size="330,55" backgroundColor="transpBG" flags="wfNoBorder" >
-		<widget name="content" position="5,5" size="320,22" font="Regular;20" transparent="1" />
-		<widget name="restxt" position="5,26" size="320,22" font="Regular;20" transparent="1" />
+	<!-- ##Resolution label Vix## -->
+	<screen name="AutoVideoModeLabel" position="900,40" size="330,55" backgroundColor="transparent" flags="wfNoBorder" >
+		<widget name="content" position="5,5" size="320,22" font="Regular;20" borderWidth="2" borderColor="black" transparent="1" />
+		<widget name="restxt" position="5,26" size="320,22" font="Regular;20" borderWidth="2" borderColor="black" transparent="1" />
+	</screen>
+	<!-- ##Resolution label original plugin## -->
+	<screen name="ResolutionLabel" position="900,40" size="350,55" backgroundColor="transparent" flags="wfNoBorder" >
+		<widget name="content" position="5,5" size="320,22" font="Regular;20" borderWidth="2" borderColor="black" transparent="1" />
+		<widget name="restxt" position="5,26" size="320,22" font="Regular;20" borderWidth="2" borderColor="black" transparent="1" />
 	</screen>
 	<!-- ##Change Passwordd## -->
 	<screen flags="wfNoBorder" name="ChangePasswdScreen" position="0,0" size="1280,720">
