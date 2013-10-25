@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.86 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.87 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -1018,14 +1018,9 @@
 		<panel name="VixLogo"/>
 	</screen>
 	<!-- ##Resolution label Vix## -->
-	<screen name="AutoVideoModeLabel" position="900,40" size="330,55" backgroundColor="transparent" flags="wfNoBorder" >
-		<widget name="content" position="5,5" size="320,22" font="Regular;20" borderWidth="2" borderColor="black" transparent="1" />
-		<widget name="restxt" position="5,26" size="320,22" font="Regular;20" borderWidth="2" borderColor="black" transparent="1" />
-	</screen>
-	<!-- ##Resolution label original plugin## -->
-	<screen name="ResolutionLabel" position="900,40" size="350,55" backgroundColor="transparent" flags="wfNoBorder" >
-		<widget name="content" position="5,5" size="320,22" font="Regular;20" borderWidth="2" borderColor="black" transparent="1" />
-		<widget name="restxt" position="5,26" size="320,22" font="Regular;20" borderWidth="2" borderColor="black" transparent="1" />
+	<screen name="AutoVideoModeLabel" position="900,40" size="330,55" backgroundColor="transpBG" flags="wfNoBorder" >
+		<widget name="content" position="5,3" size="320,23" font="Regular;20" transparent="1"/>
+		<widget name="restxt" position="5,28" size="320,23" font="Regular;20" transparent="1"/>
 	</screen>
 	<!-- ##Change Passwordd## -->
 	<screen flags="wfNoBorder" name="ChangePasswdScreen" position="0,0" size="1280,720">
@@ -1115,12 +1110,28 @@
 		<widget name="list" position="15,390" size="500,240" font="Regular;22"/>
 		<panel name="VixLogo"/>
 	</screen> -->
+	<screen name="MessageBoxTemplate">
+		<widget name="text" position="65,8" size="520,0" font="Regular;22" />
+		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="0,0" size="53,53" alphatest="on" />
+		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="0,0" size="53,53" alphatest="on" />
+		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="0,0" size="53,53" alphatest="on" />
+		<widget name="list" position="100,100" size="520,0" />
+		<applet type="onLayoutFinish">
+self.autoResize()
+		</applet>
+	</screen>
+	<screen name="MessageBox" position="center,center" size="520,10">
+		 <panel name= "MessageBoxTemplate" />
+	</screen>
+	<screen name="MessageBoxSimple" position="center,center" size="520,10">
+		 <panel name= "MessageBoxTemplate" />
+	</screen>
 	<screen name="MessageBoxWizard" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="650,80" size="445,590" font="Regular;22"/>
-		<widget name="ErrorPixmap" pixmap="MHDC/window/input_error.png" position="550,110" size="54,54" alphatest="on"/>
-		<widget name="QuestionPixmap" pixmap="MHDC/window/input_question.png" position="550,110" size="54,54" alphatest="on"/>
-		<widget name="InfoPixmap" pixmap="MHDC/window/input_info.png" position="550,110" size="54,54" alphatest="on"/>
+		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="550,110" size="53,53" alphatest="on"/>
+		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="550,110" size="53,53" alphatest="on"/>
+		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="550,110" size="53,53" alphatest="on"/>
 		<widget name="list" position="15,390" size="600,240" font="Regular;22"/>
 		<widget name="rc" pixmap="rc.png" position="1105,140" zPosition="10" size="154,500" transparent="0" alphatest="blend"/>
 		<panel name="VixLogo"/>
@@ -4031,9 +4042,9 @@
 		</widget>
 	</screen>
 	<screen name="MinuteInput" title="MinuteInput" position="center,center" size="540,35" backgroundColor="transparent" flags="wfNoBorder">
-		<eLabel text="Jump" position="0,-200" size="220,35" backgroundColor="transparent" font="Regular;34" halign="right" borderColor="black" borderWidth="3" transparent="1" zPosition="1"/>
-		<widget name="minutes" position="230,-200" size="80,35" font="Regular;34" halign="center" borderColor="black" borderWidth="3" transparent="1" zPosition="1"/>
-		<eLabel text="minutes" position="320,-200" size="220,35" backgroundColor="transparent" font="Regular;34" halign="left" borderColor="black" borderWidth="3" transparent="1" zPosition="1"/>
+		<eLabel text="Jump" position="0,-200" size="220,35" backgroundColor="transparent" font="Regular;28" halign="right" borderColor="black" borderWidth="2" transparent="1" zPosition="1"/>
+		<widget name="minutes" position="230,-200" size="80,35" font="Regular;28" halign="center" borderColor="black" borderWidth="2" transparent="1" zPosition="1"/>
+		<eLabel text="minutes" position="320,-200" size="220,35" backgroundColor="transparent" font="Regular;28" halign="left" borderColor="black" borderWidth="2" transparent="1" zPosition="1"/>
 	</screen>
 	<!-- ## CutListEditor ## -->
 	<screen name="CutListEditor" title="CutListEditor" position="0,0" size="1280,720" flags="wfNoBorder">
