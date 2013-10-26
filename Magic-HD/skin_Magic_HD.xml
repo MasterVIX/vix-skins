@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD Vs 7.76 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.77 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -827,25 +827,25 @@
 		<panel name="GreenBPanel"/>
 		<eLabel text="OK" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
 		<widget name="text" position="620,80" size="650,588" font="Regular;22" foregroundColor="grey"/>
-		<widget name="ErrorPixmap" pixmap="Magic-HD/icons/input_error.png" position="540,100" size="54,54" alphatest="on"/>
-		<widget name="QuestionPixmap" pixmap="Magic-HD/icons/input_question.png" position="540,100" size="54,54" alphatest="on"/>
-		<widget name="InfoPixmap" pixmap="Magic-HD/icons/input_info.png" position="540,100" size="54,54" alphatest="on"/>
+		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="540,100" size="54,54" alphatest="on"/>
+		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="540,100" size="54,54" alphatest="on"/>
+		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="540,100" size="54,54" alphatest="on"/>
 		<widget name="list" position="5,390" size="600,240" font="Regular;22" foregroundColor="grey"/>
 	</screen>
 	<screen name="MessageBoxSimple" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="620,80" size="675,588" font="Regular;22" foregroundColor="grey"/>
-		<widget name="ErrorPixmap" pixmap="Magic-HD/icons/input_error.png" position="540,100" size="54,54" alphatest="on"/>
-		<widget name="QuestionPixmap" pixmap="Magic-HD/icons/input_question.png" position="540,100" size="54,54" alphatest="on"/>
-		<widget name="InfoPixmap" pixmap="Magic-HD/icons/input_info.png" position="540,100" size="54,54" alphatest="on"/>
+		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="540,100" size="54,54" alphatest="on"/>
+		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="540,100" size="54,54" alphatest="on"/>
+		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="540,100" size="54,54" alphatest="on"/>
 		<widget name="list" position="5,390" size="600,240" font="Regular;22" foregroundColor="grey"/>
 	</screen>
 	<screen name="MessageBoxWizard" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="620,80" size="675,588" font="Regular;22" foregroundColor="grey"/>
-		<widget name="ErrorPixmap" pixmap="Magic-HD/icons/input_error.png" position="540,100" size="54,54" alphatest="on"/>
-		<widget name="QuestionPixmap" pixmap="Magic-HD/icons/input_question.png" position="540,100" size="54,54" alphatest="on"/>
-		<widget name="InfoPixmap" pixmap="Magic-HD/icons/input_info.png" position="540,100" size="54,54" alphatest="on"/>
+		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="540,100" size="54,54" alphatest="on"/>
+		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="540,100" size="54,54" alphatest="on"/>
+		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="540,100" size="54,54" alphatest="on"/>
 		<widget name="list" position="5,390" size="600,240" font="Regular;22"/>
 		<widget name="rc" pixmap="rc.png" position="1105,140" zPosition="10" size="154,500" transparent="0" alphatest="blend"/>
 	</screen>
@@ -2350,13 +2350,13 @@ self.autoResize()
 		</widget>
 <!-- ##SNR## -->
 		<eLabel name="snr" position="18,83" size="95,50" foregroundColor="grey" transparent="1" text="SNR:" font="Regular;30"/>
-		<widget source="Frontend" render="Progress" pixmap="Magic-HD/infobar/bar_big.png" position="115,83" size="1000,50" borderWidth="1" foregroundColor="grey" borderColor="uncccccc">
+		<widget source="Frontend" render="Progress" pixmap="Magic-HD/infobar/bar_big.png" position="115,80" size="1000,50" borderWidth="1" foregroundColor="grey" borderColor="uncccccc">
 		<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<widget source="Frontend" render="Label" position="1130,83" size="129,50" backgroundColor="darkgrey" transparent="1" font="Regular;35">
 		<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="15,200" size="531,210" font="LCD; 180" halign="center" valign="center" backgroundColor="darkgrey" transparent="1">
+		<widget source="Frontend" render="Label" position="0,200" size="531,210" font="LCD;180" halign="center" valign="center" backgroundColor="darkgrey" transparent="1">
 		<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
 		<!-- ##AGC## -->
@@ -2367,7 +2367,7 @@ self.autoResize()
 		<widget source="Frontend" render="Label" position="1130,135" size="130,50" backgroundColor="darkgrey" transparent="1" font="Regular;35">
 		<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="15,360" size="531,210" backgroundColor="darkgrey" transparent="1" font="LCD; 180" halign="center" valign="center">
+		<widget source="Frontend" render="Label" position="0,360" size="531,210" backgroundColor="darkgrey" transparent="1" font="LCD;180" halign="center" valign="center">
 		<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<!-- ##BER## -->
@@ -2378,7 +2378,7 @@ self.autoResize()
 		<widget source="Frontend" render="Label" position="1130,190" size="130,50" backgroundColor="darkgrey" transparent="1" font="Regular;35">
 		<convert type="FrontendInfo">BER</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="15,515" size="531,210" font="LCD; 180" halign="center" valign="center" backgroundColor="darkgrey" transparent="1">
+		<widget source="Frontend" render="Label" position="0,515" size="531,210" font="LCD;180" halign="center" valign="center" backgroundColor="darkgrey" transparent="1">
 		<convert type="FrontendInfo">BER</convert>
 		</widget>
 	<!-- ##Lock## -->
@@ -2391,9 +2391,9 @@ self.autoResize()
 		<convert type="FrontendInfo">LOCK</convert>
 		<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
-		<eLabel position="550,298" size="660,2" backgroundColor="black"/>
-		<eLabel position="550,300" size="660,2" backgroundColor="grey"/>
-		<widget name="config" position="550,300" size="660,400" transparent="1" itemHeight="40" font="Regular;32" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1"/>
+<!--		<eLabel position="550,298" size="660,2" backgroundColor="black"/>
+		<eLabel position="550,300" size="660,2" backgroundColor="grey"/>-->
+		<widget name="config" position="535,280" size="740,400" transparent="1" itemHeight="40" font="Regular;32" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="introduction" position="635,682" size="220,26" font="Regular;22" backgroundColor="secondBG" foregroundColor="secondFG" halign="left" transparent="1" zPosition="1"/>
 		</screen>
 	<screen name="PositionerSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="Positioner setup">
