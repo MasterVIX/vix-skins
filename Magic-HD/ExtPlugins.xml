@@ -1,5 +1,5 @@
 <skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.70	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.71	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -289,37 +289,7 @@
 		<panel name="Green2Panel"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;24" position="520,82" size="755,583" transparent="1"/>
 	</screen>
-	<!-- ## FanControl ## -->
-	<screen name="FanControlScreen" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="GreenBPanel"/>
-		<widget name="myGreenBtn" position="520,82" size="755,583" font="Regular;22" transparent="1"/>
-		<eLabel text="Change setting" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
-		<eLabel text="Save" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="580,682" size="70,30"/>
-		<eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="660,682" size="200,26" transparent="1" zPosition="1"/>
-	</screen>
-	<screen name="FancontrolConfiguration" flags="wfNoBorder" position="0,0" size="1280,720">
-		<panel name="BasicTemplate"/>
-		<panel name="Red2Panel"/>
-		<panel name="Green2Panel"/>
-		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
- </screen>
-	<screen name="FanSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel"/>
-		<panel name="GreenBPanel"/>
-		<panel name="BlueBPanel"/>
-		<widget name="cancel" position="50,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
-		<widget name="ok" position="340,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
-		<widget name="hddtemp" position="875,682" size="220,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
-		<widget name="config" position="490,80" size="785,500" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28"	transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-		<widget name="powerstatus" position="500,600" size="250,22" halign="right" font="Regular;20" zPosition="1" transparent="1" foregroundColor="grey"/>
-		<widget name="daemon0" alphatest="on" pixmap="Magic-HD/buttons/button_green_off.png" position="760,605" size="15,16" zPosition="10" transparent="1"/>
-		<widget name="daemon1" alphatest="on" pixmap="Magic-HD/buttons/button_green.png" position="760,605" size="15,16" zPosition="10" transparent="1"/>
-	</screen>
-<!-- ## FanControl 2 ##-->
+	<!-- ## FanControl 2 ##-->
 	<screen name="FanControl2SpezialSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="Fan Control 2 - Setup">
 		<panel name="BasicTemplate"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
