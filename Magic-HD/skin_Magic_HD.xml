@@ -1,5 +1,5 @@
-<skin>
-	<!--	Skin: Magic-HD Vs 7.79 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+﻿<skin>
+	<!--	Skin: Magic-HD Vs 7.80 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -18,7 +18,7 @@
 	<screen name="MoviePlayer" position="0,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="PlayerPanel"/>
 	</screen>
-	<screen name="Dish" flags="wfNoBorder" position="86,100" size="130,275" title="Dish" zPosition="10" backgroundColor="black">
+	<screen name="Dish" flags="wfNoBorder" position="86,100" size="130,295" title="Dish" zPosition="10" backgroundColor="black">
 		<widget name="Dishpixmap" position="0,20" size="130,160" zPosition="1" pixmap="Magic-HD/icons/dish.png" transparent="1" alphatest="on"/>
 		<widget name="turnTime" position="5,0" size="120,20" zPosition="1" font="Regular;18" halign="right" foregroundColor="white" shadowColor="black" shadowOffset="-2,-2" transparent="1"/>
 		<widget name="From" position="5,184" size="50,20" zPosition="1" font="Regular;18" halign="left" foregroundColor="white" shadowColor="black" shadowOffset="-2,-1" transparent="1" text="From:"/>
@@ -28,6 +28,9 @@
 		<widget name="Tuner" position="5,228"  size="50,20" zPosition="2" font="Regular;18" halign="left" foregroundColor="white" shadowColor="black" shadowOffset="-2,-1" transparent="1"/>
 		<widget name="tunerName" position="55,228"  size="50,20" zPosition="2" font="Regular;18" halign="left" foregroundColor="white" shadowColor="black" shadowOffset="-2,-1" transparent="1" />
 		<widget name="turnSpeed" position="5,250" size="50,20" zPosition="2" font="Regular;18" halign="left" foregroundColor="white" shadowColor="black" shadowOffset="-2,-1" transparent="1"/>
+		<widget source="session.FrontendStatus" render="Progress" position="5,275" size="120,10" pixmap="bar_snr.png" zPosition="2" borderWidth="2" borderColor="#cccccc">
+			<convert type="FrontendInfo">SNR</convert>
+		</widget>
 	</screen>
 	<screen name="SecondInfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
 		<widget source="session.CurrentService" render="Label" position="5,5" size="635,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;18" valign="top" halign="left">
