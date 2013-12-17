@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
 
-	<!--	Common.skin Vs 5.92 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.93 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -5630,8 +5630,8 @@ self.autoResize()
 	<screen name="TranscodingSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="Transcoding Setup">
 		<panel name="BasicTemplate"/>
 		<panel name="RGY_Template 2"/>
-		<ePixmap pixmap="MHDC/buttons/blue2.png" position="840,682" size="26,26" alphatest="blend" />
-		<widget source="key_blue" render="Label" position="875,682" size="220,26" backgroundColor="background" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget name="blue" pixmap="MHDC/buttons/blue2.png" position="840,682" size="26,26" alphatest="blend" />
+		<widget name="key_blue" render="Label" position="875,682" size="220,26" backgroundColor="background" transparent="1" zPosition="1" font="Regular;22" halign="left" />
 		<widget name="config" position="520,82" size="755,588" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" enableWrapAround="1"/>
 		<widget source="text" render="Label" position="10,385" size="480,250" zPosition="10" font="Regular;20" foregroundColor="greenlight" halign="center" transparent="0"/>
 		<panel name="VixLogo"/>
