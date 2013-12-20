@@ -1,4 +1,4 @@
-<!--  Skin: ViX-Common Vs 3.2.5 by AndyBlac @ www.world-of-satellite.com  -->
+﻿<!--  Skin: ViX-Common Vs 3.2.6 by AndyBlac @ www.world-of-satellite.com  -->
 <!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
 <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
 <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
@@ -964,6 +964,20 @@
 				"itemHeight": 25
 				}
 			</convert>
+		</widget>
+	</screen>
+	<screen name="AudioEffect" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<widget name="config" position="15,123" size="450,170" selectionPixmap="ViX-Common/buttons/FocusBar_H25x420.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" />
+		<widget source="description" render="Label" position="25,295" size="450,170" font="Regular;22" itemHeight="28" selectionPixmap="ViX-Common/buttons/FocusBar_H25x420.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" />
+		<widget source="key_red" render="Pixmap" pixmap="ViX-Common/buttons/red.png" position="40,120" size="25,25" alphatest="blend" zPosition="1">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="key_green" render="Pixmap" pixmap="ViX-Common/buttons/green.png" position="40,145" size="25,25" alphatest="blend" zPosition="1">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="key_yellow" render="Pixmap" pixmap="ViX-Common/buttons/yellow.png" position="40,170" size="25,25" alphatest="blend" zPosition="1">
+			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
 	<screen name="BouquetSelector" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
