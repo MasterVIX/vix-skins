@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.73	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.74	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -1816,6 +1816,20 @@ background
 		<widget source="VKeyIcon" render="Pixmap" pixmap="Magic-HD/buttons/key_text.png" position="1160,682" zPosition="1" size="35,25" transparent="1" alphatest="on"/>
 		<widget name="config" position="490,80" size="785,588" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="text" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
+	</screen>
+	<!-- ## YouTube-VU ## -->
+	<screen name="YoutubeTVWindow" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="Green2Panel"/>
+		<panel name="Yellow2Panel"/>
+		<widget name="helpdesc" position="595,630" size="285,40" font="Regular;24" transparent="1" foregroundColor="secondFG" halign="center"/>
+		<widget name="startdesc" position="305,630" size="285,40" font="Regular;24" transparent="1" foregroundColor="secondFG" halign="center"/>
+	</screen>
+	<screen name="YoutubeTVSettings" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="Green2Panel"/>
+		<panel name="Red2Panel"/>
+		<widget name="config" position="490,80" size="785,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 	<!-- ## Webbrowser ET ## -->
 	<screen name="browserSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder">
