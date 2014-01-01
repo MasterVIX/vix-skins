@@ -1,14 +1,14 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD Vs 7.89 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.90 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
 
 	<!--	## Volume ## -->
-	<screen name="Volume" title="Volume" position="45,245" size="35,230" backgroundColor="transpBlack" zPosition="1" flags="wfNoBorder">
-		<widget name="Volume" pixmap="Magic-HD/infobar/volumeslider.png" position="5,5" size="25,200" orientation="orBottomToTop" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="Magic-HD/infobar/vol_box.png" position="0,205" size="35,24" alphatest="on" zPosition="4"/>
-		</screen>
+	<screen name="Volume" position="center,30" size="500,30" zPosition="10" flags="wfNoBorder">
+		<ePixmap position="0,0" size="500,29" pixmap="Magic-HD/infobar/volbg.png"/>
+		<widget name="Volume" position="34,12" size="432,10" zPosition="1" pixmap="Magic-HD/infobar/vol.png" transparent="1"/>
+	</screen>
 	<screen name="Mute" title="Mute" position="45,30" size="50,50" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
 		<ePixmap pixmap="Magic-HD/infobar/mute.png" position="0,0" size="45,45" alphatest="on" zPosition="0"/>
 		</screen>
