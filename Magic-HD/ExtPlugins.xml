@@ -1,5 +1,5 @@
 ﻿<skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.74	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.75	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -2810,6 +2810,7 @@ background
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<widget name="list" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="148" position="5,79" size="1255,592" noWrap="1" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<widget name="chosenletter" position="5,79" size="1255,592" halign="center" font="Regular;30" foregroundColor="secondFG"/>
 	</screen>
 	<screen name="OpenUgSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2821,6 +2822,10 @@ background
 		<widget name="menu" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 	<screen name="UgDaysBackScreen" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<widget name="menu" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+	<screen name="SmallScreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="menu" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
