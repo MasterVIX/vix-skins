@@ -1,4 +1,5 @@
-﻿<skin>
+﻿<!--suppress XmlUnboundNsPrefix -->
+<skin>
 	<!--	Skin: Magic-HD Vs 7.91 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
@@ -2927,19 +2928,19 @@ self.autoResize()
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" position="520,82" size="755,120" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 			<widget source="SensorTempText0" render="Label" position="520,210" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" transparent="1" foregroundColor="grey"/>
 			<widget source="SensorTemp0" render="Label" position="610,210" zPosition="1" size="100,20" font="Regular;20" halign="right" foregroundColor="grey">
-				<convert type="SensorToText"></convert>
+				<convert type="SensorToText"/>
 			</widget>
 			<widget source="SensorTempText1" render="Label" position="520,230" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" transparent="1" foregroundColor="grey"/>
 			<widget source="SensorTemp1" render="Label" position="610,230" zPosition="1" size="100,20" font="Regular;20" halign="right" foregroundColor="grey">
-				<convert type="SensorToText"></convert>
+				<convert type="SensorToText"/>
 			</widget>
 			<widget source="SensorFanText0" render="Label" position="800,210" zPosition="1" size="120,40" font="Regular;20" halign="left" valign="top" transparent="1" foregroundColor="grey" />
 			<widget source="SensorFan0" render="Label" position="920,210" zPosition="1" size="150,20" font="Regular;20" halign="right" foregroundColor="grey">
-				<convert type="SensorToText"></convert>
+				<convert type="SensorToText"/>
 			</widget>
 			<widget source="SensorFanText1" render="Label" position="800,230" zPosition="1" size="120,40" font="Regular;20" halign="left" valign="top"	transparent="1" foregroundColor="grey"/>
 			<widget source="SensorFan1" render="Label" position="920,230" zPosition="1" size="150,20" font="Regular;20" halign="right" foregroundColor="grey">
-				<convert type="SensorToText"></convert>
+				<convert type="SensorToText"/>
 			</widget>
 	</screen>
 	<screen name="FanSetupConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" title="Standbymode FanSetup settings">

@@ -1,8 +1,9 @@
 ﻿<!--  Skin: ViX-Common Vs 3.2.8 by AndyBlac @ www.world-of-satellite.com  -->
-<!--  This skin is a Freeware. Everyone can modify and use it in other images.  -->
-<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
-<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
-<!--  ## Head ##  -->
+<!--  This skin is a Freeware. Everyone can modify and use it in other images. , XmlUnboundNsPrefix -->
+<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!! , XmlUnboundNsPrefix -->
+<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! , XmlUnboundNsPrefix -->
+<!--  ## Head ## , XmlUnboundNsPrefix -->
+<!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <skin>
 	<!-- template -->
 	<screen name="FullscreenTopPanel">
@@ -1838,11 +1839,11 @@ self.autoResize()
 		<widget source="current" render="Label" position="20,490" size="503,40" zPosition="1" font="Regular;18" halign="center" valign="center" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" />
 			<widget source="SensorTempText0" render="Label" position="10,560" zPosition="1" size="120,40" font="Regular;20" halign="right" valign="top" transparent="1" />
 			<widget source="SensorTemp0" render="Label" position="145,560" zPosition="1" size="100,20" font="Regular;20" halign="left" >
-				<convert type="SensorToText"></convert>
+				<convert type="SensorToText"/>
 			</widget>
 			<widget source="SensorFanText0" render="Label" position="10,590" zPosition="1" size="120,40" font="Regular;20" halign="right" valign="top" transparent="1" />
 			<widget source="SensorFan0" render="Label" position="145,590" zPosition="1" size="150,20" font="Regular;20" halign="left" >
-				<convert type="SensorToText"></convert>
+				<convert type="SensorToText"/>
 			</widget>
 		<panel name="MenuRed2Panel" />
 		<panel name="MenuGreen2Panel" />
@@ -1959,23 +1960,23 @@ self.autoResize()
 		<widget name="config" position="10,107" size="503,120" selectionPixmap="ViX-Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget source="SensorTempText0" render="Label" position="10,250" zPosition="1" size="90,40" font="Regular;20" halign="left" />
 		<widget source="SensorTemp0" render="Label" position="100,250" zPosition="1" size="100,20" font="Regular;19" halign="right">
-			<convert type="SensorToText"></convert>
+			<convert type="SensorToText"/>
 		</widget>
 		<widget source="SensorTempText1" render="Label" position="10,270" zPosition="1" size="90,40" font="Regular;20" halign="left" />
 		<widget source="SensorTemp1" render="Label" position="100,270" zPosition="1" size="100,20" font="Regular;19" halign="right">
-			<convert type="SensorToText"></convert>
+			<convert type="SensorToText"/>
 		</widget>
 		<widget source="SensorTempText2" render="Label" position="10,290" zPosition="1" size="90,40" font="Regular;20" halign="left" />
 		<widget source="SensorTemp2" render="Label" position="100,290" zPosition="1" size="100,20" font="Regular;19" halign="right">
-			<convert type="SensorToText"></convert>
+			<convert type="SensorToText"/>
 		</widget>
 		<widget source="SensorFanText0" render="Label" position="290,250" zPosition="1" size="90,40" font="Regular;20" halign="left" />
 		<widget source="SensorFan0" render="Label" position="380,250" zPosition="1" size="130,20" font="Regular;19" halign="right">
-			<convert type="SensorToText"></convert>
+			<convert type="SensorToText"/>
 		</widget>
 		<widget source="SensorFanText1" render="Label" position="290,270" zPosition="1" size="90,40" font="Regular;20" halign="left" />
 		<widget source="SensorFan1" render="Label" position="380,270" zPosition="1" size="130,20" font="Regular;19" halign="right">
-			<convert type="SensorToText"></convert>
+			<convert type="SensorToText"/>
 		</widget>
 		<ePixmap pixmap="ViX-Common/buttons/red.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
 		<widget source="red" render="Label" position="75,663" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd1" />

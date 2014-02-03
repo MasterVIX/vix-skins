@@ -1,3 +1,4 @@
+<!--suppress XmlUnboundNsPrefix -->
 <skin>
 	<!--	Skin: Magic-SD-ViX Vs 2.35 by Rob van der Does @www.world-of-satellite.com, based on Magic by MiLo Vs 1.15	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
@@ -307,7 +308,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="CryptoInfo">VerboseInfo</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="500,214" size="165,22" backgroundColor="infobarBG" font="Enigma;16" noWrap="1" foregroundColor="grey81" halign="right" valign="top" zPosition="3">
-			<convert type="ServiceOrbitalPosition"></convert>
+			<convert type="ServiceOrbitalPosition"/>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="200,160" size="375,28" backgroundColor="infobarBG" font="Enigma;22" zPosition="3">
 			<convert type="EventName">Name</convert>
@@ -422,7 +423,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="CryptoInfo">VerboseInfo</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="500,539" size="165,22" backgroundColor="infobarBG" font="Enigma;16" noWrap="1" foregroundColor="grey81" halign="right" valign="top" zPosition="3">
-			<convert type="ServiceOrbitalPosition"></convert>
+			<convert type="ServiceOrbitalPosition"/>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="200,485" size="375,28" backgroundColor="infobarBG" font="Enigma;22" zPosition="3">
 			<convert type="EventName">Name</convert>
@@ -1009,7 +1010,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="10,347" zPosition="1" size="50,22" font="Regular;19" >
 			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText"></convert>
+			<convert type="ClockToText"/>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="60,347" zPosition="1" size="70,22" font="Regular;19">
 			<convert type="EventTime">EndTime</convert>
@@ -1280,11 +1281,11 @@ self.autoResize()
 		</widget>
 		<ePixmap pixmap="icons/clock.png" position="483,339" zPosition="1" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="500,337" zPosition="1" size="50,20" font="Regular;19" halign="right">
-			<convert type="ClockToText"></convert>
+			<convert type="ClockToText"/>
 		</widget>
 		<widget source="Event" render="Label" position="10,357" zPosition="1" size="50,22" font="Regular;18">
 			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText"></convert>
+			<convert type="ClockToText"/>
 		</widget>
 		<widget source="Event" render="Label" position="60,357" zPosition="1" size="70,22" font="Regular;18">
 			<convert type="EventTime">EndTime</convert>
@@ -2992,19 +2993,19 @@ self.autoResize()
 		<widget name="config" position="10,50" size="540,100" scrollbarMode="showOnDemand" transparent="1" font="Enigma;20" itemHeight="25" enableWrapAround="1" zPosition="1"/>
 			<widget source="SensorTempText0" render="Label" position="20,170" zPosition="1" size="90,40" font="Regular;20" halign="right" transparent="1"/>
 			<widget source="SensorTemp0" render="Label" position="115,170" zPosition="1" size="100,20" font="Regular;20" halign="left">
-				<convert type="SensorToText"></convert>
+				<convert type="SensorToText"/>
 			</widget>
 			<widget source="SensorTempText1" render="Label" position="20,220" zPosition="1" size="90,40" font="Regular;20" halign="right" valign="top" transparent="1"/>
 			<widget source="SensorTemp1" render="Label" position="115,220" zPosition="1" size="100,20" font="Regular;20" halign="left" >
-				<convert type="SensorToText"></convert>
+				<convert type="SensorToText"/>
 			</widget>
 			<widget source="SensorFanText0" render="Label" position="250,170" zPosition="1" size="120,40" font="Regular;20" halign="right" valign="top" transparent="1"/>
 			<widget source="SensorFan0" render="Label" position="375,170" zPosition="1" size="150,20" font="Regular;20" halign="left" >
-				<convert type="SensorToText"></convert>
+				<convert type="SensorToText"/>
 			</widget>
 			<widget source="SensorFanText1" render="Label" position="250,220" zPosition="1" size="120,40" font="Regular;20" halign="right" valign="top"	transparent="1"/>
 			<widget source="SensorFan1" render="Label" position="375,220" zPosition="1" size="150,20" font="Regular;20" halign="left" >
-				<convert type="SensorToText"></convert>
+				<convert type="SensorToText"/>
 			</widget>
 	</screen>
 	<!-- ##Picture-Player## -->
