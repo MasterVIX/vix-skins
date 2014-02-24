@@ -2,7 +2,7 @@
 <!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <skin>
 
-	<!--	Common.skin Vs 5.95 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.96 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -1450,7 +1450,7 @@ self.autoResize()
 		<panel name="VixLogo"/>
 	</screen>
 	<screen name="Dish" flags="wfNoBorder" position="20,20" size="130,295" title="Dish" zPosition="10" backgroundColor="transpBG">
-		<widget name="Dishpixmap" position="0,20" size="130,160" zPosition="1" pixmap="Magic-HD/icons/dish.png" transparent="1" alphatest="on"/>
+		<widget name="Dishpixmap" position="0,20" size="130,160" zPosition="1" pixmap="icons/dish.png" transparent="1" alphatest="on"/>
 		<widget name="turnTime" position="5,0" size="120,20" zPosition="1" font="Regular;18" halign="right" foregroundColor="white" transparent="1"/>
 		<widget name="From" position="5,184" size="60,20" zPosition="1" font="Regular;18" halign="left" foregroundColor="white" transparent="1" text="From:"/>
 		<widget name="posFrom" position="70,184" size="70,20" zPosition="1" font="Regular;20" halign="left" foregroundColor="white" transparent="1"/>
@@ -3868,8 +3868,8 @@ self.autoResize()
 		<widget source="help" render="Label" position="15,400" size="477,100" font="Regular;21" foregroundColor="greenlight"/>
 		<panel name="VixLogo"/>
 	</screen>
-	<!-- ## EPG importer ## -->
-	<screen flags="wfNoBorder" name="Config" position="0,0" size="1280,720" title="Configuration">
+	<!-- ## XMLTV EPG importer ## -->
+	<screen name="EPGMainSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
 		<panel name="InfoTemplate"/>
@@ -3878,19 +3878,19 @@ self.autoResize()
 		<widget name="status" position="15,400" size="470,150" font="Regular;24"/>
 		<panel name="VixLogo"/>
 	</screen>
-	<screen flags="wfNoBorder" name="XMLTVImportSources" position="0,0" size="1280,720" title="EPG Import Sources">
+	<screen flags="wfNoBorder" name="XMLTVImportSources" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
 		<widget name="list" scrollbarMode="showOnDemand" font="Regular;24" position="520,82" size="755,583" transparent="1"/>
 		<panel name="VixLogo"/>
 	</screen>
-	<screen flags="wfNoBorder" name="XMLTVImportLog" position="0,0" size="1280,720" title="EPG Import Log">
+	<screen flags="wfNoBorder" name="XMLTVImportLog" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template"/>
 		<widget name="list" font="Regular;24" position="520,90" size="755,575" transparent="1"/>
 		<panel name="VixLogo"/>
 	</screen>
-	<screen flags="wfNoBorder" name="Main_Menu_set" position="0,0" size="1280,720" title="Settings">
+	<screen flags="wfNoBorder" name="Main_Menu_set" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget source="menu" render="Listbox" scrollbarMode="showNever" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
 			<convert type="TemplatedMultiContent">
@@ -3900,7 +3900,7 @@ self.autoResize()
 			</convert>
 		<panel name="VixLogo"/>
 	</screen>
-	<screen flags="wfNoBorder" name="Main_Menu_extra" position="0,0" size="1280,720" title="BP Extra">
+	<screen flags="wfNoBorder" name="Main_Menu_extra" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget source="menu" render="Listbox" scrollbarMode="showNever" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
 			<convert type="TemplatedMultiContent">
@@ -3920,13 +3920,13 @@ self.autoResize()
 		<widget name="label2" position="0,110" size="400,25" font="Regular;25" halign="center"/>
 	</screen>
 	<!-- ## Autotimer Plugin ## -->
-	<screen flags="wfNoBorder" name="AutoTimerHelp" position="0,0" size="1280,720" title="AutoTimer Help">
+	<screen flags="wfNoBorder" name="AutoTimerHelp" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template 2"/>
 		<widget name="detailtext" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
 		<panel name="VixLogo"/>
 	</screen>
-	<screen name="AutoTimer" title="Auto Timer" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="AutoTimer" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="GreenTemplate"/>
 		<panel name="YellowTemplate"/>
@@ -3934,42 +3934,42 @@ self.autoResize()
 		<widget name="config" position="520,90" size="755,575"/>
 		<panel name="VixLogo"/>
 	</screen>
-	<screen name="AutoTimerSettings" title="AutoTimer Settings" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="AutoTimerSettings" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget source="Title" render="Label" position="520,82" size="755,43" backgroundColor="background" transparent="1" font="Regular;26"/>
 		<widget name="config" position="520,125" size="755,540" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" background="background"/>
 		<widget source="help" render="Label" position="5,385" size="477,270" foregroundColor="greenlight" transparent="1" font="Regular;20"/>
 	</screen>
-	<screen name="AutoTimerEditor" title="Edit AutoTimer" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="AutoTimerEditor" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template 2"/>
 		<widget source="Title" render="Label" position="520,82" size="755,43" backgroundColor="background" transparent="1" font="Regular;26"/>
 		<widget name="config" position="520,125" size="755,540" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 		<widget source="help" render="Label" position="5,385" size="477,270" foregroundColor="greenlight" transparent="1" font="Regular;20"/>
 	</screen>
-	<screen name="AutoTimerFilterEditor" title="Edit AutoTimer Filters" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="AutoTimerFilterEditor" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template 2"/>
 		<widget source="Title" render="Label" position="520,82" size="755,43" backgroundColor="background" transparent="1" font="Regular;26"/>
 		<widget name="config" position="520,125" size="755,540" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" background="background"/>
 		<panel name="VixLogo"/>
 	</screen>
-	<screen name="AutoTimerServiceEditor" title="Edit AutoTimer Services" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="AutoTimerServiceEditor" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template 2"/>
 		<widget source="Title" render="Label" position="520,82" size="755,43" backgroundColor="background" transparent="1" font="Regular;26"/>
 		<widget name="config" position="520,125" size="755,540" itemHeight="30" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 		<panel name="VixLogo"/>
 	</screen>
-	<screen name="AutoTimerImporter" title="Import AutoTimer" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="AutoTimerImporter" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RGYB_Template 2"/>
 		<widget source="Title" render="Label" position="520,82" size="755,43" backgroundColor="background" transparent="1" font="Regular;26"/>
 		<widget name="list" position="520,125" size="755,540" itemHeight="30" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 		<panel name="VixLogo"/>
 	</screen>
-	<screen name="AutoTimerOverview" title="AutoTimer Overview" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="AutoTimerOverview" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="GreenTemplate 2"/>
 		<panel name="YellowTemplate 2"/>
@@ -3979,7 +3979,7 @@ self.autoResize()
 		<widget name="entries" position="520,125" size="755,538" itemHeight="30" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 		<panel name="VixLogo"/>
 	</screen>
-	<screen name="AutoTimerPreview" title="Preview AutoTimer" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="AutoTimerPreview" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RG_Template 2"/>
 		<widget source="Title" render="Label" position="520,82" size="755,43" backgroundColor="background" transparent="1" font="Regular;26"/>
@@ -3999,7 +3999,7 @@ self.autoResize()
 		<panel name="VixLogo"/>
 	</screen>
 	<!-- ## PermanentClock ## -->
-	<screen flags="wfNoBorder" name="PermanentClockMenu" position="0,0" size="1280,720" title="PermanentClock ConfigurationMenu">
+	<screen flags="wfNoBorder" name="PermanentClockMenu" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="list" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
 		<eLabel text="Exit' = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
@@ -4012,7 +4012,7 @@ self.autoResize()
 		</widget>
 	</screen>
 	<!-- ## AutoTimeshift ## -->
-	<screen flags="wfNoBorder" name="AutoTimeshift" position="0,0" size="1280,720" title="Auto Timeshift Configuration">
+	<screen flags="wfNoBorder" name="AutoTimeshift" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="on"/>
 		<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="on"/>
@@ -4024,12 +4024,12 @@ self.autoResize()
 		<panel name="VixLogo"/>
 	</screen>
 	<!-- ## LogoManager ## -->
-	<screen flags="wfNoBorder" name="LogoManagerScreen" position="0,0" size="1280,720" title="Logo Manager">
+	<screen flags="wfNoBorder" name="LogoManagerScreen" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<widget name="filelist" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
 		<panel name="VixLogo"/>
 	</screen>
-	<screen flags="wfNoBorder" name="LogoManagerConfigScreen" position="0,0" size="1280,720" title="LogoManager Configuration">
+	<screen flags="wfNoBorder" name="LogoManagerConfigScreen" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
 		<ePixmap pixmap="MHDC/buttons/red2.png" alphatest="on" position="15,682" size="26,26"/>
 		<ePixmap pixmap="MHDC/buttons/green2.png" alphatest="on" position="305,682" size="26,26"/>
@@ -4039,7 +4039,7 @@ self.autoResize()
 		<panel name="VixLogo"/>
 	</screen>
 	<!-- ## Seekbar ##-->
-	<screen name="Seekbar" position="center,center" size="560,60" title="Seekbar" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="Seekbar" position="center,center" size="560,60" backgroundColor="transparent" flags="wfNoBorder">
 		<widget name="cursor" position="0,0" size="8,18" pixmap="position_arrow.png" alphatest="on"/>
 		<widget source="session.CurrentService" render="PositionGauge" position="150,30" size="270,10" zPosition="2" pointer="MHDC/dvr/position_pointer.png:540,0" transparent="1" foregroundColor="un20224f">
 			<convert type="ServicePosition">Gauge</convert>
