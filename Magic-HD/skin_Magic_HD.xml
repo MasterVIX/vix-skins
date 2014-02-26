@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Vs 7.91 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.92 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -350,12 +350,6 @@
 	</screen>
 	<screen name="SlimChannelSelection" flags="wfNoBorder" position="0,0" size="590,720" backgroundColor="transparent">
 		<eLabel position="0,0" size="590,720" backgroundColor="transpBlack" zPosition="-50"/>
-		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
-			<convert type="ClockToText">Format:%-H:%M</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
 		<ePixmap pixmap="Magic-HD/buttons/red.png" alphatest="on" position="15,645" size="26,26"/>
 		<ePixmap pixmap="Magic-HD/buttons/green.png" alphatest="on" position="15,678" size="26,26"/>
 		<ePixmap pixmap="Magic-HD/buttons/yellow.png" alphatest="on" position="305,645" size="26,26"/>
@@ -364,6 +358,7 @@
 		<widget name="key_green" backgroundColor="secondBG" font="Regular;20" halign="left" position="50,678" size="220,26" transparent="1" zPosition="1"/>
 		<widget name="key_yellow" backgroundColor="secondBG" font="Regular;20" halign="left" position="361,645" size="220,26" transparent="1" zPosition="1"/>
 		<widget name="key_blue" backgroundColor="secondBG" font="Regular;20" halign="left" position="361,678" size="220,26" transparent="1" zPosition="1"/>
+		<widget source="Title" foregroundColor="blue" render="Label" position="15,5" size="550,30" transparent="1" zPosition="1" font="Regular;25" halign="center" valign="center"/>
 		<widget name="list" scrollbarMode="showOnDemand" font="Regular;18" position="15,34" size="570,505" transparent="1"/>
 		<widget source="ServiceEvent" render="Label" position="15,570" size="570,65" font="Regular;18" backgroundColor="black" foregroundColor="foreground" zPosition="2" transparent="1">
 			<convert type="EventName">FullDescription</convert>
