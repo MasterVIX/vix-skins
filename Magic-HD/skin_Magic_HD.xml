@@ -3495,4 +3495,12 @@ self.autoResize()
 		<widget name="content" position="5,5" size="320,22" font="Regular;20" borderWidth="3" borderColor="black" transparent="1" />
 		<widget name="restxt" position="5,26" size="320,22" font="Regular;20" borderWidth="3" borderColor="black" transparent="1" />
 	</screen>
+	<!-- Mac-adress -->
+	<screen name="NetworkMacSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel"/>
+		<panel name="Green2Panel"/>
+		<widget name="config" position="520,80" size="755,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<widget source="introduction" render="Label" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
+	</screen>
 </skin>
