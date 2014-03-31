@@ -1,4 +1,4 @@
-﻿<!--  Skin: ViX-Common Vs 3.2.11 by AndyBlac @ www.world-of-satellite.com  -->
+﻿<!--  Skin: ViX-Common Vs 3.2.12 by AndyBlac @ www.world-of-satellite.com  -->
 <!--  This skin is a Freeware. Everyone can modify and use it in other images. , XmlUnboundNsPrefix -->
 <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!! , XmlUnboundNsPrefix -->
 <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! , XmlUnboundNsPrefix -->
@@ -4243,5 +4243,17 @@ self.autoResize()
 		<widget name="aavg" position="740,300" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
 		<eLabel text="current" position="840,275" zPosition="1" size="110,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
 		<widget name="acur" position="840,300" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1" />
+	</screen>
+	<!-- ##Transcoding## -->
+	<screen name="TranscodingSetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<widget name="config" position="10,107" size="503,420" font="Regular;20" zPosition="2" transparent="1" scrollbarMode="showOnDemand" halign="center" />
+		<widget name="description" position="10,540" size="503,60" selectionPixmap="ViX-Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="text" position="10,608" size="503,20" font="Regular;20" zPosition="5" valign="top" />
+		<panel name="MenuRed2Panel" />
+		<panel name="MenuGreen2Panel" />
+		<panel name="MenuYellow2Panel" />
+		<widget name="blue" pixmap="ViX-Common/buttons/blue.png" position="280,690" size="24,24" alphatest="blend" transparent="1" />
+		<widget name="key_blue" render="Label" position="315,690" size="190,24" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1" />
 	</screen>
 </skin>
