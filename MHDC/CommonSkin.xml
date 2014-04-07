@@ -2,7 +2,7 @@
 <!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <skin>
 
-	<!--	Common.skin Vs 5.96 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 5.97 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -2133,6 +2133,13 @@ self.autoResize()
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget name="HelpWindow" pixmap="vkey_icon.png" position="30,425" size="1,1" transparent="1" zPosition="1" alphatest="blend"/>
+	</screen>
+	<!-- Mac-adress -->
+	<screen name="NetworkMacSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="RG_Template 2"/>
+		<widget name="config" position="520,82" size="755,522" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="32" transparent="1" enableWrapAround="1"/>
+		<widget source="introduction" render="Label" position="10,385" size="480,250" zPosition="2" font="Regular;21" foregroundColor="greenlight" halign="center"/>
 	</screen>
 	<screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
