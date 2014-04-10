@@ -1,4 +1,4 @@
-﻿<!--  Skin: ViX-Common Vs 3.2.16 by AndyBlac @ www.world-of-satellite.com  -->
+﻿<!--  Skin: ViX-Common Vs 3.2.17 by AndyBlac @ www.world-of-satellite.com  -->
 <!--  This skin is a Freeware. Everyone can modify and use it in other images. , XmlUnboundNsPrefix -->
 <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!! , XmlUnboundNsPrefix -->
 <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! , XmlUnboundNsPrefix -->
@@ -1537,6 +1537,15 @@ self.autoResize()
 		<panel name="MenuGreen2Panel" />
 		<panel name="MenuYellow2Panel" />
 		<panel name="MenuBlue2Panel" />
+	</screen>
+	<screen name="UserDialog" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<widget name="config" position="10,107" size="503,250" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="ViX-Common/buttons/FocusBar_H25x503.png" />
+		<ePixmap pixmap="div-h.png" position="10,610" zPosition="1" size="503,2" />
+		<widget source="introduction" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
+		<widget name="VKeyIcon" pixmap="buttons/key_text.png" position="280,663" zPosition="1" size="35,25" transparent="1" alphatest="on" />
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="100,450" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+		<panel name="MenuRed2Panel" />
 	</screen>
 	<screen name="AutoMountEdit" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
