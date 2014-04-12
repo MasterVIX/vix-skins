@@ -1,4 +1,4 @@
-﻿<!--  Skin: ViX-Common Vs 3.2.17 by AndyBlac @ www.world-of-satellite.com  -->
+﻿<!--  Skin: ViX-Common Vs 3.2.18 by AndyBlac @ www.world-of-satellite.com  -->
 <!--  This skin is a Freeware. Everyone can modify and use it in other images. , XmlUnboundNsPrefix -->
 <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!! , XmlUnboundNsPrefix -->
 <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! , XmlUnboundNsPrefix -->
@@ -1499,6 +1499,27 @@ self.autoResize()
 		<panel name="MenuGreen2Panel" />
 		<panel name="MenuYellow2Panel" />
 	</screen>
+	<screen name="WlanScan" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<widget source="list" render="Listbox" selectionPixmap="ViX-Common/buttons/FocusBar_H70x503.png" position="10,107" size="503,250" zPosition="10" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (10,5),size = (550,33),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the essid
+						MultiContentEntryText(pos = (10,40),size = (150,22),font=1,flags = RT_HALIGN_LEFT,text = 5),# index 5 is the interface
+						MultiContentEntryText(pos = (160,40),size = (130,22),font=1,flags = RT_HALIGN_LEFT,text = 4),# index 0 is the encryption
+						MultiContentEntryText(pos = (350,5),size = (220,22),font=1,flags = RT_HALIGN_LEFT,text = 2),# index 0 is the signal
+						MultiContentEntryText(pos = (300,40),size = (220,22),font=1,flags = RT_HALIGN_LEFT,text = 3),# index 0 is the maxrate
+					],
+				"fonts": [gFont("Regular",28),gFont("Regular",18)],
+				"itemHeight": 70
+				}
+			</convert>
+		</widget>
+		<ePixmap pixmap="div-h.png" position="10,585" zPosition="1" size="503,2" />
+		<widget source="info" render="Label" position="10,596" size="503,30" zPosition="10" font="Regular;21" backgroundColor="window-bg" halign="center" transparent="0" />
+		<panel name="MenuRed2Panel" />
+		<panel name="MenuGreen2Panel" />
+	</screen>
 	<screen name="NetworkMountsMenu" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<widget name="menulist" position="10,107" size="503,400" itemHeight="38" font="Regular;28" transparent="0" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="ViX-Common/buttons/FocusBar_H38x503.png" />
@@ -1556,6 +1577,24 @@ self.autoResize()
 		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="100,450" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 		<panel name="MenuRed2Panel" />
 		<panel name="MenuGreen2Panel" />
+	</screen>
+	<screen name="UserManager" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<widget source="config" render="Listbox" selectionPixmap="ViX-Common/buttons/FocusBar_H70x503.png" position="10,107" size="503,250" zPosition="10" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (80,5), size = (400,50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+							MultiContentEntryPixmapAlphaTest(pos = (0,0), size = (48,48), png = 3), # index 4 is the status pixmap
+						],
+					"fonts": [gFont("Regular",20)],
+					"itemHeight": 55
+				}
+			</convert>
+		</widget>
+		<ePixmap pixmap="div-h.png" position="10,585" zPosition="1" size="503,2" />
+		<widget source="introduction" render="Label" position="10,596" size="503,30" zPosition="10" font="Regular;21" backgroundColor="window-bg" halign="center" transparent="0" />
+		<panel name="MenuRed2Panel" />
+		<panel name="MenuYellow2Panel" />
 	</screen>
 	<screen name="AutoMountManager" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
