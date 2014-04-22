@@ -496,8 +496,7 @@
 		</widget>
 		<ePixmap pixmap="ViXBMC_HD-Common/icons/icon_hd_off.png" position="467,11" size="29,20" zPosition="1" alphatest="blend"/>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="ViXBMC_HD-Common/icons/icon_hd_on.png" position="467,11" size="29,20" zPosition="2" alphatest="blend">
-			<convert type="ServiceInfo">VideoWidth</convert>
-			<convert type="ValueRange">721,1980</convert>
+			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<ePixmap pixmap="ViXBMC_HD-Common/icons/icon_format_off.png" position="500,14" zPosition="0" size="28,15" alphatest="blend"/>
