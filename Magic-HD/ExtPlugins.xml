@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.76	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.77	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -538,31 +538,6 @@
 		<widget name="aavg" position="740,300" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1"/>
 		<eLabel text="current" position="840,275" zPosition="1" size="110,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1"/>
 		<widget name="acur" position="840,300" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1"/>
-	</screen>
-	<!-- ## IMDB Plugin ## -->
-	<screen name="IMDB" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel"/>
-		<panel name="Green1Panel"/>
-		<panel name="Yellow1Panel"/>
-		<panel name="Blue1Panel"/>
-		<widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="149,380" size="210,21" zPosition="2" alphatest="blend"/>
-		<widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" position="149,380" size="210,21" zPosition="3" transparent="1"/>
-		<widget name="ratinglabel" position="50,410" size="400,24" foregroundColor="grey" transparent="1" font="Regular;20" halign="center"/>
-		<widget name="titellabel" position="5,445" size="510,50" foregroundColor="grey" transparent="1" font="Regular;20" halign="center"/>
-		<widget name="poster" position="520,82" size="110,180" alphatest="blend"/>
-		<widget name="detailslabel" position="640,82" size="630,180" backgroundColor="darkgrey" transparent="1" font="Regular;20" halign="center"/>
-		<widget name="menu" position="520,265" size="755,400" zPosition="3" transparent="1" font="Regular;22" scrollbarMode="showOnDemand" itemHeight="27" enableWrapAround="1" foregroundColor="grey"/>
-		<widget name="castlabel" position="520,275" size="755,385" transparent="1" font="Regular;22" itemHeight="27" foregroundColor="grey"/>
-		<widget name="extralabel" position="520,82" size="755,583" transparent="1" font="Regular;22" itemHeight="27" foregroundColor="grey"/>
-		<widget name="statusbar" position="5,450" size="510,190" transparent="1" font="Regular;18" halign="center" valign="bottom"/>
-	</screen>
-	<screen name="IMDbSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="Red2Panel"/>
-		<panel name="Green2Panel"/>
-		<widget source="help" render="Label" position="5,400" size="477,80" font="Regular;20" foregroundColor="secondFG"/>
-		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" foregroundColor="grey" size="755,583" transparent="1"/>
 	</screen>
 	<!-- ## TMDB Plugin ## -->
 	<screen name="TMDbInfoHD" position="0,0" size="1280,720" flags="wfNoBorder" title="">

@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Vs 7.97 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 7.98 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -2957,12 +2957,13 @@ self.autoResize()
 		<widget name="daemon1" alphatest="on" pixmap="Magic-HD/buttons/button_green.png" position="760,605" size="15,16" zPosition="10" transparent="1"/>
 	</screen>
 	<!-- ## IMDB Plugin ## -->
-	<screen name="IMDB" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="IMDB" position="0,0" size="1280,720" flags="wfNoBorder" title="Internet Movie Database Details Plugin">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
 		<panel name="Yellow1Panel"/>
 		<panel name="Blue1Panel"/>
+		<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1200,687"	size="35,25"/>
 		<widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="149,380" size="210,21" zPosition="2" alphatest="blend"/>
 		<widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" position="149,380" size="210,21" zPosition="3" transparent="1"/>
 		<widget name="ratinglabel" position="50,410" size="400,24" foregroundColor="grey" transparent="1" font="Regular;20" halign="center"/>
@@ -2981,7 +2982,7 @@ self.autoResize()
 		<widget source="help" render="Label" position="5,400" size="477,80" font="Regular;20" foregroundColor="secondFG"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" foregroundColor="grey" size="755,583" transparent="1"/>
 	</screen>
- <!-- ## Cross EPG ## -->
+	<!-- ## Cross EPG ## -->
 	<screen name="CrossEPG_Menu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget source="list" render="Listbox" transparent="0" position="520,82" size="755,583" scrollbarMode="showOnDemand" foregroundColor="grey">
