@@ -2,7 +2,7 @@
 <!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <skin>
 
-	<!--	Common.skin Vs 5.99 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 6.00 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -5439,23 +5439,26 @@ self.autoResize()
 	<!-- ## TempFanControl ##-->
 	<screen flags="wfNoBorder" name="TempFanControl" position="0,0" size="1280,720" title="">
 		<panel name="BasicTemplate"/>
-		<panel name="RG_Template 2"/>
+		<ePixmap pixmap="MHDC/buttons/red2.png" position="15,682" size="26,26" alphatest="blend"/>
+		<ePixmap pixmap="MHDC/buttons/green2.png" position="305,682" size="26,26" alphatest="blend"/>
+		<widget source="red" render="Label" position="50,682" size="220,26" backgroundColor="background" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
+		<widget source="green" render="Label" position="340,682" size="220,26" backgroundColor="background" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" position="520,82" size="755,120" transparent="1" enableWrapAround="1"/>
 		<widget source="SensorTempText0" render="Label" position="520,210" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" transparent="1"/>
 		<widget source="SensorTemp0" render="Label" position="610,210" zPosition="1" size="100,20" font="Regular;20" halign="right">
-			<convert> type="SensorToText"></convert>
+			<convert type="SensorToText"/>
 		</widget>
 		<widget source="SensorTempText1" render="Label" position="520,230" zPosition="1" size="90,40" font="Regular;20" halign="left" valign="top" transparent="1"/>
 		<widget source="SensorTemp1" render="Label" position="610,230" zPosition="1" size="100,20" font="Regular;20" halign="right">
-			<convert> type="SensorToText"></convert>
+			<convert type="SensorToText"/>
 		</widget>
 		<widget source="SensorFanText0" render="Label" position="800,210" zPosition="1" size="120,40" font="Regular;20" halign="left" valign="top" transparent="1"/>
 		<widget source="SensorFan0" render="Label" position="920,210" zPosition="1" size="150,20" font="Regular;20" halign="right">
-			<convert> type="SensorToText"></convert>
+			<convert type="SensorToText"/>
 		</widget>
 		<widget source="SensorFanText1" render="Label" position="800,230" zPosition="1" size="120,40" font="Regular;20" halign="left" valign="top" transparent="1"/>
 		<widget source="SensorFan1" render="Label" position="920,230" zPosition="1" size="150,20" font="Regular;20" halign="right">
-			<convert> type="SensorToText"></convert>
+			<convert type="SensorToText"/>
 		</widget>	
 	</screen>
 	<screen flags="wfNoBorder" name="FanSetupConfiguration" position="0,0" size="1280,720" title="Standbymode Fancontrol settings">
