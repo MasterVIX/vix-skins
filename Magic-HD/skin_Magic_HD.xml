@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Vs 7.99 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 8.00 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -2309,28 +2309,30 @@ self.autoResize()
 		<widget name="footer" position="10,400" size="477,100" font="Regular;22" selectionDisabled="1" transparent="1" foregroundColor="secondFG" halign="center"/>
 	</screen>
 	<screen name="ServiceScan" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<widget name="network" position="490,82" size="785,45" foregroundColor="grey" transparent="1" font="Regular;20"/>
-		<widget name="transponder" position="490,130" size="785,22" foregroundColor="grey" transparent="1" font="Regular;20"/>
-		<widget name="scan_state" position="490,155" size="785,22" foregroundColor="grey" transparent="1" font="Regular;20"/>
-		<widget name="pass" position="490,180" size="785,22" foregroundColor="grey" transparent="1" font="Regular;20"/>
-		<widget name="scan_progress" position="490,210" size="785,20" borderWidth="3" borderColor="black"/>
-		<widget name="servicelist" position="590,260" size="660,392" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="1" foregroundColor="grey" itemHeight="28" enableWrapAround="1"/>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-s.png" position="200,450" size="64,64" transparent="1" alphatest="blend">
+		<panel name="BasicTemplate3"/>
+		<panel name="Red2Panel"/>
+		<panel name="Green2Panel"/>
+		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-s.png" position="5,82" size="64,64" transparent="1" alphatest="blend">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-c.png" position="200,450" size="64,64" transparent="1" alphatest="on">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-c.png" position="5,82" size="64,64" transparent="1" alphatest="on">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-t.png" position="200,450" size="64,64" transparent="1" alphatest="on">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-t.png" position="5,82" size="64,64" transparent="1" alphatest="on">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
+		<widget name="network" position="100,82" size="530,45" valign="center" foregroundColor="grey" transparent="1" font="Regular;20"/>
+		<widget name="transponder" position="50,200" size="580,22" foregroundColor="grey" transparent="1" font="Regular;20"/>
+		<widget name="scan_state" position="50,230" size="580,22" foregroundColor="grey" transparent="1" font="Regular;20"/>
+		<widget name="pass" position="50,250" size="580,22" foregroundColor="grey" transparent="1" font="Regular;20"/>
+		<widget name="scan_progress" position="50,280" size="480,15" pixmap="infobar/progress_big.png" borderWidth="1" borderColor="grey"/>
+		<widget name="servicelist" position="650,80" size="620,584" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="1" foregroundColor="grey" itemHeight="28" enableWrapAround="1"/>
 	</screen>
 	<screen name="SatNimSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
