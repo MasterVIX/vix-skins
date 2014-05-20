@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.77	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.78	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -3359,15 +3359,15 @@ background
 		<panel name="RedBPanel"/>
 		<eLabel text="Cancel" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
 		<panel name="GreenBPanel"/>
-		<eLabel text="OK" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
+		<eLabel text="Save" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
 		<widget name="config" scrollbarMode="showOnDemand" position="520,82" size="755,555" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="introduction" font="Regular;22" position="10,400" size="477,100" halign="center" selectionDisabled="1" foregroundColor="secondFG" transparent="1"/>
 	</screen>
 	<screen  name="FastScanStatus" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="frontend" pixmap="icons/scan-s.png" position="590,110" size="64,64" transparent="1" alphatest="on"/>
-		<widget name="scan_state" position="660,110" zPosition="2" size="400,30" font="Regular;18"/>
-		<widget name="scan_progress" position="660,145" size="400,15" pixmap="progress_big.png" borderWidth="2" borderColor="black"/>
+		<widget name="frontend" pixmap="icons/scan-s.png" position="490,110" size="64,64" transparent="1" alphatest="on"/>
+		<widget name="scan_state" position="600,110" zPosition="2" size="700,30" font="Regular;18"/>
+		<widget name="scan_progress" position="600,145" size="480,15" pixmap="infobar/progress_big.png" borderWidth="1" borderColor="grey"/>
 	</screen>
 	<!-- ##LCN Scanner## -->
 	<screen name="LCNScannerPlugin" position="0,0" size="1280,720" flags="wfNoBorder" title="LCN Scanner">
