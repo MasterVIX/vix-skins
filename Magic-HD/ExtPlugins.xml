@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.78	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.79	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -172,6 +172,72 @@
 					"itemHeight": 25
 					}
 				</convert>
+	</screen>
+	<!-- ## Classic NetRadio ## -->
+	<screen name="AboutScreen" position="0,0" size="1280,720" title="NetRadio Classic v.2.2c-Tunisiasat" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="RedBPanel"/>
+		<eLabel text="Exit" backgroundColor="secondBG" font="Regular;22" halign="left" position="80,682" size="220,26" transparent="1" zPosition="1"/>
+		<widget name="text" font="Regular;24" position="520,82" size="755,583" transparent="1"/>
+	</screen>
+	<screen name="Menuscrn" position="0,0" size="1280,720" title="NetRadio Classic Menu" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="RedBPanel"/>
+		 <eLabel text="Exit" backgroundColor="secondBG" font="Regular;22" halign="left" position="80,682" size="220,26" transparent="1" zPosition="1"/>
+		<widget name="menu" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
+	</screen>
+	<screen name="Favoritescrn" position="0,0" size="1280,720" title="NetRadio Classic Favorites" flags="wfNoBorder">
+		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Format:%-H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<panel name="Yellow1Panel"/>
+		<panel name="Blue1Panel"/>
+		<widget name="favoritemenu" scrollbarMode="showOnDemand" font="Regular;24" position="65,82" size="1100,585" transparent="1"/>
+	</screen>
+	<screen name="playingscrn" position="0,0" size="1280,720" title="NetRadio Classic Playing" flags="wfNoBorder">
+		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" foregroundColor="grey" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
+		<widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
+			<convert type="ClockToText">Full</convert>
+		</widget>
+		<panel name="RedBPanel"/>
+		<eLabel text="Exit" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" foregroundColor="grey" transparent="1" zPosition="1"/>
+		<widget name="titel" font="Regular;30" position="40,140" size="1200,400" valign="center" halign="center" foregroundColor="yellow" transparent="1"/>
+		<eLabel text="Favorite" backgroundColor="secondBG" font="Regular;24" halign="right" position="614,682" size="220,30" foregroundColor="grey" transparent="1" zPosition="1"/>
+		<widget name="leagueNumberWidget" position="835,682" size="60,30" transparent="1" foregroundColor="grey" halign="center" font="Regular;24"/>
+	</screen>
+	<screen name="StationsScreen" position="0,0" size="1280,720" title="Add to Favorites" flags="wfNoBorder">
+		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Format:%-H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<panel name="RedBPanel"/>
+		<panel name="BlueBPanel"/>
+		<eLabel text="Exit" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
+		<widget name="ButtonBluetext" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
+		<widget name="stationmenu" scrollbarMode="showOnDemand" font="Regular;26" position="15,82" size="1250,583" transparent="1"/>
+	</screen>
+	<screen name="ConfigListScreen" position="0,0" size="1280,720" title="Add to Favorites" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="RedBPanel"/>
+		<panel name="BlueBPanel"/>
+		<eLabel text="Exit" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
+		<widget name="ButtonBluetext" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
+		<widget name="stationmenu" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
 	</screen>
 	<!-- ##SHOUTcast## -->
 	<screen name="SHOUTcastWidget" position="0,0" size="1280,720" transparent="0" backgroundColor="black" flags="wfNoBorder">
@@ -769,7 +835,7 @@
 		<panel name="Green2Panel"/>
 		<widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;22" zPosition="3" position="520,82" size="755,583" transparent="1"/>
 	</screen>
-	<!-- ##Merlin## -->
+	<!-- ## Merlin## -->
 	<screen name="iDreamAddToDatabase" position="0,0" size="1280,720" flags="wfNoBorder">
 		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
 		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
@@ -921,7 +987,7 @@
 		<widget name="rec_pic" pixmap="Magic-HD/icons/icon_rec.png" position="720,405" size="36,20" zPosition="2" alphatest="on"/>
 		<widget name="info_pic" pixmap="Magic-HD/buttons/key_info.png" position="760,402" size="36,20" zPosition="2" alphatest="on"/>
 	</screen>
-	<!-- ## EPG ## -->
+	<!-- ## EPG refresh ## -->
 	<screen name="EPGRefreshConfiguration" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="Red2Panel"/>
@@ -1420,72 +1486,6 @@ background
 		<widget name="RemainingTime" position="15,450" size="477,60" zPosition="4" font="Regular;20" foregroundColor="#cccccc"/>
 		<widget name="PluginInfo" position="15,520" size="477,60" zPosition="4" font="Regular;20" foregroundColor="#cccccc"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-	</screen>
-	<!-- ## Classic NetRadio ## -->
-	<screen name="AboutScreen" position="0,0" size="1280,720" title="NetRadio Classic v.2.2c-Tunisiasat" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel"/>
-		<eLabel text="Exit" backgroundColor="secondBG" font="Regular;22" halign="left" position="80,682" size="220,26" transparent="1" zPosition="1"/>
-		<widget name="text" font="Regular;24" position="520,82" size="755,583" transparent="1"/>
-	</screen>
-	<screen name="Menuscrn" position="0,0" size="1280,720" title="NetRadio Classic Menu" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel"/>
-		 <eLabel text="Exit" backgroundColor="secondBG" font="Regular;22" halign="left" position="80,682" size="220,26" transparent="1" zPosition="1"/>
-		<widget name="menu" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-	</screen>
-	<screen name="Favoritescrn" position="0,0" size="1280,720" title="NetRadio Classic Favorites" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
-		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
-		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
-			<convert type="ClockToText">Format:%-H:%M</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<panel name="Red1Panel"/>
-		<panel name="Green1Panel"/>
-		<panel name="Yellow1Panel"/>
-		<panel name="Blue1Panel"/>
-		<widget name="favoritemenu" scrollbarMode="showOnDemand" font="Regular;24" position="65,82" size="1100,585" transparent="1"/>
-	</screen>
-	<screen name="playingscrn" position="0,0" size="1280,720" title="NetRadio Classic Playing" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
-		<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" foregroundColor="grey" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
-		<widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
-			<convert type="ClockToText">Full</convert>
-		</widget>
-		<panel name="RedBPanel"/>
-		<eLabel text="Exit" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" foregroundColor="grey" transparent="1" zPosition="1"/>
-		<widget name="titel" font="Regular;30" position="40,140" size="1200,400" valign="center" halign="center" foregroundColor="yellow" transparent="1"/>
-		<eLabel text="Favorite" backgroundColor="secondBG" font="Regular;24" halign="right" position="614,682" size="220,30" foregroundColor="grey" transparent="1" zPosition="1"/>
-		<widget name="leagueNumberWidget" position="835,682" size="60,30" transparent="1" foregroundColor="grey" halign="center" font="Regular;24"/>
-	</screen>
-	<screen name="StationsScreen" position="0,0" size="1280,720" title="Add to Favorites" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
-		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
-		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
-			<convert type="ClockToText">Format:%-H:%M</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<panel name="RedBPanel"/>
-		<panel name="BlueBPanel"/>
-		<eLabel text="Exit" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
-		<widget name="ButtonBluetext" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
-		<widget name="stationmenu" scrollbarMode="showOnDemand" font="Regular;26" position="15,82" size="1250,583" transparent="1"/>
-	</screen>
-	<screen name="ConfigListScreen" position="0,0" size="1280,720" title="Add to Favorites" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel"/>
-		<panel name="BlueBPanel"/>
-		<eLabel text="Exit" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
-		<widget name="ButtonBluetext" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
-		<widget name="stationmenu" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
 	</screen>
 	<!-- ## TV Charts ## -->
 	<screen name="TVChartsMain" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2217,6 +2217,21 @@ background
 		<panel name="BasicTemplate"/>
 		<widget name="streamlist" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
+	<!-- ## VU+ Wireless AP ## -->
+	<screen name="WirelessAccessPoint" position="0,0" size="1280,720" flags="wfNoBorder" title="Wireless Access Point">
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel"/>
+		<panel name="Green2Panel"/>
+<!--		<panel name="Yellow2Panel"/>
+		<panel name="Blue2Panel"/>-->
+		<widget name="config" position="490,80" size="785,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<widget source="IPAddress_text" render="Label" position="55,480" size="190,21" font="Regular;22" foregroundColor="secondFG"/>
+		<widget source="IPAddress" render="Label" position="250,480" size="240,21" font="Regular;22" foregroundColor="secondFG"/>
+		<widget source="Netmask_text" render="Label" position="55,510" size="190,21" font="Regular;22" foregroundColor="secondFG"/>
+		<widget source="Netmask" render="Label" position="250,510" size="240,21" font="Regular;22" foregroundColor="secondFG"/>
+		<widget source="Gateway_text" render="Label" position="55,540" size="190,21" font="Regular;22" foregroundColor="secondFG"/>
+		<widget source="Gateway" render="Label" position="250,540" size="240,21" font="Regular;22" foregroundColor="secondFG"/>
+	</screen>
 	<!-- ## Formel1 ## -->
 	<screen name="Formel1Preview" position="0,0" size="1280,720" flags="wfNoBorder" title="Formel1 2011 V 0.8">
 		<panel name="BasicTemplate"/>
@@ -2849,7 +2864,7 @@ background
 		<widget name="readCache" position="520,400" size="755,40" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
 		<widget name="temp" position="520,440" size="755,40" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
 	</screen>
-	<!-- ##VideoEnhancement## -->
+	<!-- ## VideoEnhancement## -->
 	<screen name="VideoEnhancementPreview" position="fill" title="VideoEnhancementPreview" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap alphatest="off" pixmap="infobar/hd.png" position="0,500" size="1280,220" zPosition="-1"/>
 		<panel name="Red2Panel"/>
@@ -2868,7 +2883,7 @@ background
 		<widget name="footnote" position="750,657" size="350,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="grey"/>
 		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="520,500" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 	</screen>
-	<!-- ##CubicStreamer## -->
+	<!-- ## CubicStreamer## -->
 	<screen name="MainWindow" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel"/>
@@ -3082,7 +3097,7 @@ background
 		<widget name="VidPic" position="0,77" size="482,588" zPosition="1" alphatest="on"/>
 		<widget name="menuname" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 	</screen>
-	<!-- ##DiSEqC Tester## -->
+	<!-- ## DiSEqC Tester## -->
 	<screen name="DiseqcTesterNimSelection" position="0,0" size="1280,720" flags="wfNoBorder" title="Choose Tuner">
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel"/>
@@ -3166,7 +3181,7 @@ background
 		</widget>
 		<widget source="CmdText" render="Label" position="490,530" size="785,100" font="Regular;22" foregroundColor="grey"/>
 	</screen>
-	<!-- ##SDG ImageDownLoader## -->
+	<!-- ## SDG ImageDownLoader## -->
 	<screen name="s4fFeedsServersScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="Image Feeds List">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
@@ -3259,7 +3274,7 @@ background
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="490,80" size="785,584" font="Regular;22" transparent="1" foregroundColor="grey"/>
 	</screen>
-	<!-- ##MediaInfo## -->
+	<!-- ## MediaInfo## -->
 	<screen name="mediaInfoSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="MediaInfo Setup">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
@@ -3277,7 +3292,7 @@ background
 			<widget name="head" position="10,370" size="1250,25" backgroundColor="secondBG" zPosition="5" foregroundColor="secondFG" font="Regular;23" halign="center"/>
 			<widget name="dllist" position="10,395" size="1250,250" backgroundColor="secondBG" font="Regular;16" scrollbarMode="showOnDemand" transparent="0"/>
 	</screen>
-	<!-- ##IPTV-List-Updater## -->
+	<!-- ## IPTV-List-Updater## -->
 	<screen name="IPTVMain" position="0,0" size="1280,720" flags="wfNoBorder" title="IPTV Updater">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
@@ -3313,7 +3328,7 @@ background
 		<panel name="Red1Panel"/>
 		<widget name="text" position="490,80" size="785,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
-	<!-- ##AutoBouquets E2## -->
+	<!-- ## AutoBouquets E2## -->
 	<screen name="AutoBouquets" position="0,0" size="1280,720" flags="wfNoBorder" title="AutoBouquets E2 for 28.2E">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
@@ -3353,7 +3368,7 @@ background
 		<panel name="Green1Panel"/>
 		<widget name="config" position="520,80" size="755,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
-	<!-- ##FastScan## -->
+	<!-- ## FastScan## -->
 	<screen name="FastScanScreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel"/>
@@ -3369,7 +3384,7 @@ background
 		<widget name="scan_state" position="600,110" zPosition="2" size="700,30" font="Regular;18"/>
 		<widget name="scan_progress" position="600,145" size="480,15" pixmap="infobar/progress_big.png" borderWidth="1" borderColor="grey"/>
 	</screen>
-	<!-- ##LCN Scanner## -->
+	<!-- ## LCN Scanner## -->
 	<screen name="LCNScannerPlugin" position="0,0" size="1280,720" flags="wfNoBorder" title="LCN Scanner">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
@@ -3383,7 +3398,7 @@ background
 		<panel name="Red1Panel"/>
 		<widget name="about" position="520,82" size="755,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
-	<!-- ##EPG Translator# -->
+	<!-- ## EPG Translator# -->
 	<screen name="translatorMain" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
 		<panel name="YellowBPanel"/>
@@ -3407,12 +3422,12 @@ background
 		<panel name="BasicTemplate"/>
 		<widget name="donate" position="520,80" size="755,584" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" />
 	</screen>
-	<!-- ##AutoResolution# -->
+	<!-- ## AutoResolution# -->
 	<screen name="ResolutionLabel" position="0,0" size="330,55" backgroundColor="transparent" flags="wfNoBorder" >
 		<widget name="content" position="5,5" size="320,22" font="Regular;20" borderWidth="3" borderColor="black" transparent="1" />
 		<widget name="restxt" position="5,26" size="320,22" font="Regular;20" borderWidth="3" borderColor="black" transparent="1" />
 	</screen>
-	<!-- ##Movie Browser# -->
+	<!-- ## Movie Browser# -->
 	<screen name="movieBrowserConfig" position="0,0" size="1280,720" flags="wfNoBorder" title="Movie Browser Setup">
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel"/>
@@ -3451,7 +3466,7 @@ background
 		<widget name="donatetext" position="543,150" size="425,360" font="Regular;18" halign="center" valign="center" transparent="1" zPosition="2" />
 		<widget name="donate" position="620,570" size="125,46" alphatest="blend" zPosition="1"/>
 	</screen>
-	<!-- ##WikiPedia# -->
+	<!-- ## WikiPedia# -->
 	<screen name="searchWikipedia" position="0,0" size="1280,720" flags="wfNoBorder" title="Wikipedia - Search for Movie, Director or Actor">
 		<panel name="BasicTemplate"/>
 		<widget name="list" position="520,80" size="755,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
