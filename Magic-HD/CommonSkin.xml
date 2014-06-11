@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Common Vs 7.14 	-->
+	<!--	Skin: Magic-HD Common Vs 7.15 	-->
 	<!--	This skin is part of the skin Magic-HD; the same license applies.	-->
 
 	<!-- templates -->
@@ -175,34 +175,34 @@
 	</screen>
 
 	<screen name="PlayerPanel">
-		<widget source="session.CurrentService" render="Label" position="240,0" size="780,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
+		<widget source="session.CurrentService" render="Label" position="240,0" size="780,52" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<eLabel backgroundColor="infobarBG" position="120,49" size="1040,14" zPosition="0"/>
+		<eLabel backgroundColor="infobarBG" position="120,59" size="1040,14" zPosition="0"/>
 		<widget name="statusicon" position="5,54" size="20,20" pixmaps="Magic-HD/icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on" />
 		<widget name="speed" position="30,54" size="80,15" font="Regular; 17" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" transparent="1" zPosition="5" />
-		<ePixmap pixmap="Magic-HD/dvr/scale1024.png" position="128,54" size="1024,4" zPosition="1" />
-		<widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="Magic-HD/dvr/position_pointer1024.png:1012,0">
+		<ePixmap pixmap="Magic-HD/dvr/scale1024.png" position="128,64" size="1024,4" zPosition="1" />
+		<widget source="session.CurrentService" render="PositionGauge" position="128,60" size="1024,12" transparent="1" zPosition="4" pointer="Magic-HD/dvr/position_pointer1024.png:1012,0">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="40,13" size="200,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
+		<widget source="session.CurrentService" render="Label" position="40,23" size="200,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="1025,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
+		<widget source="session.CurrentService" render="Label" position="1025,23" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="1145,13" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
+		<widget source="session.CurrentService" render="Label" position="1145,23" size="120,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD/infobar/ico_dolby_on.png" position="986,63" size="60,24" zPosition="2" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD/infobar/ico_dolby_on.png" position="986,73" size="60,24" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD/infobar/ico_hd_on.png" position="1048,63" size="40,21" zPosition="4" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD/infobar/ico_hd_on.png" position="1048,73" size="40,21" zPosition="4" alphatest="on">
 			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD/infobar/ico_format_on.png" position="1090,63" size="40,21" zPosition="2" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD/infobar/ico_format_on.png" position="1090,73" size="40,21" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -268,7 +268,6 @@
 		</widget>
 		<widget render="VideoSize" source="session.CurrentService" position="1030,590" size="120,20" backgroundColor="secondBG" font="Regular;19" foregroundColor="grey" transparent="1" zPosition="10" halign="right" />
 	</screen>
-
 
 	<!-- end of Templates -->
 </skin>
