@@ -1,6 +1,6 @@
 ﻿<!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Common Vs 7.15 	-->
+	<!--	Skin: Magic-HD Common Vs 7.16 	-->
 	<!--	This skin is part of the skin Magic-HD; the same license applies.	-->
 
 	<!-- templates -->
@@ -263,6 +263,13 @@
 		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="Magic-HD/icons/icon_unstableupdate.png" position="5,555" size="32,32" zPosition="10" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
+		
+		<widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD/buttons/rec.png" position="1246,555" size="20,20" zPosition="3" alphatest="on">
+		<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+
+		
+
 		<widget source="session.CurrentService" render="Label" position="175,555" size="500,17" backgroundColor="secondBG" transparent="1" noWrap="1" font="Regular; 14" halign="left">
 			<convert type="ServiceName">Provider</convert>
 		</widget>
