@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Vs 8.079 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 8.080 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -1747,66 +1747,6 @@ self.autoResize()
 		<widget name="labstop" position="780,260" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
 		<widget name="labrun" position="780,260" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
 	</screen>
-	<screen name="NetworkNfs" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel"/>
-		<panel name="Green1Panel"/>
-		<panel name="Yellow1Panel"/>
-		<panel name="Blue1Panel"/>
-		<widget name="labactive" position="780,140" size="250,30" font="Regular;20" valign="center" transparent="0"/>
-		<widget name="lab1" position="620,140" size="150,30" font="Regular;20" valign="center" transparent="0"/>
-		<widget name="lab2" position="620,260" size="150,30" font="Regular;20" valign="top" transparent="0"/>
-		<widget name="labstop" position="780,260" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
-		<widget name="labrun" position="780,260" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
-	</screen>
-	<screen name="NetworkOpenvpn" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel"/>
-		<panel name="Green1Panel"/>
-		<panel name="Yellow1Panel"/>
-		<panel name="Blue1Panel"/>
-		<widget name="labactive" position="780,140" size="250,30" font="Regular;20" valign="center" transparent="0"/>
-		<widget name="lab1" position="620,140" size="150,30" font="Regular;20" valign="center" transparent="0"/>
-		<widget name="lab2" position="620,260" size="150,30" font="Regular;20" valign="top" transparent="0"/>
-		<widget name="labstop" position="780,260" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
-		<widget name="labrun" position="780,260" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
-	</screen>
-	<screen name="NetworkSABnzbd" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel"/>
-		<panel name="Green1Panel"/>
-		<panel name="Yellow1Panel"/>
-		<panel name="Blue1Panel"/>
-		<widget name="labactive" position="780,140" size="250,30" font="Regular;20" valign="center" transparent="0"/>
-		<widget name="lab1" position="620,140" size="150,30" font="Regular;20" valign="center" transparent="0"/>
-		<widget name="lab2" position="620,260" size="150,30" font="Regular;20" valign="top" transparent="0"/>
-		<widget name="labstop" position="780,260" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
-		<widget name="labrun" position="780,260" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
-	</screen>
-	<screen name="NetworkSamba" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel"/>
-		<panel name="Green1Panel"/>
-		<panel name="Yellow1Panel"/>
-		<panel name="Blue1Panel"/>
-		<widget name="labactive" position="780,140" size="250,30" font="Regular;20" valign="center" transparent="0"/>
-		<widget name="lab1" position="620,140" size="150,30" font="Regular;20" valign="center" transparent="0"/>
-		<widget name="lab2" position="620,260" size="150,30" font="Regular;20" valign="top" transparent="0"/>
-		<widget name="labstop" position="780,260" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
-		<widget name="labrun" position="780,260" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
-	</screen>
-	<screen name="NetworkAfp" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel"/>
-		<panel name="Green1Panel"/>
-		<panel name="Yellow1Panel"/>
-		<panel name="Blue1Panel"/>
-		<widget name="labactive" position="780,140" size="250,30" font="Regular;20" valign="center" transparent="0"/>
-		<widget name="lab1" position="620,140" size="150,30" font="Regular;20" valign="center" transparent="0"/>
-		<widget name="lab2" position="620,260" size="150,30" font="Regular;20" valign="top" transparent="0"/>
-		<widget name="labstop" position="780,260" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
-		<widget name="labrun" position="780,260" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
-	</screen>
 	<screen name="NetworkuShare" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
@@ -3522,6 +3462,66 @@ self.autoResize()
 		<widget source="fixed_address" render="Label" position="5,500" size="500,50" zPosition="10" foregroundColor="secondFG" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 	<!-- ##Open-ATV Info Panel## -->
+	<screen name="NetworkNfs" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<panel name="Yellow1Panel"/>
+		<panel name="Blue1Panel"/>
+		<widget name="labactive" position="780,140" size="250,30" font="Regular;20" valign="center" transparent="0"/>
+		<widget name="lab1" position="620,140" size="150,30" font="Regular;20" valign="center" transparent="0"/>
+		<widget name="lab2" position="620,260" size="150,30" font="Regular;20" valign="top" transparent="0"/>
+		<widget name="labstop" position="780,260" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
+		<widget name="labrun" position="780,260" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
+	</screen>
+	<screen name="NetworkOpenvpn" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<panel name="Yellow1Panel"/>
+		<panel name="Blue1Panel"/>
+		<widget name="labactive" position="780,140" size="250,30" font="Regular;20" valign="center" transparent="0"/>
+		<widget name="lab1" position="620,140" size="150,30" font="Regular;20" valign="center" transparent="0"/>
+		<widget name="lab2" position="620,260" size="150,30" font="Regular;20" valign="top" transparent="0"/>
+		<widget name="labstop" position="780,260" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
+		<widget name="labrun" position="780,260" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
+	</screen>
+	<screen name="NetworkSABnzbd" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<panel name="Yellow1Panel"/>
+		<panel name="Blue1Panel"/>
+		<widget name="labactive" position="780,140" size="250,30" font="Regular;20" valign="center" transparent="0"/>
+		<widget name="lab1" position="620,140" size="150,30" font="Regular;20" valign="center" transparent="0"/>
+		<widget name="lab2" position="620,260" size="150,30" font="Regular;20" valign="top" transparent="0"/>
+		<widget name="labstop" position="780,260" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
+		<widget name="labrun" position="780,260" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
+	</screen>
+	<screen name="NetworkSamba" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<panel name="Yellow1Panel"/>
+		<panel name="Blue1Panel"/>
+		<widget name="labactive" position="780,140" size="250,30" font="Regular;20" valign="center" transparent="0"/>
+		<widget name="lab1" position="620,140" size="150,30" font="Regular;20" valign="center" transparent="0"/>
+		<widget name="lab2" position="620,260" size="150,30" font="Regular;20" valign="top" transparent="0"/>
+		<widget name="labstop" position="780,260" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
+		<widget name="labrun" position="780,260" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
+	</screen>
+	<screen name="NetworkAfp" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<panel name="Yellow1Panel"/>
+		<panel name="Blue1Panel"/>
+		<widget name="labactive" position="780,140" size="250,30" font="Regular;20" valign="center" transparent="0"/>
+		<widget name="lab1" position="620,140" size="150,30" font="Regular;20" valign="center" transparent="0"/>
+		<widget name="lab2" position="620,260" size="150,30" font="Regular;20" valign="top" transparent="0"/>
+		<widget name="labstop" position="780,260" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
+		<widget name="labrun" position="780,260" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
+	</screen>
 	<screen name="Infopanel" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
 		<widget name="Mlist" position="490,80" size="785,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="55" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
@@ -3649,5 +3649,47 @@ self.autoResize()
 		<panel name="Green1Panel"/>
 		<widget name="filelist" position="490,80" size="785,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<widget source="message" render="Label" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
+	</screen>
+	<screen name="SoftcamPanel" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<panel name="Yellow1Panel"/>
+		<panel name="Blue1Panel"/>
+		<widget name="actifcam" position="5,380" size="477,45" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
+		<widget name="actifcam2" position="5,430" size="477,45" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
+		<widget name="ecminfo" position="5,480" size="477,150" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
+		<widget name="config" position="490,80" size="785,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+	<screen name="ShowSoftcamPackages" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="Red2Panel"/>
+		<panel name="Green2Panel"/>
+		<ePixmap pixmap="Magic-HD/buttons/key_ok.png" alphatest="on" position="1090,682" size="35,26"/>
+		<eLabel text="Install" backgroundColor="secondBG" font="Regular;22" halign="left" position="1125,682" size="220,26" transparent="1" zPosition="1"/>
+			<widget source="list" render="Listbox" position="490,80" size="785,572" scrollbarMode="showOnDemand" transparent="1" foregroundColor="grey" enableWrapAround="1">
+				<convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (5, 1), size = (540, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+							MultiContentEntryText(pos = (5, 26), size = (540, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+							MultiContentEntryPixmapAlphaTest(pos = (545, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
+							MultiContentEntryPixmapAlphaTest(pos = (5, 50), size = (510, 2), png = 5), # index 4 is the div pixmap
+						],
+					"fonts": [gFont("Regular", 22),gFont("Regular", 14)],
+					"itemHeight": 52
+					}
+				</convert>
+			</widget>
+	</screen>
+	<screen name="QuickMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<panel name="Yellow1Panel"/>
+		<panel name="Blue1Panel"/>
+		<widget name="list" position="490,80" size="370,584" font="Regular;22" itemHeight="50" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<widget name="sublist" position="870,80" size="300,584" font="Regular;22" itemHeight="50" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<ePixmap pixmap="div-v.png" position='865,80' size='3,584' />
+		<widget name="description" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
 	</screen>
 </skin>
