@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.81	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.82	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -3334,8 +3334,10 @@ background
 			<widget name="otherextra" position="750,130" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
 			<widget name="scriptc" position="780,130" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0"/>
 			<widget name="scriptcheck" position="930,130" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
-		<widget name="hd" position="600,170" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0"/>
-		<widget name="hdcheck" position="750,170" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
+<!--		<widget name="hd" position="600,170" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0"/>
+		<widget name="hdcheck" position="750,170" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>-->
+			<widget name="picons" position="600,170" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0"/>
+			<widget name="piconscheck" position="750,170" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
 		<widget name="num" position="780,170" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0"/>
 		<widget name="numcheck" position="930,170" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
 		<widget name="nit" position="600,210" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0"/>
@@ -3346,12 +3348,12 @@ background
 		<widget name="parentalcheck" position="750,250" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
 		<widget name="def" position="780,250" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0"/>
 		<widget name="defcheck" position="930,250" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
-		<widget name="ordering" position="600,290" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0"/>
+		<widget name="ordering" position="550,290" size="190,50" font="Regular; 22" halign="right" zPosition="2" transparent="0"/>
 		<widget name="orderingcheck" position="750,290" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
 		<widget name="fta" position="780,290" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0"/>
 		<widget name="ftacheck" position="930,290" size="32,32" alphatest="on" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png"/>
-		<widget name="status" position="600,330" size="140,30" font="Regular; 22" halign="right" zPosition="2" transparent="0"/>
-		<widget name="status2" position="750,330" size="205,30" font="Regular;22" zPosition="5"/>
+		<widget name="status" position="600,500" size="140,30" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
+		<widget name="status2" position="750,500" size="205,30" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
 	</screen>
 	<screen name="AutoBouquetsMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
