@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Vs 8.080 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 8.081 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -397,7 +397,7 @@
 		<widget name="channel" position="15,390" size="460,52" transparent="1" foregroundColor="selectedFG" font="Regular;24" halign="center"/>
 		<widget name="datetime" position="15,463" size="460,30" transparent="1" font="Regular;22" halign="center"/>
 		<widget name="duration" position="15,493" size="460,30" transparent="1" font="Regular;22" halign="center"/>
-		<widget name="FullDescription" position="520,82" font="Regular;24" size="755,583" foregroundColor="grey" transparent="1"/>
+		<widget name="FullDescription" position="520,82" font="Regular;264" size="755,583" foregroundColor="grey" transparent="1"/>
 		<widget source="session.Event_Now" render="Label" position="15,525" size="460,30" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="center">
 			<convert type="EventName">Genre</convert>
 		</widget>
@@ -877,10 +877,6 @@
 		<panel name="BasicTemplate"/>
 		<widget name="liste" scrollbarMode="showOnDemand" position="520,82" size="755,583" transparent="1"/>
 		<widget name="label1" position="15,400" size="447,200" font="Regular;24" halign="center" valign="center" foregroundColor="secondFG"/>
-	</screen>
-	<screen name="Console" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<widget name="text" position="520,82" size="755,583" font="Console;22" foregroundColor="grey"/>
 	</screen>
 	<screen name="EcmExtraWindow" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2229,6 +2225,15 @@ self.autoResize()
 		<panel name="Yellow1Panel"/>
 		<panel name="Blue1Panel"/>
 		<widget name="config" position="520,80" size="755,588" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" itemHeight="28" enableWrapAround="1"/>
+	</screen>
+	<screen name="SelectSatsEntryScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<panel name="Yellow1Panel"/>
+		<panel name="Blue1Panel"/>
+		<widget name="list" position="490,80" size="785,560" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<widget name="hint" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
 	</screen>
 	<screen name="ScanSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
