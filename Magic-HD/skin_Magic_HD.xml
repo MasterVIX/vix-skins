@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Vs 8.081 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 8.082 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -444,15 +444,15 @@
 		<panel name="Blue1Panel"/>
 		<panel name="MenuBPanel"/>
 		<panel name="InfoBPanel"/>
-		<ePixmap pixmap="Magic-HD/dvr/scale2.png" position="5,110" size="477,12" zPosition="1" alphatest="on"/>
-		<eLabel backgroundColor="infobarBG" position="5,111" size="477,14" zPosition="0"/>
-		<widget source="session.CurrentService" render="PositionGauge" position="5,110" size="477,12" transparent="1" zPosition="5" pointer="Magic-HD/dvr/position_pointer2.png:477,0">
+		<ePixmap pixmap="Magic-HD/dvr/scale2.png" position="0,110" size="477,12" zPosition="1" alphatest="on"/>
+		<eLabel backgroundColor="infobarBG" position="0,111" size="477,14" zPosition="0"/>
+		<widget source="session.CurrentService" render="PositionGauge" position="0,110" size="477,12" transparent="1" zPosition="5" pointer="Magic-HD/dvr/position_pointer2.png:477,0">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Progress" pixmap="Magic-HD/dvr/position_pointer2.png" position="5,110" size="477,9" backgroundColor="un33333a" transparent="0" zPosition="4" borderWidth="0">
+		<widget source="session.Event_Now" render="Progress" pixmap="Magic-HD/dvr/position_pointer2.png" position="0,110" size="477,9" backgroundColor="un33333a" transparent="0" zPosition="4" borderWidth="0">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="5,90" size="90,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="left">
+		<widget source="session.CurrentService" render="Label" position="0,90" size="90,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="left">
 			<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="5,90" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="left">
