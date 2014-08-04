@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.83	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.84	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -783,7 +783,19 @@
 		<widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,572" transparent="1"/>
 	</screen>
 	<screen name="ForecaPreview" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
+		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<widget source="Titel" render="Label" position="5,15" zPosition="3" size="968,40" font="Regular;25" valign="center" halign="center" transparent="1" foregroundColor="#ffffff"/>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Format:%-H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget source="session.VideoPicture" render="Pig" position="0,77" size="482,273" backgroundColor="transparent" zPosition="1"/>
+		<widget source="session.CurrentService" render="Label" position="5,85" size="477,20" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="secondFG" borderWidth="2" noWrap="1" font="Regular;19" borderColor="black" valign="center" halign="center">
+			<convert type="ServiceName">Name</convert>
+		</widget>
 		<panel name="Red2Panel"/>
 		<panel name="Green2Panel"/>
 		<panel name="Yellow2Panel"/>
