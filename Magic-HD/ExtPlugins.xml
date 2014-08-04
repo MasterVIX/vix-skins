@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.84	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.85	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -114,8 +114,8 @@
 				}
 				</convert>
 		</widget>
-		<widget alphatest="on" name="starsbg" pixmap="dvr/starsbar_empty.png" position="260,520" size="100,20" transparent="1" zPosition="5"/>
-		<widget name="stars" pixmap="dvr/starsbar_filled.png" position="260,520" size="100,20" transparent="1" zPosition="6"/>
+		<widget alphatest="on" name="Magic-HD/starsbg" pixmap="dvr/starsbar_empty.png" position="260,520" size="100,20" transparent="1" zPosition="5"/>
+		<widget name="stars" pixmap="Magic-HD/dvr/starsbar_filled.png" position="260,520" size="100,20" transparent="1" zPosition="6"/>
 		<widget font="Regular;20" halign="left" name="author" position="70,400" size="300,24" transparent="1" valign="top" zPosition="10"/>
 		<widget font="Regular;20" halign="left" name="duration" position="380,400" size="200,24" transparent="1" valign="top" zPosition="10"/>
 		<widget font="Regular;20" halign="left" name="published" position="70,460" size="300,24" transparent="1" valign="top" zPosition="10"/>
@@ -187,8 +187,8 @@
 		<widget name="menu" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
 	</screen>
 	<screen name="Favoritescrn" position="0,0" size="1280,720" title="NetRadio Classic Favorites" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -203,8 +203,8 @@
 		<widget name="favoritemenu" scrollbarMode="showOnDemand" font="Regular;24" position="65,82" size="1100,585" transparent="1"/>
 	</screen>
 	<screen name="playingscrn" position="0,0" size="1280,720" title="NetRadio Classic Playing" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" foregroundColor="grey" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
 			<convert type="ClockToText">Full</convert>
@@ -216,8 +216,8 @@
 		<widget name="leagueNumberWidget" position="835,682" size="60,30" transparent="1" foregroundColor="grey" halign="center" font="Regular;24"/>
 	</screen>
 	<screen name="StationsScreen" position="0,0" size="1280,720" title="Add to Favorites" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -241,8 +241,8 @@
 	</screen>
 	<!-- ##SHOUTcast## -->
 	<screen name="SHOUTcastWidget" position="0,0" size="1280,720" transparent="0" backgroundColor="black" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
 		</widget>
@@ -745,8 +745,8 @@
 		<widget name="menu" position="590,115" size="600,400" transparent="1" scrollbarMode="showOnDemand"/>
 	</screen>
 	<screen name="weatherview" position="2,2" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -775,7 +775,7 @@
 	<!-- ## Foreca Weather forecast ## -->
 	<screen name="CityPanel" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="buttons/key_ok.png" position="15,682" size="26,26" alphatest="on"/>
+		<ePixmap pixmap="Magic-HD/buttons/key_ok.png" position="15,682" size="26,26" alphatest="on"/>
 		<panel name="Green2Panel"/>
 		<panel name="Yellow2Panel"/>
 		<panel name="Blue2Panel"/>
@@ -783,8 +783,8 @@
 		<widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,572" transparent="1"/>
 	</screen>
 	<screen name="ForecaPreview" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Titel" render="Label" position="5,15" zPosition="3" size="968,40" font="Regular;25" valign="center" halign="center" transparent="1" foregroundColor="#ffffff"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -802,7 +802,7 @@
 		<panel name="Blue2Panel"/>
 		<ePixmap pixmap="Magic-HD/buttons/key_menu.png" alphatest="on" position="80,550" size="35,25"/>
 		<ePixmap pixmap="Magic-HD/buttons/key_info.png" alphatest="on" position="80,600" size="35,25"/>
-		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="80,500" size="35,26"/>
+		<ePixmap pixmap="Magic-HD/buttons/key_ok.png" alphatest="on" position="80,500" size="35,26"/>
 		<widget source="key_ok" render="Label" position="140,500" size="220,26" backgroundColor="secondBG" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
 		<widget source="key_menu" render="Label" position="140,550" size="220,26" backgroundColor="secondBG" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
 		<widget source="key_info" render="Label" position="140,600" size="220,26" backgroundColor="secondBG" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
@@ -837,8 +837,8 @@
 	</screen>
 	<!-- ## Merlin## -->
 	<screen name="iDreamAddToDatabase" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -851,8 +851,8 @@
 		<widget name="output" position="520,82" size="755,555" backgroundColor="background" transparent="1" font="Regular;22"/>
 	</screen>
 	<screen name="iDreamMerlin" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -869,8 +869,8 @@
 		<widget name="list" position="100,125" size="1100,500" itemHeight="28" zPosition="3" transparent="1" scrollbarMode="showOnDemand" font="Regular;23" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 	<screen name="MerlinMusicPlayerFileList" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -882,8 +882,8 @@
 		<widget name="list" position="100,125" size="1100,500" itemHeight="28" zPosition="3" transparent="1" scrollbarMode="showOnDemand" font="Regular;23" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 	<screen name="MerlinMusicPlayerLyrics" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -896,8 +896,8 @@
 		<widget name="lyric_text" position="520,145" size="755,480" backgroundColor="background" zPosition="2" transparent="1" font="Regular;22"/>
 	</screen>
 	<screen name="MerlinMusicPlayerScreen" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -905,7 +905,7 @@
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,45" size="250,25" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<widget name="coverArt" pixmap="dvr/no_coverArt.png" position="80,120" size="250,250" transparent="1" alphatest="blend"/>
+		<widget name="coverArt" pixmap="Magic-HD/dvr/no_coverArt.png" position="80,120" size="250,250" transparent="1" alphatest="blend"/>
 		<widget name="title" position=" 80,390" size="545,32" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;25"/>
 		<widget source="session.CurrentService" render="Label" position="625,390" size="120,32" backgroundColor="background" transparent="1" foregroundColor="secondFG" font="Regular;26" halign="right">
 			<convert type="ServicePosition">Length</convert>
@@ -926,7 +926,7 @@
 		<ePixmap pixmap="Magic-HD/buttons/key_info.png" alphatest="on" position="950,685" size="35,25"/>
 		<eLabel text="Next" position=" 80,688" size="70,25" transparent="1" foregroundColor="secondFG" font="Regular;24"/>
 		<widget name="nextTitle" position="150,688" size="680,26" transparent="1" foregroundColor="grey" font="Regular;22"/>
-		<ePixmap pixmap="dvr/dvr.png" position="943,459" size="324,60" transparent="1" zPosition="1" alphatest="on"/>
+		<ePixmap pixmap="Magic-HD/dvr/dvr.png" position="943,459" size="324,60" transparent="1" zPosition="1" alphatest="on"/>
 		<widget name="dvrStatus" position="853,440" size="324,60" transparent="1" pixmaps="dvr/dvr_pl.png,dvr/dvr_pau.png" alphatest="on"/>
 		<widget name="shuffle" position="630,120" size="50,25" pixmaps="dvr/placeholder1.png,dvr/shuffle.png" alphatest="on"/>
 		<widget name="repeat" position="700,120" size="50,25" pixmaps="dvr/placeholder1.png,dvr/repeat.png" alphatest="on"/>
@@ -937,8 +937,8 @@
 		<widget name="display" position="100,315" size="1100,60" zPosition="1" transparent="1" foregroundColor="secondFG" font="Regular;55"/>
 	</screen>
 	<screen name="MerlinMusicPlayerSongList" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -1026,7 +1026,7 @@
 		<panel name="BasicTemplate"/>
 		<widget name="list" font="Regular;22" position="520,90" size="755,575" transparent="1" foregroundColor="grey"/>
 		<eLabel text="Exit' = Cancel" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="305,682" size="220,26" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
+		<ePixmap pixmap="Magic-HD/buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
 		<eLabel text="Accept" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="PermanentClockScreen" position="0,0" size="120,30" zPosition="-1" backgroundColor="transparent" title="%s" flags="wfNoBorder">
@@ -1038,9 +1038,9 @@
 	<screen name="ToplevelPPanel" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate2"/>
 		<widget name="nodelist" scrollbarMode="showOnDemand" position="520,90" size="755,575" foregroundColor="grey" enableWrapAround="1"/>
-		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30"/>
+		<ePixmap pixmap="Magic-HD/buttons/key-exit.png" alphatest="on" position="305,682" size="70,30"/>
 		<eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
+		<ePixmap pixmap="Magic-HD/buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
 		<eLabel text="Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
 		<widget name="helptext" position="5,385" size="447,275" valign="center" halign="left" font="Regular;20" foregroundColor="secondFG"/>
 	</screen>
@@ -1048,30 +1048,30 @@
 		<panel name="BasicTemplate2"/>
 		<widget name="nodelist" position="520,82" size="755,583" font="Fixed;22" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="helptext" position="5,385" size="447,275" valign="center" halign="left" font="Regular;20" foregroundColor="secondFG"/>
-		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
+		<ePixmap pixmap="Magic-HD/buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
 		<eLabel text="Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30"/>
+		<ePixmap pixmap="Magic-HD/buttons/key-exit.png" alphatest="on" position="305,682" size="70,30"/>
 		<eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="File" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="progress" position="44,594" size="1194,6" pixmap="window/slider100.png" transparent="1"/>
-		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30"/>
+		<widget name="progress" position="44,594" size="1194,6" pixmap="Magic-HD/window/slider100.png" transparent="1"/>
+		<ePixmap pixmap="Magic-HD/buttons/key-exit.png" alphatest="on" position="305,682" size="70,30"/>
 		<eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
+		<ePixmap pixmap="Magic-HD/buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
 		<eLabel text="Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="Tarball" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="progress" position="44,594" size="1194,6" pixmap="window/slider100.png" transparent="1"/>
-		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30"/>
+		<widget name="progress" position="44,594" size="1194,6" pixmap="Magic-HD/window/slider100.png" transparent="1"/>
+		<ePixmap pixmap="Magic-HD/buttons/key-exit.png" alphatest="on" position="305,682" size="70,30"/>
 		<eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
+		<ePixmap pixmap="Magic-HD/buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
 		<eLabel text="Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="Execute" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" valign="center" zPosition="1"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;22" halign="right" position="1015,15" size="250,50" transparent="1" valign="center" zPosition="1">
 			<convert type="ClockToText">Full</convert>
@@ -1081,15 +1081,15 @@
 		<panel name="YellowT1Panel"/>
 		<panel name="BlueT1Panel"/>
 		<widget name="linelist" font="Fixed;20" position="15,90" size="1245,550" transparent="1"/>
-		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30"/>
+		<ePixmap pixmap="Magic-HD/buttons/key-exit.png" alphatest="on" position="305,682" size="70,30"/>
 		<eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
+		<ePixmap pixmap="Magic-HD/buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
 		<eLabel text="Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
 	</screen>
 	<!-- ## CutListEditor ## -->
 	<screen name="CutListEditor" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" zPosition="-1" size="1280,90"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" zPosition="-1" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" zPosition="-1" size="1280,90"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" zPosition="-1" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -1141,8 +1141,8 @@
 		<widget name="info" render="Label" font="Regular;22" position="5,400" size="500,200" transparent="1"/>
 	</screen>
 	<screen name="TitleList" position="0,0" size="1280,720" title="DVD Tool" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -1238,8 +1238,8 @@ background
 		<widget name="serverlist" position="590,146" size="600,308" itemHeight="28" scrollbarMode="showOnDemand"/>
 	</screen>
 	<screen name="VlcMediaListScreen" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" backgroundColor="secondBG" font="Regular;25" position="15,15" size="700,55" transparent="1" valign="center" zPosition="1"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,15" size="250,50" transparent="1" valign="center" zPosition="1">
 			<convert type="ClockToText">Full</convert>
@@ -1252,8 +1252,8 @@ background
 		<panel name="GreenT1Panel"/>
 		<panel name="YellowT1Panel"/>
 		<panel name="BlueT1Panel"/>
-		<widget name="filelist_button_sel" pixmap="buttons/key-blue.png" position="70,110" size="140,40" zPosition="1" alphatest="on"/>
-		<widget name="playlist_button_sel" pixmap="buttons/key-blue.png" position="590,110" size="140,40" zPosition="1" alphatest="on"/>
+		<widget name="filelist_button_sel" pixmap="Magic-HD/buttons/key-blue.png" position="70,110" size="140,40" zPosition="1" alphatest="on"/>
+		<widget name="playlist_button_sel" pixmap="Magic-HD/buttons/key-blue.png" position="590,110" size="140,40" zPosition="1" alphatest="on"/>
 		<widget name="filelist_text" position="70,110" size="140,40" backgroundColor="un254177" transparent="1" zPosition="2" foregroundColor="secondFG" font="Regular;18" valign="center" halign="center"/>
 		<widget name="playlist_text" position="590,110" size="140,40" backgroundColor="un254177" transparent="1" zPosition="2" foregroundColor="secondFG" font="Regular;18" valign="center" halign="center"/>
 		<widget name="filelist" position="70,150" size="520,460" itemHeight="28" scrollbarMode="showOnDemand"/>
@@ -1272,7 +1272,7 @@ background
 		<panel name="RedT1Panel"/>
 		<panel name="GreenT1Panel"/>
 		<panel name="BlueT1Panel"/>
- 		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+ 		<widget name="HelpWindow" pixmap="Magic-HD/buttons/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="Magic-HD/buttons/key_text.png" position="1250,687" zPosition="10" size="35,25" transparent="1" alphatest="on"/>
 		<widget name="config" scrollbarMode="showOnDemand" position="520,82" size="755,583" transparent="1"/>
 	</screen>
@@ -1388,7 +1388,7 @@ background
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,300" transparent="1"/>
-		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="520,500" size="1,1" zPosition="1" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="Magic-HD/buttons/vkey_icon.png" position="520,500" size="1,1" zPosition="1" transparent="1" alphatest="on"/>
 	</screen>
 	<!-- ## CleanupWizard ## -->
 	<screen name="CleanupWizardConfiguration" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1437,8 +1437,8 @@ background
 	</screen>
 <!-- ## Last.FM ## -->
 	<screen name="LastFMScreenMain" position="0,0" size="1280,720" title="Last.FM" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -1510,7 +1510,7 @@ background
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
 	</screen>
 	<screen name="GoogleMapsGeoSearchScreen" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -1546,10 +1546,10 @@ background
 	</screen>
 	<screen name="AtmoLightConfigScreen" position="0,0" size="1280,720" title="AtmoLight configuration">
 		<panel name="BasicTemplate"/>
-		<ePixmap name="r" pixmap="buttons/big-red.png" position="15,682" size="284,40" alphatest="blend"/>
-		<ePixmap name="g" pixmap="buttons/big-green.png" position="305,682" size="284,40" alphatest="blend"/>
-		<ePixmap name="y" pixmap="buttons/big-yellow.png" position="595,682" size="284,40" alphatest="blend"/>
-		<ePixmap name="b" pixmap="buttons/big-blue.png" position="890,682" size="284,40" alphatest="blend"/>
+		<ePixmap name="r" pixmap="Magic-HD/buttons/big-red.png" position="15,682" size="284,40" alphatest="blend"/>
+		<ePixmap name="g" pixmap="Magic-HD/buttons/big-green.png" position="305,682" size="284,40" alphatest="blend"/>
+		<ePixmap name="y" pixmap="Magic-HD/buttons/big-yellow.png" position="595,682" size="284,40" alphatest="blend"/>
+		<ePixmap name="b" pixmap="Magic-HD/buttons/big-blue.png" position="890,682" size="284,40" alphatest="blend"/>
 		<widget name="key_r" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
 		<widget name="key_g" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
 		<widget name="key_y" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
@@ -1742,7 +1742,7 @@ background
 		<panel name="Yellow2Panel"/>
 		<panel name="Blue2Panel"/>
 		<widget name="bookmarklist" position="520,82" size="755,585" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-		<ePixmap pixmap="Magic-HD/buttons/key_0.png" position="1100,682" size="35,30" alphatest="on" zPosition="2"/>
+		<ePixmap pixmap="buttons/key_0.png" position="1100,682" size="35,30" alphatest="on" zPosition="2"/>
 		<widget source="key_0" render="Label" position="1140,682" size="300,30" font="Regular;20" halign="left" valign="center" zPosition="2"/>
 	</screen>
 	<screen name="BookmarkEditWindow" position="0,0" size="1280,720" flags="wfNoBorder" title="Bookmark Edit">
@@ -1800,8 +1800,8 @@ background
 	</screen>
 	<!-- ## PictureViewer ## -->
 	<screen name="PictureViewer" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -1897,8 +1897,8 @@ background
 	</screen>
 	<!-- ## Yamp ## -->
 	<screen name="YampScreen" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget name="title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -2096,8 +2096,8 @@ background
 		<widget name="currentfavname" zPosition="5" transparent="1" halign="left" position="5,450" size="480,40" font="Regular;22" foregroundColor="yellow"/>
 	</screen>
 	<screen name="MC_PictureViewer" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -2146,7 +2146,7 @@ background
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" position="520,90" size="755,60" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="name" font="Regular;22" itemHeight="28" position="520,160" size="755,50" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="hinweis" font="Regular;22" itemHeight="28" position="520,220" size="755,50" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="520,400" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="Magic-HD/icons/vkey_icon.png" position="520,400" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 	</screen>
 	<screen name="camoFSSetup" flags="wfNoBorder" position="0,0" size="1280,720" title="camoFS - Setup">
 		<panel name="BasicTemplate"/>
@@ -2239,8 +2239,8 @@ background
 		<widget name="MainList" scrollbarMode="showOnDemand" position="520,82" size="755,530" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 	<screen name="Tipprunde" position="0,0" size="1280,720" flags="wfNoBorder" title="AAF Formel1 Tippspiel">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -2277,8 +2277,8 @@ background
 		<widget name="liste" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 	<screen name="RacingPanel" position="0,0" size="1280,720" flags="wfNoBorder" title="Formel1 Rennen Auswertung">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="titel" foregroundColor="grey" render="Label" position="15,15" size="900,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -2291,8 +2291,8 @@ background
 		<widget name="Mlist" scrollbarMode="showOnDemand" position="10,82" size="980,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 	<screen name="DriverPanel" position="0,0" size="1280,720" flags="wfNoBorder" title="Fahrerwertung und Fahrerinfos">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -2309,8 +2309,8 @@ background
 		<widget source="titel2" render="Label" position="30,682" zPosition="3" size="1200,40" font="Regular;26" valign="center" halign="center" transparent="1" foregroundColor="#c1cdcd"/>
 	</screen>
 	<screen name="TeamPanel" position="0,0" size="1280,720" flags="wfNoBorder" title="Formel1 Teamwertung">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="titel" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -2359,7 +2359,7 @@ background
 	<!-- ## SubtitlePlayer ## -->
 	<screen name="Ubacitekst" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="buttons/vkey_icon.png" position="1000,670" size="60,48" transparent="1" zPosition="1" alphatest="on"/>
+		<ePixmap pixmap="Magic-HD/icons/vkey_icon.png" position="1000,670" size="60,48" transparent="1" zPosition="1" alphatest="on"/>
 		<widget name="ntitle" position="520,82" size="755,25" transparent="1" font="Regular;22" foregroundColor="grey"/>
 		<widget name="liste" position="520,110" size="755,550" font="Regular;22" transparent="1" foregroundColor="grey"/>
 	</screen>
@@ -2530,8 +2530,8 @@ background
 		<panel name="InfoBPanel"/>
 	</screen>
 	<screen name="vEditor" position="0,0" size="1280,720" flags="wfNoBorder" title="File-Explorer">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -2642,8 +2642,8 @@ background
 		<widget name="oealogo" position="5,379" size="477,264" zPosition="2" valign="center" halign="center" alphatest="blend"/>
 	</screen>
 	<screen name="StreamsThumb" position="0,0" size="1280,720" flags="wfNoBorder" title="">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -2655,8 +2655,8 @@ background
 		<widget name="list" position="5,79" size="1255,592" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="150" noWrap="1" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 	<screen name="GenresThumb" position="0,0" size="1280,720" flags="wfNoBorder" title="">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -2751,8 +2751,8 @@ background
 	</screen>
 	<!-- ## Uitzending Gemist ## -->
 	<screen name="OpenUg" position="0,0" size="1280,720" flags="wfNoBorder" title="">
-		<ePixmap pixmap="border/top2_bg.png" position="0,0" size="1280,75"/>
-		<ePixmap pixmap="border/bottom_bg.png" position="0,675" size="1280,2"/>
+		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
+		<ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,675" size="1280,2"/>
 		<widget source="Title" foregroundColor="grey" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;26" halign="right" position="1015,15" size="250,28" transparent="1" foregroundColor="grey" zPosition="1">
 			<convert type="ClockToText">Format:%-H:%M</convert>
@@ -2857,7 +2857,7 @@ background
 	</screen>
 	<!-- ## VideoEnhancement## -->
 	<screen name="VideoEnhancementPreview" position="fill" title="VideoEnhancementPreview" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap alphatest="off" pixmap="infobar/hd.png" position="0,500" size="1280,220" zPosition="-1"/>
+		<ePixmap alphatest="off" pixmap="Magic-HD/infobar/hd.png" position="0,500" size="1280,220" zPosition="-1"/>
 		<panel name="Red2Panel"/>
 		<panel name="Green2Panel"/>
 		<widget name="config" position="590,585" size="610,75" scrollbarMode="showOnDemand" backgroundColor="secondBG" zPosition="1"/>
@@ -2872,7 +2872,7 @@ background
 		<widget name="config" position="490,80" size="785,550" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="description" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
 		<widget name="footnote" position="750,657" size="350,20" zPosition="1" font="Regular;22" transparent="1" foregroundColor="grey"/>
-		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="520,500" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="Magic-HD/icons/vkey_icon.png" position="520,500" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 	</screen>
 	<!-- ## CubicStreamer## -->
 	<screen name="MainWindow" position="0,0" size="1280,720" flags="wfNoBorder" title="">
@@ -3136,7 +3136,7 @@ background
 		<widget source="witherrors_counter" render="Label" position="280,560" size="100,20" font="Regular;22" foregroundColor="grey"/>
 		<eLabel name="" text="Not tested:" position="120,595" size="140,22" font="Regular;22" halign="left" foregroundColor="grey"/>
 		<widget source="untestable_counter" render="Label" position="280,595" size="100,20" font="Regular;22" foregroundColor="grey"/>-->
-		<ePixmap pixmap="icons/dish_scan.png" position="5,25" zPosition="0" size="119,110" transparent="1" alphatest="on"/>
+		<ePixmap pixmap="Magic-HD/icons/dish_scan.png" position="5,25" zPosition="0" size="119,110" transparent="1" alphatest="on"/>
 		<widget source="Frontend" render="Label" position="190,10" zPosition="2" size="260,20" font="Regular;19" halign="center" valign="center" transparent="1">
 			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
@@ -3162,11 +3162,11 @@ background
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
 		<eLabel name="lock" text="Lock:" position="120,115" size="60,22" font="Regular;21" halign="right"/>
-		<widget source="Frontend" render="Pixmap" pixmap="icons/lock_on.png" position="190,110" zPosition="1" size="38,31" alphatest="on">
+		<widget source="Frontend" render="Pixmap" pixmap="Magic-HD/icons/lock_on.png" position="190,110" zPosition="1" size="38,31" alphatest="on">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="Frontend" render="Pixmap" pixmap="icons/lock_off.png" position="190,110" zPosition="1" size="38,31" alphatest="on">
+		<widget source="Frontend" render="Pixmap" pixmap="Magic-HD/icons/lock_off.png" position="190,110" zPosition="1" size="38,31" alphatest="on">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
@@ -3383,9 +3383,9 @@ background
 	</screen>
 	<screen  name="FastScanStatus" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="frontend" pixmap="icons/scan-s.png" position="490,110" size="64,64" transparent="1" alphatest="on"/>
+		<widget name="frontend" pixmap="Magic-HD/icons/scan-s.png" position="490,110" size="64,64" transparent="1" alphatest="on"/>
 		<widget name="scan_state" position="600,110" zPosition="2" size="700,30" font="Regular;18"/>
-		<widget name="scan_progress" position="600,145" size="480,15" pixmap="infobar/progress_big.png" borderWidth="1" borderColor="grey"/>
+		<widget name="scan_progress" position="600,145" size="480,15" pixmap="Magic-HD/infobar/progress_big.png" borderWidth="1" borderColor="grey"/>
 	</screen>
 	<!-- ## LCN Scanner## -->
 	<screen name="LCNScannerPlugin" position="0,0" size="1280,720" flags="wfNoBorder" title="LCN Scanner">

@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Vs 8.083 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 8.084 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -31,11 +31,11 @@
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<eLabel name="lock" position="675,50" size="80,15" backgroundColor="darkgrey" halign="right" transparent="1" text="Lock:" zPosition="1" font="Regular;14"/>
-		<widget source="session.FrontendStatus" render="Pixmap" pixmap="icons/lock_on.png" position="760,45" size="38,25" alphatest="on">
+		<widget source="session.FrontendStatus" render="Pixmap" pixmap="Magic-HD/icons/lock_on.png" position="760,45" size="38,25" alphatest="on">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.FrontendStatus" render="Pixmap" pixmap="icons/lock_off.png" position="760,45" zPosition="1" size="38,25">
+		<widget source="session.FrontendStatus" render="Pixmap" pixmap="Magic-HD/icons/lock_off.png" position="760,45" zPosition="1" size="38,25">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
@@ -560,7 +560,7 @@
 		<panel name="BasicTemplate"/>
 		<panel name="Red2Panel"/>
 		<panel name="Green2Panel"/>
-		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="520,500" size="1,1" zPosition="1" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="Magic-HD/buttons/vkey_icon.png" position="520,500" size="1,1" zPosition="1" transparent="1" alphatest="on"/>
 		<widget name="config" position="520,80" size="755,588" itemHeight="28" foregroundColor="grey" scrollbarMode="showOnDemand" enableWrapAround="1"/>
 		<widget name="description" position="5,370" size="510,250" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0" foregroundColor="secondFG"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="Magic-HD/buttons/key_text.png" position="1160,682" zPosition="1" size="35,25" transparent="1" alphatest="on">
@@ -775,25 +775,25 @@
 		<panel name="GreenBPanel"/>
 		<eLabel text="OK" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
 		<widget name="text" position="620,80" size="650,588" font="Regular;22" foregroundColor="grey"/>
-		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="540,100" size="54,54" alphatest="on"/>
-		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="540,100" size="54,54" alphatest="on"/>
-		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="540,100" size="54,54" alphatest="on"/>
+		<widget name="ErrorPixmap" pixmap="Magic-HD/icons/input_error.png" position="540,100" size="54,54" alphatest="on"/>
+		<widget name="QuestionPixmap" pixmap="Magic-HD/icons/input_question.png" position="540,100" size="54,54" alphatest="on"/>
+		<widget name="InfoPixmap" pixmap="Magic-HD/icons/input_info.png" position="540,100" size="54,54" alphatest="on"/>
 		<widget name="list" position="5,390" size="600,240" font="Regular;22" foregroundColor="grey"/>
 	</screen>
 	<screen name="MessageBoxSimple" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="620,80" size="675,588" font="Regular;22" foregroundColor="grey"/>
-		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="540,100" size="54,54" alphatest="on"/>
-		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="540,100" size="54,54" alphatest="on"/>
-		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="540,100" size="54,54" alphatest="on"/>
+		<widget name="ErrorPixmap" pixmap="Magic-HD/icons/input_error.png" position="540,100" size="54,54" alphatest="on"/>
+		<widget name="QuestionPixmap" pixmap="Magic-HD/icons/input_question.png" position="540,100" size="54,54" alphatest="on"/>
+		<widget name="InfoPixmap" pixmap="Magic-HD/icons/input_info.png" position="540,100" size="54,54" alphatest="on"/>
 		<widget name="list" position="5,390" size="600,240" font="Regular;22" foregroundColor="grey"/>
 	</screen>
 	<screen name="MessageBoxWizard" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="620,80" size="675,588" font="Regular;22" foregroundColor="grey"/>
-		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="540,100" size="54,54" alphatest="on"/>
-		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="540,100" size="54,54" alphatest="on"/>
-		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="540,100" size="54,54" alphatest="on"/>
+		<widget name="ErrorPixmap" pixmap="Magic-HD/icons/input_error.png" position="540,100" size="54,54" alphatest="on"/>
+		<widget name="QuestionPixmap" pixmap="Magic-HD/icons/input_question.png" position="540,100" size="54,54" alphatest="on"/>
+		<widget name="InfoPixmap" pixmap="Magic-HD/icons/input_info.png" position="540,100" size="54,54" alphatest="on"/>
 		<widget name="list" position="5,390" size="600,240" font="Regular;22"/>
 		<widget name="rc" pixmap="rc.png" position="1105,140" zPosition="10" size="154,500" transparent="0" alphatest="blend"/>
 	</screen>
@@ -1117,7 +1117,7 @@ self.autoResize()
 		<widget name="config" position="520,80" size="755,550" font="Regular;22" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="canceltext" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
 		<widget name="oktext" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
-		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="520,500" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="Magic-HD/buttons/vkey_icon.png" position="520,500" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 		<widget name="description" position="5,370" size="510,250" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0" foregroundColor="secondFG"/>
 	</screen>
 	<screen name="TimerEdit" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1408,7 +1408,7 @@ self.autoResize()
 	<screen name="SystemMessage" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget source="text" position="680,110" size="440,500" font="Regular;20" halign="center" valign="center" render="Label"/>
-		<ePixmap pixmap="icons/input_error.png" position="590,110" size="53,53" alphatest="on"/>
+		<ePixmap pixmap="Magic-HD/icons/input_error.png" position="590,110" size="53,53" alphatest="on"/>
 	</screen>
 	<!-- ##NetWorkmanager## -->
 	<screen name="NetworkSetup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1447,10 +1447,10 @@ self.autoResize()
 		<widget source="Adaptertext" render="Label" position="520,630" size="270,25" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;24" halign="right"/>
 		<widget source="Adapter" render="Label" position="800,630" size="400,25" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;24" halign="left"/>
 		<widget source="introduction2" render="Label" position="5,600" size="477,24" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="1250,687" size="35,25" transparent="1" zPosition="10" alphatest="on">
+		<widget source="VKeyIcon" render="Pixmap" pixmap="Magic-HD/buttons/key_text.png" position="1250,687" size="35,25" transparent="1" zPosition="10" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="50,410" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="Magic-HD/buttons/vkey_icon.png" position="50,410" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 	</screen>
 	<screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1472,7 +1472,7 @@ self.autoResize()
 		<widget name="Adapter" position="671,460" size="306,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;21" halign="center"/>
 		<widget name="AdapterInfo_Text" position="1020,460" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;21"/>
 		<widget name="AdapterInfo" position="1020,460" size="200,23" transparent="1" zPosition="1"/>
-		<widget name="AdapterInfo_OK" pixmap="icons/lock_on.png" position="978,456" size="38,31" zPosition="2" alphatest="on"/>
+		<widget name="AdapterInfo_OK" pixmap="Magic-HD/icons/lock_on.png" position="978,456" size="38,31" zPosition="2" alphatest="on"/>
 		<widget name="Networktext" position="420,495" size="250,23" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;21" halign="left"/>
 		<widget name="Network" position="671,495" size="306,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;21" halign="center"/>
 		<widget name="NetworkInfo_Text" position="1020,495" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;21"/>
@@ -1528,7 +1528,7 @@ self.autoResize()
 	<screen name="UserDialog" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
 		<panel name="Red2Panel"/>
-		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="15,400" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="Magic-HD/buttons/vkey_icon.png" position="15,400" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 		<widget name="VKeyIcon" pixmap="Magic-HD/buttons/key_text.png" position="1160,682" zPosition="1" size="35,25" transparent="1" alphatest="on"/>
 		<widget name="config" position="490,80" size="785,588" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<widget source="introduction" render="Label" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
@@ -1612,7 +1612,7 @@ self.autoResize()
 		<widget name="config" position="520,82" size="755,275" zPosition="3" transparent="1" scrollbarMode="showOnDemand" font="Regular;22" foregroundColor="grey" itemHeight="28" enableWrapAround="1"/>
 		<widget name="HelpWindow" position="590,390" size="1,1" zPosition="1" transparent="1" alphatest="on"/>
 		<widget source="introduction" render="Label" position="620,682" size="655,27" zPosition="1" transparent="1" font="Regular;22" halign="center" foregroundColor="grey"/>
-		<widget name="VKeyIcon" pixmap="buttons/key_text.png" position="1160,682" size="35,25" zPosition="10" transparent="1" alphatest="on"/>
+		<widget name="VKeyIcon" pixmap="Magic-HD/buttons/key_text.png" position="1160,682" size="35,25" zPosition="10" transparent="1" alphatest="on"/>
 	</screen>
 	<screen name="UserManager" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
@@ -1711,15 +1711,15 @@ self.autoResize()
 		<widget name="labpass" position="860,283" size="310,30" font="Regular;20" valign="center" backgroundColor="background"/>
 		<widget name="alias" position="610,333" size="150,30" font="Regular;20" valign="center" transparent="1"/>
 		<widget name="labalias" position="860,333" size="310,30" font="Regular;20" valign="center" backgroundColor="background"/>
-		<widget name="sinactive" position="610,383" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on"/>
-		<widget name="sactive" position="610,383" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on"/>
+		<widget name="sinactive" position="610,383" zPosition="1" pixmap="Magic-HD/icons/lock_off.png" size="32,32" alphatest="on"/>
+		<widget name="sactive" position="610,383" zPosition="2" pixmap="Magic-HD/icons/lock_on.png" size="32,32" alphatest="on"/>
 		<widget name="system" position="650,383" size="100,30" font="Regular;20" valign="center" transparent="1"/>
 		<widget name="labsys" position="860,383" size="310,30" font="Regular;20" valign="center" backgroundColor="background"/>
 	</screen>
 	<screen name="NetworkInadynSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
-		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="Magic-HD/buttons/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<panel name="TextBPanel"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,435" transparent="1"/>
 	</screen>
@@ -1766,17 +1766,17 @@ self.autoResize()
 		<widget name="sharedir" position="630,340" size="150,30" font="Regular;20" valign="center" transparent="1"/>
 		<widget name="labsharedir" position="790,340" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
 		<widget name="web" position="580,405" size="180,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="webinactive" position="800,405" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on"/>
-		<widget name="webactive" position="800,405" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on"/>
+		<widget name="webinactive" position="800,405" zPosition="1" pixmap="Magic-HD/icons/lock_off.png" size="32,32" alphatest="on"/>
+		<widget name="webactive" position="800,405" zPosition="2" pixmap="Magic-HD/icons/lock_on.png" size="32,32" alphatest="on"/>
 		<widget name="telnet" position="580,455" size="180,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="telnetinactive" position="800,455" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on"/>
-		<widget name="telnetactive" position="800,455" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on"/>
+		<widget name="telnetinactive" position="800,455" zPosition="1" pixmap="Magic-HD/icons/lock_off.png" size="32,32" alphatest="on"/>
+		<widget name="telnetactive" position="800,455" zPosition="2" pixmap="Magic-HD/icons/lock_on.png" size="32,32" alphatest="on"/>
 		<widget name="xbox" position="580,510" size="200,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="xboxinactive" position="800,510" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on"/>
-		<widget name="xboxactive" position="800,510" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on"/>
+		<widget name="xboxinactive" position="800,510" zPosition="1" pixmap="Magic-HD/icons/lock_off.png" size="32,32" alphatest="on"/>
+		<widget name="xboxactive" position="800,510" zPosition="2" pixmap="Magic-HD/icons/lock_on.png" size="32,32" alphatest="on"/>
 		<widget name="dlna" position="580,560" size="200,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="dlnainactive" position="800,560" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on"/>
-		<widget name="dlnaactive" position="800,560" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on"/>
+		<widget name="dlnainactive" position="800,560" zPosition="1" pixmap="Magic-HD/icons/lock_off.png" size="32,32" alphatest="on"/>
+		<widget name="dlnaactive" position="800,560" zPosition="2" pixmap="Magic-HD/icons/lock_on.png" size="32,32" alphatest="on"/>
 	</screen>
 	<screen name="NetworkMiniDLNA" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1784,7 +1784,7 @@ self.autoResize()
 		<panel name="Green1Panel"/>
 		<panel name="Yellow1Panel"/>
 		<panel name="Blue1Panel"/>
-		<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1175,687"	size="35,25"/>
+		<ePixmap pixmap="Magic-HD/buttons/key_menu.png" alphatest="on" position="1175,687"	size="35,25"/>
 		<widget name="autostart" position="630,109" size="100,24" font="Regular;20" valign="center" transparent="0"/>
 		<widget name="labdisabled" position="730,106" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1"/>
 		<widget name="labactive" position="730,106" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2"/>
@@ -1802,20 +1802,20 @@ self.autoResize()
 		<widget name="sharedir" position="630,340" size="150,30" font="Regular;20" valign="center" transparent="1"/>
 		<widget name="labsharedir" position="790,330" size="480,82" font="Regular;20" valign="top" backgroundColor="background"/>
 		<widget name="inotify" position="580,405" size="180,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="inotifyinactive" position="800,405" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on"/>
-		<widget name="inotifyactive" position="800,405" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on"/>
+		<widget name="inotifyinactive" position="800,405" zPosition="1" pixmap="Magic-HD/icons/lock_off.png" size="32,32" alphatest="on"/>
+		<widget name="inotifyactive" position="800,405" zPosition="2" pixmap="Magic-HD/icons/lock_on.png" size="32,32" alphatest="on"/>
 		<widget name="tivo" position="580,455" size="180,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="tivoinactive" position="800,455" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on"/>
-		<widget name="tivoactive" position="800,455" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on"/>
+		<widget name="tivoinactive" position="800,455" zPosition="1" pixmap="Magic-HD/icons/lock_off.png" size="32,32" alphatest="on"/>
+		<widget name="tivoactive" position="800,455" zPosition="2" pixmap="Magic-HD/icons/lock_on.png" size="32,32" alphatest="on"/>
 		<widget name="dlna" position="580,560" size="200,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="dlnainactive" position="800,560" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on"/>
-		<widget name="dlnaactive" position="800,560" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on"/>
+		<widget name="dlnainactive" position="800,560" zPosition="1" pixmap="Magic-HD/icons/lock_off.png" size="32,32" alphatest="on"/>
+		<widget name="dlnaactive" position="800,560" zPosition="2" pixmap="Magic-HD/icons/lock_on.png" size="32,32" alphatest="on"/>
 	</screen>
 	<screen name="NetworkMiniDLNASetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
-		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="Magic-HD/buttons/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<panel name="TextBPanel"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
 	</screen>
@@ -1848,8 +1848,8 @@ self.autoResize()
 		<eLabel position="0,0" zPosition="0" size="1280,720" backgroundColor="secondBG"/>
 		<widget name="image" position="fill" zPosition="1" alphatest="on"/>
 		<eLabel position="25,15" size="30,25" zPosition="2" backgroundColor="secondBG" transparent="1"/>
-		<widget name="status" position="27,17" size="21,21" zPosition="3" pixmap="icons/epgclock.png" alphatest="on"/>
-		<widget name="icon" position="30,20" size="16,16" zPosition="3" pixmap="icons/ico_mp_play.png" alphatest="on"/>
+		<widget name="status" position="27,17" size="21,21" zPosition="3" pixmap="Magic-HD/icons/epgclock.png" alphatest="on"/>
+		<widget name="icon" position="30,20" size="16,16" zPosition="3" pixmap="Magic-HD/icons/ico_mp_play.png" alphatest="on"/>
 		<widget source="message" render="Label" position="70,15" size="600,25" zPosition="3" font="Regular;22" halign="left" noWrap="1" transparent="1" foregroundColor="foreground" backgroundColor="secondBG"/>
 	</screen>
 	<screen	name="DLNAStreamPlayer"	position="4,30"	size="1280,100"	backgroundColor="transparent"	flags="wfNoBorder">
@@ -1879,7 +1879,7 @@ self.autoResize()
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
 		<panel name="TextBPanel"/>
-		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="Magic-HD/buttons/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
 	</screen>
 	<screen name="NetworkuShareLog" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2254,17 +2254,17 @@ self.autoResize()
 		<panel name="BasicTemplate3"/>
 		<panel name="Red2Panel"/>
 		<panel name="Green2Panel"/>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-s.png" position="5,82" size="64,64" transparent="1" alphatest="blend">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="Magic-HD/icons/scan-s.png" position="5,82" size="64,64" transparent="1" alphatest="blend">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-c.png" position="5,82" size="64,64" transparent="1" alphatest="on">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="Magic-HD/icons/scan-c.png" position="5,82" size="64,64" transparent="1" alphatest="on">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-t.png" position="5,82" size="64,64" transparent="1" alphatest="on">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="Magic-HD/icons/scan-t.png" position="5,82" size="64,64" transparent="1" alphatest="on">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide" />
@@ -2273,7 +2273,7 @@ self.autoResize()
 		<widget name="transponder" position="50,200" size="580,22" foregroundColor="grey" transparent="1" font="Regular;20"/>
 		<widget name="scan_state" position="50,230" size="580,22" foregroundColor="grey" transparent="1" font="Regular;20"/>
 		<widget name="pass" position="50,250" size="580,22" foregroundColor="grey" transparent="1" font="Regular;20"/>
-		<widget name="scan_progress" position="50,280" size="480,15" pixmap="infobar/progress_big.png" borderWidth="1" borderColor="grey"/>
+		<widget name="scan_progress" position="50,280" size="480,15" pixmap="Magic-HD/infobar/progress_big.png" borderWidth="1" borderColor="grey"/>
 		<widget name="servicelist" position="650,80" size="620,584" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="1" foregroundColor="grey" itemHeight="28" enableWrapAround="1"/>
 	</screen>
 	<screen name="SatNimSelection" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2324,11 +2324,11 @@ self.autoResize()
 		</widget>
 	<!-- ##Lock## -->
 		<eLabel name="lock" position="590,245" size="120,28" foregroundColor="grey" transparent="1" text="Lock:" font="Regular;24"/>
-		<widget source="Frontend" render="Pixmap" pixmap="icons/lock_on.png" position="689,244" size="38,31" alphatest="on">
+		<widget source="Frontend" render="Pixmap" pixmap="Magic-HD/icons/lock_on.png" position="689,244" size="38,31" alphatest="on">
 		<convert type="FrontendInfo">LOCK</convert>
 		<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="Frontend" render="Pixmap" pixmap="icons/lock_off.png" position="689,244" size="38,31" alphatest="on">
+		<widget source="Frontend" render="Pixmap" pixmap="Magic-HD/icons/lock_off.png" position="689,244" size="38,31" alphatest="on">
 		<convert type="FrontendInfo">LOCK</convert>
 		<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
@@ -2472,7 +2472,7 @@ self.autoResize()
 		<widget source="VKeyIcon" render="Pixmap" pixmap="Magic-HD-Common/buttons/key_text.png" position="1250,687" size="35,25" zPosition="1" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget name="HelpWindow" pixmap="buttons/key_text.png" position="125,170" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="Magic-HD/buttons/key_text.png" position="125,170" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 	</screen>
 	<screen name="DefaultSatLists" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2609,7 +2609,7 @@ self.autoResize()
 		<panel name="Yellow2Panel"/>
 		<panel name="Blue2Panel"/>
 		<widget name="config" position="520,80" size="755,588" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" background="background"/>
-		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="520,500" size="1,1" zPosition="1" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="Magic-HD/buttons/vkey_icon.png" position="520,500" size="1,1" zPosition="1" transparent="1" alphatest="on"/>
 	</screen>
 	<screen name="AutoTimerServiceEditor" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2795,7 +2795,7 @@ self.autoResize()
 		<panel name="Red2Panel"/>
 		<panel name="Green2Panel"/>
 		<panel name="Yellow2Panel"/>
-		<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1175,687"	size="35,25"/>
+		<ePixmap pixmap="Magic-HD/buttons/key_menu.png" alphatest="on" position="1175,687"	size="35,25"/>
 		<widget name="label" position="15,385" size="482,280" zPosition="2" transparent="1" font="Regular;20"/>
 		<widget name="thn" position="0,77" size="482,273" zPosition="1" alphatest="on"/>
 		<widget name="filelist" position="490,80" size="785,588" scrollbarMode="showOnDemand" font="Regular;24" itemHeight="35" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
@@ -2871,9 +2871,9 @@ self.autoResize()
 		<panel name="GreenBPanel"/>
 		<widget name="myGreenBtn" position="520,82" size="755,583" font="Regular;22" transparent="1"/>
 		<eLabel text="Change setting" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
+		<ePixmap pixmap="Magic-HD/buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
 		<eLabel text="Save" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="580,682" size="70,30"/>
+		<ePixmap pixmap="Magic-HD/buttons/key-exit.png" alphatest="on" position="580,682" size="70,30"/>
 		<eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="660,682" size="200,26" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="FancontrolConfiguration" flags="wfNoBorder" position="0,0" size="1280,720">
@@ -2902,7 +2902,7 @@ self.autoResize()
 		<panel name="Green1Panel"/>
 		<panel name="Yellow1Panel"/>
 		<panel name="Blue1Panel"/>
-		<ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1200,687"	size="35,25"/>
+		<ePixmap pixmap="Magic-HD/buttons/key_menu.png" alphatest="on" position="1200,687"	size="35,25"/>
 		<widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="149,380" size="210,21" zPosition="2" alphatest="blend"/>
 		<widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" position="149,380" size="210,21" zPosition="3" transparent="1"/>
 		<widget name="ratinglabel" position="50,410" size="400,24" foregroundColor="grey" transparent="1" font="Regular;20" halign="center"/>
@@ -3049,8 +3049,8 @@ self.autoResize()
 		<panel name="Green1Panel"/>
 		<panel name="Yellow1Panel"/>
 		<panel name="Blue1Panel"/>
-		<widget name="autostart_off" position="590,183" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on"/>
-		<widget name="autostart_on" position="590,183" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on"/>
+		<widget name="autostart_off" position="590,183" zPosition="1" pixmap="Magic-HD/icons/lock_off.png" size="32,32" alphatest="on"/>
+		<widget name="autostart_on" position="590,183" zPosition="2" pixmap="Magic-HD/icons/lock_on.png" size="32,32" alphatest="on"/>
 		<widget name="lab1" position="640,180" size="400,45" font="Regular;20" valign="center" transparent="0"/>
 		<widget name="lab2" position="590,233" size="150,30" font="Regular;20" valign="center" transparent="0"/>
 		<widget name="labplace" position="740,233" size="220,30" font="Regular;20" valign="center"/>
@@ -3107,7 +3107,7 @@ self.autoResize()
 		<panel name="Yellow1Panel"/>
 		<panel name="Blue1Panel"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey" itemHeight="28" enableWrapAround="1"/>
-		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="Magic-HD/buttons/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<panel name="TextBPanel"/>
 	</screen>
 	<screen name="VIXBackupManagerLogView" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -3554,7 +3554,7 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
 		<panel name="TextBPanel"/>
-	 <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="15,400" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+	 <widget name="HelpWindow" pixmap="Magic-HD/vkey_icon.png" position="15,400" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 		<widget name="config" position="490,80" size="785,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="text" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
 	</screen>
@@ -3604,8 +3604,8 @@ self.autoResize()
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
 		<panel name="Yellow1Panel"/>
-		<widget name="autostart_off" position="590,183" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="on"/>
-		<widget name="autostart_on" position="590,183" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="on"/>
+		<widget name="autostart_off" position="590,183" zPosition="1" pixmap="Magic-HD/icons/lock_off.png" size="32,32" alphatest="on"/>
+		<widget name="autostart_on" position="590,183" zPosition="2" pixmap="Magic-HD/icons/lock_on.png" size="32,32" alphatest="on"/>
 		<widget name="lab1" position="640,180" size="400,45" font="Regular;20" valign="center" transparent="0"/>
 		<widget name="lab2" position="590,233" size="150,30" font="Regular;20" valign="center" transparent="0"/>
 		<widget name="labplace" position="740,233" size="220,30" font="Regular;20" valign="center"/>
@@ -3625,7 +3625,7 @@ self.autoResize()
 		<widget name="btt_yellow" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 		<panel name="BlueBPanel"/>
 		<widget name="btt_blue" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1215,687" size="35,25"/>
+		<ePixmap pixmap="Magic-HD/buttons/key_info.png" alphatest="on" position="1215,687" size="35,25"/>
 		<widget name="config" position="490,80" size="785,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="ok" position="5,450" size="477,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="left"/>
 		<widget name="infos" position="5,505" size="477,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="left"/>
