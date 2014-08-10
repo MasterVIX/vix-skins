@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Vs 8.084 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 8.085 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -3632,13 +3632,26 @@ self.autoResize()
 		<widget name="bouquets" position="5,560" size="477,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="left"/>
 		<widget name="netservers" position="5,615" size="477,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="left"/>
 	</screen>
+	<screen name="BackupScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="Backup is running">
+		<panel name="BasicTemplate"/>
+		<widget name="config" position="490,80" size="785,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+	<screen name="ImageBackup" position="0,0" size="1280,720" flags="wfNoBorder" title="Image Backup">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<panel name="Yellow1Panel"/>
+		<panel name="Blue1Panel"/>
+		<widget name="info-hdd" position="490,80" size="785,200" font="Regular;22" foregroundColor="grey" valign="center" halign="center"/>
+		<widget name="info-usb" position="490,290" size="785,250" font="Regular;22" foregroundColor="grey" valign="center" halign="center"/>
+	</screen>
 	<screen name="FlashOnline" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
 		<panel name="Yellow1Panel"/>
-		<widget name="info-online" position="10,450" size="1000,100" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" halign="center"/>
-		<widget name="info-local" position="10,550" size="1000,100" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" halign="center"/>
+		<widget name="info-online" position="490,80" size="785,200" font="Regular;22" foregroundColor="grey" valign="center" halign="center"/>
+		<widget name="info-local" position="490,290" size="785,250" font="Regular;22" foregroundColor="grey" valign="center" halign="center"/>
 	</screen>
 	<screen name="doFlashImage" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
@@ -3652,7 +3665,11 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
-		<widget name="filelist" position="490,80" size="785,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<panel name="Red2Panel"/>
+		<panel name="Green2Panel"/>
+		<widget name="key_r" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="key_g" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="filelist" position="490,80" size="785,584" scrollbarMode="showOnDemand" font="Regular;28" itemHeight="35" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<widget source="message" render="Label" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
 	</screen>
 	<screen name="SoftcamPanel" position="0,0" size="1280,720" flags="wfNoBorder" title="">
