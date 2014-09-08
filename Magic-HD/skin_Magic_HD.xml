@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Vs 8.086 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 8.087 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -3943,6 +3943,15 @@ V		</widget>
 		<widget name="list" position="40,80" size="585,400" scrollbarMode="showOnDemand" itemHeight="40" backgroundColor="bkwall" transparent="1" />
 	</screen>-->
 
+	<screen name="ScSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="RedBPanel"/>
+		<widget name="red" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<panel name="GreenBPanel"/>
+		<widget name="green" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
+		<widget name="config" position="520,80" size="755,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+
 	<!-- Manual Ipk Installer  -->
 	<screen name="AtemioIPKInstaller" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -4033,6 +4042,54 @@ V		</widget>
 			</convert>
 		</widget>
 </screen>
+
+	<screen name="AtemioBackupManager" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<panel name="Yellow1Panel"/>
+		<panel name="Blue1Panel"/>
+		<panel name="MenuBPanel"/>
+		<panel name="InfoBPanel"/>
+		<widget name="lab1" position="520,82" size="755,50" font="Regular;22" zPosition="2" transparent="0" halign="center" foregroundColor="grey"/>
+		<widget name="list" position="520,145" size="755,504" font="Regular;22" transparent="0" scrollbarMode="showOnDemand" foregroundColor="grey" itemHeight="28" enableWrapAround="1"/>
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(28)
+			</applet>
+		<widget name="backupstatus" position="15,400" size="477,75" font="Regular;22" zPosition="5" halign="center" valign="center" foregroundColor="secondFG"/>
+	</screen>
+
+	<screen name="AtemioBackupManagerMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<panel name="Yellow1Panel"/>
+		<panel name="Blue1Panel"/>
+		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey" itemHeight="28" enableWrapAround="1"/>
+		<widget name="HelpWindow" pixmap="Magic-HD/buttons/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<panel name="TextBPanel"/>
+	</screen>
+
+	<screen name="AtemioBackupManagerLogView" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<widget name="list" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey"/>
+	</screen>
+
+	<screen name="AtemioImageManager" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<panel name="Yellow1Panel"/>
+		<panel name="Blue1Panel"/>
+		<panel name="MenuBPanel"/>
+		<widget name="lab1" position="520,82" size="755,50" font="Regular;22" zPosition="2" transparent="0" halign="center" foregroundColor="grey"/>
+		<widget name="list" position="520,145" size="755,504" font="Regular;22" transparent="0" scrollbarMode="showOnDemand" foregroundColor="grey" itemHeight="28" enableWrapAround="1"/>
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(28)
+			</applet>
+		<widget name="backupstatus" position="15,400" size="477,75" font="Regular;22" zPosition="5" halign="center" valign="center" foregroundColor="secondFG"/>
+	</screen>
+
 	<!-- About  -->
 	<screen name="AboutTeam" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
