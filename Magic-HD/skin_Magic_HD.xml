@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Vs 8.087 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 8.088 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -3554,7 +3554,7 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
 		<panel name="TextBPanel"/>
-	 <widget name="HelpWindow" pixmap="Magic-HD/vkey_icon.png" position="15,400" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget name="HelpWindow" pixmap="Magic-HD/vkey_icon.png" position="15,400" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 		<widget name="config" position="490,80" size="785,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="text" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
 	</screen>
@@ -3569,7 +3569,7 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
-	 <widget source="list" render="Listbox" position="490,80" size="785,510" transparent="0" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="490,80" size="785,510" transparent="0" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				 MultiContentEntryText(pos = (90,0), size = (675,30), font=0, text = 0),
@@ -3717,7 +3717,7 @@ self.autoResize()
 	<!--##Atemio Nemesis screens##-->
 	<screen name="menu_mainmenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		 <widget source="menu" render="Listbox" position="520,82" size="735,575" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1">
+		<widget source="menu" render="Listbox" position="520,82" size="735,575" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (20,5), size = (735,28), flags = RT_HALIGN_LEFT, text = 0	) ],
 				"fonts": [gFont("Regular",26)],
@@ -3728,7 +3728,7 @@ self.autoResize()
 	</screen>
 	<screen name="menu_setup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		 <widget source="menu" render="Listbox" position="520,82" size="735,575" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1">
+		<widget source="menu" render="Listbox" position="520,82" size="735,575" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (20,5), size = (735,28), flags = RT_HALIGN_LEFT, text = 0	) ],
 				"fonts": [gFont("Regular",26)],
@@ -3750,7 +3750,7 @@ self.autoResize()
 	</screen>
 	<screen name="menu_information" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		 <widget source="menu" render="Listbox" position="520,82" size="735,575" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1">
+		<widget source="menu" render="Listbox" position="520,82" size="735,575" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (20,5), size = (735,28), flags = RT_HALIGN_LEFT, text = 0	) ],
 				"fonts": [gFont("Regular",26)],
@@ -3795,95 +3795,21 @@ self.autoResize()
 	<!-- ATEMIO PANELS -->
 	<screen name="AtemioMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
-	  	<widget source="list" render="Listbox" position="520,80" size="755,584" scrollbarMode="showOnDemand" backgroundColor="bkwall" transparent="1" >
-	  		<convert type="TemplatedMultiContent">
-	  			{"template": [
-	  				MultiContentEntryText(pos = (60, 2), size = (300, 30), font=0, flags = RT_HALIGN_LEFT | RT_HALIGN_LEFT, text = 1),
+		<widget source="list" render="Listbox" position="520,80" size="755,584" scrollbarMode="showOnDemand" backgroundColor="bkwall" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (60, 2), size = (300, 30), font=0, flags = RT_HALIGN_LEFT | RT_HALIGN_LEFT, text = 1),
 					MultiContentEntryText(pos = (70, 24), size = (640, 50), font=0, color=0x73c6ff, flags = RT_VALIGN_TOP, text = 2),
-	  				MultiContentEntryPixmapAlphaTest(pos=(5, 4), size=(40, 40), png = 3),
-	  				],
-	  				"fonts": [gFont("Regular", 22)],
-	  				"itemHeight": 60
-	  			}
-	  		</convert>
-	  	</widget>
+					MultiContentEntryPixmapAlphaTest(pos=(5, 4), size=(40, 40), png = 3),
+					],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 60
+				}
+			</convert>
+		</widget>
 		<eLabel name="spaceused" text="%space used..." position="5,500" size="455,20" font="Regular;19" halign="center" foregroundColor="grey" transparent="1" zPosition="5"/>
 	  	<widget name="spaceused" position="5,525" size="477,18" foregroundColor="secondFG" backgroundColor="secondBG" zPosition="3" />
 	</screen>
-<!--	 PANELS CAM  -->
-	<screen name="ScNewSelection" position="0,0" size="1280,720" flags="wfNoBorder" title="">
-		<panel name="BasicTemplate"/>
-		<panel name="Red1Panel"/>
-		<panel name="Blue1Panel"/>
-		<panel name="MenuBPanel"/>
-<!--		 Ico Crypt-->
-		<ePixmap pixmap="infobar/cryptoff_ico.png" position="490,80" size="17,25" zPosition="1" alphatest="blend" />	
-		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/crypton_ico.png" position="490,80" size="17,25" zPosition="2" alphatest="blend">
-			<convert type="ServiceInfo">IsCrypted</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget name="cam" zPosition="2" position="525,90" size="580,24" font="Regular; 22" halign="left" foregroundColor="#73c6ff" backgroundColor="secondBG" transparent="1" />
-		<widget name="server" zPosition="2" position="490,120" size="580,24" font="Regular; 22" halign="left" foregroundColor="#73c6ff" backgroundColor="secondBG" transparent="1" />
-		<widget name="entries" position="490,125" size="585,300" transparent="1" />
-<!--Emu Info-->
-		<eLabel text="EMU :" position="5,397" size="60,24" font="Regular;20" halign="left" foregroundColor="#73c6ff" backgroundColor="secondBG" transparent="1" zPosition="1" />
-		<widget source="session.CurrentService" render="Label" text="Emu Info" position="100,397" size="250,34" font="Regular;20" valign="top" halign="left" foregroundColor="foreground" backgroundColor="secondBG" transparent="1" zPosition="10" >
-			<convert type="PliExtraInfo">EmuInfoCrypt</convert>
-		</widget>
-<!--Ico Crypt-->
-		<ePixmap pixmap="infobar/ico_crypt_off.png" position="102,430" size="21,25" zPosition="0" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_crypt_on.png" position="65,435" size="21,25" zPosition="2" alphatest="blend">
-			<convert type="ServiceInfo">IsCrypted</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-<!--Sat Freq Info-->
- 		<widget source="session.CurrentService" render="Label" text="Emu Info" position="49,485" size="250,24" font="Regular;20" valign="top" halign="left" foregroundColor="bluette" backgroundColor="bkwall" transparent="1" zPosition="10" >
-			<convert type="PliExtraInfo">EmuInfoCryptSpecial</convert>
-		</widget>
-<!--Share Info-->
-		<eLabel text="SERVER :" position="490,535" size="150,24" font="Regular;20" halign="left" foregroundColor="#73c6ff" backgroundColor="secondBG" transparent="1" zPosition="1" />
-		<widget source="session.CurrentService" render="Label" position="490,545" size="580,60" font="Regular;20" valign="center" halign="left" foregroundColor="#007983b5" backgroundColor="secondBG" transparent="1" zPosition="5" >
-			<convert type="CryptoInfo">VerboseInfo</convert>
-		</widget>
-<!--		<widget name="text" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>-->
-	</screen>
-<!--	<screen name="ScNewSelection" title="Softcam Selection" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="WallTemplate" />
-		<panel name="PigTemplate" />
-		<panel name="ClockTemplate"/>
-		<panel name="nRG"/>
-		 Ico Crypt 
-V		<ePixmap pixmap="infobar/cryptoff_ico.png" position="45,80" size="17,25" zPosition="1" alphatest="blend" />
-V		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/crypton_ico.png" position="45,80" size="17,25" zPosition="2" alphatest="blend">
-V			<convert type="ServiceInfo">IsCrypted</convert>
-V			<convert type="ConditionalShowHide" />
-V		</widget>
-V	<widget name="cam"    zPosition="2" position="80,85" size="580,24" font="Regular; 22" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
-V		<widget name="server" zPosition="2" position="45,115" size="580,24" font="Regular; 22" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" />
-V		<widget name="entries" position="40,200" size="585,300" transparent="1" />
-V		<ePixmap pixmap="buttons/key_menu.png" position="1175,27" zPosition="2" size="50,40" alphatest="on" />
-		Emu Info  
-V		<eLabel text="EMU :" position="40,440" size="60,24" font="Regular;20" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="1" />
-V		<widget source="session.CurrentService" render="Label" text="Emu Info" position="135,440" size="250,34" font="Regular;20" valign="top" halign="left" foregroundColor="foreground" backgroundColor="bkwall" transparent="1" zPosition="10" >
-V			<convert type="PliExtraInfo">EmuInfoCrypt</convert>
-V		</widget>
-		 Ico Crypt 
-V		<ePixmap pixmap="infobar/ico_crypt_off.png" position="102,444" size="21,15" zPosition="0" alphatest="blend" />
-V		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_crypt_on.png" position="102,444" size="21,15" zPosition="2" alphatest="blend">
-V			<convert type="ServiceInfo">IsCrypted</convert>
-V			<convert type="ConditionalShowHide" />
-V		</widget>
-V		 Sat Freq Info  
-V 		<widget source="session.CurrentService" render="Label" text="Emu Info" position="40,480" size="250,24" font="Regular;20" valign="top" halign="left" foregroundColor="bluette" backgroundColor="bkwall" transparent="1" zPosition="10" >
-V			<convert type="PliExtraInfo">EmuInfoCryptSpecial</convert>
-V		</widget>
-		 Share Info 
-		<eLabel text="SERVER :" position="40,530" size="150,24" font="Regular;20" halign="left" foregroundColor="#73c6ff" backgroundColor="bkwall" transparent="1" zPosition="1" />
-		<widget source="session.CurrentService" render="Label" position="40,540" size="580,60" font="Regular;20" valign="center" halign="left" foregroundColor="#007983b5" backgroundColor="bkwall" transparent="1" zPosition="5" >
-			<convert type="CryptoInfo">VerboseInfo</convert>
-		</widget>
-	</screen>-->
-
 <!--	 AutoCam List  -->
 	<screen name="AutoCamListSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
@@ -3904,26 +3830,6 @@ V		</widget>
 			</convert>
 		</widget>
 	</screen>
-<!--
-	<screen name="AutoCamListSetup" title="Auto-Camd List Setup" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="WallTemplate" />
-		<panel name="PigTemplate" />
-		<panel name="ClockTemplate"/>
-		<panel name="nRGYB"/>
-		<widget source="list" render="Listbox" position="40,80" size="585,450" scrollbarMode="showOnDemand" backgroundColor="bkwall" transparent="1" >
-			<convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (10, 5), size = (420, 25), font = 0, flags = RT_HALIGN_LEFT, text = 0),
-						MultiContentEntryText(pos = (50, 30), size = (380, 20), font = 1, flags = RT_HALIGN_LEFT, text = 1),
-						MultiContentEntryText(pos = (430, 13), size = (140, 24), font = 0, flags = RT_HALIGN_LEFT, text = 2),
-					],
-				 "fonts": [gFont("Regular", 21), gFont("Regular", 16)],
-				 "itemHeight": 50
-				}
-			</convert>
-		</widget>
-	</screen>-->
-
 	<!-- AutoCam Service  -->
 	<screen name="AutoCamServiceSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
@@ -3933,16 +3839,6 @@ V		</widget>
 		<panel name="Blue1Panel"/>
 		<widget name="list" position="490,80" size="785,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
-<!--
-	<screen name="AutoCamServiceSetup" title="Channel Selection" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="WallTemplate" />
-		<panel name="PigTemplate" />
-		<panel name="ClockTemplate"/>
-		<panel name="nRGYB"/>
-		<ePixmap pixmap="buttons/maxbar.png" position="610,80"   size="15,451" zPosition="2" alphatest="blend" />
-		<widget name="list" position="40,80" size="585,400" scrollbarMode="showOnDemand" itemHeight="40" backgroundColor="bkwall" transparent="1" />
-	</screen>-->
-
 	<screen name="ScSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel"/>
@@ -3951,7 +3847,6 @@ V		</widget>
 		<widget name="green" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
 		<widget name="config" position="520,80" size="755,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
-
 	<!-- Manual Ipk Installer  -->
 	<screen name="AtemioIPKInstaller" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -4042,7 +3937,6 @@ V		</widget>
 			</convert>
 		</widget>
 </screen>
-
 	<screen name="AtemioBackupManager" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
@@ -4053,12 +3947,11 @@ V		</widget>
 		<panel name="InfoBPanel"/>
 		<widget name="lab1" position="520,82" size="755,50" font="Regular;22" zPosition="2" transparent="0" halign="center" foregroundColor="grey"/>
 		<widget name="list" position="520,145" size="755,504" font="Regular;22" transparent="0" scrollbarMode="showOnDemand" foregroundColor="grey" itemHeight="28" enableWrapAround="1"/>
-		<applet type="onLayoutFinish">
+			<applet type="onLayoutFinish">
 			self["list"].instance.setItemHeight(28)
 			</applet>
 		<widget name="backupstatus" position="15,400" size="477,75" font="Regular;22" zPosition="5" halign="center" valign="center" foregroundColor="secondFG"/>
 	</screen>
-
 	<screen name="AtemioBackupManagerMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
@@ -4069,12 +3962,10 @@ V		</widget>
 		<widget name="HelpWindow" pixmap="Magic-HD/buttons/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<panel name="TextBPanel"/>
 	</screen>
-
 	<screen name="AtemioBackupManagerLogView" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="list" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey"/>
 	</screen>
-
 	<screen name="AtemioImageManager" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
@@ -4084,12 +3975,11 @@ V		</widget>
 		<panel name="MenuBPanel"/>
 		<widget name="lab1" position="520,82" size="755,50" font="Regular;22" zPosition="2" transparent="0" halign="center" foregroundColor="grey"/>
 		<widget name="list" position="520,145" size="755,504" font="Regular;22" transparent="0" scrollbarMode="showOnDemand" foregroundColor="grey" itemHeight="28" enableWrapAround="1"/>
-		<applet type="onLayoutFinish">
+			<applet type="onLayoutFinish">
 			self["list"].instance.setItemHeight(28)
 			</applet>
 		<widget name="backupstatus" position="15,400" size="477,75" font="Regular;22" zPosition="5" halign="center" valign="center" foregroundColor="secondFG"/>
 	</screen>
-
 	<!-- About  -->
 	<screen name="AboutTeam" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
