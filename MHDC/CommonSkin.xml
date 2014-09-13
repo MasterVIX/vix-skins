@@ -2,7 +2,7 @@
 <!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <skin>
 
-	<!--	Common.skin Vs 6.01 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 6.02 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -653,7 +653,7 @@
 		<widget source="ServiceEvent" render="Picon" position="15,6" size="100,60" alphatest="blend" backgroundColor="secondBG" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget name="list" backgroundColor="background" position="520,90" size="755,570" itemHeight="30" serviceNumberFont="Regular;22" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="30" colorEventProgressbar="blue" colorEventProgressbarSelected="blue" colorServiceDescription="#DBB96E" colorEventProgressbarBorderSelected="white" transparent="1" foregroundColorServiceNotAvail="#00656565" scrollbarMode="showOnDemand"/>
+		<widget name="list" backgroundColor="background" position="520,90" size="755,570" itemHeight="30" serviceNumberFont="Regular;22" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="30" picServiceEventProgressbar="MHDC/window/progress.png" progressbarBorderWidth="1" colorServiceDescription="#DBB96E" colorEventProgressbarBorderSelected="white" transparent="1" foregroundColorServiceNotAvail="#00656565" scrollbarMode="showOnDemand"/>
 		<widget source="ServiceEvent" render="Label" position="10,385" size="425,25" transparent="1" foregroundColor="secondFG" font="Regular;20" halign="left">
 			<convert type="EventName">NowName</convert>
 		</widget>
@@ -695,7 +695,7 @@
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<ePixmap pixmap="MHDC/border/devider.png" position="650,90" size="2,570"/>
-		<widget name="list" position="15,90" size="630,570" backgroundColor="transpBG" colorEventProgressbar="blue" colorEventProgressbarSelected="blue" colorEventProgressbarBorderSelected="grey" colorServiceDescription="#DBB96E" serviceNumberFont="Regular;22" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" itemHeight="30" serviceItemHeight="30" transparent="1"/>
+		<widget name="list" position="15,90" size="630,570" backgroundColor="transpBG" picServiceEventProgressbar="MHDC/window/progress.png" progressbarBorderWidth="1" colorEventProgressbarBorderSelected="white" colorServiceDescription="#DBB96E" serviceNumberFont="Regular;22" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" itemHeight="30" serviceItemHeight="30" transparent="1"/>
 		<widget source="ServiceEvent" render="Label" position="660,90" size="70,30" halign="left" font="Regular;21" foregroundColor="white" backgroundColor="background" transparent="1" noWrap="1" zPosition="6">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
