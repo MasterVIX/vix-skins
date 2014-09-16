@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Vs 8.089 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 8.090 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -80,11 +80,11 @@
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-<!--		<ePixmap pixmap="Magic-HD/infobar/ico_format_off.png" position="920,90" size="40,21" zPosition="1" alphatest="on"/>-->
 		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD/infobar/ico_hd_on.png" position="845,90" size="40,21" zPosition="4" alphatest="on">
 			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<ePixmap pixmap="Magic-HD/infobar/ico_format_off.png" position="890,90" size="40,21" zPosition="1" alphatest="on"/>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD/infobar/ico_format_on.png" position="890,90" size="40,21" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide"/>
