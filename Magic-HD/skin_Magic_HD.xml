@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Vs 8.092 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 8.093 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -239,52 +239,51 @@
 		<panel name="Blue1Panel"/>
 		<panel name="MenuBPanel"/>
 		<panel name="InfoBPanel"/>
-		<widget name="list" position="520,82" size="755,530" itemHeight="25" noWrap="1" serviceNumberFont="Regular;22" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="25" colorEventProgressbar="blue" colorEventProgressbarSelected="yellow" colorServiceDescription="blue" transparent="1" foregroundColorServiceNotAvail="#656565" scrollbarMode="showOnDemand"/>
-		<widget source="ServiceEvent" render="Label" position="520,615" size="625,25" font="Regular;22" foregroundColor="selectedFG" noWrap="1" zPosition="2" transparent="1" halign="left">
+		<widget name="list" position="520,82" size="755,500" itemHeight="25" noWrap="1" serviceNumberFont="Regular;22" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="25" colorEventProgressbar="blue" colorEventProgressbarSelected="yellow" colorServiceDescription="blue" transparent="1" foregroundColorServiceNotAvail="#656565" scrollbarMode="showOnDemand"/>
+		<widget source="ServiceEvent" render="Label" position="520,645" size="755,22" font="Regular; 20" foregroundColor="secondFG" noWrap="1" zPosition="1">
+			<convert type="ServiceName2">TpansponderInfo</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="520,585" size="625,25" font="Regular;22" foregroundColor="selectedFG" noWrap="1" zPosition="2" transparent="1" halign="left">
 			<convert type="EventName">NextName</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="1145,615" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21" halign="right">
+		<widget source="ServiceEvent" render="Label" position="1145,585" size="62,25" font="Regular;21" transparent="1" foregroundColor="selectedFG" halign="right">
 			<convert type="EventTime">NextStartTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
-		<eLabel text="-" foregroundColor="selectedFG" backgroundColor="secondBG" font="Regular;22" halign="left" position="1208,615" size="220,26" transparent="1" zPosition="1"/>
-		<widget source="ServiceEvent" render="Label" position="1215,615" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21">
+		<eLabel text="-" foregroundColor="selectedFG" backgroundColor="secondBG" position="1208,585" size="220,26" font="Regular;22" halign="left" transparent="1" zPosition="1"/>
+		<widget source="ServiceEvent" render="Label" position="1215,585" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21">
 			<convert type="EventTime">NextEndTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="520,645" size="625,25" font="Regular;22" foregroundColor="selectedFG" noWrap="1" zPosition="2" transparent="1" halign="left">
+		<widget source="ServiceEvent" render="Label" position="520,615" size="625,25" font="Regular;22" foregroundColor="selectedFG" noWrap="1" zPosition="2" transparent="1" halign="left">
 			<convert type="EventName">ThirdName</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="1145,645" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21" halign="right">
+		<widget source="ServiceEvent" render="Label" position="1145,615" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21" halign="right">
 			<convert type="EventTime">ThirdStartTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
-		<eLabel text="-" foregroundColor="selectedFG" backgroundColor="secondBG" font="Regular;22" halign="left" position="1208,645" size="220,26" transparent="1" zPosition="1"/>
-		<widget source="ServiceEvent" render="Label" position="1215,645" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21">
+		<eLabel text="-" foregroundColor="selectedFG" position="1208,615" size="220,26" font="Regular;22" halign="left" backgroundColor="secondBG" transparent="1" zPosition="1"/>
+		<widget source="ServiceEvent" render="Label" position="1215,615" size="62,25" transparent="1" foregroundColor="selectedFG" font="Regular;21">
 			<convert type="EventTime">ThirdEndTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="5,350" size="510,25" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="center" valign="top">
+		<widget source="ServiceEvent" render="Label" position="5,350" size="510,25" font="Regular;22" transparent="1" foregroundColor="secondFG" halign="center" valign="top">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="5,376" size="52,22" transparent="1" foregroundColor="grey" font="Regular;21" halign="right">
+		<widget source="ServiceEvent" render="Label" position="5,376" size="52,22" font="Regular;21" transparent="1" foregroundColor="grey" halign="right">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="258,376" size="52,22" transparent="1" foregroundColor="grey" font="Regular;21">
+		<widget source="ServiceEvent" render="Label" position="258,376" size="52,22" font="Regular;21" transparent="1" foregroundColor="grey">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
-		<widget source="ServiceEvent" render="Progress" pixmap="Magic-HD/window/progress.png" position="63,384" size="190,8" transparent="1" borderWidth="1" foregroundcolor="grey" borderColor="grey">
+		<widget source="ServiceEvent" render="Progress" pixmap="Magic-HD/window/progress.png" position="63,384" size="190,8" transparent="1" borderWidth="1" foregroundcolor="secondFG" borderColor="grey">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="310,376" size="120,22" transparent="1" foregroundColor="grey" font="Regular;21">
+		<widget source="ServiceEvent" render="Label" position="340,376" size="120,22" transparent="1" halign="right" foregroundColor="grey" font="Regular;21">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
-		</widget>
-		<widget source="ServiceEvent" render="Label" position="430,376" size="85,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;21" halign="left">
-			<convert type="ServiceOrbitalPosition">
-			</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="5,399" size="510,268" font="Regular;21" foregroundColor="grey" halign="center" valign="center" transparent="1">
 			<convert type="EventName">FullDescription</convert>

@@ -1,4 +1,4 @@
-﻿<!--  Skin: ViX-Common Vs 3.2.20 by AndyBlac @ www.world-of-satellite.com  -->
+<!--  Skin: ViX-Common Vs 3.2.21 by AndyBlac @ www.world-of-satellite.com  -->
 <!--  This skin is a Freeware. Everyone can modify and use it in other images. , XmlUnboundNsPrefix -->
 <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!! , XmlUnboundNsPrefix -->
 <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! , XmlUnboundNsPrefix -->
@@ -982,7 +982,10 @@
 		<panel name="FullscreenTopPanel" />
 		<widget source="Title" render="Label" position="18,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 		<panel name="FullscreenPIGPanel" />
-		<widget name="list" position="10,82" size="660,590" selectionPixmap="ViX-Common/buttons/FocusBar_H36x660.png" backgroundColor="black" foregroundColorEvent="event-frgrnd" foregroundColorEventSelected="#00202020" foregroundColorServiceNotAvail="verydarkgrey" serviceItemHeight="36" serviceNumberFont="Regular;25" serviceNameFont="Regular;25" serviceInfoFont="Bold;22" transparent="0" zPosition="3" scrollbarMode="showOnDemand" />
+		<widget name="list" position="10,82" size="660,565" selectionPixmap="ViX-Common/buttons/FocusBar_H36x660.png" backgroundColor="black" foregroundColorEvent="event-frgrnd" foregroundColorEventSelected="#00202020" foregroundColorServiceNotAvail="verydarkgrey" serviceItemHeight="36" serviceNumberFont="Regular;25" serviceNameFont="Regular;25" serviceInfoFont="Bold;22" transparent="0" zPosition="3" scrollbarMode="showOnDemand" />
+		<widget source="ServiceEvent" render="Label" position="10,650" size="660,26" font="Regular; 20" foregroundColor="orange" noWrap="1" zPosition="1">
+			<convert type="ServiceName2">TpansponderInfo</convert>
+		</widget>
 		<widget source="ServiceEvent" render="Label" position="695,410" size="400,25" font="Bold;24" foregroundColor="orange" backgroundColor="black" noWrap="1" zPosition="2" transparent="0" valign="top">
 			<convert type="EventName">NowName</convert>
 		</widget>
@@ -1012,10 +1015,6 @@
 		<widget source="ServiceEvent" render="Label" position="1170,555" size="80,25" font="Bold;24" foregroundColor="orange" backgroundColor="black" zPosition="2" transparent="0" noWrap="1" valign="top">
 			<convert type="EventTime">NextEndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
-		</widget>
-		<widget source="ServiceEvent" render="Label" position="5,686" size="85,35" font="Bold;24" transparent="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" zPosition="1" >
-			<convert type="ServiceOrbitalPosition">
-			</convert>
 		</widget>
 		<panel name="FullscreenRed1Panel" />
 		<panel name="FullscreenGreen1Panel" />
