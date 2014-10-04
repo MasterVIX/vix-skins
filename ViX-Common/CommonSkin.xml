@@ -1,4 +1,4 @@
-<!--  Skin: ViX-Common Vs 3.2.21 by AndyBlac @ www.world-of-satellite.com  -->
+<!--  Skin: ViX-Common Vs 3.2.22 by AndyBlac @ www.world-of-satellite.com  -->
 <!--  This skin is a Freeware. Everyone can modify and use it in other images. , XmlUnboundNsPrefix -->
 <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!! , XmlUnboundNsPrefix -->
 <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! , XmlUnboundNsPrefix -->
@@ -4324,6 +4324,15 @@ self.autoResize()
 		<widget name="config" position="10,107" size="503,420" font="Regular;20" zPosition="2" transparent="1" scrollbarMode="showOnDemand" halign="center" />
 		<ePixmap pixmap="div-h.png" position="10,590" zPosition="1" size="507,2" />
 		<widget source="introduction" render="Label" position="10,600" size="503,30" foregroundColor="window-fg" backgroundColor="window-bg" font="Regular;22" halign="center" valign="center" transparent="0" />
+		<panel name="MenuRed2Panel" />
+		<panel name="MenuGreen2Panel" />
+	</screen>
+	<!-- HotKey -->
+	<screen name="HotkeySetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuPanel" />
+		<widget name="list" selectionPixmap="ViX-Common/buttons/FocusBar_H70x503.png" position="10,107" size="503,400" zPosition="10" scrollbarMode="showOnDemand"/>
+		<ePixmap pixmap="div-h.png" position="10,512" zPosition="1" size="503,2" />
+		<widget name="choosen" position="10,515" size="500,120" zPosition="10" font="Regular;21" backgroundColor="window-bg" halign="center" transparent="0"/>
 		<panel name="MenuRed2Panel" />
 		<panel name="MenuGreen2Panel" />
 	</screen>
