@@ -764,16 +764,16 @@
 	</screen>
 	<screen name="PinInputPopup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="service" font="Regular;22" position="520,90" size="755,30" foregroundColor="grey" halign="center"/>
-		<widget name="text" font="Regular;22" position="520,120" size="755,30" foregroundColor="grey" halign="center"/>
-		<widget name="tries" font="Regular;22" position="520,150" size="755,30" foregroundColor="grey" halign="center"/>
-		<widget name="input" font="Regular;32" position="520,180" size="755,40" foregroundColor="grey" halign="center"/>
+		<widget name="service" position="520,90" size="755,30" font="Regular;22" foregroundColor="grey" halign="center"/>
+		<widget name="text" position="520,120" size="755,30" font="Regular;22" foregroundColor="grey" halign="center"/>
+		<widget name="tries" position="520,150" size="755,30" font="Regular;22" foregroundColor="grey" halign="center"/>
+		<widget name="input" position="520,180" size="755,40" font="Regular;22" foregroundColor="grey" halign="center"/>
 	</screen>
 	<!-- ##TextBox## -->
 	<screen name="TextBox" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="520,390" size="755,240" font="Regular;24" foregroundColor="grey"/>
-		<eLabel text="'Exit' = Leave message" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="320,26" transparent="1" zPosition="1"/>
+		<eLabel text="'Exit' = Leave message" position="50,682" size="320,26" font="Regular;22" halign="left" backgroundColor="secondBG" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="MessageBox" title="Message" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
