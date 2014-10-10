@@ -1,4 +1,4 @@
-<!--  Skin: ViX-Common Vs 3.2.23 by AndyBlac @ www.world-of-satellite.com  -->
+<!--  Skin: ViX-Common Vs 3.2.24 by AndyBlac @ www.world-of-satellite.com  -->
 <!--  This skin is a Freeware. Everyone can modify and use it in other images. , XmlUnboundNsPrefix -->
 <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!! , XmlUnboundNsPrefix -->
 <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! , XmlUnboundNsPrefix -->
@@ -4328,12 +4328,14 @@ self.autoResize()
 		<panel name="MenuGreen2Panel" />
 	</screen>
 	<!-- HotKey -->
-	<screen name="HotkeySetup" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MenuPanel" />
-		<widget name="list" selectionPixmap="ViX-Common/buttons/FocusBar_H70x503.png" position="10,107" size="503,400" zPosition="10" scrollbarMode="showOnDemand"/>
-		<ePixmap pixmap="div-h.png" position="10,512" zPosition="1" size="503,2" />
-		<widget name="choosen" position="10,515" size="500,120" zPosition="10" font="Regular;21" backgroundColor="window-bg" halign="center" transparent="0"/>
-		<panel name="MenuRed2Panel" />
-		<panel name="MenuGreen2Panel" />
+		<screen name="HotkeySetup" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+		<panel name="FullscreenTopPanel" />
+		<widget source="Title" render="Label" position="18,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1"/>
+		<panel name="FullscreenPIGPanel" />
+		<widget name="list" position="10,82" size="330,570" itemHeight="30" selectionPixmap="ViX-Common/buttons/FocusBar_H36x365.png" zPosition="10" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<widget name="choosen" position="345,82" size="310,570" itemHeight="30" zPosition="10" font="Regular;21" backgroundColor="window-bg" halign="center" transparent="0" scrollbarMode="showOnDemand"/>
+		<widget name="description" position="695,435" size="503,230" font="Regular;18" halign="center" valign="center" transparent="0" zPosition="1" />
+		<panel name="FullscreenRed2Panel" />
+		<panel name="FullscreenGreen2Panel" />
 	</screen>
 </skin>
