@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Vs 8.096 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 8.098 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -2512,13 +2512,13 @@ self.autoResize()
 	</screen>
 	<screen name="HelpMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="list" position="490,80" size="785,588" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<widget name="list" position="490,80" size="785,570" scrollbarMode="showOnDemand" font="Regular;21" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="rc" position="1064,103" size="154,500" zPosition="10" pixmaps="rc.png,rcold.png" alphatest="on"/>
 		<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on"/>
 		<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on"/>
 		<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on"/>
 		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on"/>
-		<widget name="long_key" position="123,482" size="350,50" foregroundColor="yellow" font="Regular;25" halign="right"/>
+		<widget name="long_key" position="115,482" size="350,50" foregroundColor="yellow" font="Regular;25" halign="right"/>
 	</screen>
 	<screen name="TutorialWizard" position="0,0" size="1280,720" flags="wfNoBorder">
 		<ePixmap pixmap="Magic-HD/border/top2_bg.png" position="0,0" size="1280,75"/>
@@ -3801,6 +3801,13 @@ self.autoResize()
 	</screen>
 	<!-- Hotkey -->
 	<screen name="HotkeySetup" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel"/>
+		<widget name="list" position="490,80" size="385,588" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<widget name="choosen" position="880,80" size="385,588" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" foregroundColor="secondFG"/>
+		<widget name="description" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
+	</screen>
+	<screen name="HotkeySetupSelect" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
