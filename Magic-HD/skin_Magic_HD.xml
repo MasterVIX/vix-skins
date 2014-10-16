@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Vs 8.098 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 8.099 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -2686,8 +2686,8 @@ self.autoResize()
 		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="520,82" size="755,560" transparent="1" foregroundColor="grey" enableWrapAround="1">
 			<convert type="TemplatedMultiContent">
 			{"template": [	MultiContentEntryText(pos = (0,0), size = (755,583), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1) ],
-					"fonts": [gFont("Regular", 22)],
-					"itemHeight": 28
+					"fonts": [gFont("Regular", 25)],
+					"itemHeight": 38
 				}
 			</convert>
 		</widget>
@@ -2731,7 +2731,7 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
-		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1">
+		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="520,82" size="755,588" transparent="1" foregroundColor="grey" enableWrapAround="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10,0), size = (32,32), png = 0),
@@ -2748,7 +2748,7 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
-		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="520,82" size="755,560" transparent="1" foregroundColor="grey" enableWrapAround="1">
+		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="520,82" size="755,588" transparent="1" foregroundColor="grey" enableWrapAround="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10,0), size = (32,32), png = 0),
@@ -2787,6 +2787,36 @@ self.autoResize()
 		<panel name="Red1Panel"/>
 		<widget name="about" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="28" position="520,82" size="755,430" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="oealogo" position="520,515" size="177,130" alphatest="on" zPosition="4"/>
+	</screen>
+	<!-- ## AutoPiconMaker ## -->
+	<screen name="AutoPiconManager_About" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel"/>
+		<widget name="about" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="28" position="520,82" size="755,430" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<widget name="oealogo" position="520,515" size="177,130" alphatest="on" zPosition="4"/>
+	</screen>
+	<screen name="AutoPiconManager_Menu" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="520,82" size="755,560" transparent="1" foregroundColor="grey" enableWrapAround="1">
+			<convert type="TemplatedMultiContent">
+			{"template": [	MultiContentEntryText(pos = (0,0), size = (755,583), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1) ],
+					"fonts": [gFont("Regular", 24)],
+					"itemHeight": 38
+				}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="AutoPiconManager_Log" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<widget name="list" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="28" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+	</screen>
+	<screen name="AutoPiconManager_Setup" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<panel name="Red1Panel"/>
+		<panel name="Green1Panel"/>
+		<widget name="config" scrollbarMode="showOnDemand" font="Regular;25" itemHeight="35" position="520,82" size="755,560" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<widget name="description" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
+		<widget name="pleasewait" position="520,82" size="755,560" font="Regular;26" transparent="1" halign="center" valign="center" foregroundColor="grey"/>
 	</screen>
 	<!-- ##Picture-Player## -->
 	<screen name="picshow" position="0,0" size="1280,720" flags="wfNoBorder">
