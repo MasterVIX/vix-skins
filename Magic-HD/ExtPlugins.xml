@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.88	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.89	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -2531,16 +2531,25 @@ background
 	</screen>
 	<screen name="vInputBox" position="0,0" size="1280,720" flags="wfNoBorder" title="Input...">
 		<panel name="BasicTemplate"/>
-		<widget name="input" position="5,379" size="1270,50" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28"	transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-		<widget name="text" position="490,80" size="785,250" zPosition="2" font="Console;22" foregroundColor="secondFG" valign="center" halign="center"/>
+		<widget name="text" position="490,80" size="785,200" font="Console;26" zPosition="2" foregroundColor="secondFG" valign="center" halign="center"/>
+		<widget name="input" position="490,300" size="785,50" font="Regular;26" itemHeight="25"	transparent="1" foregroundColor="grey" halign="center"/>
+	</screen>
+	<screen name="SoftLinkScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="Make a softlink...">
+		<panel name="BasicTemplate"/>
+		<panel name="RedBPanel"/>
+		<eLabel text="Set name" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
+		<panel name="YellowBPanel"/>
+		<eLabel text="Make a softlink" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
+		<widget name="File" position="490,80" size="785,100" font="Regular;26" transparent="1" foregroundColor="secondFG" valign="center" halign="center" enableWrapAround="1"/>
+		<widget name="SLto" position="490,185" size="785,476" font="Regular;22" itemHeight="28" scrollbarMode="showOnDemand" foregroundColor="grey"/>
 	</screen>
 	<screen name="CPmaniger" position="0,0" size="1280,720" flags="wfNoBorder" title="Select Copy/Move location...">
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel"/>
 		<panel name="YellowBPanel"/>
-		<eLabel text="MOVE" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,688" size="220,26" transparent="1" zPosition="1"/>
-		<eLabel text="COPY" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,688" size="220,26" transparent="1" zPosition="1"/>
-		<widget name="File" position="490,80" size="785,200" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
+		<eLabel text="MOVE" position="50,688" size="220,26" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" transparent="1" zPosition="1"/>
+		<eLabel text="COPY" position="614,688" size="220,26" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" transparent="1" zPosition="1"/>
+		<widget name="File" position="490,80" size="785,198" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
 		<widget name="CPto" position="490,280" size="785,388" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28"	transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 	<screen name="MusicExplorer" backgroundColor="#50070810" flags="wfNoBorder" position="center,center" size="1280,720">
@@ -3167,7 +3176,7 @@ background
 		<panel name="Yellow1Panel"/>
 		<eLabel text="Cancel" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
 		<ePixmap pixmap="Magic-HD/buttons/key_ok.png" alphatest="on" position="1190,682" size="35,26"/>
-		<widget name="list" position="490,80" size="785,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="35" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
+		<widget name="list" position="490,80" size="785,560" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="35" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="tspace" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
 	</screen>
 	<screen name="idServerModels" position="0,0" size="1280,720" flags="wfNoBorder" title="Choose model">
