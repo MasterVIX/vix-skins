@@ -2,7 +2,7 @@
 <!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <skin>
 
-	<!--	Common.skin Vs 6.06 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 6.07 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -899,6 +899,7 @@
 	</screen>
 	<screen name="AboutOE" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
+		<panel name="GreenTemplate"/>
 		<ePixmap pixmap="buttons/key_info.png" alphatest="blend" position="1020,682" size="35,25"/>
 		<eLabel text="= Release notes" position="1050,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1"/>
 		<widget source="lab1" render="Label" position="10,455" size="500,25" font="Regular; 24" transparent="0" zPosition="2" foregroundColor="greenlight" halign="center"/>
@@ -908,6 +909,12 @@
 		<eLabel text="Skin Magic-HD	 ViX-team skin by Rob van der Does" foregroundColor="greenlight" font="Regular;19" halign="center" position="5,570" size="520,40" transparent="1" zPosition="1" noWrap="1"/>
 		<eLabel text="Magic-HD-Night/Noire by DeLaGrooV...based on" position="5,530" size="520,30" font="Regular; 19" halign="center" transparent="1" zPosition="1" valign="center" foregroundColor="greenlight"/>
 		<panel name="VixLogo"/>
+	</screen>
+	<screen name="TranslationInfo" title="Translation" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="BasicTemplate"/>
+		<widget source="TranslatorName" render="Label" font="Regular;22" position="590,90" size="585,60" halign="center" backgroundColor="background" transparent="1" valign="bottom"/>
+		<widget source="TranslationInfo" render="Label" font="Regular;22" position="590,200" size="585,100" halign="center" backgroundColor="background" transparent="1"/>
+		<panel name="AtemioLogo"/>
 	</screen>
 	<screen name="Devices" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
