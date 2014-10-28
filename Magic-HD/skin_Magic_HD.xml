@@ -178,7 +178,7 @@
 			<convert type="ValueRange">6,6</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		</screen>
+	</screen>
 	<!--	## Volume ## -->
 	<screen name="Volume" position="center,30" size="500,30" zPosition="10" flags="wfNoBorder">
 		<ePixmap position="0,0" size="500,29" pixmap="Magic-HD/infobar/volbg.png"/>
@@ -3829,15 +3829,15 @@ self.autoResize()
 			</convert>
 		</widget>
 	</screen>
-	<!-- Hotkey -->
-	<screen name="HotkeySetup" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+	<!-- ButtonSetup -->
+	<screen name="ButtonSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
 		<widget name="list" position="490,80" size="385,588" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="choosen" position="880,80" size="385,588" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" foregroundColor="secondFG"/>
 		<widget name="description" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
 	</screen>
-	<screen name="HotkeySetupSelect" position="0,0" size="1280,720" flags="wfNoBorder" title="">
+	<screen name="ButtonSetupSelect" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
