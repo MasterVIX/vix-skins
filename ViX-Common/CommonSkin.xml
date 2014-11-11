@@ -1,4 +1,4 @@
-<!--  Skin: ViX-Common Vs 3.2.28 by AndyBlac @ www.world-of-satellite.com  -->
+<!--  Skin: ViX-Common Vs 3.2.29 by AndyBlac @ www.world-of-satellite.com  -->
 <!--  This skin is a Freeware. Everyone can modify and use it in other images. , XmlUnboundNsPrefix -->
 <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!! , XmlUnboundNsPrefix -->
 <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! , XmlUnboundNsPrefix -->
@@ -2079,6 +2079,9 @@ self.autoResize()
 		<widget name="canceltext" position="75,663" zPosition="1" size="190,25" font="Regular;20" halign="left" valign="center" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" transparent="1" />
 		<widget name="ok" pixmap="ViX-Common/buttons/green.png" position="40,690" size="25,25" alphatest="blend" backgroundColor="#27c5c9cc" />
 		<widget name="oktext" position="75,690" zPosition="1" size="190,25" font="Regular;20" halign="left" valign="center" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" transparent="1" />
+		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="280,663" zPosition="1" size="35,25" transparent="1" alphatest="on">
+			<convert type="ConditionalShowHide" />
+		</widget>
 		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="15,440" zPosition="1" size="541,720" transparent="1" alphatest="on" />
 		<widget name="description" position="10,595" size="503,50" font="Regular;18" halign="center" valign="center" backgroundColor="window-bg" transparent="1" />
 	</screen>
