@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.89	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.90	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -1259,120 +1259,6 @@ background
 		<widget name="filelist" position="70,150" size="520,460" itemHeight="28" scrollbarMode="showOnDemand"/>
 		<widget name="playlist" position="590,150" size="600,460" itemHeight="28" scrollbarMode="showOnDemand"/>
 	</screen>
-	<!-- ## PartnerBox ## -->
-	<screen name="CurrentRemoteTV" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<widget name="text" position="590,110" zPosition="1" size="670,520" font="Regular;20" halign="center" valign="center"/>
-	</screen>
-	<screen name="PartnerboxEntryConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel"/>
-		<panel name="GreenBPanel"/>
-		<panel name="BlueBPanel"/>
-		<panel name="RedT1Panel"/>
-		<panel name="GreenT1Panel"/>
-		<panel name="BlueT1Panel"/>
- 		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="15,400" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="1250,687" zPosition="10" size="35,25" transparent="1" alphatest="on"/>
-		<widget name="config" scrollbarMode="showOnDemand" position="520,82" size="755,583" transparent="1"/>
-	</screen>
-	<screen name="PartnerboxEntriesListConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel"/>
-		<panel name="YellowBPanel"/>
-		<panel name="BlueBPanel"/>
-		<panel name="RedT1Panel"/>
-		<panel name="YellowT1Panel"/>
-		<panel name="BlueT1Panel"/>
-		<widget name="name" position="520,82" size="100,50" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1"/>
-		<widget name="ip" position="640,82" size="150,50" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1"/>
-		<widget name="port" position="790,82" size="100,50" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1"/>
-		<widget name="type" position="935,82" size="200,50" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1"/>
-	 <widget name="entrylist" position="520,132" size="755,533" scrollbarMode="showOnDemand" backgroundColor="secondBG" transparent="1"/>
-	</screen>
-	<screen name="PartnerboxSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel"/>
-		<panel name="GreenBPanel"/>
-		<panel name="YellowBPanel"/>
-		<panel name="RedT1Panel"/>
-		<panel name="GreenT1Panel"/>
-		<panel name="YellowT1Panel"/>
-		<widget name="config" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1"/>
-	</screen>
-	<screen name="RemotePlayer" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<widget name="ServiceName" position="590,110" size="600,72" backgroundColor="background" transparent="1" zPosition="2" foregroundColor="foreground" font="Crs;24" valign="center" halign="center"/>
-		<widget name="DateTime" position="590,190" size="600,52" backgroundColor="background" transparent="1" zPosition="2" foregroundColor="foreground" font="Regular;20" valign="top" halign="left"/>
-		<widget name="IP" position="590,250" size="600,52" backgroundColor="background" transparent="1" zPosition="2" foregroundColor="foreground" font="Regular;20" valign="top" halign="right"/>
-	</screen>
-	<screen name="RemoteTimerBouquetList" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<widget name="text" position="520,82" size="755,583" zPosition="1" font="Regular;26" halign="center" valign="center"/>
-		<widget name="bouquetlist" position="520,82" size="755,575" font="Regular;26" scrollbarMode="showOnDemand" zPosition="2"/>
-	</screen>
-	<screen name="RemoteTimer" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel"/>
-		<panel name="GreenBPanel"/>
-		<panel name="YellowBPanel"/>
-		<panel name="BlueBPanel"/>
-		<panel name="RedT1Panel"/>
-		<panel name="GreenT1Panel"/>
-		<panel name="YellowT1Panel"/>
-		<panel name="BlueT1Panel"/>
-		<widget name="timerlist" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="50" position="490,85" size="785,550" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-		<widget name="text" position="5,379" size="477,260" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
-	</screen>
-	<screen name="RemoteTimerEPGList" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel"/>
-		<panel name="GreenBPanel"/>
-		<panel name="YellowBPanel"/>
-		<panel name="BlueBPanel"/>
-		<panel name="RedT1Panel"/>
-		<panel name="GreenT1Panel"/>
-		<panel name="YellowT1Panel"/>
-		<panel name="BlueT1Panel"/>
-		<widget name="text" position="520,90" size="755,575" zPosition="3" font="Regular;20" valign="center" halign="center"/>
-		<widget name="epglist" position="520,90" size="755,570" zPosition="5" scrollbarMode="showOnDemand"/>
-	</screen>
-	<screen name="RemoteTimerChannelList" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel"/>
-		<panel name="GreenBPanel"/>
-		<panel name="YellowBPanel"/>
-		<panel name="BlueBPanel"/>
-		<panel name="RedT1Panel"/>
-		<panel name="GreenT1Panel"/>
-		<panel name="YellowT1Panel"/>
-		<panel name="BlueT1Panel"/>
-		<widget name="text" position="520,90" size="755,575" zPosition="1" font="Regular;26" valign="center" halign="center"/>
-		<widget name="channellist" position="520,90" size="755,575" font="Regular;26" zPosition="2" scrollbarMode="showOnDemand"/>
-	</screen>
-	<screen name="RemoteTimerEventView" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel"/>
-		<panel name="GreenBPanel"/>
-		<panel name="YellowBPanel"/>
-		<panel name="BlueBPanel"/>
-		<panel name="RedT1Panel"/>
-		<panel name="GreenT1Panel"/>
-		<panel name="YellowT1Panel"/>
-		<panel name="BlueT1Panel"/>
-		<widget name="epg_description" position="590,110" size="600,400" font="Regular;18"/>
-		<widget name="datetime" position="590,510" size="600,30" font="Regular;22"/>
-		<widget name="duration" position="590,540" size="600,30" font="Regular;22"/>
-		<widget name="channel" position="590,570" size="600,30" font="Regular;22"/>
-	</screen>
-	<screen name="RemoteTimerEntry" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel"/>
-		<panel name="GreenBPanel"/>
-		<widget name="canceltext" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
-		<widget name="oktext" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
-		<widget name="config" position="590,110" size="600,420" itemHeight="28" scrollbarMode="showOnDemand"/>
-	</screen>
 <!-- ## RemoteTimer ##-->
  <screen name="RemoteTimerScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="Remote-Timer digest">
 		<panel name="BasicTemplate"/>
@@ -2347,7 +2233,7 @@ background
 	<!-- ## SubtitlePlayer ## -->
 	<screen name="Ubacitekst" position="0,0" size="1280,720" flags="wfNoBorder" title="">
 		<panel name="BasicTemplate"/>
-		<ePixmap pixmap="icons/vkey_icon.png" position="1000,670" size="60,48" transparent="1" zPosition="1" alphatest="on"/>
+		<ePixmap pixmap="icons/key_text.png" position="1000,670" size="60,48" transparent="1" zPosition="1" alphatest="on"/>
 		<widget name="ntitle" position="520,82" size="755,25" transparent="1" font="Regular;22" foregroundColor="grey"/>
 		<widget name="liste" position="520,110" size="755,550" font="Regular;22" transparent="1" foregroundColor="grey"/>
 	</screen>
