@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Vs 8.102 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 8.104 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -328,7 +328,7 @@
 		</widget>
 	</screen>
 	<screen name="ChannelContextMenu" position="0,0" size="1280,720" flags="wfNoBorder">
-	 <panel name="BasicTemplate"/>
+		<panel name="BasicTemplate"/>
 		<widget name="menu" position="520,82" size="755,583" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1"/>
 	</screen>
 	<screen name="EPGSelection" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -510,7 +510,7 @@
 	<!-- Audio selection -->
 	<screen name="AudioSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		 <widget name="config" position="620,85" size="425,200" scrollbarMode="showOnDemand" foregroundColor="grey"/>
+		<widget name="config" position="620,85" size="425,200" scrollbarMode="showOnDemand" foregroundColor="grey"/>
 		<widget source="key_red" render="Pixmap" pixmap="buttons/key_red.png" position="570,85" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -554,7 +554,7 @@
 	<!-- ## Menus ## -->
 	<screen name="Menu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		 <widget source="menu" render="Listbox" position="520,82" size="735,575" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1">
+		<widget source="menu" render="Listbox" position="520,82" size="735,575" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (20,5), size = (735,28), flags = RT_HALIGN_LEFT, text = 0	) ],
 				"fonts": [gFont("Regular",26)],
@@ -1394,7 +1394,7 @@ self.autoResize()
 		<widget name="statuspic" position="440,620" size=" 48,48" alphatest="on"/>
 		<widget source="author" render="Label" position="520,90" size="755,30" zPosition="10" halign="center" font="Regular;26" backgroundColor="background" foregroundColor="grey" transparent="1"/>
 		<widget name="screenshot" position="520,120" size="755,550" alphatest="on"/>
-		 <widget name="detailtext" position="15,385" size="477,200" font="Regular;22" backgroundColor="background" halign="center" foregroundColor="grey" transparent="1"/>
+		<widget name="detailtext" position="15,385" size="477,200" font="Regular;22" backgroundColor="background" halign="center" foregroundColor="grey" transparent="1"/>
 	</screen>
 	<screen name="RestoreScreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2188,7 +2188,7 @@ self.autoResize()
 		<panel name="YellowT1Panel"/>
 		<widget name="list" scrollbarMode="showOnDemand" position="520,90" size="755,575" transparent="1" itemHeight="30" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
-	 <!-- ## Oscam Info ##-->
+<!-- ## Oscam Info ##-->
 	<screen name="OscamInfoMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="mainmenu" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
@@ -2205,13 +2205,12 @@ self.autoResize()
 		<widget name="status" render="Label" position="15,400" zPosition="1" size="477,200" font="Regular;16" halign="center" valign="center" transparent="1" foregroundColor="secondFG"/>
 	</screen>
 	<!-- ##TunerSetUp## -->
- <screen name="AutoDiseqc" position="fill" title=" ">
-  <widget source="statusbar" render="Label" position="10,100" zPosition="10" size="e-10,60" halign="center" valign="center" font="Regular;24" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
-  <widget source="tunerstatusbar" render="Label" position="10,175" zPosition="10" size="e-10,30" halign="center" valign="center" font="Regular;24" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
-  <widget name="config" position="10,100" size="e-10,195" scrollbarMode="showOnDemand"/>
-  <ePixmap pixmap="buttons/red.png" position="c-140,e-50" size="140,40" alphatest="on"/>
-  <widget source="key_red" render="Label" position="c-140,e-50" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1"/>
- </screen>
+	<screen name="AutoDiseqc" position="fill" title=" ">
+		<panel name="Red2Panel"/>
+		<widget source="statusbar" render="Label" position="10,100" zPosition="10" size="1270,60" halign="center" valign="center" font="Regular;24" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
+		<widget source="tunerstatusbar" render="Label" position="10,175" zPosition="10" size="1279,30" halign="center" valign="center" font="Regular;24" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
+		<widget name="config" position="10,100" size="1270,195" scrollbarMode="showOnDemand"/>
+	</screen>
 	<screen name="NimSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="Red2Panel"/>
@@ -2662,7 +2661,7 @@ self.autoResize()
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 	</screen>
-	 <screen name="MinuteInput" title="MinuteInput" position="center,center" size="540,35" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="MinuteInput" title="MinuteInput" position="center,center" size="540,35" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel text="Jump" position="0,-200" size="220,35" backgroundColor="transparent" font="Regular;34" halign="right" borderColor="black" borderWidth="3" transparent="1" zPosition="1"/>
 		<widget name="minutes" position="230,-200" size="80,35" font="Regular;34" halign="center" borderColor="black" borderWidth="3" transparent="1" zPosition="1"/>
 		<eLabel text="minutes" position="320,-200" size="220,35" backgroundColor="transparent" font="Regular;34" halign="left" borderColor="black" borderWidth="3" transparent="1" zPosition="1"/>
@@ -2921,7 +2920,7 @@ self.autoResize()
 		<panel name="Red2Panel"/>
 		<panel name="Green2Panel"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
- </screen>
+	</screen>
 	<screen name="FanSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="RedBPanel"/>
@@ -3019,7 +3018,7 @@ self.autoResize()
 		"fonts": [gFont("Regular", 22)],
 		"itemHeight": 28
 		}
-		 </convert>
+		</convert>
 		</widget>
 	</screen>
 	<screen name="CrossEPG_About" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -3056,7 +3055,7 @@ self.autoResize()
 	<screen name="VIXMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="Red2Panel"/>
-		 <widget source="menu" render="Listbox" position="520,82" size="755,583" scrollbarMode="showOnDemand" foregroundColor="grey">
+		<widget source="menu" render="Listbox" position="520,82" size="755,583" scrollbarMode="showOnDemand" foregroundColor="grey">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (45,9), size = (535,30), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
@@ -3210,7 +3209,7 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<panel name="Red1Panel"/>
 		<panel name="Green1Panel"/>
-	 <widget source="list" render="Listbox" position="490,80" size="785,510" transparent="0" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="490,80" size="785,510" transparent="0" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				 MultiContentEntryText(pos = (90,0), size = (675,30), font=0, text = 0),
@@ -3323,7 +3322,7 @@ self.autoResize()
 	<screen name="GraphicalEPGPIG" position="center,center" size="1280,720" flags="wfNoBorder">
 		<widget source="Title" foregroundColor="grey" render="Label" position="5,5" size="300,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center"/>
 		<widget source="global.CurrentTime" render="Label" position="1015,5" size="250,30" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
-		 <convert type="ClockToText">Full</convert>
+		<convert type="ClockToText">Full</convert>
 		</widget>
 		<widget source="session.VideoPicture" render="Pig" position="0,60" size="398,221" backgroundColor="transparent" zPosition="1"/>
 		<panel name="Red1Panel"/>
@@ -3336,17 +3335,17 @@ self.autoResize()
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="Event" render="Label" position="315,5" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" shadowColor="#000000" halign="right" transparent="1">
-		 <convert type="EventTime">StartTime</convert>
-		 <convert type="ClockToText"/>
+		<convert type="EventTime">StartTime</convert>
+		<convert type="ClockToText"/>
 		</widget>
 		<widget source="Event" render="Label" position="423,5" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" shadowColor="#000000" halign="left" transparent="1">
-	 <convert type="EventTime">EndTime</convert>
-	 <convert type="ClockToText">Format:- %H:%M</convert>
+		<convert type="EventTime">EndTime</convert>
+		<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
 		<widget source="Event" render="Label" position="530,5" size="480,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" halign="left">
-		 <convert type="EventName">Name</convert>
+		<convert type="EventName">Name</convert>
 		</widget>
-	 <widget source="Event" render="Label" position="410,37" zPosition="1" size="865,224" font="Regular;22" halign="left" valign="top" foregroundColor="#00dddddd" backgroundColor="#000000" shadowColor="#000000" transparent="1">
+		<widget source="Event" render="Label" position="410,37" zPosition="1" size="865,224" font="Regular;22" halign="left" valign="top" foregroundColor="#00dddddd" backgroundColor="#000000" shadowColor="#000000" transparent="1">
 		<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget source="Event" render="Label" position="410,262" size="760,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18" halign="left">
@@ -3419,7 +3418,7 @@ self.autoResize()
 			<widget source="LCD1text" render="Label" position="520,655" size="477,20" zPosition="5" font="Regular;18" halign="right" foregroundColor="secondFG" transparent="1"/>
 			<widget source="LCD3text" render="Label" position="520,655" size="477,20" zPosition="5" font="Regular;18" halign="right" foregroundColor="secondFG" transparent="1"/>
 			<widget source="LCD3text" render="Label" position="520,655" size="477,20" zPosition="5" font="Regular;18" halign="right" foregroundColor="secondFG" transparent="1"/>
-<!--	 <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="5,400" size="1,1" transparent="1" zPosition="1" alphatest="on"/>-->
+<!--	<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="5,400" size="1,1" transparent="1" zPosition="1" alphatest="on"/>-->
 	</screen>
 	<screen name="LCDdisplayMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="LCD4linux - Config">
 		<panel name="BasicTemplate"/>
@@ -3753,84 +3752,6 @@ self.autoResize()
 		<widget name="sublist" position="870,80" size="300,584" font="Regular;22" itemHeight="50" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<ePixmap pixmap="div-v.png" position='865,80' size='3,584' />
 		<widget name="description" position="5,379" size="477,264" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center"/>
-	</screen>
-	<!--##Atemio Nemesis screens##-->
-	<screen name="menu_mainmenu" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<widget source="menu" render="Listbox" position="520,82" size="735,575" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,5), size = (735,28), flags = RT_HALIGN_LEFT, text = 0	) ],
-				"fonts": [gFont("Regular",26)],
-				"itemHeight": 38
-				}
-			</convert>
-		</widget>
-	</screen>
-	<screen name="menu_setup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<widget source="menu" render="Listbox" position="520,82" size="735,575" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,5), size = (735,28), flags = RT_HALIGN_LEFT, text = 0	) ],
-				"fonts": [gFont("Regular",26)],
-				"itemHeight": 38
-				}
-			</convert>
-		</widget>
-	</screen>
-	<screen name="menu_system" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		 <widget source="menu" render="Listbox" position="520,82" size="735,575" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,5), size = (735,28), flags = RT_HALIGN_LEFT, text = 0	) ],
-				"fonts": [gFont("Regular",26)],
-				"itemHeight": 38
-				}
-			</convert>
-		</widget>
-	</screen>
-	<screen name="menu_information" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		<widget source="menu" render="Listbox" position="520,82" size="735,575" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,5), size = (735,28), flags = RT_HALIGN_LEFT, text = 0	) ],
-				"fonts": [gFont("Regular",26)],
-				"itemHeight": 38
-				}
-			</convert>
-		</widget>
-	</screen>
-	<screen name="menu_scan" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		 <widget source="menu" render="Listbox" position="520,82" size="735,575" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,5), size = (735,28), flags = RT_HALIGN_LEFT, text = 0	) ],
-				"fonts": [gFont("Regular",26)],
-				"itemHeight": 38
-				}
-			</convert>
-		</widget>
-	</screen>
-	<screen name="menu_harddisk" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		 <widget source="menu" render="Listbox" position="520,82" size="735,575" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,5), size = (735,28), flags = RT_HALIGN_LEFT, text = 0	) ],
-				"fonts": [gFont("Regular",26)],
-				"itemHeight": 38
-				}
-			</convert>
-		</widget>
-	</screen>
-	<screen name="menu_shutdown" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
-		 <widget source="menu" render="Listbox" position="520,82" size="735,575" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (20,5), size = (735,28), flags = RT_HALIGN_LEFT, text = 0	) ],
-				"fonts": [gFont("Regular",26)],
-				"itemHeight": 38
-				}
-			</convert>
-		</widget>
 	</screen>
 	<!-- ButtonSetup -->
 	<screen name="ButtonSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="">
