@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Vs 8.104 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 8.107 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -10,7 +10,6 @@
 		<panel name="InfoBarPanel"/>
 		<ePixmap pixmap="infobar/hd.png" position="0,503" size="1280,220" zPosition="-1" alphatest="off"/>
 	</screen>
-
 	<screen name="SecondInfoBar" position="0,0" size="1280,720" backgroundColor="transpBlack" flags="wfNoBorder">
 		<panel name="InfoBarPanel"/>
 		<widget source="session.CurrentService" render="Label" position="5,5" size="635,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;18" valign="top" halign="left">
@@ -329,7 +328,7 @@
 	</screen>
 	<screen name="ChannelContextMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
-		<widget name="menu" position="520,82" size="755,583" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<widget name="menu" position="520,82" size="755,570" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1"/>
 	</screen>
 	<screen name="EPGSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate2"/>
@@ -557,7 +556,7 @@
 		<widget source="menu" render="Listbox" position="520,82" size="735,575" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (20,5), size = (735,28), flags = RT_HALIGN_LEFT, text = 0	) ],
-				"fonts": [gFont("Regular",26)],
+				"fonts": [gFont("Regular",23)],
 				"itemHeight": 38
 				}
 			</convert>
@@ -568,7 +567,7 @@
 		<panel name="Red2Panel"/>
 		<panel name="Green2Panel"/>
 		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="520,500" size="1,1" zPosition="1" transparent="1" alphatest="on"/>
-		<widget name="config" position="520,80" size="755,588" itemHeight="28" foregroundColor="grey" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<widget name="config" position="520,80" size="755,588" font="Regular;22" itemHeight="28" foregroundColor="grey" scrollbarMode="showOnDemand" enableWrapAround="1"/>
 		<widget name="description" position="5,370" size="510,250" zPosition="10" font="Regular;22" halign="center" valign="center" transparent="0" foregroundColor="secondFG"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="1160,682" zPosition="1" size="35,25" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
@@ -2568,24 +2567,6 @@ self.autoResize()
 		<panel name="Blue1Panel"/>
 		<widget name="list" font="Regular;22" position="520,82" size="755,584" foregroundColor="grey" transparent="1"/>
 	</screen>
-	<screen name="Main_Menu_set" flags="wfNoBorder" position="0,0" size="1280,720">
-		<panel name="BasicTemplate"/>
-		<widget source="menu" render="Listbox" scrollbarMode="showNever" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
-		<convert type="TemplatedMultiContent">
-					{"template": [	MultiContentEntryText(pos = (5,0),size = (470,28),flags = RT_HALIGN_LEFT,text = 0)],
-					"fonts": [gFont("Regular",22)],
-					"itemHeight": 28 }
-				</convert>
-	</screen>
-	<screen name="Main_Menu_extra" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="BasicTemplate2"/>
-		<widget source="menu" render="Listbox" scrollbarMode="showNever" font="Regular;22" position="520,90" size="755,575" transparent="1"/>
-		<convert type="TemplatedMultiContent">
-					{"template": [	MultiContentEntryText(pos = (5,0),size = (470,28),flags = RT_HALIGN_LEFT,text = 0)],
-					"fonts": [gFont("Regular",22)],
-					"itemHeight": 28 }
-				</convert>
-	</screen>
 	<!-- ## Autotimer Plugin ## -->
 	<screen name="AutoTimerHelp" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -3653,23 +3634,6 @@ self.autoResize()
 		<widget name="lab4" position="590,293" size="150,30" font="Regular;20" valign="center" transparent="0"/>
 		<widget name="inactive" position="740,293" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
 		<widget name="active" position="740,293" size="100,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
-	</screen>
-	<screen name="SundtekControlCenter" position="0,0" size="1280,720" flags="wfNoBorder" title="">
-		<panel name="BasicTemplate"/>
-		<panel name="RedBPanel"/>
-		<widget name="btt_red" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<panel name="GreenBPanel"/>
-		<widget name="btt_green" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<panel name="YellowBPanel"/>
-		<widget name="btt_yellow" position="595,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<panel name="BlueBPanel"/>
-		<widget name="btt_blue" position="890,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center" />
-		<ePixmap pixmap="buttons/key_info.png" alphatest="on" position="1215,687" size="35,25"/>
-		<widget name="config" position="490,80" size="785,584" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
-		<widget name="ok" position="5,450" size="477,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="left"/>
-		<widget name="infos" position="5,505" size="477,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="left"/>
-		<widget name="bouquets" position="5,560" size="477,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="left"/>
-		<widget name="netservers" position="5,615" size="477,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="left"/>
 	</screen>
 	<screen name="BackupScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="Backup is running">
 		<panel name="BasicTemplate"/>
