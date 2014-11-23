@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Vs 8.107 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 8.108 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -186,8 +186,8 @@
 	<screen name="Mute" title="Mute" position="45,30" size="50,50" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
 		<ePixmap pixmap="infobar/mute.png" position="0,0" size="45,45" alphatest="on" zPosition="0"/>
 		</screen>
-	<screen name="UnhandledKey" title="UnhandledKey" position="1000,20" size="98,88" backgroundColor="black" zPosition="100" flags="wfNoBorder">
-		<widget name="UnhandledKeyPixmap" pixmap="icons/unhandled-key.png" position="0,0" size="98,88" alphatest="on"/>
+	<screen name="UnhandledKey" title="UnhandledKey" position="1000,20" size="34,45" backgroundColor="black" zPosition="100" flags="wfNoBorder">
+		<widget name="UnhandledKeyPixmap" pixmap="icons/unhandled-key.png" position="0,0" size="34,45" alphatest="on"/>
 	</screen>
 	<screen name="MoviePlayer" position="0,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="PlayerPanel"/>
@@ -852,8 +852,8 @@
 		<panel name="Green2Panel"/>
 		<panel name="Yellow2Panel"/>
 		<panel name="Blue2Panel"/>
-		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,82" size="755,583" transparent="1"/>
-		<widget source="introduction" render="Label" position="5,380" size="477,200" zPosition="10" font="Regular;21" halign="center" valign="center" foregroundColor="secondFG" transparent="1"/>
+		<widget name="config" position="520,82" size="755,583" scrollbarMode="showOnDemand" font="Regular;22" transparent="1"/>
+		<widget source="introduction" render="Label" position="5,380" size="477,200" font="Regular;21" zPosition="10" halign="center" valign="center" foregroundColor="secondFG" transparent="1"/>
 	</screen>
 	<screen name="Console" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>

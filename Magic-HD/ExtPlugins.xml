@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.92	-->
+	<!--	Skin: Magic-HD-ViX PlugIn-addition Vs 1.93	-->
 	<!--	This skin is part of the Magic-HD-ViX MainSkin; the same license applies.	-->
 	<!--	## Head ##	-->
 	<!-- ##Wake on LAN## -->
@@ -1553,11 +1553,11 @@ background
 		<panel name="Green2Panel"/>
 		<panel name="Yellow2Panel"/>
 		<panel name="Blue2Panel"/>
-		<widget pixmaps="Magic-HD/epg/epg_now.png,Magic-HD/epg/epg_next.png,Magic-HD/epg/epg_more.png" size="320,25" alphatest="on" position="530,90" zPosition="1" name="tabbar"/>
-		<widget source="plugins" render="Label" valign="center" transparent="1" size="108,22" backgroundColor="#25062748" position="530,90" zPosition="2" halign="center" font="Regular;18"/>
-		<widget source="extensions" render="Label" valign="center" transparent="1" size="108,22" backgroundColor="#25062748" position="636,90" zPosition="2" halign="center" font="Regular;18"/>
-		<widget source="eventinfo" render="Label" valign="center" transparent="1" size="108,22" backgroundColor="#25062748" position="741,90" zPosition="2" halign="center" font="Regular;18"/>
-		<widget name="list" scrollbarMode="showOnDemand" font="Regular;22" position="520,120" size="740,532" transparent="1" itemHeight="28" foregroundColor="grey" enableWrapAround="1"/>
+		<widget pixmaps="Magic-HD/epg/epg_now.png,Magic-HD/epg/epg_next.png,Magic-HD/epg/epg_more.png" position="530,90" size="320,25" alphatest="on" zPosition="1" name="tabbar"/>
+		<widget source="plugins" render="Label" valign="center" transparent="1" size="108,22" position="530,90" zPosition="2" halign="center" font="Regular;18"/>
+		<widget source="extensions" render="Label" position="636,90" size="108,22" font="Regular;18" valign="center" transparent="1" zPosition="2" halign="center"/>
+		<widget source="eventinfo" render="Label" position="741,90" size="108,22" font="Regular;18" valign="center" transparent="1" zPosition="2" halign="center"/>
+		<widget name="list" position="520,120" size="740,532" font="Regular;22" itemHeight="28" scrollbarMode="showOnDemand" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 	</screen>
 	<screen name="AutomaticCleanupSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
