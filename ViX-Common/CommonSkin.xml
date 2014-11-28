@@ -1,4 +1,4 @@
-<!--  Skin: ViX-Common Vs 3.2.32 by AndyBlac @ www.world-of-satellite.com  -->
+<!--  Skin: ViX-Common Vs 3.2.33 by AndyBlac @ www.world-of-satellite.com  -->
 <!--  This skin is a Freeware. Everyone can modify and use it in other images. , XmlUnboundNsPrefix -->
 <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!! , XmlUnboundNsPrefix -->
 <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! , XmlUnboundNsPrefix -->
@@ -4352,5 +4352,9 @@ self.autoResize()
 		<widget name="description" position="695,435" size="503,230" font="Regular;18" halign="center" valign="center" transparent="0" zPosition="1"/>
 		<panel name="FullscreenRed2Panel"/>
 		<panel name="FullscreenGreen2Panel"/>
+	</screen>
+		<!-- BufferIndicator -->
+	<screen name="BufferIndicator" title="Channel" position="c-100,45" size="200,35" backgroundColor="transparent" flags="wfNoBorder">
+		<widget name="status" position="0,0" size="200,35" backgroundColor="transparent" transparent="1" font="Regular;26" borderColor="black" borderWidth="2" valign="center" haligh="center" zPosition="100"/>
 	</screen>
 </skin>
