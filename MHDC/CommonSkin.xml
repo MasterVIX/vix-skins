@@ -1176,7 +1176,7 @@ self.autoResize()
 		<widget source="list" render="Listbox" position="520,82" size="755,583" zPosition="10" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 							{"template": [
-									MultiContentEntryPixmapAlphaTest(pos = (2, 8), size = (54, 54), png = 2), # index 3 is the interface pixmap
+									MultiContentEntryPixmapAlphaBlend(pos = (2, 8), size = (54, 54), png = 2), # index 3 is the interface pixmap
 									MultiContentEntryText(pos = (65, 6), size = (450, 54), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
 								],
 							"fonts": [gFont("Regular", 20),gFont("Regular", 20)],
@@ -1921,8 +1921,8 @@ self.autoResize()
 				{"template": [
 				MultiContentEntryText(pos = (5,1), size = (700,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
 				MultiContentEntryText(pos = (5,27), size = (700,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-				MultiContentEntryPixmapAlphaTest(pos = (675,0), size = (48,48), png = 4), # index 5 is the status pixmap
-				MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (755,2), png = 5), # index 6 is the div pixmap
+				MultiContentEntryPixmapAlphaBlend(pos = (675,0), size = (48,48), png = 4), # index 5 is the status pixmap
+				MultiContentEntryPixmapAlphaBlend(pos = (0,49), size = (755,2), png = 5), # index 6 is the div pixmap
 				],
 				"fonts": [gFont("Regular",22),gFont("Regular",18)],
 				"itemHeight": 55
@@ -1984,13 +1984,13 @@ self.autoResize()
 				{"default": (51,[
 				MultiContentEntryText(pos = (5,1), size = (430,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
 				MultiContentEntryText(pos = (5,27), size = (430,24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-				MultiContentEntryPixmapAlphaTest(pos = (435,0), size = (48,48), png = 5), # index 5 is the status pixmap
-				MultiContentEntryPixmapAlphaTest(pos = (0,49), size = (503,2), png = 6), # index 6 is the div pixmap
+				MultiContentEntryPixmapAlphaBlend(pos = (435,0), size = (48,48), png = 5), # index 5 is the status pixmap
+				MultiContentEntryPixmapAlphaBlend(pos = (0,49), size = (503,2), png = 6), # index 6 is the div pixmap
 				]),
 				"category": (40,[
 				MultiContentEntryText(pos = (5,0), size = (498,22), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
 				MultiContentEntryText(pos = (5,22), size = (498,16), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
-				MultiContentEntryPixmapAlphaTest(pos = (0,38), size = (503,2), png = 3), # index 3 is the div pixmap
+				MultiContentEntryPixmapAlphaBlend(pos = (0,38), size = (503,2), png = 3), # index 3 is the div pixmap
 				])
 				},
 				"fonts": [gFont("Regular",22),gFont("Regular",18),gFont("Regular",16)],
@@ -2007,7 +2007,7 @@ self.autoResize()
 		<widget source="list" render="Listbox" position="520,90" size="755,550" transparent="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryPixmapAlphaTest(pos = (18,14),size = (48,48),png = 2),# index 2 is the status pixmap
+						MultiContentEntryPixmapAlphaBlend(pos = (18,14),size = (48,48),png = 2),# index 2 is the status pixmap
 						MultiContentEntryText(pos = (90,5),size = (565,26),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
 						MultiContentEntryText(pos = (90,33),size = (565,38),font=1,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the state
 					],
@@ -2027,7 +2027,7 @@ self.autoResize()
 				{"template": [
 						MultiContentEntryText(pos = (90,5),size = (565,26),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
 						MultiContentEntryText(pos = (90,33),size = (565,38),font=1,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the state
-						MultiContentEntryPixmapAlphaTest(pos = (15,5),size = (48,48),png = 2),# index 2 is the status pixmap
+						MultiContentEntryPixmapAlphaBlend(pos = (15,5),size = (48,48),png = 2),# index 2 is the status pixmap
 					],
 				"fonts": [gFont("Regular",22),gFont("Regular",17)],
 				"itemHeight": 75
@@ -2294,8 +2294,8 @@ self.autoResize()
 				{"template": [
 					MultiContentEntryText(pos = (85,6),size = (440,28),font=0,flags = RT_HALIGN_LEFT|RT_VALIGN_TOP,text = 1),# index 1 is the interfacename
 					MultiContentEntryText(pos = (85,43),size = (440,20),font=1,flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM,text = 2),# index 2 is the description
-					MultiContentEntryPixmapAlphaTest(pos = (2,8),size = (54,54),png = 3),# index 3 is the interface pixmap
-					MultiContentEntryPixmapAlphaTest(pos = (63,46),size = (15,16),png = 4),# index 4 is the default pixmap
+					MultiContentEntryPixmapAlphaBlend(pos = (2,8),size = (54,54),png = 3),# index 3 is the interface pixmap
+					MultiContentEntryPixmapAlphaBlend(pos = (63,46),size = (15,16),png = 4),# index 4 is the default pixmap
 				],
 				"fonts": [gFont("Regular",28),gFont("Regular",20)],
 				"itemHeight": 70
@@ -2343,12 +2343,12 @@ self.autoResize()
 		<widget source="list" render="Listbox" position="530,100" size="690,475" zPosition="10" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 		{"template": [
-				MultiContentEntryPixmapAlphaTest(pos = (0,0),size = (48,48),png = 1),# index 1 is the expandable/expanded/verticalline icon
+				MultiContentEntryPixmapAlphaBlend(pos = (0,0),size = (48,48),png = 1),# index 1 is the expandable/expanded/verticalline icon
 				MultiContentEntryText(pos = (50,4),size = (420,26),font=2,flags = RT_HALIGN_LEFT,text = 2),# index 2 is the Hostname
 				MultiContentEntryText(pos = (140,5),size = (320,25),font=0,flags = RT_HALIGN_LEFT,text = 3),# index 3 is the sharename
 				MultiContentEntryText(pos = (140,26),size = (320,17),font=1,flags = RT_HALIGN_LEFT,text = 4),# index 4 is the sharedescription
-				MultiContentEntryPixmapAlphaTest(pos = (45,0),size = (48,48),png = 5),# index 5 is the nfs/cifs icon
-				MultiContentEntryPixmapAlphaTest(pos = (90,0),size = (48,48),png = 6),# index 6 is the isMounted icon
+				MultiContentEntryPixmapAlphaBlend(pos = (45,0),size = (48,48),png = 5),# index 5 is the nfs/cifs icon
+				MultiContentEntryPixmapAlphaBlend(pos = (90,0),size = (48,48),png = 6),# index 6 is the isMounted icon
 			],
 		"fonts": [gFont("Regular",18),gFont("Regular",13),gFont("Regular",22)],
 		"itemHeight": 52
@@ -2372,7 +2372,7 @@ self.autoResize()
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (80,4),size = (590,50),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
-						MultiContentEntryPixmapAlphaTest(pos = (10,6),size = (48,48),png = 3),# index 4 is the status pixmap
+						MultiContentEntryPixmapAlphaBlend(pos = (10,6),size = (48,48),png = 3),# index 4 is the status pixmap
 					],
 				"fonts": [gFont("Regular",20)],
 				"itemHeight": 60
@@ -2410,12 +2410,12 @@ self.autoResize()
 		<widget source="config" render="Listbox" position="520,82" size="755,483" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 										{"template": [
-														MultiContentEntryPixmapAlphaTest(pos = (15,1),size = (48,48),png = 0),# index 0 is the isMounted pixmap
+														MultiContentEntryPixmapAlphaBlend(pos = (15,1),size = (48,48),png = 0),# index 0 is the isMounted pixmap
 														MultiContentEntryText(pos = (100,3),size = (300,25),font=0,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the sharename
 														MultiContentEntryText(pos = (390,5),size = (250,17),font=1,flags = RT_HALIGN_LEFT,text = 2),# index 2 is the IPdescription
 														MultiContentEntryText(pos = (100,29),size = (550,17),font=1,flags = RT_HALIGN_LEFT,text = 3),# index 3 is the DIRdescription
-														MultiContentEntryPixmapAlphaTest(pos = (650,9),size = (48,48),png = 4),# index 4 is the activepng pixmap
-														MultiContentEntryPixmapAlphaTest(pos = (680,1),size = (48,48),png = 5),# index 4 is the mounttype pixmap
+														MultiContentEntryPixmapAlphaBlend(pos = (650,9),size = (48,48),png = 4),# index 4 is the activepng pixmap
+														MultiContentEntryPixmapAlphaBlend(pos = (680,1),size = (48,48),png = 5),# index 4 is the mounttype pixmap
 												],
 										"fonts": [gFont("Regular",20),gFont("Regular",14)],
 										"itemHeight": 50
@@ -2433,7 +2433,7 @@ self.autoResize()
 				{"template": [
 						MultiContentEntryText(pos = (60,5),size = (580,28),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 2 is the Menu Titel
 						MultiContentEntryText(pos = (70,35),size = (570,20),font=1,flags = RT_HALIGN_LEFT,text = 2),# index 3 is the Description
-						MultiContentEntryPixmapAlphaTest(pos = (10,6),size = (48,48),png = 3),# index 4 is the pixmap
+						MultiContentEntryPixmapAlphaBlend(pos = (10,6),size = (48,48),png = 3),# index 4 is the pixmap
 					],
 				"fonts": [gFont("Regular",22),gFont("Regular",17)],
 				"itemHeight": 60
@@ -2458,7 +2458,7 @@ self.autoResize()
 		<widget source="menu" render="Listbox" position="520,90" size="755,575" zPosition="1" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{ "template": [	 MultiContentEntryText(pos = (80,5),size = (990,100),flags = RT_HALIGN_LEFT,text = 0,border_width=1),
-				MultiContentEntryPixmapAlphaTest(pos = (5,20),size = (64,64),png = 1)],"fonts": [gFont("Regular",18)],"itemHeight": 110 }
+				MultiContentEntryPixmapAlphaBlend(pos = (5,20),size = (64,64),png = 1)],"fonts": [gFont("Regular",18)],"itemHeight": 110 }
 			</convert>
 		</widget>
 		<panel name="VixLogo"/>
@@ -3457,7 +3457,7 @@ self.autoResize()
 		<widget source="menu" render="Listbox" position="520,90" size="755,575" zPosition="3" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (50,7),size = (420,30),flags = RT_HALIGN_LEFT,text = 0),
-						MultiContentEntryPixmapAlphaTest(pos = (5,8),size = (40,30),png = 1)],
+						MultiContentEntryPixmapAlphaBlend(pos = (5,8),size = (40,30),png = 1)],
 						"fonts": [gFont("Regular",20)],
 						"itemHeight": 38 }
 			</convert>
@@ -3523,7 +3523,7 @@ self.autoResize()
 		<panel name="BlueTemplate"/>
 		<widget source="menu" render="Listbox" position="590,110" size="600,430" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{ "template": [	 MultiContentEntryText(pos = (80,5),size = (510,85),flags = RT_HALIGN_LEFT,text = 0,border_width=1),MultiContentEntryPixmapAlphaTest(pos = (5,15),size = (64,64),png = 1)],"fonts": [gFont("Regular",17)],"itemHeight": 95 }
+					{ "template": [	 MultiContentEntryText(pos = (80,5),size = (510,85),flags = RT_HALIGN_LEFT,text = 0,border_width=1),MultiContentEntryPixmapAlphaBlend(pos = (5,15),size = (64,64),png = 1)],"fonts": [gFont("Regular",17)],"itemHeight": 95 }
 			</convert>
 		</widget>
 		<widget name="mount_pic0" pixmap="icons/lock_on.png" position="584,558" size="25,25" alphatest="on"/>
@@ -3562,7 +3562,7 @@ self.autoResize()
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (100,[
-							MultiContentEntryPixmapAlphaTest(pos = (10,12),size = (100,75),png = 4),# index 4 is the thumbnail
+							MultiContentEntryPixmapAlphaBlend(pos = (10,12),size = (100,75),png = 4),# index 4 is the thumbnail
 							MultiContentEntryText(pos = (120,10),size = (510,25),font=0,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 1),# index 1 is the Title
 							MultiContentEntryText(pos = (120,40),size = (300,20),font=1,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 5),# index 5 is the Published Date
 							MultiContentEntryText(pos = (120,70),size = (300,20),font=1,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 6),# index 6 is the Views Count
@@ -3728,8 +3728,8 @@ self.autoResize()
 			<convert type="TemplatedMultiContent">
 					{ "template": [
 					MultiContentEntryText(pos = (0,5),size = (750,80),flags = RT_VALIGN_CENTER|RT_HALIGN_CENTER,text = 0,border_width=1),
-					MultiContentEntryPixmapAlphaTest(pos = (0,85),size = (130,130),png = 1),
-					MultiContentEntryPixmapAlphaTest(pos = (620,85),size = (130,130),png = 2),
+					MultiContentEntryPixmapAlphaBlend(pos = (0,85),size = (130,130),png = 1),
+					MultiContentEntryPixmapAlphaBlend(pos = (620,85),size = (130,130),png = 2),
 					MultiContentEntryText(pos = (135,85),size = (145,130),flags = RT_VALIGN_CENTER|RT_HALIGN_LEFT,text = 3),
 					MultiContentEntryText(pos = (470,85),size = (145,130),flags = RT_VALIGN_CENTER|RT_HALIGN_RIGHT,text = 4)
 					],"fonts": [gFont("Regular",17)],"itemHeight": 210 }
@@ -3832,7 +3832,7 @@ self.autoResize()
 		<widget name="key_blue" position="420,0" size="220,26" backgroundColor="un18188b" transparent="1" zPosition="2" font="Regular;20"/>
 		<widget source="menu" render="Listbox" position="0,45" size="800,300" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
-					{ "template": [	 MultiContentEntryText(pos = (40,5),size = (730,50),flags = RT_VALIGN_CENTER,text = 0,border_width=1),MultiContentEntryPixmapAlphaTest(pos = (5,20),size = (25,25),png = 1)],"fonts": [gFont("Regular",18)],"itemHeight": 60 }
+					{ "template": [	 MultiContentEntryText(pos = (40,5),size = (730,50),flags = RT_VALIGN_CENTER,text = 0,border_width=1),MultiContentEntryPixmapAlphaBlend(pos = (5,20),size = (25,25),png = 1)],"fonts": [gFont("Regular",18)],"itemHeight": 60 }
 			</convert>
 		</widget>
 		<widget name="label0" position="5,365" size="700,20" font="Regular;18"/>
@@ -4228,7 +4228,7 @@ self.autoResize()
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (77,[
-							MultiContentEntryPixmapAlphaTest(pos = (5,1),size = (100,75),png = 4),
+							MultiContentEntryPixmapAlphaBlend(pos = (5,1),size = (100,75),png = 4),
 							MultiContentEntryText(pos = (110,1),size = (800,25),font=0,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 1),
 							MultiContentEntryText(pos = (110,27),size = (380,20),font=1,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 5),
 							MultiContentEntryText(pos = (110,48),size = (380,20),font=1,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 6),
@@ -4282,10 +4282,10 @@ self.autoResize()
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (110,[
-							MultiContentEntryPixmapAlphaTest(pos = (0,4),size = (130,98),png = 0),
-							MultiContentEntryPixmapAlphaTest(pos = (130,4),size = (130,98),png = 1),
-							MultiContentEntryPixmapAlphaTest(pos = (260,4),size = (130,98),png = 2),
-							MultiContentEntryPixmapAlphaTest(pos = (390,4),size = (130,98),png = 3),
+							MultiContentEntryPixmapAlphaBlend(pos = (0,4),size = (130,98),png = 0),
+							MultiContentEntryPixmapAlphaBlend(pos = (130,4),size = (130,98),png = 1),
+							MultiContentEntryPixmapAlphaBlend(pos = (260,4),size = (130,98),png = 2),
+							MultiContentEntryPixmapAlphaBlend(pos = (390,4),size = (130,98),png = 3),
 						]),
 					"state": (110,[
 							MultiContentEntryText(pos = (10,40),size = (550,38),font=2,flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP,text = 0),
@@ -4594,7 +4594,7 @@ self.autoResize()
 		<widget source="list" render="Listbox" transparent="0" position="590,110" size="600,500" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 		{"template": [
-			MultiContentEntryPixmapAlphaTest(pos = (12, 4), size = (32, 32), png = 0),
+			MultiContentEntryPixmapAlphaBlend(pos = (12, 4), size = (32, 32), png = 0),
 			MultiContentEntryText(pos = (58, 5), size = (440, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
 			],
 			"fonts": [gFont("Regular", 22)],
@@ -4640,7 +4640,7 @@ self.autoResize()
 			<convert type="TemplatedMultiContent">
 			{"template": [
 			MultiContentEntryText(pos = (12, 1), size = (440, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-			MultiContentEntryPixmapAlphaTest(pos = (455, 0), size = (40, 40), png = 1),
+			MultiContentEntryPixmapAlphaBlend(pos = (455, 0), size = (40, 40), png = 1),
 			],
 			"fonts": [gFont("Regular", 18)],
 			"itemHeight": 30
@@ -4664,7 +4664,7 @@ self.autoResize()
 			<convert type="TemplatedMultiContent">
 				{"template": [
 			MultiContentEntryText(pos = (12, 1), size = (460, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
-			MultiContentEntryPixmapAlphaTest(pos = (438, 0), size = (40, 40), png = 1),
+			MultiContentEntryPixmapAlphaBlend(pos = (438, 0), size = (40, 40), png = 1),
 			],
 			"fonts": [gFont("Regular", 18)],
 			"itemHeight": 30
