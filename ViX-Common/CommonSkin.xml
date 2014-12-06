@@ -1,4 +1,4 @@
-<!--  Skin: ViX-Common Vs 3.2.33 by AndyBlac @ www.world-of-satellite.com  -->
+<!--  Skin: ViX-Common Vs 3.2.34 by AndyBlac @ www.world-of-satellite.com  -->
 <!--  This skin is a Freeware. Everyone can modify and use it in other images. , XmlUnboundNsPrefix -->
 <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!! , XmlUnboundNsPrefix -->
 <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! , XmlUnboundNsPrefix -->
@@ -128,7 +128,7 @@
 			</convert>
 		</widget>
 	</screen>
-	<screen name="Setup" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+	<screen name="Setup" position="fill" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
 		<panel name="FullscreenPIGPanel" />
@@ -813,7 +813,7 @@
 		<widget name="key_blue" position="665,265" size="150,25" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="infobar_collab_back" halign="left" transparent="1" zPosition="1"/>
 	</screen>
 
-	<screen name="MediaPlayer" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+	<screen name="MediaPlayer" position="fill" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<eLabel name="Filelist" position="20,75" size="110,22" text="File List" font="Italic;22" foregroundColor="infobar_service_frgrnd" transparent="1" />
 		<eLabel position="18,100" size="604,556" zPosition="0" backgroundColor="menu-title-frgrnd" />
@@ -978,7 +978,7 @@
 		<panel name="MenuPanel" />
 		<widget name="menu" position="10,107" size="503,480" itemHeight="30" selectionPixmap="ViX-Common/buttons/FocusBar_H30x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" />
 	</screen>
-	<screen name="ChannelSelection" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+	<screen name="ChannelSelection" position="fill" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<widget source="Title" render="Label" position="18,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 		<panel name="FullscreenPIGPanel" />
@@ -1097,7 +1097,7 @@ self.autoResize()
 	</screen>
 
 <!-- EPG Screens -->
-	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
+	<screen name="EPGSelection" position="fill" backgroundColor="black" transparent="0" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<widget source="Service" render="PiconBg" position="18,8" size="104,63" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd"  />
 		<widget source="Service" render="Picon" position="20,9" size="100,60" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd">
@@ -1117,7 +1117,7 @@ self.autoResize()
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
 	</screen>
-	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
+	<screen name="EPGSelectionMulti" position="fill" backgroundColor="black" transparent="0" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<widget source="Service" render="PiconBg" position="18,8" size="104,63" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd"  />
 		<widget source="Service" render="Picon" position="20,9" size="100,60" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd">
@@ -1147,7 +1147,7 @@ self.autoResize()
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
 	</screen>
-	<screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
+	<screen name="GraphicalEPG" position="fill" backgroundColor="black" transparent="0" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
 		<widget name="lab1" position="0,70" size="1280,620" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
@@ -1161,7 +1161,7 @@ self.autoResize()
 		<panel name="FullscreenYellow1Panel" />
 		<panel name="FullscreenBlue1Panel" />
 	</screen>
-	<screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
+	<screen name="GraphicalEPGPIG" position="fill" backgroundColor="black" transparent="0" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
 		<eLabel position="878,73" size="382,215" zPosition="2" backgroundColor="darkgrey" foregroundColor="window-bg" />
@@ -1286,7 +1286,7 @@ self.autoResize()
 		<ePixmap pixmap="ViX-Common/buttons/red.png" position="40,663" size="24,24" alphatest="blend" transparent="1" />
 		<widget name="initializetext" position="75,663" size="190,24" zPosition="1" font="Regular;20" foregroundColor="menu-buttons-frgrnd" backgroundColor="menu-buttons-bkgrnd1" halign="left" transparent="1" valign="center" />
 	</screen>
-	<screen name="HelpMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="HelpMenu" position="fill" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
 		<widget name="list" position="60,150" size="503,456" transparent="0" selectionPixmap="ViX-Common/buttons/FocusBar_H50x503.png" scrollbarMode="showOnDemand" />
@@ -1376,7 +1376,7 @@ self.autoResize()
 	<screen name="MinuteInput" position="center,center" size="280,60">
 		<widget name="minutes" position="80,15" size="160,25" halign="right" font="Regular;23" transparent="1" />
 	</screen>
-	<screen name="MovieSelection" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+	<screen name="MovieSelection" position="fill" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
 		<panel name="FullscreenPIGPanel" />
@@ -1716,7 +1716,7 @@ self.autoResize()
 		<widget name="key0" position="122,92" size="150,30" font="Regular;18" halign="center" valign="center" transparent="1" />
 		<widget name="help2" position="262,92" size="130,30" font="Regular;18" halign="center" valign="center" transparent="1" />
 	</screen>
-	<screen name="UserInterfacePositioner" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+	<screen name="UserInterfacePositioner" position="fill" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
 		<eLabel position="18,80" size="664,580" zPosition="0" backgroundColor="#005c5c5c" />
@@ -1915,7 +1915,7 @@ self.autoResize()
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
 	</screen>
-	<screen name="Scart" position="0,0" size="1280,720" backgroundColor="transparent" />
+	<screen name="Scart" position="fill" backgroundColor="transparent" />
 	<screen name="ServiceInfoSimple" position="center,center" size="650,300" title="Service info">
 		<widget name="infolist" position="0,0" size="650,300" selectionDisabled="1" />
 	</screen>
@@ -1977,7 +1977,7 @@ self.autoResize()
 		<panel name="MenuRed1Panel" />
 		<panel name="MenuGreen1Panel" />
 	</screen>
-	<screen name="Standby" flags="wfNoBorder" position="0,0" size="1280,720" title="Standby" backgroundColor="black" />
+	<screen name="Standby" flags="wfNoBorder" position="fill" title="Standby" backgroundColor="black" />
 	<screen name="SubservicesQuickzap" position="124,470" size="512,200" title="Subservices" backgroundColor="transparent" flags="wfNoBorder">
 		<widget source="session.RecordState" render="Pixmap" pixmap="icons/record.png" position="450,0" zPosition="2" size="14,14" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
@@ -1992,7 +1992,7 @@ self.autoResize()
 		<panel name="MenuPanel" />
 		<widget name="config" position="10,107" size="503,494" itemHeight="36" selectionPixmap="ViX-Common/buttons/FocusBar_H36x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
 	</screen>
-	<screen name="SubtitleDisplay" position="0,0" size="1280,720" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent" />
+	<screen name="SubtitleDisplay" position="fill" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent" />
 	<screen name="TempFanControl" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<widget name="config" position="10,107" size="503,120" selectionPixmap="ViX-Common/buttons/FocusBar_H25x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
@@ -2060,7 +2060,7 @@ self.autoResize()
 		<widget name="end" position="508,150" size="72,35" font="Regular;25" transparent="1" />
 		<widget name="apply" position="10,240" size="250,35" transparent="1" />
 	</screen>
-	<screen name="TimerEditList" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+	<screen name="TimerEditList" position="fill" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<widget source="Title" render="Label" position="18,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1"/>
 		<panel name="FullscreenPIGPanel" />
@@ -2128,7 +2128,7 @@ self.autoResize()
 		<widget name="list" position="10,100" size="540,225" selectionDisabled="1" foregroundColor="window-fg" backgroundColor="#001c2c5c" transparent="1" />
 	</screen>
 	<!-- Wizzard's -->
-	<screen name="StartWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
+	<screen name="StartWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
 		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
@@ -2150,7 +2150,7 @@ self.autoResize()
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
-	<screen name="NetworkWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
+	<screen name="NetworkWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
 		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
@@ -2176,7 +2176,7 @@ self.autoResize()
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
-	<screen name="LanguageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
+	<screen name="LanguageWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
 		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
@@ -2202,7 +2202,7 @@ self.autoResize()
 		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
-	<screen name="ImageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
+	<screen name="ImageWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
 		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
@@ -2223,7 +2223,7 @@ self.autoResize()
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
-	<screen name="DefaultWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
+	<screen name="DefaultWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
 		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
@@ -2244,7 +2244,7 @@ self.autoResize()
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
-	<screen name="VideoWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
+	<screen name="VideoWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
 		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
@@ -2267,7 +2267,7 @@ self.autoResize()
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
-	<screen name="DreamPackageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
+	<screen name="DreamPackageWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
 		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
@@ -2288,7 +2288,7 @@ self.autoResize()
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
-	<screen name="TutorialWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
+	<screen name="TutorialWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
 		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
@@ -2306,7 +2306,7 @@ self.autoResize()
 		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,680" size="1280,40" zPosition="-1" />
 	</screen>
-	<screen name="CleanupWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
+	<screen name="CleanupWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
 		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
@@ -2346,7 +2346,7 @@ self.autoResize()
 		<eLabel text=" " position="145,460" zPosition="10" size="560,2" transparent="1" backgroundColor="#008c8c8c" />
 		<widget source="status" render="Label" position="160,525" size="540,60" zPosition="10" foregroundColor="#003c3c3c" backgroundColor="#27aeaeae" font="Regular;20" halign="center" valign="center" transparent="1" />
 	</screen>
-	<screen name="DefaultSatLists" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
+	<screen name="DefaultSatLists" position="fill" title="Welcome..." flags="wfNoBorder">
 		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
@@ -2367,7 +2367,7 @@ self.autoResize()
 		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
-	<screen name="MessageBoxWizard" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="black">
+	<screen name="MessageBoxWizard" position="fill" flags="wfNoBorder" backgroundColor="black">
 		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="0" />
 		<widget source="Title" render="Label" position="80,37" size="880,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 		<widget source="global.CurrentTime" render="Label" position="1100,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
@@ -2384,7 +2384,7 @@ self.autoResize()
 		<widget name="rc" pixmap="rc.png" position="950,140" zPosition="10" size="154,500" transparent="0" alphatest="blend" />
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1" />
 	</screen>
-	<screen name="InstallWizardIpkgUpdater" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
+	<screen name="InstallWizardIpkgUpdater" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
 		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,113" alphatest="on" transparent="1" zPosition="12" />
 		<widget source="global.CurrentTime" render="Label" position="1130,37" size="100,28" font="Regular;26" halign="right" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="13">
 			<convert type="ClockToText">Default</convert>
@@ -2420,7 +2420,7 @@ self.autoResize()
 		</widget>
 		<panel name="MenuRed2Panel" />
 	</screen>
-	<screen name="SoftwareUpdateChanges" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+	<screen name="SoftwareUpdateChanges" position="fill" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<widget source="Title" render="Label" position="20,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
 		<widget name="text" position="20,82" size="1240,590" font="Regular;21" backgroundColor="black" transparent="0" />
@@ -2602,7 +2602,7 @@ self.autoResize()
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
-	<screen name="FileBrowser" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+	<screen name="FileBrowser" position="fill" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
 		<widget name="filelist" position="10,107" size="503,526" selectionPixmap="ViX-Common/buttons/FocusBar_H52x503.png" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" />
@@ -2661,7 +2661,7 @@ self.autoResize()
 		<ePixmap pixmap="div-h.png" position="0,330" zPosition="1" size="560,2" />
 		<widget source="info" render="Label" position="10,340" size="550,80" font="Regular;18" halign="center" valign="center" />
 	</screen>
-	<screen name="TitleCutter" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+	<screen name="TitleCutter" position="fill" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
 		<eLabel position="50,123" size="394,504" zPosition="1" backgroundColor="menu-title-frgrnd" foregroundColor="window-bg" />
@@ -3032,7 +3032,7 @@ self.autoResize()
 		<widget name="buttonred" position="130,686" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
 		<widget name="buttongreen" position="420,686" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
 	</screen>
-	<screen name="VideoFinetune" position="0,0" size="1280,720" backgroundColor="black">
+	<screen name="VideoFinetune" position="fill" backgroundColor="black">
 		<widget source="Canvas" render="Canvas" position="280,70" size="720,576" />
 	</screen>
 	<screen name="RecordPathsSettings" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -3079,7 +3079,7 @@ self.autoResize()
 		<widget name="polarisation" position="385,455" size="95,22" font="Regular;21" backgroundColor="window-bg" transparent="0" />
 		<widget name="status_bar" position="25,600" size="458,24" foregroundColor="window-fg" backgroundColor="window-bg" zPosition="1" transparent="0" font="Regular;21" />
 	</screen>
-	<screen name="VideoEnhancementSetup" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+	<screen name="VideoEnhancementSetup" position="fill" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
 		<panel name="FullscreenPIGPanel" />
@@ -3781,7 +3781,7 @@ self.autoResize()
 		<widget name="key_yellow" position="75,641" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="#009c9c9c" foregroundColor="foreground" />
 		<widget name="key_blue" position="75,674" size="190,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="#00868686" foregroundColor="foreground" />
 	</screen>
-	<screen name="AutoTimerHelp" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+	<screen name="AutoTimerHelp" position="fill" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<panel name="FullscreenTitlePanel" />
 		<panel name="FullscreenPIGPanel" />
@@ -4006,7 +4006,7 @@ self.autoResize()
 		<widget backgroundColor="#00111112" font="Regular;18" foregroundColor="#00f0f0f0" halign="left" name="OrbitalPosition" noWrap="1" position="510,540" size="97,22" transparent="1" zPosition="4" />
 	</screen>
 <!-- ## RemoteTimer ## -->
-	<screen name="RemoteTimerScreen" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+	<screen name="RemoteTimerScreen" position="fill" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel" />
 		<widget source="Title" render="Label" position="18,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1"/>
 		<panel name="FullscreenPIGPanel" />
@@ -4278,7 +4278,7 @@ self.autoResize()
 		<widget name="scan_progress" position="30,607" size="400,15" pixmap="progress_big.png" borderWidth="2" borderColor="black" />
 	</screen>
 	<!-- ## BitrateViewer## -->
-	<screen flags="wfNoBorder" name="BitrateViewer" backgroundColor="transparent" position="0,0" size="1280,720">
+	<screen flags="wfNoBorder" name="BitrateViewer" backgroundColor="transparent" position="fill">
 		<eLabel text="Video" position="590,150" zPosition="1" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1"/>
 		<eLabel text="min" position="590,180" zPosition="1" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1"/>
 		<widget name="vmin" position="590,210" size="80,26" font="Regular;22" backgroundColor="transparent" borderColor="black" borderWidth="3" transparent="1"/>
@@ -4334,7 +4334,7 @@ self.autoResize()
 		<panel name="MenuGreen2Panel"/>
 	</screen>
 	<!-- ButtonSetup -->
-	<screen name="ButtonSetup" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+	<screen name="ButtonSetup" position="fill" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel"/>
 		<widget source="Title" render="Label" position="18,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1"/>
 		<panel name="FullscreenPIGPanel"/>
@@ -4342,7 +4342,7 @@ self.autoResize()
 		<widget name="choosen" position="345,82" size="310,570" itemHeight="30" zPosition="10" font="Regular;21" backgroundColor="window-bg" halign="center" transparent="0" scrollbarMode="showOnDemand"/>
 		<widget name="description" position="695,435" size="503,230" font="Regular;18" halign="center" valign="center" transparent="0" zPosition="1"/>
 	</screen>
-	<screen name="ButtonSetupSelect" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+	<screen name="ButtonSetupSelect" position="fill" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel"/>
 		<widget source="Title" render="Label" position="18,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1"/>
 		<panel name="FullscreenPIGPanel"/>
