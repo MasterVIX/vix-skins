@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Vs 8.113 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 8.114 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -546,9 +546,9 @@
 			</convert>
 		</widget>
 		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30"/>
-		<eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="220,26" transparent="1" zPosition="1"/>
+		<eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,687" size="220,26" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
-		<eLabel text="Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
+		<eLabel text="Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,687" size="220,26" transparent="1" zPosition="1"/>
 	</screen>
 	<!-- ## Menus ## -->
 	<screen name="Menu" position="fill" flags="wfNoBorder">
@@ -737,13 +737,13 @@
 		<widget source="cancelable" render="Pixmap" pixmap="buttons/big-red.png" position="15,682" size="284,40" zPosition="-1" alphatest="blend">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="cancelable" render="FixedLabel" text="Cancel" position="50,682" size="220,26" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1">
+		<widget source="cancelable" render="FixedLabel" text="Cancel" position="50,687" size="220,26" font="Regular;20" halign="left" backgroundColor="secondBG" transparent="1">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="finished" render="Pixmap" pixmap="buttons/big-green.png" position="305,682" size="284,40 " zPosition="-1" alphatest="blend">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="finished" render="FixedLabel" text="OK" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left">
+		<widget source="finished" render="FixedLabel" text="OK" position="340,687" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="backgroundable" render="Pixmap" pixmap="buttons/big-blue.png" position="890,682" size="284,40 " zPosition="-1" alphatest="blend">
@@ -772,7 +772,7 @@
 	<screen name="TextBox" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="520,390" size="755,240" font="Regular;24" foregroundColor="grey"/>
-		<eLabel text="'Exit' = Leave message" position="50,682" size="320,26" font="Regular;22" halign="left" backgroundColor="secondBG" transparent="1" zPosition="1"/>
+		<eLabel text="'Exit' = Leave message" position="50,687" size="320,26" font="Regular;22" halign="left" backgroundColor="secondBG" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="MessageBox" title="Message" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1119,7 +1119,7 @@ self.autoResize()
 	<screen name="TimerEntry" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="cancel" pixmap="buttons/big-red.png" position="15,682" size="284,40" zPosition="-1" alphatest="blend"/>
-		<widget name="ok" pixmap="buttons/big-green.png" position="305,682" size="284,40 " zPosition="-1" alphatest="blend"/>
+		<widget name="ok" pixmap="buttons/big-green.png" position="305,687" size="284,40 " zPosition="-1" alphatest="blend"/>
 		<widget name="config" position="520,80" size="755,550" font="Regular;22" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="canceltext" position="15,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
 		<widget name="oktext" position="305,688" size="284,26" foregroundColor="grey" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="center"/>
@@ -1276,7 +1276,7 @@ self.autoResize()
 		<panel name="InfoBPanel"/>
 		<widget name="SkinList" position="520,90" size="300,560" itemHeight="28" font="Regular;22" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="Preview" position="918,110" size="280,210" alphatest="on"/>
-		<widget source="introduction" render="Label" position="525,682" size="640,30" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;22" valign="center" halign="center"/>
+		<widget source="introduction" render="Label" position="525,687" size="640,30" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;22" valign="center" halign="center"/>
 	</screen>
 	<screen name="UpdatePlugin" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -1364,7 +1364,7 @@ self.autoResize()
 				}
 			</convert>
 		</widget>
-		<widget source="status" render="Label" position="520,682" size="755,25" backgroundColor="background" transparent="1" font="Regular;22" foregroundColor="grey" halign="center"/>
+		<widget source="status" render="Label" position="520,687" size="755,25" backgroundColor="background" transparent="1" font="Regular;22" foregroundColor="grey" halign="center"/>
 	</screen>
 	<screen name="PluginManagerHelp" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate2"/>
@@ -1595,12 +1595,12 @@ self.autoResize()
 																				}
 																</convert>
 		</widget>
-		<widget source="introduction" render="Label" position="840,682" size="420,22" transparent="1" zPosition="10" font="Regular;22" valign="center" halign="center" foregroundColor="grey"/>
+		<widget source="introduction" render="Label" position="840,687" size="420,22" transparent="1" zPosition="10" font="Regular;22" valign="center" halign="center" foregroundColor="grey"/>
 	</screen>
 	<screen name="AutoMountManager" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<panel name="Red2Panel"/>
-		<widget source="introduction" render="Label" position="520,682" size="755,27" zPosition="1" transparent="1" font="Regular;22" halign="center" foregroundColor="grey"/>
+		<widget source="introduction" render="Label" position="520,687" size="755,27" zPosition="1" transparent="1" font="Regular;22" halign="center" foregroundColor="grey"/>
 		<widget source="config" render="Listbox" position="520,82" size="755,555" transparent="1" scrollbarMode="showOnDemand" foregroundColor="grey">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -1620,7 +1620,7 @@ self.autoResize()
 		<panel name="Green2Panel"/>
 		<widget name="config" position="520,82" size="755,275" zPosition="3" transparent="1" scrollbarMode="showOnDemand" font="Regular;22" foregroundColor="grey" itemHeight="28" enableWrapAround="1"/>
 		<widget name="HelpWindow" position="590,390" size="1,1" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="introduction" render="Label" position="620,682" size="655,27" zPosition="1" transparent="1" font="Regular;22" halign="center" foregroundColor="grey"/>
+		<widget source="introduction" render="Label" position="620,687" size="655,27" zPosition="1" transparent="1" font="Regular;22" halign="center" foregroundColor="grey"/>
 		<widget name="VKeyIcon" pixmap="buttons/key_text.png" position="1160,682" size="35,25" zPosition="10" transparent="1" alphatest="on"/>
 	</screen>
 	<screen name="UserManager" position="fill" flags="wfNoBorder" title="">
@@ -2084,19 +2084,19 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<widget name="menu" scrollbarMode="showOnDemand" position="520,82" font="Regular;24" size="755,583" transparent="1" itemHeight="30" foregroundColor="grey" enableWrapAround="1"/>
 		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30"/>
-		<eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" foregroundColor="grey" zPosition="1"/>
+		<eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,687" size="200,26" transparent="1" foregroundColor="grey" zPosition="1"/>
 	</screen>
 	<screen name="CCcamInfoEcmInfoSelection" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="list" scrollbarMode="showOnDemand" position="520,82" size="755,583" font="Regular;22" transparent="1" itemHeight="30" foregroundColor="grey" enableWrapAround="1"/>
 		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30"/>
-		<eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1"/>
+		<eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,687" size="200,26" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="CCcamInfoInfoScreen" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="text" position="520,82" size="755,583" font="Regular;22" transparent="1" itemHeight="30" foregroundColor="grey" enableWrapAround="1"/>
 		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30"/>
-		<eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1"/>
+		<eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,687" size="200,26" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="CCcamInfoConfigMenu" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2107,18 +2107,18 @@ self.autoResize()
 		<widget name="list" position="520,82" size="755,583" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" itemHeight="30" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="info" position="15,400" size="477,240" font="Regular;22" transparent="1" foregroundColor="secondFG"/>
 		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30"/>
-		<eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1"/>
+		<eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,687" size="200,26" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
-		<eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
+		<eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,687" size="220,26" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="CCcamInfoServerMenu" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="list" position="520,82" size="755,290" scrollbarMode="showOnDemand" transparent="1" itemHeight="30" foregroundColor="grey" enableWrapAround="1"/>
 		<widget name="info" position="520,373" size="755,290" font="Regular;22" foregroundColor="grey" transparent="1"/>
 		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30"/>
-		<eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1"/>
+		<eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,687" size="200,26" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
-		<eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
+		<eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,687" size="220,26" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="CCcamShareViewMenu" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2129,9 +2129,9 @@ self.autoResize()
 		<widget name="reshare" position="20,520" size="450,25" halign="left" font="Regular;20"/>
 		<widget name="cards" position="20,560" size="450,25" halign="left" font="Regular;20"/>
 		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30"/>
-		<eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1"/>
+		<eLabel text="Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,687" size="200,26" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
-		<eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
+		<eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,687" size="220,26" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="CCcamInfoRemoteBoxMenu" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2173,9 +2173,9 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<widget name="config" scrollbarMode="showOnDemand" position="520,90" size="755,575" font="Regular;22" itemHeight="30" transparent="1" foregroundColor="grey" enableWrapAround="1"/>
 		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="305,682" size="70,30"/>
-		<eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,682" size="200,26" transparent="1" zPosition="1"/>
+		<eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="380,687" size="200,26" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
-		<eLabel text="Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
+		<eLabel text="Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,687" size="220,26" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="CCcamInfoMenuConfig" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2343,7 +2343,7 @@ self.autoResize()
 <!--		<eLabel position="550,298" size="660,2" backgroundColor="black"/>
 		<eLabel position="550,300" size="660,2" backgroundColor="grey"/>-->
 		<widget name="config" position="535,280" size="740,400" transparent="1" itemHeight="40" font="Regular;32" scrollbarMode="showOnDemand" foregroundColor="grey" enableWrapAround="1"/>
-		<widget name="introduction" position="535,682" size="320,26" font="Regular;22" backgroundColor="secondBG" foregroundColor="secondFG" halign="left" transparent="1" zPosition="1"/>
+		<widget name="introduction" position="535,687" size="320,26" font="Regular;22" backgroundColor="secondBG" foregroundColor="secondFG" halign="left" transparent="1" zPosition="1"/>
 		</screen>
 	<screen name="PositionerSetup" position="fill" flags="wfNoBorder" title="Positioner setup">
 		<panel name="BasicTemplate"/>
@@ -2385,7 +2385,7 @@ self.autoResize()
 		<widget name="introduction" position="520,82" size="755,30" font="Regular;23"/>
 		<widget name="config" scrollbarMode="showOnDemand" font="Regular;22" position="520,113" size="755,553" transparent="1"/>
 		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
-		<eLabel text="Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
+		<eLabel text="Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,687" size="220,26" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="CableScanScreen" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
@@ -2488,7 +2488,7 @@ self.autoResize()
 		<widget source="list" render="Listbox" position="60,405" size="440,200" scrollbarMode="showOnDemand">
 			<convert type="StringList"/>
 		</widget>
-		<widget name="languagetext" position="50,682" size="220,26" font="Regular;18"/>
+		<widget name="languagetext" position="50,687" size="220,26" font="Regular;18"/>
 		<widget name="config" position="600,405" size="440,200" transparent="1" zPosition="1" scrollbarMode="showOnDemand"/>
 		<widget name="wizard" pixmap="wizard.png" position="754,131" size="110,174" transparent="1" zPosition="10" alphatest="on"/>
 		<widget name="rc" pixmap="rc.png" position="1064,112" size="154,471" transparent="1" zPosition="10" alphatest="on"/>
@@ -2890,11 +2890,11 @@ self.autoResize()
 		<panel name="BasicTemplate"/>
 		<panel name="GreenBPanel"/>
 		<widget name="myGreenBtn" position="520,82" size="755,583" font="Regular;22" transparent="1"/>
-		<eLabel text="Change setting" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1"/>
+		<eLabel text="Change setting" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,687" size="220,26" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="15,682" size="35,26"/>
-		<eLabel text="Save" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1"/>
+		<eLabel text="Save" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,687" size="220,26" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key-exit.png" alphatest="on" position="580,682" size="70,30"/>
-		<eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="660,682" size="200,26" transparent="1" zPosition="1"/>
+		<eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="660,687" size="200,26" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="FancontrolConfiguration" flags="wfNoBorder" position="fill">
 		<panel name="BasicTemplate"/>
@@ -3691,7 +3691,7 @@ self.autoResize()
 		<panel name="Red2Panel"/>
 		<panel name="Green2Panel"/>
 		<ePixmap pixmap="buttons/key_ok.png" alphatest="on" position="1090,682" size="35,26"/>
-		<eLabel text="Install" backgroundColor="secondBG" font="Regular;22" halign="left" position="1125,682" size="220,26" transparent="1" zPosition="1"/>
+		<eLabel text="Install" backgroundColor="secondBG" font="Regular;22" halign="left" position="1125,687" size="220,26" transparent="1" zPosition="1"/>
 			<widget source="list" render="Listbox" position="490,80" size="785,572" scrollbarMode="showOnDemand" transparent="1" foregroundColor="grey" enableWrapAround="1">
 				<convert type="TemplatedMultiContent">
 					{"template": [
