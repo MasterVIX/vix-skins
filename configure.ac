@@ -52,6 +52,17 @@ AC_DEFINE_UNQUOTED(SKIN1080,"$SKIN1080",[yes])
 AC_CONFIG_FILES([
 Makefile
 
+Magic-HD/Makefile
+Magic-HD/border/Makefile
+Magic-HD/buttons/Makefile
+Magic-HD/dvr/Makefile
+Magic-HD/epg/Makefile
+Magic-HD/fonts/Makefile
+Magic-HD/icons/Makefile
+Magic-HD/infobar/Makefile
+Magic-HD/piconbg/Makefile
+Magic-HD/window/Makefile
+
 
 ])
 AC_OUTPUT
