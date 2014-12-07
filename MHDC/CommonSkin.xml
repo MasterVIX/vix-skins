@@ -2,7 +2,7 @@
 <!--suppress XmlUnboundNsPrefix, XmlUnboundNsPrefix -->
 <skin>
 
-	<!--	Common.skin Vs 6.09 Magic-HD-Night/Noire  	-->
+	<!--	Common.skin Vs 6.10 Magic-HD-Night/Noire  	-->
 	<!--	This skin is part of the skin Magic-HD-Night/Noire; the same license applies.	-->
 
 	<!-- Templates -->
@@ -2616,6 +2616,10 @@ self.autoResize()
 	</screen>
 	<screen flags="wfNoBorder" name="FastScanScreen" position="0,0" size="1280,720">
 		<panel name="BasicTemplate"/>
+		<panel name="ButtonRed"/>
+		<eLabel text="Cancel" position="50,682" size="220,28" backgroundColor="background" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+		<panel name="ButtonGreen"/>
+		<eLabel text="Save" position="340,682" size="220,28" backgroundColor="background" zPosition="1" transparent="1" font="Regular;24" halign="left" />
 		<widget name="config" scrollbarMode="showOnDemand" itemHeight="32" font="Regular;24" position="520,82" size="755,555" transparent="1"/>
 		<widget name="introduction" font="Regular;24" position="520,640" size="755,25" halign="center" transparent="1"/>
 		<panel name="VixLogo"/>
