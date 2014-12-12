@@ -1,6 +1,6 @@
 <!--suppress XmlUnboundNsPrefix -->
 <skin>
-	<!--	Skin: Magic-HD Vs 8.116 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
+	<!--	Skin: Magic-HD Vs 8.117 by Rob van der Does @www.world-of-satellite.com, based on Magic-EHD Vs 1.91.54	-->
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
@@ -12,8 +12,11 @@
 	</screen>
 	<screen name="SecondInfoBar" position="fill" backgroundColor="transpBlack" flags="wfNoBorder">
 		<panel name="InfoBarPanel"/>
-		<widget source="session.CurrentService" render="Label" position="5,5" size="635,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;18" valign="top" halign="left">
+		<widget source="session.CurrentService" render="Label" position="5,5" size="635,85" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;18" valign="top" halign="left">
 			<convert type="PliExtraInfo">All</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="5,90" size="636,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;20" halign="left">
+			<convert type="CryptoInfo">VerboseInfo</convert>
 		</widget>
 		<eLabel name="snr" position="675,5" size="80,15" backgroundColor="transpBlack" halign="right" transparent="1" text="	Quality:" font="Regular;14"/>
 		<widget source="session.FrontendStatus" render="Progress" pixmap="infobar/bar.png" position="760,8" size="410,10" borderWidth="2" borderColor="uncccccc">
@@ -59,9 +62,6 @@
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="650,173" size="620,375" font="Regular; 20" zPosition="1" transparent="1">
 					<convert type="EventName">ExtendedDescription</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="5,75" size="636,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;20" halign="left">
-			<convert type="CryptoInfo">VerboseInfo</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_sub_on.png" position="650,90" size="36,24" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
