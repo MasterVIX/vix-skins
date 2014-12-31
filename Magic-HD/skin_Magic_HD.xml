@@ -189,7 +189,7 @@
 	<screen name="UnhandledKey" title="UnhandledKey" position="1000,20" size="34,45" backgroundColor="black" zPosition="100" flags="wfNoBorder">
 		<widget name="UnhandledKeyPixmap" pixmap="icons/unhandled-key.png" position="0,0" size="34,45" alphatest="on"/>
 	</screen>
-	<screen name="MoviePlayer" position="0,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="MoviePlayer" position="0,30" size="1280,125" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="PlayerPanel"/>
 	</screen>
 	<screen name="Dish" flags="wfNoBorder" position="86,100" size="130,295" title="Dish" zPosition="10" backgroundColor="black">
@@ -950,11 +950,9 @@ self.autoResize()
 	<widget name="PTSSeekBack" position="128,54" size="1024,4" zPosition="1"/>
 	<widget name="PTSSeekPointer" position="128,40" zPosition="5" size="19,20" pixmap="position_pointer2.png" alphatest="blend"/>
 	</screen>
-	<screen name="PVRState" position="10,75" size="75,30" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
-<!--		<widget name="state" position="0,0" size="150,30" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" halign="center"/>-->
-		<widget name="statusicon" position="50,0" size="20,21" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on"/>
-<!--		<widget name="speed" position="185,70" size="80,15" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" zPosition="5" halign="center"/>-->
-		<widget name="speed" position="0,0" size="50,21" font="Regular; 20" halign="left" backgroundColor="transparent" borderWidth="2" borderColor="black" transparent="1" zPosition="5"/>
+	<screen name="PVRState" position="10,100" size="125,60" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
+		<widget name="statusicon" position="75,0" size="50,50" pixmaps="icons/play_large.png,icons/pause_large.png,icons/stop_large.png,icons/forward_large.png,icons/backward_large.png,icons/slow_large.png" zPosition="5" alphatest="on"/>
+		<widget name="speed" position="0,0" size="75,50" font="Regular; 30" halign="left" valign="center" backgroundColor="transparent" borderWidth="2" borderColor="black" transparent="1" zPosition="5"/>
 	</screen>
 	<screen name="BouquetSelector" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>

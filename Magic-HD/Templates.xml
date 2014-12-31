@@ -179,8 +179,8 @@
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<eLabel backgroundColor="infobarBG" position="120,59" size="1040,14" zPosition="0"/>
-		<widget name="statusicon" position="5,54" size="20,20" pixmaps="Magic-HD/icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on"/>
-		<widget name="speed" position="30,54" size="80,15" font="Regular; 17" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" transparent="1" zPosition="5"/>
+		<widget name="statusicon" position="5,70" size="50,50" pixmaps="Magic-HD/icons/play_large.png,icons/pause_large.png,icons/stop_large.png,icons/forward_large.png,icons/backward_large.png,icons/slow_large.png" zPosition="5" alphatest="on"/>
+		<widget name="speed" position="60,70" size="80,50" font="Regular; 30" halign="left" backgroundColor="transparent" foregroundColor="foreground" borderWidth="3" borderColor="black" valign="center" transparent="1" zPosition="5"/>
 		<ePixmap pixmap="dvr/scale1024.png" position="128,64" size="1024,4" zPosition="1"/>
 		<widget source="session.CurrentService" render="PositionGauge" position="128,60" size="1024,12" transparent="1" zPosition="4" pointer="Magic-HD/dvr/position_pointer1024.png:1012,0">
 			<convert type="ServicePosition">Gauge</convert>
